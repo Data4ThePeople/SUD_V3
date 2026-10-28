@@ -164,7 +164,7 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 
 <script>
 const D = /*DATA*/null;
-const GAP = {short: "GAP SCORE", name: "Gap Score", unit: "people with SUD per treatment worker"};
+const GAP = {short: "PEOPLE / WORKER", name: "People per Worker", unit: "people with SUD per treatment worker"};
 const YEARS = D.years, Y0 = YEARS[0];
 const ix = y => y - Y0;
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
@@ -346,7 +346,7 @@ function renderCallout() {
   }
   if (m === "gap") {
     const n = Object.entries(D.geo).filter(([k, g]) => k !== "US" && cellState(g, "gap", y).kind === "floor").length;
-    p.push("<b>Hatched states.</b> In " + y + ", " + n + " states had part of their worker count withheld by BLS to protect employer privacy. Their " + GAP.name + " can only be shown as a maximum, so they are not colored.");
+    p.push("<b>Hatched states.</b> In " + y + ", " + n + " states had part of their worker count withheld by BLS to protect employer privacy. Their " + GAP.name + " figure can only be shown as a maximum, so they are not colored.");
   }
   if (m === "estab") p.push("<b>What counts as a facility.</b> A site that tells SAMHSA it offers outpatient substance use treatment, in any ownership. Facilities that did not respond to the survey are not counted: 3% to 11% of eligible facilities from 2000 to 2020, and 10% to 23% from 2021 to 2024.");
   if (m === "death") p.push("<b>What is counted.</b> Deaths whose underlying cause was a drug overdose or an alcohol-induced cause, such as alcoholic liver disease. Each death is counted once." + (y === 2023 ? " North Carolina's 2023 count is short: CDC says over 900 overdose deaths were recoded after the file closed." : ""));
@@ -477,12 +477,12 @@ document.getElementById("notes").innerHTML = `
 <ul>
 <li><b>Survey changes.</b> NSDUH changed in 2002, in 2015 and again in 2020-2021 (DSM-5 criteria, web plus in-person interviews). SAMHSA says estimates are not comparable across these points. The trend line is not drawn across them, and the map uses a separate color scale from 2022.</li>
 <li><b>Missing years are left blank.</b> SAMHSA published no state estimates for windows ending in 2002, 2015, 2020 or 2021, and ran no facility survey in 2001. Nothing is filled in or interpolated.</li>
-<li><b>Withheld worker counts.</b> BLS withholds employment for a cell when publishing it could identify an employer. We never estimate a withheld value. A state's worker total then includes only the published cells and is shown with ≥. Its ${GAP.name} is a maximum, shown hatched on the map and listed separately in the ranking.</li>
+<li><b>Withheld worker counts.</b> BLS withholds employment for a cell when publishing it could identify an employer. We never estimate a withheld value. A state's worker total then includes only the published cells and is shown with ≥. Its ${GAP.name} figure is a maximum, shown hatched on the map and listed separately in the ranking.</li>
 <li><b>The worker count is broad on purpose.</b> It includes everyone on payroll at these businesses, including administrative staff and people who treat only mental health conditions. It leaves out the self-employed and substance use programs run inside hospitals. It does not count federal facilities such as the VA.</li>
 <li><b>Facility counts are a floor.</b> Facilities that did not answer SAMHSA's survey are not counted. The survey merged with the mental health facility survey in 2021, and its response rate dropped that year.</li>
 <li><b>NSDUH leaves out people living in institutions</b>, such as prisons, jails and hospitals, and people experiencing homelessness who are not in shelters.</li>
 <li><b>Death counts.</b> Crude rates, not age adjusted. Alcohol-induced deaths are mostly chronic causes such as alcoholic liver disease. CDC notes that North Carolina's 2023 overdose count is short by more than 900 deaths recoded after the file closed, and that unusual coding of ill-defined causes lowered some counts in California (2001), Georgia (2008-2009) and New Jersey (2009).</li>
-<li><b>The ${GAP.name} is a ratio, not a caseload.</b> It divides SAMHSA's estimated count of people with SUD by the number of outpatient workers. It does not show how many people seek or receive treatment.</li>
+<li><b>${GAP.name} is a ratio, not a caseload.</b> It divides SAMHSA's estimated count of people with SUD by the number of outpatient workers. It does not show how many people seek or receive treatment.</li>
 </ul>`;
 
 // ---------- render ----------

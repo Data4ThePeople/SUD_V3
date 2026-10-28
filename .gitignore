@@ -10,3 +10,4 @@ data/raw/oews/*
 !data/raw/oews/PULLED.txt
 data/raw/nssats/*
 !data/raw/nssats/PULLED.txt
+tieout_independent/raw/

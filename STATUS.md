@@ -33,3 +33,4 @@ None.
 - 2026-10-28 Data pulled and validated: QCEW 2001-2024, NSDUH (20 windows), N-SSATS/N-SUMHSS, OEWS, CBP, NAICS index, CDC WONDER (10 exports run by Eric). State-to-national sums pass for every fully disclosed year.
 - 2026-10-28 Decisions: establishments map uses N-SSATS/N-SUMHSS outpatient SUD facilities (all ownerships; 2001 blank; 2021 break). Workers = QCEW 621420 + 621330 + 621112, private + state + local government. Where a withheld cell makes the worker total a floor, the Gap Score shows as "at most" and is hatched.
 - 2026-10-28 Revised: with 621330/621112 added, about 30 states a year (12 in 2024) have a withheld worker cell. Gap Score map colors only complete states; floor states are hatched gray and show "at most" in hover and ranking. Where workers stand alone (card, trend line) a switch shows all ownership or private only.
+- 2026-10-28 Eric: rename "Gap Score" to "People per Worker"; keep scales 0-150+ (2001-2019) and 25-200+ (2022-2024).
