@@ -10,7 +10,7 @@ Nothing is filled, interpolated or estimated. See DATASETS.md for each source.
 Metrics
   sud_pct, sud_lo, sud_hi      NSDUH prevalence (%, age 12+), window assigned to its end year
   sud_count, _lo, _hi          NSDUH published count (people, age 12+)
-  sud_drug_pct, _count, ...    the same for SAMHSA's drug use disorder measure (Drug only view)
+  sud_drug_*, sud_alcohol_*    the same for SAMHSA's drug and alcohol use disorder measures
   estabs                       N-SSATS / N-SUMHSS facilities offering outpatient SUD care
   estabs_per100k               estabs / WONDER population * 100,000
   oews                         OEWS 21-1011 + 21-1014 (to 2016) or 21-1018 (2017 on) + 21-1023; blank
@@ -46,13 +46,13 @@ def nsduh():
     })
 
 
-def nsduh_drug():
-    """Drug use disorder (SAMHSA's drug-only measure), for the page's Drug only view."""
-    d = pd.read_csv(ROOT / "data/clean/nsduh_drug.csv")
-    k = 1000
+def nsduh_part(part):
+    """Drug or alcohol use disorder (SAMHSA's own measure), for the Drug only / Alcohol only views."""
+    d = pd.read_csv(ROOT / f"data/clean/nsduh_{part}.csv")
+    k, p = 1000, f"sud_{part}"
     return pd.DataFrame({
-        "geo": d.state, "year": d.end_year, "sud_drug_pct": d.pct, "sud_drug_lo": d.pct_lo, "sud_drug_hi": d.pct_hi,
-        "sud_drug_count": d.count_thousands * k, "sud_drug_count_lo": d.count_lo * k, "sud_drug_count_hi": d.count_hi * k,
+        "geo": d.state, "year": d.end_year, f"{p}_pct": d.pct, f"{p}_lo": d.pct_lo, f"{p}_hi": d.pct_hi,
+        f"{p}_count": d.count_thousands * k, f"{p}_count_lo": d.count_lo * k, f"{p}_count_hi": d.count_hi * k,
     })
 
 
@@ -160,7 +160,7 @@ def jsonable(v):
 def main():
     base = pd.DataFrame([(g, y) for g in GEOS for y in YEARS], columns=["geo", "year"])
     panel = base
-    for part in (nsduh(), nsduh_drug(), facilities(), workers(), gov_share(), oews(), deaths()):
+    for part in (nsduh(), nsduh_part("drug"), nsduh_part("alcohol"), facilities(), workers(), gov_share(), oews(), deaths()):
         if part.duplicated(["geo", "year"]).any():
             raise SystemExit("duplicate geo/year keys in a source")
         panel = panel.merge(part, on=["geo", "year"], how="left")
@@ -200,9 +200,8 @@ def write_variant(panel, name, meta):
     postal = {n: p for _, p, n in STATES}
     keep = {"sud_pct": "sud_pct", "sud_lo": "sud_lo", "sud_hi": "sud_hi", "sud_count": "sud_count",
             "sud_count_lo": "sud_count_lo", "sud_count_hi": "sud_count_hi", "sud_dsm": "sud_dsm",
-            "sud_drug_pct": "sud_drug_pct", "sud_drug_lo": "sud_drug_lo", "sud_drug_hi": "sud_drug_hi",
-            "sud_drug_count": "sud_drug_count", "sud_drug_count_lo": "sud_drug_count_lo",
-            "sud_drug_count_hi": "sud_drug_count_hi",
+            **{f"sud_{pt}_{c}": f"sud_{pt}_{c}" for pt in ("drug", "alcohol")
+               for c in ("pct", "lo", "hi", "count", "count_lo", "count_hi")},
             "estabs": "estabs", "population": "population", "v_workers": "workers",
             "v_flag": "workers_flag", "v_note": "workers_note", "deaths": "deaths",
             "death_rate": "death_rate", "death_rate_lo": "death_rate_lo", "death_rate_hi": "death_rate_hi",

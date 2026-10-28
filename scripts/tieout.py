@@ -94,13 +94,19 @@ for r in csv.DictReader(open(ROOT / "data/clean/nsduh_sud.csv")):
                     ("sud_count", "count_thousands", 1000)):
         cmp(m, key, y, float(r[c]) * k, tol=1e-4)
 
-# --- drug use disorder (clean NSDUH drug file; build_nsduh_drug.py ties it to SAMHSA's tables) ---
-for r in csv.DictReader(open(ROOT / "data/clean/nsduh_drug.csv")):
-    key, y = NAME_TO_KEY[r["state"]], int(r["end_year"])
-    for m, c, k in (("sud_drug_pct", "pct", 1), ("sud_drug_lo", "pct_lo", 1), ("sud_drug_hi", "pct_hi", 1),
-                    ("sud_drug_count", "count_thousands", 1000), ("sud_drug_count_lo", "count_lo", 1000),
-                    ("sud_drug_count_hi", "count_hi", 1000)):
-        cmp(m, key, y, float(r[c]) * k, tol=1e-4)
+# --- drug and alcohol use disorder (clean NSDUH files; build_nsduh_parts.py ties them to SAMHSA's tables) ---
+for part in ("drug", "alcohol"):
+    have = set()
+    for r in csv.DictReader(open(ROOT / f"data/clean/nsduh_{part}.csv")):
+        key, y = NAME_TO_KEY[r["state"]], int(r["end_year"])
+        have.add((key, y))
+        for m, c, k in (("pct", "pct", 1), ("lo", "pct_lo", 1), ("hi", "pct_hi", 1), ("count", "count_thousands", 1000),
+                        ("count_lo", "count_lo", 1000), ("count_hi", "count_hi", 1000)):
+            cmp(f"sud_{part}_{m}", key, y, float(r[c]) * k, tol=1e-4)
+    for key in [s[0] for s in STATES] + ["US"]:  # every other year must be blank
+        for y in YEARS:
+            if (key, y) not in have:
+                cmp(f"sud_{part}_pct", key, y, None)
 
 # --- facilities (clean N-SSATS / N-SUMHSS) ---
 fac = {}

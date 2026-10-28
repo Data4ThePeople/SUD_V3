@@ -40,3 +40,5 @@ None.
 - 2026-10-28 Independent OEWS tie-out: 0 differences; US sampling-error note and 2001-2002 reference-month wording fixed.
 - 2026-10-28 Eric approved legend end labels and direction captions; drug-only switch for deaths (ND drug rates under 20 deaths blank, CDC publishes none); drug-only switch extended to the SUD map with wording items 1-12. People per Worker stays on any SUD. Tie-out: 22,829 values, 0 mismatches.
 - 2026-10-28 Eric: new neutral title "Substance Use Treatment / State by State, 2001-2024", new subtitle and tab title (proposals 1-3 accepted).
+- 2026-10-28 Independent drug-only tie-out: 0 differences in 13,768 cells; 3 wording/display fixes.
+- 2026-10-28 Eric: add Alcohol only (items 1-13 accepted; item 10 worded to CDC's definition), separate color scales per view, switch kept on the legend row. Tie-out: 29,745 values, 0 mismatches.

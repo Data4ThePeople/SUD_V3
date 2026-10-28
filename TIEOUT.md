@@ -12,8 +12,8 @@
 - facility counts come from the N-SSATS / N-SUMHSS clean file, which `check_nsumhss.py`
   ties to SAMHSA's published tables.
 
-**Result (OEWS workers, drug-only deaths and drug use disorder, 2026-10-28): 22,829 values
-checked, 0 mismatches.** Every metric
+**Result (OEWS workers, drug and alcohol views, 2026-10-28): 29,745 values checked, 0
+mismatches.** Every metric
 array has 24 years, and all 52 geographies are present.
 
 `scripts/validate_sums.py` checks that the states add up to the national figure:
@@ -111,3 +111,11 @@ the May 2017 technical note.
 independent agent did not rebuild (the main tie-out covers every year), and SAMHSA's
 published 2024 outpatient total of 13,328, which is 19 above our count. That gap is
 still unexplained.
+
+## Independent tie-out of the drug-only views (fresh agent, 2026-10-28)
+
+13,768 cells compared with SAMHSA's SAS datasets, published tables and CDC WONDER: 0
+differences. Three wording and display points were fixed (per-view color scales, the CDC
+rate rule, the 2021-2022 prescription drug change). Full report:
+`tieout_independent/drug/REPORT.md`. The alcohol-only view was added afterward and has its
+own independent check.

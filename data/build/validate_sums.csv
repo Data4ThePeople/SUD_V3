@@ -537,6 +537,27 @@ NSDUH,drug use disorder count (thousands),2019,8203.0,8204.0,-1.0,0,5,pass
 NSDUH,drug use disorder count (thousands),2022,25847.0,25848.0,-1.0,0,5,pass
 NSDUH,drug use disorder count (thousands),2023,27189.0,27191.0,-2.0,0,5,pass
 NSDUH,drug use disorder count (thousands),2024,27669.0,27668.0,1.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2001,12893.0,12893.0,0.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2003,17952.0,17952.0,0.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2004,18225.0,18228.0,-3.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2005,18657.0,18655.0,2.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2006,18757.0,18756.0,1.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2007,18768.0,18769.0,-1.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2008,18581.0,18582.0,-1.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2009,18620.0,18620.0,0.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2010,18364.0,18365.0,-1.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2011,17321.0,17320.0,1.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2012,17196.0,17193.0,3.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2013,17505.0,17506.0,-1.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2014,17150.0,17147.0,3.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2015,16367.0,16365.0,2.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2016,15397.0,15396.0,1.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2017,14779.0,14781.0,-2.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2018,14660.0,14661.0,-1.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2019,14664.0,14661.0,3.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2022,29639.0,29637.0,2.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2023,29196.0,29200.0,-4.0,0,5,pass
+NSDUH,alcohol use disorder count (thousands),2024,28387.0,28386.0,1.0,0,5,pass
 WONDER,alcohol deaths,2001,20114.0,,,0,0,no national figure
 WONDER,alcohol population,2001,284968955.0,,,0,0,no national figure
 WONDER,alcohol deaths,2002,20218.0,,,0,0,no national figure

@@ -4,7 +4,7 @@ Years 2001-2017 come from the 1999-2020 database (bridged-race population),
 2018-2024 from the 2018-2024 Single Race database. The two agree exactly on deaths
 and population for every state in 2018-2020 (checked here on every run).
 'Suppressed' stays empty. Rates are WONDER's published crude rates; an 'Unreliable'
-flag (20 or fewer deaths) is kept as a flag, and the rate is left empty as WONDER does.
+flag (fewer than 20 deaths in the 1999-2020 database) is kept as a flag, and the rate is left empty as WONDER does.
 """
 import io
 from pathlib import Path

@@ -38,7 +38,8 @@ def qcew():
 
 
 def nsduh():
-    for f, label in (("nsduh_sud.csv", "SUD count (thousands)"), ("nsduh_drug.csv", "drug use disorder count (thousands)")):
+    for f, label in (("nsduh_sud.csv", "SUD count (thousands)"), ("nsduh_drug.csv", "drug use disorder count (thousands)"),
+                     ("nsduh_alcohol.csv", "alcohol use disorder count (thousands)")):
         d = pd.read_csv(ROOT / "data/clean" / f)
         for year, g in d.groupby("end_year"):
             st, us = g[g.state != "United States"], g[g.state == "United States"]

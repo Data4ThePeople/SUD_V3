@@ -339,27 +339,43 @@ residents of institutional group quarters, such as jails and hospitals." Respons
 Substance Abuse and Mental Health Services Administration, National Survey on
 Drug Use and Health, state small area estimates.
 
-### Drug use disorder (the page's "Drug only" view)
+### Drug use disorder and alcohol use disorder ("Drug only" and "Alcohol only" views)
 
-`scripts/build_nsduh_drug.py` writes `data/clean/nsduh_drug.csv` from SAMHSA's
-state SAE SAS datasets, ages 12+, for the same 20 windows as any SUD:
+`scripts/build_nsduh_parts.py` writes `data/clean/nsduh_drug.csv` and
+`nsduh_alcohol.csv` from SAMHSA's state SAE SAS datasets, ages 12+:
 
 | Windows | SAMHSA outcome | Measure |
 |---|---|---|
-| 2000-2001 to 2013-2014 | ABODILL | Illicit drug dependence or abuse (DSM-IV) |
-| 2015-2016 to 2018-2019 | UDPYILL | Illicit drug use disorder (DSM-IV) |
-| 2021-2022 to 2023-2024 | UD5ILANY | Drug use disorder (DSM-5) |
+| Drug, 2000-2001 to 2013-2014 | ABODILL | Illicit drug dependence or abuse (DSM-IV) |
+| Drug, 2015-2016 to 2018-2019 | UDPYILL | Illicit drug use disorder (DSM-IV) |
+| Drug, 2021-2022 to 2023-2024 | UD5ILANY | Drug use disorder (DSM-5) |
+| Alcohol, 2000-2001 to 2014-2015 | ABODALC | Alcohol dependence or abuse (DSM-IV) |
+| Alcohol, 2015-2016 to 2018-2019 | ABODALC | Alcohol use disorder (DSM-IV; SAMHSA's table title) |
+| Alcohol, 2021-2022 to 2023-2024 | UDYR5ALC | Alcohol use disorder (DSM-5) |
 
-- For 2010-2011, the "(published)" estimates are used, the same as for any SUD.
-- The script checks every window that has a published Excel table: percents to
-  2 decimals and counts exactly. There are 10 such windows (2011-2012 counts
-  only), with 0 differences.
-- State counts sum to the national count within ±5 thousand in all 20 windows
-  (`validate_sums.py`).
-- People can have both a drug and an alcohol disorder. The drug estimate
-  includes people who also have an alcohol disorder. Drug plus alcohol is more
-  than any SUD, so nothing is added or subtracted.
-- People per Worker always uses any SUD.
+- **Alcohol has 21 windows, and drug has 20.** SAMHSA published alcohol for
+  2014-2015 but not drug or any SUD, so the alcohol view has a 2015 value. The
+  trend line still breaks at the 2015 survey change.
+- **2010-2011:** the "(published)" estimates are used, the same as for any SUD.
+- **Check against published tables:** for both measures, the script checks
+  every window that has a published Excel table, percents to 2 decimals and
+  counts exactly. There are 10 such windows (counts only for 2011-2012), with
+  0 differences.
+- **State-to-national check:** state counts sum to the national count within
+  ±5 thousand in every window (`validate_sums.py`).
+- **Overlap:** people can have both disorders. Each estimate includes people
+  who also have the other disorder. Drug plus alcohol is more than any SUD in
+  every state and window, so nothing is added or subtracted.
+- **Color scales:** each view has its own fixed scale so that differences
+  between states show.
+  - Drug: 1-5% through 2019 and 6-16% from 2022.
+  - Alcohol: 3-11% through 2019 and 7-17% from 2022.
+  - Any SUD: 4-14% and 10-32%.
+- **The drug measure changed in 2021-2022 beyond DSM-5.** SAMHSA's 2022 table
+  notes say prescription drug use disorder questions were asked of everyone who
+  used prescription drugs in the past year, whether or not they misused them.
+  The earlier measures covered misuse only.
+- **People per Worker always uses any SUD.**
 
 ## N-SSATS (2000-2020) / N-SUMHSS (2021-2024) (SAMHSA)
 
@@ -584,12 +600,22 @@ plus alcohol equals the combined total in all 1,224 state-years.
 Vintages change from year to year, so the denominators are not one
 consistent series.
 
+**What alcohol-induced leaves out.** CDC's NCHS definition (the codes listed
+above) "exclude[s] unintentional injuries, homicides, and other causes
+indirectly related to alcohol use" (NCHS Data Brief 448). Color scales on the death map: 0-70 combined, 0-50
+drug only, 0-25 alcohol only.
+
 **Rates.** Crude rate per 100,000, as published, with no age adjustment.
 States with older populations have higher alcohol-induced rates partly for
 that reason.
 
-**Suppressed values.** WONDER suppresses counts of 1 to 9 and flags rates
-based on 20 or fewer deaths as unreliable.
+**Suppressed values.** WONDER suppresses counts of 1 to 9. In the 1999-2020
+database it marks rates based on fewer than 20 deaths as unreliable and does
+not print them. North Dakota 2013, with exactly 20 drug deaths, has a printed
+rate. That database's export caveat says "20 or less", but its help page and
+the data say fewer than 20. Since February 2026 the 2018-2024 database flags a
+rate when the width of its 95% confidence interval is more than 160% of the
+rate. No 2018-2024 cell in our data is flagged.
 - **None** of the combined, drug-only or alcohol-only state-year cells are
   suppressed.
 - **Six drug-only rates** (North Dakota in 2001, 2002, 2004, 2005, 2006 and
