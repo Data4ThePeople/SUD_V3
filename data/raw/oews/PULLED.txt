@@ -1,0 +1,54 @@
+2026-10-28	https://www.bls.gov/oes/special-requests/oes01st.zip	BLS OEWS/OES state estimates, 2001 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oes02st.zip	BLS OEWS/OES state estimates, 2002 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm03st.zip	BLS OEWS/OES state estimates, 2003 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm04st.zip	BLS OEWS/OES state estimates, 2004 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm05st.zip	BLS OEWS/OES state estimates, 2005 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm06st.zip	BLS OEWS/OES state estimates, 2006 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm07st.zip	BLS OEWS/OES state estimates, 2007 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm08st.zip	BLS OEWS/OES state estimates, 2008 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm09st.zip	BLS OEWS/OES state estimates, 2009 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm10st.zip	BLS OEWS/OES state estimates, 2010 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm11st.zip	BLS OEWS/OES state estimates, 2011 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm12st.zip	BLS OEWS/OES state estimates, 2012 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm13st.zip	BLS OEWS/OES state estimates, 2013 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm14st.zip	BLS OEWS/OES state estimates, 2014 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm15st.zip	BLS OEWS/OES state estimates, 2015 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm16st.zip	BLS OEWS/OES state estimates, 2016 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm17st.zip	BLS OEWS/OES state estimates, 2017 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm18st.zip	BLS OEWS/OES state estimates, 2018 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm19st.zip	BLS OEWS/OES state estimates, 2019 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm20st.zip	BLS OEWS/OES state estimates, 2020 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm21st.zip	BLS OEWS/OES state estimates, 2021 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm22st.zip	BLS OEWS/OES state estimates, 2022 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm23st.zip	BLS OEWS/OES state estimates, 2023 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm24st.zip	BLS OEWS/OES state estimates, 2024 release, all occupations
+2026-10-28	https://www.bls.gov/oes/special-requests/oes01nat.zip	BLS OEWS/OES national estimates, 2001 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oes02nat.zip	BLS OEWS/OES national estimates, 2002 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm03nat.zip	BLS OEWS/OES national estimates, 2003 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm04nat.zip	BLS OEWS/OES national estimates, 2004 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm05nat.zip	BLS OEWS/OES national estimates, 2005 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm06nat.zip	BLS OEWS/OES national estimates, 2006 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm07nat.zip	BLS OEWS/OES national estimates, 2007 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm08nat.zip	BLS OEWS/OES national estimates, 2008 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm09nat.zip	BLS OEWS/OES national estimates, 2009 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm10nat.zip	BLS OEWS/OES national estimates, 2010 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm11nat.zip	BLS OEWS/OES national estimates, 2011 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm12nat.zip	BLS OEWS/OES national estimates, 2012 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm13nat.zip	BLS OEWS/OES national estimates, 2013 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm14nat.zip	BLS OEWS/OES national estimates, 2014 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm15nat.zip	BLS OEWS/OES national estimates, 2015 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm16nat.zip	BLS OEWS/OES national estimates, 2016 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm17nat.zip	BLS OEWS/OES national estimates, 2017 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm18nat.zip	BLS OEWS/OES national estimates, 2018 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm19nat.zip	BLS OEWS/OES national estimates, 2019 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm20nat.zip	BLS OEWS/OES national estimates, 2020 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm21nat.zip	BLS OEWS/OES national estimates, 2021 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm22nat.zip	BLS OEWS/OES national estimates, 2022 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm23nat.zip	BLS OEWS/OES national estimates, 2023 release (for state-sum check)
+2026-10-28	https://www.bls.gov/oes/special-requests/oesm24nat.zip	BLS OEWS/OES national estimates, 2024 release (for state-sum check)
+2026-10-28	https://www.bls.gov/soc/2018/soc_2010_to_2018_crosswalk.xlsx	BLS SOC 2010 to 2018 crosswalk (method doc)
+2026-10-28	https://www.bls.gov/oes/oes_ques.htm	BLS OEWS method page saved in docs/
+2026-10-28	https://www.bls.gov/oes/notices/2017/changes_2017.htm	BLS OEWS method page saved in docs/
+2026-10-28	https://www.bls.gov/oes/current/oes_tec.htm	BLS OEWS method page saved in docs/
+2026-10-28	https://www.bls.gov/oes/soc_2018.htm	BLS OEWS method page saved in docs/
+2026-10-28	https://www.bls.gov/soc/2018/soc_structure_2018.xlsx	BLS SOC 2018 structure (method doc)

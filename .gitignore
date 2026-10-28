@@ -3,3 +3,10 @@
 __pycache__/
 .env
 .idea/workspace.xml
+# Large raw downloads, re-fetchable from the URLs in each PULLED.txt
+data/raw/cbp/*
+!data/raw/cbp/PULLED.txt
+data/raw/oews/*
+!data/raw/oews/PULLED.txt
+data/raw/nssats/*
+!data/raw/nssats/PULLED.txt

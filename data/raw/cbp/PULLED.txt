@@ -1,0 +1,51 @@
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2001/cbp01st.zip	Census County Business Patterns 2001, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2002/cbp02st.zip	Census County Business Patterns 2002, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2003/cbp03st.zip	Census County Business Patterns 2003, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2004/cbp04st.zip	Census County Business Patterns 2004, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2005/cbp05st.zip	Census County Business Patterns 2005, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2006/cbp06st.zip	Census County Business Patterns 2006, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2007/cbp07st.zip	Census County Business Patterns 2007, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2008/cbp08st.zip	Census County Business Patterns 2008, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2009/cbp09st.zip	Census County Business Patterns 2009, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2010/cbp10st.zip	Census County Business Patterns 2010, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2011/cbp11st.zip	Census County Business Patterns 2011, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2012/cbp12st.zip	Census County Business Patterns 2012, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2013/cbp13st.zip	Census County Business Patterns 2013, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2014/cbp14st.zip	Census County Business Patterns 2014, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2015/cbp15st.zip	Census County Business Patterns 2015, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2016/cbp16st.zip	Census County Business Patterns 2016, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2017/cbp17st.zip	Census County Business Patterns 2017, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2018/cbp18st.zip	Census County Business Patterns 2018, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2019/cbp19st.zip	Census County Business Patterns 2019, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2020/cbp20st.zip	Census County Business Patterns 2020, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2021/cbp21st.zip	Census County Business Patterns 2021, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2022/cbp22st.zip	Census County Business Patterns 2022, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23st.zip	Census County Business Patterns 2023, state file, all NAICS
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2008/cbp08us.zip	Census County Business Patterns 2008, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2009/cbp09us.zip	Census County Business Patterns 2009, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2010/cbp10us.zip	Census County Business Patterns 2010, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2011/cbp11us.zip	Census County Business Patterns 2011, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2012/cbp12us.zip	Census County Business Patterns 2012, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2013/cbp13us.zip	Census County Business Patterns 2013, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2014/cbp14us.zip	Census County Business Patterns 2014, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2015/cbp15us.zip	Census County Business Patterns 2015, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2016/cbp16us.zip	Census County Business Patterns 2016, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2017/cbp17us.zip	Census County Business Patterns 2017, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2018/cbp18us.zip	Census County Business Patterns 2018, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2019/cbp19us.zip	Census County Business Patterns 2019, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2020/cbp20us.zip	Census County Business Patterns 2020, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2021/cbp21us.zip	Census County Business Patterns 2021, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2022/cbp22us.zip	Census County Business Patterns 2022, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip	Census County Business Patterns 2023, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2001/cbp01us.txt	Census County Business Patterns 2001, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2002/cbp02us.txt	Census County Business Patterns 2002, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2003/cbp03us.txt	Census County Business Patterns 2003, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2004/cbp04us.txt	Census County Business Patterns 2004, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2005/cbp05us.txt	Census County Business Patterns 2005, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2006/cbp06us.txt	Census County Business Patterns 2006, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/datasets/2007/cbp07us.txt	Census County Business Patterns 2007, U.S. file (for state-sum check)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/technical-documentation/records-layouts/full-layout/state_layout.txt	CBP record layout (method doc)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/technical-documentation/records-layouts/noise-layout/state_x_lfo_layout.txt	CBP record layout (method doc)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/technical-documentation/records-layouts/2017_record_layouts/state_layout_2017.txt	CBP record layout (method doc)
+2026-10-28	https://www2.census.gov/programs-surveys/cbp/technical-documentation/records-layouts/2020_record_layouts/state-layout-2020.txt	CBP record layout (method doc)
+2026-10-28	https://www.census.gov/programs-surveys/cbp/technical-documentation/methodology.html	CBP methodology page (method doc)

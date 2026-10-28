@@ -1,0 +1,79 @@
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2000-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2000 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2000-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2000 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2002-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2002 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2002-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2002 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2003-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2003 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2003-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2003 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2004-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2004 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2004-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2004 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2005-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2005 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2005-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2005 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2006-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2006 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2006-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2006 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2007-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2007 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2007-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2007 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2008-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2008 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2008-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2008 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2009-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2009 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2009-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2009 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2010-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2010 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2010-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2010 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2011-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2011 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2011-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2011 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2012-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2012 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2012-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2012 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2013-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2013 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2013-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2013 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2014-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2014 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2014-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2014 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2015-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2015 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2015-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2015 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2016-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2016 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2016-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2016 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2017-DS0001-bndl-data-tsv_v1.zip	SAMHSA N-SSATS-2017 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2017-DS0001-info-codebook_v1.pdf	SAMHSA N-SSATS-2017 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2018-DS0001-bndl-data-tsv_v1.zip	SAMHSA N-SSATS-2018 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2018-DS0001-info-codebook_v1.pdf	SAMHSA N-SSATS-2018 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2019-DS0001-bndl-data-tsv.zip	SAMHSA N-SSATS-2019 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2019-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2019 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2020-DS0001-bndl-data-csv.zip	SAMHSA N-SSATS-2020 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SSATS-2020-DS0001-info-codebook.pdf	SAMHSA N-SSATS-2020 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SUMHSS-2021-DS0001-bndl-data-csv_v2.zip	SAMHSA 2021 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SUMHSS-2021-DS0001-info-codebook.pdf	SAMHSA 2021 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SUMHSS-2022-DS0001-bndl-data-csv_v1.zip	SAMHSA 2022 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SUMHSS-2022-DS0001-info-codebook.pdf	SAMHSA 2022 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SUMHSS-2023-DS0001-bndl-data-csv_v1.zip	SAMHSA 2023 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SUMHSS-2023-DS0001-info-codebook_v1.pdf	SAMHSA 2023 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SUMHSS-2024-DS0001-bndl-data-csv_v1.zip	SAMHSA 2024 public-use file: data bundle
+2026-10-28	https://www.samhsa.gov/data/system/files/media-puf-file/N-SUMHSS-2024-DS0001-info-codebook_v1.pdf	SAMHSA 2024 public-use file: codebook
+2026-10-28	https://www.samhsa.gov/data/sites/default/files/reports/rpt56703/2024-N-SUMHSS-Annual-Detailed-Tables.pdf	N-SUMHSS 2024 annual detailed tables (published state tables, for verification)
+2026-10-28	https://www.samhsa.gov/data/sites/default/files/reports/rpt35313/2020_NSSATS_FINAL.pdf	N-SSATS 2020 annual report (published state tables, for verification)
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles	docs/datafiles.html: SAMHSA N-SUMHSS datafiles index page
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/2021	docs/page_2021.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/2022	docs/page_2022.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/2023	docs/page_2023.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/2024	docs/page_2024.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2000	docs/page_n-ssats-2000.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2002	docs/page_n-ssats-2002.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2003	docs/page_n-ssats-2003.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2004	docs/page_n-ssats-2004.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2005	docs/page_n-ssats-2005.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2006	docs/page_n-ssats-2006.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2007	docs/page_n-ssats-2007.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2008	docs/page_n-ssats-2008.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2009	docs/page_n-ssats-2009.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2010	docs/page_n-ssats-2010.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2011	docs/page_n-ssats-2011.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2012	docs/page_n-ssats-2012.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2013	docs/page_n-ssats-2013.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2014	docs/page_n-ssats-2014.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2015	docs/page_n-ssats-2015.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2016	docs/page_n-ssats-2016.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2017	docs/page_n-ssats-2017.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2018	docs/page_n-ssats-2018.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2019	docs/page_n-ssats-2019.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2020	docs/page_n-ssats-2020.html: year page listing PUF files
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles/n-ssats-2001	docs/page_n-ssats-2001.html: HTTP 404 (no 2001 survey page)
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/annual-releases	docs/annual-releases.html: annual releases index
+2026-10-28	https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/annual-releases/2020	docs/ar2020.html: HTTP 404
+2026-10-28	https://www.samhsa.gov/data/report/national-survey-substance-abuse-treatment-services-n-ssats-2020-data-substance-abuse	docs/rpt2020.html: N-SSATS 2020 report landing page
