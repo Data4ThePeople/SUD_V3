@@ -517,6 +517,26 @@ NSDUH,SUD count (thousands),2019,20331.0,20331.0,0.0,0,5,pass
 NSDUH,SUD count (thousands),2022,47755.0,47753.0,2.0,0,5,pass
 NSDUH,SUD count (thousands),2023,48597.0,48592.0,5.0,0,5,pass
 NSDUH,SUD count (thousands),2024,48405.0,48407.0,-2.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2001,5053.0,5054.0,-1.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2003,6975.0,6975.0,0.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2004,7069.0,7066.0,3.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2005,7066.0,7065.0,1.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2006,6929.0,6929.0,0.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2007,6944.0,6945.0,-1.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2008,6938.0,6939.0,-1.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2009,7063.0,7063.0,0.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2010,7128.0,7129.0,-1.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2011,6832.0,6837.0,-5.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2012,6919.0,6921.0,-2.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2013,7080.0,7082.0,-2.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2014,6963.0,6964.0,-1.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2016,7560.0,7559.0,1.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2017,7466.0,7463.0,3.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2018,7821.0,7819.0,2.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2019,8203.0,8204.0,-1.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2022,25847.0,25848.0,-1.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2023,27189.0,27191.0,-2.0,0,5,pass
+NSDUH,drug use disorder count (thousands),2024,27669.0,27668.0,1.0,0,5,pass
 WONDER,alcohol deaths,2001,20114.0,,,0,0,no national figure
 WONDER,alcohol population,2001,284968955.0,,,0,0,no national figure
 WONDER,alcohol deaths,2002,20218.0,,,0,0,no national figure

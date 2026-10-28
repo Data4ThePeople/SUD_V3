@@ -12,7 +12,8 @@
 - facility counts come from the N-SSATS / N-SUMHSS clean file, which `check_nsumhss.py`
   ties to SAMHSA's published tables.
 
-**Result (OEWS workers, 2026-10-28): 14,093 values checked, 0 mismatches.** Every metric
+**Result (OEWS workers, drug-only deaths and drug use disorder, 2026-10-28): 22,829 values
+checked, 0 mismatches.** Every metric
 array has 24 years, and all 52 geographies are present.
 
 `scripts/validate_sums.py` checks that the states add up to the national figure:

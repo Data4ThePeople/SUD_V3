@@ -94,6 +94,14 @@ for r in csv.DictReader(open(ROOT / "data/clean/nsduh_sud.csv")):
                     ("sud_count", "count_thousands", 1000)):
         cmp(m, key, y, float(r[c]) * k, tol=1e-4)
 
+# --- drug use disorder (clean NSDUH drug file; build_nsduh_drug.py ties it to SAMHSA's tables) ---
+for r in csv.DictReader(open(ROOT / "data/clean/nsduh_drug.csv")):
+    key, y = NAME_TO_KEY[r["state"]], int(r["end_year"])
+    for m, c, k in (("sud_drug_pct", "pct", 1), ("sud_drug_lo", "pct_lo", 1), ("sud_drug_hi", "pct_hi", 1),
+                    ("sud_drug_count", "count_thousands", 1000), ("sud_drug_count_lo", "count_lo", 1000),
+                    ("sud_drug_count_hi", "count_hi", 1000)):
+        cmp(m, key, y, float(r[c]) * k, tol=1e-4)
+
 # --- facilities (clean N-SSATS / N-SUMHSS) ---
 fac = {}
 for r in csv.DictReader(open(ROOT / "data/clean/nsumhss_outpatient.csv")):

@@ -339,6 +339,28 @@ residents of institutional group quarters, such as jails and hospitals." Respons
 Substance Abuse and Mental Health Services Administration, National Survey on
 Drug Use and Health, state small area estimates.
 
+### Drug use disorder (the page's "Drug only" view)
+
+`scripts/build_nsduh_drug.py` writes `data/clean/nsduh_drug.csv` from SAMHSA's
+state SAE SAS datasets, ages 12+, for the same 20 windows as any SUD:
+
+| Windows | SAMHSA outcome | Measure |
+|---|---|---|
+| 2000-2001 to 2013-2014 | ABODILL | Illicit drug dependence or abuse (DSM-IV) |
+| 2015-2016 to 2018-2019 | UDPYILL | Illicit drug use disorder (DSM-IV) |
+| 2021-2022 to 2023-2024 | UD5ILANY | Drug use disorder (DSM-5) |
+
+- For 2010-2011, the "(published)" estimates are used, the same as for any SUD.
+- The script checks every window that has a published Excel table: percents to
+  2 decimals and counts exactly. There are 10 such windows (2011-2012 counts
+  only), with 0 differences.
+- State counts sum to the national count within ±5 thousand in all 20 windows
+  (`validate_sums.py`).
+- People can have both a drug and an alcohol disorder. The drug estimate
+  includes people who also have an alcohol disorder. Drug plus alcohol is more
+  than any SUD, so nothing is added or subtracted.
+- People per Worker always uses any SUD.
+
 ## N-SSATS (2000-2020) / N-SUMHSS (2021-2024) (SAMHSA)
 
 **What it is.** An annual survey of every known substance use treatment

@@ -58,7 +58,7 @@ input[type=range]{flex:1;accent-color:var(--work)}
 .trend h3{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--muted);font-weight:400;margin:6px 0 4px;text-transform:uppercase}
 #trend{width:100%;height:280px;display:block}
 .ttog{display:flex;gap:18px;flex-wrap:wrap;margin-top:6px}
-.seg{display:inline-flex;border:1px solid var(--line2);border-radius:3px;overflow:hidden}.seg button{font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:5px 10px;background:transparent;border:0;color:var(--muted);cursor:pointer}.seg button[aria-pressed=true]{background:var(--death);color:#111}
+.seg{display:inline-flex;border:1px solid var(--line2);border-radius:3px;overflow:hidden}.seg button{font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:5px 10px;background:transparent;border:0;color:var(--muted);cursor:pointer}.seg button[aria-pressed=true]{background:var(--c);color:#111}
 #dswitch-t{margin:2px 0 6px}
 .ttog button{background:none;border:0;cursor:pointer;font-family:var(--mono);font-size:12.5px;color:var(--muted);padding:4px 0;display:flex;align-items:center;gap:7px}
 .ttog button i{display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--c);opacity:.45}
@@ -120,7 +120,7 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 </header>
 
 <section class="banner" aria-label="National totals">
-  <div><div class="lab">Est. people with SUD</div><div class="big" id="b-sud" style="color:var(--sud)"></div><div class="note" id="b-sud-n"></div></div>
+  <div><div class="lab" id="b-sud-l">Est. people with SUD</div><div class="big" id="b-sud" style="color:var(--sud)"></div><div class="note" id="b-sud-n"></div></div>
   <div><div class="lab">Treatment workers</div><div class="big" id="b-work" style="color:var(--work)"></div><div class="note" id="b-work-n"></div></div>
   <div><div class="lab" id="b-death-l">Overdose &amp; alcohol deaths</div><div class="big" id="b-death" style="color:var(--death)"></div><div class="note" id="b-death-n"></div></div>
 </section>
@@ -214,9 +214,11 @@ const RAMPS = {
   death: ["#fde4e3", "#f7b3b1", "#ee8380", "#dd5553", "#b83536", "#8a2124"],
 };
 const METRICS = {
-  sud:   {key: "sud_pct", short: "SUD %", label: "SUD prevalence (% of people 12 and older)", c: "--sud",
+  sud:   {get key() { return S.drugOnly ? "sud_drug_pct" : "sud_pct"; }, short: "SUD %", c: "--sud",
+          get label() { return S.drugOnly ? "Drug use disorder prevalence (% of people 12 and older)" : "SUD prevalence (% of people 12 and older)"; },
           dom: y => dsm5(y) ? [10, 32] : [4, 14], fmt: v => v.toFixed(1) + "%",
-          ends: ["smaller share of residents with SUD", "larger share of residents with SUD"]},
+          get ends() { return S.drugOnly ? ["smaller share of residents with a drug use disorder", "larger share of residents with a drug use disorder"]
+                                         : ["smaller share of residents with SUD", "larger share of residents with SUD"]; }},
   estab: {key: "estabs_per100k", short: "ESTABS / 100K", label: "Outpatient SUD treatment facilities per 100,000 residents", c: "--estab",
           dom: () => [0, 12], fmt: v => v.toFixed(1),
           ends: ["fewer facilities per resident", "more facilities per resident"],
@@ -318,9 +320,11 @@ function renderMap() {
 // ---------- banner ----------
 function renderBanner() {
   const us = D.geo.US, y = S.year;
-  const sud = val(us, "sud_count", y), w = val(us, "workers", y), d = val(us, "deaths", y);
+  const sud = val(us, S.drugOnly ? "sud_drug_count" : "sud_count", y), w = val(us, "workers", y), d = val(us, "deaths", y);
+  const who = S.drugOnly ? "a drug use disorder" : "SUD";
+  document.getElementById("b-sud-l").textContent = "Est. people with " + who;
   document.getElementById("b-sud").textContent = sud == null ? "No estimate" : fmtM(sud);
-  document.getElementById("b-sud-n").textContent = sud == null ? "SAMHSA published no state estimates ending in " + y : "people 12 and older with SUD · " + y + (dsm5(y) ? " · DSM-5 basis" : "");
+  document.getElementById("b-sud-n").textContent = sud == null ? "SAMHSA published no state estimates ending in " + y : "people 12 and older with " + who + " · " + y + (dsm5(y) ? " · DSM-5 basis" : "");
   const wf = val(us, "workers_flag", y) === "floor";
   document.getElementById("b-work").textContent = w == null ? "No estimate" : (wf ? "≥ " : "") + fmtInt(w);
   document.getElementById("b-work-n").textContent = VV.bannerNote + (wf ? " · some cells withheld" : "");
@@ -329,9 +333,9 @@ function renderBanner() {
   document.getElementById("b-death-n").textContent = val(us, METRICS.death.key, y).toFixed(1) + " per 100K · crude rate";
 }
 
-// ---------- drug + alcohol / drug only switch (death map, card, banner, ranking, trend) ----------
-function deathSwitch() {
-  return '<span class="seg" role="group" aria-label="Deaths counted">' +
+// ---------- drug + alcohol / drug only switch (SUD and death maps, cards, banner, ranking, trend) ----------
+function drugSwitch(m) {
+  return '<span class="seg" role="group" aria-label="Substances counted" style="--c:var(--' + m + ')">' +
     [[false, "Drug + alcohol"], [true, "Drug only"]].map(([v, l]) =>
       '<button data-d="' + (v ? 1 : 0) + '" aria-pressed="' + (S.drugOnly === v) + '">' + l + '</button>').join("") + '</span>';
 }
@@ -366,7 +370,7 @@ function renderLegend() {
     '<span class="ends"><span>← ' + M.ends[0] + '</span><span>' + M.ends[1] + ' →</span></span></span>' +
     '<span class="note"><span class="sw" style="background:' + css("--nodata") + '"></span>no data</span>';
   if (m === "gap" && VV.hatchLegend) h += '<span class="note"><svg class="sw" width="14" height="14"><rect width="14" height="14" fill="url(#hatchL)"/></svg>' + VV.hatchLegend + '</span>';
-  if (m === "death") h += deathSwitch();
+  if (m === "death" || m === "sud") h += drugSwitch(m);
   if (M.reads) h += '<span class="reads">' + M.reads + '</span>';
   const L = document.getElementById("legend"); L.innerHTML = h; wireSwitch(L);
   if (m === "gap" && VV.hatchLegend) L.querySelector("svg").innerHTML = '<defs><pattern id="hatchL" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="' + css("--nodata") + '"/><line x1="0" y1="0" x2="0" y2="5" stroke="#6a7280" stroke-width="2"/></pattern></defs><rect width="14" height="14" fill="url(#hatchL)"/>';
@@ -386,7 +390,7 @@ function renderCallout() {
   const y = S.year, m = S.metric, p = [];
   if (m === "sud" || m === "gap") {
     if (dsm5(y)) { const us = D.geo.US;
-      p.push("<b>Survey redesign.</b> NSDUH moved to DSM-5 criteria and to web plus in-person interviews. The national estimate was " + val(us, "sud_pct", 2019).toFixed(1) + "% for 2018-2019 and " + val(us, "sud_pct", 2022).toFixed(1) + "% for 2021-2022. SAMHSA says estimates from 2021 on are not comparable with 2020 and earlier, so this jump should not be read as a change in how many people have a disorder. SAMHSA withdrew the 2019-2020 state estimates and published none for 2020-2021."); }
+      p.push("<b>Survey redesign.</b> NSDUH moved to DSM-5 criteria and to web plus in-person interviews. The national estimate was " + val(us, METRICS.sud.key, 2019).toFixed(1) + "% for 2018-2019 and " + val(us, METRICS.sud.key, 2022).toFixed(1) + "% for 2021-2022. SAMHSA says estimates from 2021 on are not comparable with 2020 and earlier, so this jump should not be read as a change in how many people have a disorder. SAMHSA withdrew the 2019-2020 state estimates and published none for 2020-2021."); }
     else p.push("<b>How years are assigned.</b> SAMHSA publishes state estimates for two-year windows. Each window is shown at its second year (2023-2024 is shown as 2024). Years with no window ending in them are left blank.");
   }
   if (m === "gap") {
@@ -394,6 +398,8 @@ function renderCallout() {
     if (val(D.geo.US, "sud_count", y) == null) p.push("<b>No " + GAP.name + " figures for " + y + ".</b> SAMHSA published no state SUD estimates for this year, so the ratio cannot be computed.");
     else if (n) p.push(VV.hatchCallout(n));
   }
+  if (m === "sud" && S.drugOnly) p.push("<b>What is counted.</b> SAMHSA's estimate of people with a drug use disorder in the past year. Some of these people also have an alcohol use disorder. People who have only an alcohol use disorder are left out. Because people can have both, the drug and alcohol estimates add up to more than the total for any substance use disorder. SAMHSA's measure was illicit drug dependence or abuse through 2013-2014, illicit drug use disorder from 2015-2016 to 2018-2019, and drug use disorder (DSM-5) from 2021-2022.");
+  if (m === "gap" && S.drugOnly) p.push("<b>" + GAP.name + " counts every substance use disorder.</b> It uses the total for drug and alcohol disorders, whichever button is selected, because the counselors in the worker count treat both.");
   if (m === "estab") p.push("<b>What counts as a facility.</b> A site that tells SAMHSA it offers outpatient substance use treatment, in any ownership. Facilities that did not respond to the survey are not counted: 3% to 11% of eligible facilities from 2000 to 2020, and 10% to 23% from 2021 to 2024.");
   if (m === "death") {
     const nc = y === 2023 ? " North Carolina's 2023 count is short: CDC says over 900 overdose deaths were recoded after the file closed." : "";
@@ -414,18 +420,19 @@ function renderPanel() {
   document.getElementById("p-sub").innerHTML = y + (k === "US" ? " · national totals · hover or click a state" :
     (S.sel === k ? ' · pinned <a id="unpin">show United States</a>' : " · click to pin"));
   const up = document.getElementById("unpin"); if (up) up.onclick = () => { S.sel = null; render(); };
-  const sud = val(g, "sud_pct", y), lo = val(g, "sud_lo", y), hi = val(g, "sud_hi", y);
+  const dp = S.drugOnly ? "sud_drug" : "sud";
+  const sud = val(g, dp + "_pct", y), lo = val(g, dp + "_lo", y), hi = val(g, dp + "_hi", y);
   const est = val(g, "estabs", y), e100 = val(g, "estabs_per100k", y);
   const gap = val(g, "gap", y), flag = val(g, "workers_flag", y), floor = !!flag;
-  const cnt = val(g, "sud_count", y), clo = val(g, "sud_count_lo", y), chi = val(g, "sud_count_hi", y);
+  const cnt = val(g, dp + "_count", y), clo = val(g, dp + "_count_lo", y), chi = val(g, dp + "_count_hi", y);
   const wk = val(g, "workers", y), wfloor = flag === "floor";
   const d = val(g, "deaths", y), dr = val(g, "death_rate", y), dd = val(g, "deaths_drug", y), da = val(g, "deaths_alcohol", y);
   const na = '<span style="color:var(--muted)">no data</span>';
   const cards = [
-    ["SUD prevalence", "--sud", sud == null ? na : sud.toFixed(1) + "%", sud == null ? "no estimate for " + y : "95% interval " + lo.toFixed(1) + " to " + hi.toFixed(1) + "%"],
+    [S.drugOnly ? "Drug disorder %" : "SUD prevalence", "--sud", sud == null ? na : sud.toFixed(1) + "%", sud == null ? "no estimate for " + y : "95% interval " + lo.toFixed(1) + " to " + hi.toFixed(1) + "%"],
     ["Treatment estabs", "--estab", est == null ? na : fmtInt(est), est == null ? "no survey in " + y : e100.toFixed(1) + " per 100K residents"],
-    [GAP.short, "--gap", gap == null ? na : (floor ? "≤ " : "") + Math.round(gap), gap == null ? "needs both an SUD estimate and a worker count" : GAP.unit + (floor ? " (a maximum; see hatching note)" : "")],
-    ["SUD count", "--sud", cnt == null ? na : fmtM(cnt), cnt == null ? "no estimate for " + y : "95% interval " + fmtM(clo) + " to " + fmtM(chi)],
+    [GAP.short, "--gap", gap == null ? na : (floor ? "≤ " : "") + Math.round(gap), gap == null ? "needs both an SUD estimate and a worker count" : S.drugOnly ? "people with any SUD, drug or alcohol, per treatment worker" : GAP.unit + (floor ? " (a maximum; see hatching note)" : "")],
+    [S.drugOnly ? "Drug disorder count" : "SUD count", "--sud", cnt == null ? na : fmtM(cnt), cnt == null ? "no estimate for " + y : "95% interval " + fmtM(clo) + " to " + fmtM(chi)],
     ["Treatment workers", "--work", wk == null ? na : (wfloor ? "≥ " : "") + fmtInt(wk), wk == null ? "not published for " + y : VV.cardNote(g, y)],
     S.drugOnly
       ? ["Drug overdose deaths", "--death", dd == null ? na : fmtInt(dd), dd == null ? "" : val(g, "death_rate_drug", y) == null ? NO_RATE : val(g, "death_rate_drug", y).toFixed(1) + " per 100K"]
@@ -470,8 +477,8 @@ function niceMax(v) { const p = Math.pow(10, Math.floor(Math.log10(v))); return 
 function renderTrend() {
   const g = D.geo[geoKey()], t = S.trend, T = TRENDS[t], color = css(T.c || METRICS[T.m].c);
   ttog.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.t === t)));
-  document.getElementById("trend-title").textContent = T.label + (t === "work" ? VV.trendSuffix : t === "death" && S.drugOnly ? " (drug only)" : "") + " · " + g.name + " · 2001-2024";
-  const ds = document.getElementById("dswitch-t"); ds.innerHTML = t === "death" ? deathSwitch() : ""; wireSwitch(ds);
+  document.getElementById("trend-title").textContent = T.label + (t === "work" ? VV.trendSuffix : (t === "death" || t === "sud") && S.drugOnly ? " (drug only)" : "") + " · " + g.name + " · 2001-2024";
+  const ds = document.getElementById("dswitch-t"); ds.innerHTML = t === "death" || t === "sud" ? drugSwitch(t) : ""; wireSwitch(ds);
   const W = trendSvg.clientWidth || 800, H = 280, m = {l: 58, r: 20, t: 26, b: 30};
   const pts = trendSeries(g), vals = pts.filter(p => p.v != null).map(p => p.v);
   const top = vals.length ? niceMax(Math.max(...vals) * 1.08) : 1;
@@ -525,7 +532,7 @@ new ResizeObserver(() => renderTrend()).observe(trendSvg);
 document.getElementById("notes").innerHTML = `
 <h3>Sources</h3>
 <ul>
-<li><b>Demand:</b> SAMHSA, National Survey on Drug Use and Health (NSDUH), state model-based estimates of people 12 and older with a past-year substance use disorder, two-year windows 2000-2001 through 2023-2024. Counts and 95% intervals are SAMHSA's own figures, from its published tables and, for 2000-2001 through 2008-2009, its small area estimation dataset.</li>
+<li><b>Demand:</b> SAMHSA, National Survey on Drug Use and Health (NSDUH), state model-based estimates of people 12 and older with a past-year substance use disorder, two-year windows 2000-2001 through 2023-2024. Counts and 95% intervals are SAMHSA's own figures, from its published tables and, for 2000-2001 through 2008-2009, its small area estimation dataset. The drug-only view uses SAMHSA's state estimates of illicit drug dependence or abuse (through 2013-2014), illicit drug use disorder (2015-2016 to 2018-2019) and drug use disorder (2021-2022 on).</li>
 <li><b>Treatment facilities:</b> SAMHSA, National Survey of Substance Abuse Treatment Services (N-SSATS, 2000-2020) and National Substance Use and Mental Health Services Survey (N-SUMHSS, 2021-2024). Facilities that offer outpatient substance use treatment, all ownership types.</li>
 <li><b>Treatment workers:</b> ${VV.source}</li>
 <li><b>Deaths and population:</b> CDC WONDER, Underlying Cause of Death 1999-2020 (used for 2001-2017) and 2018-2024 Single Race (2018-2024). The two agree exactly for 2018-2020.</li>
@@ -536,6 +543,7 @@ document.getElementById("notes").innerHTML = `
 <li><b>Missing years are left blank.</b> SAMHSA published no state estimates for windows ending in 2002, 2015, 2020 or 2021, and ran no facility survey in 2001. Nothing is filled in or interpolated.</li>
 ${VV.limits.map(x => "<li>" + x + "</li>").join("")}
 <li><b>Facility counts are a floor.</b> Facilities that did not answer SAMHSA's survey are not counted. The survey merged with the mental health facility survey in 2021, and its response rate dropped that year.</li>
+<li><b>Drug and alcohol disorders overlap.</b> Many people have both, so SAMHSA's drug and alcohol estimates cannot be added together or subtracted from the total. The drug-only view shows SAMHSA's own drug estimate, not the total minus alcohol.</li>
 <li><b>NSDUH leaves out people living in institutions</b>, such as prisons, jails and hospitals, and people experiencing homelessness who are not in shelters.</li>
 <li><b>Death counts.</b> Crude rates, not age adjusted. Alcohol-induced deaths are mostly chronic causes such as alcoholic liver disease. CDC notes that North Carolina's 2023 overdose count is short by more than 900 deaths recoded after the file closed. CDC also flags unusually high counts of ill-defined causes in California (2001) and Georgia (2008-2009), and says this lowered New Jersey's 2009 count of unintentional poisonings.</li>
 <li><b>${GAP.name} is a ratio, not a caseload.</b> It divides SAMHSA's estimated count of people with SUD by the number of treatment workers. It does not show how many people seek or receive treatment. The SUD count covers a two-year window; the worker count is for the window's second year (for example, 2023-2024 people with SUD over 2024 workers).</li>
