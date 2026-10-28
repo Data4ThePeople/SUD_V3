@@ -339,24 +339,200 @@ residents of institutional group quarters, such as jails and hospitals." Respons
 Substance Abuse and Mental Health Services Administration, National Survey on
 Drug Use and Health, state small area estimates.
 
-## N-SSATS / N-SUMHSS (SAMHSA)
+## N-SSATS (2000-2020) / N-SUMHSS (2021-2024) (SAMHSA)
 
-In progress.
+**What it is.** An annual survey of every known substance use treatment
+facility. Each record is one facility, which can be a program, a clinic or a
+multi-site respondent. We count facilities that offer outpatient substance
+use care, by state.
+
+**Where it comes from.** Public-use files and codebooks,
+https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey/datafiles.
+The URLs are listed in `data/raw/nssats/PULLED.txt`. The files themselves
+are not in git because of their size. `scripts/build_nsumhss.py` builds
+`data/clean/nsumhss_outpatient.csv`.
+
+**Definition used.**
+- **Outpatient:** `CTYPE1 == 1`, "offers OUTPATIENT substance abuse services."
+  Not `CTYPEOP`: despite the name, that variable means day treatment or
+  partial hospitalization only.
+- **Which facilities count, 2021 on:** the substance-use report universe,
+  `TSU21_SU == 1` in 2021 or `TSU_SU == 1` from 2022.
+- **Which facilities count, 2000-2020:** every record in the file.
+
+**Coverage.**
+- 2000 and 2002-2024. **No survey in 2001.**
+- The reference date is the end of March, except 2000 (October 1).
+- **Response rates:** 89% to 97% through 2020; 79% in 2021, 88% in 2022, 84% in
+  2023 and 90% in 2024. The 2021-2024 rates are for substance-use facilities.
+- **Nonrespondents are not counted and nothing is imputed for them**, so every
+  count is a floor.
+- Out of scope: halfway houses that offer no treatment, solo practices the state
+  has not approved, and jail-only programs.
+- Every ownership type is included (`OWNERSHP`): private for-profit, private
+  nonprofit, state, local, tribal and federal.
+- Opioid treatment programs are flagged from 2002 on.
+- **No staff counts in any year.**
+
+**Changes over time.** In 2021 this survey merged with the mental health
+facility survey (N-MHSS). The new file covers mental-health-only facilities,
+closed facilities and nonrespondents; the substance-use flag removes them.
+
+Facilities that were on the mental health list only and said yes to both
+substance-use treatment and outpatient care are left out of SAMHSA's
+substance-use report. That was about 2,414 facilities in 2021, 1,703 in 2022,
+50 in 2023 and 38 in 2024. They are kept in a separate column so they can be
+checked.
+
+The response rate also fell in 2021. **Treat 2021 as a series break.**
+
+**Suppressed values.** None. The files are facility records.
+
+**State-to-national check.**
+- **2000-2020:** state counts match the published report tables exactly in
+  every year checked (2011, 2013, 2015, 2017, 2019, 2020).
+- **2024:** total facilities match in all 51 states. The outpatient count is
+  13,309, which is 19 below the published 13,328. Twelve states are off by 1 to
+  4. **This gap is not yet explained.**
+- The 50 states plus DC fall 26 to 72 short of the whole-file total. The
+  difference is Puerto Rico and the other territories.
+
+**Uncertainty.** Counts depend on facilities responding. SAMHSA publishes
+no error measure.
+
+**License.** Public domain. Credit: Substance Abuse and Mental Health Services
+Administration, N-SSATS and N-SUMHSS.
 
 ## OEWS (BLS)
 
-In progress.
+**What it is.** A semiannual survey of employers, estimating jobs by
+occupation and state. Each estimate pools six panels collected over three
+years. We use it as a cross-check only.
+
+**Where it comes from.** `https://www.bls.gov/oes/special-requests/`
+(`oes01st.zip`, `oesmYYst.zip`). `scripts/build_oews.py` builds
+`data/clean/oews_counselors.csv`.
+
+**Changes over time.**
+- **21-1011 (substance abuse counselors)** and **21-1014 (mental health
+  counselors)** are separate through 2016.
+- **From May 2017** they are combined into 21-1018, a code that exists only in
+  OEWS, because "the survey does not have the information needed to
+  distinguish between the occupations" (BLS, 2017 changes notice).
+- **21-1023 (mental health and substance abuse social workers)** runs in
+  every year.
+- The reference month is November in 2001-2002 and May from 2003 on.
+
+**Limits.** OEWS leaves out the self-employed. At the state level it can't
+be split by industry or ownership, so its counts include hospitals,
+residential programs, schools and prisons. BLS "does not encourage the use of
+OEWS data for time-series analysis."
+
+**Suppressed values.** `**` means the estimate is not available: 43 cells in
+2001-2020. In 11 state-code-years the occupation has no row at all.
+
+**State-to-national check.** Where nothing is withheld, state sums are within
+±40 of the national figure.
 
 ## County Business Patterns (Census)
 
-In progress.
+**What it is.** An annual count of establishments and employment by
+industry and state, for the pay period that includes March 12. It leaves out
+most government employers and the self-employed. Used only to tell a
+suppressed QCEW cell from a true zero.
+
+**Where it comes from.** `https://www2.census.gov/programs-surveys/cbp/datasets/`.
+`scripts/build_cbp.py` builds `data/clean/cbp_621420.csv`. 2024 is not yet
+published.
+
+**Suppressed values.** Establishment counts are never withheld. Employment
+is withheld in 46 state-years, all between 2001 and 2014. Data are noise
+infused from 2007; that method is under review after a Commerce order.
+
+**State-to-national check.** State establishments equal the U.S. total in
+every year.
+
+## NAICS index (Census)
+
+- **621420's index entries are the same in 2002, 2007, 2012, 2017 and 2022.**
+  They cover outpatient alcoholism, drug addiction, detox, substance abuse and
+  mental health centers and clinics, except hospitals.
+- **621420, 621330 and 621112** keep the same definitions, and every
+  concordance maps each one to itself (2002 through 2022).
+- **No edition has an index entry for methadone clinics, opioid treatment
+  programs or medication-assisted treatment.** Placing them in 621420 is an
+  inference from "drug addiction treatment centers... outpatient."
+- Residential substance abuse programs are 623220. Detox hospitals are 622210.
+- Nonresidential alcoholism counseling that is not medical treatment is
+  624190, which we leave out.
+
+Files: `data/raw/naics/`.
 
 ## CDC WONDER, Underlying Cause of Death 1999-2020 and 2018-2024 Single Race
 
-**Planned pull.** Drug overdose deaths (X40-X44, X60-X64, X85, Y10-Y14) plus
-all alcohol-induced causes (E24.4, F10, G31.2, G62.1, G72.1, I42.6, K29.2,
-K70, K85.2, K86.0, R78.0, X45, X65, Y15). Grouped by state of residence and
-year, with crude rates per 100,000. Run in Eric's browser. The WONDER API
-refuses any query grouped by state.
+**What it is.** Deaths of U.S. residents by state of residence and year,
+from death certificates. We count deaths whose underlying cause is one of:
+- **Drug overdose:** X40-X44 (unintentional), X60-X64 (suicide), X85 (assault)
+  or Y10-Y14 (undetermined intent).
+- **Alcohol-induced causes:** E24.4, F10, G31.2, G62.1, G72.1, I42.6, K29.2,
+  K70, K85.2, K86.0, R78.0, X45, X65, Y15. Most of these are chronic causes
+  such as alcoholic liver disease, not poisonings.
 
-In progress.
+Each death has one underlying cause, so the two groups never overlap. Drug
+plus alcohol equals the combined total in all 1,224 state-years.
+
+**Where it comes from.**
+- Ten exports, run by hand by Eric in the WONDER web tool on 2026-10-28:
+  combined, drug only and alcohol only by state and year, plus combined by year
+  (national), plus combined by state, year and cause, each from both
+  databases.
+- The WONDER API refuses any query grouped by state.
+- Files are in `data/raw/wonder/`, with WONDER's query settings and notes at
+  the bottom of each. `scripts/clean_wonder.py` builds `data/clean/wonder.csv`.
+
+**Version and vintage.**
+- **1999-2020 database:** released 2021, bridged-race population.
+- **2018-2024 Single Race database:** released 2026.
+- We use the first for 2001-2017 and the second for 2018-2024. In 2018-2020
+  the two agree exactly on deaths and population for every state; this is
+  checked on every build.
+
+**Population (the rate denominator).** WONDER's own:
+- 2001-2009: intercensal estimates.
+- 2010: the April 1 census count.
+- 2011-2020: postcensal estimates, a new vintage each year.
+- 2021-2024: single-race estimates built on the 2020 Blended Base.
+
+Vintages change from year to year, so the denominators are not one
+consistent series.
+
+**Rates.** Crude rate per 100,000, as published, with no age adjustment.
+States with older populations have higher alcohol-induced rates partly for
+that reason.
+
+**Suppressed values.** WONDER suppresses counts of 1 to 9 and flags rates
+based on 20 or fewer deaths as unreliable.
+- **None** of the combined, drug-only or alcohol-only state-year cells are
+  suppressed.
+- **Six drug-only rates** (North Dakota in 2001, 2002, 2004, 2005, 2006 and
+  2011) are flagged unreliable. Those rates are left blank, as WONDER leaves
+  them.
+- In the by-cause files many single-cause cells are suppressed (for example
+  202 state-years for X85). We use those files for nothing that needs a total.
+  We never subtract to recover a suppressed value.
+
+**State-to-national check.** The 51 states equal the national figure exactly
+for deaths and population in all 24 years.
+
+**Known quirks (CDC's own notes).**
+- **North Carolina 2023:** more than 900 death certificates were recoded to
+  overdose after the file closed. CDC puts the real 2023 overdose count above
+  4,400 and says the final file will not be updated.
+- **R99 ("ill-defined causes") excess** in California (2000-2001), Georgia
+  (2008-2009) and New Jersey (2009) lowers counts in other codes. CDC names
+  unintentional poisoning for New Jersey.
+- 125 deaths in 2014 had their underlying cause revised in 2017.
+
+**License.** Public domain. Citation: Centers for Disease Control and
+Prevention, National Center for Health Statistics, National Vital Statistics
+System, Mortality 1999-2020 and 2018-2024 on CDC WONDER Online Database.

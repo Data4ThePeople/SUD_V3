@@ -27,7 +27,7 @@ def tidy(df):
     df = df[df.Notes.isna()].copy()
     out = pd.DataFrame({
         "year": df.Year.astype(int),
-        "state": df.State,
+        "state": df.State if "State" in df else "United States",
         "deaths": pd.to_numeric(df.Deaths, errors="coerce"),
         "population": pd.to_numeric(df.Population, errors="coerce"),
         "crude_rate": pd.to_numeric(df["Crude Rate"], errors="coerce"),
@@ -36,7 +36,7 @@ def tidy(df):
         "suppressed": df.Deaths.eq("Suppressed"),
         "unreliable": df["Crude Rate"].eq("Unreliable"),
     })
-    if "State" in df and not set(out.state) <= set(BY_NAME) | {None}:
+    if "State" in df and not set(out.state) <= set(BY_NAME):
         raise SystemExit(f"unexpected state names: {set(out.state) - set(BY_NAME)}")
     return out
 
@@ -47,8 +47,7 @@ def stitch(stem):
     if not old.exists() or not new.exists():
         return None
     a, b = tidy(load(old)), tidy(load(new))
-    key = ["state", "year"] if a.state.notna().all() else ["year"]
-    both = a.merge(b, on=key, suffixes=("_a", "_b"))
+    both = a.merge(b, on=["state", "year"], suffixes=("_a", "_b"))
     both = both[both.year.between(2018, 2020)]
     bad = both[(both.deaths_a != both.deaths_b) & both.deaths_a.notna()]
     if len(bad):
@@ -66,7 +65,7 @@ def main():
         frames.append(d.assign(series=series))
     nat = stitch("year")
     if nat is not None:
-        frames.append(nat.assign(state="United States", series="all"))
+        frames.append(nat.assign(series="all"))
     out = pd.concat(frames, ignore_index=True)
     if out.duplicated(["series", "state", "year"]).any():
         raise SystemExit("duplicate series/state/year keys in WONDER")

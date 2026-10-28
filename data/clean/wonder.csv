@@ -1,4 +1,1228 @@
 year,state,deaths,population,crude_rate,rate_lo,rate_hi,suppressed,unreliable,series
+2001,Alabama,236,4467634,5.3,4.6,6.0,False,False,alcohol
+2002,Alabama,212,4480089,4.7,4.1,5.4,False,False,alcohol
+2003,Alabama,218,4503491,4.8,4.2,5.5,False,False,alcohol
+2004,Alabama,250,4530729,5.5,4.8,6.2,False,False,alcohol
+2005,Alabama,255,4569805,5.6,4.9,6.3,False,False,alcohol
+2006,Alabama,249,4628981,5.4,4.7,6.0,False,False,alcohol
+2007,Alabama,254,4672840,5.4,4.8,6.1,False,False,alcohol
+2008,Alabama,250,4718206,5.3,4.6,6.0,False,False,alcohol
+2009,Alabama,238,4757938,5.0,4.4,5.6,False,False,alcohol
+2010,Alabama,267,4779736,5.6,4.9,6.3,False,False,alcohol
+2011,Alabama,249,4802740,5.2,4.5,5.8,False,False,alcohol
+2012,Alabama,280,4822023,5.8,5.1,6.5,False,False,alcohol
+2013,Alabama,259,4833722,5.4,4.7,6.0,False,False,alcohol
+2014,Alabama,310,4849377,6.4,5.7,7.1,False,False,alcohol
+2015,Alabama,316,4858979,6.5,5.8,7.2,False,False,alcohol
+2016,Alabama,395,4863300,8.1,7.3,8.9,False,False,alcohol
+2017,Alabama,387,4874747,7.9,7.1,8.7,False,False,alcohol
+2018,Alabama,413,4887871,8.4,7.6,9.3,False,False,alcohol
+2019,Alabama,425,4903185,8.7,7.8,9.5,False,False,alcohol
+2020,Alabama,569,4921532,11.6,10.6,12.5,False,False,alcohol
+2021,Alabama,639,5039877,12.7,11.7,13.7,False,False,alcohol
+2022,Alabama,502,5074296,9.9,9.0,10.8,False,False,alcohol
+2023,Alabama,529,5108468,10.4,9.5,11.2,False,False,alcohol
+2024,Alabama,505,5157699,9.8,8.9,10.6,False,False,alcohol
+2001,Alaska,120,633714,18.9,15.5,22.3,False,False,alcohol
+2002,Alaska,125,642337,19.5,16.0,22.9,False,False,alcohol
+2003,Alaska,122,648414,18.8,15.5,22.2,False,False,alcohol
+2004,Alaska,104,659286,15.8,12.7,18.8,False,False,alcohol
+2005,Alaska,121,666946,18.1,14.9,21.4,False,False,alcohol
+2006,Alaska,143,675302,21.2,17.7,24.6,False,False,alcohol
+2007,Alaska,144,680300,21.2,17.7,24.6,False,False,alcohol
+2008,Alaska,147,687455,21.4,17.9,24.8,False,False,alcohol
+2009,Alaska,149,698895,21.3,17.9,24.7,False,False,alcohol
+2010,Alaska,122,710231,17.2,14.1,20.2,False,False,alcohol
+2011,Alaska,131,722718,18.1,15.0,21.2,False,False,alcohol
+2012,Alaska,122,731449,16.7,13.7,19.6,False,False,alcohol
+2013,Alaska,126,735132,17.1,14.1,20.1,False,False,alcohol
+2014,Alaska,139,736732,18.9,15.7,22.0,False,False,alcohol
+2015,Alaska,161,738432,21.8,18.4,25.2,False,False,alcohol
+2016,Alaska,183,741894,24.7,21.1,28.2,False,False,alcohol
+2017,Alaska,159,739795,21.5,18.2,24.8,False,False,alcohol
+2018,Alaska,203,737438,27.5,23.7,31.3,False,False,alcohol
+2019,Alaska,185,731545,25.3,21.6,28.9,False,False,alcohol
+2020,Alaska,242,731158,33.1,28.9,37.3,False,False,alcohol
+2021,Alaska,315,732673,43.0,38.2,47.7,False,False,alcohol
+2022,Alaska,286,733583,39.0,34.5,43.5,False,False,alcohol
+2023,Alaska,260,733406,35.5,31.1,39.8,False,False,alcohol
+2024,Alaska,206,740133,27.8,24.0,31.6,False,False,alcohol
+2001,Arizona,450,5273477,8.5,7.7,9.3,False,False,alcohol
+2002,Arizona,515,5396255,9.5,8.7,10.4,False,False,alcohol
+2003,Arizona,572,5510364,10.4,9.5,11.2,False,False,alcohol
+2004,Arizona,590,5652404,10.4,9.6,11.3,False,False,alcohol
+2005,Arizona,667,5839077,11.4,10.6,12.3,False,False,alcohol
+2006,Arizona,664,6029141,11.0,10.2,11.9,False,False,alcohol
+2007,Arizona,747,6167681,12.1,11.2,13.0,False,False,alcohol
+2008,Arizona,784,6280362,12.5,11.6,13.4,False,False,alcohol
+2009,Arizona,804,6343154,12.7,11.8,13.6,False,False,alcohol
+2010,Arizona,987,6392017,15.4,14.5,16.4,False,False,alcohol
+2011,Arizona,1008,6482505,15.5,14.6,16.5,False,False,alcohol
+2012,Arizona,1056,6553255,16.1,15.1,17.1,False,False,alcohol
+2013,Arizona,1138,6626624,17.2,16.2,18.2,False,False,alcohol
+2014,Arizona,1170,6731484,17.4,16.4,18.4,False,False,alcohol
+2015,Arizona,1277,6828065,18.7,17.7,19.7,False,False,alcohol
+2016,Arizona,1327,6931071,19.1,18.1,20.2,False,False,alcohol
+2017,Arizona,1228,7016270,17.5,16.5,18.5,False,False,alcohol
+2018,Arizona,1194,7171646,16.6,15.7,17.6,False,False,alcohol
+2019,Arizona,1286,7278717,17.7,16.7,18.6,False,False,alcohol
+2020,Arizona,1578,7421401,21.3,20.2,22.3,False,False,alcohol
+2021,Arizona,1891,7276316,26.0,24.8,27.2,False,False,alcohol
+2022,Arizona,1623,7359197,22.1,21.0,23.1,False,False,alcohol
+2023,Arizona,1483,7431344,20.0,18.9,21.0,False,False,alcohol
+2024,Arizona,1609,7582384,21.2,20.2,22.3,False,False,alcohol
+2001,Arkansas,161,2691571,6.0,5.1,6.9,False,False,alcohol
+2002,Arkansas,136,2705927,5.0,4.2,5.9,False,False,alcohol
+2003,Arkansas,138,2724816,5.1,4.2,5.9,False,False,alcohol
+2004,Arkansas,131,2749686,4.8,3.9,5.6,False,False,alcohol
+2005,Arkansas,146,2781097,5.2,4.4,6.1,False,False,alcohol
+2006,Arkansas,171,2821761,6.1,5.2,7.0,False,False,alcohol
+2007,Arkansas,173,2848650,6.1,5.2,7.0,False,False,alcohol
+2008,Arkansas,200,2874554,7.0,6.0,7.9,False,False,alcohol
+2009,Arkansas,173,2896843,6.0,5.1,6.9,False,False,alcohol
+2010,Arkansas,179,2915918,6.1,5.2,7.0,False,False,alcohol
+2011,Arkansas,176,2937979,6.0,5.1,6.9,False,False,alcohol
+2012,Arkansas,175,2949131,5.9,5.1,6.8,False,False,alcohol
+2013,Arkansas,189,2959373,6.4,5.5,7.3,False,False,alcohol
+2014,Arkansas,209,2966369,7.0,6.1,8.0,False,False,alcohol
+2015,Arkansas,242,2978204,8.1,7.1,9.1,False,False,alcohol
+2016,Arkansas,286,2988248,9.6,8.5,10.7,False,False,alcohol
+2017,Arkansas,261,3004279,8.7,7.6,9.7,False,False,alcohol
+2018,Arkansas,329,3013825,10.9,9.7,12.1,False,False,alcohol
+2019,Arkansas,342,3017804,11.3,10.1,12.5,False,False,alcohol
+2020,Arkansas,382,3030522,12.6,11.3,13.9,False,False,alcohol
+2021,Arkansas,413,3025891,13.6,12.3,15.0,False,False,alcohol
+2022,Arkansas,386,3045637,12.7,11.4,13.9,False,False,alcohol
+2023,Arkansas,394,3067732,12.8,11.6,14.1,False,False,alcohol
+2024,Arkansas,368,3088354,11.9,10.7,13.1,False,False,alcohol
+2001,California,3399,34479458,9.9,9.5,10.2,False,False,alcohol
+2002,California,3542,34871843,10.2,9.8,10.5,False,False,alcohol
+2003,California,3752,35253159,10.6,10.3,11.0,False,False,alcohol
+2004,California,3703,35574576,10.4,10.1,10.7,False,False,alcohol
+2005,California,3932,35827943,11.0,10.6,11.3,False,False,alcohol
+2006,California,3932,36021202,10.9,10.6,11.3,False,False,alcohol
+2007,California,4027,36250311,11.1,10.8,11.5,False,False,alcohol
+2008,California,4167,36604337,11.4,11.0,11.7,False,False,alcohol
+2009,California,4245,36961229,11.5,11.1,11.8,False,False,alcohol
+2010,California,4292,37253956,11.5,11.2,11.9,False,False,alcohol
+2011,California,4489,37691912,11.9,11.6,12.3,False,False,alcohol
+2012,California,4422,38041430,11.6,11.3,12.0,False,False,alcohol
+2013,California,4560,38332521,11.9,11.6,12.2,False,False,alcohol
+2014,California,4746,38802500,12.2,11.9,12.6,False,False,alcohol
+2015,California,5150,39144818,13.2,12.8,13.5,False,False,alcohol
+2016,California,5055,39250017,12.9,12.5,13.2,False,False,alcohol
+2017,California,5096,39536653,12.9,12.5,13.2,False,False,alcohol
+2018,California,5179,39557045,13.1,12.7,13.4,False,False,alcohol
+2019,California,5345,39512223,13.5,13.2,13.9,False,False,alcohol
+2020,California,6193,39368078,15.7,15.3,16.1,False,False,alcohol
+2021,California,7290,39237836,18.6,18.2,19.0,False,False,alcohol
+2022,California,6708,39029342,17.2,16.8,17.6,False,False,alcohol
+2023,California,6410,38965193,16.5,16.0,16.9,False,False,alcohol
+2024,California,6150,39431263,15.6,15.2,16.0,False,False,alcohol
+2001,Colorado,511,4425687,11.5,10.5,12.5,False,False,alcohol
+2002,Colorado,516,4490406,11.5,10.5,12.5,False,False,alcohol
+2003,Colorado,517,4528732,11.4,10.4,12.4,False,False,alcohol
+2004,Colorado,498,4575013,10.9,9.9,11.8,False,False,alcohol
+2005,Colorado,500,4631888,10.8,9.8,11.7,False,False,alcohol
+2006,Colorado,526,4720423,11.1,10.2,12.1,False,False,alcohol
+2007,Colorado,610,4803868,12.7,11.7,13.7,False,False,alcohol
+2008,Colorado,676,4889730,13.8,12.8,14.9,False,False,alcohol
+2009,Colorado,686,4972195,13.8,12.8,14.8,False,False,alcohol
+2010,Colorado,733,5029196,14.6,13.5,15.6,False,False,alcohol
+2011,Colorado,720,5116796,14.1,13.0,15.1,False,False,alcohol
+2012,Colorado,749,5187582,14.4,13.4,15.5,False,False,alcohol
+2013,Colorado,788,5268367,15.0,13.9,16.0,False,False,alcohol
+2014,Colorado,812,5355866,15.2,14.1,16.2,False,False,alcohol
+2015,Colorado,857,5456574,15.7,14.7,16.8,False,False,alcohol
+2016,Colorado,917,5540545,16.6,15.5,17.6,False,False,alcohol
+2017,Colorado,1018,5607154,18.2,17.0,19.3,False,False,alcohol
+2018,Colorado,1052,5695564,18.5,17.4,19.6,False,False,alcohol
+2019,Colorado,1198,5758736,20.8,19.6,22.0,False,False,alcohol
+2020,Colorado,1568,5807719,27.0,25.7,28.3,False,False,alcohol
+2021,Colorado,1695,5812069,29.2,27.8,30.6,False,False,alcohol
+2022,Colorado,1581,5839926,27.1,25.7,28.4,False,False,alcohol
+2023,Colorado,1557,5877610,26.5,25.2,27.8,False,False,alcohol
+2024,Colorado,1451,5957493,24.4,23.1,25.6,False,False,alcohol
+2001,Connecticut,160,3432835,4.7,3.9,5.4,False,False,alcohol
+2002,Connecticut,198,3458749,5.7,4.9,6.5,False,False,alcohol
+2003,Connecticut,184,3484336,5.3,4.5,6.0,False,False,alcohol
+2004,Connecticut,189,3496094,5.4,4.6,6.2,False,False,alcohol
+2005,Connecticut,186,3506956,5.3,4.5,6.1,False,False,alcohol
+2006,Connecticut,186,3517460,5.3,4.5,6.0,False,False,alcohol
+2007,Connecticut,214,3527270,6.1,5.3,6.9,False,False,alcohol
+2008,Connecticut,229,3545579,6.5,5.6,7.3,False,False,alcohol
+2009,Connecticut,222,3561807,6.2,5.4,7.1,False,False,alcohol
+2010,Connecticut,192,3574097,5.4,4.6,6.1,False,False,alcohol
+2011,Connecticut,188,3580709,5.3,4.5,6.0,False,False,alcohol
+2012,Connecticut,187,3590347,5.2,4.5,6.0,False,False,alcohol
+2013,Connecticut,281,3596080,7.8,6.9,8.7,False,False,alcohol
+2014,Connecticut,303,3596677,8.4,7.5,9.4,False,False,alcohol
+2015,Connecticut,341,3590886,9.5,8.5,10.5,False,False,alcohol
+2016,Connecticut,336,3576452,9.4,8.4,10.4,False,False,alcohol
+2017,Connecticut,354,3588184,9.9,8.8,10.9,False,False,alcohol
+2018,Connecticut,327,3572665,9.2,8.2,10.1,False,False,alcohol
+2019,Connecticut,409,3565287,11.5,10.4,12.6,False,False,alcohol
+2020,Connecticut,552,3557006,15.5,14.2,16.8,False,False,alcohol
+2021,Connecticut,542,3605597,15.0,13.8,16.3,False,False,alcohol
+2022,Connecticut,509,3626205,14.0,12.8,15.3,False,False,alcohol
+2023,Connecticut,479,3617176,13.2,12.1,14.4,False,False,alcohol
+2024,Connecticut,485,3675069,13.2,12.0,14.4,False,False,alcohol
+2001,Delaware,69,795699,8.7,6.7,11.0,False,False,alcohol
+2002,Delaware,76,806169,9.4,7.4,11.8,False,False,alcohol
+2003,Delaware,66,818003,8.1,6.2,10.3,False,False,alcohol
+2004,Delaware,54,830803,6.5,4.9,8.5,False,False,alcohol
+2005,Delaware,58,845150,6.9,5.2,8.9,False,False,alcohol
+2006,Delaware,58,859268,6.7,5.1,8.7,False,False,alcohol
+2007,Delaware,57,871749,6.5,5.0,8.5,False,False,alcohol
+2008,Delaware,75,883874,8.5,6.7,10.6,False,False,alcohol
+2009,Delaware,70,891730,7.8,6.1,9.9,False,False,alcohol
+2010,Delaware,74,897934,8.2,6.5,10.3,False,False,alcohol
+2011,Delaware,62,907135,6.8,5.2,8.8,False,False,alcohol
+2012,Delaware,60,917092,6.5,5.0,8.4,False,False,alcohol
+2013,Delaware,63,925749,6.8,5.2,8.7,False,False,alcohol
+2014,Delaware,77,935614,8.2,6.5,10.3,False,False,alcohol
+2015,Delaware,80,945934,8.5,6.7,10.5,False,False,alcohol
+2016,Delaware,104,952065,10.9,8.8,13.0,False,False,alcohol
+2017,Delaware,104,961939,10.8,8.7,12.9,False,False,alcohol
+2018,Delaware,88,967171,9.1,7.3,11.2,False,False,alcohol
+2019,Delaware,106,973764,10.9,8.8,13.0,False,False,alcohol
+2020,Delaware,133,986809,13.5,11.2,15.8,False,False,alcohol
+2021,Delaware,158,1003384,15.7,13.3,18.2,False,False,alcohol
+2022,Delaware,174,1018396,17.1,14.5,19.6,False,False,alcohol
+2023,Delaware,129,1031890,12.5,10.3,14.7,False,False,alcohol
+2024,Delaware,129,1051917,12.3,10.1,14.4,False,False,alcohol
+2001,District of Columbia,113,574504,19.7,16.0,23.3,False,False,alcohol
+2002,District of Columbia,117,573158,20.4,16.7,24.1,False,False,alcohol
+2003,District of Columbia,102,568502,17.9,14.5,21.4,False,False,alcohol
+2004,District of Columbia,109,567754,19.2,15.6,22.8,False,False,alcohol
+2005,District of Columbia,83,567136,14.6,11.7,18.1,False,False,alcohol
+2006,District of Columbia,82,570681,14.4,11.4,17.8,False,False,alcohol
+2007,District of Columbia,60,574404,10.4,8.0,13.4,False,False,alcohol
+2008,District of Columbia,73,580236,12.6,9.9,15.8,False,False,alcohol
+2009,District of Columbia,51,592228,8.6,6.4,11.3,False,False,alcohol
+2010,District of Columbia,87,601723,14.5,11.6,17.8,False,False,alcohol
+2011,District of Columbia,75,617996,12.1,9.5,15.2,False,False,alcohol
+2012,District of Columbia,74,632323,11.7,9.2,14.7,False,False,alcohol
+2013,District of Columbia,65,646449,10.1,7.8,12.8,False,False,alcohol
+2014,District of Columbia,66,658893,10.0,7.7,12.7,False,False,alcohol
+2015,District of Columbia,80,672228,11.9,9.4,14.8,False,False,alcohol
+2016,District of Columbia,80,681170,11.7,9.3,14.6,False,False,alcohol
+2017,District of Columbia,63,693972,9.1,7.0,11.6,False,False,alcohol
+2018,District of Columbia,77,702455,11.0,8.7,13.7,False,False,alcohol
+2019,District of Columbia,70,705749,9.9,7.7,12.5,False,False,alcohol
+2020,District of Columbia,87,712816,12.2,9.8,15.1,False,False,alcohol
+2021,District of Columbia,101,670050,15.1,12.1,18.0,False,False,alcohol
+2022,District of Columbia,96,671803,14.3,11.6,17.5,False,False,alcohol
+2023,District of Columbia,82,678972,12.1,9.6,15.0,False,False,alcohol
+2024,District of Columbia,76,702250,10.8,8.5,13.5,False,False,alcohol
+2001,Florida,1408,16356966,8.6,8.2,9.1,False,False,alcohol
+2002,Florida,1424,16689370,8.5,8.1,9.0,False,False,alcohol
+2003,Florida,1485,17004085,8.7,8.3,9.2,False,False,alcohol
+2004,Florida,1525,17415318,8.8,8.3,9.2,False,False,alcohol
+2005,Florida,1612,17842038,9.0,8.6,9.5,False,False,alcohol
+2006,Florida,1746,18166990,9.6,9.2,10.1,False,False,alcohol
+2007,Florida,1770,18367842,9.6,9.2,10.1,False,False,alcohol
+2008,Florida,1765,18527305,9.5,9.1,10.0,False,False,alcohol
+2009,Florida,1688,18652644,9.0,8.6,9.5,False,False,alcohol
+2010,Florida,1751,18801310,9.3,8.9,9.7,False,False,alcohol
+2011,Florida,1858,19057542,9.7,9.3,10.2,False,False,alcohol
+2012,Florida,1963,19317568,10.2,9.7,10.6,False,False,alcohol
+2013,Florida,2070,19552860,10.6,10.1,11.0,False,False,alcohol
+2014,Florida,2366,19893297,11.9,11.4,12.4,False,False,alcohol
+2015,Florida,2489,20271272,12.3,11.8,12.8,False,False,alcohol
+2016,Florida,2661,20612439,12.9,12.4,13.4,False,False,alcohol
+2017,Florida,2598,20984400,12.4,11.9,12.9,False,False,alcohol
+2018,Florida,2861,21299325,13.4,12.9,13.9,False,False,alcohol
+2019,Florida,2722,21477737,12.7,12.2,13.1,False,False,alcohol
+2020,Florida,3419,21733312,15.7,15.2,16.3,False,False,alcohol
+2021,Florida,3541,21781128,16.3,15.7,16.8,False,False,alcohol
+2022,Florida,3262,22244823,14.7,14.2,15.2,False,False,alcohol
+2023,Florida,3168,22610726,14.0,13.5,14.5,False,False,alcohol
+2024,Florida,3061,23372215,13.1,12.6,13.6,False,False,alcohol
+2001,Georgia,502,8377038,6.0,5.5,6.5,False,False,alcohol
+2002,Georgia,521,8508256,6.1,5.6,6.6,False,False,alcohol
+2003,Georgia,505,8622793,5.9,5.3,6.4,False,False,alcohol
+2004,Georgia,559,8769252,6.4,5.8,6.9,False,False,alcohol
+2005,Georgia,506,8925922,5.7,5.2,6.2,False,False,alcohol
+2006,Georgia,500,9155813,5.5,5.0,5.9,False,False,alcohol
+2007,Georgia,505,9349988,5.4,4.9,5.9,False,False,alcohol
+2008,Georgia,481,9504843,5.1,4.6,5.5,False,False,alcohol
+2009,Georgia,533,9620846,5.5,5.1,6.0,False,False,alcohol
+2010,Georgia,630,9687653,6.5,6.0,7.0,False,False,alcohol
+2011,Georgia,593,9815210,6.0,5.6,6.5,False,False,alcohol
+2012,Georgia,636,9919945,6.4,5.9,6.9,False,False,alcohol
+2013,Georgia,673,9992167,6.7,6.2,7.2,False,False,alcohol
+2014,Georgia,674,10097343,6.7,6.2,7.2,False,False,alcohol
+2015,Georgia,726,10214860,7.1,6.6,7.6,False,False,alcohol
+2016,Georgia,792,10310371,7.7,7.1,8.2,False,False,alcohol
+2017,Georgia,848,10429379,8.1,7.6,8.7,False,False,alcohol
+2018,Georgia,913,10519475,8.7,8.1,9.2,False,False,alcohol
+2019,Georgia,940,10617423,8.9,8.3,9.4,False,False,alcohol
+2020,Georgia,1186,10710017,11.1,10.4,11.7,False,False,alcohol
+2021,Georgia,1368,10799566,12.7,12.0,13.3,False,False,alcohol
+2022,Georgia,1273,10912876,11.7,11.0,12.3,False,False,alcohol
+2023,Georgia,1237,11029227,11.2,10.6,11.8,False,False,alcohol
+2024,Georgia,1204,11180878,10.8,10.2,11.4,False,False,alcohol
+2001,Hawaii,36,1225948,2.9,2.1,4.1,False,False,alcohol
+2002,Hawaii,44,1239613,3.5,2.6,4.8,False,False,alcohol
+2003,Hawaii,31,1251154,2.5,1.7,3.5,False,False,alcohol
+2004,Hawaii,66,1273569,5.2,4.0,6.6,False,False,alcohol
+2005,Hawaii,49,1292729,3.8,2.8,5.0,False,False,alcohol
+2006,Hawaii,65,1309731,5.0,3.8,6.3,False,False,alcohol
+2007,Hawaii,82,1315675,6.2,5.0,7.7,False,False,alcohol
+2008,Hawaii,75,1332213,5.6,4.4,7.1,False,False,alcohol
+2009,Hawaii,94,1346717,7.0,5.6,8.5,False,False,alcohol
+2010,Hawaii,87,1360301,6.4,5.1,7.9,False,False,alcohol
+2011,Hawaii,88,1374810,6.4,5.1,7.9,False,False,alcohol
+2012,Hawaii,84,1392313,6.0,4.8,7.5,False,False,alcohol
+2013,Hawaii,70,1404054,5.0,3.9,6.3,False,False,alcohol
+2014,Hawaii,87,1419561,6.1,4.9,7.6,False,False,alcohol
+2015,Hawaii,95,1431603,6.6,5.4,8.1,False,False,alcohol
+2016,Hawaii,97,1428557,6.8,5.5,8.3,False,False,alcohol
+2017,Hawaii,95,1427538,6.7,5.4,8.1,False,False,alcohol
+2018,Hawaii,93,1420491,6.5,5.3,8.0,False,False,alcohol
+2019,Hawaii,96,1415872,6.8,5.5,8.3,False,False,alcohol
+2020,Hawaii,131,1407006,9.3,7.7,10.9,False,False,alcohol
+2021,Hawaii,140,1441553,9.7,8.1,11.3,False,False,alcohol
+2022,Hawaii,120,1440196,8.3,6.8,9.8,False,False,alcohol
+2023,Hawaii,93,1435138,6.5,5.2,7.9,False,False,alcohol
+2024,Hawaii,103,1446146,7.1,5.7,8.5,False,False,alcohol
+2001,Idaho,123,1319962,9.3,7.7,11.0,False,False,alcohol
+2002,Idaho,121,1340372,9.0,7.4,10.6,False,False,alcohol
+2003,Idaho,135,1363380,9.9,8.2,11.6,False,False,alcohol
+2004,Idaho,119,1391802,8.6,7.0,10.1,False,False,alcohol
+2005,Idaho,135,1428241,9.5,7.9,11.0,False,False,alcohol
+2006,Idaho,129,1468669,8.8,7.3,10.3,False,False,alcohol
+2007,Idaho,152,1505105,10.1,8.5,11.7,False,False,alcohol
+2008,Idaho,173,1534320,11.3,9.6,13.0,False,False,alcohol
+2009,Idaho,167,1554439,10.7,9.1,12.4,False,False,alcohol
+2010,Idaho,162,1567582,10.3,8.7,11.9,False,False,alcohol
+2011,Idaho,181,1584985,11.4,9.8,13.1,False,False,alcohol
+2012,Idaho,218,1595728,13.7,11.8,15.5,False,False,alcohol
+2013,Idaho,215,1612136,13.3,11.6,15.1,False,False,alcohol
+2014,Idaho,231,1634464,14.1,12.3,16.0,False,False,alcohol
+2015,Idaho,240,1654930,14.5,12.7,16.3,False,False,alcohol
+2016,Idaho,221,1683140,13.1,11.4,14.9,False,False,alcohol
+2017,Idaho,221,1716943,12.9,11.2,14.6,False,False,alcohol
+2018,Idaho,271,1754208,15.4,13.6,17.3,False,False,alcohol
+2019,Idaho,290,1787065,16.2,14.4,18.1,False,False,alcohol
+2020,Idaho,349,1826913,19.1,17.1,21.1,False,False,alcohol
+2021,Idaho,416,1900923,21.9,19.8,24.0,False,False,alcohol
+2022,Idaho,375,1939033,19.3,17.4,21.3,False,False,alcohol
+2023,Idaho,373,1964726,19.0,17.1,20.9,False,False,alcohol
+2024,Idaho,384,2001619,19.2,17.3,21.1,False,False,alcohol
+2001,Illinois,634,12488445,5.1,4.7,5.5,False,False,alcohol
+2002,Illinois,582,12525556,4.6,4.3,5.0,False,False,alcohol
+2003,Illinois,568,12556006,4.5,4.2,4.9,False,False,alcohol
+2004,Illinois,592,12589773,4.7,4.3,5.1,False,False,alcohol
+2005,Illinois,572,12609903,4.5,4.2,4.9,False,False,alcohol
+2006,Illinois,610,12643955,4.8,4.4,5.2,False,False,alcohol
+2007,Illinois,630,12695866,5.0,4.6,5.3,False,False,alcohol
+2008,Illinois,707,12747038,5.5,5.1,6.0,False,False,alcohol
+2009,Illinois,746,12796778,5.8,5.4,6.2,False,False,alcohol
+2010,Illinois,690,12830632,5.4,5.0,5.8,False,False,alcohol
+2011,Illinois,775,12869257,6.0,5.6,6.4,False,False,alcohol
+2012,Illinois,777,12875255,6.0,5.6,6.5,False,False,alcohol
+2013,Illinois,813,12882135,6.3,5.9,6.7,False,False,alcohol
+2014,Illinois,889,12880580,6.9,6.4,7.4,False,False,alcohol
+2015,Illinois,946,12859995,7.4,6.9,7.8,False,False,alcohol
+2016,Illinois,1113,12801539,8.7,8.2,9.2,False,False,alcohol
+2017,Illinois,1116,12802023,8.7,8.2,9.2,False,False,alcohol
+2018,Illinois,1134,12741080,8.9,8.4,9.4,False,False,alcohol
+2019,Illinois,1137,12671821,9.0,8.5,9.5,False,False,alcohol
+2020,Illinois,1543,12587530,12.3,11.6,12.9,False,False,alcohol
+2021,Illinois,1611,12671469,12.7,12.1,13.3,False,False,alcohol
+2022,Illinois,1601,12582032,12.7,12.1,13.3,False,False,alcohol
+2023,Illinois,1426,12549689,11.4,10.8,12.0,False,False,alcohol
+2024,Illinois,1503,12710158,11.8,11.2,12.4,False,False,alcohol
+2001,Indiana,310,6127760,5.1,4.5,5.6,False,False,alcohol
+2002,Indiana,325,6155967,5.3,4.7,5.9,False,False,alcohol
+2003,Indiana,330,6196638,5.3,4.8,5.9,False,False,alcohol
+2004,Indiana,327,6233007,5.2,4.7,5.8,False,False,alcohol
+2005,Indiana,319,6278616,5.1,4.5,5.6,False,False,alcohol
+2006,Indiana,332,6332669,5.2,4.7,5.8,False,False,alcohol
+2007,Indiana,315,6379599,4.9,4.4,5.5,False,False,alcohol
+2008,Indiana,376,6424806,5.9,5.3,6.4,False,False,alcohol
+2009,Indiana,381,6459325,5.9,5.3,6.5,False,False,alcohol
+2010,Indiana,435,6483802,6.7,6.1,7.3,False,False,alcohol
+2011,Indiana,495,6516922,7.6,6.9,8.3,False,False,alcohol
+2012,Indiana,499,6537334,7.6,7.0,8.3,False,False,alcohol
+2013,Indiana,533,6570902,8.1,7.4,8.8,False,False,alcohol
+2014,Indiana,592,6596855,9.0,8.3,9.7,False,False,alcohol
+2015,Indiana,689,6619680,10.4,9.6,11.2,False,False,alcohol
+2016,Indiana,707,6633053,10.7,9.9,11.4,False,False,alcohol
+2017,Indiana,722,6666818,10.8,10.0,11.6,False,False,alcohol
+2018,Indiana,793,6691878,11.9,11.0,12.7,False,False,alcohol
+2019,Indiana,791,6732219,11.7,10.9,12.6,False,False,alcohol
+2020,Indiana,1027,6754953,15.2,14.3,16.1,False,False,alcohol
+2021,Indiana,1116,6805985,16.4,15.4,17.4,False,False,alcohol
+2022,Indiana,1151,6833037,16.8,15.9,17.8,False,False,alcohol
+2023,Indiana,957,6862199,13.9,13.1,14.8,False,False,alcohol
+2024,Indiana,998,6924275,14.4,13.5,15.3,False,False,alcohol
+2001,Iowa,158,2931997,5.4,4.5,6.2,False,False,alcohol
+2002,Iowa,162,2934234,5.5,4.7,6.4,False,False,alcohol
+2003,Iowa,167,2941999,5.7,4.8,6.5,False,False,alcohol
+2004,Iowa,156,2953635,5.3,4.5,6.1,False,False,alcohol
+2005,Iowa,193,2964454,6.5,5.6,7.4,False,False,alcohol
+2006,Iowa,185,2982644,6.2,5.3,7.1,False,False,alcohol
+2007,Iowa,212,2999212,7.1,6.1,8.0,False,False,alcohol
+2008,Iowa,205,3016734,6.8,5.9,7.7,False,False,alcohol
+2009,Iowa,230,3032870,7.6,6.6,8.6,False,False,alcohol
+2010,Iowa,233,3046355,7.6,6.7,8.6,False,False,alcohol
+2011,Iowa,256,3062309,8.4,7.3,9.4,False,False,alcohol
+2012,Iowa,275,3074186,8.9,7.9,10.0,False,False,alcohol
+2013,Iowa,313,3090416,10.1,9.0,11.3,False,False,alcohol
+2014,Iowa,360,3107126,11.6,10.4,12.8,False,False,alcohol
+2015,Iowa,344,3123899,11.0,9.8,12.2,False,False,alcohol
+2016,Iowa,380,3134693,12.1,10.9,13.3,False,False,alcohol
+2017,Iowa,404,3145711,12.8,11.6,14.1,False,False,alcohol
+2018,Iowa,388,3156145,12.3,11.1,13.5,False,False,alcohol
+2019,Iowa,408,3155070,12.9,11.7,14.2,False,False,alcohol
+2020,Iowa,524,3163561,16.6,15.1,18.0,False,False,alcohol
+2021,Iowa,608,3193079,19.0,17.5,20.6,False,False,alcohol
+2022,Iowa,591,3200517,18.5,17.0,20.0,False,False,alcohol
+2023,Iowa,530,3207004,16.5,15.1,17.9,False,False,alcohol
+2024,Iowa,552,3241488,17.0,15.6,18.4,False,False,alcohol
+2001,Kansas,158,2702162,5.8,4.9,6.8,False,False,alcohol
+2002,Kansas,170,2713535,6.3,5.3,7.2,False,False,alcohol
+2003,Kansas,173,2723004,6.4,5.4,7.3,False,False,alcohol
+2004,Kansas,167,2734373,6.1,5.2,7.0,False,False,alcohol
+2005,Kansas,177,2745299,6.4,5.5,7.4,False,False,alcohol
+2006,Kansas,184,2762931,6.7,5.7,7.6,False,False,alcohol
+2007,Kansas,211,2783785,7.6,6.6,8.6,False,False,alcohol
+2008,Kansas,205,2808076,7.3,6.3,8.3,False,False,alcohol
+2009,Kansas,225,2832704,7.9,6.9,9.0,False,False,alcohol
+2010,Kansas,201,2853118,7.0,6.1,8.0,False,False,alcohol
+2011,Kansas,230,2871238,8.0,7.0,9.0,False,False,alcohol
+2012,Kansas,225,2885905,7.8,6.8,8.8,False,False,alcohol
+2013,Kansas,212,2893957,7.3,6.3,8.3,False,False,alcohol
+2014,Kansas,263,2904021,9.1,8.0,10.2,False,False,alcohol
+2015,Kansas,278,2911641,9.5,8.4,10.7,False,False,alcohol
+2016,Kansas,288,2907289,9.9,8.8,11.1,False,False,alcohol
+2017,Kansas,314,2913123,10.8,9.6,12.0,False,False,alcohol
+2018,Kansas,358,2911505,12.3,11.0,13.6,False,False,alcohol
+2019,Kansas,353,2913314,12.1,10.9,13.4,False,False,alcohol
+2020,Kansas,489,2913805,16.8,15.3,18.3,False,False,alcohol
+2021,Kansas,534,2934582,18.2,16.7,19.7,False,False,alcohol
+2022,Kansas,487,2937150,16.6,15.1,18.1,False,False,alcohol
+2023,Kansas,499,2940546,17.0,15.5,18.5,False,False,alcohol
+2024,Kansas,452,2970606,15.2,13.8,16.6,False,False,alcohol
+2001,Kentucky,257,4068132,6.3,5.5,7.1,False,False,alcohol
+2002,Kentucky,235,4089875,5.7,5.0,6.5,False,False,alcohol
+2003,Kentucky,241,4117170,5.9,5.1,6.6,False,False,alcohol
+2004,Kentucky,244,4146101,5.9,5.1,6.6,False,False,alcohol
+2005,Kentucky,252,4182742,6.0,5.3,6.8,False,False,alcohol
+2006,Kentucky,232,4219239,5.5,4.8,6.2,False,False,alcohol
+2007,Kentucky,283,4256672,6.6,5.9,7.4,False,False,alcohol
+2008,Kentucky,237,4289878,5.5,4.8,6.2,False,False,alcohol
+2009,Kentucky,301,4317074,7.0,6.2,7.8,False,False,alcohol
+2010,Kentucky,302,4339367,7.0,6.2,7.7,False,False,alcohol
+2011,Kentucky,293,4369356,6.7,5.9,7.5,False,False,alcohol
+2012,Kentucky,351,4380415,8.0,7.2,8.9,False,False,alcohol
+2013,Kentucky,331,4395295,7.5,6.7,8.3,False,False,alcohol
+2014,Kentucky,396,4413457,9.0,8.1,9.9,False,False,alcohol
+2015,Kentucky,466,4425092,10.5,9.6,11.5,False,False,alcohol
+2016,Kentucky,500,4436974,11.3,10.3,12.3,False,False,alcohol
+2017,Kentucky,484,4454189,10.9,9.9,11.8,False,False,alcohol
+2018,Kentucky,483,4468402,10.8,9.8,11.8,False,False,alcohol
+2019,Kentucky,553,4467673,12.4,11.3,13.4,False,False,alcohol
+2020,Kentucky,738,4477251,16.5,15.3,17.7,False,False,alcohol
+2021,Kentucky,689,4509394,15.3,14.1,16.4,False,False,alcohol
+2022,Kentucky,646,4512310,14.3,13.2,15.4,False,False,alcohol
+2023,Kentucky,632,4526154,14.0,12.9,15.1,False,False,alcohol
+2024,Kentucky,628,4588372,13.7,12.6,14.8,False,False,alcohol
+2001,Louisiana,238,4477875,5.3,4.6,6.0,False,False,alcohol
+2002,Louisiana,231,4497267,5.1,4.5,5.8,False,False,alcohol
+2003,Louisiana,227,4521042,5.0,4.4,5.7,False,False,alcohol
+2004,Louisiana,216,4552238,4.7,4.1,5.4,False,False,alcohol
+2005,Louisiana,216,4576628,4.7,4.1,5.3,False,False,alcohol
+2006,Louisiana,221,4302665,5.1,4.5,5.8,False,False,alcohol
+2007,Louisiana,202,4375581,4.6,4.0,5.3,False,False,alcohol
+2008,Louisiana,210,4435586,4.7,4.1,5.4,False,False,alcohol
+2009,Louisiana,219,4491648,4.9,4.2,5.5,False,False,alcohol
+2010,Louisiana,235,4533372,5.2,4.5,5.8,False,False,alcohol
+2011,Louisiana,190,4574836,4.2,3.6,4.7,False,False,alcohol
+2012,Louisiana,215,4601893,4.7,4.0,5.3,False,False,alcohol
+2013,Louisiana,299,4625470,6.5,5.7,7.2,False,False,alcohol
+2014,Louisiana,330,4649676,7.1,6.3,7.9,False,False,alcohol
+2015,Louisiana,388,4670724,8.3,7.5,9.1,False,False,alcohol
+2016,Louisiana,325,4681666,6.9,6.2,7.7,False,False,alcohol
+2017,Louisiana,341,4684333,7.3,6.5,8.1,False,False,alcohol
+2018,Louisiana,348,4659978,7.5,6.7,8.3,False,False,alcohol
+2019,Louisiana,368,4648794,7.9,7.1,8.7,False,False,alcohol
+2020,Louisiana,443,4645318,9.5,8.6,10.4,False,False,alcohol
+2021,Louisiana,514,4624047,11.1,10.2,12.1,False,False,alcohol
+2022,Louisiana,491,4590241,10.7,9.8,11.6,False,False,alcohol
+2023,Louisiana,426,4573749,9.3,8.4,10.2,False,False,alcohol
+2024,Louisiana,437,4597740,9.5,8.6,10.4,False,False,alcohol
+2001,Maine,94,1285692,7.3,5.9,8.9,False,False,alcohol
+2002,Maine,101,1295960,7.8,6.3,9.3,False,False,alcohol
+2003,Maine,117,1306513,9.0,7.3,10.6,False,False,alcohol
+2004,Maine,106,1313688,8.1,6.5,9.6,False,False,alcohol
+2005,Maine,131,1318787,9.9,8.2,11.6,False,False,alcohol
+2006,Maine,114,1323619,8.6,7.0,10.2,False,False,alcohol
+2007,Maine,133,1327040,10.0,8.3,11.7,False,False,alcohol
+2008,Maine,99,1330509,7.4,6.0,9.1,False,False,alcohol
+2009,Maine,133,1329590,10.0,8.3,11.7,False,False,alcohol
+2010,Maine,132,1328361,9.9,8.2,11.6,False,False,alcohol
+2011,Maine,123,1328188,9.3,7.6,10.9,False,False,alcohol
+2012,Maine,137,1329192,10.3,8.6,12.0,False,False,alcohol
+2013,Maine,144,1328302,10.8,9.1,12.6,False,False,alcohol
+2014,Maine,150,1330089,11.3,9.5,13.1,False,False,alcohol
+2015,Maine,194,1329328,14.6,12.5,16.6,False,False,alcohol
+2016,Maine,192,1331479,14.4,12.4,16.5,False,False,alcohol
+2017,Maine,194,1335907,14.5,12.5,16.6,False,False,alcohol
+2018,Maine,211,1338404,15.8,13.6,17.9,False,False,alcohol
+2019,Maine,208,1344212,15.5,13.4,17.6,False,False,alcohol
+2020,Maine,286,1350141,21.2,18.7,23.6,False,False,alcohol
+2021,Maine,327,1372247,23.8,21.2,26.4,False,False,alcohol
+2022,Maine,317,1385340,22.9,20.4,25.4,False,False,alcohol
+2023,Maine,297,1395722,21.3,18.9,23.7,False,False,alcohol
+2024,Maine,274,1405012,19.5,17.2,21.8,False,False,alcohol
+2001,Maryland,278,5374691,5.2,4.6,5.8,False,False,alcohol
+2002,Maryland,295,5440389,5.4,4.8,6.0,False,False,alcohol
+2003,Maryland,283,5496269,5.1,4.5,5.7,False,False,alcohol
+2004,Maryland,280,5546935,5.0,4.5,5.6,False,False,alcohol
+2005,Maryland,281,5592379,5.0,4.4,5.6,False,False,alcohol
+2006,Maryland,294,5627367,5.2,4.6,5.8,False,False,alcohol
+2007,Maryland,338,5653408,6.0,5.3,6.6,False,False,alcohol
+2008,Maryland,269,5684965,4.7,4.2,5.3,False,False,alcohol
+2009,Maryland,296,5730388,5.2,4.6,5.8,False,False,alcohol
+2010,Maryland,291,5773552,5.0,4.5,5.6,False,False,alcohol
+2011,Maryland,307,5828289,5.3,4.7,5.9,False,False,alcohol
+2012,Maryland,274,5884563,4.7,4.1,5.2,False,False,alcohol
+2013,Maryland,322,5928814,5.4,4.8,6.0,False,False,alcohol
+2014,Maryland,297,5976407,5.0,4.4,5.5,False,False,alcohol
+2015,Maryland,301,6006401,5.0,4.4,5.6,False,False,alcohol
+2016,Maryland,354,6016447,5.9,5.3,6.5,False,False,alcohol
+2017,Maryland,393,6052177,6.5,5.9,7.1,False,False,alcohol
+2018,Maryland,410,6042718,6.8,6.1,7.4,False,False,alcohol
+2019,Maryland,430,6045680,7.1,6.4,7.8,False,False,alcohol
+2020,Maryland,600,6055802,9.9,9.1,10.7,False,False,alcohol
+2021,Maryland,627,6165129,10.2,9.4,11.0,False,False,alcohol
+2022,Maryland,601,6164660,9.7,9.0,10.5,False,False,alcohol
+2023,Maryland,600,6180253,9.7,8.9,10.5,False,False,alcohol
+2024,Maryland,536,6263220,8.6,7.8,9.3,False,False,alcohol
+2001,Massachusetts,346,6397634,5.4,4.8,6.0,False,False,alcohol
+2002,Massachusetts,384,6417206,6.0,5.4,6.6,False,False,alcohol
+2003,Massachusetts,391,6422565,6.1,5.5,6.7,False,False,alcohol
+2004,Massachusetts,365,6412281,5.7,5.1,6.3,False,False,alcohol
+2005,Massachusetts,380,6403290,5.9,5.3,6.5,False,False,alcohol
+2006,Massachusetts,371,6410084,5.8,5.2,6.4,False,False,alcohol
+2007,Massachusetts,440,6431559,6.8,6.2,7.5,False,False,alcohol
+2008,Massachusetts,431,6468967,6.7,6.0,7.3,False,False,alcohol
+2009,Massachusetts,421,6517613,6.5,5.8,7.1,False,False,alcohol
+2010,Massachusetts,485,6547629,7.4,6.7,8.1,False,False,alcohol
+2011,Massachusetts,473,6587536,7.2,6.5,7.8,False,False,alcohol
+2012,Massachusetts,526,6646144,7.9,7.2,8.6,False,False,alcohol
+2013,Massachusetts,484,6692824,7.2,6.6,7.9,False,False,alcohol
+2014,Massachusetts,574,6745408,8.5,7.8,9.2,False,False,alcohol
+2015,Massachusetts,633,6794422,9.3,8.6,10.0,False,False,alcohol
+2016,Massachusetts,689,6811779,10.1,9.4,10.9,False,False,alcohol
+2017,Massachusetts,683,6859819,10.0,9.2,10.7,False,False,alcohol
+2018,Massachusetts,721,6902149,10.4,9.7,11.2,False,False,alcohol
+2019,Massachusetts,738,6892503,10.7,9.9,11.5,False,False,alcohol
+2020,Massachusetts,1006,6893574,14.6,13.7,15.5,False,False,alcohol
+2021,Massachusetts,1005,6984723,14.4,13.5,15.3,False,False,alcohol
+2022,Massachusetts,959,6981974,13.7,12.9,14.6,False,False,alcohol
+2023,Massachusetts,882,7001399,12.6,11.8,13.4,False,False,alcohol
+2024,Massachusetts,819,7136171,11.5,10.7,12.3,False,False,alcohol
+2001,Michigan,713,9991120,7.1,6.6,7.7,False,False,alcohol
+2002,Michigan,677,10015710,6.8,6.3,7.3,False,False,alcohol
+2003,Michigan,673,10041152,6.7,6.2,7.2,False,False,alcohol
+2004,Michigan,701,10055315,7.0,6.5,7.5,False,False,alcohol
+2005,Michigan,725,10051137,7.2,6.7,7.7,False,False,alcohol
+2006,Michigan,695,10036081,6.9,6.4,7.4,False,False,alcohol
+2007,Michigan,713,10001284,7.1,6.6,7.7,False,False,alcohol
+2008,Michigan,780,9946889,7.8,7.3,8.4,False,False,alcohol
+2009,Michigan,883,9901591,8.9,8.3,9.5,False,False,alcohol
+2010,Michigan,928,9883640,9.4,8.8,10.0,False,False,alcohol
+2011,Michigan,900,9876187,9.1,8.5,9.7,False,False,alcohol
+2012,Michigan,883,9883360,8.9,8.3,9.5,False,False,alcohol
+2013,Michigan,884,9895622,8.9,8.3,9.5,False,False,alcohol
+2014,Michigan,899,9909877,9.1,8.5,9.7,False,False,alcohol
+2015,Michigan,985,9922576,9.9,9.3,10.5,False,False,alcohol
+2016,Michigan,1028,9928300,10.4,9.7,11.0,False,False,alcohol
+2017,Michigan,1049,9962311,10.5,9.9,11.2,False,False,alcohol
+2018,Michigan,1080,9995915,10.8,10.2,11.4,False,False,alcohol
+2019,Michigan,1193,9986857,11.9,11.3,12.6,False,False,alcohol
+2020,Michigan,1610,9966555,16.2,15.4,16.9,False,False,alcohol
+2021,Michigan,1745,10050811,17.4,16.5,18.2,False,False,alcohol
+2022,Michigan,1598,10034113,15.9,15.1,16.7,False,False,alcohol
+2023,Michigan,1563,10037261,15.6,14.8,16.3,False,False,alcohol
+2024,Michigan,1488,10140459,14.7,13.9,15.4,False,False,alcohol
+2001,Minnesota,320,4982796,6.4,5.7,7.1,False,False,alcohol
+2002,Minnesota,328,5018935,6.5,5.8,7.2,False,False,alcohol
+2003,Minnesota,304,5053572,6.0,5.3,6.7,False,False,alcohol
+2004,Minnesota,358,5087713,7.0,6.3,7.8,False,False,alcohol
+2005,Minnesota,345,5119598,6.7,6.0,7.4,False,False,alcohol
+2006,Minnesota,371,5163555,7.2,6.5,7.9,False,False,alcohol
+2007,Minnesota,333,5207203,6.4,5.7,7.1,False,False,alcohol
+2008,Minnesota,408,5247018,7.8,7.0,8.5,False,False,alcohol
+2009,Minnesota,440,5281203,8.3,7.6,9.1,False,False,alcohol
+2010,Minnesota,429,5303925,8.1,7.3,8.9,False,False,alcohol
+2011,Minnesota,449,5344861,8.4,7.6,9.2,False,False,alcohol
+2012,Minnesota,506,5379139,9.4,8.6,10.2,False,False,alcohol
+2013,Minnesota,527,5420380,9.7,8.9,10.6,False,False,alcohol
+2014,Minnesota,558,5457173,10.2,9.4,11.1,False,False,alcohol
+2015,Minnesota,599,5489594,10.9,10.0,11.8,False,False,alcohol
+2016,Minnesota,669,5519952,12.1,11.2,13.0,False,False,alcohol
+2017,Minnesota,641,5576606,11.5,10.6,12.4,False,False,alcohol
+2018,Minnesota,762,5611179,13.6,12.6,14.5,False,False,alcohol
+2019,Minnesota,828,5639632,14.7,13.7,15.7,False,False,alcohol
+2020,Minnesota,1065,5657342,18.8,17.7,20.0,False,False,alcohol
+2021,Minnesota,1162,5707390,20.4,19.2,21.5,False,False,alcohol
+2022,Minnesota,1171,5717184,20.5,19.3,21.7,False,False,alcohol
+2023,Minnesota,1075,5737915,18.7,17.6,19.9,False,False,alcohol
+2024,Minnesota,1073,5793151,18.5,17.4,19.6,False,False,alcohol
+2001,Mississippi,167,2852994,5.9,5.0,6.7,False,False,alcohol
+2002,Mississippi,158,2858681,5.5,4.7,6.4,False,False,alcohol
+2003,Mississippi,134,2868312,4.7,3.9,5.5,False,False,alcohol
+2004,Mississippi,192,2889010,6.6,5.7,7.6,False,False,alcohol
+2005,Mississippi,162,2905943,5.6,4.7,6.4,False,False,alcohol
+2006,Mississippi,159,2904978,5.5,4.6,6.3,False,False,alcohol
+2007,Mississippi,160,2928350,5.5,4.6,6.3,False,False,alcohol
+2008,Mississippi,172,2947806,5.8,5.0,6.7,False,False,alcohol
+2009,Mississippi,161,2958774,5.4,4.6,6.3,False,False,alcohol
+2010,Mississippi,167,2967297,5.6,4.8,6.5,False,False,alcohol
+2011,Mississippi,159,2978512,5.3,4.5,6.2,False,False,alcohol
+2012,Mississippi,172,2984926,5.8,4.9,6.6,False,False,alcohol
+2013,Mississippi,176,2991207,5.9,5.0,6.8,False,False,alcohol
+2014,Mississippi,187,2994079,6.2,5.4,7.1,False,False,alcohol
+2015,Mississippi,175,2992333,5.8,5.0,6.7,False,False,alcohol
+2016,Mississippi,178,2988726,6.0,5.1,6.8,False,False,alcohol
+2017,Mississippi,214,2984100,7.2,6.2,8.1,False,False,alcohol
+2018,Mississippi,206,2986530,6.9,6.0,7.8,False,False,alcohol
+2019,Mississippi,240,2976149,8.1,7.0,9.1,False,False,alcohol
+2020,Mississippi,395,2966786,13.3,12.0,14.6,False,False,alcohol
+2021,Mississippi,529,2949965,17.9,16.4,19.5,False,False,alcohol
+2022,Mississippi,442,2940057,15.0,13.6,16.4,False,False,alcohol
+2023,Mississippi,388,2939690,13.2,11.9,14.5,False,False,alcohol
+2024,Mississippi,415,2943045,14.1,12.7,15.5,False,False,alcohol
+2001,Missouri,372,5641142,6.6,5.9,7.3,False,False,alcohol
+2002,Missouri,326,5674825,5.7,5.1,6.4,False,False,alcohol
+2003,Missouri,343,5709403,6.0,5.4,6.6,False,False,alcohol
+2004,Missouri,384,5747741,6.7,6.0,7.3,False,False,alcohol
+2005,Missouri,340,5790300,5.9,5.2,6.5,False,False,alcohol
+2006,Missouri,385,5842704,6.6,5.9,7.2,False,False,alcohol
+2007,Missouri,324,5887612,5.5,4.9,6.1,False,False,alcohol
+2008,Missouri,397,5923916,6.7,6.0,7.4,False,False,alcohol
+2009,Missouri,376,5961088,6.3,5.7,6.9,False,False,alcohol
+2010,Missouri,399,5988927,6.7,6.0,7.3,False,False,alcohol
+2011,Missouri,367,6010688,6.1,5.5,6.7,False,False,alcohol
+2012,Missouri,451,6021988,7.5,6.8,8.2,False,False,alcohol
+2013,Missouri,450,6044171,7.4,6.8,8.1,False,False,alcohol
+2014,Missouri,474,6063589,7.8,7.1,8.5,False,False,alcohol
+2015,Missouri,512,6083672,8.4,7.7,9.1,False,False,alcohol
+2016,Missouri,536,6093000,8.8,8.1,9.5,False,False,alcohol
+2017,Missouri,556,6113532,9.1,8.3,9.9,False,False,alcohol
+2018,Missouri,598,6126452,9.8,9.0,10.5,False,False,alcohol
+2019,Missouri,608,6137428,9.9,9.1,10.7,False,False,alcohol
+2020,Missouri,791,6151548,12.9,12.0,13.8,False,False,alcohol
+2021,Missouri,919,6168187,14.9,13.9,15.9,False,False,alcohol
+2022,Missouri,911,6177957,14.7,13.8,15.7,False,False,alcohol
+2023,Missouri,778,6196156,12.6,11.7,13.4,False,False,alcohol
+2024,Missouri,821,6245466,13.1,12.2,14.0,False,False,alcohol
+2001,Montana,107,906961,11.8,9.6,14.0,False,False,alcohol
+2002,Montana,111,911667,12.2,9.9,14.4,False,False,alcohol
+2003,Montana,109,919630,11.9,9.6,14.1,False,False,alcohol
+2004,Montana,100,930009,10.8,8.6,12.9,False,False,alcohol
+2005,Montana,125,940102,13.3,11.0,15.6,False,False,alcohol
+2006,Montana,149,952692,15.6,13.1,18.2,False,False,alcohol
+2007,Montana,143,964706,14.8,12.4,17.3,False,False,alcohol
+2008,Montana,162,976415,16.6,14.0,19.1,False,False,alcohol
+2009,Montana,147,983982,14.9,12.5,17.4,False,False,alcohol
+2010,Montana,147,989415,14.9,12.5,17.3,False,False,alcohol
+2011,Montana,139,998199,13.9,11.6,16.2,False,False,alcohol
+2012,Montana,166,1005141,16.5,14.0,19.0,False,False,alcohol
+2013,Montana,194,1015165,19.1,16.4,21.8,False,False,alcohol
+2014,Montana,162,1023579,15.8,13.4,18.3,False,False,alcohol
+2015,Montana,194,1032949,18.8,16.1,21.4,False,False,alcohol
+2016,Montana,184,1042520,17.6,15.1,20.2,False,False,alcohol
+2017,Montana,249,1050493,23.7,20.8,26.6,False,False,alcohol
+2018,Montana,181,1062305,17.0,14.6,19.5,False,False,alcohol
+2019,Montana,246,1068778,23.0,20.1,25.9,False,False,alcohol
+2020,Montana,299,1080577,27.7,24.5,30.8,False,False,alcohol
+2021,Montana,372,1104271,33.7,30.3,37.1,False,False,alcohol
+2022,Montana,343,1122867,30.5,27.3,33.8,False,False,alcohol
+2023,Montana,304,1132812,26.8,23.8,29.9,False,False,alcohol
+2024,Montana,294,1137233,25.9,22.9,28.8,False,False,alcohol
+2001,Nebraska,86,1719836,5.0,4.0,6.2,False,False,alcohol
+2002,Nebraska,108,1728292,6.2,5.1,7.4,False,False,alcohol
+2003,Nebraska,92,1738643,5.3,4.3,6.5,False,False,alcohol
+2004,Nebraska,103,1749370,5.9,4.8,7.0,False,False,alcohol
+2005,Nebraska,113,1761497,6.4,5.2,7.6,False,False,alcohol
+2006,Nebraska,105,1772693,5.9,4.8,7.1,False,False,alcohol
+2007,Nebraska,103,1783440,5.8,4.7,6.9,False,False,alcohol
+2008,Nebraska,137,1796378,7.6,6.3,8.9,False,False,alcohol
+2009,Nebraska,134,1812683,7.4,6.1,8.6,False,False,alcohol
+2010,Nebraska,145,1826341,7.9,6.6,9.2,False,False,alcohol
+2011,Nebraska,130,1842641,7.1,5.8,8.3,False,False,alcohol
+2012,Nebraska,174,1855525,9.4,8.0,10.8,False,False,alcohol
+2013,Nebraska,181,1868516,9.7,8.3,11.1,False,False,alcohol
+2014,Nebraska,184,1881503,9.8,8.4,11.2,False,False,alcohol
+2015,Nebraska,199,1896190,10.5,9.0,12.0,False,False,alcohol
+2016,Nebraska,220,1907116,11.5,10.0,13.1,False,False,alcohol
+2017,Nebraska,245,1920076,12.8,11.2,14.4,False,False,alcohol
+2018,Nebraska,263,1929268,13.6,12.0,15.3,False,False,alcohol
+2019,Nebraska,271,1934408,14.0,12.3,15.7,False,False,alcohol
+2020,Nebraska,383,1937552,19.8,17.8,21.7,False,False,alcohol
+2021,Nebraska,364,1963692,18.5,16.6,20.4,False,False,alcohol
+2022,Nebraska,371,1967923,18.9,16.9,20.8,False,False,alcohol
+2023,Nebraska,312,1978379,15.8,14.0,17.5,False,False,alcohol
+2024,Nebraska,325,2005465,16.2,14.4,18.0,False,False,alcohol
+2001,Nevada,251,2098399,12.0,10.5,13.4,False,False,alcohol
+2002,Nevada,211,2173791,9.7,8.4,11.0,False,False,alcohol
+2003,Nevada,245,2248850,10.9,9.5,12.3,False,False,alcohol
+2004,Nevada,232,2346222,9.9,8.6,11.2,False,False,alcohol
+2005,Nevada,225,2432143,9.3,8.0,10.5,False,False,alcohol
+2006,Nevada,217,2522658,8.6,7.5,9.7,False,False,alcohol
+2007,Nevada,253,2601072,9.7,8.5,10.9,False,False,alcohol
+2008,Nevada,281,2653630,10.6,9.4,11.8,False,False,alcohol
+2009,Nevada,319,2684665,11.9,10.6,13.2,False,False,alcohol
+2010,Nevada,336,2700551,12.4,11.1,13.8,False,False,alcohol
+2011,Nevada,346,2723322,12.7,11.4,14.0,False,False,alcohol
+2012,Nevada,369,2758931,13.4,12.0,14.7,False,False,alcohol
+2013,Nevada,368,2790136,13.2,11.8,14.5,False,False,alcohol
+2014,Nevada,378,2839099,13.3,12.0,14.7,False,False,alcohol
+2015,Nevada,433,2890845,15.0,13.6,16.4,False,False,alcohol
+2016,Nevada,471,2940058,16.0,14.6,17.5,False,False,alcohol
+2017,Nevada,513,2998039,17.1,15.6,18.6,False,False,alcohol
+2018,Nevada,553,3034392,18.2,16.7,19.7,False,False,alcohol
+2019,Nevada,546,3080156,17.7,16.2,19.2,False,False,alcohol
+2020,Nevada,714,3138259,22.8,21.1,24.4,False,False,alcohol
+2021,Nevada,812,3143991,25.8,24.1,27.6,False,False,alcohol
+2022,Nevada,759,3177772,23.9,22.2,25.6,False,False,alcohol
+2023,Nevada,760,3194176,23.8,22.1,25.5,False,False,alcohol
+2024,Nevada,671,3267467,20.5,19.0,22.1,False,False,alcohol
+2001,New Hampshire,124,1255517,9.9,8.1,11.6,False,False,alcohol
+2002,New Hampshire,77,1269089,6.1,4.8,7.6,False,False,alcohol
+2003,New Hampshire,95,1279840,7.4,6.0,9.1,False,False,alcohol
+2004,New Hampshire,103,1290121,8.0,6.4,9.5,False,False,alcohol
+2005,New Hampshire,110,1298492,8.5,6.9,10.1,False,False,alcohol
+2006,New Hampshire,100,1308389,7.6,6.1,9.1,False,False,alcohol
+2007,New Hampshire,120,1312540,9.1,7.5,10.8,False,False,alcohol
+2008,New Hampshire,125,1315906,9.5,7.8,11.2,False,False,alcohol
+2009,New Hampshire,131,1316102,10.0,8.2,11.7,False,False,alcohol
+2010,New Hampshire,127,1316470,9.6,8.0,11.3,False,False,alcohol
+2011,New Hampshire,136,1318194,10.3,8.6,12.1,False,False,alcohol
+2012,New Hampshire,146,1320718,11.1,9.3,12.8,False,False,alcohol
+2013,New Hampshire,174,1323459,13.1,11.2,15.1,False,False,alcohol
+2014,New Hampshire,183,1326813,13.8,11.8,15.8,False,False,alcohol
+2015,New Hampshire,173,1330608,13.0,11.1,14.9,False,False,alcohol
+2016,New Hampshire,176,1334795,13.2,11.2,15.1,False,False,alcohol
+2017,New Hampshire,176,1342795,13.1,11.2,15.0,False,False,alcohol
+2018,New Hampshire,205,1356458,15.1,13.0,17.2,False,False,alcohol
+2019,New Hampshire,203,1359711,14.9,12.9,17.0,False,False,alcohol
+2020,New Hampshire,226,1366275,16.5,14.4,18.7,False,False,alcohol
+2021,New Hampshire,271,1388992,19.5,17.2,21.8,False,False,alcohol
+2022,New Hampshire,295,1395231,21.1,18.7,23.6,False,False,alcohol
+2023,New Hampshire,246,1402054,17.5,15.4,19.7,False,False,alcohol
+2024,New Hampshire,243,1409032,17.2,15.1,19.4,False,False,alcohol
+2001,New Jersey,500,8492671,5.9,5.4,6.4,False,False,alcohol
+2002,New Jersey,495,8552643,5.8,5.3,6.3,False,False,alcohol
+2003,New Jersey,439,8601402,5.1,4.6,5.6,False,False,alcohol
+2004,New Jersey,476,8634561,5.5,5.0,6.0,False,False,alcohol
+2005,New Jersey,486,8651974,5.6,5.1,6.1,False,False,alcohol
+2006,New Jersey,466,8661679,5.4,4.9,5.9,False,False,alcohol
+2007,New Jersey,414,8677885,4.8,4.3,5.2,False,False,alcohol
+2008,New Jersey,504,8711090,5.8,5.3,6.3,False,False,alcohol
+2009,New Jersey,395,8755602,4.5,4.1,5.0,False,False,alcohol
+2010,New Jersey,548,8791894,6.2,5.7,6.8,False,False,alcohol
+2011,New Jersey,584,8821155,6.6,6.1,7.2,False,False,alcohol
+2012,New Jersey,504,8864590,5.7,5.2,6.2,False,False,alcohol
+2013,New Jersey,551,8899339,6.2,5.7,6.7,False,False,alcohol
+2014,New Jersey,555,8938175,6.2,5.7,6.7,False,False,alcohol
+2015,New Jersey,527,8958013,5.9,5.4,6.4,False,False,alcohol
+2016,New Jersey,583,8944469,6.5,6.0,7.0,False,False,alcohol
+2017,New Jersey,647,9005644,7.2,6.6,7.7,False,False,alcohol
+2018,New Jersey,678,8908520,7.6,7.0,8.2,False,False,alcohol
+2019,New Jersey,698,8882190,7.9,7.3,8.4,False,False,alcohol
+2020,New Jersey,861,8882371,9.7,9.0,10.3,False,False,alcohol
+2021,New Jersey,831,9267130,9.0,8.4,9.6,False,False,alcohol
+2022,New Jersey,777,9261699,8.4,7.8,9.0,False,False,alcohol
+2023,New Jersey,681,9290841,7.3,6.8,7.9,False,False,alcohol
+2024,New Jersey,663,9500851,7.0,6.4,7.5,False,False,alcohol
+2001,New Mexico,331,1831690,18.1,16.1,20.0,False,False,alcohol
+2002,New Mexico,313,1855309,16.9,15.0,18.7,False,False,alcohol
+2003,New Mexico,360,1877574,19.2,17.2,21.2,False,False,alcohol
+2004,New Mexico,325,1903808,17.1,15.2,18.9,False,False,alcohol
+2005,New Mexico,319,1932274,16.5,14.7,18.3,False,False,alcohol
+2006,New Mexico,351,1962137,17.9,16.0,19.8,False,False,alcohol
+2007,New Mexico,404,1990070,20.3,18.3,22.3,False,False,alcohol
+2008,New Mexico,435,2010662,21.6,19.6,23.7,False,False,alcohol
+2009,New Mexico,426,2036802,20.9,18.9,22.9,False,False,alcohol
+2010,New Mexico,425,2059179,20.6,18.7,22.6,False,False,alcohol
+2011,New Mexico,482,2082224,23.1,21.1,25.2,False,False,alcohol
+2012,New Mexico,498,2085538,23.9,21.8,26.0,False,False,alcohol
+2013,New Mexico,491,2085287,23.5,21.5,25.6,False,False,alcohol
+2014,New Mexico,516,2085572,24.7,22.6,26.9,False,False,alcohol
+2015,New Mexico,656,2085109,31.5,29.1,33.9,False,False,alcohol
+2016,New Mexico,669,2081015,32.1,29.7,34.6,False,False,alcohol
+2017,New Mexico,659,2088070,31.6,29.2,34.0,False,False,alcohol
+2018,New Mexico,710,2095428,33.9,31.4,36.4,False,False,alcohol
+2019,New Mexico,729,2096829,34.8,32.2,37.3,False,False,alcohol
+2020,New Mexico,925,2106319,43.9,41.1,46.7,False,False,alcohol
+2021,New Mexico,1091,2115877,51.6,48.5,54.6,False,False,alcohol
+2022,New Mexico,925,2113344,43.8,40.9,46.6,False,False,alcohol
+2023,New Mexico,829,2114371,39.2,36.5,41.9,False,False,alcohol
+2024,New Mexico,798,2130256,37.5,34.9,40.1,False,False,alcohol
+2001,New York,1177,19082838,6.2,5.8,6.5,False,False,alcohol
+2002,New York,1099,19137800,5.7,5.4,6.1,False,False,alcohol
+2003,New York,1102,19175939,5.7,5.4,6.1,False,False,alcohol
+2004,New York,1065,19171567,5.6,5.2,5.9,False,False,alcohol
+2005,New York,1064,19132610,5.6,5.2,5.9,False,False,alcohol
+2006,New York,1101,19104631,5.8,5.4,6.1,False,False,alcohol
+2007,New York,1167,19132335,6.1,5.7,6.4,False,False,alcohol
+2008,New York,1249,19212436,6.5,6.1,6.9,False,False,alcohol
+2009,New York,1232,19307066,6.4,6.0,6.7,False,False,alcohol
+2010,New York,1217,19378102,6.3,5.9,6.6,False,False,alcohol
+2011,New York,1314,19465197,6.8,6.4,7.1,False,False,alcohol
+2012,New York,1393,19570261,7.1,6.7,7.5,False,False,alcohol
+2013,New York,1480,19651127,7.5,7.1,7.9,False,False,alcohol
+2014,New York,1403,19746227,7.1,6.7,7.5,False,False,alcohol
+2015,New York,1479,19795791,7.5,7.1,7.9,False,False,alcohol
+2016,New York,1559,19745289,7.9,7.5,8.3,False,False,alcohol
+2017,New York,1584,19849399,8.0,7.6,8.4,False,False,alcohol
+2018,New York,1668,19542209,8.5,8.1,8.9,False,False,alcohol
+2019,New York,1581,19453561,8.1,7.7,8.5,False,False,alcohol
+2020,New York,1883,19336776,9.7,9.3,10.2,False,False,alcohol
+2021,New York,1901,19835913,9.6,9.2,10.0,False,False,alcohol
+2022,New York,2003,19677151,10.2,9.7,10.6,False,False,alcohol
+2023,New York,1829,19571216,9.3,8.9,9.8,False,False,alcohol
+2024,New York,1745,19867248,8.8,8.4,9.2,False,False,alcohol
+2001,North Carolina,630,8210122,7.7,7.1,8.3,False,False,alcohol
+2002,North Carolina,650,8326201,7.8,7.2,8.4,False,False,alcohol
+2003,North Carolina,611,8422501,7.3,6.7,7.8,False,False,alcohol
+2004,North Carolina,681,8553152,8.0,7.4,8.6,False,False,alcohol
+2005,North Carolina,616,8705407,7.1,6.5,7.6,False,False,alcohol
+2006,North Carolina,610,8917270,6.8,6.3,7.4,False,False,alcohol
+2007,North Carolina,676,9118037,7.4,6.9,8.0,False,False,alcohol
+2008,North Carolina,723,9309449,7.8,7.2,8.3,False,False,alcohol
+2009,North Carolina,714,9449566,7.6,7.0,8.1,False,False,alcohol
+2010,North Carolina,669,9535483,7.0,6.5,7.5,False,False,alcohol
+2011,North Carolina,731,9656401,7.6,7.0,8.1,False,False,alcohol
+2012,North Carolina,738,9752073,7.6,7.0,8.1,False,False,alcohol
+2013,North Carolina,855,9848060,8.7,8.1,9.3,False,False,alcohol
+2014,North Carolina,887,9943964,8.9,8.3,9.5,False,False,alcohol
+2015,North Carolina,915,10042802,9.1,8.5,9.7,False,False,alcohol
+2016,North Carolina,963,10146788,9.5,8.9,10.1,False,False,alcohol
+2017,North Carolina,1019,10273419,9.9,9.3,10.5,False,False,alcohol
+2018,North Carolina,1109,10383620,10.7,10.1,11.3,False,False,alcohol
+2019,North Carolina,1176,10488084,11.2,10.6,11.9,False,False,alcohol
+2020,North Carolina,1392,10600823,13.1,12.4,13.8,False,False,alcohol
+2021,North Carolina,1638,10551162,15.5,14.8,16.3,False,False,alcohol
+2022,North Carolina,1532,10698973,14.3,13.6,15.0,False,False,alcohol
+2023,North Carolina,1407,10835491,13.0,12.3,13.7,False,False,alcohol
+2024,North Carolina,1361,11046024,12.3,11.7,13.0,False,False,alcohol
+2001,North Dakota,68,639062,10.6,8.3,13.5,False,False,alcohol
+2002,North Dakota,70,638168,11.0,8.6,13.9,False,False,alcohol
+2003,North Dakota,75,638817,11.7,9.2,14.7,False,False,alcohol
+2004,North Dakota,62,644705,9.6,7.4,12.3,False,False,alcohol
+2005,North Dakota,75,646089,11.6,9.1,14.6,False,False,alcohol
+2006,North Dakota,64,649422,9.9,7.6,12.6,False,False,alcohol
+2007,North Dakota,57,652822,8.7,6.6,11.3,False,False,alcohol
+2008,North Dakota,80,657569,12.2,9.6,15.1,False,False,alcohol
+2009,North Dakota,70,664968,10.5,8.2,13.3,False,False,alcohol
+2010,North Dakota,78,672591,11.6,9.2,14.5,False,False,alcohol
+2011,North Dakota,98,683932,14.3,11.6,17.5,False,False,alcohol
+2012,North Dakota,108,699628,15.4,12.5,18.3,False,False,alcohol
+2013,North Dakota,100,723393,13.8,11.1,16.5,False,False,alcohol
+2014,North Dakota,93,739482,12.6,10.2,15.4,False,False,alcohol
+2015,North Dakota,96,756927,12.7,10.3,15.5,False,False,alcohol
+2016,North Dakota,113,757952,14.9,12.2,17.7,False,False,alcohol
+2017,North Dakota,111,755393,14.7,12.0,17.4,False,False,alcohol
+2018,North Dakota,137,760077,18.0,15.0,21.0,False,False,alcohol
+2019,North Dakota,149,762062,19.6,16.4,22.7,False,False,alcohol
+2020,North Dakota,178,765309,23.3,19.8,26.7,False,False,alcohol
+2021,North Dakota,205,774948,26.5,22.8,30.1,False,False,alcohol
+2022,North Dakota,195,779261,25.0,21.5,28.5,False,False,alcohol
+2023,North Dakota,187,783926,23.9,20.4,27.3,False,False,alcohol
+2024,North Dakota,190,796568,23.9,20.5,27.2,False,False,alcohol
+2001,Ohio,623,11387404,5.5,5.0,5.9,False,False,alcohol
+2002,Ohio,597,11407889,5.2,4.8,5.7,False,False,alcohol
+2003,Ohio,588,11434788,5.1,4.7,5.6,False,False,alcohol
+2004,Ohio,660,11452251,5.8,5.3,6.2,False,False,alcohol
+2005,Ohio,754,11463320,6.6,6.1,7.0,False,False,alcohol
+2006,Ohio,708,11481213,6.2,5.7,6.6,False,False,alcohol
+2007,Ohio,780,11500468,6.8,6.3,7.3,False,False,alcohol
+2008,Ohio,834,11515391,7.2,6.8,7.7,False,False,alcohol
+2009,Ohio,735,11528896,6.4,5.9,6.8,False,False,alcohol
+2010,Ohio,840,11536504,7.3,6.8,7.8,False,False,alcohol
+2011,Ohio,834,11544951,7.2,6.7,7.7,False,False,alcohol
+2012,Ohio,856,11544225,7.4,6.9,7.9,False,False,alcohol
+2013,Ohio,899,11570808,7.8,7.3,8.3,False,False,alcohol
+2014,Ohio,946,11594163,8.2,7.6,8.7,False,False,alcohol
+2015,Ohio,1027,11613423,8.8,8.3,9.4,False,False,alcohol
+2016,Ohio,1151,11614373,9.9,9.3,10.5,False,False,alcohol
+2017,Ohio,1219,11658609,10.5,9.9,11.0,False,False,alcohol
+2018,Ohio,1220,11689442,10.4,9.9,11.0,False,False,alcohol
+2019,Ohio,1242,11689100,10.6,10.0,11.2,False,False,alcohol
+2020,Ohio,1599,11693217,13.7,13.0,14.3,False,False,alcohol
+2021,Ohio,1771,11780017,15.0,14.3,15.7,False,False,alcohol
+2022,Ohio,1707,11756058,14.5,13.8,15.2,False,False,alcohol
+2023,Ohio,1662,11785935,14.1,13.4,14.8,False,False,alcohol
+2024,Ohio,1476,11883304,12.4,11.8,13.1,False,False,alcohol
+2001,Oklahoma,222,3467100,6.4,5.6,7.2,False,False,alcohol
+2002,Oklahoma,289,3489080,8.3,7.3,9.2,False,False,alcohol
+2003,Oklahoma,235,3504892,6.7,5.8,7.6,False,False,alcohol
+2004,Oklahoma,286,3525233,8.1,7.2,9.1,False,False,alcohol
+2005,Oklahoma,345,3548597,9.7,8.7,10.7,False,False,alcohol
+2006,Oklahoma,353,3594090,9.8,8.8,10.8,False,False,alcohol
+2007,Oklahoma,412,3634349,11.3,10.2,12.4,False,False,alcohol
+2008,Oklahoma,421,3668976,11.5,10.4,12.6,False,False,alcohol
+2009,Oklahoma,359,3717572,9.7,8.7,10.7,False,False,alcohol
+2010,Oklahoma,440,3751351,11.7,10.6,12.8,False,False,alcohol
+2011,Oklahoma,445,3791508,11.7,10.6,12.8,False,False,alcohol
+2012,Oklahoma,469,3814820,12.3,11.2,13.4,False,False,alcohol
+2013,Oklahoma,466,3850568,12.1,11.0,13.2,False,False,alcohol
+2014,Oklahoma,539,3878051,13.9,12.7,15.1,False,False,alcohol
+2015,Oklahoma,530,3911338,13.6,12.4,14.7,False,False,alcohol
+2016,Oklahoma,597,3923561,15.2,14.0,16.4,False,False,alcohol
+2017,Oklahoma,605,3930864,15.4,14.2,16.6,False,False,alcohol
+2018,Oklahoma,608,3943079,15.4,14.2,16.6,False,False,alcohol
+2019,Oklahoma,659,3956971,16.7,15.4,17.9,False,False,alcohol
+2020,Oklahoma,737,3980783,18.5,17.2,19.9,False,False,alcohol
+2021,Oklahoma,838,3986639,21.0,19.6,22.4,False,False,alcohol
+2022,Oklahoma,836,4019800,20.8,19.4,22.2,False,False,alcohol
+2023,Oklahoma,781,4053824,19.3,17.9,20.6,False,False,alcohol
+2024,Oklahoma,680,4095393,16.6,15.4,17.9,False,False,alcohol
+2001,Oregon,369,3467937,10.6,9.6,11.7,False,False,alcohol
+2002,Oregon,434,3513424,12.4,11.2,13.5,False,False,alcohol
+2003,Oregon,504,3547376,14.2,13.0,15.4,False,False,alcohol
+2004,Oregon,515,3569463,14.4,13.2,15.7,False,False,alcohol
+2005,Oregon,530,3613202,14.7,13.4,15.9,False,False,alcohol
+2006,Oregon,475,3670883,12.9,11.8,14.1,False,False,alcohol
+2007,Oregon,543,3722417,14.6,13.4,15.8,False,False,alcohol
+2008,Oregon,544,3768748,14.4,13.2,15.6,False,False,alcohol
+2009,Oregon,592,3808600,15.5,14.3,16.8,False,False,alcohol
+2010,Oregon,572,3831074,14.9,13.7,16.2,False,False,alcohol
+2011,Oregon,645,3871859,16.7,15.4,17.9,False,False,alcohol
+2012,Oregon,678,3899353,17.4,16.1,18.7,False,False,alcohol
+2013,Oregon,719,3930065,18.3,17.0,19.6,False,False,alcohol
+2014,Oregon,761,3970239,19.2,17.8,20.5,False,False,alcohol
+2015,Oregon,896,4028977,22.2,20.8,23.7,False,False,alcohol
+2016,Oregon,829,4093465,20.3,18.9,21.6,False,False,alcohol
+2017,Oregon,879,4142776,21.2,19.8,22.6,False,False,alcohol
+2018,Oregon,932,4190713,22.2,20.8,23.7,False,False,alcohol
+2019,Oregon,938,4217737,22.2,20.8,23.7,False,False,alcohol
+2020,Oregon,1134,4241507,26.7,25.2,28.3,False,False,alcohol
+2021,Oregon,1255,4246155,29.6,27.9,31.2,False,False,alcohol
+2022,Oregon,1264,4240137,29.8,28.2,31.5,False,False,alcohol
+2023,Oregon,1167,4233358,27.6,26.0,29.1,False,False,alcohol
+2024,Oregon,1163,4272371,27.2,25.7,28.8,False,False,alcohol
+2001,Pennsylvania,496,12298970,4.0,3.7,4.4,False,False,alcohol
+2002,Pennsylvania,505,12331031,4.1,3.7,4.5,False,False,alcohol
+2003,Pennsylvania,490,12374658,4.0,3.6,4.3,False,False,alcohol
+2004,Pennsylvania,488,12410722,3.9,3.6,4.3,False,False,alcohol
+2005,Pennsylvania,490,12449990,3.9,3.6,4.3,False,False,alcohol
+2006,Pennsylvania,503,12510809,4.0,3.7,4.4,False,False,alcohol
+2007,Pennsylvania,548,12563937,4.4,4.0,4.7,False,False,alcohol
+2008,Pennsylvania,631,12612285,5.0,4.6,5.4,False,False,alcohol
+2009,Pennsylvania,695,12666858,5.5,5.1,5.9,False,False,alcohol
+2010,Pennsylvania,728,12702379,5.7,5.3,6.1,False,False,alcohol
+2011,Pennsylvania,752,12742886,5.9,5.5,6.3,False,False,alcohol
+2012,Pennsylvania,774,12763536,6.1,5.6,6.5,False,False,alcohol
+2013,Pennsylvania,790,12773801,6.2,5.8,6.6,False,False,alcohol
+2014,Pennsylvania,833,12787209,6.5,6.1,7.0,False,False,alcohol
+2015,Pennsylvania,879,12802503,6.9,6.4,7.3,False,False,alcohol
+2016,Pennsylvania,935,12784227,7.3,6.8,7.8,False,False,alcohol
+2017,Pennsylvania,930,12805537,7.3,6.8,7.7,False,False,alcohol
+2018,Pennsylvania,931,12807060,7.3,6.8,7.7,False,False,alcohol
+2019,Pennsylvania,1047,12801989,8.2,7.7,8.7,False,False,alcohol
+2020,Pennsylvania,1272,12783254,10.0,9.4,10.5,False,False,alcohol
+2021,Pennsylvania,1469,12964056,11.3,10.8,11.9,False,False,alcohol
+2022,Pennsylvania,1420,12972008,10.9,10.4,11.5,False,False,alcohol
+2023,Pennsylvania,1266,12961683,9.8,9.2,10.3,False,False,alcohol
+2024,Pennsylvania,1215,13078751,9.3,8.8,9.8,False,False,alcohol
+2001,Rhode Island,63,1057142,6.0,4.6,7.6,False,False,alcohol
+2002,Rhode Island,74,1065995,6.9,5.5,8.7,False,False,alcohol
+2003,Rhode Island,65,1071342,6.1,4.7,7.7,False,False,alcohol
+2004,Rhode Island,83,1074579,7.7,6.2,9.6,False,False,alcohol
+2005,Rhode Island,56,1067916,5.2,4.0,6.8,False,False,alcohol
+2006,Rhode Island,95,1063096,8.9,7.2,10.9,False,False,alcohol
+2007,Rhode Island,93,1057315,8.8,7.1,10.8,False,False,alcohol
+2008,Rhode Island,86,1055003,8.2,6.5,10.1,False,False,alcohol
+2009,Rhode Island,89,1053646,8.4,6.8,10.4,False,False,alcohol
+2010,Rhode Island,102,1052567,9.7,7.8,11.6,False,False,alcohol
+2011,Rhode Island,130,1051302,12.4,10.2,14.5,False,False,alcohol
+2012,Rhode Island,135,1050292,12.9,10.7,15.0,False,False,alcohol
+2013,Rhode Island,120,1051511,11.4,9.4,13.5,False,False,alcohol
+2014,Rhode Island,133,1055173,12.6,10.5,14.7,False,False,alcohol
+2015,Rhode Island,146,1056298,13.8,11.6,16.1,False,False,alcohol
+2016,Rhode Island,148,1056426,14.0,11.8,16.3,False,False,alcohol
+2017,Rhode Island,123,1059639,11.6,9.6,13.7,False,False,alcohol
+2018,Rhode Island,154,1057315,14.6,12.3,16.9,False,False,alcohol
+2019,Rhode Island,139,1059361,13.1,10.9,15.3,False,False,alcohol
+2020,Rhode Island,205,1057125,19.4,16.7,22.0,False,False,alcohol
+2021,Rhode Island,216,1095610,19.7,17.1,22.3,False,False,alcohol
+2022,Rhode Island,202,1093734,18.5,15.9,21.0,False,False,alcohol
+2023,Rhode Island,177,1095962,16.2,13.8,18.5,False,False,alcohol
+2024,Rhode Island,201,1112308,18.1,15.6,20.6,False,False,alcohol
+2001,South Carolina,338,4064995,8.3,7.4,9.2,False,False,alcohol
+2002,South Carolina,293,4107795,7.1,6.3,7.9,False,False,alcohol
+2003,South Carolina,352,4150297,8.5,7.6,9.4,False,False,alcohol
+2004,South Carolina,423,4210921,10.0,9.1,11.0,False,False,alcohol
+2005,South Carolina,378,4270150,8.9,8.0,9.7,False,False,alcohol
+2006,South Carolina,351,4357847,8.1,7.2,8.9,False,False,alcohol
+2007,South Carolina,363,4444110,8.2,7.3,9.0,False,False,alcohol
+2008,South Carolina,325,4528996,7.2,6.4,8.0,False,False,alcohol
+2009,South Carolina,391,4589872,8.5,7.7,9.4,False,False,alcohol
+2010,South Carolina,394,4625364,8.5,7.7,9.4,False,False,alcohol
+2011,South Carolina,404,4679230,8.6,7.8,9.5,False,False,alcohol
+2012,South Carolina,419,4723723,8.9,8.0,9.7,False,False,alcohol
+2013,South Carolina,416,4774839,8.7,7.9,9.5,False,False,alcohol
+2014,South Carolina,442,4832482,9.1,8.3,10.0,False,False,alcohol
+2015,South Carolina,495,4896146,10.1,9.2,11.0,False,False,alcohol
+2016,South Carolina,570,4961119,11.5,10.5,12.4,False,False,alcohol
+2017,South Carolina,631,5024369,12.6,11.6,13.5,False,False,alcohol
+2018,South Carolina,583,5084127,11.5,10.5,12.4,False,False,alcohol
+2019,South Carolina,620,5148714,12.0,11.1,13.0,False,False,alcohol
+2020,South Carolina,878,5218040,16.8,15.7,17.9,False,False,alcohol
+2021,South Carolina,1006,5190705,19.4,18.2,20.6,False,False,alcohol
+2022,South Carolina,954,5282634,18.1,16.9,19.2,False,False,alcohol
+2023,South Carolina,854,5373555,15.9,14.8,17.0,False,False,alcohol
+2024,South Carolina,839,5478831,15.3,14.3,16.3,False,False,alcohol
+2001,South Dakota,74,757972,9.8,7.7,12.3,False,False,alcohol
+2002,South Dakota,55,760020,7.2,5.5,9.4,False,False,alcohol
+2003,South Dakota,70,763729,9.2,7.1,11.6,False,False,alcohol
+2004,South Dakota,101,770396,13.1,10.6,15.7,False,False,alcohol
+2005,South Dakota,87,775493,11.2,9.0,13.8,False,False,alcohol
+2006,South Dakota,98,783033,12.5,10.2,15.3,False,False,alcohol
+2007,South Dakota,81,791623,10.2,8.1,12.7,False,False,alcohol
+2008,South Dakota,103,799124,12.9,10.4,15.4,False,False,alcohol
+2009,South Dakota,84,807067,10.4,8.3,12.9,False,False,alcohol
+2010,South Dakota,89,814180,10.9,8.8,13.5,False,False,alcohol
+2011,South Dakota,120,824082,14.6,12.0,17.2,False,False,alcohol
+2012,South Dakota,139,833354,16.7,13.9,19.5,False,False,alcohol
+2013,South Dakota,123,844877,14.6,12.0,17.1,False,False,alcohol
+2014,South Dakota,145,853175,17.0,14.2,19.8,False,False,alcohol
+2015,South Dakota,152,858469,17.7,14.9,20.5,False,False,alcohol
+2016,South Dakota,159,865454,18.4,15.5,21.2,False,False,alcohol
+2017,South Dakota,181,869666,20.8,17.8,23.8,False,False,alcohol
+2018,South Dakota,206,882235,23.3,20.2,26.5,False,False,alcohol
+2019,South Dakota,191,884659,21.6,18.5,24.7,False,False,alcohol
+2020,South Dakota,271,892717,30.4,26.7,34.0,False,False,alcohol
+2021,South Dakota,377,895376,42.1,37.9,46.4,False,False,alcohol
+2022,South Dakota,307,909824,33.7,30.0,37.5,False,False,alcohol
+2023,South Dakota,268,919318,29.2,25.7,32.6,False,False,alcohol
+2024,South Dakota,325,924669,35.1,31.3,39.0,False,False,alcohol
+2001,Tennessee,409,5750789,7.1,6.4,7.8,False,False,alcohol
+2002,Tennessee,395,5795918,6.8,6.1,7.5,False,False,alcohol
+2003,Tennessee,479,5847812,8.2,7.5,8.9,False,False,alcohol
+2004,Tennessee,461,5910809,7.8,7.1,8.5,False,False,alcohol
+2005,Tennessee,451,5991057,7.5,6.8,8.2,False,False,alcohol
+2006,Tennessee,485,6088766,8.0,7.3,8.7,False,False,alcohol
+2007,Tennessee,481,6175727,7.8,7.1,8.5,False,False,alcohol
+2008,Tennessee,458,6247411,7.3,6.7,8.0,False,False,alcohol
+2009,Tennessee,514,6306019,8.2,7.4,8.9,False,False,alcohol
+2010,Tennessee,542,6346105,8.5,7.8,9.3,False,False,alcohol
+2011,Tennessee,550,6403353,8.6,7.9,9.3,False,False,alcohol
+2012,Tennessee,608,6456243,9.4,8.7,10.2,False,False,alcohol
+2013,Tennessee,618,6495978,9.5,8.8,10.3,False,False,alcohol
+2014,Tennessee,640,6549352,9.8,9.0,10.5,False,False,alcohol
+2015,Tennessee,637,6600299,9.7,8.9,10.4,False,False,alcohol
+2016,Tennessee,739,6651194,11.1,10.3,11.9,False,False,alcohol
+2017,Tennessee,804,6715984,12.0,11.1,12.8,False,False,alcohol
+2018,Tennessee,909,6770010,13.4,12.6,14.3,False,False,alcohol
+2019,Tennessee,936,6829174,13.7,12.8,14.6,False,False,alcohol
+2020,Tennessee,1250,6886834,18.2,17.1,19.2,False,False,alcohol
+2021,Tennessee,1323,6975218,19.0,17.9,20.0,False,False,alcohol
+2022,Tennessee,1328,7051339,18.8,17.8,19.8,False,False,alcohol
+2023,Tennessee,1164,7126489,16.3,15.4,17.3,False,False,alcohol
+2024,Tennessee,1191,7227750,16.5,15.5,17.4,False,False,alcohol
+2001,Texas,1219,21319622,5.7,5.4,6.0,False,False,alcohol
+2002,Texas,1245,21690325,5.7,5.4,6.1,False,False,alcohol
+2003,Texas,1168,22030931,5.3,5.0,5.6,False,False,alcohol
+2004,Texas,1193,22394023,5.3,5.0,5.6,False,False,alcohol
+2005,Texas,1271,22778123,5.6,5.3,5.9,False,False,alcohol
+2006,Texas,1371,23359580,5.9,5.6,6.2,False,False,alcohol
+2007,Texas,1360,23831983,5.7,5.4,6.0,False,False,alcohol
+2008,Texas,1344,24309039,5.5,5.2,5.8,False,False,alcohol
+2009,Texas,1413,24801761,5.7,5.4,6.0,False,False,alcohol
+2010,Texas,1579,25145561,6.3,6.0,6.6,False,False,alcohol
+2011,Texas,1596,25674681,6.2,5.9,6.5,False,False,alcohol
+2012,Texas,1677,26059203,6.4,6.1,6.7,False,False,alcohol
+2013,Texas,1769,26448193,6.7,6.4,7.0,False,False,alcohol
+2014,Texas,1915,26956958,7.1,6.8,7.4,False,False,alcohol
+2015,Texas,2073,27469114,7.5,7.2,7.9,False,False,alcohol
+2016,Texas,2205,27862596,7.9,7.6,8.2,False,False,alcohol
+2017,Texas,2325,28304596,8.2,7.9,8.5,False,False,alcohol
+2018,Texas,2325,28701845,8.1,7.8,8.4,False,False,alcohol
+2019,Texas,2656,28995881,9.2,8.8,9.5,False,False,alcohol
+2020,Texas,3298,29360759,11.2,10.8,11.6,False,False,alcohol
+2021,Texas,3540,29527941,12.0,11.6,12.4,False,False,alcohol
+2022,Texas,3285,30029572,10.9,10.6,11.3,False,False,alcohol
+2023,Texas,3305,30503301,10.8,10.5,11.2,False,False,alcohol
+2024,Texas,3256,31290831,10.4,10.0,10.8,False,False,alcohol
+2001,Utah,115,2283715,5.0,4.1,6.0,False,False,alcohol
+2002,Utah,120,2324815,5.2,4.2,6.1,False,False,alcohol
+2003,Utah,117,2360137,5.0,4.1,5.9,False,False,alcohol
+2004,Utah,98,2401580,4.1,3.3,5.0,False,False,alcohol
+2005,Utah,133,2457719,5.4,4.5,6.3,False,False,alcohol
+2006,Utah,144,2525507,5.7,4.8,6.6,False,False,alcohol
+2007,Utah,144,2597746,5.5,4.6,6.4,False,False,alcohol
+2008,Utah,170,2663029,6.4,5.4,7.3,False,False,alcohol
+2009,Utah,173,2723421,6.4,5.4,7.3,False,False,alcohol
+2010,Utah,182,2763885,6.6,5.6,7.5,False,False,alcohol
+2011,Utah,166,2817222,5.9,5.0,6.8,False,False,alcohol
+2012,Utah,203,2855287,7.1,6.1,8.1,False,False,alcohol
+2013,Utah,215,2900872,7.4,6.4,8.4,False,False,alcohol
+2014,Utah,238,2942902,8.1,7.1,9.1,False,False,alcohol
+2015,Utah,266,2995919,8.9,7.8,9.9,False,False,alcohol
+2016,Utah,278,3051217,9.1,8.0,10.2,False,False,alcohol
+2017,Utah,259,3101833,8.3,7.3,9.4,False,False,alcohol
+2018,Utah,313,3161105,9.9,8.8,11.0,False,False,alcohol
+2019,Utah,290,3205958,9.0,8.0,10.1,False,False,alcohol
+2020,Utah,414,3249879,12.7,11.5,14.0,False,False,alcohol
+2021,Utah,431,3337975,12.9,11.7,14.1,False,False,alcohol
+2022,Utah,373,3380800,11.0,9.9,12.2,False,False,alcohol
+2023,Utah,385,3417734,11.3,10.1,12.4,False,False,alcohol
+2024,Utah,362,3503613,10.3,9.3,11.4,False,False,alcohol
+2001,Vermont,38,612223,6.2,4.4,8.5,False,False,alcohol
+2002,Vermont,68,615442,11.0,8.6,14.0,False,False,alcohol
+2003,Vermont,61,617858,9.9,7.6,12.7,False,False,alcohol
+2004,Vermont,58,619920,9.4,7.1,12.1,False,False,alcohol
+2005,Vermont,53,621215,8.5,6.4,11.2,False,False,alcohol
+2006,Vermont,63,622892,10.1,7.8,12.9,False,False,alcohol
+2007,Vermont,63,623481,10.1,7.8,12.9,False,False,alcohol
+2008,Vermont,62,624151,9.9,7.6,12.7,False,False,alcohol
+2009,Vermont,65,624817,10.4,8.0,13.3,False,False,alcohol
+2010,Vermont,59,625741,9.4,7.2,12.2,False,False,alcohol
+2011,Vermont,87,626431,13.9,11.1,17.1,False,False,alcohol
+2012,Vermont,66,626011,10.5,8.2,13.4,False,False,alcohol
+2013,Vermont,100,626630,16.0,12.8,19.1,False,False,alcohol
+2014,Vermont,93,626562,14.8,12.0,18.2,False,False,alcohol
+2015,Vermont,96,626042,15.3,12.4,18.7,False,False,alcohol
+2016,Vermont,98,624594,15.7,12.7,19.1,False,False,alcohol
+2017,Vermont,94,623657,15.1,12.2,18.4,False,False,alcohol
+2018,Vermont,101,626299,16.1,13.0,19.3,False,False,alcohol
+2019,Vermont,125,623989,20.0,16.5,23.5,False,False,alcohol
+2020,Vermont,126,623347,20.2,16.7,23.7,False,False,alcohol
+2021,Vermont,145,645570,22.5,18.8,26.1,False,False,alcohol
+2022,Vermont,144,647064,22.3,18.6,25.9,False,False,alcohol
+2023,Vermont,129,647464,19.9,16.5,23.4,False,False,alcohol
+2024,Vermont,133,648493,20.5,17.0,24.0,False,False,alcohol
+2001,Virginia,350,7198362,4.9,4.4,5.4,False,False,alcohol
+2002,Virginia,330,7286873,4.5,4.0,5.0,False,False,alcohol
+2003,Virginia,391,7366977,5.3,4.8,5.8,False,False,alcohol
+2004,Virginia,332,7475575,4.4,4.0,4.9,False,False,alcohol
+2005,Virginia,350,7577105,4.6,4.1,5.1,False,False,alcohol
+2006,Virginia,348,7673725,4.5,4.1,5.0,False,False,alcohol
+2007,Virginia,445,7751000,5.7,5.2,6.3,False,False,alcohol
+2008,Virginia,460,7833496,5.9,5.3,6.4,False,False,alcohol
+2009,Virginia,418,7925937,5.3,4.8,5.8,False,False,alcohol
+2010,Virginia,414,8001024,5.2,4.7,5.7,False,False,alcohol
+2011,Virginia,495,8096604,6.1,5.6,6.7,False,False,alcohol
+2012,Virginia,531,8185867,6.5,5.9,7.0,False,False,alcohol
+2013,Virginia,496,8260405,6.0,5.5,6.5,False,False,alcohol
+2014,Virginia,550,8326289,6.6,6.1,7.2,False,False,alcohol
+2015,Virginia,655,8382993,7.8,7.2,8.4,False,False,alcohol
+2016,Virginia,673,8411808,8.0,7.4,8.6,False,False,alcohol
+2017,Virginia,696,8470020,8.2,7.6,8.8,False,False,alcohol
+2018,Virginia,694,8517685,8.1,7.5,8.8,False,False,alcohol
+2019,Virginia,773,8535519,9.1,8.4,9.7,False,False,alcohol
+2020,Virginia,996,8590563,11.6,10.9,12.3,False,False,alcohol
+2021,Virginia,1014,8642274,11.7,11.0,12.5,False,False,alcohol
+2022,Virginia,965,8683619,11.1,10.4,11.8,False,False,alcohol
+2023,Virginia,906,8715698,10.4,9.7,11.1,False,False,alcohol
+2024,Virginia,851,8811195,9.7,9.0,10.3,False,False,alcohol
+2001,Washington,611,5985722,10.2,9.4,11.0,False,False,alcohol
+2002,Washington,574,6052349,9.5,8.7,10.3,False,False,alcohol
+2003,Washington,629,6104115,10.3,9.5,11.1,False,False,alcohol
+2004,Washington,633,6178645,10.2,9.4,11.0,False,False,alcohol
+2005,Washington,616,6257305,9.8,9.1,10.6,False,False,alcohol
+2006,Washington,663,6370753,10.4,9.6,11.2,False,False,alcohol
+2007,Washington,718,6461587,11.1,10.3,11.9,False,False,alcohol
+2008,Washington,780,6562231,11.9,11.1,12.7,False,False,alcohol
+2009,Washington,815,6667426,12.2,11.4,13.1,False,False,alcohol
+2010,Washington,850,6724540,12.6,11.8,13.5,False,False,alcohol
+2011,Washington,870,6830038,12.7,11.9,13.6,False,False,alcohol
+2012,Washington,960,6897012,13.9,13.0,14.8,False,False,alcohol
+2013,Washington,1042,6971406,14.9,14.0,15.9,False,False,alcohol
+2014,Washington,1039,7061530,14.7,13.8,15.6,False,False,alcohol
+2015,Washington,1100,7170351,15.3,14.4,16.2,False,False,alcohol
+2016,Washington,1018,7288000,14.0,13.1,14.8,False,False,alcohol
+2017,Washington,1152,7405743,15.6,14.7,16.5,False,False,alcohol
+2018,Washington,1179,7535591,15.6,14.8,16.5,False,False,alcohol
+2019,Washington,1264,7614893,16.6,15.7,17.5,False,False,alcohol
+2020,Washington,1506,7693612,19.6,18.6,20.6,False,False,alcohol
+2021,Washington,1772,7738692,22.9,21.8,24.0,False,False,alcohol
+2022,Washington,1658,7785786,21.3,20.3,22.3,False,False,alcohol
+2023,Washington,1515,7812880,19.4,18.4,20.4,False,False,alcohol
+2024,Washington,1494,7958180,18.8,17.8,19.7,False,False,alcohol
+2001,West Virginia,132,1801481,7.3,6.1,8.6,False,False,alcohol
+2002,West Virginia,128,1805414,7.1,5.9,8.3,False,False,alcohol
+2003,West Virginia,155,1812295,8.6,7.2,9.9,False,False,alcohol
+2004,West Virginia,134,1816438,7.4,6.1,8.6,False,False,alcohol
+2005,West Virginia,112,1820492,6.2,5.0,7.3,False,False,alcohol
+2006,West Virginia,137,1827912,7.5,6.2,8.7,False,False,alcohol
+2007,West Virginia,165,1834052,9.0,7.6,10.4,False,False,alcohol
+2008,West Virginia,132,1840310,7.2,5.9,8.4,False,False,alcohol
+2009,West Virginia,141,1847775,7.6,6.4,8.9,False,False,alcohol
+2010,West Virginia,139,1852994,7.5,6.3,8.7,False,False,alcohol
+2011,West Virginia,168,1855364,9.1,7.7,10.4,False,False,alcohol
+2012,West Virginia,170,1855413,9.2,7.8,10.5,False,False,alcohol
+2013,West Virginia,160,1854304,8.6,7.3,10.0,False,False,alcohol
+2014,West Virginia,195,1850326,10.5,9.1,12.0,False,False,alcohol
+2015,West Virginia,193,1844128,10.5,9.0,11.9,False,False,alcohol
+2016,West Virginia,232,1831102,12.7,11.0,14.3,False,False,alcohol
+2017,West Virginia,264,1815857,14.5,12.8,16.3,False,False,alcohol
+2018,West Virginia,243,1805832,13.5,11.8,15.1,False,False,alcohol
+2019,West Virginia,252,1792147,14.1,12.3,15.8,False,False,alcohol
+2020,West Virginia,304,1784787,17.0,15.1,18.9,False,False,alcohol
+2021,West Virginia,318,1782959,17.8,15.9,19.8,False,False,alcohol
+2022,West Virginia,304,1775156,17.1,15.2,19.1,False,False,alcohol
+2023,West Virginia,284,1770071,16.0,14.2,17.9,False,False,alcohol
+2024,West Virginia,240,1769979,13.6,11.8,15.3,False,False,alcohol
+2001,Wisconsin,391,5406835,7.2,6.5,7.9,False,False,alcohol
+2002,Wisconsin,380,5445162,7.0,6.3,7.7,False,False,alcohol
+2003,Wisconsin,417,5479203,7.6,6.9,8.3,False,False,alcohol
+2004,Wisconsin,417,5514026,7.6,6.8,8.3,False,False,alcohol
+2005,Wisconsin,468,5546166,8.4,7.7,9.2,False,False,alcohol
+2006,Wisconsin,424,5577655,7.6,6.9,8.3,False,False,alcohol
+2007,Wisconsin,489,5610775,8.7,7.9,9.5,False,False,alcohol
+2008,Wisconsin,463,5640996,8.2,7.5,9.0,False,False,alcohol
+2009,Wisconsin,469,5669264,8.3,7.5,9.0,False,False,alcohol
+2010,Wisconsin,500,5686986,8.8,8.0,9.6,False,False,alcohol
+2011,Wisconsin,506,5711767,8.9,8.1,9.6,False,False,alcohol
+2012,Wisconsin,557,5726398,9.7,8.9,10.5,False,False,alcohol
+2013,Wisconsin,584,5742713,10.2,9.3,11.0,False,False,alcohol
+2014,Wisconsin,630,5757564,10.9,10.1,11.8,False,False,alcohol
+2015,Wisconsin,638,5771337,11.1,10.2,11.9,False,False,alcohol
+2016,Wisconsin,743,5778708,12.9,11.9,13.8,False,False,alcohol
+2017,Wisconsin,780,5795483,13.5,12.5,14.4,False,False,alcohol
+2018,Wisconsin,786,5813568,13.5,12.6,14.5,False,False,alcohol
+2019,Wisconsin,865,5822434,14.9,13.9,15.8,False,False,alcohol
+2020,Wisconsin,1077,5832655,18.5,17.4,19.6,False,False,alcohol
+2021,Wisconsin,1173,5895908,19.9,18.8,21.0,False,False,alcohol
+2022,Wisconsin,1177,5892539,20.0,18.8,21.1,False,False,alcohol
+2023,Wisconsin,1112,5910955,18.8,17.7,19.9,False,False,alcohol
+2024,Wisconsin,1076,5960975,18.1,17.0,19.1,False,False,alcohol
+2001,Wyoming,57,494657,11.5,8.7,14.9,False,False,alcohol
+2002,Wyoming,76,500017,15.2,12.0,19.0,False,False,alcohol
+2003,Wyoming,60,503453,11.9,9.1,15.3,False,False,alcohol
+2004,Wyoming,67,509106,13.2,10.2,16.7,False,False,alcohol
+2005,Wyoming,64,514157,12.4,9.6,15.9,False,False,alcohol
+2006,Wyoming,88,522667,16.8,13.5,20.7,False,False,alcohol
+2007,Wyoming,88,534876,16.5,13.2,20.3,False,False,alcohol
+2008,Wyoming,89,546043,16.3,13.1,20.1,False,False,alcohol
+2009,Wyoming,65,559851,11.6,9.0,14.8,False,False,alcohol
+2010,Wyoming,80,563626,14.2,11.3,17.7,False,False,alcohol
+2011,Wyoming,91,568158,16.0,12.9,19.7,False,False,alcohol
+2012,Wyoming,107,576412,18.6,15.0,22.1,False,False,alcohol
+2013,Wyoming,105,582658,18.0,14.6,21.5,False,False,alcohol
+2014,Wyoming,103,584153,17.6,14.2,21.0,False,False,alcohol
+2015,Wyoming,152,586107,25.9,21.8,30.1,False,False,alcohol
+2016,Wyoming,139,585501,23.7,19.8,27.7,False,False,alcohol
+2017,Wyoming,135,579315,23.3,19.4,27.2,False,False,alcohol
+2018,Wyoming,149,577737,25.8,21.6,29.9,False,False,alcohol
+2019,Wyoming,178,578759,30.8,26.2,35.3,False,False,alcohol
+2020,Wyoming,227,582328,39.0,33.9,44.1,False,False,alcohol
+2021,Wyoming,230,578803,39.7,34.6,44.9,False,False,alcohol
+2022,Wyoming,206,581381,35.4,30.6,40.3,False,False,alcohol
+2023,Wyoming,161,584057,27.6,23.3,31.8,False,False,alcohol
+2024,Wyoming,195,587618,33.2,28.5,37.8,False,False,alcohol
 2001,Alabama,452,4467634,10.1,9.2,11.0,False,False,all
 2002,Alabama,423,4480089,9.4,8.5,10.3,False,False,all
 2003,Alabama,415,4503491,9.2,8.3,10.1,False,False,all
@@ -1055,6 +2279,30 @@ year,state,deaths,population,crude_rate,rate_lo,rate_hi,suppressed,unreliable,se
 2022,Texas,8774,30029572,29.2,28.6,29.8,False,False,all
 2023,Texas,8992,30503301,29.5,28.9,30.1,False,False,all
 2024,Texas,8236,31290831,26.3,25.8,26.9,False,False,all
+2001,United States,39508,284968955,13.9,13.7,14.0,False,False,all
+2002,United States,43736,287625193,15.2,15.1,15.3,False,False,all
+2003,United States,46472,290107933,16.0,15.9,16.2,False,False,all
+2004,United States,48505,292805298,16.6,16.4,16.7,False,False,all
+2005,United States,51447,295516599,17.4,17.3,17.6,False,False,all
+2006,United States,56498,298379912,18.9,18.8,19.1,False,False,all
+2007,United States,59209,301231207,19.7,19.5,19.8,False,False,all
+2008,United States,60639,304093966,19.9,19.8,20.1,False,False,all
+2009,United States,61522,306771529,20.1,19.9,20.2,False,False,all
+2010,United States,64021,308745538,20.7,20.6,20.9,False,False,all
+2011,United States,67994,311591917,21.8,21.7,22.0,False,False,all
+2012,United States,69264,313914040,22.1,21.9,22.2,False,False,all
+2013,United States,72983,316128839,23.1,22.9,23.3,False,False,all
+2014,United States,77777,318857056,24.4,24.2,24.6,False,False,all
+2015,United States,85575,321418820,26.6,26.4,26.8,False,False,all
+2016,United States,98497,323127513,30.5,30.3,30.7,False,False,all
+2017,United States,106060,325719178,32.6,32.4,32.8,False,False,all
+2018,United States,104696,327167434,32.0,31.8,32.2,False,False,all
+2019,United States,109673,328239523,33.4,33.2,33.6,False,False,all
+2020,United States,140860,329484123,42.8,42.5,43.0,False,False,all
+2021,United States,160957,331893745,48.5,48.3,48.7,False,False,all
+2022,United States,159132,333287557,47.7,47.5,48.0,False,False,all
+2023,United States,152945,334914895,45.7,45.4,45.9,False,False,all
+2024,United States,126098,340110988,37.1,36.9,37.3,False,False,all
 2001,Utah,324,2283715,14.2,12.6,15.7,False,False,all
 2002,Utah,408,2324815,17.5,15.8,19.3,False,False,all
 2003,Utah,470,2360137,19.9,18.1,21.7,False,False,all
@@ -1223,3 +2471,1227 @@ year,state,deaths,population,crude_rate,rate_lo,rate_hi,suppressed,unreliable,se
 2022,Wyoming,332,581381,57.1,51.0,63.2,False,False,all
 2023,Wyoming,296,584057,50.7,44.9,56.5,False,False,all
 2024,Wyoming,315,587618,53.6,47.7,59.5,False,False,all
+2001,Alabama,216,4467634,4.8,4.2,5.5,False,False,drug
+2002,Alabama,211,4480089,4.7,4.1,5.3,False,False,drug
+2003,Alabama,197,4503491,4.4,3.8,5.0,False,False,drug
+2004,Alabama,283,4530729,6.2,5.5,7.0,False,False,drug
+2005,Alabama,283,4569805,6.2,5.5,6.9,False,False,drug
+2006,Alabama,398,4628981,8.6,7.8,9.4,False,False,drug
+2007,Alabama,511,4672840,10.9,10.0,11.9,False,False,drug
+2008,Alabama,607,4718206,12.9,11.8,13.9,False,False,drug
+2009,Alabama,630,4757938,13.2,12.2,14.3,False,False,drug
+2010,Alabama,547,4779736,11.4,10.5,12.4,False,False,drug
+2011,Alabama,552,4802740,11.5,10.5,12.5,False,False,drug
+2012,Alabama,562,4822023,11.7,10.7,12.6,False,False,drug
+2013,Alabama,598,4833722,12.4,11.4,13.4,False,False,drug
+2014,Alabama,723,4849377,14.9,13.8,16.0,False,False,drug
+2015,Alabama,736,4858979,15.1,14.1,16.2,False,False,drug
+2016,Alabama,756,4863300,15.5,14.4,16.7,False,False,drug
+2017,Alabama,835,4874747,17.1,16.0,18.3,False,False,drug
+2018,Alabama,775,4887871,15.9,14.7,17.0,False,False,drug
+2019,Alabama,768,4903185,15.7,14.6,16.8,False,False,drug
+2020,Alabama,1029,4921532,20.9,19.6,22.2,False,False,drug
+2021,Alabama,1408,5039877,27.9,26.5,29.4,False,False,drug
+2022,Alabama,1492,5074296,29.4,27.9,30.9,False,False,drug
+2023,Alabama,1608,5108468,31.5,29.9,33.0,False,False,drug
+2024,Alabama,1211,5157699,23.5,22.2,24.8,False,False,drug
+2001,Alaska,62,633714,9.8,7.5,12.5,False,False,drug
+2002,Alaska,84,642337,13.1,10.4,16.2,False,False,drug
+2003,Alaska,83,648414,12.8,10.2,15.9,False,False,drug
+2004,Alaska,86,659286,13.0,10.4,16.1,False,False,drug
+2005,Alaska,79,666946,11.8,9.4,14.8,False,False,drug
+2006,Alaska,76,675302,11.3,8.9,14.1,False,False,drug
+2007,Alaska,72,680300,10.6,8.3,13.3,False,False,drug
+2008,Alaska,127,687455,18.5,15.3,21.7,False,False,drug
+2009,Alaska,131,698895,18.7,15.5,22.0,False,False,drug
+2010,Alaska,83,710231,11.7,9.3,14.5,False,False,drug
+2011,Alaska,107,722718,14.8,12.0,17.6,False,False,drug
+2012,Alaska,129,731449,17.6,14.6,20.7,False,False,drug
+2013,Alaska,105,735132,14.3,11.6,17.0,False,False,drug
+2014,Alaska,124,736732,16.8,13.9,19.8,False,False,drug
+2015,Alaska,122,738432,16.5,13.6,19.5,False,False,drug
+2016,Alaska,128,741894,17.3,14.3,20.2,False,False,drug
+2017,Alaska,147,739795,19.9,16.7,23.1,False,False,drug
+2018,Alaska,110,737438,14.9,12.1,17.7,False,False,drug
+2019,Alaska,132,731545,18.0,15.0,21.1,False,False,drug
+2020,Alaska,160,731158,21.9,18.5,25.3,False,False,drug
+2021,Alaska,260,732673,35.5,31.2,39.8,False,False,drug
+2022,Alaska,254,733583,34.6,30.4,38.9,False,False,drug
+2023,Alaska,359,733406,48.9,43.9,54.0,False,False,drug
+2024,Alaska,340,740133,45.9,41.1,50.8,False,False,drug
+2001,Arizona,552,5273477,10.5,9.6,11.3,False,False,drug
+2002,Arizona,624,5396255,11.6,10.7,12.5,False,False,drug
+2003,Arizona,674,5510364,12.2,11.3,13.2,False,False,drug
+2004,Arizona,744,5652404,13.2,12.2,14.1,False,False,drug
+2005,Arizona,794,5839077,13.6,12.7,14.5,False,False,drug
+2006,Arizona,876,6029141,14.5,13.6,15.5,False,False,drug
+2007,Arizona,943,6167681,15.3,14.3,16.3,False,False,drug
+2008,Arizona,828,6280362,13.2,12.3,14.1,False,False,drug
+2009,Arizona,1002,6343154,15.8,14.8,16.8,False,False,drug
+2010,Arizona,1098,6392017,17.2,16.2,18.2,False,False,drug
+2011,Arizona,1071,6482505,16.5,15.5,17.5,False,False,drug
+2012,Arizona,1134,6553255,17.3,16.3,18.3,False,False,drug
+2013,Arizona,1222,6626624,18.4,17.4,19.5,False,False,drug
+2014,Arizona,1211,6731484,18.0,17.0,19.0,False,False,drug
+2015,Arizona,1274,6828065,18.7,17.6,19.7,False,False,drug
+2016,Arizona,1382,6931071,19.9,18.9,21.0,False,False,drug
+2017,Arizona,1532,7016270,21.8,20.7,22.9,False,False,drug
+2018,Arizona,1670,7171646,23.3,22.2,24.4,False,False,drug
+2019,Arizona,1907,7278717,26.2,25.0,27.4,False,False,drug
+2020,Arizona,2550,7421401,34.4,33.0,35.7,False,False,drug
+2021,Arizona,2730,7276316,37.5,36.1,38.9,False,False,drug
+2022,Arizona,2664,7359197,36.2,34.8,37.6,False,False,drug
+2023,Arizona,2624,7431344,35.3,34.0,36.7,False,False,drug
+2024,Arizona,2453,7582384,32.4,31.1,33.6,False,False,drug
+2001,Arkansas,126,2691571,4.7,3.9,5.5,False,False,drug
+2002,Arkansas,176,2705927,6.5,5.5,7.5,False,False,drug
+2003,Arkansas,184,2724816,6.8,5.8,7.7,False,False,drug
+2004,Arkansas,230,2749686,8.4,7.3,9.4,False,False,drug
+2005,Arkansas,269,2781097,9.7,8.5,10.8,False,False,drug
+2006,Arkansas,285,2821761,10.1,8.9,11.3,False,False,drug
+2007,Arkansas,301,2848650,10.6,9.4,11.8,False,False,drug
+2008,Arkansas,360,2874554,12.5,11.2,13.8,False,False,drug
+2009,Arkansas,351,2896843,12.1,10.8,13.4,False,False,drug
+2010,Arkansas,350,2915918,12.0,10.7,13.3,False,False,drug
+2011,Arkansas,355,2937979,12.1,10.8,13.3,False,False,drug
+2012,Arkansas,373,2949131,12.6,11.4,13.9,False,False,drug
+2013,Arkansas,319,2959373,10.8,9.6,12.0,False,False,drug
+2014,Arkansas,356,2966369,12.0,10.8,13.2,False,False,drug
+2015,Arkansas,392,2978204,13.2,11.9,14.5,False,False,drug
+2016,Arkansas,401,2988248,13.4,12.1,14.7,False,False,drug
+2017,Arkansas,446,3004279,14.8,13.5,16.2,False,False,drug
+2018,Arkansas,444,3013825,14.7,13.4,16.1,False,False,drug
+2019,Arkansas,388,3017804,12.9,11.6,14.1,False,False,drug
+2020,Arkansas,546,3030522,18.0,16.5,19.5,False,False,drug
+2021,Arkansas,637,3025891,21.1,19.4,22.7,False,False,drug
+2022,Arkansas,617,3045637,20.3,18.7,21.9,False,False,drug
+2023,Arkansas,516,3067732,16.8,15.4,18.3,False,False,drug
+2024,Arkansas,416,3088354,13.5,12.2,14.8,False,False,drug
+2001,California,1226,34479458,3.6,3.4,3.8,False,False,drug
+2002,California,2975,34871843,8.5,8.2,8.8,False,False,drug
+2003,California,3108,35253159,8.8,8.5,9.1,False,False,drug
+2004,California,3125,35574576,8.8,8.5,9.1,False,False,drug
+2005,California,3214,35827943,9.0,8.7,9.3,False,False,drug
+2006,California,3494,36021202,9.7,9.4,10.0,False,False,drug
+2007,California,3854,36250311,10.6,10.3,11.0,False,False,drug
+2008,California,3863,36604337,10.6,10.2,10.9,False,False,drug
+2009,California,4056,36961229,11.0,10.6,11.3,False,False,drug
+2010,California,4057,37253956,10.9,10.6,11.2,False,False,drug
+2011,California,4180,37691912,11.1,10.8,11.4,False,False,drug
+2012,California,4040,38041430,10.6,10.3,10.9,False,False,drug
+2013,California,4452,38332521,11.6,11.3,12.0,False,False,drug
+2014,California,4521,38802500,11.7,11.3,12.0,False,False,drug
+2015,California,4659,39144818,11.9,11.6,12.2,False,False,drug
+2016,California,4654,39250017,11.9,11.5,12.2,False,False,drug
+2017,California,4868,39536653,12.3,12.0,12.7,False,False,drug
+2018,California,5348,39557045,13.5,13.2,13.9,False,False,drug
+2019,California,6198,39512223,15.7,15.3,16.1,False,False,drug
+2020,California,8908,39368078,22.6,22.2,23.1,False,False,drug
+2021,California,10901,39237836,27.8,27.3,28.3,False,False,drug
+2022,California,10952,39029342,28.1,27.5,28.6,False,False,drug
+2023,California,11378,38965193,29.2,28.7,29.7,False,False,drug
+2024,California,9028,39431263,22.9,22.4,23.4,False,False,drug
+2001,Colorado,411,4425687,9.3,8.4,10.2,False,False,drug
+2002,Colorado,448,4490406,10.0,9.1,10.9,False,False,drug
+2003,Colorado,502,4528732,11.1,10.1,12.1,False,False,drug
+2004,Colorado,518,4575013,11.3,10.3,12.3,False,False,drug
+2005,Colorado,608,4631888,13.1,12.1,14.2,False,False,drug
+2006,Colorado,627,4720423,13.3,12.2,14.3,False,False,drug
+2007,Colorado,734,4803868,15.3,14.2,16.4,False,False,drug
+2008,Colorado,749,4889730,15.3,14.2,16.4,False,False,drug
+2009,Colorado,769,4972195,15.5,14.4,16.6,False,False,drug
+2010,Colorado,654,5029196,13.0,12.0,14.0,False,False,drug
+2011,Colorado,843,5116796,16.5,15.4,17.6,False,False,drug
+2012,Colorado,807,5187582,15.6,14.5,16.6,False,False,drug
+2013,Colorado,846,5268367,16.1,15.0,17.1,False,False,drug
+2014,Colorado,899,5355866,16.8,15.7,17.9,False,False,drug
+2015,Colorado,869,5456574,15.9,14.9,17.0,False,False,drug
+2016,Colorado,942,5540545,17.0,15.9,18.1,False,False,drug
+2017,Colorado,1015,5607154,18.1,17.0,19.2,False,False,drug
+2018,Colorado,995,5695564,17.5,16.4,18.6,False,False,drug
+2019,Colorado,1079,5758736,18.7,17.6,19.9,False,False,drug
+2020,Colorado,1492,5807719,25.7,24.4,27.0,False,False,drug
+2021,Colorado,1887,5812069,32.5,31.0,33.9,False,False,drug
+2022,Colorado,1811,5839926,31.0,29.6,32.4,False,False,drug
+2023,Colorado,1872,5877610,31.8,30.4,33.3,False,False,drug
+2024,Colorado,1610,5957493,27.0,25.7,28.3,False,False,drug
+2001,Connecticut,307,3432835,8.9,7.9,9.9,False,False,drug
+2002,Connecticut,354,3458749,10.2,9.2,11.3,False,False,drug
+2003,Connecticut,307,3484336,8.8,7.8,9.8,False,False,drug
+2004,Connecticut,333,3496094,9.5,8.5,10.5,False,False,drug
+2005,Connecticut,295,3506956,8.4,7.5,9.4,False,False,drug
+2006,Connecticut,407,3517460,11.6,10.4,12.7,False,False,drug
+2007,Connecticut,433,3527270,12.3,11.1,13.4,False,False,drug
+2008,Connecticut,386,3545579,10.9,9.8,12.0,False,False,drug
+2009,Connecticut,393,3561807,11.0,9.9,12.1,False,False,drug
+2010,Connecticut,363,3574097,10.2,9.1,11.2,False,False,drug
+2011,Connecticut,402,3580709,11.2,10.1,12.3,False,False,drug
+2012,Connecticut,439,3590347,12.2,11.1,13.4,False,False,drug
+2013,Connecticut,582,3596080,16.2,14.9,17.5,False,False,drug
+2014,Connecticut,623,3596677,17.3,16.0,18.7,False,False,drug
+2015,Connecticut,800,3590886,22.3,20.7,23.8,False,False,drug
+2016,Connecticut,971,3576452,27.1,25.4,28.9,False,False,drug
+2017,Connecticut,1072,3588184,29.9,28.1,31.7,False,False,drug
+2018,Connecticut,1069,3572665,29.9,28.1,31.7,False,False,drug
+2019,Connecticut,1214,3565287,34.1,32.1,36.0,False,False,drug
+2020,Connecticut,1371,3557006,38.5,36.5,40.6,False,False,drug
+2021,Connecticut,1552,3605597,43.0,40.9,45.2,False,False,drug
+2022,Connecticut,1482,3626205,40.9,38.8,42.9,False,False,drug
+2023,Connecticut,1318,3617176,36.4,34.5,38.4,False,False,drug
+2024,Connecticut,995,3675069,27.1,25.4,28.8,False,False,drug
+2001,Delaware,64,795699,8.0,6.2,10.3,False,False,drug
+2002,Delaware,84,806169,10.4,8.3,12.9,False,False,drug
+2003,Delaware,77,818003,9.4,7.4,11.8,False,False,drug
+2004,Delaware,63,830803,7.6,5.8,9.7,False,False,drug
+2005,Delaware,62,845150,7.3,5.6,9.4,False,False,drug
+2006,Delaware,78,859268,9.1,7.2,11.3,False,False,drug
+2007,Delaware,97,871749,11.1,9.0,13.6,False,False,drug
+2008,Delaware,124,883874,14.0,11.6,16.5,False,False,drug
+2009,Delaware,136,891730,15.3,12.7,17.8,False,False,drug
+2010,Delaware,145,897934,16.1,13.5,18.8,False,False,drug
+2011,Delaware,160,907135,17.6,14.9,20.4,False,False,drug
+2012,Delaware,141,917092,15.4,12.8,17.9,False,False,drug
+2013,Delaware,166,925749,17.9,15.2,20.7,False,False,drug
+2014,Delaware,189,935614,20.2,17.3,23.1,False,False,drug
+2015,Delaware,198,945934,20.9,18.0,23.8,False,False,drug
+2016,Delaware,282,952065,29.6,26.2,33.1,False,False,drug
+2017,Delaware,338,961939,35.1,31.4,38.9,False,False,drug
+2018,Delaware,401,967171,41.5,37.4,45.5,False,False,drug
+2019,Delaware,435,973764,44.7,40.5,48.9,False,False,drug
+2020,Delaware,444,986809,45.0,40.8,49.2,False,False,drug
+2021,Delaware,513,1003384,51.1,46.7,55.6,False,False,drug
+2022,Delaware,549,1018396,53.9,49.4,58.4,False,False,drug
+2023,Delaware,525,1031890,50.9,46.5,55.2,False,False,drug
+2024,Delaware,338,1051917,32.1,28.7,35.6,False,False,drug
+2001,District of Columbia,93,574504,16.2,13.1,19.8,False,False,drug
+2002,District of Columbia,61,573158,10.6,8.1,13.7,False,False,drug
+2003,District of Columbia,103,568502,18.1,14.6,21.6,False,False,drug
+2004,District of Columbia,87,567754,15.3,12.3,18.9,False,False,drug
+2005,District of Columbia,77,567136,13.6,10.7,17.0,False,False,drug
+2006,District of Columbia,101,570681,17.7,14.2,21.1,False,False,drug
+2007,District of Columbia,61,574404,10.6,8.1,13.6,False,False,drug
+2008,District of Columbia,56,580236,9.7,7.3,12.5,False,False,drug
+2009,District of Columbia,26,592228,4.4,2.9,6.4,False,False,drug
+2010,District of Columbia,78,601723,13.0,10.2,16.2,False,False,drug
+2011,District of Columbia,86,617996,13.9,11.1,17.2,False,False,drug
+2012,District of Columbia,77,632323,12.2,9.6,15.2,False,False,drug
+2013,District of Columbia,102,646449,15.8,12.7,18.8,False,False,drug
+2014,District of Columbia,96,658893,14.6,11.8,17.8,False,False,drug
+2015,District of Columbia,125,672228,18.6,15.3,21.9,False,False,drug
+2016,District of Columbia,269,681170,39.5,34.8,44.2,False,False,drug
+2017,District of Columbia,310,693972,44.7,39.7,49.6,False,False,drug
+2018,District of Columbia,254,702455,36.2,31.7,40.6,False,False,drug
+2019,District of Columbia,311,705749,44.1,39.2,49.0,False,False,drug
+2020,District of Columbia,424,712816,59.5,53.8,65.1,False,False,drug
+2021,District of Columbia,450,670050,67.2,61.0,73.4,False,False,drug
+2022,District of Columbia,451,671803,67.1,60.9,73.3,False,False,drug
+2023,District of Columbia,427,678972,62.9,56.9,68.9,False,False,drug
+2024,District of Columbia,315,702250,44.9,39.9,49.8,False,False,drug
+2001,Florida,1746,16356966,10.7,10.2,11.2,False,False,drug
+2002,Florida,1927,16689370,11.5,11.0,12.1,False,False,drug
+2003,Florida,2054,17004085,12.1,11.6,12.6,False,False,drug
+2004,Florida,2264,17415318,13.0,12.5,13.5,False,False,drug
+2005,Florida,2371,17842038,13.3,12.8,13.8,False,False,drug
+2006,Florida,2591,18166990,14.3,13.7,14.8,False,False,drug
+2007,Florida,2794,18367842,15.2,14.6,15.8,False,False,drug
+2008,Florida,2963,18527305,16.0,15.4,16.6,False,False,drug
+2009,Florida,3092,18652644,16.6,16.0,17.2,False,False,drug
+2010,Florida,3061,18801310,16.3,15.7,16.9,False,False,drug
+2011,Florida,2918,19057542,15.3,14.8,15.9,False,False,drug
+2012,Florida,2597,19317568,13.4,12.9,14.0,False,False,drug
+2013,Florida,2474,19552860,12.7,12.2,13.2,False,False,drug
+2014,Florida,2634,19893297,13.2,12.7,13.7,False,False,drug
+2015,Florida,3228,20271272,15.9,15.4,16.5,False,False,drug
+2016,Florida,4728,20612439,22.9,22.3,23.6,False,False,drug
+2017,Florida,5088,20984400,24.2,23.6,24.9,False,False,drug
+2018,Florida,4698,21299325,22.1,21.4,22.7,False,False,drug
+2019,Florida,5268,21477737,24.5,23.9,25.2,False,False,drug
+2020,Florida,7231,21733312,33.3,32.5,34.0,False,False,drug
+2021,Florida,7827,21781128,35.9,35.1,36.7,False,False,drug
+2022,Florida,7551,22244823,33.9,33.2,34.7,False,False,drug
+2023,Florida,7010,22610726,31.0,30.3,31.7,False,False,drug
+2024,Florida,4958,23372215,21.2,20.6,21.8,False,False,drug
+2001,Georgia,511,8377038,6.1,5.6,6.6,False,False,drug
+2002,Georgia,563,8508256,6.6,6.1,7.2,False,False,drug
+2003,Georgia,607,8622793,7.0,6.5,7.6,False,False,drug
+2004,Georgia,666,8769252,7.6,7.0,8.2,False,False,drug
+2005,Georgia,738,8925922,8.3,7.7,8.9,False,False,drug
+2006,Georgia,830,9155813,9.1,8.4,9.7,False,False,drug
+2007,Georgia,923,9349988,9.9,9.2,10.5,False,False,drug
+2008,Georgia,935,9504843,9.8,9.2,10.5,False,False,drug
+2009,Georgia,1007,9620846,10.5,9.8,11.1,False,False,drug
+2010,Georgia,1054,9687653,10.9,10.2,11.5,False,False,drug
+2011,Georgia,1058,9815210,10.8,10.1,11.4,False,False,drug
+2012,Georgia,1056,9919945,10.6,10.0,11.3,False,False,drug
+2013,Georgia,1098,9992167,11.0,10.3,11.6,False,False,drug
+2014,Georgia,1206,10097343,11.9,11.3,12.6,False,False,drug
+2015,Georgia,1302,10214860,12.7,12.1,13.4,False,False,drug
+2016,Georgia,1394,10310371,13.5,12.8,14.2,False,False,drug
+2017,Georgia,1537,10429379,14.7,14.0,15.5,False,False,drug
+2018,Georgia,1404,10519475,13.3,12.6,14.0,False,False,drug
+2019,Georgia,1408,10617423,13.3,12.6,14.0,False,False,drug
+2020,Georgia,1916,10710017,17.9,17.1,18.7,False,False,drug
+2021,Georgia,2500,10799566,23.1,22.2,24.1,False,False,drug
+2022,Georgia,2687,10912876,24.6,23.7,25.6,False,False,drug
+2023,Georgia,2570,11029227,23.3,22.4,24.2,False,False,drug
+2024,Georgia,2029,11180878,18.1,17.4,18.9,False,False,drug
+2001,Hawaii,77,1225948,6.3,5.0,7.8,False,False,drug
+2002,Hawaii,77,1239613,6.2,4.9,7.8,False,False,drug
+2003,Hawaii,92,1251154,7.4,5.9,9.0,False,False,drug
+2004,Hawaii,103,1273569,8.1,6.5,9.6,False,False,drug
+2005,Hawaii,126,1292729,9.7,8.0,11.4,False,False,drug
+2006,Hawaii,86,1309731,6.6,5.3,8.1,False,False,drug
+2007,Hawaii,136,1315675,10.3,8.6,12.1,False,False,drug
+2008,Hawaii,123,1332213,9.2,7.6,10.9,False,False,drug
+2009,Hawaii,136,1346717,10.1,8.4,11.8,False,False,drug
+2010,Hawaii,151,1360301,11.1,9.3,12.9,False,False,drug
+2011,Hawaii,180,1374810,13.1,11.2,15.0,False,False,drug
+2012,Hawaii,155,1392313,11.1,9.4,12.9,False,False,drug
+2013,Hawaii,158,1404054,11.3,9.5,13.0,False,False,drug
+2014,Hawaii,157,1419561,11.1,9.3,12.8,False,False,drug
+2015,Hawaii,169,1431603,11.8,10.0,13.6,False,False,drug
+2016,Hawaii,191,1428557,13.4,11.5,15.3,False,False,drug
+2017,Hawaii,203,1427538,14.2,12.3,16.2,False,False,drug
+2018,Hawaii,213,1420491,15.0,13.0,17.0,False,False,drug
+2019,Hawaii,242,1415872,17.1,14.9,19.2,False,False,drug
+2020,Hawaii,274,1407006,19.5,17.2,21.8,False,False,drug
+2021,Hawaii,269,1441553,18.7,16.4,20.9,False,False,drug
+2022,Hawaii,284,1440196,19.7,17.4,22.0,False,False,drug
+2023,Hawaii,320,1435138,22.3,19.9,24.7,False,False,drug
+2024,Hawaii,333,1446146,23.0,20.6,25.5,False,False,drug
+2001,Idaho,98,1319962,7.4,6.0,9.0,False,False,drug
+2002,Idaho,117,1340372,8.7,7.1,10.3,False,False,drug
+2003,Idaho,102,1363380,7.5,6.0,8.9,False,False,drug
+2004,Idaho,98,1391802,7.0,5.7,8.6,False,False,drug
+2005,Idaho,109,1428241,7.6,6.2,9.1,False,False,drug
+2006,Idaho,130,1468669,8.9,7.3,10.4,False,False,drug
+2007,Idaho,126,1505105,8.4,6.9,9.8,False,False,drug
+2008,Idaho,146,1534320,9.5,8.0,11.1,False,False,drug
+2009,Idaho,171,1554439,11.0,9.4,12.6,False,False,drug
+2010,Idaho,178,1567582,11.4,9.7,13.0,False,False,drug
+2011,Idaho,193,1584985,12.2,10.5,13.9,False,False,drug
+2012,Idaho,181,1595728,11.3,9.7,13.0,False,False,drug
+2013,Idaho,207,1612136,12.8,11.1,14.6,False,False,drug
+2014,Idaho,212,1634464,13.0,11.2,14.7,False,False,drug
+2015,Idaho,218,1654930,13.2,11.4,14.9,False,False,drug
+2016,Idaho,243,1683140,14.4,12.6,16.3,False,False,drug
+2017,Idaho,236,1716943,13.7,12.0,15.5,False,False,drug
+2018,Idaho,250,1754208,14.3,12.5,16.0,False,False,drug
+2019,Idaho,265,1787065,14.8,13.0,16.6,False,False,drug
+2020,Idaho,287,1826913,15.7,13.9,17.5,False,False,drug
+2021,Idaho,354,1900923,18.6,16.7,20.6,False,False,drug
+2022,Idaho,385,1939033,19.9,17.9,21.8,False,False,drug
+2023,Idaho,386,1964726,19.6,17.7,21.6,False,False,drug
+2024,Idaho,338,2001619,16.9,15.1,18.7,False,False,drug
+2001,Illinois,892,12488445,7.1,6.7,7.6,False,False,drug
+2002,Illinois,986,12525556,7.9,7.4,8.4,False,False,drug
+2003,Illinois,847,12556006,6.7,6.3,7.2,False,False,drug
+2004,Illinois,1035,12589773,8.2,7.7,8.7,False,False,drug
+2005,Illinois,1067,12609903,8.5,8.0,9.0,False,False,drug
+2006,Illinois,1369,12643955,10.8,10.3,11.4,False,False,drug
+2007,Illinois,1192,12695866,9.4,8.9,9.9,False,False,drug
+2008,Illinois,1353,12747038,10.6,10.0,11.2,False,False,drug
+2009,Illinois,1381,12796778,10.8,10.2,11.4,False,False,drug
+2010,Illinois,1288,12830632,10.0,9.5,10.6,False,False,drug
+2011,Illinois,1408,12869257,10.9,10.4,11.5,False,False,drug
+2012,Illinois,1628,12875255,12.6,12.0,13.3,False,False,drug
+2013,Illinois,1579,12882135,12.3,11.7,12.9,False,False,drug
+2014,Illinois,1705,12880580,13.2,12.6,13.9,False,False,drug
+2015,Illinois,1835,12859995,14.3,13.6,14.9,False,False,drug
+2016,Illinois,2411,12801539,18.8,18.1,19.6,False,False,drug
+2017,Illinois,2778,12802023,21.7,20.9,22.5,False,False,drug
+2018,Illinois,2722,12741080,21.4,20.6,22.2,False,False,drug
+2019,Illinois,2790,12671821,22.0,21.2,22.8,False,False,drug
+2020,Illinois,3549,12587530,28.2,27.3,29.1,False,False,drug
+2021,Illinois,3762,12671469,29.7,28.7,30.6,False,False,drug
+2022,Illinois,3849,12582032,30.6,29.6,31.6,False,False,drug
+2023,Illinois,3525,12549689,28.1,27.2,29.0,False,False,drug
+2024,Illinois,2531,12710158,19.9,19.1,20.7,False,False,drug
+2001,Indiana,283,6127760,4.6,4.1,5.2,False,False,drug
+2002,Indiana,293,6155967,4.8,4.2,5.3,False,False,drug
+2003,Indiana,434,6196638,7.0,6.3,7.7,False,False,drug
+2004,Indiana,542,6233007,8.7,8.0,9.4,False,False,drug
+2005,Indiana,610,6278616,9.7,8.9,10.5,False,False,drug
+2006,Indiana,736,6332669,11.6,10.8,12.5,False,False,drug
+2007,Indiana,781,6379599,12.2,11.4,13.1,False,False,drug
+2008,Indiana,830,6424806,12.9,12.0,13.8,False,False,drug
+2009,Indiana,896,6459325,13.9,13.0,14.8,False,False,drug
+2010,Indiana,927,6483802,14.3,13.4,15.2,False,False,drug
+2011,Indiana,975,6516922,15.0,14.0,15.9,False,False,drug
+2012,Indiana,1011,6537334,15.5,14.5,16.4,False,False,drug
+2013,Indiana,1064,6570902,16.2,15.2,17.2,False,False,drug
+2014,Indiana,1172,6596855,17.8,16.7,18.8,False,False,drug
+2015,Indiana,1245,6619680,18.8,17.8,19.9,False,False,drug
+2016,Indiana,1526,6633053,23.0,21.9,24.2,False,False,drug
+2017,Indiana,1852,6666818,27.8,26.5,29.0,False,False,drug
+2018,Indiana,1629,6691878,24.3,23.2,25.5,False,False,drug
+2019,Indiana,1699,6732219,25.2,24.0,26.4,False,False,drug
+2020,Indiana,2321,6754953,34.4,33.0,35.8,False,False,drug
+2021,Indiana,2811,6805985,41.3,39.8,42.8,False,False,drug
+2022,Indiana,2682,6833037,39.3,37.8,40.7,False,False,drug
+2023,Indiana,2244,6862199,32.7,31.3,34.1,False,False,drug
+2024,Indiana,1717,6924275,24.8,23.6,26.0,False,False,drug
+2001,Iowa,87,2931997,3.0,2.4,3.7,False,False,drug
+2002,Iowa,91,2934234,3.1,2.5,3.8,False,False,drug
+2003,Iowa,96,2941999,3.3,2.6,4.0,False,False,drug
+2004,Iowa,122,2953635,4.1,3.4,4.9,False,False,drug
+2005,Iowa,141,2964454,4.8,4.0,5.5,False,False,drug
+2006,Iowa,187,2982644,6.3,5.4,7.2,False,False,drug
+2007,Iowa,203,2999212,6.8,5.8,7.7,False,False,drug
+2008,Iowa,209,3016734,6.9,6.0,7.9,False,False,drug
+2009,Iowa,207,3032870,6.8,5.9,7.8,False,False,drug
+2010,Iowa,253,3046355,8.3,7.3,9.3,False,False,drug
+2011,Iowa,250,3062309,8.2,7.2,9.2,False,False,drug
+2012,Iowa,259,3074186,8.4,7.4,9.5,False,False,drug
+2013,Iowa,275,3090416,8.9,7.8,10.0,False,False,drug
+2014,Iowa,264,3107126,8.5,7.5,9.5,False,False,drug
+2015,Iowa,309,3123899,9.9,8.8,11.0,False,False,drug
+2016,Iowa,314,3134693,10.0,8.9,11.1,False,False,drug
+2017,Iowa,341,3145711,10.8,9.7,12.0,False,False,drug
+2018,Iowa,287,3156145,9.1,8.0,10.1,False,False,drug
+2019,Iowa,352,3155070,11.2,10.0,12.3,False,False,drug
+2020,Iowa,432,3163561,13.7,12.4,14.9,False,False,drug
+2021,Iowa,475,3193079,14.9,13.5,16.2,False,False,drug
+2022,Iowa,469,3200517,14.7,13.3,16.0,False,False,drug
+2023,Iowa,462,3207004,14.4,13.1,15.7,False,False,drug
+2024,Iowa,427,3241488,13.2,11.9,14.4,False,False,drug
+2001,Kansas,138,2702162,5.1,4.3,6.0,False,False,drug
+2002,Kansas,170,2713535,6.3,5.3,7.2,False,False,drug
+2003,Kansas,188,2723004,6.9,5.9,7.9,False,False,drug
+2004,Kansas,224,2734373,8.2,7.1,9.3,False,False,drug
+2005,Kansas,241,2745299,8.8,7.7,9.9,False,False,drug
+2006,Kansas,257,2762931,9.3,8.2,10.4,False,False,drug
+2007,Kansas,270,2783785,9.7,8.5,10.9,False,False,drug
+2008,Kansas,219,2808076,7.8,6.8,8.8,False,False,drug
+2009,Kansas,304,2832704,10.7,9.5,11.9,False,False,drug
+2010,Kansas,269,2853118,9.4,8.3,10.6,False,False,drug
+2011,Kansas,280,2871238,9.8,8.6,10.9,False,False,drug
+2012,Kansas,318,2885905,11.0,9.8,12.2,False,False,drug
+2013,Kansas,331,2893957,11.4,10.2,12.7,False,False,drug
+2014,Kansas,332,2904021,11.4,10.2,12.7,False,False,drug
+2015,Kansas,329,2911641,11.3,10.1,12.5,False,False,drug
+2016,Kansas,313,2907289,10.8,9.6,12.0,False,False,drug
+2017,Kansas,333,2913123,11.4,10.2,12.7,False,False,drug
+2018,Kansas,345,2911505,11.8,10.6,13.1,False,False,drug
+2019,Kansas,403,2913314,13.8,12.5,15.2,False,False,drug
+2020,Kansas,490,2913805,16.8,15.3,18.3,False,False,drug
+2021,Kansas,680,2934582,23.2,21.4,24.9,False,False,drug
+2022,Kansas,754,2937150,25.7,23.8,27.5,False,False,drug
+2023,Kansas,653,2940546,22.2,20.5,23.9,False,False,drug
+2024,Kansas,570,2970606,19.2,17.6,20.8,False,False,drug
+2001,Kentucky,345,4068132,8.5,7.6,9.4,False,False,drug
+2002,Kentucky,426,4089875,10.4,9.4,11.4,False,False,drug
+2003,Kentucky,560,4117170,13.6,12.5,14.7,False,False,drug
+2004,Kentucky,526,4146101,12.7,11.6,13.8,False,False,drug
+2005,Kentucky,638,4182742,15.3,14.1,16.4,False,False,drug
+2006,Kentucky,728,4219239,17.3,16.0,18.5,False,False,drug
+2007,Kentucky,708,4256672,16.6,15.4,17.9,False,False,drug
+2008,Kentucky,764,4289878,17.8,16.5,19.1,False,False,drug
+2009,Kentucky,769,4317074,17.8,16.6,19.1,False,False,drug
+2010,Kentucky,1007,4339367,23.2,21.8,24.6,False,False,drug
+2011,Kentucky,1058,4369356,24.2,22.8,25.7,False,False,drug
+2012,Kentucky,1078,4380415,24.6,23.1,26.1,False,False,drug
+2013,Kentucky,1019,4395295,23.2,21.8,24.6,False,False,drug
+2014,Kentucky,1077,4413457,24.4,22.9,25.9,False,False,drug
+2015,Kentucky,1273,4425092,28.8,27.2,30.3,False,False,drug
+2016,Kentucky,1419,4436974,32.0,30.3,33.6,False,False,drug
+2017,Kentucky,1566,4454189,35.2,33.4,36.9,False,False,drug
+2018,Kentucky,1315,4468402,29.4,27.8,31.0,False,False,drug
+2019,Kentucky,1380,4467673,30.9,29.3,32.5,False,False,drug
+2020,Kentucky,2083,4477251,46.5,44.5,48.5,False,False,drug
+2021,Kentucky,2381,4509394,52.8,50.7,54.9,False,False,drug
+2022,Kentucky,2271,4512310,50.3,48.3,52.4,False,False,drug
+2023,Kentucky,2077,4526154,45.9,43.9,47.9,False,False,drug
+2024,Kentucky,1492,4588372,32.5,30.9,34.2,False,False,drug
+2001,Louisiana,265,4477875,5.9,5.2,6.6,False,False,drug
+2002,Louisiana,365,4497267,8.1,7.3,8.9,False,False,drug
+2003,Louisiana,536,4521042,11.9,10.9,12.9,False,False,drug
+2004,Louisiana,539,4552238,11.8,10.8,12.8,False,False,drug
+2005,Louisiana,661,4576628,14.4,13.3,15.5,False,False,drug
+2006,Louisiana,705,4302665,16.4,15.2,17.6,False,False,drug
+2007,Louisiana,808,4375581,18.5,17.2,19.7,False,False,drug
+2008,Louisiana,647,4435586,14.6,13.5,15.7,False,False,drug
+2009,Louisiana,584,4491648,13.0,11.9,14.1,False,False,drug
+2010,Louisiana,591,4533372,13.0,12.0,14.1,False,False,drug
+2011,Louisiana,601,4574836,13.1,12.1,14.2,False,False,drug
+2012,Louisiana,566,4601893,12.3,11.3,13.3,False,False,drug
+2013,Louisiana,809,4625470,17.5,16.3,18.7,False,False,drug
+2014,Louisiana,777,4649676,16.7,15.5,17.9,False,False,drug
+2015,Louisiana,861,4670724,18.4,17.2,19.7,False,False,drug
+2016,Louisiana,996,4681666,21.3,20.0,22.6,False,False,drug
+2017,Louisiana,1108,4684333,23.7,22.3,25.0,False,False,drug
+2018,Louisiana,1140,4659978,24.5,23.0,25.9,False,False,drug
+2019,Louisiana,1267,4648794,27.3,25.8,28.8,False,False,drug
+2020,Louisiana,1896,4645318,40.8,39.0,42.7,False,False,drug
+2021,Louisiana,2463,4624047,53.3,51.2,55.4,False,False,drug
+2022,Louisiana,2376,4590241,51.8,49.7,53.8,False,False,drug
+2023,Louisiana,2224,4573749,48.6,46.6,50.6,False,False,drug
+2024,Louisiana,1467,4597740,31.9,30.3,33.5,False,False,drug
+2001,Maine,85,1285692,6.6,5.3,8.2,False,False,drug
+2002,Maine,139,1295960,10.7,8.9,12.5,False,False,drug
+2003,Maine,133,1306513,10.2,8.4,11.9,False,False,drug
+2004,Maine,140,1313688,10.7,8.9,12.4,False,False,drug
+2005,Maine,163,1318787,12.4,10.5,14.3,False,False,drug
+2006,Maine,159,1323619,12.0,10.1,13.9,False,False,drug
+2007,Maine,159,1327040,12.0,10.1,13.8,False,False,drug
+2008,Maine,162,1330509,12.2,10.3,14.1,False,False,drug
+2009,Maine,173,1329590,13.0,11.1,15.0,False,False,drug
+2010,Maine,135,1328361,10.2,8.4,11.9,False,False,drug
+2011,Maine,156,1328188,11.7,9.9,13.6,False,False,drug
+2012,Maine,150,1329192,11.3,9.5,13.1,False,False,drug
+2013,Maine,174,1328302,13.1,11.2,15.0,False,False,drug
+2014,Maine,216,1330089,16.2,14.1,18.4,False,False,drug
+2015,Maine,269,1329328,20.2,17.8,22.7,False,False,drug
+2016,Maine,353,1331479,26.5,23.7,29.3,False,False,drug
+2017,Maine,424,1335907,31.7,28.7,34.8,False,False,drug
+2018,Maine,345,1338404,25.8,23.1,28.5,False,False,drug
+2019,Maine,371,1344212,27.6,24.8,30.4,False,False,drug
+2020,Maine,496,1350141,36.7,33.5,40.0,False,False,drug
+2021,Maine,611,1372247,44.5,41.0,48.1,False,False,drug
+2022,Maine,707,1385340,51.0,47.3,54.8,False,False,drug
+2023,Maine,598,1395722,42.8,39.4,46.3,False,False,drug
+2024,Maine,483,1405012,34.4,31.3,37.4,False,False,drug
+2001,Maryland,639,5374691,11.9,11.0,12.8,False,False,drug
+2002,Maryland,723,5440389,13.3,12.3,14.3,False,False,drug
+2003,Maryland,779,5496269,14.2,13.2,15.2,False,False,drug
+2004,Maryland,676,5546935,12.2,11.3,13.1,False,False,drug
+2005,Maryland,656,5592379,11.7,10.8,12.6,False,False,drug
+2006,Maryland,762,5627367,13.5,12.6,14.5,False,False,drug
+2007,Maryland,769,5653408,13.6,12.6,14.6,False,False,drug
+2008,Maryland,693,5684965,12.2,11.3,13.1,False,False,drug
+2009,Maryland,743,5730388,13.0,12.0,13.9,False,False,drug
+2010,Maryland,650,5773552,11.3,10.4,12.1,False,False,drug
+2011,Maryland,707,5828289,12.1,11.2,13.0,False,False,drug
+2012,Maryland,831,5884563,14.1,13.2,15.1,False,False,drug
+2013,Maryland,892,5928814,15.0,14.1,16.0,False,False,drug
+2014,Maryland,1070,5976407,17.9,16.8,19.0,False,False,drug
+2015,Maryland,1285,6006401,21.4,20.2,22.6,False,False,drug
+2016,Maryland,2044,6016447,34.0,32.5,35.4,False,False,drug
+2017,Maryland,2247,6052177,37.1,35.6,38.7,False,False,drug
+2018,Maryland,2324,6042718,38.5,36.9,40.0,False,False,drug
+2019,Maryland,2369,6045680,39.2,37.6,40.8,False,False,drug
+2020,Maryland,2771,6055802,45.8,44.1,47.5,False,False,drug
+2021,Maryland,2737,6165129,44.4,42.7,46.1,False,False,drug
+2022,Maryland,2573,6164660,41.7,40.1,43.4,False,False,drug
+2023,Maryland,2550,6180253,41.3,39.7,42.9,False,False,drug
+2024,Maryland,1772,6263220,28.3,27.0,29.6,False,False,drug
+2001,Massachusetts,689,6397634,10.8,10.0,11.6,False,False,drug
+2002,Massachusetts,705,6417206,11.0,10.2,11.8,False,False,drug
+2003,Massachusetts,823,6422565,12.8,11.9,13.7,False,False,drug
+2004,Massachusetts,669,6412281,10.4,9.6,11.2,False,False,drug
+2005,Massachusetts,780,6403290,12.2,11.3,13.0,False,False,drug
+2006,Massachusetts,970,6410084,15.1,14.2,16.1,False,False,drug
+2007,Massachusetts,922,6431559,14.3,13.4,15.3,False,False,drug
+2008,Massachusetts,786,6468967,12.2,11.3,13.0,False,False,drug
+2009,Massachusetts,816,6517613,12.5,11.7,13.4,False,False,drug
+2010,Massachusetts,738,6547629,11.3,10.5,12.1,False,False,drug
+2011,Massachusetts,857,6587536,13.0,12.1,13.9,False,False,drug
+2012,Massachusetts,859,6646144,12.9,12.1,13.8,False,False,drug
+2013,Massachusetts,1081,6692824,16.2,15.2,17.1,False,False,drug
+2014,Massachusetts,1289,6745408,19.1,18.1,20.2,False,False,drug
+2015,Massachusetts,1724,6794422,25.4,24.2,26.6,False,False,drug
+2016,Massachusetts,2227,6811779,32.7,31.3,34.1,False,False,drug
+2017,Massachusetts,2168,6859819,31.6,30.3,32.9,False,False,drug
+2018,Massachusetts,2241,6902149,32.5,31.1,33.8,False,False,drug
+2019,Massachusetts,2210,6892503,32.1,30.7,33.4,False,False,drug
+2020,Massachusetts,2302,6893574,33.4,32.0,34.8,False,False,drug
+2021,Massachusetts,2585,6984723,37.0,35.6,38.4,False,False,drug
+2022,Massachusetts,2642,6981974,37.8,36.4,39.3,False,False,drug
+2023,Massachusetts,2387,7001399,34.1,32.7,35.5,False,False,drug
+2024,Massachusetts,1590,7136171,22.3,21.2,23.4,False,False,drug
+2001,Michigan,621,9991120,6.2,5.7,6.7,False,False,drug
+2002,Michigan,751,10015710,7.5,7.0,8.0,False,False,drug
+2003,Michigan,761,10041152,7.6,7.0,8.1,False,False,drug
+2004,Michigan,867,10055315,8.6,8.0,9.2,False,False,drug
+2005,Michigan,985,10051137,9.8,9.2,10.4,False,False,drug
+2006,Michigan,1176,10036081,11.7,11.0,12.4,False,False,drug
+2007,Michigan,1236,10001284,12.4,11.7,13.0,False,False,drug
+2008,Michigan,1239,9946889,12.5,11.8,13.1,False,False,drug
+2009,Michigan,1429,9901591,14.4,13.7,15.2,False,False,drug
+2010,Michigan,1394,9883640,14.1,13.4,14.8,False,False,drug
+2011,Michigan,1386,9876187,14.0,13.3,14.8,False,False,drug
+2012,Michigan,1308,9883360,13.2,12.5,14.0,False,False,drug
+2013,Michigan,1553,9895622,15.7,14.9,16.5,False,False,drug
+2014,Michigan,1762,9909877,17.8,17.0,18.6,False,False,drug
+2015,Michigan,1980,9922576,20.0,19.1,20.8,False,False,drug
+2016,Michigan,2347,9928300,23.6,22.7,24.6,False,False,drug
+2017,Michigan,2694,9962311,27.0,26.0,28.1,False,False,drug
+2018,Michigan,2591,9995915,25.9,24.9,26.9,False,False,drug
+2019,Michigan,2385,9986857,23.9,22.9,24.8,False,False,drug
+2020,Michigan,2759,9966555,27.7,26.6,28.7,False,False,drug
+2021,Michigan,3089,10050811,30.7,29.7,31.8,False,False,drug
+2022,Michigan,2997,10034113,29.9,28.8,30.9,False,False,drug
+2023,Michigan,2882,10037261,28.7,27.7,29.8,False,False,drug
+2024,Michigan,1944,10140459,19.2,18.3,20.0,False,False,drug
+2001,Minnesota,185,4982796,3.7,3.2,4.2,False,False,drug
+2002,Minnesota,201,5018935,4.0,3.5,4.6,False,False,drug
+2003,Minnesota,246,5053572,4.9,4.3,5.5,False,False,drug
+2004,Minnesota,250,5087713,4.9,4.3,5.5,False,False,drug
+2005,Minnesota,282,5119598,5.5,4.9,6.2,False,False,drug
+2006,Minnesota,311,5163555,6.0,5.4,6.7,False,False,drug
+2007,Minnesota,341,5207203,6.5,5.9,7.2,False,False,drug
+2008,Minnesota,384,5247018,7.3,6.6,8.1,False,False,drug
+2009,Minnesota,419,5281203,7.9,7.2,8.7,False,False,drug
+2010,Minnesota,397,5303925,7.5,6.7,8.2,False,False,drug
+2011,Minnesota,511,5344861,9.6,8.7,10.4,False,False,drug
+2012,Minnesota,482,5379139,9.0,8.2,9.8,False,False,drug
+2013,Minnesota,523,5420380,9.6,8.8,10.5,False,False,drug
+2014,Minnesota,517,5457173,9.5,8.7,10.3,False,False,drug
+2015,Minnesota,581,5489594,10.6,9.7,11.4,False,False,drug
+2016,Minnesota,672,5519952,12.2,11.3,13.1,False,False,drug
+2017,Minnesota,733,5576606,13.1,12.2,14.1,False,False,drug
+2018,Minnesota,636,5611179,11.3,10.5,12.2,False,False,drug
+2019,Minnesota,792,5639632,14.0,13.1,15.0,False,False,drug
+2020,Minnesota,1050,5657342,18.6,17.4,19.7,False,False,drug
+2021,Minnesota,1356,5707390,23.8,22.5,25.0,False,False,drug
+2022,Minnesota,1384,5717184,24.2,22.9,25.5,False,False,drug
+2023,Minnesota,1331,5737915,23.2,22.0,24.4,False,False,drug
+2024,Minnesota,995,5793151,17.2,16.1,18.2,False,False,drug
+2001,Mississippi,169,2852994,5.9,5.0,6.8,False,False,drug
+2002,Mississippi,183,2858681,6.4,5.5,7.3,False,False,drug
+2003,Mississippi,207,2868312,7.2,6.2,8.2,False,False,drug
+2004,Mississippi,224,2889010,7.8,6.7,8.8,False,False,drug
+2005,Mississippi,248,2905943,8.5,7.5,9.6,False,False,drug
+2006,Mississippi,339,2904978,11.7,10.4,12.9,False,False,drug
+2007,Mississippi,314,2928350,10.7,9.5,11.9,False,False,drug
+2008,Mississippi,303,2947806,10.3,9.1,11.4,False,False,drug
+2009,Mississippi,323,2958774,10.9,9.7,12.1,False,False,drug
+2010,Mississippi,334,2967297,11.3,10.0,12.5,False,False,drug
+2011,Mississippi,302,2978512,10.1,9.0,11.3,False,False,drug
+2012,Mississippi,310,2984926,10.4,9.2,11.5,False,False,drug
+2013,Mississippi,316,2991207,10.6,9.4,11.7,False,False,drug
+2014,Mississippi,336,2994079,11.2,10.0,12.4,False,False,drug
+2015,Mississippi,351,2992333,11.7,10.5,13.0,False,False,drug
+2016,Mississippi,352,2988726,11.8,10.5,13.0,False,False,drug
+2017,Mississippi,354,2984100,11.9,10.6,13.1,False,False,drug
+2018,Mississippi,310,2986530,10.4,9.2,11.5,False,False,drug
+2019,Mississippi,394,2976149,13.2,11.9,14.5,False,False,drug
+2020,Mississippi,586,2966786,19.8,18.2,21.4,False,False,drug
+2021,Mississippi,787,2949965,26.7,24.8,28.5,False,False,drug
+2022,Mississippi,758,2940057,25.8,23.9,27.6,False,False,drug
+2023,Mississippi,702,2939690,23.9,22.1,25.6,False,False,drug
+2024,Mississippi,525,2943045,17.8,16.3,19.4,False,False,drug
+2001,Missouri,351,5641142,6.2,5.6,6.9,False,False,drug
+2002,Missouri,416,5674825,7.3,6.6,8.0,False,False,drug
+2003,Missouri,522,5709403,9.1,8.4,9.9,False,False,drug
+2004,Missouri,548,5747741,9.5,8.7,10.3,False,False,drug
+2005,Missouri,608,5790300,10.5,9.7,11.3,False,False,drug
+2006,Missouri,743,5842704,12.7,11.8,13.6,False,False,drug
+2007,Missouri,714,5887612,12.1,11.2,13.0,False,False,drug
+2008,Missouri,765,5923916,12.9,12.0,13.8,False,False,drug
+2009,Missouri,863,5961088,14.5,13.5,15.4,False,False,drug
+2010,Missouri,998,5988927,16.7,15.6,17.7,False,False,drug
+2011,Missouri,963,6010688,16.0,15.0,17.0,False,False,drug
+2012,Missouri,942,6021988,15.6,14.6,16.6,False,False,drug
+2013,Missouri,1025,6044171,17.0,15.9,18.0,False,False,drug
+2014,Missouri,1067,6063589,17.6,16.5,18.7,False,False,drug
+2015,Missouri,1066,6083672,17.5,16.5,18.6,False,False,drug
+2016,Missouri,1371,6093000,22.5,21.3,23.7,False,False,drug
+2017,Missouri,1367,6113532,22.4,21.2,23.5,False,False,drug
+2018,Missouri,1610,6126452,26.3,25.0,27.6,False,False,drug
+2019,Missouri,1583,6137428,25.8,24.5,27.1,False,False,drug
+2020,Missouri,1875,6151548,30.5,29.1,31.9,False,False,drug
+2021,Missouri,2155,6168187,34.9,33.5,36.4,False,False,drug
+2022,Missouri,2192,6177957,35.5,34.0,37.0,False,False,drug
+2023,Missouri,1986,6196156,32.1,30.6,33.5,False,False,drug
+2024,Missouri,1461,6245466,23.4,22.2,24.6,False,False,drug
+2001,Montana,56,906961,6.2,4.7,8.0,False,False,drug
+2002,Montana,78,911667,8.6,6.8,10.7,False,False,drug
+2003,Montana,93,919630,10.1,8.2,12.4,False,False,drug
+2004,Montana,98,930009,10.5,8.6,12.8,False,False,drug
+2005,Montana,96,940102,10.2,8.3,12.5,False,False,drug
+2006,Montana,97,952692,10.2,8.3,12.4,False,False,drug
+2007,Montana,125,964706,13.0,10.7,15.2,False,False,drug
+2008,Montana,134,976415,13.7,11.4,16.0,False,False,drug
+2009,Montana,142,983982,14.4,12.1,16.8,False,False,drug
+2010,Montana,118,989415,11.9,9.8,14.1,False,False,drug
+2011,Montana,141,998199,14.1,11.8,16.5,False,False,drug
+2012,Montana,118,1005141,11.7,9.6,13.9,False,False,drug
+2013,Montana,137,1015165,13.5,11.2,15.8,False,False,drug
+2014,Montana,125,1023579,12.2,10.1,14.4,False,False,drug
+2015,Montana,138,1032949,13.4,11.1,15.6,False,False,drug
+2016,Montana,119,1042520,11.4,9.4,13.5,False,False,drug
+2017,Montana,119,1050493,11.3,9.3,13.4,False,False,drug
+2018,Montana,125,1062305,11.8,9.7,13.8,False,False,drug
+2019,Montana,143,1068778,13.4,11.2,15.6,False,False,drug
+2020,Montana,162,1080577,15.0,12.7,17.3,False,False,drug
+2021,Montana,199,1104271,18.0,15.5,20.5,False,False,drug
+2022,Montana,208,1122867,18.5,16.0,21.0,False,False,drug
+2023,Montana,188,1132812,16.6,14.2,19.0,False,False,drug
+2024,Montana,170,1137233,14.9,12.7,17.2,False,False,drug
+2001,Nebraska,66,1719836,3.8,3.0,4.9,False,False,drug
+2002,Nebraska,66,1728292,3.8,3.0,4.9,False,False,drug
+2003,Nebraska,55,1738643,3.2,2.4,4.1,False,False,drug
+2004,Nebraska,59,1749370,3.4,2.6,4.4,False,False,drug
+2005,Nebraska,86,1761497,4.9,3.9,6.0,False,False,drug
+2006,Nebraska,91,1772693,5.1,4.1,6.3,False,False,drug
+2007,Nebraska,80,1783440,4.5,3.6,5.6,False,False,drug
+2008,Nebraska,94,1796378,5.2,4.2,6.4,False,False,drug
+2009,Nebraska,106,1812683,5.8,4.7,7.0,False,False,drug
+2010,Nebraska,117,1826341,6.4,5.2,7.6,False,False,drug
+2011,Nebraska,129,1842641,7.0,5.8,8.2,False,False,drug
+2012,Nebraska,146,1855525,7.9,6.6,9.1,False,False,drug
+2013,Nebraska,117,1868516,6.3,5.1,7.4,False,False,drug
+2014,Nebraska,125,1881503,6.6,5.5,7.8,False,False,drug
+2015,Nebraska,126,1896190,6.6,5.5,7.8,False,False,drug
+2016,Nebraska,120,1907116,6.3,5.2,7.4,False,False,drug
+2017,Nebraska,152,1920076,7.9,6.7,9.2,False,False,drug
+2018,Nebraska,138,1929268,7.2,6.0,8.3,False,False,drug
+2019,Nebraska,161,1934408,8.3,7.0,9.6,False,False,drug
+2020,Nebraska,214,1937552,11.0,9.6,12.5,False,False,drug
+2021,Nebraska,214,1963692,10.9,9.4,12.4,False,False,drug
+2022,Nebraska,225,1967923,11.4,9.9,12.9,False,False,drug
+2023,Nebraska,172,1978379,8.7,7.4,10.0,False,False,drug
+2024,Nebraska,155,2005465,7.7,6.5,8.9,False,False,drug
+2001,Nevada,261,2098399,12.4,10.9,13.9,False,False,drug
+2002,Nevada,323,2173791,14.9,13.2,16.5,False,False,drug
+2003,Nevada,342,2248850,15.2,13.6,16.8,False,False,drug
+2004,Nevada,380,2346222,16.2,14.6,17.8,False,False,drug
+2005,Nevada,457,2432143,18.8,17.1,20.5,False,False,drug
+2006,Nevada,461,2522658,18.3,16.6,19.9,False,False,drug
+2007,Nevada,499,2601072,19.2,17.5,20.9,False,False,drug
+2008,Nevada,519,2653630,19.6,17.9,21.2,False,False,drug
+2009,Nevada,550,2684665,20.5,18.8,22.2,False,False,drug
+2010,Nevada,578,2700551,21.4,19.7,23.1,False,False,drug
+2011,Nevada,639,2723322,23.5,21.6,25.3,False,False,drug
+2012,Nevada,602,2758931,21.8,20.1,23.6,False,False,drug
+2013,Nevada,614,2790136,22.0,20.3,23.7,False,False,drug
+2014,Nevada,545,2839099,19.2,17.6,20.8,False,False,drug
+2015,Nevada,619,2890845,21.4,19.7,23.1,False,False,drug
+2016,Nevada,665,2940058,22.6,20.9,24.3,False,False,drug
+2017,Nevada,676,2998039,22.5,20.8,24.2,False,False,drug
+2018,Nevada,688,3034392,22.7,21.0,24.4,False,False,drug
+2019,Nevada,647,3080156,21.0,19.4,22.6,False,False,drug
+2020,Nevada,832,3138259,26.5,24.7,28.3,False,False,drug
+2021,Nevada,949,3143991,30.2,28.3,32.1,False,False,drug
+2022,Nevada,1003,3177772,31.6,29.6,33.5,False,False,drug
+2023,Nevada,1282,3194176,40.1,37.9,42.3,False,False,drug
+2024,Nevada,1237,3267467,37.9,35.7,40.0,False,False,drug
+2001,New Hampshire,79,1255517,6.3,5.0,7.8,False,False,drug
+2002,New Hampshire,111,1269089,8.7,7.1,10.4,False,False,drug
+2003,New Hampshire,127,1279840,9.9,8.2,11.6,False,False,drug
+2004,New Hampshire,124,1290121,9.6,7.9,11.3,False,False,drug
+2005,New Hampshire,142,1298492,10.9,9.1,12.7,False,False,drug
+2006,New Hampshire,149,1308389,11.4,9.6,13.2,False,False,drug
+2007,New Hampshire,186,1312540,14.2,12.1,16.2,False,False,drug
+2008,New Hampshire,126,1315906,9.6,7.9,11.2,False,False,drug
+2009,New Hampshire,168,1316102,12.8,10.8,14.7,False,False,drug
+2010,New Hampshire,160,1316470,12.2,10.3,14.0,False,False,drug
+2011,New Hampshire,210,1318194,15.9,13.8,18.1,False,False,drug
+2012,New Hampshire,173,1320718,13.1,11.1,15.1,False,False,drug
+2013,New Hampshire,203,1323459,15.3,13.2,17.4,False,False,drug
+2014,New Hampshire,334,1326813,25.2,22.5,27.9,False,False,drug
+2015,New Hampshire,422,1330608,31.7,28.7,34.7,False,False,drug
+2016,New Hampshire,481,1334795,36.0,32.8,39.3,False,False,drug
+2017,New Hampshire,467,1342795,34.8,31.6,37.9,False,False,drug
+2018,New Hampshire,452,1356458,33.3,30.3,36.4,False,False,drug
+2019,New Hampshire,407,1359711,29.9,27.0,32.8,False,False,drug
+2020,New Hampshire,393,1366275,28.8,25.9,31.6,False,False,drug
+2021,New Hampshire,441,1388992,31.7,28.8,34.7,False,False,drug
+2022,New Hampshire,486,1395231,34.8,31.7,37.9,False,False,drug
+2023,New Hampshire,440,1402054,31.4,28.5,34.3,False,False,drug
+2024,New Hampshire,293,1409032,20.8,18.4,23.2,False,False,drug
+2001,New Jersey,705,8492671,8.3,7.7,8.9,False,False,drug
+2002,New Jersey,813,8552643,9.5,8.9,10.2,False,False,drug
+2003,New Jersey,721,8601402,8.4,7.8,9.0,False,False,drug
+2004,New Jersey,590,8634561,6.8,6.3,7.4,False,False,drug
+2005,New Jersey,823,8651974,9.5,8.9,10.2,False,False,drug
+2006,New Jersey,847,8661679,9.8,9.1,10.4,False,False,drug
+2007,New Jersey,727,8677885,8.4,7.8,9.0,False,False,drug
+2008,New Jersey,702,8711090,8.1,7.5,8.7,False,False,drug
+2009,New Jersey,263,8755602,3.0,2.6,3.4,False,False,drug
+2010,New Jersey,868,8791894,9.9,9.2,10.5,False,False,drug
+2011,New Jersey,1012,8821155,11.5,10.8,12.2,False,False,drug
+2012,New Jersey,1222,8864590,13.8,13.0,14.6,False,False,drug
+2013,New Jersey,1294,8899339,14.5,13.7,15.3,False,False,drug
+2014,New Jersey,1253,8938175,14.0,13.2,14.8,False,False,drug
+2015,New Jersey,1454,8958013,16.2,15.4,17.1,False,False,drug
+2016,New Jersey,2056,8944469,23.0,22.0,24.0,False,False,drug
+2017,New Jersey,2685,9005644,29.8,28.7,30.9,False,False,drug
+2018,New Jersey,2900,8908520,32.6,31.4,33.7,False,False,drug
+2019,New Jersey,2805,8882190,31.6,30.4,32.7,False,False,drug
+2020,New Jersey,2840,8882371,32.0,30.8,33.1,False,False,drug
+2021,New Jersey,3056,9267130,33.0,31.8,34.1,False,False,drug
+2022,New Jersey,2985,9261699,32.2,31.1,33.4,False,False,drug
+2023,New Jersey,2688,9290841,28.9,27.8,30.0,False,False,drug
+2024,New Jersey,1992,9500851,21.0,20.0,21.9,False,False,drug
+2001,New Mexico,258,1831690,14.1,12.4,15.8,False,False,drug
+2002,New Mexico,287,1855309,15.5,13.7,17.3,False,False,drug
+2003,New Mexico,358,1877574,19.1,17.1,21.0,False,False,drug
+2004,New Mexico,314,1903808,16.5,14.7,18.3,False,False,drug
+2005,New Mexico,373,1932274,19.3,17.3,21.3,False,False,drug
+2006,New Mexico,418,1962137,21.3,19.3,23.3,False,False,drug
+2007,New Mexico,462,1990070,23.2,21.1,25.3,False,False,drug
+2008,New Mexico,518,2010662,25.8,23.5,28.0,False,False,drug
+2009,New Mexico,438,2036802,21.5,19.5,23.5,False,False,drug
+2010,New Mexico,478,2059179,23.2,21.1,25.3,False,False,drug
+2011,New Mexico,529,2082224,25.4,23.2,27.6,False,False,drug
+2012,New Mexico,492,2085538,23.6,21.5,25.7,False,False,drug
+2013,New Mexico,458,2085287,22.0,20.0,24.0,False,False,drug
+2014,New Mexico,547,2085572,26.2,24.0,28.4,False,False,drug
+2015,New Mexico,501,2085109,24.0,21.9,26.1,False,False,drug
+2016,New Mexico,500,2081015,24.0,21.9,26.1,False,False,drug
+2017,New Mexico,493,2088070,23.6,21.5,25.7,False,False,drug
+2018,New Mexico,537,2095428,25.6,23.5,27.8,False,False,drug
+2019,New Mexico,599,2096829,28.6,26.3,30.9,False,False,drug
+2020,New Mexico,784,2106319,37.2,34.6,39.8,False,False,drug
+2021,New Mexico,1052,2115877,49.7,46.7,52.7,False,False,drug
+2022,New Mexico,1024,2113344,48.5,45.5,51.4,False,False,drug
+2023,New Mexico,993,2114371,47.0,44.0,49.9,False,False,drug
+2024,New Mexico,775,2130256,36.4,33.8,38.9,False,False,drug
+2001,New York,1079,19082838,5.7,5.3,6.0,False,False,drug
+2002,New York,923,19137800,4.8,4.5,5.1,False,False,drug
+2003,New York,964,19175939,5.0,4.7,5.3,False,False,drug
+2004,New York,831,19171567,4.3,4.0,4.6,False,False,drug
+2005,New York,944,19132610,4.9,4.6,5.2,False,False,drug
+2006,New York,1680,19104631,8.8,8.4,9.2,False,False,drug
+2007,New York,1708,19132335,8.9,8.5,9.4,False,False,drug
+2008,New York,1691,19212436,8.8,8.4,9.2,False,False,drug
+2009,New York,1592,19307066,8.2,7.8,8.7,False,False,drug
+2010,New York,1557,19378102,8.0,7.6,8.4,False,False,drug
+2011,New York,1948,19465197,10.0,9.6,10.5,False,False,drug
+2012,New York,2106,19570261,10.8,10.3,11.2,False,False,drug
+2013,New York,2309,19651127,11.7,11.3,12.2,False,False,drug
+2014,New York,2300,19746227,11.6,11.2,12.1,False,False,drug
+2015,New York,2754,19795791,13.9,13.4,14.4,False,False,drug
+2016,New York,3638,19745289,18.4,17.8,19.0,False,False,drug
+2017,New York,3921,19849399,19.8,19.1,20.4,False,False,drug
+2018,New York,3697,19542209,18.9,18.3,19.5,False,False,drug
+2019,New York,3617,19453561,18.6,18.0,19.2,False,False,drug
+2020,New York,4965,19336776,25.7,25.0,26.4,False,False,drug
+2021,New York,5842,19835913,29.5,28.7,30.2,False,False,drug
+2022,New York,6358,19677151,32.3,31.5,33.1,False,False,drug
+2023,New York,6330,19571216,32.3,31.5,33.1,False,False,drug
+2024,New York,4449,19867248,22.4,21.7,23.1,False,False,drug
+2001,North Carolina,551,8210122,6.7,6.2,7.3,False,False,drug
+2002,North Carolina,647,8326201,7.8,7.2,8.4,False,False,drug
+2003,North Carolina,762,8422501,9.0,8.4,9.7,False,False,drug
+2004,North Carolina,854,8553152,10.0,9.3,10.7,False,False,drug
+2005,North Carolina,1000,8705407,11.5,10.8,12.2,False,False,drug
+2006,North Carolina,1059,8917270,11.9,11.2,12.6,False,False,drug
+2007,North Carolina,1084,9118037,11.9,11.2,12.6,False,False,drug
+2008,North Carolina,1196,9309449,12.8,12.1,13.6,False,False,drug
+2009,North Carolina,1191,9449566,12.6,11.9,13.3,False,False,drug
+2010,North Carolina,1093,9535483,11.5,10.8,12.1,False,False,drug
+2011,North Carolina,1264,9656401,13.1,12.4,13.8,False,False,drug
+2012,North Carolina,1298,9752073,13.3,12.6,14.0,False,False,drug
+2013,North Carolina,1259,9848060,12.8,12.1,13.5,False,False,drug
+2014,North Carolina,1358,9943964,13.7,12.9,14.4,False,False,drug
+2015,North Carolina,1567,10042802,15.6,14.8,16.4,False,False,drug
+2016,North Carolina,1956,10146788,19.3,18.4,20.1,False,False,drug
+2017,North Carolina,2414,10273419,23.5,22.6,24.4,False,False,drug
+2018,North Carolina,2259,10383620,21.8,20.9,22.7,False,False,drug
+2019,North Carolina,2266,10488084,21.6,20.7,22.5,False,False,drug
+2020,North Carolina,3146,10600823,29.7,28.6,30.7,False,False,drug
+2021,North Carolina,3981,10551162,37.7,36.6,38.9,False,False,drug
+2022,North Carolina,4310,10698973,40.3,39.1,41.5,False,False,drug
+2023,North Carolina,3520,10835491,32.5,31.4,33.6,False,False,drug
+2024,North Carolina,2780,11046024,25.2,24.2,26.1,False,False,drug
+2001,North Dakota,14,639062,,1.2,3.7,False,True,drug
+2002,North Dakota,17,638168,,1.6,4.3,False,True,drug
+2003,North Dakota,22,638817,3.4,2.2,5.2,False,False,drug
+2004,North Dakota,17,644705,,1.5,4.2,False,True,drug
+2005,North Dakota,12,646089,,1.0,3.2,False,True,drug
+2006,North Dakota,14,649422,,1.2,3.6,False,True,drug
+2007,North Dakota,32,652822,4.9,3.4,6.9,False,False,drug
+2008,North Dakota,46,657569,7.0,5.1,9.3,False,False,drug
+2009,North Dakota,27,664968,4.1,2.7,5.9,False,False,drug
+2010,North Dakota,23,672591,3.4,2.2,5.1,False,False,drug
+2011,North Dakota,16,683932,,1.3,3.8,False,True,drug
+2012,North Dakota,21,699628,3.0,1.9,4.6,False,False,drug
+2013,North Dakota,20,723393,2.8,1.7,4.3,False,False,drug
+2014,North Dakota,43,739482,5.8,4.2,7.8,False,False,drug
+2015,North Dakota,61,756927,8.1,6.2,10.4,False,False,drug
+2016,North Dakota,77,757952,10.2,8.0,12.7,False,False,drug
+2017,North Dakota,68,755393,9.0,7.0,11.4,False,False,drug
+2018,North Dakota,70,760077,9.2,7.2,11.6,False,False,drug
+2019,North Dakota,82,762062,10.8,8.6,13.4,False,False,drug
+2020,North Dakota,114,765309,14.9,12.2,17.6,False,False,drug
+2021,North Dakota,124,774948,16.0,13.2,18.8,False,False,drug
+2022,North Dakota,148,779261,19.0,15.9,22.1,False,False,drug
+2023,North Dakota,122,783926,15.6,12.8,18.3,False,False,drug
+2024,North Dakota,108,796568,13.6,11.0,16.1,False,False,drug
+2001,Ohio,737,11387404,6.5,6.0,6.9,False,False,drug
+2002,Ohio,931,11407889,8.2,7.6,8.7,False,False,drug
+2003,Ohio,775,11434788,6.8,6.3,7.3,False,False,drug
+2004,Ohio,1136,11452251,9.9,9.3,10.5,False,False,drug
+2005,Ohio,1243,11463320,10.8,10.2,11.4,False,False,drug
+2006,Ohio,1515,11481213,13.2,12.5,13.9,False,False,drug
+2007,Ohio,1592,11500468,13.8,13.2,14.5,False,False,drug
+2008,Ohio,1733,11515391,15.0,14.3,15.8,False,False,drug
+2009,Ohio,1236,11528896,10.7,10.1,11.3,False,False,drug
+2010,Ohio,1835,11536504,15.9,15.2,16.6,False,False,drug
+2011,Ohio,2025,11544951,17.5,16.8,18.3,False,False,drug
+2012,Ohio,2125,11544225,18.4,17.6,19.2,False,False,drug
+2013,Ohio,2347,11570808,20.3,19.5,21.1,False,False,drug
+2014,Ohio,2744,11594163,23.7,22.8,24.6,False,False,drug
+2015,Ohio,3310,11613423,28.5,27.5,29.5,False,False,drug
+2016,Ohio,4329,11614373,37.3,36.2,38.4,False,False,drug
+2017,Ohio,5111,11658609,43.8,42.6,45.0,False,False,drug
+2018,Ohio,3980,11689442,34.0,33.0,35.1,False,False,drug
+2019,Ohio,4251,11689100,36.4,35.3,37.5,False,False,drug
+2020,Ohio,5204,11693217,44.5,43.3,45.7,False,False,drug
+2021,Ohio,5397,11780017,45.8,44.6,47.0,False,False,drug
+2022,Ohio,5144,11756058,43.8,42.6,45.0,False,False,drug
+2023,Ohio,4745,11785935,40.3,39.1,41.4,False,False,drug
+2024,Ohio,3165,11883304,26.6,25.7,27.6,False,False,drug
+2001,Oklahoma,269,3467100,7.8,6.8,8.7,False,False,drug
+2002,Oklahoma,240,3489080,6.9,6.0,7.7,False,False,drug
+2003,Oklahoma,400,3504892,11.4,10.3,12.5,False,False,drug
+2004,Oklahoma,476,3525233,13.5,12.3,14.7,False,False,drug
+2005,Oklahoma,478,3548597,13.5,12.3,14.7,False,False,drug
+2006,Oklahoma,563,3594090,15.7,14.4,17.0,False,False,drug
+2007,Oklahoma,666,3634349,18.3,16.9,19.7,False,False,drug
+2008,Oklahoma,564,3668976,15.4,14.1,16.6,False,False,drug
+2009,Oklahoma,756,3717572,20.3,18.9,21.8,False,False,drug
+2010,Oklahoma,717,3751351,19.1,17.7,20.5,False,False,drug
+2011,Oklahoma,703,3791508,18.5,17.2,19.9,False,False,drug
+2012,Oklahoma,771,3814820,20.2,18.8,21.6,False,False,drug
+2013,Oklahoma,790,3850568,20.5,19.1,21.9,False,False,drug
+2014,Oklahoma,777,3878051,20.0,18.6,21.4,False,False,drug
+2015,Oklahoma,725,3911338,18.5,17.2,19.9,False,False,drug
+2016,Oklahoma,813,3923561,20.7,19.3,22.1,False,False,drug
+2017,Oklahoma,775,3930864,19.7,18.3,21.1,False,False,drug
+2018,Oklahoma,716,3943079,18.2,16.8,19.5,False,False,drug
+2019,Oklahoma,645,3956971,16.3,15.0,17.6,False,False,drug
+2020,Oklahoma,762,3980783,19.1,17.8,20.5,False,False,drug
+2021,Oklahoma,960,3986639,24.1,22.6,25.6,False,False,drug
+2022,Oklahoma,1196,4019800,29.8,28.1,31.4,False,False,drug
+2023,Oklahoma,1278,4053824,31.5,29.8,33.3,False,False,drug
+2024,Oklahoma,1019,4095393,24.9,23.4,26.4,False,False,drug
+2001,Oregon,241,3467937,6.9,6.1,7.8,False,False,drug
+2002,Oregon,318,3513424,9.1,8.1,10.0,False,False,drug
+2003,Oregon,355,3547376,10.0,9.0,11.0,False,False,drug
+2004,Oregon,365,3569463,10.2,9.2,11.3,False,False,drug
+2005,Oregon,386,3613202,10.7,9.6,11.7,False,False,drug
+2006,Oregon,485,3670883,13.2,12.0,14.4,False,False,drug
+2007,Oregon,502,3722417,13.5,12.3,14.7,False,False,drug
+2008,Oregon,452,3768748,12.0,10.9,13.1,False,False,drug
+2009,Oregon,501,3808600,13.2,12.0,14.3,False,False,drug
+2010,Oregon,503,3831074,13.1,12.0,14.3,False,False,drug
+2011,Oregon,532,3871859,13.7,12.6,14.9,False,False,drug
+2012,Oregon,490,3899353,12.6,11.5,13.7,False,False,drug
+2013,Oregon,455,3930065,11.6,10.5,12.6,False,False,drug
+2014,Oregon,522,3970239,13.1,12.0,14.3,False,False,drug
+2015,Oregon,505,4028977,12.5,11.4,13.6,False,False,drug
+2016,Oregon,506,4093465,12.4,11.3,13.4,False,False,drug
+2017,Oregon,530,4142776,12.8,11.7,13.9,False,False,drug
+2018,Oregon,547,4190713,13.1,12.0,14.1,False,False,drug
+2019,Oregon,615,4217737,14.6,13.4,15.7,False,False,drug
+2020,Oregon,803,4241507,18.9,17.6,20.2,False,False,drug
+2021,Oregon,1171,4246155,27.6,26.0,29.2,False,False,drug
+2022,Oregon,1363,4240137,32.1,30.4,33.9,False,False,drug
+2023,Oregon,1782,4233358,42.1,40.1,44.0,False,False,drug
+2024,Oregon,1500,4272371,35.1,33.3,36.9,False,False,drug
+2001,Pennsylvania,958,12298970,7.8,7.3,8.3,False,False,drug
+2002,Pennsylvania,1097,12331031,8.9,8.4,9.4,False,False,drug
+2003,Pennsylvania,1381,12374658,11.2,10.6,11.7,False,False,drug
+2004,Pennsylvania,1544,12410722,12.4,11.8,13.1,False,False,drug
+2005,Pennsylvania,1613,12449990,13.0,12.3,13.6,False,False,drug
+2006,Pennsylvania,1638,12510809,13.1,12.5,13.7,False,False,drug
+2007,Pennsylvania,1733,12563937,13.8,13.1,14.4,False,False,drug
+2008,Pennsylvania,1850,12612285,14.7,14.0,15.3,False,False,drug
+2009,Pennsylvania,1909,12666858,15.1,14.4,15.7,False,False,drug
+2010,Pennsylvania,1916,12702379,15.1,14.4,15.8,False,False,drug
+2011,Pennsylvania,2289,12742886,18.0,17.2,18.7,False,False,drug
+2012,Pennsylvania,2365,12763536,18.5,17.8,19.3,False,False,drug
+2013,Pennsylvania,2426,12773801,19.0,18.2,19.7,False,False,drug
+2014,Pennsylvania,2732,12787209,21.4,20.6,22.2,False,False,drug
+2015,Pennsylvania,3264,12802503,25.5,24.6,26.4,False,False,drug
+2016,Pennsylvania,4627,12784227,36.2,35.2,37.2,False,False,drug
+2017,Pennsylvania,5388,12805537,42.1,41.0,43.2,False,False,drug
+2018,Pennsylvania,4415,12807060,34.5,33.5,35.5,False,False,drug
+2019,Pennsylvania,4377,12801989,34.2,33.2,35.2,False,False,drug
+2020,Pennsylvania,5168,12783254,40.4,39.3,41.5,False,False,drug
+2021,Pennsylvania,5449,12964056,42.0,40.9,43.1,False,False,drug
+2022,Pennsylvania,5169,12972008,39.8,38.8,40.9,False,False,drug
+2023,Pennsylvania,4757,12961683,36.7,35.7,37.7,False,False,drug
+2024,Pennsylvania,3341,13078751,25.5,24.7,26.4,False,False,drug
+2001,Rhode Island,110,1057142,10.4,8.5,12.3,False,False,drug
+2002,Rhode Island,99,1065995,9.3,7.5,11.3,False,False,drug
+2003,Rhode Island,146,1071342,13.6,11.4,15.8,False,False,drug
+2004,Rhode Island,106,1074579,9.9,8.0,11.7,False,False,drug
+2005,Rhode Island,156,1067916,14.6,12.3,16.9,False,False,drug
+2006,Rhode Island,175,1063096,16.5,14.0,18.9,False,False,drug
+2007,Rhode Island,135,1057315,12.8,10.6,14.9,False,False,drug
+2008,Rhode Island,185,1055003,17.5,15.0,20.1,False,False,drug
+2009,Rhode Island,161,1053646,15.3,12.9,17.6,False,False,drug
+2010,Rhode Island,167,1052567,15.9,13.5,18.3,False,False,drug
+2011,Rhode Island,190,1051302,18.1,15.5,20.6,False,False,drug
+2012,Rhode Island,196,1050292,18.7,16.0,21.3,False,False,drug
+2013,Rhode Island,241,1051511,22.9,20.0,25.8,False,False,drug
+2014,Rhode Island,247,1055173,23.4,20.5,26.3,False,False,drug
+2015,Rhode Island,310,1056298,29.3,26.1,32.6,False,False,drug
+2016,Rhode Island,326,1056426,30.9,27.5,34.2,False,False,drug
+2017,Rhode Island,320,1059639,30.2,26.9,33.5,False,False,drug
+2018,Rhode Island,317,1057315,30.0,26.7,33.3,False,False,drug
+2019,Rhode Island,307,1059361,29.0,25.7,32.2,False,False,drug
+2020,Rhode Island,397,1057125,37.6,33.9,41.2,False,False,drug
+2021,Rhode Island,455,1095610,41.5,37.7,45.3,False,False,drug
+2022,Rhode Island,424,1093734,38.8,35.1,42.5,False,False,drug
+2023,Rhode Island,413,1095962,37.7,34.0,41.3,False,False,drug
+2024,Rhode Island,323,1112308,29.0,25.9,32.2,False,False,drug
+2001,South Carolina,242,4064995,6.0,5.2,6.7,False,False,drug
+2002,South Carolina,217,4107795,5.3,4.6,6.0,False,False,drug
+2003,South Carolina,287,4150297,6.9,6.1,7.7,False,False,drug
+2004,South Carolina,356,4210921,8.5,7.6,9.3,False,False,drug
+2005,South Carolina,427,4270150,10.0,9.1,10.9,False,False,drug
+2006,South Carolina,554,4357847,12.7,11.7,13.8,False,False,drug
+2007,South Carolina,545,4444110,12.3,11.2,13.3,False,False,drug
+2008,South Carolina,565,4528996,12.5,11.4,13.5,False,False,drug
+2009,South Carolina,615,4589872,13.4,12.3,14.5,False,False,drug
+2010,South Carolina,678,4625364,14.7,13.6,15.8,False,False,drug
+2011,South Carolina,618,4679230,13.2,12.2,14.2,False,False,drug
+2012,South Carolina,587,4723723,12.4,11.4,13.4,False,False,drug
+2013,South Carolina,620,4774839,13.0,12.0,14.0,False,False,drug
+2014,South Carolina,701,4832482,14.5,13.4,15.6,False,False,drug
+2015,South Carolina,761,4896146,15.5,14.4,16.6,False,False,drug
+2016,South Carolina,879,4961119,17.7,16.5,18.9,False,False,drug
+2017,South Carolina,1008,5024369,20.1,18.8,21.3,False,False,drug
+2018,South Carolina,1125,5084127,22.1,20.8,23.4,False,False,drug
+2019,South Carolina,1127,5148714,21.9,20.6,23.2,False,False,drug
+2020,South Carolina,1739,5218040,33.3,31.8,34.9,False,False,drug
+2021,South Carolina,2138,5190705,41.2,39.4,42.9,False,False,drug
+2022,South Carolina,2279,5282634,43.1,41.4,44.9,False,False,drug
+2023,South Carolina,2177,5373555,40.5,38.8,42.2,False,False,drug
+2024,South Carolina,1467,5478831,26.8,25.4,28.1,False,False,drug
+2001,South Dakota,24,757972,3.2,2.0,4.7,False,False,drug
+2002,South Dakota,22,760020,2.9,1.8,4.4,False,False,drug
+2003,South Dakota,24,763729,3.1,2.0,4.7,False,False,drug
+2004,South Dakota,43,770396,5.6,4.0,7.5,False,False,drug
+2005,South Dakota,40,775493,5.2,3.7,7.0,False,False,drug
+2006,South Dakota,37,783033,4.7,3.3,6.5,False,False,drug
+2007,South Dakota,32,791623,4.0,2.8,5.7,False,False,drug
+2008,South Dakota,54,799124,6.8,5.1,8.8,False,False,drug
+2009,South Dakota,49,807067,6.1,4.5,8.0,False,False,drug
+2010,South Dakota,45,814180,5.5,4.0,7.4,False,False,drug
+2011,South Dakota,57,824082,6.9,5.2,9.0,False,False,drug
+2012,South Dakota,42,833354,5.0,3.6,6.8,False,False,drug
+2013,South Dakota,55,844877,6.5,4.9,8.5,False,False,drug
+2014,South Dakota,63,853175,7.4,5.7,9.4,False,False,drug
+2015,South Dakota,65,858469,7.6,5.8,9.7,False,False,drug
+2016,South Dakota,69,865454,8.0,6.2,10.1,False,False,drug
+2017,South Dakota,73,869666,8.4,6.6,10.6,False,False,drug
+2018,South Dakota,57,882235,6.5,4.9,8.4,False,False,drug
+2019,South Dakota,86,884659,9.7,7.8,12.0,False,False,drug
+2020,South Dakota,83,892717,9.3,7.4,11.5,False,False,drug
+2021,South Dakota,105,895376,11.7,9.5,14.0,False,False,drug
+2022,South Dakota,95,909824,10.4,8.4,12.8,False,False,drug
+2023,South Dakota,95,919318,10.3,8.4,12.6,False,False,drug
+2024,South Dakota,98,924669,10.6,8.6,12.9,False,False,drug
+2001,Tennessee,424,5750789,7.4,6.7,8.1,False,False,drug
+2002,Tennessee,491,5795918,8.5,7.7,9.2,False,False,drug
+2003,Tennessee,662,5847812,11.3,10.5,12.2,False,False,drug
+2004,Tennessee,763,5910809,12.9,12.0,13.8,False,False,drug
+2005,Tennessee,872,5991057,14.6,13.6,15.5,False,False,drug
+2006,Tennessee,975,6088766,16.0,15.0,17.0,False,False,drug
+2007,Tennessee,985,6175727,15.9,15.0,16.9,False,False,drug
+2008,Tennessee,938,6247411,15.0,14.1,16.0,False,False,drug
+2009,Tennessee,962,6306019,15.3,14.3,16.2,False,False,drug
+2010,Tennessee,1080,6346105,17.0,16.0,18.0,False,False,drug
+2011,Tennessee,1090,6403353,17.0,16.0,18.0,False,False,drug
+2012,Tennessee,1131,6456243,17.5,16.5,18.5,False,False,drug
+2013,Tennessee,1187,6495978,18.3,17.2,19.3,False,False,drug
+2014,Tennessee,1269,6549352,19.4,18.3,20.4,False,False,drug
+2015,Tennessee,1457,6600299,22.1,20.9,23.2,False,False,drug
+2016,Tennessee,1630,6651194,24.5,23.3,25.7,False,False,drug
+2017,Tennessee,1776,6715984,26.4,25.2,27.7,False,False,drug
+2018,Tennessee,1823,6770010,26.9,25.7,28.2,False,False,drug
+2019,Tennessee,2089,6829174,30.6,29.3,31.9,False,False,drug
+2020,Tennessee,3034,6886834,44.1,42.5,45.6,False,False,drug
+2021,Tennessee,3813,6975218,54.7,52.9,56.4,False,False,drug
+2022,Tennessee,3825,7051339,54.2,52.5,56.0,False,False,drug
+2023,Tennessee,3616,7126489,50.7,49.1,52.4,False,False,drug
+2024,Tennessee,2499,7227750,34.6,33.2,35.9,False,False,drug
+2001,Texas,1374,21319622,6.4,6.1,6.8,False,False,drug
+2002,Texas,1598,21690325,7.4,7.0,7.7,False,False,drug
+2003,Texas,1753,22030931,8.0,7.6,8.3,False,False,drug
+2004,Texas,1813,22394023,8.1,7.7,8.5,False,False,drug
+2005,Texas,1910,22778123,8.4,8.0,8.8,False,False,drug
+2006,Texas,2191,23359580,9.4,9.0,9.8,False,False,drug
+2007,Texas,2194,23831983,9.2,8.8,9.6,False,False,drug
+2008,Texas,2053,24309039,8.4,8.1,8.8,False,False,drug
+2009,Texas,2409,24801761,9.7,9.3,10.1,False,False,drug
+2010,Texas,2399,25145561,9.5,9.2,9.9,False,False,drug
+2011,Texas,2589,25674681,10.1,9.7,10.5,False,False,drug
+2012,Texas,2447,26059203,9.4,9.0,9.8,False,False,drug
+2013,Texas,2446,26448193,9.2,8.9,9.6,False,False,drug
+2014,Texas,2601,26956958,9.6,9.3,10.0,False,False,drug
+2015,Texas,2588,27469114,9.4,9.1,9.8,False,False,drug
+2016,Texas,2831,27862596,10.2,9.8,10.5,False,False,drug
+2017,Texas,2989,28304596,10.6,10.2,10.9,False,False,drug
+2018,Texas,3005,28701845,10.5,10.1,10.8,False,False,drug
+2019,Texas,3136,28995881,10.8,10.4,11.2,False,False,drug
+2020,Texas,4172,29360759,14.2,13.8,14.6,False,False,drug
+2021,Texas,4984,29527941,16.9,16.4,17.3,False,False,drug
+2022,Texas,5489,30029572,18.3,17.8,18.8,False,False,drug
+2023,Texas,5687,30503301,18.6,18.2,19.1,False,False,drug
+2024,Texas,4980,31290831,15.9,15.5,16.4,False,False,drug
+2001,Utah,209,2283715,9.2,7.9,10.4,False,False,drug
+2002,Utah,288,2324815,12.4,11.0,13.8,False,False,drug
+2003,Utah,353,2360137,15.0,13.4,16.5,False,False,drug
+2004,Utah,358,2401580,14.9,13.4,16.5,False,False,drug
+2005,Utah,438,2457719,17.8,16.2,19.5,False,False,drug
+2006,Utah,444,2525507,17.6,15.9,19.2,False,False,drug
+2007,Utah,511,2597746,19.7,18.0,21.4,False,False,drug
+2008,Utah,468,2663029,17.6,16.0,19.2,False,False,drug
+2009,Utah,478,2723421,17.6,16.0,19.1,False,False,drug
+2010,Utah,433,2763885,15.7,14.2,17.1,False,False,drug
+2011,Utah,504,2817222,17.9,16.3,19.5,False,False,drug
+2012,Utah,601,2855287,21.0,19.4,22.7,False,False,drug
+2013,Utah,594,2900872,20.5,18.8,22.1,False,False,drug
+2014,Utah,603,2942902,20.5,18.9,22.1,False,False,drug
+2015,Utah,646,2995919,21.6,19.9,23.2,False,False,drug
+2016,Utah,635,3051217,20.8,19.2,22.4,False,False,drug
+2017,Utah,650,3101833,21.0,19.3,22.6,False,False,drug
+2018,Utah,624,3161105,19.7,18.2,21.3,False,False,drug
+2019,Utah,571,3205958,17.8,16.3,19.3,False,False,drug
+2020,Utah,622,3249879,19.1,17.6,20.6,False,False,drug
+2021,Utah,662,3337975,19.8,18.3,21.3,False,False,drug
+2022,Utah,627,3380800,18.5,17.1,20.0,False,False,drug
+2023,Utah,693,3417734,20.3,18.8,21.8,False,False,drug
+2024,Utah,674,3503613,19.2,17.8,20.7,False,False,drug
+2001,Vermont,44,612223,7.2,5.2,9.6,False,False,drug
+2002,Vermont,47,615442,7.6,5.6,10.2,False,False,drug
+2003,Vermont,65,617858,10.5,8.1,13.4,False,False,drug
+2004,Vermont,50,619920,8.1,6.0,10.6,False,False,drug
+2005,Vermont,53,621215,8.5,6.4,11.2,False,False,drug
+2006,Vermont,75,622892,12.0,9.5,15.1,False,False,drug
+2007,Vermont,66,623481,10.6,8.2,13.5,False,False,drug
+2008,Vermont,73,624151,11.7,9.2,14.7,False,False,drug
+2009,Vermont,55,624817,8.8,6.6,11.5,False,False,drug
+2010,Vermont,63,625741,10.1,7.7,12.9,False,False,drug
+2011,Vermont,83,626431,13.2,10.6,16.4,False,False,drug
+2012,Vermont,70,626011,11.2,8.7,14.1,False,False,drug
+2013,Vermont,93,626630,14.8,12.0,18.2,False,False,drug
+2014,Vermont,83,626562,13.2,10.6,16.4,False,False,drug
+2015,Vermont,99,626042,15.8,12.9,19.3,False,False,drug
+2016,Vermont,125,624594,20.0,16.5,23.5,False,False,drug
+2017,Vermont,134,623657,21.5,17.8,25.1,False,False,drug
+2018,Vermont,153,626299,24.4,20.6,28.3,False,False,drug
+2019,Vermont,133,623989,21.3,17.7,24.9,False,False,drug
+2020,Vermont,190,623347,30.5,26.1,34.8,False,False,drug
+2021,Vermont,252,645570,39.0,34.2,43.9,False,False,drug
+2022,Vermont,276,647064,42.7,37.6,47.7,False,False,drug
+2023,Vermont,259,647464,40.0,35.1,44.9,False,False,drug
+2024,Vermont,208,648493,32.1,27.7,36.4,False,False,drug
+2001,Virginia,459,7198362,6.4,5.8,7.0,False,False,drug
+2002,Virginia,509,7286873,7.0,6.4,7.6,False,False,drug
+2003,Virginia,547,7366977,7.4,6.8,8.0,False,False,drug
+2004,Virginia,558,7475575,7.5,6.8,8.1,False,False,drug
+2005,Virginia,581,7577105,7.7,7.0,8.3,False,False,drug
+2006,Virginia,629,7673725,8.2,7.6,8.8,False,False,drug
+2007,Virginia,700,7751000,9.0,8.4,9.7,False,False,drug
+2008,Virginia,718,7833496,9.2,8.5,9.8,False,False,drug
+2009,Virginia,685,7925937,8.6,8.0,9.3,False,False,drug
+2010,Virginia,558,8001024,7.0,6.4,7.6,False,False,drug
+2011,Virginia,798,8096604,9.9,9.2,10.5,False,False,drug
+2012,Virginia,733,8185867,9.0,8.3,9.6,False,False,drug
+2013,Virginia,854,8260405,10.3,9.6,11.0,False,False,drug
+2014,Virginia,980,8326289,11.8,11.0,12.5,False,False,drug
+2015,Virginia,1039,8382993,12.4,11.6,13.1,False,False,drug
+2016,Virginia,1405,8411808,16.7,15.8,17.6,False,False,drug
+2017,Virginia,1507,8470020,17.8,16.9,18.7,False,False,drug
+2018,Virginia,1448,8517685,17.0,16.1,17.9,False,False,drug
+2019,Virginia,1547,8535519,18.1,17.2,19.0,False,False,drug
+2020,Virginia,2240,8590563,26.1,25.0,27.2,False,False,drug
+2021,Virginia,2626,8642274,30.4,29.2,31.5,False,False,drug
+2022,Virginia,2496,8683619,28.7,27.6,29.9,False,False,drug
+2023,Virginia,2480,8715698,28.5,27.3,29.6,False,False,drug
+2024,Virginia,1552,8811195,17.6,16.7,18.5,False,False,drug
+2001,Washington,499,5985722,8.3,7.6,9.1,False,False,drug
+2002,Washington,643,6052349,10.6,9.8,11.4,False,False,drug
+2003,Washington,696,6104115,11.4,10.6,12.2,False,False,drug
+2004,Washington,811,6178645,13.1,12.2,14.0,False,False,drug
+2005,Washington,850,6257305,13.6,12.7,14.5,False,False,drug
+2006,Washington,897,6370753,14.1,13.2,15.0,False,False,drug
+2007,Washington,962,6461587,14.9,13.9,15.8,False,False,drug
+2008,Washington,1011,6562231,15.4,14.5,16.4,False,False,drug
+2009,Washington,987,6667426,14.8,13.9,15.7,False,False,drug
+2010,Washington,916,6724540,13.6,12.7,14.5,False,False,drug
+2011,Washington,997,6830038,14.6,13.7,15.5,False,False,drug
+2012,Washington,985,6897012,14.3,13.4,15.2,False,False,drug
+2013,Washington,969,6971406,13.9,13.0,14.8,False,False,drug
+2014,Washington,979,7061530,13.9,13.0,14.7,False,False,drug
+2015,Washington,1094,7170351,15.3,14.4,16.2,False,False,drug
+2016,Washington,1102,7288000,15.1,14.2,16.0,False,False,drug
+2017,Washington,1169,7405743,15.8,14.9,16.7,False,False,drug
+2018,Washington,1164,7535591,15.4,14.6,16.3,False,False,drug
+2019,Washington,1259,7614893,16.5,15.6,17.4,False,False,drug
+2020,Washington,1733,7693612,22.5,21.5,23.6,False,False,drug
+2021,Washington,2264,7738692,29.3,28.1,30.5,False,False,drug
+2022,Washington,2725,7785786,35.0,33.7,36.3,False,False,drug
+2023,Washington,3477,7812880,44.5,43.0,46.0,False,False,drug
+2024,Washington,3145,7958180,39.5,38.1,40.9,False,False,drug
+2001,West Virginia,206,1801481,11.4,9.9,13.0,False,False,drug
+2002,West Virginia,229,1805414,12.7,11.0,14.3,False,False,drug
+2003,West Virginia,262,1812295,14.5,12.7,16.2,False,False,drug
+2004,West Virginia,333,1816438,18.3,16.4,20.3,False,False,drug
+2005,West Virginia,184,1820492,10.1,8.6,11.6,False,False,drug
+2006,West Virginia,362,1827912,19.8,17.8,21.8,False,False,drug
+2007,West Virginia,397,1834052,21.6,19.5,23.8,False,False,drug
+2008,West Virginia,459,1840310,24.9,22.7,27.2,False,False,drug
+2009,West Virginia,226,1847775,12.2,10.6,13.8,False,False,drug
+2010,West Virginia,512,1852994,27.6,25.2,30.0,False,False,drug
+2011,West Virginia,635,1855364,34.2,31.6,36.9,False,False,drug
+2012,West Virginia,558,1855413,30.1,27.6,32.6,False,False,drug
+2013,West Virginia,570,1854304,30.7,28.2,33.3,False,False,drug
+2014,West Virginia,627,1850326,33.9,31.2,36.5,False,False,drug
+2015,West Virginia,725,1844128,39.3,36.5,42.2,False,False,drug
+2016,West Virginia,884,1831102,48.3,45.1,51.5,False,False,drug
+2017,West Virginia,974,1815857,53.6,50.3,57.0,False,False,drug
+2018,West Virginia,856,1805832,47.4,44.2,50.6,False,False,drug
+2019,West Virginia,870,1792147,48.5,45.3,51.8,False,False,drug
+2020,West Virginia,1330,1784787,74.5,70.5,78.5,False,False,drug
+2021,West Virginia,1501,1782959,84.2,79.9,88.4,False,False,drug
+2022,West Virginia,1335,1775156,75.2,71.2,79.2,False,False,drug
+2023,West Virginia,1377,1770071,77.8,73.7,81.9,False,False,drug
+2024,West Virginia,821,1769979,46.4,43.2,49.6,False,False,drug
+2001,Wisconsin,269,5406835,5.0,4.4,5.6,False,False,drug
+2002,Wisconsin,340,5445162,6.2,5.6,6.9,False,False,drug
+2003,Wisconsin,383,5479203,7.0,6.3,7.7,False,False,drug
+2004,Wisconsin,437,5514026,7.9,7.2,8.7,False,False,drug
+2005,Wisconsin,518,5546166,9.3,8.5,10.1,False,False,drug
+2006,Wisconsin,593,5577655,10.6,9.8,11.5,False,False,drug
+2007,Wisconsin,622,5610775,11.1,10.2,12.0,False,False,drug
+2008,Wisconsin,606,5640996,10.7,9.9,11.6,False,False,drug
+2009,Wisconsin,631,5669264,11.1,10.3,12.0,False,False,drug
+2010,Wisconsin,630,5686986,11.1,10.2,11.9,False,False,drug
+2011,Wisconsin,698,5711767,12.2,11.3,13.1,False,False,drug
+2012,Wisconsin,692,5726398,12.1,11.2,13.0,False,False,drug
+2013,Wisconsin,856,5742713,14.9,13.9,15.9,False,False,drug
+2014,Wisconsin,853,5757564,14.8,13.8,15.8,False,False,drug
+2015,Wisconsin,878,5771337,15.2,14.2,16.2,False,False,drug
+2016,Wisconsin,1074,5778708,18.6,17.5,19.7,False,False,drug
+2017,Wisconsin,1177,5795483,20.3,19.1,21.5,False,False,drug
+2018,Wisconsin,1079,5813568,18.6,17.5,19.7,False,False,drug
+2019,Wisconsin,1201,5822434,20.6,19.5,21.8,False,False,drug
+2020,Wisconsin,1531,5832655,26.2,24.9,27.6,False,False,drug
+2021,Wisconsin,1775,5895908,30.1,28.7,31.5,False,False,drug
+2022,Wisconsin,1792,5892539,30.4,29.0,31.8,False,False,drug
+2023,Wisconsin,1767,5910955,29.9,28.5,31.3,False,False,drug
+2024,Wisconsin,1175,5960975,19.7,18.6,20.8,False,False,drug
+2001,Wyoming,22,494657,4.4,2.8,6.7,False,False,drug
+2002,Wyoming,34,500017,6.8,4.7,9.5,False,False,drug
+2003,Wyoming,30,503453,6.0,4.0,8.5,False,False,drug
+2004,Wyoming,46,509106,9.0,6.6,12.1,False,False,drug
+2005,Wyoming,26,514157,5.1,3.3,7.4,False,False,drug
+2006,Wyoming,55,522667,10.5,7.9,13.7,False,False,drug
+2007,Wyoming,63,534876,11.8,9.1,15.1,False,False,drug
+2008,Wyoming,74,546043,13.6,10.6,17.0,False,False,drug
+2009,Wyoming,60,559851,10.7,8.2,13.8,False,False,drug
+2010,Wyoming,85,563626,15.1,12.0,18.6,False,False,drug
+2011,Wyoming,85,568158,15.0,11.9,18.5,False,False,drug
+2012,Wyoming,98,576412,17.0,13.8,20.7,False,False,drug
+2013,Wyoming,98,582658,16.8,13.7,20.5,False,False,drug
+2014,Wyoming,109,584153,18.7,15.2,22.2,False,False,drug
+2015,Wyoming,96,586107,16.4,13.3,20.0,False,False,drug
+2016,Wyoming,99,585501,16.9,13.7,20.6,False,False,drug
+2017,Wyoming,69,579315,11.9,9.3,15.1,False,False,drug
+2018,Wyoming,66,577737,11.4,8.8,14.5,False,False,drug
+2019,Wyoming,79,578759,13.6,10.8,17.0,False,False,drug
+2020,Wyoming,99,582328,17.0,13.8,20.7,False,False,drug
+2021,Wyoming,109,578803,18.8,15.3,22.4,False,False,drug
+2022,Wyoming,126,581381,21.7,17.9,25.5,False,False,drug
+2023,Wyoming,135,584057,23.1,19.2,27.0,False,False,drug
+2024,Wyoming,120,587618,20.4,16.8,24.1,False,False,drug
