@@ -433,8 +433,42 @@ OEWS data for time-series analysis."
 **Suppressed values.** `**` means the estimate is not available: 43 cells in
 2001-2020. In 11 state-code-years the occupation has no row at all.
 
+**Code history check.** We compared the BLS SOC crosswalks (saved in
+`data/raw/oews/docs/`). 21-1011, 21-1014 and 21-1023 carry over one to one from
+SOC 2000 to SOC 2010 to SOC 2018. 21-1018 is the sum of 21-1011 and 21-1014.
+Other points to note:
+- 2010-2011 and 2019-2020 are "hybrid" years, when BLS was moving between
+  SOC versions. The codes we use did not change in those years.
+- From May 2021, BLS changed its estimation method (MB3).
+- The national total of the three codes moves smoothly across each of these
+  points.
+
 **State-to-national check.** Where nothing is withheld, state sums are within
 ±40 of the national figure.
+
+## Two versions of People per Worker
+
+People per Worker = SAMHSA's count of people with SUD ÷ treatment workers. The
+dashboard is built twice, with two worker counts, so they can be compared.
+
+**Version 1: OEWS clinicians** (`dist/v1-oews/`). Substance abuse and mental
+health counselors (21-1011 + 21-1014 through 2016; 21-1018 from 2017) plus
+mental health and substance abuse social workers (21-1023). All settings and
+ownerships. A state-year is shown only when every part is published. 1,173 of
+1,224 state-years have a value. The 2020|2021 method change is marked on the
+worker trend line.
+
+**Version 2: QCEW private outpatient workers** (`dist/v2-qcew-private/`).
+Private annual average employment in NAICS 621420 + 621330 + 621112. A
+state-year is hatched, not colored, when either:
+- part of the private count is withheld (100 state-years), so People per Worker
+  is only a maximum; or
+- state and local government employees are 20% or more of the disclosed
+  workers in the three codes (56 state-years). A private-only count leaves
+  them out, so People per Worker would overstate the ratio. Withheld
+  government cells count as zero here, so this share is a minimum.
+
+156 of 1,224 state-years are hatched in Version 2.
 
 ## County Business Patterns (Census)
 

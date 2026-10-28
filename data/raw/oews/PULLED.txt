@@ -52,3 +52,4 @@
 2026-10-28	https://www.bls.gov/oes/current/oes_tec.htm	BLS OEWS method page saved in docs/
 2026-10-28	https://www.bls.gov/oes/soc_2018.htm	BLS OEWS method page saved in docs/
 2026-10-28	https://www.bls.gov/soc/2018/soc_structure_2018.xlsx	BLS SOC 2018 structure (method doc)
+2026-10-28	https://www.bls.gov/soc/soc_2000_to_2010_crosswalk.xls	BLS SOC 2000 to 2010 crosswalk

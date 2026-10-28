@@ -71,6 +71,41 @@ def workers():
     return out.merge(by, on=["geo", "year"], how="left")
 
 
+def gov_share():
+    """Government (state + local) share of disclosed QCEW workers in the three codes.
+    Withheld government cells are not counted, so this is a minimum."""
+    q = pd.read_csv(ROOT / "data/clean/qcew.csv", dtype={"fips": str, "naics": str, "own": str})
+    q = q[q.naics.isin(NAICS) & q.own.isin(OWN)]
+    priv = q[q.own == "5"].groupby(["state", "year"]).emp.sum()
+    gov = q[q.own.isin(["2", "3"])].groupby(["state", "year"]).emp.sum()
+    share = (gov.reindex(priv.index).fillna(0) / (gov.reindex(priv.index).fillna(0) + priv))
+    return share.rename("gov_share_min").reset_index().rename(columns={"state": "geo"})
+
+
+OEWS_PARTS = {"old": ["21-1011", "21-1014", "21-1023"], "new": ["21-1018", "21-1023"]}
+
+
+def oews():
+    """OEWS clinicians: substance abuse + mental health counselors (21-1011 + 21-1014 through
+    2016; 21-1018, which BLS formed from those two, from 2017) plus mental health and
+    substance abuse social workers (21-1023). Complete only when every part is published."""
+    o = pd.read_csv(ROOT / "data/clean/oews_counselors.csv")
+    o = o[o.state_name.isin(GEOS[:-1])].rename(columns={"state_name": "geo"})
+    nat = pd.read_csv(ROOT / "data/clean/oews_counselors_sumcheck.csv")
+    nat = pd.DataFrame({"geo": "United States", "year": nat.year, "soc": nat.soc,
+                        "employment": nat.national_employment, "rse": float("nan"),
+                        "flag": nat.national_flag})
+    o = pd.concat([o[["geo", "year", "soc", "employment", "rse", "flag"]], nat])
+    rows = []
+    for (geo, year), g in o.groupby(["geo", "year"]):
+        parts = OEWS_PARTS["new"] if year >= 2017 else OEWS_PARTS["old"]
+        g = g.set_index("soc").reindex(parts)
+        ok = g.employment.notna().all() and not g.flag.eq("**").any()
+        rows.append(dict(geo=geo, year=year, oews=g.employment.sum() if ok else None,
+                         oews_rse_max=g.rse.max() if ok and g.rse.notna().any() else None))
+    return pd.DataFrame(rows)
+
+
 def deaths():
     w = pd.read_csv(ROOT / "data/clean/wonder.csv")
     parts = []
@@ -96,6 +131,8 @@ def deaths():
 
 
 def jsonable(v):
+    if v is None:
+        return None
     if isinstance(v, str):
         return v
     if pd.isna(v):
@@ -108,7 +145,7 @@ def jsonable(v):
 def main():
     base = pd.DataFrame([(g, y) for g in GEOS for y in YEARS], columns=["geo", "year"])
     panel = base
-    for part in (nsduh(), facilities(), workers(), deaths()):
+    for part in (nsduh(), facilities(), workers(), gov_share(), oews(), deaths()):
         if part.duplicated(["geo", "year"]).any():
             raise SystemExit("duplicate geo/year keys in a source")
         panel = panel.merge(part, on=["geo", "year"], how="left")
@@ -122,23 +159,55 @@ def main():
 
     panel.to_csv(ROOT / "data/build/panel.csv", index=False)
 
+    for name, meta in VARIANTS.items():
+        write_variant(panel, name, meta)
+    print(f"{len(panel)} rows")
+
+
+GOV_HATCH = 0.20  # V2: hatch when government is at least this share of disclosed workers
+
+VARIANTS = {
+    "v1_oews": dict(
+        label="Version 1: OEWS clinicians",
+        workers=lambda p: p.oews,
+        flag=lambda p: pd.Series([None] * len(p), index=p.index),
+        note=lambda p: p.oews_rse_max,
+    ),
+    "v2_qcew_private": dict(
+        label="Version 2: QCEW private outpatient workers",
+        workers=lambda p: p.workers_private,
+        flag=lambda p: pd.Series(
+            ["floor" if f else ("public" if s >= GOV_HATCH else None)
+             for f, s in zip(p.workers_private_floor, p.gov_share_min.fillna(0))], index=p.index),
+        note=lambda p: p.gov_share_min,
+    ),
+}
+
+
+def write_variant(panel, name, meta):
+    p = panel.copy()
+    p["v_workers"] = meta["workers"](p)
+    p["v_flag"] = meta["flag"](p)
+    p["v_note"] = meta["note"](p)
     fips = {n: f for f, _, n in STATES}
     postal = {n: p for _, p, n in STATES}
-    keep = ["sud_pct", "sud_lo", "sud_hi", "sud_count", "sud_count_lo", "sud_count_hi", "sud_dsm",
-            "estabs", "estabs_per100k", "workers", "workers_floor", "workers_withheld_cells",
-            "workers_private", "workers_private_floor",
-            *[f"workers_{c}" for c in NAICS], "gap", "population",
-            "deaths", "death_rate", "death_rate_lo", "death_rate_hi",
-            "deaths_drug", "death_rate_drug", "deaths_alcohol", "death_rate_alcohol"]
+    keep = {"sud_pct": "sud_pct", "sud_lo": "sud_lo", "sud_hi": "sud_hi", "sud_count": "sud_count",
+            "sud_count_lo": "sud_count_lo", "sud_count_hi": "sud_count_hi", "sud_dsm": "sud_dsm",
+            "estabs": "estabs", "population": "population", "v_workers": "workers",
+            "v_flag": "workers_flag", "v_note": "workers_note", "deaths": "deaths",
+            "death_rate": "death_rate", "death_rate_lo": "death_rate_lo", "death_rate_hi": "death_rate_hi",
+            "deaths_drug": "deaths_drug", "death_rate_drug": "death_rate_drug",
+            "deaths_alcohol": "deaths_alcohol", "death_rate_alcohol": "death_rate_alcohol"}
     data = {}
-    for geo, g in panel.groupby("geo"):
+    for geo, g in p.groupby("geo"):
         g = g.sort_values("year")
         key = "US" if geo == "United States" else fips[geo]
-        data[key] = {"name": geo, "abbr": postal.get(geo, "US"), **{c: [jsonable(v) for v in g[c]] for c in keep}}
-    out = {"years": list(YEARS), "geo": data,
+        data[key] = {"name": geo, "abbr": postal.get(geo, "US"),
+                     **{out: [jsonable(v) for v in g[src]] for src, out in keep.items()}}
+    out = {"variant": name, "years": list(YEARS), "geo": data,
            "paths": json.loads((ROOT / "data/build/state_paths.json").read_text())}
-    (ROOT / "data/build/dashboard.json").write_text(json.dumps(out, separators=(",", ":")))
-    print(f"{len(panel)} rows; dashboard.json {len(json.dumps(out)) // 1024} KB")
+    (ROOT / f"data/build/dashboard_{name}.json").write_text(json.dumps(out, separators=(",", ":")))
+    print(f"dashboard_{name}.json {len(json.dumps(out)) // 1024} KB")
 
 
 if __name__ == "__main__":

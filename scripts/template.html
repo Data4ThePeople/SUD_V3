@@ -59,9 +59,6 @@ input[type=range]{flex:1;accent-color:var(--work)}
 .ttog button i{display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--c);opacity:.45}
 .ttog button[aria-pressed=true]{color:var(--ink)}
 .ttog button[aria-pressed=true] i{opacity:1}
-.own{display:inline-flex;border:1px solid var(--line2);border-radius:3px;overflow:hidden;margin-left:8px;vertical-align:middle}
-.own button{border:0;background:none;font-family:var(--mono);font-size:10.5px;padding:3px 7px;cursor:pointer;color:var(--muted)}
-.own button[aria-pressed=true]{background:var(--work);color:#0d1117}
 .ph{padding:22px 24px 16px;border-bottom:1px solid var(--line)}
 .ph h2{margin:0;font-size:26px}
 .ph .s{font-style:italic;color:var(--ink2);margin-top:2px}
@@ -112,7 +109,7 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 <body>
 <div class="wrap">
 <header>
-  <div class="kicker">Data 4 The People · NSDUH · N-SUMHSS · BLS QCEW · CDC WONDER · 2001–2024</div>
+  <div class="kicker">Data 4 The People · NSDUH · N-SUMHSS · BLS · CDC WONDER · 2001–2024 · <span id="vtag"></span></div>
   <h1>Demand Without A Door:<span class="l2">America's Substance-Use Treatment Gap</span></h1>
   <p class="sub">Millions of Americans live with a substance use disorder; far fewer can find a place to be treated. Explore two decades of prevalence, treatment capacity, how many people each treatment worker must serve, and the deadliest consequence - state by state, 2001-2024. Click any state to explore.</p>
 </header>
@@ -165,6 +162,47 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 <script>
 const D = /*DATA*/null;
 const GAP = {short: "PEOPLE / WORKER", name: "People per Worker", unit: "people with SUD per treatment worker"};
+// ---------- what "treatment workers" means in this version ----------
+const VARIANTS = {
+  v1_oews: {
+    tag: "Version 1 · OEWS clinicians",
+    bannerNote: "counselors and social workers in all settings · BLS OEWS",
+    cardNote: (g, y) => "counselors + social workers, all settings" + (val(g, "workers_note", y) != null ? " · sampling error up to " + Math.round(val(g, "workers_note", y)) + "%" : ""),
+    trendSuffix: " (OEWS counselors + social workers)",
+    workBreaks: [{after: 2020, at: 2020.5, label: "BLS method change", markOnly: true}],
+    hatchLegend: null,
+    hatchTip: () => "",
+    hatchCallout: () => "",
+    source: `BLS, Occupational Employment and Wage Statistics (OEWS), state employment of substance abuse and mental health counselors (SOC 21-1011 and 21-1014 through 2016; 21-1018, which combines them, from 2017) plus mental health and substance abuse social workers (21-1023). Counts all work settings and ownership types. Reference month is November for 2001-2002 and May from 2003.`,
+    limits: [
+      "<b>The worker count covers every setting.</b> OEWS counts these counselors and social workers wherever they work, including hospitals, residential programs, schools and prisons, so it is broader than outpatient care. It leaves out the self-employed. It counts clinicians only, not administrative staff.",
+      "<b>Worker counts are survey estimates.</b> Each state estimate pools six survey panels over three years and has a sampling error, shown on the workers card. Small states can move a lot from one year to the next because of sampling alone. BLS does not encourage using OEWS as a time series.",
+      "<b>Missing worker counts.</b> When BLS did not publish one of the occupations for a state and year, the worker total and the ratio are left blank.",
+      "<b>Substance use and mental health counselors cannot be separated.</b> From 2017 BLS publishes the two occupations only as one combined group (21-1018). To keep one definition across all years, both are counted in every year. The three occupation codes did not change in the 2010 or 2018 revisions of the occupation system, but the 2010-2011 and 2019-2020 estimates mix data coded under the old and new systems.",
+      "<b>BLS changed its estimation method in 2021.</b> From the May 2021 estimates, OEWS uses a model-based method (MB3). The trend line marks the change. 2001 and 2002 estimates refer to November; later years refer to May.",
+    ],
+  },
+  v2_qcew_private: {
+    tag: "Version 2 · QCEW private outpatient workers",
+    bannerNote: "private outpatient workers, NAICS 621420 + 621330 + 621112 · BLS QCEW",
+    cardNote: (g, y) => "private outpatient workers" + (val(g, "workers_flag", y) === "floor" ? " · some cells withheld"
+      : val(g, "workers_note", y) >= 0.005 ? " · government adds at least " + Math.round(val(g, "workers_note", y) * 100) + "% more not counted here" : ""),
+    trendSuffix: " (private, QCEW)",
+    workBreaks: [],
+    hatchLegend: "private count withheld, or 20%+ of workers are government employees",
+    hatchTip: (g, y) => val(g, "workers_flag", y) === "floor"
+      ? "Part of the private worker count was withheld by BLS, so the true value is lower."
+      : "Government employees are at least " + Math.round(val(g, "workers_note", y) * 100) + "% of this state's outpatient workers. This private-only count leaves them out, so the true value is lower.",
+    hatchCallout: n => "<b>Hatched states.</b> In " + S.year + ", " + n + " states either had part of their private worker count withheld by BLS or had government employees make up 20% or more of their outpatient workers. This version counts private workers only, so their " + GAP.name + " figure would overstate the ratio. They are shown hatched, not colored.",
+    source: `BLS, Quarterly Census of Employment and Wages (QCEW), annual average private employment in NAICS 621420 (outpatient mental health and substance abuse centers), 621330 (offices of mental health practitioners) and 621112 (offices of mental health physicians).`,
+    limits: [
+      "<b>Private workers only.</b> State and local government clinics are not counted. Where government employees are 20% or more of a state's disclosed outpatient workers, the state is hatched instead of colored. Where government cells are withheld, the government share is unknown, so some states may be understated without being hatched.",
+      "<b>Withheld worker counts.</b> BLS withholds a cell when publishing it could identify an employer. We never estimate a withheld value. Those states show ≥ for workers and are hatched on the " + GAP.name + " map.",
+      "<b>The worker count is broad on purpose.</b> It includes everyone on payroll at these businesses, including administrative staff and people who treat only mental health conditions. It leaves out the self-employed and substance use programs run inside hospitals.",
+    ],
+  },
+};
+const VV = VARIANTS[D.variant];
 const YEARS = D.years, Y0 = YEARS[0];
 const ix = y => y - Y0;
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
@@ -183,7 +221,7 @@ const SURVEY_BREAKS = [  // the line is not drawn across these
   {after: 2019, at: 2020.5, label: "DSM-5 redesign"},
 ];
 const BREAKS = {sud: SURVEY_BREAKS, gap: SURVEY_BREAKS,
-  estab: [{after: 2020, at: 2020.5, label: "survey merger"}], death: [], work: []};
+  estab: [{after: 2020, at: 2020.5, label: "survey merger"}], death: [], work: VV.workBreaks};
 
 // ---------- color ramps, one family per concept ----------
 const RAMPS = {
@@ -225,7 +263,7 @@ const fmtM = v => v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : fmtInt(v);
 const val = (g, k, y) => g[k][ix(y)];
 
 // ---------- state ----------
-const S = {year: 2024, metric: "sud", trend: "sud", sel: null, hover: null, priv: false, playing: null};
+const S = {year: 2024, metric: "sud", trend: "sud", sel: null, hover: null, playing: null};
 const geoKey = () => S.hover || S.sel || "US";
 
 // ---------- map ----------
@@ -267,14 +305,14 @@ function selectGeo(f) { S.sel = S.sel === f ? null : f; S.hover = null; render()
 function cellState(g, m, y) {
   const v = val(g, METRICS[m].key, y);
   if (v == null) return {kind: "none"};
-  if (m === "gap" && val(g, "workers_floor", y)) return {kind: "floor", v};
+  if (m === "gap" && val(g, "workers_flag", y)) return {kind: "floor", v};
   return {kind: "ok", v};
 }
 function tipText(f) {
   const g = D.geo[f], m = S.metric, c = cellState(g, m, S.year), M = METRICS[m];
   let s = "<b>" + g.name + "</b> · " + S.year + "<br>";
   if (c.kind === "none") s += M.short + ": no data published";
-  else if (c.kind === "floor") s += M.short + ": at most " + M.fmt(c.v) + "<br><span style='color:#9aa1ab'>Part of the worker count was withheld by BLS, so the true value is lower.</span>";
+  else if (c.kind === "floor") s += M.short + ": at most " + M.fmt(c.v) + "<br><span style='color:#9aa1ab'>" + VV.hatchTip(g, S.year) + "</span>";
   else s += M.short + ": " + M.fmt(c.v);
   return s;
 }
@@ -293,8 +331,9 @@ function renderBanner() {
   const sud = val(us, "sud_count", y), w = val(us, "workers", y), d = val(us, "deaths", y);
   document.getElementById("b-sud").textContent = sud == null ? "No estimate" : fmtM(sud);
   document.getElementById("b-sud-n").textContent = sud == null ? "SAMHSA published no state estimates ending in " + y : "people 12 and older with SUD · " + y + (dsm5(y) ? " · DSM-5 basis" : "");
-  document.getElementById("b-work").textContent = (val(us, "workers_floor", y) ? "≥ " : "") + fmtInt(w);
-  document.getElementById("b-work-n").textContent = "outpatient workers, NAICS 621420 + 621330 + 621112" + (val(us, "workers_floor", y) ? " · some cells withheld" : "");
+  const wf = val(us, "workers_flag", y) === "floor";
+  document.getElementById("b-work").textContent = w == null ? "No estimate" : (wf ? "≥ " : "") + fmtInt(w);
+  document.getElementById("b-work-n").textContent = VV.bannerNote + (wf ? " · some cells withheld" : "");
   document.getElementById("b-death").textContent = fmtInt(d);
   document.getElementById("b-death-n").textContent = val(us, "death_rate", y).toFixed(1) + " per 100K · crude rate";
 }
@@ -323,9 +362,9 @@ function renderLegend() {
   let h = '<span class="lab">' + M.label + '</span>' +
     '<span class="note">' + lo + '</span><span class="ramp" style="background:' + grad + '"></span><span class="note">' + hi + '+</span>' +
     '<span class="note"><span class="sw" style="background:' + css("--nodata") + '"></span>no data</span>';
-  if (m === "gap") h += '<span class="note"><svg class="sw" width="14" height="14"><rect width="14" height="14" fill="url(#hatchL)"/></svg>worker count incomplete (value is a maximum)</span>';
+  if (m === "gap" && VV.hatchLegend) h += '<span class="note"><svg class="sw" width="14" height="14"><rect width="14" height="14" fill="url(#hatchL)"/></svg>' + VV.hatchLegend + '</span>';
   const L = document.getElementById("legend"); L.innerHTML = h;
-  if (m === "gap") L.querySelector("svg").innerHTML = '<defs><pattern id="hatchL" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="' + css("--nodata") + '"/><line x1="0" y1="0" x2="0" y2="5" stroke="#6a7280" stroke-width="2"/></pattern></defs><rect width="14" height="14" fill="url(#hatchL)"/>';
+  if (m === "gap" && VV.hatchLegend) L.querySelector("svg").innerHTML = '<defs><pattern id="hatchL" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="' + css("--nodata") + '"/><line x1="0" y1="0" x2="0" y2="5" stroke="#6a7280" stroke-width="2"/></pattern></defs><rect width="14" height="14" fill="url(#hatchL)"/>';
   let e = "";
   if (m === "sud" || m === "gap") e = dsm5(S.year)
     ? "⚠ 2022-2024 use the redesigned NSDUH (DSM-5, web + in-person interviews). SAMHSA says these are not comparable to 2019 and earlier, so the color scale changes at 2022."
@@ -345,10 +384,9 @@ function renderCallout() {
     else p.push("<b>How years are assigned.</b> SAMHSA publishes state estimates for two-year windows. Each window is shown at its second year (2023-2024 is shown as 2024). Years with no window ending in them are left blank.");
   }
   if (m === "gap") {
-    const n = Object.entries(D.geo).filter(([k, g]) => k !== "US" && val(g, "workers_floor", y)).length;
-    p.push(val(D.geo.US, "sud_count", y) == null
-      ? "<b>No " + GAP.name + " figures for " + y + ".</b> SAMHSA published no state SUD estimates for this year, so the ratio cannot be computed."
-      : "<b>Hatched states.</b> In " + y + ", " + n + " states had part of their worker count withheld by BLS to protect employer privacy. Their " + GAP.name + " figure can only be shown as a maximum, so they are not colored.");
+    const n = Object.entries(D.geo).filter(([k, g]) => k !== "US" && val(g, "workers_flag", y)).length;
+    if (val(D.geo.US, "sud_count", y) == null) p.push("<b>No " + GAP.name + " figures for " + y + ".</b> SAMHSA published no state SUD estimates for this year, so the ratio cannot be computed.");
+    else if (n) p.push(VV.hatchCallout(n));
   }
   if (m === "estab") p.push("<b>What counts as a facility.</b> A site that tells SAMHSA it offers outpatient substance use treatment, in any ownership. Facilities that did not respond to the survey are not counted: 3% to 11% of eligible facilities from 2000 to 2020, and 10% to 23% from 2021 to 2024.");
   if (m === "death") p.push("<b>What is counted.</b> Deaths whose underlying cause was a drug overdose or an alcohol-induced cause, such as alcoholic liver disease. Each death is counted once." + (y === 2023 ? " North Carolina's 2023 count is short: CDC says over 900 overdose deaths were recoded after the file closed." : ""));
@@ -364,24 +402,21 @@ function renderPanel() {
   const up = document.getElementById("unpin"); if (up) up.onclick = () => { S.sel = null; render(); };
   const sud = val(g, "sud_pct", y), lo = val(g, "sud_lo", y), hi = val(g, "sud_hi", y);
   const est = val(g, "estabs", y), e100 = val(g, "estabs_per100k", y);
-  const gap = val(g, "gap", y), floor = val(g, "workers_floor", y);
+  const gap = val(g, "gap", y), flag = val(g, "workers_flag", y), floor = !!flag;
   const cnt = val(g, "sud_count", y), clo = val(g, "sud_count_lo", y), chi = val(g, "sud_count_hi", y);
-  const wk = S.priv ? val(g, "workers_private", y) : val(g, "workers", y);
-  const wfloor = S.priv ? val(g, "workers_private_floor", y) : floor;
+  const wk = val(g, "workers", y), wfloor = flag === "floor";
   const d = val(g, "deaths", y), dr = val(g, "death_rate", y), dd = val(g, "deaths_drug", y), da = val(g, "deaths_alcohol", y);
   const na = '<span style="color:var(--muted)">no data</span>';
   const cards = [
     ["SUD prevalence", "--sud", sud == null ? na : sud.toFixed(1) + "%", sud == null ? "no estimate for " + y : "95% interval " + lo.toFixed(1) + " to " + hi.toFixed(1) + "%"],
     ["Treatment estabs", "--estab", est == null ? na : fmtInt(est), est == null ? "no survey in " + y : e100.toFixed(1) + " per 100K residents"],
-    [GAP.short, "--gap", gap == null ? na : (floor ? "≤ " : "") + Math.round(gap), gap == null ? "needs both an SUD estimate and a worker count" : GAP.unit + (floor ? " (a maximum: worker cells withheld)" : "")],
+    [GAP.short, "--gap", gap == null ? na : (floor ? "≤ " : "") + Math.round(gap), gap == null ? "needs both an SUD estimate and a worker count" : GAP.unit + (floor ? " (a maximum; see hatching note)" : "")],
     ["SUD count", "--sud", cnt == null ? na : fmtM(cnt), cnt == null ? "no estimate for " + y : "95% interval " + fmtM(clo) + " to " + fmtM(chi)],
-    ["Treatment workers <span class='own'><button data-p='0'>ALL</button><button data-p='1'>PRIVATE</button></span>", "--work",
-      wk == null ? na : (wfloor ? "≥ " : "") + fmtInt(wk), (S.priv ? "private only" : "private + state + local") + (wfloor ? " · some cells withheld" : "")],
+    ["Treatment workers", "--work", wk == null ? na : (wfloor ? "≥ " : "") + fmtInt(wk), wk == null ? "not published for " + y : VV.cardNote(g, y)],
     ["OD & alcohol deaths", "--death", d == null ? na : fmtInt(d), d == null ? "" : dr.toFixed(1) + " per 100K" + (dd == null || da == null ? "" : " · " + fmtInt(dd) + " drug, " + fmtInt(da) + " alcohol")],
   ];
   const C = document.getElementById("cards");
   C.innerHTML = cards.map(([l, c, v, s]) => '<div class="card"><div class="lab">' + l + '</div><div class="v" style="color:var(' + c + ')">' + v + '</div><div class="d">' + s + "</div></div>").join("");
-  C.querySelectorAll(".own button").forEach(b => { b.setAttribute("aria-pressed", String(S.priv === (b.dataset.p === "1"))); b.onclick = ev => { ev.stopPropagation(); S.priv = b.dataset.p === "1"; renderPanel(); renderTrend(); }; });
   renderTrend();
 }
 
@@ -411,15 +446,15 @@ for (const [k, T] of Object.entries(TRENDS)) {
 const trendSvg = document.getElementById("trend");
 function trendSeries(g) {
   const t = S.trend;
-  if (t === "work") return YEARS.map((y, i) => ({y, v: S.priv ? g.workers_private[i] : g.workers[i], hollow: S.priv ? g.workers_private_floor[i] : g.workers_floor[i]}));
+  if (t === "work") return YEARS.map((y, i) => ({y, v: g.workers[i], hollow: g.workers_flag[i] === "floor"}));
   const key = METRICS[t].key;
-  return YEARS.map((y, i) => ({y, v: g[key][i], hollow: t === "gap" && g.workers_floor[i]}));
+  return YEARS.map((y, i) => ({y, v: g[key][i], hollow: t === "gap" && !!g.workers_flag[i]}));
 }
 function niceMax(v) { const p = Math.pow(10, Math.floor(Math.log10(v))); return Math.ceil(v / p * 2) / 2 * p; }
 function renderTrend() {
   const g = D.geo[geoKey()], t = S.trend, T = TRENDS[t], color = css(T.c || METRICS[T.m].c);
   ttog.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.t === t)));
-  document.getElementById("trend-title").textContent = T.label + (t === "work" ? (S.priv ? " (private only)" : " (private + state + local)") : "") + " · " + g.name + " · 2001-2024";
+  document.getElementById("trend-title").textContent = T.label + (t === "work" ? VV.trendSuffix : "") + " · " + g.name + " · 2001-2024";
   const W = trendSvg.clientWidth || 800, H = 280, m = {l: 58, r: 20, t: 26, b: 30};
   const pts = trendSeries(g), vals = pts.filter(p => p.v != null).map(p => p.v);
   const top = vals.length ? niceMax(Math.max(...vals) * 1.08) : 1;
@@ -433,7 +468,7 @@ function renderTrend() {
   for (const b of breaks) { const bx = x(b.at);
     s += `<line x1="${bx}" x2="${bx}" y1="${m.t - 10}" y2="${H - m.b}" stroke="#6a7280" stroke-dasharray="3 3"/>${W < 600 ? "" : `<text x="${bx + 4}" y="${m.t - 12}" font-size="10" fill="#8a919c" font-family="ui-monospace,Menlo,monospace">${b.label}</text>`}`; }
   // segments: join only consecutive years with values, both complete, and no break between them
-  const brokenAfter = new Set(breaks.map(b => b.after));
+  const brokenAfter = new Set(breaks.filter(b => !b.markOnly).map(b => b.after));
   let path = "", open = false;
   pts.forEach((p, i) => {
     const prev = pts[i - 1];
@@ -450,8 +485,11 @@ function renderTrend() {
   s += `<line x1="${cx}" x2="${cx}" y1="${m.t}" y2="${H - m.b}" stroke="#ffffff" stroke-opacity=".18"/>`;
   s += `<line id="xh" y1="${m.t}" y2="${H - m.b}" stroke="#ffffff" stroke-opacity=".35" visibility="hidden"/>`;
   trendSvg.setAttribute("viewBox", `0 0 ${W} ${H}`); trendSvg.innerHTML = s;
-  document.getElementById("trend-note").textContent = pts.some(p => p.hollow && p.v != null)
-    ? "Hollow points: BLS withheld part of the worker count that year, so the value " + (t === "work" ? "is a minimum." : "is a maximum.") : "";
+  const why = new Set(pts.filter(p => p.hollow && p.v != null).map(p => g.workers_flag[p.y - YEARS[0]]));
+  const notes = [];
+  if (why.has("floor")) notes.push("BLS withheld part of the worker count that year, so the value " + (t === "work" ? "is a minimum" : "is a maximum"));
+  if (why.has("public")) notes.push("government employees were 20% or more of outpatient workers, and this version counts private workers only, so the value is a maximum");
+  document.getElementById("trend-note").textContent = notes.length ? "Hollow points: " + notes.join("; or ") + "." : "";
   trendSvg.setAttribute("aria-label", document.getElementById("trend-title").textContent);
   trendSvg.onmousemove = e => {
     const r = trendSvg.getBoundingClientRect(), px = (e.clientX - r.left) * W / r.width;
@@ -472,19 +510,18 @@ document.getElementById("notes").innerHTML = `
 <ul>
 <li><b>Demand:</b> SAMHSA, National Survey on Drug Use and Health (NSDUH), state model-based estimates of people 12 and older with a past-year substance use disorder, two-year windows 2000-2001 through 2023-2024. Counts and 95% intervals are SAMHSA's own figures, from its published tables and, for 2000-2001 through 2008-2009, its small area estimation dataset.</li>
 <li><b>Treatment facilities:</b> SAMHSA, National Survey of Substance Abuse Treatment Services (N-SSATS, 2000-2020) and National Substance Use and Mental Health Services Survey (N-SUMHSS, 2021-2024). Facilities that offer outpatient substance use treatment, all ownership types.</li>
-<li><b>Treatment workers:</b> BLS, Quarterly Census of Employment and Wages (QCEW), annual average employment in NAICS 621420 (outpatient mental health and substance abuse centers), 621330 (offices of mental health practitioners) and 621112 (offices of mental health physicians), private plus state and local government.</li>
+<li><b>Treatment workers:</b> ${VV.source}</li>
 <li><b>Deaths and population:</b> CDC WONDER, Underlying Cause of Death 1999-2020 (used for 2001-2017) and 2018-2024 Single Race (2018-2024). The two agree exactly for 2018-2020.</li>
 </ul>
 <h3>Limitations</h3>
 <ul>
 <li><b>Survey changes.</b> NSDUH changed in 2002, in 2015 and again in 2020-2021 (DSM-5 criteria, web plus in-person interviews). SAMHSA says estimates are not comparable across these points. The trend line is not drawn across them, and the map uses a separate color scale from 2022.</li>
 <li><b>Missing years are left blank.</b> SAMHSA published no state estimates for windows ending in 2002, 2015, 2020 or 2021, and ran no facility survey in 2001. Nothing is filled in or interpolated.</li>
-<li><b>Withheld worker counts.</b> BLS withholds employment for a cell when publishing it could identify an employer. We never estimate a withheld value. A state's worker total then includes only the published cells and is shown with ≥. Its ${GAP.name} figure is a maximum, shown hatched on the map and listed separately in the ranking.</li>
-<li><b>The worker count is broad on purpose.</b> It includes everyone on payroll at these businesses, including administrative staff and people who treat only mental health conditions. It leaves out the self-employed and substance use programs run inside hospitals. It does not count federal facilities such as the VA.</li>
+${VV.limits.map(x => "<li>" + x + "</li>").join("")}
 <li><b>Facility counts are a floor.</b> Facilities that did not answer SAMHSA's survey are not counted. The survey merged with the mental health facility survey in 2021, and its response rate dropped that year.</li>
 <li><b>NSDUH leaves out people living in institutions</b>, such as prisons, jails and hospitals, and people experiencing homelessness who are not in shelters.</li>
-<li><b>Death counts.</b> Crude rates, not age adjusted. Alcohol-induced deaths are mostly chronic causes such as alcoholic liver disease. CDC notes that North Carolina's 2023 overdose count is short by more than 900 deaths recoded after the file closed, CDC also flags unusually high counts of ill-defined causes in California (2001) and Georgia (2008-2009), and says this lowered New Jersey's 2009 count of unintentional poisonings.</li>
-<li><b>${GAP.name} is a ratio, not a caseload.</b> It divides SAMHSA's estimated count of people with SUD by the number of outpatient workers. It does not show how many people seek or receive treatment. The SUD count covers a two-year window; the worker count is for the window's second year (for example, 2023-2024 people with SUD over 2024 workers).</li>
+<li><b>Death counts.</b> Crude rates, not age adjusted. Alcohol-induced deaths are mostly chronic causes such as alcoholic liver disease. CDC notes that North Carolina's 2023 overdose count is short by more than 900 deaths recoded after the file closed. CDC also flags unusually high counts of ill-defined causes in California (2001) and Georgia (2008-2009), and says this lowered New Jersey's 2009 count of unintentional poisonings.</li>
+<li><b>${GAP.name} is a ratio, not a caseload.</b> It divides SAMHSA's estimated count of people with SUD by the number of treatment workers. It does not show how many people seek or receive treatment. The SUD count covers a two-year window; the worker count is for the window's second year (for example, 2023-2024 people with SUD over 2024 workers).</li>
 </ul>`;
 
 // ---------- render ----------
@@ -493,6 +530,7 @@ function render() {
   modes.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.m === S.metric)));
   renderBanner(); renderLegend(); renderMap(); renderCallout(); renderPanel(); renderRank();
 }
+document.getElementById("vtag").textContent = VV.tag;
 // optional starting view from the URL, e.g. #m=gap&y=2010&s=37 (shareable links)
 {
   const h = new URLSearchParams(location.hash.slice(1));
