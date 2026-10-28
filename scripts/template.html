@@ -348,7 +348,7 @@ function renderCallout() {
     const n = Object.entries(D.geo).filter(([k, g]) => k !== "US" && cellState(g, "gap", y).kind === "floor").length;
     p.push("<b>Hatched states.</b> In " + y + ", " + n + " states had part of their worker count withheld by BLS to protect employer privacy. Their " + GAP.name + " can only be shown as a maximum, so they are not colored.");
   }
-  if (m === "estab") p.push("<b>What counts as a facility.</b> A site that tells SAMHSA it offers outpatient substance use treatment, in any ownership. Facilities that did not respond to the survey are not counted (about 10% in a typical year).");
+  if (m === "estab") p.push("<b>What counts as a facility.</b> A site that tells SAMHSA it offers outpatient substance use treatment, in any ownership. Facilities that did not respond to the survey are not counted: 3% to 11% of eligible facilities from 2000 to 2020, and 10% to 23% from 2021 to 2024.");
   if (m === "death") p.push("<b>What is counted.</b> Deaths whose underlying cause was a drug overdose or an alcohol-induced cause, such as alcoholic liver disease. Each death is counted once." + (y === 2023 ? " North Carolina's 2023 count is short: CDC says over 900 overdose deaths were recoded after the file closed." : ""));
   document.getElementById("callout").innerHTML = p.map(x => "<p>" + x + "</p>").join("");
 }
