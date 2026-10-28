@@ -1,0 +1,1 @@
+2026-10-28 us-atlas@3.0.1 states-albers-10m.json from cdn.jsdelivr.net (Census cartographic boundaries 1:10m, pre-projected Albers USA, ISC license)

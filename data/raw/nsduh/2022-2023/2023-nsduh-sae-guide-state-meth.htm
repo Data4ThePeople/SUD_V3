@@ -1,0 +1,3963 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N898TT');</script>
+<!-- End Google Tag Manager -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="P3Pv1" href="http://www.samhsa.gov/w3c/p3p.xml">
+<title>2022&#8209;2023 National Surveys on Drug Use and Health: Guide to State Tables and Summary of Small Area Estimation Methodology</title>
+<meta name="keywords" content="small area estimation (SAE); state-level estimates; survey-weighted hierarchical Bayes methodology; Gibbs sampling; pseudo hierarchical Bayes; illicit drug use; alcohol use; tobacco use; perceptions of great risk from using substances; pain reliever misuse; alcohol use disorder; drug use disorder; pain reliever use disorder; substance use disorder; needing but not receiving treatment for substance use; any mental illness; serious mental illness; received mental health treatment; major depressive episode; suicidal thoughts and behavior; opioid misuse; opioid use disorder">
+<meta name="description" content="state estimates of substance use and mental disorders">
+<meta name="AUTHOR" content="SAMHSA Center for Behavioral Health Statistics and Quality">
+
+<link type="text/css" rel="stylesheet" href="https://www.samhsa.gov/data/themes/custom/samhsa_data/css/webready-html-content.css">	
+	<style>
+		table.rti { width: 100%; padding: 5px;}
+		table.rti caption { text-align: left; font-weight: bold; } 
+		table.rti th, td { padding: 1px 3px 1px 3px; white-space: nowrap; }
+		.rti thead th.left { text-align: left; }
+		.rti thead th { white-space: nowrap; text-align: center; }
+		table.rti tbody { text-align: right; }
+		table.rti tbody td { text-align: right; }
+		table.rti tbody th { text-align: left; font-weight: normal; }
+		table.rti tbody th.bold { font-weight: bold; }
+		table.rti tr { vertical-align: bottom; }
+		table.rti tfoot th { text-align: left; font-weight: normal; font-size: 80%; white-space: normal; }
+
+		.rti-b3 { border-spacing: 0; border:1px solid #000; margin-left:auto; margin-right:auto; }
+		.rti-b3 tr { vertical-align: top; }
+		.rti-b3 td { text-align: left; padding: .1em .2em .1em .2em; white-space: nowrap; border:1px solid #000; padding: .1em .2em .1em .2em; }
+		.rti-b3 tbody { text-align: left; }
+		.rti-b3 thead tr { vertical-align: bottom; }
+		.rti-b3 thead th { text-align: left; white-space: nowrap; border:1px solid #000; padding: .1em .2em .1em .2em; }
+		.rti-b3 tbody th { text-align: left; font-weight: normal; white-space: nowrap; border:1px solid #000; padding: .1em .2em .1em .2em; }
+		.w8  { width: 8%; }
+		.w9  { width: 9%; }
+		.w20 { width: 20%; }
+		.w33 { width: 33%; }
+		.w50 { width: 50%; }
+		.tab60 { width: 60%; margin-top: 32px; }
+		/* TDs that have footnote references need less right padding so that the data
+		   digits line up nicely. .3em less works well in Firefox, Opera9 and IE6. */
+		table.rti hasfootref { padding-right: 4px; }
+		sup { font-size: 80%; }
+		table.rti .subhead1 { padding-left: 16px; }
+		table.rti .subhead2 { padding-left: 32px; }
+		table.rti .subhead3 { padding-left: 48px; }
+		table.rti .subhead4 { padding-left: 64px; }
+		table.rti .subhead5 { padding-left: 80px; }
+		figcaption { text-align: left; font-size:120%; font-weight: bold; }
+		.rti_herald { margin-top: 32px; position: relative; overflow: auto; }
+		.smalltext { font-size: 80%; }
+		.eqind {margin-left: 35px;}
+		.ind1 { padding-left: 13px; }
+		.ind2 { padding-left: 22px; }
+		.ind3 { padding-left: 28px; }
+		.ind4 { padding-left: 34px; }
+		.endnotes { font-size: 80%; }
+		.section { margin-top: 32px; text-align:left; border-style:solid; border-width: 2px 0px 0px 0px; padding: 5px 2px; border-color: #1E384B; }
+		.bold { font-weight: bold; }
+		.italic { font-style: italic; }
+		.boldital { font-weight: bold; font-style: italic; }
+		.underline {text-decoration: underline;}
+		.center { text-align: center; }
+		.left { text-align: left; }
+		.right { text-align: right; }
+		.nowrap { white-space: nowrap; }
+		img.toclink { text-align: left; border: none; }
+		.underlinedtext, a:hover, a:active { text-decoration: underline;}
+		a:link { text-decoration: underline; color: #1f419a; }
+		a:visited { text-decoration: underline; color: #cd3835; }
+		p.tallequations { line-height: 2.0em; }
+		dt { font-weight: bold; margin-top: 8px; }
+		dd { margin-top: 8px; }
+		li { margin-bottom: 16px; }
+		ul li, ol li { line-height: 20px; }
+		ol.level2 { padding-left: 16px; margin-left: 24px; margin-top: 16px; font-weight: normal; }
+		/*This code helps with vertical spacing when you have superscripts or subscripts*/
+		sup, sub { vertical-align: baseline; position: relative; top: -0.4em; font-size: 80%; }
+		sub { top: 0.4em; }	
+	</style>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N898TT" title="hhsgoogletagmanager" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<noscript>
+<p>Your browser&rsquo;s JavaScript is off. Hyperlinks on this page will not display an important message.</p>
+</noscript>
+
+
+<section id="topofpage">
+<h1 class="center">2022&#8209;2023<br>
+National Surveys on Drug Use and Health:<br>
+Guide to State Tables and Summary of Small<br>
+Area Estimation Methodology</h1>
+</section>
+
+<section class="rti_herald" id="seca">
+<h2 class="center">Section A: Overview of NSDUH and Model&#045;Based State Estimates</h2>
+
+<section id="a1">
+<h3>A.1 Introduction</h3>
+
+<p>This document provides information on the model&#045;based small area estimates of substance use and mental health disorders in states based on data from the combined 2022&#8209;2023 National Surveys on Drug Use and Health (NSDUHs). These estimates are available online along with other related information.<sup><a href="#ftn1" id="ftnref1">1</a></sup></p>
+
+<p>NSDUH is an annual survey of the civilian, noninstitutionalized population aged 12 or older residing within the United States, conducted from January through December, and is sponsored by the Substance Abuse and Mental Health Services Administration (SAMHSA). The survey covers residents of households (e.g., individuals living in houses or townhouses, apartments, and condominiums; civilians living in housing on military bases) and individuals in noninstitutional group quarters (e.g., shelters, rooming or boarding houses, college dormitories, migratory workers&rsquo; camps, halfway houses). The 2022 and 2023 NSDUHs used multimode data collection, in which respondents completed the survey via the web or in person in eligible locations. Across 2022 and 2023 combined, NSDUH collected data from about 139,050 respondents aged 12 or older from the 50 states and the District of Columbia.</p>
+
+<p>NSDUH is planned and managed by SAMHSA&rsquo;s Center for Behavioral Health Statistics and Quality (CBHSQ). Data collection and analysis are conducted under contract with RTI International.<sup><a href="#ftn2" id="ftnref2">2</a></sup> A summary of NSDUH&rsquo;s methodology is given in <a href="#a2"><strong><span class="nowrap">Section A.2</span></strong></a>. <a href="#a3"><strong><span class="nowrap">Section A.3</span></strong></a> lists all the tables and files associated with the 2022&#8209;2023 state estimates. Information is given in <a href="#a4"><strong><span class="nowrap">Section&nbsp;A.4</span></strong></a> on the Bayesian confidence intervals and how to make interpretations with respect to the small area estimates. <a href="#a5"><strong><span class="nowrap">Section A.5</span></strong></a> discusses related substance use measures and warns users about not drawing conclusions by subtracting small area estimates from two different measures. <a href="#a6"><strong><span class="nowrap">Section A.6</span></strong></a> briefly discusses methodological changes for the 2022 and 2023&nbsp;NSDUHs.</p>
+
+<p>The survey&#045;weighted hierarchical Bayes (SWHB) small area estimation (SAE) methodology used in the production of state estimates from the 1999 to 2022<sup><a href="#ftn3" id="ftnref3">3</a></sup> surveys also was used in the production of the 2022&#8209;2023 state estimates. The SWHB methodology is described in Appendix&nbsp;E of the 2001 state report (Wright, 2003b) and in Folsom and colleagues (1999). A general model description is given in <a href="#b1"><strong><span class="nowrap">Section B.1</span></strong></a> of this document. A list of measures (outcomes) for which small area estimates are produced is given in <a href="#b2"><strong><span class="nowrap">Section B.2</span></strong></a>. Predictors used in the 2022&#8209;2023 SAE modeling are listed and described in <a href="#b3"><strong><span class="nowrap">Section B.3</span></strong></a>. Selection of predictors for SAE modeling is described in <a href="#b4"><strong><span class="nowrap">Section B.4</span></strong></a>.</p>
+
+<p>Small area estimates obtained using the SWHB methodology are design consistent (i.e., the small area estimates for states with large sample sizes are close to the robust design&#045;based estimates). Additionally, the national small area estimates<sup><a href="#ftn4" id="ftnref4">4</a></sup> are very close to the national design&#045;based estimates. However, to ensure internal consistency, it is desirable to have the national small area estimates exactly match the national design&#045;based estimates. This process is called &ldquo;benchmarking.&rdquo; The benchmarked state&#045;level estimates are also potentially less biased than the unbenchmarked state&#045;level estimates. Beginning in 2002, exact benchmarking was introduced, as described in <a href="#b5"><strong><span class="nowrap">Section B.5</span></strong></a>. The census region&ndash;level estimates in the tables are population&#045;weighted aggregates of the benchmarked state&#045;level estimates. Tables of the estimated numbers of people associated with each measure are available online,<sup><a href="#ftn5" id="ftnref5">5</a></sup> and an explanation of how these counts and their respective Bayesian confidence intervals are calculated can be found in <a href="#b6"><strong><span class="nowrap">Section B.6</span></strong></a>. <a href="#b7"><strong><span class="nowrap">Section B.7</span></strong></a> discusses the method to compute aggregated estimates by combining two age groups. The definition and explanation of the formula used in estimating the marijuana initiation rate are given in <a href="#b8"><strong><span class="nowrap">Section B.8</span></strong></a>.</p>
+
+<p>State estimates for the age groups 12 to 17, 18 to 25, 26 or older, 18&nbsp;or older, and 12 or older<sup><a href="#ftn6" id="ftnref6">6</a></sup> are provided for all measures except for any mental illness (AMI), co&#8209;occurring substance use disorder (SUD) and AMI, serious mental illness (SMI), co&#8209;occurring SUD and SMI, receipt of mental health treatment, major depressive episode (MDE), serious thoughts of suicide, suicide plans, and suicide attempts. Additionally, estimates for adolescents aged 12 to 17 are not available for past year heroin use because this outcome was extremely rare among adolescents aged 12 to 17 in the 2022&#8209;2023 NSDUHs. As a result, estimates of past year heroin use for people aged 12 or older are also not produced.</p>
+
+<p>Estimates of underage (aged 12 to 20) alcohol use, binge alcohol use, perceptions of great risk from having five or more drinks of an alcoholic beverage once or twice a week, alcohol use disorder, cigarette use, and tobacco product use were also produced.<sup><a href="#ftn7" id="ftnref7">7</a></sup> Alcohol consumption is expected to differ significantly across the 18 to 25 age group because of the legalization of alcohol at age 21. Additionally, legislation in December 2019 raised the federal minimum age for sale of tobacco products (along with e&#8209;cigarettes) from 18 to 21 years (U.S. Food and Drug Administration, 2021). All 50 states and the District of Columbia prohibit the sale of tobacco products to people younger than 21. Therefore, it was decided that it would be useful to produce small area estimates for people aged 12 to 20. A short description of the methodology used to produce estimates of underage outcomes is provided in <a href="#b9"><strong><span class="nowrap">Section B.9</span></strong></a>.</p>
+
+<p>The remainder of <a href="#secb"><strong><span class="nowrap">Section B</span></strong></a> covers four additional topics:</p>
+
+<ul>
+<li><a href="#b10"><strong><span class="nowrap">Section B.10</span></strong></a> discusses marijuana vaping and its impact on marijuana and marijuana related outcomes.</li>
+
+<li><a href="#b11"><strong><span class="nowrap">Section B.11</span></strong></a> discusses the criteria used to define SUD.</li>
+
+<li><a href="#b12"><strong><span class="nowrap">Section B.12</span></strong></a> discusses the definition for the substance use treatment outcomes. It also contains information about people not receiving substance use treatment among those classified as needing treatment.</li>
+
+<li><a href="#b13"><strong><span class="nowrap">Section B.13</span></strong></a> discusses the production of estimates for AMI, SMI, mental health treatment, MDE, and suicidality.</li>
+</ul>
+
+<p>In <a href="#secc"><strong><span class="nowrap">Section C</span></strong></a>, the 2022&#8209;2023 combined survey sample sizes, response rates, and population estimates are included in <a href="#tabc-1"><strong><span class="nowrap">Tables C.1</span></strong></a> to <a href="#tabc-4"><strong><span class="nowrap">C.4</span></strong></a>.</p>
+</section>
+
+<section id="a2">
+<h3>A.2 Summary of NSDUH Methodology</h3>
+
+<p>NSDUH is the primary source of statistical information on the use of tobacco, alcohol, prescription pain relievers, and other substances (e.g., marijuana, cocaine) by the U.S. civilian, noninstitutionalized population aged 12 or older. The survey also includes several series of questions that focus on mental health issues. NSDUH has been ongoing since 1971 and is conducted by the federal government. The survey collects information from residents of households (e.g., individuals living in houses or townhouses, apartments, and condominiums; civilians living in housing on military bases) and individuals in noninstitutional group quarters (e.g., shelters, rooming or boarding houses, college dormitories, migratory workers&rsquo; camps, halfway houses). Not included are individuals with no fixed household address (e.g., homeless and/or transient people not in shelters), military personnel on active duty, and residents of institutional group quarters, such as jails and hospitals. From 1999 to 2019, the data were collected via face&#045;to&#045;face (in&#8209;person) interviews at a respondent&rsquo;s place of residence using a combination of computer&#045;assisted personal interviewing conducted by an interviewer and audio computer&#045;assisted self&#045;interviewing. Because of the coronavirus disease 2019 (COVID&#8209;19) pandemic, an additional web data collection mode was introduced to the 2020 NSDUH and continued to be used in the 2021 through 2023 surveys.</p>
+
+<p>The 2023 sample was selected using the coordinated sample design developed for the 2014 through 2023 NSDUHs. The coordinated sample design is state based, with an independent, multistage area probability sample within each state and the District of Columbia. This design designates 12 states as large sample states. These 12 states have the following target sample sizes per year: 4,560 interviews in California; 3,300 interviews in Florida, New York, and Texas; 2,400 interviews in Illinois, Michigan, Ohio, and Pennsylvania; and 1,500 interviews in Georgia, New Jersey, North Carolina, and Virginia. Making the sample sizes more proportional to the state population sizes improves the precision of national estimates. This change also allows for a more cost&#045;efficient sample allocation to the largest states while slightly increasing the sample sizes in smaller states to improve the precision of state estimates. The target sample size per year in the small states is 960 interviews, except for Hawaii, where the target sample size is 967 interviews. The combined 2022&#8209;2023 fielded sample sizes for each state are provided in <a href="#tabc-1"><strong><span class="nowrap">Table C.1</span></strong></a>.</p>
+
+<p>Nationally in 2022&#8209;2023, a total of approximately 415,700 dwelling units (DUs) were screened, and approximately 139,050 people responded within the screened DUs (see <a href="#tabc-1"><strong><span class="nowrap">Table C.1</span></strong></a>). The weighted screening response rate (SRR) was 24.91&nbsp;percent, the weighted interview response rate (IRR) was 48.94&nbsp;percent, and the overall weighted response rate (ORR) was 12.19&nbsp;percent (<a href="#tabc-1"><strong><span class="nowrap">Table C.1</span></strong></a>). The ORRs ranged from 9.28&nbsp;percent in South Carolina to 18.54&nbsp;percent in Virginia. Estimates reflect the probability of selection, unit nonresponse, poststratification to known census population estimates, item imputation, and other aspects of the estimation process. These procedures are described in detail in <em>2023 National Survey on Drug Use and Health: Methodological Resource Book</em> (CBHSQ, 2024a).</p>
+
+<p>All sampled DUs<sup><a href="#ftn8" id="ftnref8">8</a></sup> are screened to confirm eligibility and to select zero, one, or two members to participate in the survey. The weighted SRR is calculated as the weighted number of successfully screened DUs<sup><a href="#ftn9" id="ftnref9">9</a></sup> divided by the weighted number of eligible DUs, or</p>
+
+<figure id="eq1">
+<p class="center"><img src="images/meth-eq1-2023.png" alt="Equation 1. Click 'D' link to access long description." title="Equation 1. Click 'D' link to access long description."><span style="position:relative; bottom:15pt">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq1desc">D</a></span></p>
+</figure>
+
+<p>where <img src="images/meth-inline1-2023.png" alt="w sub D U" title="w sub D U" style="position:relative;top:5.5pt"> is the inverse of the unconditional probability of selection for the DU and excludes all adjustments for nonresponse and poststratification.</p>
+
+<p>In successfully screened DUs, eligible DU members who were selected were asked to complete the interview. The weighted IRR for NSDUH is calculated as the weighted number of respondents divided by the weighted number of selected people, or</p>
+
+<figure id="eq2">
+<p class="center"><img src="images/meth-eq2-2023.png" alt="Equation 2. Click 'D' link to access long description." title="Equation 2. Click 'D' link to access long description."><span style="position:relative; bottom:15pt">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq2desc">D</a></span></p>
+</figure>
+
+<p>where <img src="images/meth-inline2-2023.png" alt="w sub i" title="w sub i" style="position:relative;top:6pt"> is the design&#045;based weight or the inverse of the probability of selection for the <em>i</em>th person and includes DU&#045;level nonresponse and poststratification adjustments. In an effort to maximize the IRR, all respondents were offered a $30 incentive to encourage them to complete the 2023 NSDUH interview, similar to 2021 and 2022. Some Quarter 4 respondents in 2022 were given a $5 prepaid screening incentive and/or a $50 interview incentive as part of an incentives experiment to test whether these changes increased the screening and interview response rates (see Section&nbsp;2.1.2 in <em>2022 National Survey on Drug Use and Health: Methodological Summary and Definitions</em> [CBHSQ, 2023]). To be considered a completed interview, a respondent must provide enough data to pass the usable case rule.<sup><a href="#ftn10" id="ftnref10">10</a></sup></p>
+
+<p>The weighted ORR is defined as the product of the weighted SRR and the weighted IRR or</p>
+
+<figure id="eq3">
+<p class="center"><img src="images/meth-eq3-2023.png" alt="Equation 3. Click 'D' link to access long description." title="Equation 3. Click 'D' link to access long description."><span style="position:relative; bottom:3pt">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq3desc">D</a></span></p>
+</figure>
+
+<p>For more details on the screening and response rates, see Section&nbsp;3.3.1 in <em>2023 National Survey on Drug Use and Health: Methodological Summary and Definitions</em> (CBHSQ, 2024b).</p>
+</section>
+
+<section id="a3">
+<h3>A.3 Presentation of Data</h3>
+
+<p>This section lists all products associated with the 2022&#8209;2023 state estimates.</p>
+
+<p>The following products exclude age groups 12 to 17 and 12 or older for past year heroin use because in 2022&#8209;2023, heroin use among adolescents aged 12 to 17 was very rare. In addition to this methodology document for the 2022&#8209;2023 state estimates, the following products are available at <a href="https://www.samhsa.gov/data/nsduh/state-reports-NSDUH-2023">https://www.samhsa.gov/data/nsduh/state&#045;reports&#045;NSDUH&#045;2023</a>:</p>
+
+<ul>
+	<li><strong>2022&#8209;2023 NSDUH: Model&#045;Based Prevalence Estimates (50 States and the District of Columbia) (Tables&nbsp;1 to 41, by Age Group)</strong>: Tables of percentages and associated 95&nbsp;percent Bayesian confidence intervals are included for youths aged 12 to 17, young adults aged 18 to 25, adults aged 26 or older, adults aged 18 or older, and all people aged 12 or older. Also included are tables for underage (12 to 20) alcohol use, binge alcohol use, perceptions of great risk from having five or more drinks of an alcoholic beverage once or twice a week, alcohol use disorder, tobacco product use, and cigarette use. These tables are available in Excel and PDF formats. In order to increase the precision of small area estimates and rankings especially for small sample states and to detect year&#045;to&#045;year changes more efficiently, an SAE expert panel<sup><a href="#ftn11" id="ftnref11">11</a></sup> recommended producing annual state estimates based on 2 consecutive years of pooled NSDUH data and to base comparisons of estimates (to measure change) on 2&#045;year moving averages.</li>
+
+	<li><strong>2022&#8209;2023 NSDUH: Model&#045;Based Estimated Totals (in Thousands) (50 States and the District of Columbia) (Tables&nbsp;1 to 41)</strong>: Tables showing estimated numbers (counts in thousands) and confidence intervals are included for youths aged 12 to 17, young adults aged 18 to 25, adults aged 26 or older, adults aged 18 or older, and people aged 12 or older. Also included are tables for six underage (12 to 20) measures. These tables are available in Excel and PDF formats.</li>
+
+	<li><strong>2022&#8209;2023 NSDUH State&#045;Specific Tables (Tables&nbsp;1A to 112B)</strong>: Tables are provided for each individual state and the District of Columbia, as well as for the total United States and the four census regions (i.e., Northeast, Midwest, South, and West). The tables (four&nbsp;per area) show the estimated percentages for all outcomes, and the estimated numbers (counts in thousands). These tables are available in HTML and PDF formats.</li>
+
+	<li><strong>NSDUH: Comparison of the 2021&#8209;2022 and 2022&#8209;2023 Population Percentages (50 States and the District of Columbia) (Tables&nbsp;1 to 33)</strong>: Tables are presented that show the 2021&#8209;2022 (previously published at <a href="https://www.samhsa.gov/data/report/2021-2022-nsduh-state-prevalence-estimates">https://www.samhsa.gov/data/report/2021&#8209;2022&#045;nsduh&#045;state&#045;prevalence&#045;estimates</a>) and 2022&#8209;2023 NSDUH state estimates and an indication of the statistical significance of the difference or change (<span class="nowrap"><em>p</em> value</span>).These tables are produced for outcomes that were consistently defined across the two time periods and for which 2021&#8209;2022 and 2022&#8209;2023 state&#045;level estimates are available. Because state&#045;level estimates are based on 2 years of combined NSDUH data, two consecutive sets of estimates have a 1&#045;year overlap (e.g., 2021&#8209;2022 and 2022&#8209;2023). If the population totals across the 3 years (e.g., 2021, 2022, and 2023) were the same, then the null hypothesis of no difference between the log odds of the 2021&#8209;2022 and 2022&#8209;2023 population percentages would be equivalent to testing the null hypothesis that the difference between the 2021 and 2023 population percentages is zero. These tables are available in HTML and PDF formats. The methodology used to compare these population percentages is provided in a document published with these tables and will be available in HTML and PDF formats, as well.</li>
+
+	<li><strong>2022&#8209;2023 NSDUH: Other Sources of State&#045;Level Data</strong>: This document compares three outcomes (cigarette use, alcohol use, and binge alcohol use) from NSDUH with data from the Behavioral Risk Factor Surveillance System. This document is available in HTML and PDF formats.</li>
+
+	<li><strong>2022&#8209;2023 NSDUH: Comparison of Population Percentages between the United States, Census Regions, States, and the District of Columbia</strong>: The <span class="nowrap"><em>p</em> values</span> contained in these tables for each outcome and age group can be used to test the null hypothesis of no difference between population percentages for the following types of comparisons: total United States versus census region, total United States versus state, census region versus census region, census region versus state, and state versus state. These tables are available in Excel format, and the methodology used to compute these <span class="nowrap"><em>p</em> values</span> is provided in a document published with these Excel tables. This methodology document is available in HTML and PDF formats.</li>
+</ul>
+</section>
+
+<section id="a4">
+<h3>A.4 Bayesian Confidence Intervals</h3>
+
+<p>The Total U.S. estimates given in each of the 41 tables showing state&#045;level, model&#045;based estimates<sup><a href="#ftn12" id="ftnref12">12</a></sup> is the design&#045;based national estimate along with a 95&nbsp;percent design&#045;based confidence interval, all of which are based on the survey design, the survey weights, and the reported data. The state estimates are model&#045;based statistics (using SAE methodology) that have been adjusted (benchmarked) such that the population&#045;weighted mean of the estimates across the 50 states and the District of Columbia equals the design&#045;based national estimate. For more details on this benchmarking, see <a href="#b5"><strong><span class="nowrap">Section B.5</span></strong></a>. The census region&ndash;level estimates are also benchmarked and are obtained by taking the population&#045;weighted mean of the associated state&#045;level benchmarked estimates. Associated with each state and census region&#045;level estimate is a 95&nbsp;percent Bayesian confidence interval. These intervals indicate the uncertainty in the estimate due to both sampling variability and model fit. For&nbsp;example, the state with the highest estimate of past month use of marijuana for young adults aged 18 to 25 in 2022&#8209;2023 was Vermont, with an estimate of 42.1&nbsp;percent and a 95&nbsp;percent Bayesian confidence interval that ranged from 36.2 to 48.2&nbsp;percent (see Table&nbsp;3 of <em>2022&#8209;2023 National Surveys on Drug Use and Health: Model&#045;Based Prevalence Estimates (50&nbsp;States and the District of Columbia)</em> [CBHSQ, 2024c]). Assuming that sampling and modeling conditions held, the Bayes posterior probability was 0.95 that the true percentage of past month marijuana use in Vermont for young adults aged 18 to 25 in 2022&#8209;2023 was between 36.2 and 48.2&nbsp;percent.</p>
+
+<p>The confidence intervals shown in NSDUH state reports are asymmetric (for details, see <a href="#b5"><strong><span class="nowrap">Section B.5</span></strong></a>), meaning that the distance between the estimate and the lower confidence limit will not be the same as the distance between the upper confidence limit and the estimate. For example, Utah&rsquo;s 2022&#8209;2023 past month marijuana use estimate is 16.2&nbsp;percent for young adults aged 18 to 25, with a 95&nbsp;percent Bayesian confidence interval equal to 12.9&nbsp;to 20.1&nbsp;percent (see Table&nbsp;3 of the 2022&#8209;2023 Model&#045;Based Prevalence Estimates [CBHSQ, 2024c]). Therefore, Utah&rsquo;s estimate is 3.3 <span class="nowrap">(i.e., 16.2 &minus; 12.9)</span> percentage points from the lower 95&nbsp;percent confidence limit and 3.9 <span class="nowrap">(i.e., 20.1 &minus; 16.2)</span> percentage points from the upper 95&nbsp;percent confidence limit. These asymmetric confidence intervals work well for small percentages often found in NSDUH state estimate tables and reports while still being appropriate for larger percentages.</p>
+
+<p>When it is indicated that a state has the highest or lowest estimate, it does not imply that the state&rsquo;s estimate is significantly higher or lower than the next highest or lowest state&rsquo;s estimate. Additionally, two significantly different state estimates (at the 5&nbsp;percent level of significance) may have overlapping 95&nbsp;percent confidence intervals. For details on a more accurate test to compare state estimates, see <em>2022&#8209;2023 National Surveys on Drug Use and Health: Comparison of Population Percentages from the United States, Census Regions, States, and the District of Columbia</em> (CBHSQ, forthcoming&nbsp;a).</p>
+</section>
+
+<section id="a5">
+<h3>A.5 Related Measures</h3>
+
+<p>State estimates are produced for a number of related measures, such as marijuana use in the past month and illicit drug use in the past month, or SMI and AMI. It might appear that one could draw conclusions by subtracting one from the other (e.g., subtracting the percentage who misused pain relievers in the past year from the percentage who misused opioids [misuse of pain relievers or use of heroin] in the past year to find the percentage who used only heroin in the past year but did not misuse pain relievers). Because related measures have been estimated separately with different models, subtracting the percentage of one measure from the percentage of another related measure at the state or census region level can give misleading results, perhaps even a &ldquo;negative&rdquo; estimate, and should be avoided. Users are advised to view the estimates along with their respective confidence intervals to get a better idea of the range in which the &ldquo;true&rdquo; value of the population percentage might fall (see <a href="#a4"><strong><span class="nowrap">Section A.4</span></strong></a> for more details).</p>
+
+<p>However, at the national level (Total U.S.), because these estimates are design&#045;based estimates, such comparisons can be made. For example, at the national level, subtracting estimates for cigarette use in the past month from the estimates of tobacco use in the past month will give the estimate of people who did not use cigarettes in the past month but only used other forms of tobacco, such as cigars, pipes, or smokeless tobacco, in the past month.</p>
+</section>
+
+<section id="a6">
+<h3>A.6 2022 and 2023 NSDUH Methodological Changes and Implication for Estimates</h3>
+
+<p>The 2022 and 2023 NSDUHs continued the use of multimode data collection procedures that were first implemented in October 2020 for the 2020 NSDUH. Multimode data collection was used for the entire 2022 and 2023 NSDUH samples. In 2022, more than half of the interviews in Quarter 1 were completed via the web, but for the remaining quarters in 2022 and all quarters in 2023, the majority of interviews were completed in person. The multimode nature of the 2022 and 2023 NSDUHs, however, marks an important methodological change from prior years. This section discusses special methodological issues specific to 2022 and 2023 NSDUHs. More detailed information can be found in Chapter&nbsp;6 of <em>2021 National Survey on Drug Use and Health: Methodological Summary and Definitions</em> (CBHSQ, 2022).</p>
+
+<h4 id="a6-1">A.6.1 Special Adjustment for the 2022 and 2023 NSDUH Weights</h4>
+
+<p>Analyses conducted for the 2021 NSDUH indicated that key substance use and mental health estimates differed between data collection modes (i.e., web or in person), also known as &ldquo;mode effects.&rdquo; See Chapter&nbsp;6 in the 2021 Methodological Summary and Definitions report (CBHSQ, 2022). The proportion of interviews completed via the web or in person differed between 2021, 2022, and 2023 (i.e., 45.4% via in&#8209;person in 2021, 57.6% in 2022, and 63.9% in 2023). Consequently, mode effects could distort differences in estimates from 2021 to 2023, unless the analysis weights are adjusted to take into account these different in&#8209;person data collection proportions.</p>
+
+<p>When multimode data collection for NSDUH stabilizes, the targeted proportions are expected to be 30&nbsp;percent of interviews completed via the web and 70&nbsp;percent completed in person. The unweighted proportions of interviews in 2023 that were completed via the web or in person were closer to these targeted proportions than in 2021 or 2022, but they had not reached the 30/70 target. Therefore, for the NSDUH weights since 2022, mode was included as a main effect in the person&#045;level poststratification adjustment, with a 30&nbsp;percent target for the web mode and a 70&nbsp;percent target for the in&#8209;person mode to standardize the weighted proportions for each mode. This adjustment continued to be included as part of the 2023 weighting procedures to facilitate comparisons of estimates over time. This mode adjustment also was applied to the weights for 2021 data to produce revised weights. Making a similar adjustment to the 2021 weights to assume the respective 30/70 proportions for web and in&#8209;person interviews allows estimates for 2021 to be compared with those in future survey years without differences in estimates being confounded by changes in proportions of interviews in each mode. The mode adjusted weights for 2021 were used to produce the 2021&#8209;2022 state small area estimates.</p>
+
+<h4 id="a6-2">A.6.2 Comparisons with Prior Years</h4>
+
+<p>The 2021, 2022, and 2023 NSDUHs used multimode data collection, in which respondents completed the survey in person or via the web. Methodological investigations led to the conclusion that estimates based on multimode data collection since 2021 are not comparable with estimates from 2020 or prior years. Chapter&nbsp;6 in the 2021 Methodological Summary and Definitions report (CBHSQ, 2022) discusses these methodological investigations in greater detail. Thus, the 2021&#8209;2022 and 2022&#8209;2023 small area estimates should not be compared to state estimates from prior years. The 2022&#8209;2023 state estimates are comparable with the 2021&#8209;2022 estimates.</p>
+</section>
+</section>
+
+<section class="rti_herald" id="secb">
+<h2 class="center">Section B: State Model&#045;Based Estimation Methodology</h2>
+
+<section id="b1">
+<h3>B.1 General Model Description</h3>
+
+<p>The state small area estimation (SAE) model is a complex mixed<sup><a href="#ftn13" id="ftnref13">13</a></sup> (including both fixed and random effects) logistic regression model of the following form:</p>
+
+<figure id="eq4">
+<p class="center"><img src="images/meth-eq4-2023.png" alt="Equation 4. Click 'D' link to access long description." title="Equation 4. Click 'D' link to access long description."><span style="position:relative; bottom:10pt">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq4desc">D</a></span></p>
+</figure>
+
+<p class="tallequations">where <img src="images/meth-inline3-2023.png" alt="pi sub a, i, j, k" title="pi sub a, i, j, k" style="position:relative;top:11pt"> is the probability of engaging in the behavior of interest (e.g., using marijuana in the past month) for person&#8209;<em>k</em> belonging to age group&#8209;<em>a</em> in grouped state sampling region (SSR)&#8209;<em>j</em> of state&#8209;<em>i</em>.<sup><a href="#ftn14" id="ftnref14">14</a></sup> Let <img src="images/meth-inline4-2023.png" alt="x sub a, i, j, k" title="x sub a, i, j, k" style="position:relative;top:11pt"> denote a <img src="images/meth-inline5-2023.png" alt="p sub a times 1" title="p sub a times 1" style="position:relative;top:4.5pt"> vector of predictor variables (independent variables or fixed effects) associated with age group&#8209;<em>a</em> (12 to 17, 18 to 25, 26 to 34, and 35 or older) and <img src="images/meth-inline6-2023.png" alt="beta sub a" title="beta sub a" style="position:relative;top:5pt"> denote the associated vector of the regression parameters. The age group&ndash;specific vectors of the auxiliary variables are defined for every block group in the nation and include person&#045;level demographic variables, such as race/ethnicity and sex. The vectors of state&#045;level random effects <img src="images/meth-inline7-2023.png" alt="An eta sub i is a transposed vector of values eta sub 1, i and so on until eta sub capital A, i." title="An eta sub i is a transposed vector of values eta sub 1, i and so on until eta sub capital A, i." style="position:relative;top:8pt"> and grouped SSR&#045;level random effects <img src="images/meth-inline8-2023.png" alt="A nu sub i, j is a vector of transposed values nu sub 1, i, j and so on until nu sub capital A, i, j." title="A nu sub i, j is a vector of transposed values nu sub 1, i, j and so on until nu sub capital A, i, j." style="position:relative;top:11pt"> are assumed to be mutually independent and normally distributed with mean vector&nbsp;0 and variance&#045;covariance matrices <img src="images/meth-inline9-2023.png" alt="matrix capital D sub eta" title="matrix capital D sub eta" style="position:relative;top:8pt"> and <img src="images/meth-inline10-2023.png" alt="matrix capital D sub nu" title="matrix capital D sub nu" style="position:relative;top:5pt">, respectively&mdash;that is, <img src="images/meth-inline11-2023.png" alt="An eta sub i is normally distributed with mean 0 and variance denoted by matrix capital D sub eta." title="An eta sub i is normally distributed with mean 0 and variance denoted by matrix capital D sub eta." style="position:relative;top:8pt"> and <img src="images/meth-inline12-2023.png" alt="A nu sub i, j is normally distributed with mean 0 and variance denoted by matrix capital D sub nu." title="A nu sub i, j is normally distributed with mean 0 and variance denoted by matrix capital D sub nu." style="position:relative;top:10pt">, where <img src="images/meth-inline13-2023.png" alt="capital A" title="capital A" style="position:relative;top:3pt"> is the total number of individual age groups modeled (generally, <span class="nowrap"><img src="images/meth-inline13-2023.png" alt="Capital A" title="Capital A" style="position:relative;top:3pt">=&nbsp;4)</span>. For hierarchical Bayes (HB) estimation purposes, an improper uniform prior distribution is assumed for <img src="images/meth-inline6-2023.png" alt="beta sub a" title="beta sub a" style="position:relative;top:5pt">, and proper Wishart prior distributions are assumed for <img src="images/meth-inline14-2023.png" alt="inverse of capital D sub eta" title="inverse of capital D sub eta" style="position:relative;top:8pt"> and <img src="images/meth-inline15-2023.png" alt="inverse of capital D sub nu" title="inverse of capital D sub nu" style="position:relative;top:8pt">. The HB solution for <img src="images/meth-inline3-2023.png" alt="pi sub a, i, j, k" title="pi sub a, i, j, k" style="position:relative;top:11pt"> involves a series of complex Markov Chain Monte Carlo (MCMC) steps to generate values of the desired fixed and random effects from the underlying joint posterior distribution. The basic process is described in Folsom and colleagues (1999), Shah and colleagues (2000), and Wright (2003a, 2003b).</p>
+
+<p>Once the required number of MCMC samples (1,250 in all) for the parameters of interest are generated and tested for convergence properties (see Raftery &amp; Lewis, 1992), the small area estimates for each <span class="nowrap">race/ethnicity &times; sex</span> cell within a block group can be obtained for each age group as described in Wright (2003b). These block group&#045;level small area estimates then can be aggregated using the appropriate population count projections for the desired age group(s) to form state&#045;level small area estimates. These state&#045;level small area estimates are benchmarked to the national design&#045;based estimates as described in <a href="#b5"><strong><span class="nowrap">Section B.5</span></strong></a>.</p>
+</section>
+
+<section id="b2">
+<h3>B.2 Measures (Outcomes) Modeled</h3>
+
+<p>The 2023 National Survey on Drug Use and Health (NSDUH) data were combined with the 2022 NSDUH data, and age group&ndash;specific state estimates for 38 binary <span class="nowrap">(0, 1)</span> outcomes listed below were produced. The 2021&#8209;2022 and the 2022&#8209;2023 state estimates were also compared for all measures with these exceptions:<sup><a href="#ftn15" id="ftnref15">15</a></sup> nicotine vaping in the past month, underage cigarette use, underage tobacco use, all substance use treatment measures (#27&#8209;29 below), co&#8209;occurring substance use disorder (SUD) and any mental illness (AMI), co&#8209;occurring SUD and serious mental illness (SMI), and mental health treatment.</p>
+
+<ol>
+	<li>illicit drug use in the past month,</li>
+
+	<li>marijuana use in the past year,</li>
+
+	<li>marijuana use in the past month,</li>
+
+	<li>perceptions of great risk from smoking marijuana once a month,</li>
+
+	<li>first use of marijuana in the past year among people at risk for initiation of marijuana use,<sup><a href="#ftn16" id="ftnref16">16</a></sup></li>
+
+	<li>illicit drug use other than marijuana in the past month,</li>
+
+	<li>cocaine use in the past year,</li>
+
+	<li>perceptions of great risk from using cocaine once a month,</li>
+
+	<li>heroin use in the past year,</li>
+
+	<li>perceptions of great risk from trying heroin once or twice,</li>
+
+	<li>hallucinogen use in the past year,</li>
+
+	<li>methamphetamine use in the past year,</li>
+
+	<li>prescription pain reliever misuse in the past year,</li>
+
+	<li>opioid misuse in the past year,</li>
+
+	<li>alcohol use in the past month,<sup><a href="#ftn17" id="ftnref17">17</a></sup></li>
+
+	<li>binge alcohol use in the past month,<sup><a href="#ftn18" id="ftnref18">18</a></sup></li>
+
+	<li>perceptions of great risk from having five or more drinks of an alcoholic beverage once or twice a week,<sup><a href="#ftn19" id="ftnref19">19</a></sup></li>
+
+	<li>tobacco product use in the past month,<sup><a href="#ftn20" id="ftnref20">20</a></sup></li>
+
+	<li>cigarette use in the past month,<sup><a href="#ftn21" id="ftnref21">21</a></sup></li>
+
+	<li>nicotine vaping in the past month,</li>
+
+	<li>perceptions of great risk from smoking one or more packs of cigarettes per day,</li>
+
+	<li>SUD in the past year,</li>
+
+	<li>alcohol use disorder in the past year,<sup><a href="#ftn22" id="ftnref22">22</a></sup></li>
+
+	<li>drug use disorder in the past year,</li>
+
+	<li>pain reliever use disorder in the past year,</li>
+
+	<li>opioid use disorder in the past year,</li>
+
+	<li>received substance use treatment in the past year,</li>
+
+	<li>classified as needing substance use treatment in the past year,</li>
+
+	<li>did not receive substance use treatment in the past year among people classified as needing treatment,</li>
+
+	<li>AMI in the past year,</li>
+
+	<li>SMI in the past year,</li>
+
+	<li>co&#8209;occurring SUD and AMI in the past year,</li>
+
+	<li>co&#8209;occurring SUD and SMI in the past year,</li>
+
+	<li>received mental health treatment in the past year,</li>
+
+	<li>major depressive episode (MDE) in the past year,</li>
+
+	<li>had serious thoughts of suicide in the past year,</li>
+
+	<li>made any suicide plans in the past year, and</li>
+
+	<li>attempted suicide in the past year.</li>
+</ol>
+</section>
+
+<section id="b3">
+<h3>B.3 Predictors Used in Mixed Logistic Regression Models</h3>
+
+<p>Local area data used as potential predictor variables in the mixed logistic regression models were obtained from the following sources:</p>
+
+<ul>
+	<li><em>Claritas</em>. Claritas<sup><a href="#ftn23" id="ftnref23">23</a></sup> population projections are used to update age group, sex, and race/ethnicity predictor variables each year.</li>
+
+	<li><em>U.S. Census Bureau</em>. The 2010 census (demographic and geographic variables) and 2021 food stamp participation estimates were used (<a href="https://www.census.gov/data/datasets/time-series/demo/saipe/model-tables.html">https://www.census.gov/data/&#8204;datasets/time&#045;series/demo/saipe/model&#045;tables.html</a>). The Census Bureau&rsquo;s Small Area Income and Poverty Estimates program obtains Food Stamp program (now known as the Supplemental Nutrition Assistance Program) participation estimates from the U.S.&nbsp;Department of Agriculture, Food and Nutrition Service. Also, the Census Bureau&rsquo;s 2015&#045;2019 American Community Survey 5&#045;year demographic and socioeconomic variables at the tract level and poverty variable at the county level were used (<a href="https://www.census.gov/programs-surveys/acs/">https://www.census.gov/programs&#045;surveys/acs/</a>).</li>
+
+	<li><em>Federal Bureau of Investigation</em>. Uniform Crime Report arrest totals were obtained from <a href="https://www.icpsr.umich.edu/icpsrweb/NACJD/series/57">https://www.icpsr.umich.edu/icpsrweb/NACJD/series/57</a>&nbsp;<a href="https://www.samhsa.gov/disclaimer"><img src="images/exiticon.jpg" alt="SAMHSA Exit Disclaimer" title="SAMHSA Exit Disclaimer" style="position:relative;top:1pt"></a>. The most current data used are from 2016 for most counties, with prior years&rsquo; data substituted in a few cases.</li>
+
+	<li><em>Bureau of Labor Statistics (BLS)</em>. The 2023 county&#045;level unemployment estimates were used (<a href="https://www.bls.gov/lau/tables.htm">https://www.bls.gov/lau/tables.htm</a>). The BLS uses results from the Current Population Survey (CPS) to provide county&#045;level unemployment estimates. The CPS is a monthly survey of households conducted by the Census Bureau for the BLS.</li>
+
+	<li><em>Bureau of Economic Analysis (BEA)</em>. The 2022 county&#045;level, per capita income estimates were used (<a href="https://www.bea.gov/data/income-saving/personal-income-county-metro-and-other-areas">https://www.bea.gov/data/income&#045;saving/personal&#045;income&#045;county&#045;metro&#045;and&#045;other&#045;areas</a>). These county&#045;level, per capita income estimates are produced by the Regional Income Division of the BEA.</li>
+
+	<li><em>National Center for Health Statistics (NCHS)</em>. Mortality data using International Classification of Diseases, 10th revision (ICD&#045;10), 2014&#045;2019, were used. The ICD&#8209;10 death data are from the NCHS at the Centers for Disease Control and Prevention.</li>
+
+	<li><em>Substance Abuse and Mental Health Services Administration (SAMHSA), Center for Behavioral Health Statistics and Quality (CBHSQ; formerly the Office of Applied Studies [OAS])</em>. Data were used from the National Substance Use and Mental Health Services Survey (N&#045;SUMHSS). The 2019 and 2021 data on drug and alcohol treatment were obtained. Most recent data available on maintenance of effort expenditures, block grant awards, cost of services, and total taxable resources data were also used.</li>
+</ul>
+
+<p>Data sources, along with the description of potential predictor variables obtained from each source, are provided in the following lists.</p>
+
+<div>
+<table class="rti-b3 w50">
+<thead>
+<tr>
+<th class="left" scope="col"><strong><em>Claritas Data</em> (Description)</strong></th>
+<th scope="col"><strong><em>Claritas Data</em> (Level)</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">% Population Aged 0 to 19 in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 20 to 24 in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 25 to 34 in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 35 to 44 in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 45 to 54 in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 55 to 64 in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 65 or Older in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Non&#045;Hispanic Blacks in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Hispanics in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Non&#045;Hispanic Other Races in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Non&#045;Hispanic Whites in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% Males in Block Group</th>
+<td class="w33">Block Group</td>
+</tr>
+
+<tr>
+<th scope="row">% American Indians, Eskimos, Aleuts in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Asians, Pacific Islanders in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 0 to 19 in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 20 to 24 in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 25 to 34 in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 35 to 44 in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 45 to 54 in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 55 to 64 in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 65 or Older in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Non&#045;Hispanic Blacks in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Hispanics in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Non&#045;Hispanic Other Races in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Non&#045;Hispanic Whites in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Males in Tract</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 0 to 19 in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 20 to 24 in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 25 to 34 in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 35 to 44 in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 45 to 54 in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 55 to 64 in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Population Aged 65 or Older in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Non&#045;Hispanic Blacks in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Hispanics in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Non&#045;Hispanic Other Races in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Non&#045;Hispanic Whites in County</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">% Males in County</th>
+<td class="w33">County</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div>
+<table class="rti-b3 w50"> 
+<thead>
+<tr>
+<th class="left" scope="col"><strong><em>American Community Survey (ACS)</em> (Description)</strong></th>
+<th scope="col"><strong><em>ACS Data</em> (Level)</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">% Population Who Dropped Out of High School</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Housing Units Built in 1940 to 1949</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Females 16 Years or Older in Labor Force</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Females Never Married</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Females Separated, Divorced, Widowed, or Other</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% One&#045;Person Households</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Males 16 Years or Older in Labor Force</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Males Never Married</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Males Separated, Divorced, Widowed, or Other</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Housing Units Built in 1939 or Earlier</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">Average Number of People per Room</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Families below Poverty Level</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Households with Public Assistance Income</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Housing Units Rented</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population with 9 to 12 Years of School, No High School Diploma</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population with 0 to 8 Years of School</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population with Associate&rsquo;s Degree</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population with Some College and No Degree</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population with Bachelor&rsquo;s, Graduate, Professional Degree</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Housing Units with No Telephone Service Available</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Households with No Vehicle Available</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Population with No Health Insurance</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">Median Rents for Rental Units</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">Median Value of Owner&#045;Occupied Housing Units</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">Median Household Income</th>
+<td class="w33">Tract</td>
+</tr>
+
+<tr>
+<th scope="row">% Families below the Poverty Level</th>
+<td class="w33">County</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div>
+<table class="rti-b3 w50"> 
+<thead>
+<tr>
+<th class="left" scope="col"><strong><em>Uniform Crime Report (UCR) Data</em> (Description)</strong></th>
+<th scope="col"><strong><em>UCR Data</em> (Level)</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">Drug Possession Arrest Rate</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Drug Sale or Manufacture Arrest Rate</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Drug Violations&rsquo; Arrest Rate</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Marijuana Possession Arrest Rate</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Marijuana Sale or Manufacture Arrest Rate </th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Opium or Cocaine Possession Arrest Rate</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Opium or Cocaine Sale or Manufacture Arrest Rate</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Other Drug Possession Arrest Rate</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Other Dangerous Non&#045;Narcotics Arrest Rate</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Serious Crime Arrest Rate</th>
+<td class="w33">County</td>
+</tr>
+
+<tr>
+<th scope="row">Violent Crime Arrest Rate</th>
+<td class="w33">County </td>
+</tr>
+
+<tr>
+<th scope="row">Driving under Influence Arrest Rate </th>
+<td class="w33">County</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div>
+<table class="rti-b3 w50"> 
+<thead>
+<tr>
+<th scope="col"><strong><em>Other Categorical Data</em><br>(Description)</strong></th>
+<th scope="col"><strong><em>Other Categorical Data</em><br>(Source)</strong></th>
+<th scope="col"><strong><em>Other Categorical Data</em><br>(Level)</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">= 1 if Hispanic, = 0 Otherwise</th>
+<td>National Survey on Drug Use and<br>Health (NSDUH) Sample</td>
+<td>Person</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if Non&#045;Hispanic Black, = 0 Otherwise</th>
+<td>NSDUH Sample</td>
+<td>Person</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if Non&#045;Hispanic Other, = 0 Otherwise</th>
+<td>NSDUH Sample</td>
+<td>Person</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if Male, = 0 if Female</th>
+<td>NSDUH Sample</td>
+<td>Person</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if Metropolitan Statistical Area (MSA) with<br><span class="ind1">&ge; 1 Million, = 0 Otherwise</span></th>
+<td>2010 Census</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if MSA with &lt; 1 Million, = 0 Otherwise</th>
+<td>2010 Census</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if Non&#045;MSA Urban, = 0 Otherwise</th>
+<td>2010 Census</td>
+<td>Tract</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if Urban Area, = 0 if Rural Area</th>
+<td>2010 Census</td>
+<td>Tract</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if No Cubans in Tract, = 0 Otherwise</th>
+<td>2010 Census</td>
+<td>Tract</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if No Arrests for Dangerous Non&#045;Narcotics,<br><span class="ind1">= 0 Otherwise</span></th>
+<td>Uniform Crime Report (UCR)</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if No Arrests for Opium or Cocaine Possession,<br><span class="ind1">= 0 Otherwise</span></th>
+<td>UCR</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if No Housing Units Built in 1939 or Earlier,<br><span class="ind1">= 0 Otherwise</span></th>
+<td>American Community Survey (ACS)</td>
+<td>Tract</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if No Housing Units Built in 1940 to 1949,<br><span class="ind1">= 0 Otherwise</span></th>
+<td>ACS</td>
+<td>Tract</td>
+</tr>
+
+<tr>
+<th scope="row">= 1 if No Households with Public Assistance<br><span class="ind1">Income, = 0 Otherwise</span></th>
+<td>ACS</td>
+<td>Tract</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div>
+<table class="rti-b3 w50"> 
+<thead>
+<tr>
+<th class="left" scope="col"><strong><em>Miscellaneous Data</em> (Description)</strong></th>
+<th scope="col"><strong><em>Miscellaneous Data</em> (Source)</strong></th>
+<th scope="col"><strong><em>Miscellaneous Data</em><br>(Level)</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">Alcohol Death Rate, Underlying Cause</th>
+<td>National Center for Health Statistics&rsquo; International<br>Classification of Diseases, 10th revision (NCHS&#045;<br>ICD&#045;10)</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Cigarette Death Rate, Underlying Cause</th>
+<td>NCHS&#045;ICD&#045;10</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Drug Death Rate, Underlying Cause</th>
+<td>NCHS&#045;ICD&#045;10</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Alcohol Treatment Rate</th>
+<td>National Survey of Substance Abuse Treatment<br>Services (N&#8209;SSATS)</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Alcohol and Drug Treatment Rate</th>
+<td>N&#045;SSATS</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Drug Treatment Rate</th>
+<td>N&#045;SSATS</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Unemployment Rate</th>
+<td>Bureau of Labor Statistics (BLS)</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Per Capita Income (in Thousands)</th>
+<td>Bureau of Economic Analysis (BEA)</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Average Suicide Rate (per 10,000)</th>
+<td>NCHS&#045;ICD&#045;10</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Food Stamp Participation Rate</th>
+<td>Census Bureau</td>
+<td>County</td>
+</tr>
+
+<tr>
+<th scope="row">Single State Agency Maintenance of Effort</th>
+<td>National Association of State Alcohol and Drug<br>Abuse Directors (NASADAD)</td>
+<td>State</td>
+</tr>
+
+<tr>
+<th scope="row">Block Grant Awards</th>
+<td>Substance Abuse and Mental Health Services<br>Administration (SAMHSA)</td>
+<td>State</td>
+</tr>
+
+<tr>
+<th scope="row">Cost of Services Factor Index</th>
+<td>SAMHSA</td>
+<td>State</td>
+</tr>
+
+<tr>
+<th scope="row">Total Taxable Resources per Capita Index</th>
+<td>U.S. Department of Treasury</td>
+<td>State</td>
+</tr>
+
+<tr>
+<th scope="row">% Hispanics Who Are Cuban</th>
+<td>2010 Census</td>
+<td>Tract</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>The predictor variables used in the SAE models were selected from the set of potential predictors given above using the method described in <a href="#b4"><strong><span class="nowrap">Section B.4</span></strong></a>.</p>
+</section>
+
+<section id="b4">
+<h3>B.4 Selection of Predictor Variables for the SAE Models</h3>
+
+<p>Predictor variable selection was done using the 2022&#8209;2023 data for all measures, using the following multistep process:<sup><a href="#ftn24" id="ftnref24">24</a></sup></p>
+
+<ol>
+	<li>There were about 139,050 respondents in the combined 2022 and 2023 NSDUH data. Any variable selection performed on such a large dataset would result in an excessive number of predictors in the final model. To avoid this and build parsimonious models, the pooled data were partitioned into modeling and validation samples. For more information on how the data was partitioned, see the 2002&#8209;2003 state SAE report (Wright &amp; Sathe, 2005).</li>
+
+	<li>For each measure, age group&ndash;specific<sup><a href="#ftn25" id="ftnref25">25</a></sup> SAS<sup>&reg;</sup> stepwise logistic regression models were fit using the modeling sample data (SAS Institute Inc., 2017). The input list to these models included all linear polynomials (constructed from continuous predictor variables) and other categorical or indicator variables given in <a href="#b3"><strong><span class="nowrap">Section B.3</span></strong></a>. All significant predictors were input to step&nbsp;3.</li>
+
+	<li>Using modeling sample, all significant predictors from step&nbsp;2 then were input to PROC HPSPLIT to identify significant complex (at most three&#045;way) interaction terms. PROC HPSPLIT is a SAS procedure that uses decision&#045;tree algorithms to build classification systems. The exhaustive chi&#045;squared automatic interaction detector algorithm was used to create the trees.</li>
+
+	<li>All the significant variables from step&nbsp;2, along with their corresponding higher&#045;order polynomials (quadratic and cubic), interaction of sex and race, and the significant interactions detected by PROC HPSPLIT in step&nbsp;3 then were input to SAS stepwise logistic regression models, run on modeling sample. All predictors that remained significant then were input to step&nbsp;5 of variable selection.</li>
+
+	<li>All significant variables from step&nbsp;4 were input to fit SUDAAN (RTI International, 2013) logistic regression models on the validation sample, and predictors that remained significant were used in the SAE models described in <a href="#b1"><strong><span class="nowrap">Section B.1</span></strong></a>. The race and sex predictors were forced in most of the models.</li>
+</ol>
+</section>
+
+<section id="b5">
+<h3>B.5 Benchmarking the Age Group&ndash;Specific Small Area Estimates</h3>
+
+<p>The self&#045;calibration built into the survey&#045;weighted hierarchical Bayes (SWHB) solution ensures the population&#045;weighted average of the state small area estimates will closely match the national design&#045;based estimates. The national design&#045;based estimates in NSDUH are based entirely on survey&#045;weighted data using a direct estimation approach, whereas the state and census region estimates are model based. Given the self&#045;calibration ensured by the SWHB method, for state reports prior to 2002, the standard Bayes prescription was followed; specifically, the posterior mean was used for the point estimate, and the tail percentiles of the posterior distribution were used for the Bayesian confidence interval limits.</p>
+
+<p>Singh and Folsom (2001) extended Ghosh&rsquo;s (1992) results on constrained Bayes estimation to include exact benchmarking to design&#045;based national estimates. In the simplest version of this constrained Bayes solution where only the design&#045;based mean is imposed as a benchmarking constraint, each of the 2022&#8209;2023 state&#045;by&ndash;age group small area estimates is adjusted by adding the common factor <img src="images/meth-inline16-2023.png" alt="Delta sub a is defined as the national design-based estimate, capital D sub a, minus the national model-based small area estimate, capital P sub a." title="Delta sub a is defined as the national design-based estimate, capital D sub a, minus the national model-based small area estimate, capital P sub a." style="position:relative;top:6pt">, where <img src="images/meth-inline17-2023.png" alt="capital D sub a" title="capital D sub a" style="position:relative;top:6pt"> is the design&#045;based national estimate and <img src="images/meth-inline18-2023.png" alt="capital P sub a" title="capital P sub a" style="position:relative;top:6pt"> is the population&#045;weighted mean of the state small area estimates <img src="images/meth-inline19-2023.png" alt="(Capital P sub s and a)" title="(Capital P sub s and a)" style="position:relative;top:6pt"> for age group&#8209;<em>a</em>. The exactly benchmarked state&#8209;<em>s</em> and age group&#8209;<em>a</em> small area estimates then are given by <img src="images/meth-inline20-2023.png" alt="The benchmarked state-s and age group-a small area estimate, Theta sub s and a, is defined as the sum of capital P sub s and a and Delta sub a." title="The benchmarked state-s and age group-a small area estimate, Theta sub s and a, is defined as the sum of capital P sub s and a and Delta sub a." style="position:relative;top:5pt">. Experience with such additive adjustments suggests that the resulting exactly benchmarked state small area estimates will always be between 0 and 100&nbsp;percent because the SWHB self&#045;calibration ensures that the adjustment factor is small relative to the size of the state&#045;level small area estimates.</p>
+
+<p>Relative to the Bayes posterior mean, these benchmark&#045;constrained state small area estimates are biased by the common additive adjustment factor. Therefore, the posterior mean squared error for each benchmarked state small area estimate has the square of this adjustment factor added to its posterior variance. To achieve the desirable feature of exact benchmarking, this constrained Bayes adjustment factor was implemented for the state&#045;by&ndash;age group small area estimates. The associated Bayesian confidence (credible) intervals can be recentered at the benchmarked small area estimates on the logit scale with the symmetric interval end points based on the posterior root mean squared errors. The adjusted 95&nbsp;percent Bayesian confidence intervals <img src="images/meth-inline21-2023.png" alt="(Lower sub s and a is the lower bound of the 95 percent Bayesian confidence interval of Theta sub s and a; upper sub s and a is the upper bound of the 95 confidence interval of Theta sub s and a.)" title="(Lower sub s and a is the lower bound of the 95 percent Bayesian confidence interval of Theta sub s and a; upper sub s and a is the upper bound of the 95 confidence interval of Theta sub s and a.)" style="position:relative;top:6pt"> are defined as follows:</p>
+
+<figure id="eq5">
+<p class="center"><img src="images/meth-eq5-2023.png" alt="Equation 5. Click 'D' link to access long description." title="Equation 5. Click 'D' link to access long description."><span style="position:relative; bottom:5pt">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq5desc">D</a></span></p>
+</figure>
+
+<p>where</p>
+
+<figure id="eq6">
+<p class="center"><img src="images/meth-eq6-2023.png" alt="Equation 6. Click 'D' link to access long description." title="Equation 6. Click 'D' link to access long description."><span style="position:relative; bottom:5pt">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq6desc">D</a></span></p>
+</figure>
+
+<figure id="eq7">
+<p class="center"><img src="images/meth-eq7-2023.png" alt="Equation 7. Click 'D' link to access long description." title="Equation 7. Click 'D' link to access long description."><span style="position:relative; bottom:5pt">,&nbsp;and&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq7desc">D</a></span></p>
+</figure>
+
+<figure id="eq8">
+<p class="center"><img src="images/meth-eq8-2023.png" alt="Equation 8. Click 'D' link to access long description." title="Equation 8. Click 'D' link to access long description."><span style="position:relative; bottom:5pt">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq8desc">D</a></span></p>
+</figure>
+
+<p>The associated posterior coverage probabilities for these benchmarked intervals are very close to the prescribed 0.95&nbsp;value because the state small area estimates have posterior distributions that can be approximated exceptionally well by a Gaussian distribution after the logit transformation.</p>
+</section>
+
+<section id="b6">
+<h3>B.6 Calculation of Estimated Number of People Associated with Each Outcome</h3>
+
+<p>Tables&nbsp;1 to 41 of <em>2022&#8209;2023 National Surveys on Drug Use and Health: Model&#045;Based Estimated Totals (in Thousands) (50 States and the District of Columbia)</em> (CBHSQ, forthcoming&nbsp;b) show the estimated numbers of people associated with each of the 38 measures of interest. To calculate these numbers, the benchmarked small area estimates and associated 95&nbsp;percent Bayesian confidence intervals are multiplied by the average population across the 2 years (in this case, 2022 and 2023) of the state by the age group of interest (<a href="#tabc-1"><strong>Tables C.1</strong></a> to <a href="#tabc-4"><strong>C.4</strong></a> in <a href="#secc"><strong><span class="nowrap">Section C</span></strong></a> of this methodology document).</p>
+
+<p>For example, alcohol use in the past month among 18&#045; to 25&#045;year&#045;olds in Alabama was 45.73&nbsp;percent in 2022&#8209;2023.<sup><a href="#ftn26" id="ftnref26">26</a></sup> The corresponding Bayesian confidence intervals ranged from 41.52 to 49.99&nbsp;percent. The population count for 18&#045; to 25&#045;year&#045;olds averaged across 2022 and 2023 in Alabama was 539,025 (see <a href="#tabc-2"><strong><span class="nowrap">Table C.2</span></strong></a>). Hence, the estimated number of 18&#045; to 25&#045;year&#045;olds using alcohol in the past month in Alabama was <span class="nowrap">0.4573 &times; 539,025,</span> which is 246,496.<sup><a href="#ftn27" id="ftnref27">27</a></sup> The associated Bayesian confidence intervals ranged from <span class="nowrap">0.4152 &times; 539,025</span> (i.e., 223,803) to <span class="nowrap">0.4999 &times; 539,025</span> (i.e., 269,459). Note that when estimates of the number of people are calculated for Tables&nbsp;1 to 41 in the 2022&#8209;2023 Model&#045;Based Estimated Totals report (CBHSQ, forthcoming&nbsp;b), the unrounded percentages and population counts are used, then the numbers are reported to the nearest thousand. Hence, the number obtained by multiplying the published estimate with the published population estimate may not exactly match the counts published in these tables because of rounding differences.</p>
+
+<p>The only two exceptions to this calculation are the production of the estimated numbers of marijuana initiates among the population at risk and the estimated number of those not receiving substance use treatment among those classified as needing treatment. Those estimates cannot be directly calculated as the product of the percentage estimate and the population counts available in <a href="#secc"><strong><span class="nowrap">Section C</span></strong></a>. That is because the denominator of the marijuana initiation percentage estimate is defined as the number of people at risk for marijuana initiation, which is a combination of people who never used marijuana and one half of the people who initiated in the past 24&nbsp;months (see <a href="#b8"><strong><span class="nowrap">Section B.8</span></strong></a> for more details). And the denominator of those not receiving substance use treatment who were classified as needing treatment percentage estimate is defined as the number of people classified as needing substance use treatment (see <a href="#b12"><strong><span class="nowrap">Section B.12</span></strong></a> for details).</p>
+</section>
+
+<section id="b7">
+<h3>B.7 Calculation of Aggregate Age Group Estimates and Limitations</h3>
+
+<p>Tables&nbsp;1 to 41 of <em>2022&#8209;2023 National Surveys on Drug Use and Health: Model&#045;Based Prevalence Estimates (50 States and the District of Columbia)</em> (CBHSQ, 2024c) show estimates for the following age groups: 12 to 17, 18 to 25, 26 or older, 18 or older, and 12 or older. If a user was interested in producing aggregated estimates, such as for those aged 12 to 25, the aggregated estimates could be calculated using prevalence estimates along with the population totals shown in <a href="#secc"><strong><span class="nowrap">Section C</span></strong></a> of this document. However, with the information provided in the tables, the confidence intervals cannot be calculated. Below is an example of the calculation of aggregated estimate for a given state.</p>
+
+<p>In 2022&#8209;2023, alcohol use in the past month in Alabama among youths aged 12 to 17 was 6.11&nbsp;percent, and among young adults aged 18 to 25 it was 45.73&nbsp;percent.<sup><a href="#ftn28" id="ftnref28">28</a></sup> The population counts for 12&#045; to 17&#045;year&#045;olds and 18&#045; to 25&#045;year&#045;olds averaged across 2022 and 2023 in Alabama were 395,361 and 539,025, respectively (see <a href="#tabc-2"><strong><span class="nowrap">Table C.2</span></strong></a>). Hence, one would calculate the estimate for people aged 12 to 25 by first finding the number of users aged 12 to 25, which is 270,653 <span class="nowrap">([0.0611 &times; 395,361] &plus; [0.4573 &times; 539,025]),</span> then dividing that number by the population aged 12 to 25 <span class="nowrap">(270,653 &divide; [395,361 &plus; 539,025]),</span> which results in a rate of 28.97&nbsp;percent.</p>
+</section>
+
+<section id="b8">
+<h3>B.8 Calculation of Initiation of Marijuana Use</h3>
+
+<p>Initiation<sup><a href="#ftn29" id="ftnref29">29</a></sup> rates typically are calculated as the number of new initiates of a substance during a period of time (such as in the past year) divided by an estimate of the number of person&#045;years of exposure (in thousands). The initiation definition used here employs a simpler form of the at&#045;risk population based on the model&#045;based methodology. This model&#045;based initiation rate (i.e., first use of marijuana in the past year among people at risk for initiation of marijuana use) is defined as follows: </p>
+
+<figure id="eq9">
+<p class="center"><img src="images/meth-eq9-2023.png" alt="Equation 9. Click 'D' link to access long description." title="Equation 9. Click 'D' link to access long description."><span style="position:relative; bottom:5pt">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq9desc">D</a></span></p>
+</figure>
+
+<p>where <img src="images/meth-inline22-2023.png" alt="capital X sub 1" title="capital X sub 1" style="position:relative;top:6pt"> is the number of marijuana initiates in the past 24&nbsp;months, <img src="images/meth-inline23-2023.png" alt="capital X sub 2" title="capital X sub 2" style="position:relative;top:6pt"> is the number of people who never used marijuana, and <span class="nowrap">(0.5 &times; <img src="images/meth-inline22-2023.png" alt="capital X sub 1" title="capital X sub 1" style="position:relative;top:6pt"> &plus; <img src="images/meth-inline23-2023.png" alt="capital X sub 2" title="capital X sub 2" style="position:relative;top:6pt">)</span> denotes the at&#045;risk population.</p>
+
+<p>The initiation rate is expressed as a percentage or rate per 100 person&#045;years of exposure. Note that this estimate uses a 2&#045;year time period to accumulate initiation cases from the annual survey. By assuming further that the distribution of first use for the initiation cases is uniform across the 2&#045;year interval, the total number of person&#045;years of exposure is 1 year on average for the initiation cases plus 2 years for all the &ldquo;never users&rdquo; at the end of the time period. This approximation to the person&#045;years of exposure permits one to recast the initiation rate as a function of two population prevalence rates&mdash;namely, the fraction of people who first used marijuana in the past 2 years and the fraction who had never used marijuana. State and census region estimates, along with the 95&nbsp;percent Bayesian confidence intervals, are based on simultaneous modeling of <img src="images/meth-inline22-2023.png" alt="capital X sub 1" title="capital X sub 1" style="position:relative;top:6pt"> and <img src="images/meth-inline23-2023.png" alt="capital X sub 2" title="capital X sub 2" style="position:relative;top:6pt"> components using the SWHB SAE approach. The associated MCMC chains were used to calculate the posterior variance.</p>
+</section>
+
+<section id="b9">
+<h3>B.9 Underage Estimates</h3>
+
+<p>To obtain small area estimates for people aged 12 to 20 for past month alcohol use, binge alcohol use, perceptions of great risk from having five or more drinks of an alcoholic beverage once or twice a week, alcohol use disorder, past month tobacco product use, and past month cigarette use, a separate set of SAE models with predictors selected for the age groups 12 to 17, 18 to 20, 21 to 34, and 35 or older were used. Model&#045;based estimates for people aged 12 to 20 were produced by taking the population&#045;weighted average of the individual age group (12 to 17 and 18 to 20) estimates. Estimates for these underage outcomes were benchmarked to match national design&#045;based estimates for that age group using the process described in <a href="#b5"><strong><span class="nowrap">Section B.5</span></strong></a>.</p>
+</section>
+
+<section id="b10">
+<h3>B.10 Marijuana Use</h3>
+
+<p>The marijuana section of the 2023 NSDUH questionnaire included questions to assess the variety of ways that people consume marijuana. These questions were first introduced in the 2022 NSDUH questionnaire. The following definitional information preceded the question about the use of marijuana: &ldquo;The next questions are about marijuana and any cannabis products, sometimes called pot, weed, hashish, or concentrates. Some of the ways these products can be used are smoking (such as in joints, pipes, bongs, blunts, or hookahs), vaping (using vape pens, dab pens, tabletop vaporizers, or portable vaporizers), dabbing, eating or drinking, or applying as a lotion.&rdquo; Additional questions about marijuana vaping were asked in the emerging issues section of the questionnaire, but the overall marijuana measures did not take marijuana vaping data from the emerging issues section into account since the marijuana section specifically included marijuana vaping as a way marijuana could be used. For additional details on marijuana vaping, please refer to Section&nbsp;3.4.13 of CBHSQ (2024b).</p>
+</section>
+
+<section id="b11">
+<h3>B.11 Substance Use Disorder (SUD)</h3>
+
+<p>The NSDUH questionnaire includes questions to measure SUDs for alcohol and drugs. SUD estimates in the 2022 and 2023 NSDUHs were based on the criteria in the <em>Diagnostic and Statistical Manual of Mental Disorders</em>, 5th edition (DSM&#8209;5; American Psychiatric Association [APA], 2013). For information about the SUD definitions based on criteria from DSM&#8209;5, see Section&nbsp;3.4.3 of CBHSQ (2024b). Respondents were asked SUD questions separately for any drugs or alcohol they used in the 12&nbsp;months prior to the survey.<sup><a href="#ftn30" id="ftnref30">30</a></sup> SUD questions for drugs applied to marijuana, cocaine (including crack), heroin, hallucinogens, inhalants, methamphetamine, and <em>any</em> use of prescription pain relievers, tranquilizers, stimulants, or sedatives.</p>
+
+<p>The following lists the substances that are included in selected SUD measures in the 2022&#8209;2023 NSDUH state small area estimates:</p>
+
+<ul>
+	<li>Any SUD in the past year includes data from past year users of alcohol, marijuana, cocaine (including crack), heroin, hallucinogens, inhalants, and methamphetamine, and <em>any</em> past year users of prescription psychotherapeutic drugs.</li>
+
+	<li>Alcohol use disorder includes only data from past year users of alcohol.</li>
+
+	<li>Pain reliever use disorder includes data from <em>any</em> past year users of prescription pain relievers.</li>
+
+	<li>Drug use disorder includes data from past year users of marijuana, cocaine, heroin, hallucinogens, inhalants, and methamphetamine, and <em>any</em> past year users of prescription psychotherapeutic drugs. It does not include people who had an alcohol use disorder in the past year.</li>
+
+	<li>Opioid use disorder includes data from past year users of heroin and <em>any</em> past year users of prescription pain relievers. Respondents were not counted as having an opioid use disorder if they did not meet the full SUD criteria for heroin or prescription pain relievers individually. The opioid use disorder estimates do not capture symptoms that arose solely from the use of illegally made fentanyl.</li>
+</ul>
+</section>
+
+<section id="b12">
+<h3>B.12 Substance Use Treatment</h3>
+
+<p>The substance use treatment questions underwent considerable revisions for the 2022 NSDUH; these questions remained the same for 2023. Revisions for 2022 were intended to reflect contemporary changes in the delivery of substance use treatment services. For information about these changes, see Section&nbsp;3.4.4 of CBHSQ (2024b). Because of these changes, the definition for the receipt of substance use treatment changed beginning in 2022. Receipt of substance use treatment includes the receipt of treatment in the past year for the use of alcohol or drugs in an inpatient location; in an outpatient location; via telehealth; or in a prison, jail, or juvenile detention center. The definition also includes the receipt of medication assisted treatment for alcohol use or opioid use.</p>
+
+<p>In 2022 and 2023, relatively large proportions of people who reported that they received inpatient or outpatient treatment in the past 12&nbsp;months did not indicate the specific substance(s) for which they received treatment in these locations, including treatment for the use of some other drug. Stated another way, these reports of inpatient or outpatient treatment were not substantiated by reports of treatment for the use of specific substances. Specifically, about one quarter of respondents who reported inpatient treatment in the past year did not report the specific substances for which they received treatment as inpatients. Among respondents who reported outpatient treatment in the past year, about one third did not report the specific substances for which they received treatment as outpatients. A &ldquo;substance unspecified&rdquo; category was created for these respondents. If respondents in this &ldquo;substance unspecified&rdquo; group did not actually receive substance use treatment, then estimates for any substance use treatment and for inpatient or outpatient substance use treatment could be overestimates. Thus, estimates for the overall substance use treatment measure could be overestimates.</p>
+
+<p>Historically, NSDUH data products have included substance use treatment at a &ldquo;specialty facility&rdquo; in the past&nbsp;year as part of the definition for whether people needed substance use treatment. With the changes to the questionnaire in 2022, the term &ldquo;specialty facility&rdquo; was dropped from 2022 NSDUH data products. Consequently, the definition of the need for substance use treatment was revised beginning with the 2022 NSDUH. Respondents were classified as needing substance use treatment if they had an SUD in the past year or they received substance use treatment in the past year.</p>
+
+<p>The percentage of people not receiving substance use treatment among those classified as needing treatment is defined as follows:</p> 
+
+<figure id="eq10">
+<p class="center"><img src="images/meth-eq10-2023.png" alt="Equation 10. Click 'D' link to access long description." title="Equation 10. Click 'D' link to access long description."><span style="position:relative; bottom:3pt">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eq10desc">D</a></span></p>
+</figure>
+
+<p>where <img src="images/meth-inline22-2023.png" alt="capital X sub 1" title="capital X sub 1" style="position:relative;top:6pt"> is the number of people not receiving treatment who needed treatment, <img src="images/meth-inline23-2023.png" alt="capital X sub 2" title="capital X sub 2" style="position:relative;top:6pt"> is the number of people receiving treatment who needed treatment, and <span class="nowrap">(<img src="images/meth-inline22-2023.png" alt="capital X sub 1" title="capital X sub 1" style="position:relative;top:6pt"> &plus; <img src="images/meth-inline23-2023.png" alt="capital X sub 2" title="capital X sub 2" style="position:relative;top:6pt">)</span> denotes the number of people who needed treatment. State and census region estimates, along with the 95&nbsp;percent Bayesian confidence intervals, are based on simultaneous modeling of <img src="images/meth-inline22-2023.png" alt="capital X sub 1" title="capital X sub 1" style="position:relative;top:6pt"> and <img src="images/meth-inline23-2023.png" alt="capital X sub 2" title="capital X sub 2" style="position:relative;top:6pt"> components using the SWHB SAE approach. The associated MCMC chains were used to calculate the posterior variance.</p>
+
+<p>For more information about the substance use treatment outcomes, see Section&nbsp;3.4.4 of CBHSQ (2024b).</p>
+</section>
+
+<section id="b13">
+<h3>B.13 Mental Health Measures</h3>
+
+<p>Sections&nbsp;3.4.5, 3.4.7, 3.4.8, and 3.4.12 of CBHSQ (2024b) provide a summary of the measurement issues associated with seven mental health outcome variables such as mental illness, MDE, suicidal thoughts and behaviors, and mental health treatment.</p>
+
+<h4 id="b13-1">B.13.1 Mental Illness</h4>
+
+<p>The binary <span class="nowrap">(0, 1)</span> SMI and AMI measures are generated (predicted) by a logistic regression model where parameter estimates from the 2012 model and annually updated associated predictors from NSDUH (i.e., responses to questions in the NSDUH) are used to predict the respondent&rsquo;s SMI (or AMI) status. The predicted SMI (or AMI) status for all adult NSDUH respondents was used to compute prevalence estimates of SMI (or AMI) nationally as well as at the state level. For details on the 2012 model, see Section&nbsp;3.4.7.8 of CBHSQ (2024b). Note that starting from 2021, the measures used in the mental illness models were all imputed. Therefore, the source variables (i.e., 2012 model covariate) used to create the measures of AMI and SMI had no missing data.</p>
+
+<h4 id="b13-2">B.13.2 Mental Health Treatment</h4>
+
+<p>The mental health treatment questions underwent considerable revisions for the 2022 NSDUH; these questions remained the same for 2023. Revisions for 2022 were intended to reflect contemporary changes in the delivery of mental health treatment services. The changes also made the content more similar between the alcohol and drug treatment and the mental health services utilization sections of the questionnaire. For information about these changes see Section&nbsp;3.4.5 of CBHSQ (2024b). Because of these changes, the definition for the receipt of mental health treatment changed beginning in 2022. Receipt of mental health treatment includes the receipt of treatment in the past year to help people with their mental health, emotions, or behavior that was received in an inpatient location; in an outpatient location; via telehealth; or in a prison, jail, or juvenile detention center. The definition also includes the receipt of prescription medication to help with mental health, emotions, or behavior.</p>
+
+<h4 id="b13-3">B.13.3 Major Depressive Episode (MDE)</h4>
+
+<p>Two sections related to MDE were included in the NSDUH questionnaires: an adult depression section and an adolescent depression section. These sections were originally derived from <em>Diagnostic and Statistical Manual of Mental Disorders</em>, 4th edition criteria for MDE and remained applicable to the more recent DSM&#8209;5 criteria (APA, 1994; 2013). Consistent with the DSM&#8209;5 criteria, NSDUH does not exclude MDEs occurring exclusively in the context of bereavement. In addition, no exclusions were made for MDEs caused by medication, alcohol, illicit drugs, or any medical illness. For information about the differences in the adult and adolescent depression questions, see Section&nbsp;3.4.8 of CBHSQ (2024b).</p>
+
+<p>According to DSM&#8209;5, people are classified as having had an MDE<sup><a href="#ftn31" id="ftnref31">31</a></sup> in their lifetime if they had at least five or more of the following symptoms nearly every day (except where noted) in the same 2&#8209;week period, where at least one of the symptoms is a depressed mood or loss of interest or pleasure in daily activities: (1)&nbsp;depressed mood most of the day; (2)&nbsp;markedly diminished interest or pleasure in all or almost all activities most of the day; (3)&nbsp;significant weight loss when not sick or dieting, or weight gain when not pregnant or growing, or decrease or increase in appetite; (4)&nbsp;insomnia or hypersomnia; (5)&nbsp;psychomotor agitation or retardation at a level observable by others; (6)&nbsp;fatigue or loss of energy; (7)&nbsp;feelings of worthlessness or excessive or inappropriate guilt; (8)&nbsp;diminished ability to think or concentrate or indecisiveness; and (9)&nbsp;recurrent thoughts of death or suicidality (i.e., recurrent suicidal ideation without a specific plan, making a specific plan, or making an attempt). Unlike the other symptoms listed previously, recurrent thoughts of death or suicidality did not need to have occurred nearly every day (APA, 2013).</p>
+
+<p>Respondents who have had an MDE in their lifetime are asked if, during the past 12&nbsp;months, they had a period of depression lasting 2 weeks or longer while also having some of the other symptoms mentioned. Respondents reporting experiences consistent with them having had an MDE in the past year are asked questions from the Sheehan Disability Scale to measure the level of functional impairment in major life activities reported to be caused by the MDE in the past 12&nbsp;months (Leon et al., 1997).</p>
+
+<h4 id="b13-4">B.13.4 Suicidal Thoughts and Behavior</h4>
+
+<p>The 2022 and 2023 NSDUHs included sets of questions asking adults aged 18 or older whether they had serious thoughts of suicide, made any suicide plans, or had attempted suicide in the past 12&nbsp;months. All adult respondents were asked whether they made a suicide plan or attempted suicide regardless of whether they reported that they had serious thoughts of suicide in the past 12 months. The two response options were &ldquo;yes&rdquo; and &ldquo;no.&rdquo; Additionally, beginning in 2021, the adult variables for suicidal thoughts and behaviors among adults were statistically imputed.</p>
+
+<p>Additionally, the 2022 and 2023 NSDUHs included sets of questions that asked youths aged 12 to 17 about the same suicidal thoughts and behaviors. Even though the wording of the youth suicidal thoughts and behavior questions did not change for 2022, questions were moved to the youth experiences section of the questionnaire from the youth mental health utilization section, since that section was removed from the 2022 NSDUH questionnaire. Unlike the questions for adults, the questions about suicidal thoughts and behavior among youths included response choices for &ldquo;I&rsquo;m not sure&rdquo; and &ldquo;I don&rsquo;t want to answer,&rdquo; in addition to standard response choices of &ldquo;yes&rdquo; and &ldquo;no.&rdquo;</p>
+
+<p>Estimates for suicidal thoughts and behavior among adolescents in national reports and tables for 2023 included estimates for &ldquo;I&rsquo;m not sure,&rdquo; and &ldquo;I don&rsquo;t want to answer,&rdquo; in addition to estimates for &ldquo;yes&rdquo; and &ldquo;no.&rdquo; Measures for suicidal thoughts and behavior among adolescents were not statistically imputed for 2022 or 2023. For the 2022&#8209;2023 state small area estimates, estimates for suicidal behaviors reflect the percentage that answered &ldquo;yes&rdquo; among all respondents. Respondents who answered &ldquo;no,&rdquo; &ldquo;I&rsquo;m not sure,&rdquo; and &ldquo;I don&rsquo;t want to answer&rdquo; were grouped together as the &ldquo;no&rdquo; category. Thus the 2022&#8209;2023 state small area estimates for suicidal behaviors among adolescents may be underestimated.</p>
+</section>
+</section>
+
+<section class="rti_herald" id="secc">
+<h2 class="center">Section C: Sample Sizes, Response Rates,<br>and Population Estimates</h2>
+
+<div class="rti_herald"><a id="tabc-1"></a>
+<table class="rti"> 
+<caption>Table C.1 &ndash; Survey Sample Sizes (Rounded to the Nearest 10), Weighted Screening and Interview Response Rates, and Population Estimates, by State, for People Aged 12 or Older, 2022 and 2023</caption>
+<thead>
+<tr>
+<th class="left" scope="col">State</th>
+<th scope="col">Total<br>Selected DUs</th>
+<th scope="col">Total<br>Eligible<br>DUs</th>
+<th scope="col">Total<br>Completed<br>Screeners</th>
+<th scope="col">Weighted DU<br>Screening<br>Response Rate</th>
+<th scope="col">Total<br>Selected<br>People</th>
+<th scope="col">Total<br>Responded</th>
+<th scope="col">Population<br>Estimate</th>
+<th scope="col">Weighted<br>Interview<br>Response<br>Rate</th>
+<th scope="col">Weighted<br>Overall<br>Response<br>Rate</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">Total U.S.</th>
+<td>1,817,300</td>
+<td>1,669,260</td>
+<td>415,700</td>
+<td>24.91%</td>
+<td>286,530</td>
+<td>139,050</td>
+<td>282,732,485</td>
+<td>48.94%</td>
+<td>12.19%</td>
+</tr>
+
+<tr>
+<th scope="row">Northeast</th>
+<td>358,200</td>
+<td>330,590</td>
+<td>81,520</td>
+<td>23.42%</td>
+<td>53,890</td>
+<td>25,700</td>
+<td>49,002,655</td>
+<td>50.35%</td>
+<td>11.79%</td>
+</tr>
+
+<tr>
+<th scope="row">Midwest</th>
+<td>425,780</td>
+<td>389,560</td>
+<td>99,430</td>
+<td>26.46%</td>
+<td>67,570</td>
+<td>32,600</td>
+<td>58,200,570</td>
+<td>49.86%</td>
+<td>13.19%</td>
+</tr>
+
+<tr>
+<th scope="row">South</th>
+<td>616,780</td>
+<td>562,690</td>
+<td>140,510</td>
+<td>24.94%</td>
+<td>94,110</td>
+<td>46,870</td>
+<td>108,676,183</td>
+<td>49.35%</td>
+<td>12.31%</td>
+</tr>
+
+<tr>
+<th scope="row">West</th>
+<td>416,550</td>
+<td>386,420</td>
+<td>94,250</td>
+<td>24.51%</td>
+<td>70,960</td>
+<td>33,880</td>
+<td>66,853,077</td>
+<td>46.42%</td>
+<td>11.38%</td>
+</tr>
+
+<tr>
+<th scope="row">Alabama</th>
+<td>25,860</td>
+<td>22,950</td>
+<td>8,720</td>
+<td>38.99%</td>
+<td>5,690</td>
+<td>2,460</td>
+<td>4,287,709</td>
+<td>42.77%</td>
+<td>16.68%</td>
+</tr>
+
+<tr>
+<th scope="row">Alaska</th>
+<td>24,950</td>
+<td>21,850</td>
+<td>5,210</td>
+<td>24.80%</td>
+<td>3,760</td>
+<td>2,010</td>
+<td>587,481</td>
+<td>57.16%</td>
+<td>14.17%</td>
+</tr>
+
+<tr>
+<th scope="row">Arizona</th>
+<td>28,260</td>
+<td>25,390</td>
+<td>5,560</td>
+<td>21.55%</td>
+<td>4,370</td>
+<td>2,160</td>
+<td>6,285,586</td>
+<td>47.69%</td>
+<td>10.28%</td>
+</tr>
+
+<tr>
+<th scope="row">Arkansas</th>
+<td>24,170</td>
+<td>20,710</td>
+<td>5,300</td>
+<td>25.40%</td>
+<td>3,990</td>
+<td>2,010</td>
+<td>2,553,047</td>
+<td>50.85%</td>
+<td>12.91%</td>
+</tr>
+
+<tr>
+<th scope="row">California</th>
+<td>101,460</td>
+<td>97,700</td>
+<td>21,570</td>
+<td>22.01%</td>
+<td>18,430</td>
+<td>8,410</td>
+<td>33,130,051</td>
+<td>44.95%</td>
+<td>9.90%</td>
+</tr>
+
+<tr>
+<th scope="row">Colorado</th>
+<td>30,920</td>
+<td>28,160</td>
+<td>7,480</td>
+<td>26.25%</td>
+<td>5,000</td>
+<td>2,240</td>
+<td>4,993,121</td>
+<td>44.84%</td>
+<td>11.77%</td>
+</tr>
+
+<tr>
+<th scope="row">Connecticut</th>
+<td>28,850</td>
+<td>27,050</td>
+<td>6,500</td>
+<td>23.90%</td>
+<td>4,070</td>
+<td>1,990</td>
+<td>3,123,417</td>
+<td>52.43%</td>
+<td>12.53%</td>
+</tr>
+
+<tr>
+<th scope="row">Delaware</th>
+<td>31,590</td>
+<td>29,410</td>
+<td>7,660</td>
+<td>25.77%</td>
+<td>4,740</td>
+<td>2,010</td>
+<td>876,840</td>
+<td>44.53%</td>
+<td>11.48%</td>
+</tr>
+
+<tr>
+<th scope="row">District of Columbia</th>
+<td>32,560</td>
+<td>30,640</td>
+<td>7,040</td>
+<td>23.09%</td>
+<td>2,790</td>
+<td>1,650</td>
+<td>576,987</td>
+<td>57.87%</td>
+<td>13.36%</td>
+</tr>
+
+<tr>
+<th scope="row">Florida</th>
+<td>90,950</td>
+<td>84,350</td>
+<td>20,230</td>
+<td>23.28%</td>
+<td>13,270</td>
+<td>6,340</td>
+<td>19,317,461</td>
+<td>45.75%</td>
+<td>10.65%</td>
+</tr>
+
+<tr>
+<th scope="row">Georgia</th>
+<td>33,740</td>
+<td>31,970</td>
+<td>7,790</td>
+<td>25.37%</td>
+<td>6,340</td>
+<td>3,360</td>
+<td>9,173,397</td>
+<td>48.88%</td>
+<td>12.40%</td>
+</tr>
+
+<tr>
+<th scope="row">Hawaii</th>
+<td>28,400</td>
+<td>26,400</td>
+<td>6,310</td>
+<td>21.91%</td>
+<td>4,810</td>
+<td>2,080</td>
+<td>1,189,291</td>
+<td>45.01%</td>
+<td>9.86%</td>
+</tr>
+
+<tr>
+<th scope="row">Idaho</th>
+<td>24,790</td>
+<td>23,040</td>
+<td>7,230</td>
+<td>32.10%</td>
+<td>5,080</td>
+<td>2,430</td>
+<td>1,632,889</td>
+<td>45.40%</td>
+<td>14.57%</td>
+</tr>
+
+<tr>
+<th scope="row">Illinois</th>
+<td>70,150</td>
+<td>65,280</td>
+<td>13,640</td>
+<td>20.89%</td>
+<td>10,340</td>
+<td>4,540</td>
+<td>10,678,859</td>
+<td>45.78%</td>
+<td>9.57%</td>
+</tr>
+
+<tr>
+<th scope="row">Indiana</th>
+<td>25,530</td>
+<td>22,970</td>
+<td>5,790</td>
+<td>26.02%</td>
+<td>4,270</td>
+<td>2,310</td>
+<td>5,738,173</td>
+<td>56.56%</td>
+<td>14.72%</td>
+</tr>
+
+<tr>
+<th scope="row">Iowa</th>
+<td>26,770</td>
+<td>24,330</td>
+<td>5,820</td>
+<td>25.56%</td>
+<td>3,860</td>
+<td>1,950</td>
+<td>2,693,293</td>
+<td>52.88%</td>
+<td>13.52%</td>
+</tr>
+
+<tr>
+<th scope="row">Kansas</th>
+<td>24,270</td>
+<td>22,080</td>
+<td>5,470</td>
+<td>25.63%</td>
+<td>4,360</td>
+<td>1,990</td>
+<td>2,433,847</td>
+<td>47.92%</td>
+<td>12.28%</td>
+</tr>
+
+<tr>
+<th scope="row">Kentucky</th>
+<td>27,330</td>
+<td>23,950</td>
+<td>6,310</td>
+<td>27.96%</td>
+<td>3,930</td>
+<td>2,150</td>
+<td>3,779,544</td>
+<td>56.70%</td>
+<td>15.85%</td>
+</tr>
+
+<tr>
+<th scope="row">Louisiana</th>
+<td>24,760</td>
+<td>21,470</td>
+<td>5,910</td>
+<td>29.26%</td>
+<td>3,980</td>
+<td>1,890</td>
+<td>3,797,065</td>
+<td>47.53%</td>
+<td>13.91%</td>
+</tr>
+
+<tr>
+<th scope="row">Maine</th>
+<td>27,420</td>
+<td>23,570</td>
+<td>7,490</td>
+<td>28.82%</td>
+<td>4,220</td>
+<td>1,990</td>
+<td>1,217,246</td>
+<td>51.92%</td>
+<td>14.96%</td>
+</tr>
+
+<tr>
+<th scope="row">Maryland</th>
+<td>27,890</td>
+<td>26,470</td>
+<td>6,370</td>
+<td>24.65%</td>
+<td>4,460</td>
+<td>2,060</td>
+<td>5,208,094</td>
+<td>45.04%</td>
+<td>11.10%</td>
+</tr>
+
+<tr>
+<th scope="row">Massachusetts</th>
+<td>28,600</td>
+<td>27,090</td>
+<td>6,370</td>
+<td>23.19%</td>
+<td>4,210</td>
+<td>2,080</td>
+<td>6,074,415</td>
+<td>53.06%</td>
+<td>12.31%</td>
+</tr>
+
+<tr>
+<th scope="row">Michigan</th>
+<td>62,720</td>
+<td>56,450</td>
+<td>15,410</td>
+<td>27.51%</td>
+<td>9,360</td>
+<td>4,890</td>
+<td>8,581,433</td>
+<td>55.20%</td>
+<td>15.19%</td>
+</tr>
+
+<tr>
+<th scope="row">Minnesota</th>
+<td>25,060</td>
+<td>23,630</td>
+<td>6,220</td>
+<td>25.82%</td>
+<td>3,960</td>
+<td>1,820</td>
+<td>4,833,275</td>
+<td>45.77%</td>
+<td>11.82%</td>
+</tr>
+
+<tr>
+<th scope="row">Mississippi</th>
+<td>23,470</td>
+<td>20,920</td>
+<td>5,760</td>
+<td>28.51%</td>
+<td>4,280</td>
+<td>2,050</td>
+<td>2,444,092</td>
+<td>46.78%</td>
+<td>13.33%</td>
+</tr>
+
+<tr>
+<th scope="row">Missouri</th>
+<td>26,280</td>
+<td>23,560</td>
+<td>6,330</td>
+<td>27.47%</td>
+<td>3,930</td>
+<td>2,010</td>
+<td>5,210,954</td>
+<td>54.46%</td>
+<td>14.96%</td>
+</tr>
+
+<tr>
+<th scope="row">Montana</th>
+<td>28,310</td>
+<td>24,620</td>
+<td>5,270</td>
+<td>18.95%</td>
+<td>3,140</td>
+<td>1,590</td>
+<td>961,495</td>
+<td>56.93%</td>
+<td>10.79%</td>
+</tr>
+
+<tr>
+<th scope="row">Nebraska</th>
+<td>21,200</td>
+<td>19,650</td>
+<td>5,660</td>
+<td>28.50%</td>
+<td>4,360</td>
+<td>2,200</td>
+<td>1,634,872</td>
+<td>52.33%</td>
+<td>14.91%</td>
+</tr>
+
+<tr>
+<th scope="row">Nevada</th>
+<td>27,250</td>
+<td>25,520</td>
+<td>5,810</td>
+<td>22.84%</td>
+<td>4,800</td>
+<td>2,450</td>
+<td>2,709,179</td>
+<td>51.46%</td>
+<td>11.75%</td>
+</tr>
+
+<tr>
+<th scope="row">New Hampshire</th>
+<td>27,740</td>
+<td>25,600</td>
+<td>7,760</td>
+<td>31.45%</td>
+<td>5,050</td>
+<td>2,240</td>
+<td>1,224,701</td>
+<td>48.85%</td>
+<td>15.36%</td>
+</tr>
+
+<tr>
+<th scope="row">New Jersey</th>
+<td>42,140</td>
+<td>39,880</td>
+<td>9,020</td>
+<td>22.48%</td>
+<td>6,600</td>
+<td>2,980</td>
+<td>7,901,504</td>
+<td>46.98%</td>
+<td>10.56%</td>
+</tr>
+
+<tr>
+<th scope="row">New Mexico</th>
+<td>25,700</td>
+<td>23,380</td>
+<td>5,660</td>
+<td>24.20%</td>
+<td>4,010</td>
+<td>2,100</td>
+<td>1,793,695</td>
+<td>53.98%</td>
+<td>13.07%</td>
+</tr>
+
+<tr>
+<th scope="row">New York</th>
+<td>81,650</td>
+<td>76,250</td>
+<td>17,680</td>
+<td>23.32%</td>
+<td>13,070</td>
+<td>6,230</td>
+<td>16,838,128</td>
+<td>49.27%</td>
+<td>11.49%</td>
+</tr>
+
+<tr>
+<th scope="row">North Carolina</th>
+<td>43,740</td>
+<td>39,740</td>
+<td>7,720</td>
+<td>19.90%</td>
+<td>4,460</td>
+<td>2,430</td>
+<td>9,073,788</td>
+<td>52.37%</td>
+<td>10.42%</td>
+</tr>
+
+<tr>
+<th scope="row">North Dakota</th>
+<td>27,270</td>
+<td>23,720</td>
+<td>4,840</td>
+<td>19.69%</td>
+<td>3,380</td>
+<td>1,660</td>
+<td>641,182</td>
+<td>50.01%</td>
+<td>9.84%</td>
+</tr>
+
+<tr>
+<th scope="row">Ohio</th>
+<td>65,530</td>
+<td>62,630</td>
+<td>18,130</td>
+<td>29.25%</td>
+<td>11,790</td>
+<td>5,340</td>
+<td>9,951,683</td>
+<td>44.23%</td>
+<td>12.94%</td>
+</tr>
+
+<tr>
+<th scope="row">Oklahoma</th>
+<td>25,960</td>
+<td>23,030</td>
+<td>6,000</td>
+<td>25.65%</td>
+<td>4,180</td>
+<td>1,980</td>
+<td>3,333,620</td>
+<td>53.38%</td>
+<td>13.69%</td>
+</tr>
+
+<tr>
+<th scope="row">Oregon</th>
+<td>25,680</td>
+<td>24,560</td>
+<td>6,800</td>
+<td>29.49%</td>
+<td>4,270</td>
+<td>1,970</td>
+<td>3,668,026</td>
+<td>46.66%</td>
+<td>13.76%</td>
+</tr>
+
+<tr>
+<th scope="row">Pennsylvania</th>
+<td>67,220</td>
+<td>62,480</td>
+<td>13,500</td>
+<td>22.20%</td>
+<td>8,830</td>
+<td>4,380</td>
+<td>11,104,726</td>
+<td>52.31%</td>
+<td>11.61%</td>
+</tr>
+
+<tr>
+<th scope="row">Rhode Island</th>
+<td>28,590</td>
+<td>25,360</td>
+<td>5,630</td>
+<td>22.90%</td>
+<td>3,590</td>
+<td>1,740</td>
+<td>948,528</td>
+<td>51.09%</td>
+<td>11.70%</td>
+</tr>
+
+<tr>
+<th scope="row">South Carolina</th>
+<td>30,590</td>
+<td>27,430</td>
+<td>5,110</td>
+<td>18.16%</td>
+<td>3,180</td>
+<td>1,590</td>
+<td>4,514,026</td>
+<td>51.12%</td>
+<td>9.28%</td>
+</tr>
+
+<tr>
+<th scope="row">South Dakota</th>
+<td>25,380</td>
+<td>21,860</td>
+<td>4,580</td>
+<td>19.92%</td>
+<td>3,330</td>
+<td>1,760</td>
+<td>751,352</td>
+<td>55.35%</td>
+<td>11.03%</td>
+</tr>
+
+<tr>
+<th scope="row">Tennessee</th>
+<td>26,160</td>
+<td>24,490</td>
+<td>6,450</td>
+<td>27.44%</td>
+<td>4,080</td>
+<td>1,870</td>
+<td>5,987,617</td>
+<td>42.74%</td>
+<td>11.73%</td>
+</tr>
+
+<tr>
+<th scope="row">Texas</th>
+<td>75,000</td>
+<td>68,320</td>
+<td>14,750</td>
+<td>21.87%</td>
+<td>12,290</td>
+<td>6,470</td>
+<td>24,945,844</td>
+<td>51.99%</td>
+<td>11.37%</td>
+</tr>
+
+<tr>
+<th scope="row">Utah</th>
+<td>19,680</td>
+<td>17,990</td>
+<td>5,350</td>
+<td>31.86%</td>
+<td>5,330</td>
+<td>2,700</td>
+<td>2,782,695</td>
+<td>54.53%</td>
+<td>17.37%</td>
+</tr>
+
+<tr>
+<th scope="row">Vermont</th>
+<td>25,980</td>
+<td>23,300</td>
+<td>7,570</td>
+<td>31.56%</td>
+<td>4,260</td>
+<td>2,070</td>
+<td>569,990</td>
+<td>50.57%</td>
+<td>15.96%</td>
+</tr>
+
+<tr>
+<th scope="row">Virginia</th>
+<td>43,310</td>
+<td>40,440</td>
+<td>13,830</td>
+<td>34.79%</td>
+<td>9,220</td>
+<td>4,980</td>
+<td>7,289,502</td>
+<td>53.28%</td>
+<td>18.54%</td>
+</tr>
+
+<tr>
+<th scope="row">Washington</th>
+<td>26,350</td>
+<td>24,900</td>
+<td>7,910</td>
+<td>32.67%</td>
+<td>5,390</td>
+<td>2,350</td>
+<td>6,627,638</td>
+<td>43.11%</td>
+<td>14.09%</td>
+</tr>
+
+<tr>
+<th scope="row">West Virginia</th>
+<td>29,710</td>
+<td>26,400</td>
+<td>5,560</td>
+<td>20.59%</td>
+<td>3,200</td>
+<td>1,590</td>
+<td>1,517,549</td>
+<td>51.44%</td>
+<td>10.59%</td>
+</tr>
+
+<tr>
+<th scope="row">Wisconsin</th>
+<td>25,640</td>
+<td>23,410</td>
+<td>7,550</td>
+<td>31.90%</td>
+<td>4,630</td>
+<td>2,150</td>
+<td>5,051,646</td>
+<td>49.75%</td>
+<td>15.87%</td>
+</tr>
+
+<tr>
+<th scope="row">Wyoming</th>
+<td>24,800</td>
+<td>22,920</td>
+<td>4,110</td>
+<td>17.44%</td>
+<td>2,570</td>
+<td>1,400</td>
+<td>491,930</td>
+<td>56.98%</td>
+<td>9.94%</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<th colspan="10">DU = dwelling unit.<br>
+NOTE: To compute the pooled 2022&#8209;2023 weighted response rates, two samples were combined, and the individual year weights were used for the pooled sample. Thus, the response rates presented here are weighted across 2&nbsp;years of data rather than being a simple average of the 2022 and 2023 individual response rates. The 2022&#8209;2023 population estimate is the average of the 2022 and the 2023 population.<br>
+Source: SAMHSA, Center for Behavioral Health Statistics and Quality, National Surveys on Drug Use and Health, 2022 and 2023.</th>
+</tr>
+</tfoot>
+
+</table>
+</div>
+
+<div class="rti_herald"><a id="tabc-2"></a>
+<table class="rti"> 
+<caption>Table C.2 &ndash; Survey Sample Sizes (Rounded to the Nearest 10), Weighted Interview Response Rates, and Population Estimates, by State and Three Age Groups, 2022 and 2023</caption>
+<thead>
+<tr>
+<th class="left" scope="col">State</th>
+<th scope="col">12&#8209;17<br>Total<br>Selected<br>People</th>
+<th scope="col">12&#8209;17<br>Total<br>Responded</th>
+<th scope="col">12&#8209;17<br>Population<br>Estimate</th>
+<th scope="col">12&#8209;17<br>Weighted<br>Interview<br>Response<br>Rate</th>
+<th scope="col">18&#8209;25<br>Total<br>Selected<br>People</th>
+<th scope="col">18&#8209;25<br>Total<br>Responded</th>
+<th scope="col">18&#8209;25<br>Population<br>Estimate</th>
+<th scope="col">18&#8209;25<br>Weighted<br>Interview<br>Response<br>Rate</th>
+<th scope="col">26+<br>Total<br>Selected<br>People</th>
+<th scope="col">26+<br>Total<br>Responded</th>
+<th scope="col">26+<br>Population<br>Estimate</th>
+<th scope="col">26+<br>Weighted<br>Interview<br>Response<br>Rate</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">Total U.S.</th>
+<td>66,490</td>
+<td>29,120</td>
+<td>25,820,478</td>
+<td>43.87%</td>
+<td>71,890</td>
+<td>33,540</td>
+<td>34,409,720</td>
+<td>45.66%</td>
+<td>148,150</td>
+<td>76,390</td>
+<td>222,502,287</td>
+<td>50.04%</td>
+</tr>
+
+<tr>
+<th scope="row">Northeast</th>
+<td>11,900</td>
+<td>5,080</td>
+<td>4,066,290</td>
+<td>42.67%</td>
+<td>13,450</td>
+<td>6,010</td>
+<td>5,829,519</td>
+<td>45.23%</td>
+<td>28,540</td>
+<td>14,610</td>
+<td>39,106,845</td>
+<td>51.92%</td>
+</tr>
+
+<tr>
+<th scope="row">Midwest</th>
+<td>15,410</td>
+<td>6,220</td>
+<td>5,414,481</td>
+<td>39.76%</td>
+<td>17,530</td>
+<td>8,210</td>
+<td>7,217,337</td>
+<td>45.78%</td>
+<td>34,630</td>
+<td>18,180</td>
+<td>45,568,752</td>
+<td>51.73%</td>
+</tr>
+
+<tr>
+<th scope="row">South</th>
+<td>22,930</td>
+<td>10,660</td>
+<td>10,194,122</td>
+<td>46.47%</td>
+<td>22,710</td>
+<td>11,030</td>
+<td>13,230,256</td>
+<td>47.47%</td>
+<td>48,470</td>
+<td>25,190</td>
+<td>85,251,805</td>
+<td>49.99%</td>
+</tr>
+
+<tr>
+<th scope="row">West</th>
+<td>16,260</td>
+<td>7,170</td>
+<td>6,145,585</td>
+<td>43.97%</td>
+<td>18,200</td>
+<td>8,300</td>
+<td>8,132,608</td>
+<td>42.89%</td>
+<td>36,500</td>
+<td>18,410</td>
+<td>52,574,884</td>
+<td>47.25%</td>
+</tr>
+
+<tr>
+<th scope="row">Alabama</th>
+<td>1,330</td>
+<td>560</td>
+<td>395,361</td>
+<td>41.81%</td>
+<td>1,480</td>
+<td>620</td>
+<td>539,025</td>
+<td>40.83%</td>
+<td>2,880</td>
+<td>1,280</td>
+<td>3,353,323</td>
+<td>43.21%</td>
+</tr>
+
+<tr>
+<th scope="row">Alaska</th>
+<td>840</td>
+<td>370</td>
+<td>58,870</td>
+<td>46.98%</td>
+<td>1,000</td>
+<td>540</td>
+<td>65,935</td>
+<td>55.23%</td>
+<td>1,930</td>
+<td>1,090</td>
+<td>462,676</td>
+<td>58.62%</td>
+</tr>
+
+<tr>
+<th scope="row">Arizona</th>
+<td>1,090</td>
+<td>510</td>
+<td>573,720</td>
+<td>47.67%</td>
+<td>1,180</td>
+<td>560</td>
+<td>789,025</td>
+<td>46.00%</td>
+<td>2,110</td>
+<td>1,090</td>
+<td>4,922,841</td>
+<td>47.97%</td>
+</tr>
+
+<tr>
+<th scope="row">Arkansas</th>
+<td>910</td>
+<td>410</td>
+<td>248,241</td>
+<td>39.19%</td>
+<td>1,160</td>
+<td>560</td>
+<td>320,505</td>
+<td>47.73%</td>
+<td>1,920</td>
+<td>1,040</td>
+<td>1,984,301</td>
+<td>52.85%</td>
+</tr>
+
+<tr>
+<th scope="row">California</th>
+<td>4,130</td>
+<td>1,820</td>
+<td>3,047,049</td>
+<td>43.24%</td>
+<td>4,480</td>
+<td>2,030</td>
+<td>4,031,332</td>
+<td>42.43%</td>
+<td>9,810</td>
+<td>4,550</td>
+<td>26,051,670</td>
+<td>45.53%</td>
+</tr>
+
+<tr>
+<th scope="row">Colorado</th>
+<td>1,200</td>
+<td>520</td>
+<td>436,981</td>
+<td>41.54%</td>
+<td>1,150</td>
+<td>480</td>
+<td>610,008</td>
+<td>39.07%</td>
+<td>2,650</td>
+<td>1,240</td>
+<td>3,946,133</td>
+<td>46.11%</td>
+</tr>
+
+<tr>
+<th scope="row">Connecticut</th>
+<td>1,000</td>
+<td>430</td>
+<td>268,208</td>
+<td>40.99%</td>
+<td>860</td>
+<td>370</td>
+<td>381,646</td>
+<td>45.12%</td>
+<td>2,210</td>
+<td>1,190</td>
+<td>2,473,563</td>
+<td>54.85%</td>
+</tr>
+
+<tr>
+<th scope="row">Delaware</th>
+<td>1,210</td>
+<td>470</td>
+<td>74,551</td>
+<td>38.11%</td>
+<td>1,100</td>
+<td>420</td>
+<td>96,228</td>
+<td>35.94%</td>
+<td>2,430</td>
+<td>1,120</td>
+<td>706,061</td>
+<td>46.41%</td>
+</tr>
+
+<tr>
+<th scope="row">District of Columbia</th>
+<td>750</td>
+<td>410</td>
+<td>35,344</td>
+<td>52.18%</td>
+<td>670</td>
+<td>370</td>
+<td>79,766</td>
+<td>52.68%</td>
+<td>1,380</td>
+<td>870</td>
+<td>461,878</td>
+<td>59.18%</td>
+</tr>
+
+<tr>
+<th scope="row">Florida</th>
+<td>3,260</td>
+<td>1,510</td>
+<td>1,534,856</td>
+<td>46.06%</td>
+<td>2,860</td>
+<td>1,340</td>
+<td>2,045,283</td>
+<td>43.93%</td>
+<td>7,160</td>
+<td>3,500</td>
+<td>15,737,322</td>
+<td>45.96%</td>
+</tr>
+
+<tr>
+<th scope="row">Georgia</th>
+<td>1,380</td>
+<td>720</td>
+<td>914,813</td>
+<td>50.69%</td>
+<td>1,770</td>
+<td>950</td>
+<td>1,155,690</td>
+<td>49.82%</td>
+<td>3,190</td>
+<td>1,690</td>
+<td>7,102,894</td>
+<td>48.48%</td>
+</tr>
+
+<tr>
+<th scope="row">Hawaii</th>
+<td>1,110</td>
+<td>400</td>
+<td>96,941</td>
+<td>43.51%</td>
+<td>1,170</td>
+<td>500</td>
+<td>118,461</td>
+<td>38.78%</td>
+<td>2,530</td>
+<td>1,180</td>
+<td>973,889</td>
+<td>45.92%</td>
+</tr>
+
+<tr>
+<th scope="row">Idaho</th>
+<td>1,290</td>
+<td>590</td>
+<td>170,227</td>
+<td>46.46%</td>
+<td>1,380</td>
+<td>610</td>
+<td>215,994</td>
+<td>41.65%</td>
+<td>2,410</td>
+<td>1,230</td>
+<td>1,246,668</td>
+<td>45.91%</td>
+</tr>
+
+<tr>
+<th scope="row">Illinois</th>
+<td>2,440</td>
+<td>880</td>
+<td>985,456</td>
+<td>34.89%</td>
+<td>2,630</td>
+<td>1,100</td>
+<td>1,292,804</td>
+<td>41.42%</td>
+<td>5,280</td>
+<td>2,560</td>
+<td>8,400,599</td>
+<td>47.79%</td>
+</tr>
+
+<tr>
+<th scope="row">Indiana</th>
+<td>870</td>
+<td>400</td>
+<td>558,597</td>
+<td>44.57%</td>
+<td>1,330</td>
+<td>730</td>
+<td>748,524</td>
+<td>53.17%</td>
+<td>2,070</td>
+<td>1,190</td>
+<td>4,431,052</td>
+<td>58.61%</td>
+</tr>
+
+<tr>
+<th scope="row">Iowa</th>
+<td>980</td>
+<td>400</td>
+<td>258,498</td>
+<td>40.94%</td>
+<td>980</td>
+<td>490</td>
+<td>360,689</td>
+<td>49.18%</td>
+<td>1,900</td>
+<td>1,060</td>
+<td>2,074,106</td>
+<td>55.14%</td>
+</tr>
+
+<tr>
+<th scope="row">Kansas</th>
+<td>920</td>
+<td>360</td>
+<td>247,003</td>
+<td>40.33%</td>
+<td>1,290</td>
+<td>570</td>
+<td>328,728</td>
+<td>43.49%</td>
+<td>2,150</td>
+<td>1,070</td>
+<td>1,858,116</td>
+<td>49.80%</td>
+</tr>
+
+<tr>
+<th scope="row">Kentucky</th>
+<td>1,020</td>
+<td>470</td>
+<td>354,325</td>
+<td>44.69%</td>
+<td>1,010</td>
+<td>560</td>
+<td>456,436</td>
+<td>56.51%</td>
+<td>1,900</td>
+<td>1,120</td>
+<td>2,968,783</td>
+<td>58.13%</td>
+</tr>
+
+<tr>
+<th scope="row">Louisiana</th>
+<td>1,000</td>
+<td>450</td>
+<td>369,669</td>
+<td>41.80%</td>
+<td>770</td>
+<td>350</td>
+<td>464,930</td>
+<td>42.24%</td>
+<td>2,210</td>
+<td>1,100</td>
+<td>2,962,467</td>
+<td>49.02%</td>
+</tr>
+
+<tr>
+<th scope="row">Maine</th>
+<td>920</td>
+<td>370</td>
+<td>90,954</td>
+<td>32.06%</td>
+<td>1,070</td>
+<td>460</td>
+<td>124,764</td>
+<td>41.15%</td>
+<td>2,230</td>
+<td>1,160</td>
+<td>1,001,528</td>
+<td>55.07%</td>
+</tr>
+
+<tr>
+<th scope="row">Maryland</th>
+<td>1,170</td>
+<td>510</td>
+<td>477,408</td>
+<td>45.76%</td>
+<td>1,080</td>
+<td>460</td>
+<td>587,239</td>
+<td>41.16%</td>
+<td>2,210</td>
+<td>1,090</td>
+<td>4,143,446</td>
+<td>45.51%</td>
+</tr>
+
+<tr>
+<th scope="row">Massachusetts</th>
+<td>760</td>
+<td>310</td>
+<td>479,926</td>
+<td>39.34%</td>
+<td>1,140</td>
+<td>550</td>
+<td>778,509</td>
+<td>48.79%</td>
+<td>2,300</td>
+<td>1,210</td>
+<td>4,815,980</td>
+<td>55.07%</td>
+</tr>
+
+<tr>
+<th scope="row">Michigan</th>
+<td>2,350</td>
+<td>1,070</td>
+<td>755,554</td>
+<td>45.55%</td>
+<td>2,120</td>
+<td>1,060</td>
+<td>1,053,176</td>
+<td>51.10%</td>
+<td>4,890</td>
+<td>2,770</td>
+<td>6,772,703</td>
+<td>56.92%</td>
+</tr>
+
+<tr>
+<th scope="row">Minnesota</th>
+<td>900</td>
+<td>350</td>
+<td>459,370</td>
+<td>34.24%</td>
+<td>1,020</td>
+<td>440</td>
+<td>575,504</td>
+<td>38.08%</td>
+<td>2,030</td>
+<td>1,030</td>
+<td>3,798,400</td>
+<td>48.50%</td>
+</tr>
+
+<tr>
+<th scope="row">Mississippi</th>
+<td>1,070</td>
+<td>450</td>
+<td>247,080</td>
+<td>41.55%</td>
+<td>920</td>
+<td>450</td>
+<td>313,746</td>
+<td>49.47%</td>
+<td>2,290</td>
+<td>1,150</td>
+<td>1,883,267</td>
+<td>46.95%</td>
+</tr>
+
+<tr>
+<th scope="row">Missouri</th>
+<td>1,000</td>
+<td>430</td>
+<td>484,087</td>
+<td>40.27%</td>
+<td>870</td>
+<td>450</td>
+<td>637,476</td>
+<td>53.57%</td>
+<td>2,060</td>
+<td>1,130</td>
+<td>4,089,391</td>
+<td>56.26%</td>
+</tr>
+
+<tr>
+<th scope="row">Montana</th>
+<td>740</td>
+<td>280</td>
+<td>83,659</td>
+<td>33.00%</td>
+<td>780</td>
+<td>350</td>
+<td>115,247</td>
+<td>47.27%</td>
+<td>1,610</td>
+<td>960</td>
+<td>762,589</td>
+<td>61.01%</td>
+</tr>
+
+<tr>
+<th scope="row">Nebraska</th>
+<td>1,010</td>
+<td>440</td>
+<td>166,831</td>
+<td>42.81%</td>
+<td>930</td>
+<td>440</td>
+<td>216,665</td>
+<td>46.62%</td>
+<td>2,420</td>
+<td>1,320</td>
+<td>1,251,376</td>
+<td>54.57%</td>
+</tr>
+
+<tr>
+<th scope="row">Nevada</th>
+<td>1,040</td>
+<td>530</td>
+<td>245,685</td>
+<td>50.53%</td>
+<td>1,290</td>
+<td>620</td>
+<td>292,853</td>
+<td>48.46%</td>
+<td>2,480</td>
+<td>1,310</td>
+<td>2,170,641</td>
+<td>51.96%</td>
+</tr>
+
+<tr>
+<th scope="row">New Hampshire</th>
+<td>1,080</td>
+<td>420</td>
+<td>93,095</td>
+<td>37.25%</td>
+<td>1,210</td>
+<td>470</td>
+<td>135,461</td>
+<td>37.88%</td>
+<td>2,760</td>
+<td>1,360</td>
+<td>996,145</td>
+<td>51.35%</td>
+</tr>
+
+<tr>
+<th scope="row">New Jersey</th>
+<td>1,700</td>
+<td>730</td>
+<td>710,731</td>
+<td>39.97%</td>
+<td>1,660</td>
+<td>760</td>
+<td>887,300</td>
+<td>45.87%</td>
+<td>3,230</td>
+<td>1,490</td>
+<td>6,303,473</td>
+<td>47.92%</td>
+</tr>
+
+<tr>
+<th scope="row">New Mexico</th>
+<td>830</td>
+<td>400</td>
+<td>169,349</td>
+<td>50.96%</td>
+<td>1,210</td>
+<td>570</td>
+<td>221,239</td>
+<td>42.78%</td>
+<td>1,970</td>
+<td>1,120</td>
+<td>1,403,107</td>
+<td>56.09%</td>
+</tr>
+
+<tr>
+<th scope="row">New York</th>
+<td>2,760</td>
+<td>1,270</td>
+<td>1,373,050</td>
+<td>46.85%</td>
+<td>3,280</td>
+<td>1,480</td>
+<td>2,008,808</td>
+<td>43.60%</td>
+<td>7,030</td>
+<td>3,480</td>
+<td>13,456,269</td>
+<td>50.35%</td>
+</tr>
+
+<tr>
+<th scope="row">North Carolina</th>
+<td>1,140</td>
+<td>540</td>
+<td>824,720</td>
+<td>45.01%</td>
+<td>980</td>
+<td>540</td>
+<td>1,106,275</td>
+<td>47.50%</td>
+<td>2,350</td>
+<td>1,350</td>
+<td>7,142,793</td>
+<td>54.00%</td>
+</tr>
+
+<tr>
+<th scope="row">North Dakota</th>
+<td>680</td>
+<td>220</td>
+<td>60,483</td>
+<td>33.42%</td>
+<td>950</td>
+<td>510</td>
+<td>95,352</td>
+<td>49.86%</td>
+<td>1,750</td>
+<td>930</td>
+<td>485,346</td>
+<td>52.02%</td>
+</tr>
+
+<tr>
+<th scope="row">Ohio</th>
+<td>2,590</td>
+<td>1,010</td>
+<td>908,928</td>
+<td>39.56%</td>
+<td>3,100</td>
+<td>1,340</td>
+<td>1,188,683</td>
+<td>41.04%</td>
+<td>6,100</td>
+<td>2,990</td>
+<td>7,854,072</td>
+<td>45.24%</td>
+</tr>
+
+<tr>
+<th scope="row">Oklahoma</th>
+<td>1,070</td>
+<td>460</td>
+<td>337,376</td>
+<td>42.97%</td>
+<td>1,030</td>
+<td>470</td>
+<td>440,668</td>
+<td>48.17%</td>
+<td>2,070</td>
+<td>1,050</td>
+<td>2,555,576</td>
+<td>55.75%</td>
+</tr>
+
+<tr>
+<th scope="row">Oregon</th>
+<td>980</td>
+<td>390</td>
+<td>302,902</td>
+<td>39.12%</td>
+<td>1,220</td>
+<td>520</td>
+<td>413,827</td>
+<td>39.92%</td>
+<td>2,080</td>
+<td>1,070</td>
+<td>2,951,297</td>
+<td>48.45%</td>
+</tr>
+
+<tr>
+<th scope="row">Pennsylvania</th>
+<td>1,920</td>
+<td>830</td>
+<td>935,433</td>
+<td>42.61%</td>
+<td>2,330</td>
+<td>1,100</td>
+<td>1,319,019</td>
+<td>46.80%</td>
+<td>4,580</td>
+<td>2,440</td>
+<td>8,850,275</td>
+<td>54.17%</td>
+</tr>
+
+<tr>
+<th scope="row">Rhode Island</th>
+<td>840</td>
+<td>360</td>
+<td>72,502</td>
+<td>39.75%</td>
+<td>860</td>
+<td>370</td>
+<td>122,502</td>
+<td>43.24%</td>
+<td>1,890</td>
+<td>1,010</td>
+<td>753,524</td>
+<td>53.49%</td>
+</tr>
+
+<tr>
+<th scope="row">South Carolina</th>
+<td>790</td>
+<td>300</td>
+<td>405,682</td>
+<td>35.64%</td>
+<td>810</td>
+<td>400</td>
+<td>531,020</td>
+<td>44.24%</td>
+<td>1,590</td>
+<td>890</td>
+<td>3,577,324</td>
+<td>54.04%</td>
+</tr>
+
+<tr>
+<th scope="row">South Dakota</th>
+<td>730</td>
+<td>270</td>
+<td>75,567</td>
+<td>36.32%</td>
+<td>930</td>
+<td>500</td>
+<td>94,500</td>
+<td>50.14%</td>
+<td>1,670</td>
+<td>980</td>
+<td>581,286</td>
+<td>58.54%</td>
+</tr>
+
+<tr>
+<th scope="row">Tennessee</th>
+<td>940</td>
+<td>370</td>
+<td>545,625</td>
+<td>38.11%</td>
+<td>1,070</td>
+<td>500</td>
+<td>716,006</td>
+<td>41.82%</td>
+<td>2,080</td>
+<td>1,000</td>
+<td>4,725,986</td>
+<td>43.39%</td>
+</tr>
+
+<tr>
+<th scope="row">Texas</th>
+<td>2,620</td>
+<td>1,320</td>
+<td>2,644,728</td>
+<td>50.55%</td>
+<td>2,960</td>
+<td>1,550</td>
+<td>3,317,864</td>
+<td>51.74%</td>
+<td>6,710</td>
+<td>3,600</td>
+<td>18,983,252</td>
+<td>52.23%</td>
+</tr>
+
+<tr>
+<th scope="row">Utah</th>
+<td>1,160</td>
+<td>590</td>
+<td>337,230</td>
+<td>51.03%</td>
+<td>1,370</td>
+<td>640</td>
+<td>453,651</td>
+<td>47.88%</td>
+<td>2,800</td>
+<td>1,470</td>
+<td>1,991,815</td>
+<td>56.54%</td>
+</tr>
+
+<tr>
+<th scope="row">Vermont</th>
+<td>910</td>
+<td>370</td>
+<td>42,392</td>
+<td>38.05%</td>
+<td>1,040</td>
+<td>450</td>
+<td>71,510</td>
+<td>38.30%</td>
+<td>2,310</td>
+<td>1,260</td>
+<td>456,088</td>
+<td>53.55%</td>
+</tr>
+
+<tr>
+<th scope="row">Virginia</th>
+<td>2,470</td>
+<td>1,380</td>
+<td>657,289</td>
+<td>55.10%</td>
+<td>2,140</td>
+<td>1,060</td>
+<td>884,275</td>
+<td>49.60%</td>
+<td>4,610</td>
+<td>2,530</td>
+<td>5,747,938</td>
+<td>53.63%</td>
+</tr>
+
+<tr>
+<th scope="row">Washington</th>
+<td>1,230</td>
+<td>510</td>
+<td>575,011</td>
+<td>40.69%</td>
+<td>1,370</td>
+<td>550</td>
+<td>746,355</td>
+<td>40.25%</td>
+<td>2,790</td>
+<td>1,290</td>
+<td>5,306,272</td>
+<td>43.83%</td>
+</tr>
+
+<tr>
+<th scope="row">West Virginia</th>
+<td>810</td>
+<td>340</td>
+<td>127,053</td>
+<td>40.64%</td>
+<td>890</td>
+<td>430</td>
+<td>175,302</td>
+<td>46.06%</td>
+<td>1,510</td>
+<td>820</td>
+<td>1,215,194</td>
+<td>53.20%</td>
+</tr>
+
+<tr>
+<th scope="row">Wisconsin</th>
+<td>950</td>
+<td>400</td>
+<td>454,107</td>
+<td>39.96%</td>
+<td>1,370</td>
+<td>590</td>
+<td>625,236</td>
+<td>42.54%</td>
+<td>2,310</td>
+<td>1,160</td>
+<td>3,972,303</td>
+<td>52.11%</td>
+</tr>
+
+<tr>
+<th scope="row">Wyoming</th>
+<td>620</td>
+<td>270</td>
+<td>47,962</td>
+<td>40.24%</td>
+<td>610</td>
+<td>320</td>
+<td>58,681</td>
+<td>51.46%</td>
+<td>1,350</td>
+<td>810</td>
+<td>385,286</td>
+<td>60.03%</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<th colspan="13">NOTE: Computations in this table are based on a respondent&rsquo;s age at screening. Thus, the data in the Total Responded column(s) could differ from data in other National Survey on Drug Use and Health tables that use the respondent&rsquo;s age recorded during the interview.<br>
+NOTE: To compute the pooled 2022&#8209;2023 weighted response rates, two samples were combined, and the individual year weights were used for the pooled sample. Thus, the response rates presented here are weighted across 2&nbsp;years of data rather than being a simple average of the 2022 and 2023 individual response rates. The 2022&#8209;2023 population estimate is the average of the 2022 and the 2023 population.<br>
+Source: SAMHSA, Center for Behavioral Health Statistics and Quality, National Surveys on Drug Use and Health, 2022 and 2023.</th>
+</tr>
+</tfoot>
+
+</table>
+</div>
+
+<div class="tab60"><a id="tabc-3"></a>
+<table class="rti"> 
+<caption>Table C.3 &ndash; Survey Sample Sizes (Rounded to the Nearest 10), Weighted Interview Response Rates, and Population Estimates among People Aged 12 to 20, by State, 2022 and 2023</caption>
+<thead>
+<tr>
+<th class="left" scope="col">State</th>
+<th scope="col">Total Selected People</th>
+<th scope="col">Total Responded</th>
+<th scope="col">Population Estimate</th>
+<th scope="col">Weighted Interview<br>Response Rate</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">Total U.S.</th>
+<td class="w20">91,500</td>
+<td class="w20">40,710</td>
+<td class="w20">38,358,209</td>
+<td class="w20">44.48%</td>
+</tr>
+
+<tr>
+<th scope="row">Northeast</th>
+<td class="w20">16,450</td>
+<td class="w20">7,100</td>
+<td class="w20">6,100,291</td>
+<td class="w20">43.20%</td>
+</tr>
+
+<tr>
+<th scope="row">Midwest</th>
+<td class="w20">21,500</td>
+<td class="w20">9,000</td>
+<td class="w20">8,089,880</td>
+<td class="w20">41.51%</td>
+</tr>
+
+<tr>
+<th scope="row">South</th>
+<td class="w20">30,840</td>
+<td class="w20">14,450</td>
+<td class="w20">14,986,155</td>
+<td class="w20">46.82%</td>
+</tr>
+
+<tr>
+<th scope="row">West</th>
+<td class="w20">22,700</td>
+<td class="w20">10,170</td>
+<td class="w20">9,181,883</td>
+<td class="w20">44.10%</td>
+</tr>
+
+<tr>
+<th scope="row">Alabama</th>
+<td class="w20">1,900</td>
+<td class="w20">820</td>
+<td class="w20">636,846</td>
+<td class="w20">42.95%</td>
+</tr>
+
+<tr>
+<th scope="row">Alaska</th>
+<td class="w20">1,200</td>
+<td class="w20">570</td>
+<td class="w20">84,358</td>
+<td class="w20">49.64%</td>
+</tr>
+
+<tr>
+<th scope="row">Arizona</th>
+<td class="w20">1,500</td>
+<td class="w20">720</td>
+<td class="w20">876,877</td>
+<td class="w20">47.85%</td>
+</tr>
+
+<tr>
+<th scope="row">Arkansas</th>
+<td class="w20">1,310</td>
+<td class="w20">590</td>
+<td class="w20">365,043</td>
+<td class="w20">40.38%</td>
+</tr>
+
+<tr>
+<th scope="row">California</th>
+<td class="w20">5,740</td>
+<td class="w20">2,590</td>
+<td class="w20">4,506,691</td>
+<td class="w20">43.59%</td>
+</tr>
+
+<tr>
+<th scope="row">Colorado</th>
+<td class="w20">1,580</td>
+<td class="w20">660</td>
+<td class="w20">666,699</td>
+<td class="w20">40.04%</td>
+</tr>
+
+<tr>
+<th scope="row">Connecticut</th>
+<td class="w20">1,300</td>
+<td class="w20">560</td>
+<td class="w20">408,300</td>
+<td class="w20">41.78%</td>
+</tr>
+
+<tr>
+<th scope="row">Delaware</th>
+<td class="w20">1,620</td>
+<td class="w20">620</td>
+<td class="w20">110,726</td>
+<td class="w20">37.86%</td>
+</tr>
+
+<tr>
+<th scope="row">District of Columbia</th>
+<td class="w20">880</td>
+<td class="w20">470</td>
+<td class="w20">48,879</td>
+<td class="w20">50.38%</td>
+</tr>
+
+<tr>
+<th scope="row">Florida</th>
+<td class="w20">4,270</td>
+<td class="w20">2,000</td>
+<td class="w20">2,315,857</td>
+<td class="w20">46.43%</td>
+</tr>
+
+<tr>
+<th scope="row">Georgia</th>
+<td class="w20">1,960</td>
+<td class="w20">1,030</td>
+<td class="w20">1,319,959</td>
+<td class="w20">50.71%</td>
+</tr>
+
+<tr>
+<th scope="row">Hawaii</th>
+<td class="w20">1,530</td>
+<td class="w20">590</td>
+<td class="w20">138,916</td>
+<td class="w20">43.26%</td>
+</tr>
+
+<tr>
+<th scope="row">Idaho</th>
+<td class="w20">1,790</td>
+<td class="w20">820</td>
+<td class="w20">262,877</td>
+<td class="w20">45.41%</td>
+</tr>
+
+<tr>
+<th scope="row">Illinois</th>
+<td class="w20">3,410</td>
+<td class="w20">1,280</td>
+<td class="w20">1,481,469</td>
+<td class="w20">36.63%</td>
+</tr>
+
+<tr>
+<th scope="row">Indiana</th>
+<td class="w20">1,260</td>
+<td class="w20">600</td>
+<td class="w20">789,052</td>
+<td class="w20">46.30%</td>
+</tr>
+
+<tr>
+<th scope="row">Iowa</th>
+<td class="w20">1,360</td>
+<td class="w20">580</td>
+<td class="w20">403,772</td>
+<td class="w20">44.39%</td>
+</tr>
+
+<tr>
+<th scope="row">Kansas</th>
+<td class="w20">1,340</td>
+<td class="w20">550</td>
+<td class="w20">357,709</td>
+<td class="w20">41.29%</td>
+</tr>
+
+<tr>
+<th scope="row">Kentucky</th>
+<td class="w20">1,380</td>
+<td class="w20">650</td>
+<td class="w20">509,473</td>
+<td class="w20">47.16%</td>
+</tr>
+
+<tr>
+<th scope="row">Louisiana</th>
+<td class="w20">1,280</td>
+<td class="w20">570</td>
+<td class="w20">553,311</td>
+<td class="w20">42.68%</td>
+</tr>
+
+<tr>
+<th scope="row">Maine</th>
+<td class="w20">1,260</td>
+<td class="w20">520</td>
+<td class="w20">135,665</td>
+<td class="w20">35.02%</td>
+</tr>
+
+<tr>
+<th scope="row">Maryland</th>
+<td class="w20">1,550</td>
+<td class="w20">660</td>
+<td class="w20">668,655</td>
+<td class="w20">44.39%</td>
+</tr>
+
+<tr>
+<th scope="row">Massachusetts</th>
+<td class="w20">1,130</td>
+<td class="w20">480</td>
+<td class="w20">716,403</td>
+<td class="w20">39.25%</td>
+</tr>
+
+<tr>
+<th scope="row">Michigan</th>
+<td class="w20">3,060</td>
+<td class="w20">1,420</td>
+<td class="w20">1,109,169</td>
+<td class="w20">47.48%</td>
+</tr>
+
+<tr>
+<th scope="row">Minnesota</th>
+<td class="w20">1,270</td>
+<td class="w20">500</td>
+<td class="w20">712,944</td>
+<td class="w20">35.73%</td>
+</tr>
+
+<tr>
+<th scope="row">Mississippi</th>
+<td class="w20">1,410</td>
+<td class="w20">630</td>
+<td class="w20">367,029</td>
+<td class="w20">45.16%</td>
+</tr>
+
+<tr>
+<th scope="row">Missouri</th>
+<td class="w20">1,300</td>
+<td class="w20">570</td>
+<td class="w20">713,892</td>
+<td class="w20">44.22%</td>
+</tr>
+
+<tr>
+<th scope="row">Montana</th>
+<td class="w20">1,010</td>
+<td class="w20">390</td>
+<td class="w20">122,467</td>
+<td class="w20">36.69%</td>
+</tr>
+
+<tr>
+<th scope="row">Nebraska</th>
+<td class="w20">1,330</td>
+<td class="w20">590</td>
+<td class="w20">245,540</td>
+<td class="w20">43.22%</td>
+</tr>
+
+<tr>
+<th scope="row">Nevada</th>
+<td class="w20">1,510</td>
+<td class="w20">760</td>
+<td class="w20">363,386</td>
+<td class="w20">50.27%</td>
+</tr>
+
+<tr>
+<th scope="row">New Hampshire</th>
+<td class="w20">1,490</td>
+<td class="w20">570</td>
+<td class="w20">131,961</td>
+<td class="w20">36.79%</td>
+</tr>
+
+<tr>
+<th scope="row">New Jersey</th>
+<td class="w20">2,320</td>
+<td class="w20">1,010</td>
+<td class="w20">1,034,696</td>
+<td class="w20">41.53%</td>
+</tr>
+
+<tr>
+<th scope="row">New Mexico</th>
+<td class="w20">1,310</td>
+<td class="w20">630</td>
+<td class="w20">257,787</td>
+<td class="w20">47.96%</td>
+</tr>
+
+<tr>
+<th scope="row">New York</th>
+<td class="w20">3,830</td>
+<td class="w20">1,770</td>
+<td class="w20">2,098,910</td>
+<td class="w20">46.28%</td>
+</tr>
+
+<tr>
+<th scope="row">North Carolina</th>
+<td class="w20">1,510</td>
+<td class="w20">740</td>
+<td class="w20">1,210,761</td>
+<td class="w20">44.63%</td>
+</tr>
+
+<tr>
+<th scope="row">North Dakota</th>
+<td class="w20">1,020</td>
+<td class="w20">390</td>
+<td class="w20">92,969</td>
+<td class="w20">38.01%</td>
+</tr>
+
+<tr>
+<th scope="row">Ohio</th>
+<td class="w20">3,680</td>
+<td class="w20">1,470</td>
+<td class="w20">1,357,095</td>
+<td class="w20">40.13%</td>
+</tr>
+
+<tr>
+<th scope="row">Oklahoma</th>
+<td class="w20">1,430</td>
+<td class="w20">610</td>
+<td class="w20">454,799</td>
+<td class="w20">42.65%</td>
+</tr>
+
+<tr>
+<th scope="row">Oregon</th>
+<td class="w20">1,440</td>
+<td class="w20">580</td>
+<td class="w20">466,156</td>
+<td class="w20">39.51%</td>
+</tr>
+
+<tr>
+<th scope="row">Pennsylvania</th>
+<td class="w20">2,720</td>
+<td class="w20">1,200</td>
+<td class="w20">1,395,954</td>
+<td class="w20">44.12%</td>
+</tr>
+
+<tr>
+<th scope="row">Rhode Island</th>
+<td class="w20">1,150</td>
+<td class="w20">500</td>
+<td class="w20">116,638</td>
+<td class="w20">40.73%</td>
+</tr>
+
+<tr>
+<th scope="row">South Carolina</th>
+<td class="w20">1,060</td>
+<td class="w20">420</td>
+<td class="w20">591,783</td>
+<td class="w20">38.34%</td>
+</tr>
+
+<tr>
+<th scope="row">South Dakota</th>
+<td class="w20">1,030</td>
+<td class="w20">430</td>
+<td class="w20">104,033</td>
+<td class="w20">39.71%</td>
+</tr>
+
+<tr>
+<th scope="row">Tennessee</th>
+<td class="w20">1,300</td>
+<td class="w20">530</td>
+<td class="w20">811,109</td>
+<td class="w20">39.47%</td>
+</tr>
+
+<tr>
+<th scope="row">Texas</th>
+<td class="w20">3,650</td>
+<td class="w20">1,870</td>
+<td class="w20">3,845,894</td>
+<td class="w20">50.99%</td>
+</tr>
+
+<tr>
+<th scope="row">Utah</th>
+<td class="w20">1,590</td>
+<td class="w20">790</td>
+<td class="w20">489,852</td>
+<td class="w20">50.58%</td>
+</tr>
+
+<tr>
+<th scope="row">Vermont</th>
+<td class="w20">1,250</td>
+<td class="w20">500</td>
+<td class="w20">61,765</td>
+<td class="w20">37.41%</td>
+</tr>
+
+<tr>
+<th scope="row">Virginia</th>
+<td class="w20">3,240</td>
+<td class="w20">1,760</td>
+<td class="w20">986,970</td>
+<td class="w20">53.33%</td>
+</tr>
+
+<tr>
+<th scope="row">Washington</th>
+<td class="w20">1,700</td>
+<td class="w20">710</td>
+<td class="w20">878,568</td>
+<td class="w20">41.63%</td>
+</tr>
+
+<tr>
+<th scope="row">West Virginia</th>
+<td class="w20">1,110</td>
+<td class="w20">470</td>
+<td class="w20">189,059</td>
+<td class="w20">41.77%</td>
+</tr>
+
+<tr>
+<th scope="row">Wisconsin</th>
+<td class="w20">1,450</td>
+<td class="w20">630</td>
+<td class="w20">722,237</td>
+<td class="w20">41.21%</td>
+</tr>
+
+<tr>
+<th scope="row">Wyoming</th>
+<td class="w20">810</td>
+<td class="w20">370</td>
+<td class="w20">67,249</td>
+<td class="w20">43.11%</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<th colspan="5">NOTE: Computations in this table are based on a respondent&rsquo;s age at screening. Thus, the data in the Total Responded column(s) could differ from data in other National Survey on Drug Use and Health tables that use the respondent&rsquo;s age recorded during the interview.<br>
+NOTE: To compute the pooled 2022&#8209;2023 weighted response rates, two samples were combined, and the individual year weights were used for the pooled sample. Thus, the response rates presented here are weighted across 2&nbsp;years of data rather than being a simple average of the 2022 and 2023 individual response rates. The 2022&#8209;2023 population estimate is the average of the 2022 population and the 2023 population.<br>
+Source: SAMHSA, Center for Behavioral Health Statistics and Quality, National Surveys on Drug Use and Health, 2022 and 2023.</th>
+</tr>
+</tfoot>
+
+</table>
+</div>
+
+<div class="tab60"><a id="tabc-4"></a>
+<table class="rti"> 
+<caption>Table C.4 &ndash; Survey Sample Sizes (Rounded to the Nearest 10), Weighted Interview Response Rates, and Population Estimates among People Aged 18 or Older, by State, 2022 and 2023</caption>
+<thead>
+<tr>
+<th class="left" scope="col">State</th>
+<th scope="col">Total Selected People</th>
+<th scope="col">Total Responded</th>
+<th scope="col">Population Estimate</th>
+<th scope="col">Weighted Interview<br>Response Rate</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">Total U.S.</th>
+<td class="w20">220,030</td>
+<td class="w20">109,930</td>
+<td class="w20">256,912,007</td>
+<td class="w20">49.45%</td>
+</tr>
+
+<tr>
+<th scope="row">Northeast</th>
+<td class="w20">41,990</td>
+<td class="w20">20,620</td>
+<td class="w20">44,936,365</td>
+<td class="w20">51.05%</td>
+</tr>
+
+<tr>
+<th scope="row">Midwest</th>
+<td class="w20">52,160</td>
+<td class="w20">26,380</td>
+<td class="w20">52,786,089</td>
+<td class="w20">50.90%</td>
+</tr>
+
+<tr>
+<th scope="row">South</th>
+<td class="w20">71,180</td>
+<td class="w20">36,210</td>
+<td class="w20">98,482,061</td>
+<td class="w20">49.65%</td>
+</tr>
+
+<tr>
+<th scope="row">West</th>
+<td class="w20">54,700</td>
+<td class="w20">26,720</td>
+<td class="w20">60,707,492</td>
+<td class="w20">46.67%</td>
+</tr>
+
+<tr>
+<th scope="row">Alabama</th>
+<td class="w20">4,360</td>
+<td class="w20">1,900</td>
+<td class="w20">3,892,349</td>
+<td class="w20">42.87%</td>
+</tr>
+
+<tr>
+<th scope="row">Alaska</th>
+<td class="w20">2,920</td>
+<td class="w20">1,640</td>
+<td class="w20">528,611</td>
+<td class="w20">58.22%</td>
+</tr>
+
+<tr>
+<th scope="row">Arizona</th>
+<td class="w20">3,290</td>
+<td class="w20">1,650</td>
+<td class="w20">5,711,867</td>
+<td class="w20">47.69%</td>
+</tr>
+
+<tr>
+<th scope="row">Arkansas</th>
+<td class="w20">3,080</td>
+<td class="w20">1,600</td>
+<td class="w20">2,304,805</td>
+<td class="w20">52.13%</td>
+</tr>
+
+<tr>
+<th scope="row">California</th>
+<td class="w20">14,300</td>
+<td class="w20">6,580</td>
+<td class="w20">30,083,002</td>
+<td class="w20">45.12%</td>
+</tr>
+
+<tr>
+<th scope="row">Colorado</th>
+<td class="w20">3,790</td>
+<td class="w20">1,720</td>
+<td class="w20">4,556,140</td>
+<td class="w20">45.16%</td>
+</tr>
+
+<tr>
+<th scope="row">Connecticut</th>
+<td class="w20">3,070</td>
+<td class="w20">1,560</td>
+<td class="w20">2,855,209</td>
+<td class="w20">53.53%</td>
+</tr>
+
+<tr>
+<th scope="row">Delaware</th>
+<td class="w20">3,530</td>
+<td class="w20">1,540</td>
+<td class="w20">802,289</td>
+<td class="w20">45.13%</td>
+</tr>
+
+<tr>
+<th scope="row">District of Columbia</th>
+<td class="w20">2,040</td>
+<td class="w20">1,240</td>
+<td class="w20">541,643</td>
+<td class="w20">58.23%</td>
+</tr>
+
+<tr>
+<th scope="row">Florida</th>
+<td class="w20">10,020</td>
+<td class="w20">4,830</td>
+<td class="w20">17,782,605</td>
+<td class="w20">45.72%</td>
+</tr>
+
+<tr>
+<th scope="row">Georgia</th>
+<td class="w20">4,960</td>
+<td class="w20">2,640</td>
+<td class="w20">8,258,584</td>
+<td class="w20">48.67%</td>
+</tr>
+
+<tr>
+<th scope="row">Hawaii</th>
+<td class="w20">3,700</td>
+<td class="w20">1,680</td>
+<td class="w20">1,092,350</td>
+<td class="w20">45.14%</td>
+</tr>
+
+<tr>
+<th scope="row">Idaho</th>
+<td class="w20">3,790</td>
+<td class="w20">1,840</td>
+<td class="w20">1,462,663</td>
+<td class="w20">45.27%</td>
+</tr>
+
+<tr>
+<th scope="row">Illinois</th>
+<td class="w20">7,910</td>
+<td class="w20">3,660</td>
+<td class="w20">9,693,403</td>
+<td class="w20">46.92%</td>
+</tr>
+
+<tr>
+<th scope="row">Indiana</th>
+<td class="w20">3,400</td>
+<td class="w20">1,920</td>
+<td class="w20">5,179,576</td>
+<td class="w20">57.82%</td>
+</tr>
+
+<tr>
+<th scope="row">Iowa</th>
+<td class="w20">2,880</td>
+<td class="w20">1,550</td>
+<td class="w20">2,434,796</td>
+<td class="w20">54.24%</td>
+</tr>
+
+<tr>
+<th scope="row">Kansas</th>
+<td class="w20">3,440</td>
+<td class="w20">1,640</td>
+<td class="w20">2,186,844</td>
+<td class="w20">48.82%</td>
+</tr>
+
+<tr>
+<th scope="row">Kentucky</th>
+<td class="w20">2,910</td>
+<td class="w20">1,680</td>
+<td class="w20">3,425,219</td>
+<td class="w20">57.92%</td>
+</tr>
+
+<tr>
+<th scope="row">Louisiana</th>
+<td class="w20">2,990</td>
+<td class="w20">1,440</td>
+<td class="w20">3,427,397</td>
+<td class="w20">48.12%</td>
+</tr>
+
+<tr>
+<th scope="row">Maine</th>
+<td class="w20">3,300</td>
+<td class="w20">1,620</td>
+<td class="w20">1,126,292</td>
+<td class="w20">53.55%</td>
+</tr>
+
+<tr>
+<th scope="row">Maryland</th>
+<td class="w20">3,290</td>
+<td class="w20">1,550</td>
+<td class="w20">4,730,685</td>
+<td class="w20">44.97%</td>
+</tr>
+
+<tr>
+<th scope="row">Massachusetts</th>
+<td class="w20">3,440</td>
+<td class="w20">1,760</td>
+<td class="w20">5,594,489</td>
+<td class="w20">54.20%</td>
+</tr>
+
+<tr>
+<th scope="row">Michigan</th>
+<td class="w20">7,010</td>
+<td class="w20">3,830</td>
+<td class="w20">7,825,879</td>
+<td class="w20">56.13%</td>
+</tr>
+
+<tr>
+<th scope="row">Minnesota</th>
+<td class="w20">3,060</td>
+<td class="w20">1,470</td>
+<td class="w20">4,373,904</td>
+<td class="w20">47.06%</td>
+</tr>
+
+<tr>
+<th scope="row">Mississippi</th>
+<td class="w20">3,210</td>
+<td class="w20">1,600</td>
+<td class="w20">2,197,013</td>
+<td class="w20">47.31%</td>
+</tr>
+
+<tr>
+<th scope="row">Missouri</th>
+<td class="w20">2,930</td>
+<td class="w20">1,580</td>
+<td class="w20">4,726,867</td>
+<td class="w20">55.88%</td>
+</tr>
+
+<tr>
+<th scope="row">Montana</th>
+<td class="w20">2,390</td>
+<td class="w20">1,310</td>
+<td class="w20">877,836</td>
+<td class="w20">59.19%</td>
+</tr>
+
+<tr>
+<th scope="row">Nebraska</th>
+<td class="w20">3,350</td>
+<td class="w20">1,760</td>
+<td class="w20">1,468,041</td>
+<td class="w20">53.39%</td>
+</tr>
+
+<tr>
+<th scope="row">Nevada</th>
+<td class="w20">3,760</td>
+<td class="w20">1,930</td>
+<td class="w20">2,463,495</td>
+<td class="w20">51.55%</td>
+</tr>
+
+<tr>
+<th scope="row">New Hampshire</th>
+<td class="w20">3,970</td>
+<td class="w20">1,830</td>
+<td class="w20">1,131,607</td>
+<td class="w20">49.79%</td>
+</tr>
+
+<tr>
+<th scope="row">New Jersey</th>
+<td class="w20">4,900</td>
+<td class="w20">2,250</td>
+<td class="w20">7,190,773</td>
+<td class="w20">47.67%</td>
+</tr>
+
+<tr>
+<th scope="row">New Mexico</th>
+<td class="w20">3,180</td>
+<td class="w20">1,690</td>
+<td class="w20">1,624,346</td>
+<td class="w20">54.30%</td>
+</tr>
+
+<tr>
+<th scope="row">New York</th>
+<td class="w20">10,310</td>
+<td class="w20">4,960</td>
+<td class="w20">15,465,078</td>
+<td class="w20">49.49%</td>
+</tr>
+
+<tr>
+<th scope="row">North Carolina</th>
+<td class="w20">3,320</td>
+<td class="w20">1,890</td>
+<td class="w20">8,249,067</td>
+<td class="w20">53.09%</td>
+</tr>
+
+<tr>
+<th scope="row">North Dakota</th>
+<td class="w20">2,700</td>
+<td class="w20">1,440</td>
+<td class="w20">580,698</td>
+<td class="w20">51.68%</td>
+</tr>
+
+<tr>
+<th scope="row">Ohio</th>
+<td class="w20">9,200</td>
+<td class="w20">4,330</td>
+<td class="w20">9,042,755</td>
+<td class="w20">44.70%</td>
+</tr>
+
+<tr>
+<th scope="row">Oklahoma</th>
+<td class="w20">3,100</td>
+<td class="w20">1,520</td>
+<td class="w20">2,996,244</td>
+<td class="w20">54.59%</td>
+</tr>
+
+<tr>
+<th scope="row">Oregon</th>
+<td class="w20">3,300</td>
+<td class="w20">1,590</td>
+<td class="w20">3,365,124</td>
+<td class="w20">47.38%</td>
+</tr>
+
+<tr>
+<th scope="row">Pennsylvania</th>
+<td class="w20">6,910</td>
+<td class="w20">3,550</td>
+<td class="w20">10,169,294</td>
+<td class="w20">53.20%</td>
+</tr>
+
+<tr>
+<th scope="row">Rhode Island</th>
+<td class="w20">2,750</td>
+<td class="w20">1,380</td>
+<td class="w20">876,026</td>
+<td class="w20">52.04%</td>
+</tr>
+
+<tr>
+<th scope="row">South Carolina</th>
+<td class="w20">2,390</td>
+<td class="w20">1,290</td>
+<td class="w20">4,108,344</td>
+<td class="w20">52.73%</td>
+</tr>
+
+<tr>
+<th scope="row">South Dakota</th>
+<td class="w20">2,600</td>
+<td class="w20">1,480</td>
+<td class="w20">675,786</td>
+<td class="w20">57.41%</td>
+</tr>
+
+<tr>
+<th scope="row">Tennessee</th>
+<td class="w20">3,150</td>
+<td class="w20">1,500</td>
+<td class="w20">5,441,992</td>
+<td class="w20">43.18%</td>
+</tr>
+
+<tr>
+<th scope="row">Texas</th>
+<td class="w20">9,670</td>
+<td class="w20">5,150</td>
+<td class="w20">22,301,116</td>
+<td class="w20">52.16%</td>
+</tr>
+
+<tr>
+<th scope="row">Utah</th>
+<td class="w20">4,170</td>
+<td class="w20">2,110</td>
+<td class="w20">2,445,465</td>
+<td class="w20">54.99%</td>
+</tr>
+
+<tr>
+<th scope="row">Vermont</th>
+<td class="w20">3,350</td>
+<td class="w20">1,710</td>
+<td class="w20">527,598</td>
+<td class="w20">51.53%</td>
+</tr>
+
+<tr>
+<th scope="row">Virginia</th>
+<td class="w20">6,750</td>
+<td class="w20">3,590</td>
+<td class="w20">6,632,213</td>
+<td class="w20">53.09%</td>
+</tr>
+
+<tr>
+<th scope="row">Washington</th>
+<td class="w20">4,160</td>
+<td class="w20">1,840</td>
+<td class="w20">6,052,627</td>
+<td class="w20">43.36%</td>
+</tr>
+
+<tr>
+<th scope="row">West Virginia</th>
+<td class="w20">2,400</td>
+<td class="w20">1,250</td>
+<td class="w20">1,390,496</td>
+<td class="w20">52.35%</td>
+</tr>
+
+<tr>
+<th scope="row">Wisconsin</th>
+<td class="w20">3,690</td>
+<td class="w20">1,750</td>
+<td class="w20">4,597,540</td>
+<td class="w20">50.75%</td>
+</tr>
+
+<tr>
+<th scope="row">Wyoming</th>
+<td class="w20">1,960</td>
+<td class="w20">1,130</td>
+<td class="w20">443,967</td>
+<td class="w20">58.87%</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<th colspan="5">NOTE: Computations in this table are based on a respondent&rsquo;s age at screening. Thus, the data in the Total Responded column(s) could differ from data in other NSDUH tables that use the respondent&rsquo;s age recorded during the interview.<br>
+NOTE: To compute the pooled 2022&#8209;2023 weighted response rates, two samples were combined, and the individual year weights were used for the pooled sample. Thus, the response rates presented here are weighted across 2&nbsp;years of data rather than being a simple average of the 2022 and 2023 individual response rates. The 2022&#8209;2023 population estimate is the average of the 2022 population and the 2023 population.<br>
+Source: SAMHSA, Center for Behavioral Health Statistics and Quality, National Surveys on Drug Use and Health, 2022 and 2023.</th>
+</tr>
+</tfoot>
+
+</table>
+</div>
+</section>
+
+<section class="rti_herald" id="secd">
+<h2 class="center">Section D: References</h2>
+
+<p>American Psychiatric Association. (1994). <em>Diagnostic and statistical manual of mental disorders</em> (DSM&#8209;IV) (4th ed.).</p>
+
+<p>American Psychiatric Association. (2013). <em>Diagnostic and statistical manual of mental disorders</em> (DSM&#8209;5) (5th ed.). <a href="https://doi.org/10.1176/appi.books.9780890425787">https://doi.org/10.1176/appi.books.9780890425787</a>&nbsp;<a href="https://www.samhsa.gov/disclaimer"><img src="images/exiticon.jpg" alt="SAMHSA Exit Disclaimer" title="SAMHSA Exit Disclaimer" style="position:relative;top:1pt"></a></p>
+
+<p>Center for Behavioral Health Statistics and Quality. (2023). <em>2022 National Survey on Drug Use and Health: Methodological summary and definitions</em>. Substance Abuse and Mental Health Administration.</p>
+
+<p>Center for Behavioral Health Statistics and Quality. (2024a). <em>2023 National Survey on Drug Use and Health: Methodological resource book</em>. Substance Abuse and Mental Health Administration. <a href="https://www.samhsa.gov/data/report/nsduh-2023-methodological-resource-book-mrb">https://www.samhsa.gov/data/report/nsduh&#045;2023&#045;methodological&#045;resource&#045;book&#045;mrb</a></p>
+
+<p>Center for Behavioral Health Statistics and Quality. (2024b). <em>2023 National Survey on Drug Use and Health: Methodological summary and definitions</em>. Substance Abuse and Mental Health Services Administration. <a href="https://www.samhsa.gov/data/report/2023-methodological-summary-and-definitions">https://www.samhsa.gov/data/report/2023&#045;methodological&#045;summary&#045;and&#045;definitions</a></p>
+
+<p>Center for Behavioral Health Statistics and Quality. (2024c). <em>2022&#8209;2023 National Surveys on Drug Use and Health: Model&#045;based prevalence estimates (50 states and the District of Columbia)</em>. Substance Abuse and Mental Health Administration.</p>
+
+<p>Center for Behavioral Health Statistics and Quality. (forthcoming&nbsp;a). <em>2022&#8209;2023 National Surveys on Drug Use and Health: Comparison of population percentages from the United States, census regions, states, and the District of Columbia</em>. Substance Abuse and Mental Health Services Administration.</p>
+
+<p>Center for Behavioral Health Statistics and Quality. (forthcoming&nbsp;b). <em>2022&#8209;2023 National Surveys on Drug Use and Health: Model&#045;based estimated totals (in thousands) (50 states and the District of Columbia)</em>. Substance Abuse and Mental Health Services Administration.</p>
+
+<p>Folsom, R. E., Shah, B., &amp; Vaish, A. (1999). Substance abuse in states: A methodological report on model&#045;based estimates from the 1994&#045;1996 National Household Surveys on Drug Abuse. In <em>Proceedings of the 1999 Joint Statistical Meetings, American Statistical Association, Survey Research Methods Section, Baltimore, MD</em> (pp. 371&#8209;375). American Statistical Association.</p>
+
+<p>Ghosh, M. (1992). Constrained Bayes estimation with applications. <em>Journal of the American Statistical Association, 87</em>(418), 533&#045;540. <a href="https://doi.org/10.2307/2290287">https://doi.org/10.2307/2290287</a>&nbsp;<a href="https://www.samhsa.gov/disclaimer"><img src="images/exiticon.jpg" alt="SAMHSA Exit Disclaimer" title="SAMHSA Exit Disclaimer" style="position:relative;top:1pt"></a></p>
+
+<p>Leon, A. C., Olfson, M., Portera, L., Farber, L., &amp; Sheehan, D. V. (1997). Assessing psychiatric impairment in primary care with the Sheehan Disability Scale. <em>International Journal of Psychiatry in Medicine, 27</em>(2), 93&#045;105. <a href="https://doi.org/10.2190/t8em-c8yh-373n-1uwd">https://doi.org/10.2190/t8em&#045;c8yh&#045;373n&#045;1uwd</a>&nbsp;<a href="https://www.samhsa.gov/disclaimer"><img src="images/exiticon.jpg" alt="SAMHSA Exit Disclaimer" title="SAMHSA Exit Disclaimer" style="position:relative;top:1pt"></a></p>
+
+<p>Raftery, A. E., &amp; Lewis, S. (1992). How many iterations in the Gibbs sampler? In J. M. Bernardo, J. O. Berger, A. P. Dawid, &amp; A. F. M. Smith (Eds.), <em>Bayesian statistics 4</em> (pp. 763&#8209;774). Oxford University Press.</p>
+
+<p>Rao, J. N. K. (2003). <em>Small area estimation</em> (Wiley Series in Survey Methodology) (1st ed.). John Wiley &amp; Sons.</p>
+
+<p>RTI International. (2013). <em>SUDAAN<sup>&reg;</sup> language manual, release 11.0.1</em>.</p>
+
+<p>SAS Institute Inc. (2017). <em>SAS/STAT software: Release 14.1</em>.</p>
+
+<p>Shah, B. V., Barnwell, B. G., Folsom, R., &amp; Vaish, A. (2000). Design consistent small area estimates using Gibbs algorithm for logistic models. In <em>Proceedings of the 2000 Joint Statistical Meetings, American Statistical Association, Survey Research Methods Section, Indianapolis, IN</em> (pp. 105&#8209;111). American Statistical Association.</p>
+
+<p>Singh, A. C., &amp; Folsom, R. E. (2001, April 11&#045;14). <em>Hierarchical Bayes calibrated domain estimation via Metropolis&#045;Hastings Step in MCMC with application to small areas</em>. Presented at the International Conference on Small Area Estimation and Related Topics, Potomac, MD.</p>
+
+<p>U.S. Food and Drug Administration. (2021). <em>Rules, regulations and guidance</em>. <a href="https://www.fda.gov/tobacco-products/products-guidance-regulations/rules-regulations-and-guidance">https://www.fda.gov/tobacco&#045;products/products&#045;guidance&#045;regulations/rules&#045;regulations&#045;and&#045;guidance</a>.</p>
+
+<p>Wright, D. (2003a). <em>State estimates of substance use from the 2001 National Household Survey on Drug Abuse: Volume&nbsp;I. Findings</em> (HHS Publication No. SMA 03&#8209;3775, NHSDA Series H&#8209;19). Substance Abuse and Mental Health Services Administration, Office of Applied Studies.</p>
+
+<p>Wright, D. (2003b). <em>State estimates of substance use from the 2001 National Household Survey on Drug Abuse: Volume&nbsp;II. Individual state tables and technical appendices</em> (HHS Publication No. SMA 03&#8209;3826, NHSDA Series H&#8209;20). Substance Abuse and Mental Health Services Administration, Office of Applied Studies.</p>
+
+<p>Wright, D., &amp; Sathe, N. (2005). <em>State estimates of substance use from the 2002&#8209;2003 National Surveys on Drug Use and Health</em> (HHS Publication No. SMA 05&#8209;3989, NSDUH Series H&#8209;26). Substance Abuse and Mental Health Services Administration, Office of Applied Studies.</p>
+</section>
+
+<section class="rti_herald" id="sece">
+<h2 class="center">Section E: List of Contributors</h2>
+
+<p>This National Survey on Drug Use and Health (NSDUH) document was prepared by the Center for Behavioral Health Statistics and Quality (CBHSQ), Substance Abuse and Mental Health Services Administration (SAMHSA), U.S. Department of Health and Human Services (HHS), and by RTI International, Research Triangle Park, North Carolina. Work by RTI was performed under Contract No.&nbsp;75S20322C00001. Marlon Daniel served as government project officer and as the contracting officer representative.</p>
+
+<p>This document was drafted by RTI and reviewed at SAMHSA. Production of the report at SAMHSA was managed by Rong Cai, Shiromani Gyawali, Jingsheng Yan, Xiaoting Qin, and Chiu&#045;Fang Chou.</p>
+</section>
+
+<section class="section" id="notes">
+<h2>Endnotes</h2>
+
+<p class="endnotes"><sup><a href="#ftnref1" id="ftn1">1</a></sup> Use the NSDUH link on the following webpage: <a href="https://www.samhsa.gov/data/nsduh/state-reports-NSDUH-2023">https://www.samhsa.gov/data/nsduh/state&#045;reports&#045;NSDUH&#045;2023</a>.</p>
+
+<p class="endnotes"><sup><a href="#ftnref2" id="ftn2">2</a></sup> RTI International is a trade name of Research Triangle Institute. RTI and the RTI logo are U.S. registered trademarks of Research Triangle Institute.</p>
+
+<p class="endnotes"><sup><a href="#ftnref3" id="ftn3">3</a></sup> The 2019&#045;2020 state small area estimates were produced, but they have since been removed from SAMHSA&rsquo;s website. Methodological investigations found that the unusual societal circumstances in 2020 and the resulting methodological revisions to NSDUH data collection have affected the comparability of 2020 estimates with estimates from 2019 and earlier. Consequently, estimates that involve combining data from 2020 with previous years have been removed from the SAMHSA website.</p>
+
+<p class="endnotes"><sup><a href="#ftnref4" id="ftn4">4</a></sup> <em>National small area estimates&nbsp;= Population&#045;weighted averages of state&#045;level small area estimates</em>.</p>
+
+<p class="endnotes"><sup><a href="#ftnref5" id="ftn5">5</a></sup> See Tables&nbsp;1 to 41 in <em>2022&#8209;2023 National Surveys on Drug Use and Health: Model&#045;Based Estimated Totals (in Thousands) (50 States and the District of Columbia)</em> (CBHSQ, forthcoming&nbsp;b).</p>
+
+<p class="endnotes"><sup><a href="#ftnref6" id="ftn6">6</a></sup> For major depressive episode (MDE), receipt of mental health treatment, serious thoughts of suicide, suicide plans, and suicide attempts, estimates for people aged 12 or older are not included. For any mental illness (AMI), co&#8209;occurring substance use disorder (SUD) and AMI, serious mental illness (SMI), and co&#8209;occurring SUD and SMI, estimates for adolescents aged 12 to 17 and people aged 12 or older are not included because adolescents are not asked questions about mental illness.</p>
+
+<p class="endnotes"><sup><a href="#ftnref7" id="ftn7">7</a></sup> Binge drinking is defined as having five or more drinks (for males) or four or more drinks (for females) on the same occasion on at least 1&nbsp;day in the 30&nbsp;days prior to the survey.</p>
+
+<p class="endnotes"><sup><a href="#ftnref8" id="ftn8">8</a></sup> A DU in NSDUH refers to either a housing unit or a group quarter listing unit, such as a dormitory room or a shelter bed.</p>
+
+<p class="endnotes"><sup><a href="#ftnref9" id="ftn9">9</a></sup> A successfully screened DU is one in which all screening questionnaire items were answered by an adult resident of the DU and either zero, one, or two DU members were selected for the NSDUH interview.</p>
+
+<p class="endnotes"><sup><a href="#ftnref10" id="ftn10">10</a></sup> The usable case rule requires that a respondent answer &ldquo;yes&rdquo; or &ldquo;no&rdquo; to the question on lifetime use of cigarettes and &ldquo;yes&rdquo; or &ldquo;no&rdquo; to at least nine additional lifetime use questions.</p>
+
+<p class="endnotes"><sup><a href="#ftnref11" id="ftn11">11</a></sup> The SAE expert panel, convened in 1999 and 2000, had six members: Dr. William Bell of the U.S. Bureau of the Census; Partha Lahiri, Professor of the Joint Program in Survey Methodology at the University of Maryland at College Park; Professor Balgobin Nandram of Worcester Polytechnic Institute; Wesley Schaible, formerly Associate Commissioner for Research and Evaluation at the Bureau of Labor Statistics; Professor J. N. K. Rao of Carleton University; and Professor Alan Zaslavsky of Harvard University.</p>
+
+<p class="endnotes"><sup><a href="#ftnref12" id="ftn12">12</a></sup> See Tables&nbsp;1 to 41 in 2022&#8209;2023 Model&#045;Based Prevalence Estimates (CBHSQ, 2024c).</p>
+
+<p class="endnotes"><sup><a href="#ftnref13" id="ftn13">13</a></sup> The use of mixed models (fixed and random effects) allows additional error components (random effects) to be included. These account for differences between states and within&#045;state variations that are not taken into account by the predictor variables (fixed effects) alone. It is also difficult (if not impossible) to produce valid mean squared errors (MSEs) for small area estimates based solely on a fixed&#045;effect national regression model (i.e., synthetic estimation) (Rao, 2003, p.&nbsp;52). The mixed models produce estimates that are approximately represented by a weighted combination of the direct estimate from the state data and a regression estimate from the national model. The regression coefficients of the national model are estimated using data from all of the states (i.e.,&nbsp;borrowing strength), and the regression estimate for a particular state is obtained by applying the national model to the state&#045;specific predictor data. The regression estimate for the state is then combined with the direct estimate from the state data in a weighted combination where the weights are obtained by minimizing the MSE (<span class="nowrap">variance &plus; squared</span> bias) of the small area estimate.</p>
+
+<p class="endnotes"><sup><a href="#ftnref14" id="ftn14">14</a></sup> To increase the precision of the estimated random effects at the within&#045;state level, three SSRs from the 2022 and 2023 samples were grouped together to form 250 grouped SSRs. California had 12&nbsp;grouped SSRs; Florida, New York, and Texas each had 10 grouped SSRs; Illinois, Michigan, Ohio, and Pennsylvania each had 8&nbsp;grouped SSRs; Georgia, New Jersey, North Carolina, and Virginia each had 5&nbsp;grouped SSRs; and the rest of the states and the District of Columbia each had 4&nbsp;grouped SSRs.</p>
+
+<p class="endnotes"><sup><a href="#ftnref15" id="ftn15">15</a></sup> In these cases, comparable 2021&#8209;2022 state estimates are not available.</p>
+
+<p class="endnotes"><sup><a href="#ftnref16" id="ftn16">16</a></sup> For details on how this outcome is calculated, see <a href="#b8"><strong><span class="nowrap">Section B.8</span></strong></a> of this document.</p>
+
+<p class="endnotes"><sup><a href="#ftnref17" id="ftn17">17</a></sup> Estimates of underage (aged 12 to 20) alcohol use were also produced.</p>
+
+<p class="endnotes"><sup><a href="#ftnref18" id="ftn18">18</a></sup> Estimates of underage (aged 12 to 20) binge alcohol use were also produced.</p>
+
+<p class="endnotes"><sup><a href="#ftnref19" id="ftn19">19</a></sup> Estimates of underage (aged 12 to 20) perceptions of great risk from having five or more drinks of an alcoholic beverage once or twice a week were also produced.</p>
+
+<p class="endnotes"><sup><a href="#ftnref20" id="ftn20">20</a></sup> Estimates of underage (aged 12 to 20) tobacco product use were also produced.</p>
+
+<p class="endnotes"><sup><a href="#ftnref21" id="ftn21">21</a></sup> Estimates of underage (aged 12 to 20) cigarette use in were also produced.</p>
+
+<p class="endnotes"><sup><a href="#ftnref22" id="ftn22">22</a></sup> Estimates of underage (aged 12 to 20) alcohol use disorder in the past year were also produced.</p>
+
+<p class="endnotes"><sup><a href="#ftnref23" id="ftn23">23</a></sup> Claritas is a market research firm headquartered in Cincinnati, Ohio (see <a href="https://claritas.com/">https://claritas.com/</a>&nbsp;<a href="https://www.samhsa.gov/disclaimer"><img src="images/exiticon.jpg" alt="SAMHSA Exit Disclaimer" title="SAMHSA Exit Disclaimer" style="position:relative;top:1pt"></a>).</p>
+
+<p class="endnotes"><sup><a href="#ftnref24" id="ftn24">24</a></sup> To build parsimonious models, the combined 2022&#8209;2023 data were partitioned into modeling and validation samples. For more information on how the data was partitioned, see the 2002&#8209;2003 state SAE report (Wright &amp; Sathe, 2005). Steps&nbsp;2 to&nbsp;4 were conducted on the modeling sample, whereas step&nbsp;5 used the validation sample. Depending on the step, measure, and age group, significance levels were 1, 3, 5, or 10&nbsp;percent.</p>
+
+<p class="endnotes"><sup><a href="#ftnref25" id="ftn25">25</a></sup> Generally, age groups are 12 to 17, 18 to 25, 26 to 34, and 35 or older. For underage alcohol and tobacco related outcomes, the age group is 12 to 20.</p>
+
+<p class="endnotes"><sup><a href="#ftnref26" id="ftn26">26</a></sup> See Table&nbsp;15 in <em>2022&#8209;2023 National Surveys of Drug Use and Health: Model&#045;Based Prevalence Estimates (50 States and the District of Columbia)</em> (CBHSQ, 2024c).</p>
+
+<p class="endnotes"><sup><a href="#ftnref27" id="ftn27">27</a></sup> See Table&nbsp;15 in 2022&#8209;2023 NSDUH: Model&#045;Based Estimated Totals (CBHSQ, forthcoming&nbsp;b).</p>
+
+<p class="endnotes"><sup><a href="#ftnref28" id="ftn28">28</a></sup> See Table&nbsp;15 in the 2022&#8209;2023 NSDUH: Model&#045;Based Prevalence Estimates report (CBHSQ, 2024c).</p>
+
+<p class="endnotes"><sup><a href="#ftnref29" id="ftn29">29</a></sup> In NSDUH SAE documents prior to 2016&#045;2017, the term &ldquo;initiation&rdquo; was referred to as &ldquo;incidence.&rdquo;</p>
+
+<p class="endnotes"><sup><a href="#ftnref30" id="ftn30">30</a></sup> NSDUH respondents were asked the respective questions for alcohol use disorder or marijuana use disorder if they reported use of these substances on 6 or more days in the past year. Respondents were asked SUD questions for other substances if they reported any use in the past year.</p>
+
+<p class="endnotes"><sup><a href="#ftnref31" id="ftn31">31</a></sup> &ldquo;An MDE&rdquo; refers to the occurrence of at least one MDE, rather than only one MDE. Similarly, reference to &ldquo;the MDE&rdquo; in a given period (e.g., the past 12 months) does not mean an individual had only one MDE in that period.</p>
+</section>
+
+<section class="section">
+<h2>Long Descriptions&mdash;Equations</h2>
+
+<p id="eq1desc" class="endnotes">
+<strong>Long description, Equation 1</strong>. Capital S R R is equal to the ratio of two quantities. The numerator is the summation of the product of w sub d u and complete sub d u. The denominator is the summation of the product of w sub d u and eligible sub d u.</p> 
+
+<p class="endnotes">Long description end. <a href="#eq1">Return to Equation 1.</a></p>
+
+<p id="eq2desc" class="endnotes">
+<strong>Long description, Equation 2</strong>. Capital I R R is equal to the ratio of two quantities. The numerator is the summation of the product of w sub i and complete sub i. The denominator is the summation of the product of w sub i and selected sub i.</p>
+
+<p class="endnotes">Long description end. <a href="#eq2">Return to Equation 2.</a></p>
+
+<p id="eq3desc" class="endnotes">
+<strong>Long description, Equation 3</strong>. Capital O R R is equal to the product of capital S R R and capital I R R.</p>
+
+<p class="endnotes">Long description end. <a href="#eq3">Return to Equation 3.</a></p>
+
+<p id="eq4desc" class="endnotes">
+<strong>Long description, Equation 4</strong>. The model is given by the following equation: log of pi sub a, i, j, k divided by 1 minus pi sub a, i, j, k is equal to the sum of three terms. The first term is given by x transpose sub a, i, j, k times beta sub a. The second term is eta sub a, i. And the third term is nu sub a, i, j.</p>
+
+<p class="endnotes">Long description end. <a href="#eq4">Return to Equation 4.</a></p>
+
+<p id="eq5desc" class="endnotes">
+<strong>Long description, Equation 5</strong>. Lower sub s and a is defined as the exponent of capital L sub s and a divided by the sum of 1 and the exponent of capital L sub s and a. And upper sub s and a is defined as the exponent of capital U sub s and a divided by the sum of 1 and the exponent of capital U sub s and a.</p>
+
+<p class="endnotes">Long description end. <a href="#eq5">Return to Equation 5.</a></p>
+
+<p id="eq6desc" class="endnotes">
+<strong>Long description, Equation 6</strong>. Capital L sub s and a is defined as the difference of two quantities. The first quantity is the natural logarithm of the ratio of Theta sub s and a and 1 minus Theta sub s and a. The second quantity is the product of 1.96 and the square root of MSE sub s and a, which is the mean squared error for state-s and age group&#8209;a.</p>
+
+<p class="endnotes">Long description end. <a href="#eq6">Return to Equation 6.</a></p>
+
+<p id="eq7desc" class="endnotes">
+<strong>Long description, Equation 7</strong>. Capital U sub s and a is defined as the sum of two quantities. The first quantity is the natural logarithm of the ratio of Theta sub s and a and 1 minus Theta sub s and a. The second quantity is the product of 1.96 and the square root of MSE sub s and a, which is the mean squared error for state-s and age group&#8209;a.</p>
+
+<p class="endnotes">Long description end. <a href="#eq7">Return to Equation 7.</a></p>
+
+<p id="eq8desc" class="endnotes">
+<strong>Long description, Equation 8</strong>. The mean squared error, MSE sub s and a, is defined as the sum of two quantities. The first quantity is the square of the difference of two parts. Part&nbsp;1 is defined as the natural logarithm of the ratio of capital P sub s and a and 1 minus capital P sub s and a. Part&nbsp;2 is defined as the natural logarithm of the ratio of Theta sub s and a and 1 minus Theta sub s and a. The second quantity is the posterior variance of the natural logarithm of the ratio of capital P sub s and a and 1 minus capital P sub s and a.</p>
+
+<p class="endnotes">Long description end. <a href="#eq8">Return to Equation 8.</a></p>
+
+<p id="eq9desc" class="endnotes">
+<strong>Long description, Equation 9</strong>. The average annual rate is defined as 100 times quantity q divided by 2. Quantity q is defined as capital X sub 1 divided by the sum of 0.5 times capital X sub 1 plus capital X sub 2.</p>
+
+<p class="endnotes">Long description end. <a href="#eq9">Return to Equation 9.</a></p>
+
+<p id="eq10desc" class="endnotes">
+<strong>Long description, Equation 10</strong>. The average annual rate is defined as 100 times quantity q. Quantity q is defined as capital X sub 1 divided by the sum of capital X sub 1 plus capital X sub 2.</p>
+
+<p class="endnotes">Long description end. <a href="#eq10">Return to Equation 10.</a></p>
+</section>
+
+<div>
+<p class="left"><a href="#topofpage"><img class="toclink" src="images/scaltop.gif" title="Go to Top of Page" alt="Go to Top of Page"></a></p>
+</div>
+
+</body>
+</html>

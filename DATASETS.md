@@ -121,7 +121,223 @@ U.S. Bureau of Labor Statistics, Quarterly Census of Employment and Wages.
 
 ## NSDUH state small-area estimates (SAMHSA)
 
-In progress.
+**What it is.** SAMHSA's model-based estimates of the share and number of
+people aged 12 or older with a past-year substance use disorder (alcohol or
+illicit drugs), by state. Each estimate pools 2 survey years (a "window", such
+as 2022-2023). Our file is `data/clean/nsduh_sud.csv`: one row per window and
+state (51 plus "United States"), with the percent, its 95% interval, the count
+in thousands, its 95% interval, the measure name, the DSM edition, and the
+source file.
+
+**Where it comes from.** All from SAMHSA, saved unchanged in
+`data/raw/nsduh/<window>/` and logged in `data/raw/nsduh/PULLED.txt`. Pulled
+2026-10-28 by `scripts/fetch_nsduh.py` (list of files in
+`scripts/nsduh_downloads.tsv`). Built by `scripts/build_nsduh_sud.py`, checked
+by `scripts/check_nsduh_sud.py`.
+- State releases page:
+  https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/state-releases
+- 2009-2010 to 2023-2024: the published prevalence and totals tables for each
+  window (Excel, or HTML for 2009-2010 and the 2010-2011 totals).
+- 2000-2001 and 2002-2003 to 2008-2009: those tables are no longer on
+  samhsa.gov. We use SAMHSA's 1999-2019 state SAE dataset
+  (`NSDUH_99_19_state_saes_final.sas7bdat`), which SAMHSA describes as holding
+  "all of the state-level small area estimates, from the earliest (1999-2000) to
+  the latest (2018-2019)" and says "does not provide any new information" beyond
+  the published tables. Rows used: `OUTCOME = ABODILAL`, `AGEGRP = 0`.
+- Cross-check: every window that has a table was compared with SAMHSA's two SAE
+  datasets (1999-2019 and 2021-2024). All 1,040 rows match: percents to 2
+  decimals, counts exactly.
+
+**Windows.**
+
+| Window | Any-SUD at state level | Measure name (12+) | DSM | Totals published | 95% intervals | Our source |
+|---|---|---|---|---|---|---|
+| 1999-2000 | No | none | | | | SAE dataset has no ABODILAL for this window |
+| 2000-2001 | Yes | Dependence or Abuse of Illicit Drugs or Alcohol in the Past Year | IV | Yes | Yes | SAE dataset |
+| 2001-2002 | Never produced | | | | | |
+| 2002-2003 to 2008-2009 | Yes | same | IV | Yes | Yes | SAE dataset |
+| 2009-2010 | Yes | same (Table B.20 / Table 20) | IV | Yes | Yes | HTML tables |
+| 2010-2011 to 2013-2014 | Yes | same (Table 20) | IV | Yes | Yes | Excel (2010-2011 totals HTML) |
+| 2014-2015 | No | none | | | | not produced |
+| 2015-2016 to 2018-2019 | Yes | Substance Use Disorder in the Past Year (Table 22 or 23) | IV | Yes | Yes | Excel |
+| 2019-2020 | Withdrawn | | | | | removed by SAMHSA |
+| 2020-2021 | Never produced | | | | | |
+| 2021-2022 | Yes | Substance Use Disorder in the Past Year (Table 22) | 5 | Yes | Yes | Excel |
+| 2022-2023, 2023-2024 | Yes | same (Table 24) | 5 | Yes | Yes | Excel |
+
+The single-year 2022 and 2024 estimates in the 2021-2024 SAE dataset do not
+include any-SUD. The any-SUD estimate in 2023-2024 uses both years; only the
+treatment, mental health treatment and "illicit drug use other than marijuana"
+measures used 2024 data alone.
+
+Note: the 2015-2019 tables are titled "Substance Use Disorder" but their own
+note says SUD "is defined as meeting criteria for illicit drug or alcohol
+dependence or abuse. Dependence or abuse is based on definitions found in the
+4th edition" (DSM-IV). DSM-5 starts with 2021-2022.
+
+**Why windows are missing (SAMHSA's words).**
+- 1999-2000: the SAE dataset documentation lists ABODILAL as "available for
+  2000-2001 through 2013-2014".
+- 2001-2002: "pooled NSDUH small area estimates were not produced using 2001
+  and 2002 combined data because the 2002 data differed from the data from the
+  1999 through 2001 surveys." (1999-2019 SAE dataset documentation,
+  https://www.datafiles.samhsa.gov/sites/default/files/NSDUH_files/SAE/NSDUH-99-19-State-SAE-Documentation-01-25-21.docx)
+- 2014-2015: the 2015 drug module changes "resulted in the need to revise the
+  baseline for the following SAE outcomes: illicit drug use in the past month,
+  nonmedical use of pain relievers in the past year, illicit drug use disorder,
+  and needing but not receiving treatment for illicit drugs." And: "estimates
+  for those measures could not be produced using 2014 and 2015 NSDUH data." The
+  14 measures produced for 2014-2015 include alcohol use disorder and alcohol
+  dependence but no combined SUD measure. The 2014-2015 totals workbook has 15
+  tables, none for SUD. (2014-2015 guide, Sections A.6 and B.2,
+  https://www.samhsa.gov/data/sites/default/files/NSDUHsaeMethodology2015/NSDUHsaeMethodology2015.htm)
+- 2019-2020: "State estimates for these years are no longer available due to
+  methodological concerns with combining 2019 and 2020 data." The page says
+  further analysis with 2021 data showed the mode effect was not similar across
+  groups, "it was determined that averages across the two years maybe
+  misleading." (https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/state-releases/2019-2020,
+  last updated 2/13/2025)
+- 2020-2021: no release is listed. The 2021-2024 SAE dataset documentation
+  says the 2020 gap in data collection "made the 2020 data not comparable with
+  data from any other year" and "It is anticipated that the 2021-2022 small area
+  estimates will become a new baseline."
+  (https://www.samhsa.gov/data/sites/default/files/NSDUH_files/SAE/NSDUH-21-24-State-SAE-Documentation.docx)
+
+**Changes over time (breaks in comparability).**
+- **2002, NHSDA to NSDUH.** "In 2002, several changes were introduced to the
+  survey. Incentive payments of $30 were given to respondents for the first
+  time ... Other changes included a change in the survey name (i.e., from NHSDA
+  to NSDUH), new data collection quality control procedures, and a shift from
+  the 1990 decennial census to the 2000 census ... An unanticipated result of
+  these changes was that the prevalence rates for 2002 were in general
+  substantially higher than those for 2001 ... and thus are not comparable with
+  estimates for 2001 and prior years. Therefore, the 2002 NSDUH was established
+  as a new baseline for both the national and the State estimates." Also: "the
+  rankings of States for 2002-2003 or later should not be compared with those
+  for prior years." (2011-2012 guide, Section A.2,
+  https://www.samhsa.gov/data/sites/default/files/NSDUHStateEst2011-2012/Methodology/Web/NSDUHsaeMethodology2012.htm)
+  So 2000-2001 does not compare with 2002-2003 on. It was also not benchmarked:
+  "for 1999-2000 and 2000-2001, the national estimate included in this dataset
+  is a Bayes model-based estimate, not the national design-based estimate."
+- **2010 census.** Weights for 2002-2010 used the 2000 census; from 2011 the
+  2010 census. SAMHSA produced "2010-2011 published" and "2010-2011 updated"
+  estimates; "the updated 2010-2011 estimates were produced only to be compared
+  with the published estimates and not to replace them." We use the published
+  set, as in the table.
+- **2015 questionnaire redesign.** See 2014-2015 above. For 2015-2016 the
+  guide says the changes "resulted in the need to revise the baseline using
+  2015 and 2016 NSDUH data for several small area estimates showing overall
+  illicit drug use (including use disorder and treatment)." The measure was
+  renamed from ABODILAL to UDPYILAL. 2013-2014 and earlier do not compare with
+  2015-2016 and later. (2015-2016 guide, Section A.6,
+  https://www.samhsa.gov/data/sites/default/files/NSDUHsaeMethodology2016/NSDUHsaeMethodology2016.htm)
+- **2020 multimode and DSM-5.** Web interviews were added in 2020 and used in
+  every year since. SUD from 2021 on uses DSM-5, and "Beginning in 2021,
+  NSDUH respondents who reported any use of prescription psychotherapeutic
+  drugs ... (i.e., not just misuse of prescription drugs) were asked the
+  respective SUD questions." (2021-2022 guide, Section B.11)
+- **2021 and later do not compare with 2020 and earlier.** "Methodological
+  investigations led to the conclusion that estimates based on multimode data
+  collection since 2021 are not comparable with estimates from 2020 or prior
+  years ... Thus, the 2021-2022, 2022-2023, and 2023-2024 small area estimates
+  should not be compared to state estimates from 2020 and prior years. The
+  2023-2024 state estimates are comparable with the 2021-2022 and 2022-2023
+  estimates." (2023-2024 guide, Section A.1,
+  https://www.samhsa.gov/data/sites/default/files/reports/rpt56959/2024-nsduh-sae-guide-state-meth/2024-nsduh-sae-guide-state-meth.htm)
+  The national any-SUD rate goes from 7.41% (2018-2019, DSM-IV) to 17.00%
+  (2021-2022, DSM-5). SAMHSA says these two cannot be compared, so the gap
+  should not be read as a trend.
+- **2021 weights were revised** to a 30% web / 70% in-person mode mix: "These
+  adjusted 2021 analysis weights were used to produce the 2021-2022 small area
+  estimates." (2021-2022 guide, Section A.7.1,
+  https://www.samhsa.gov/data/sites/default/files/reports/rpt44483/2022-nsduh-sae-guide-state-meth/2022-nsduh-sae-guide-state-meth.htm)
+
+Comparable runs: 2002-2003 to 2013-2014 (DSM-IV, 12 windows, with the 2010
+census shift inside it); 2015-2016 to 2018-2019 (DSM-IV, 4 windows);
+2021-2022 to 2023-2024 (DSM-5, 3 windows). Lines should break between runs.
+
+**How the estimates are made, in plain words.** A state's NSDUH sample is too
+small to stand alone, so SAMHSA blends two things: the state's own survey
+answers (the direct estimate) and a prediction from a national model that uses
+local data such as census, income, unemployment, arrests, deaths and treatment
+rates. SAMHSA: "The mixed models produce estimates that are approximately
+represented by a weighted combination of the direct estimate from the state data
+and a regression estimate from the national model ... the weights are obtained
+by minimizing the MSE (variance + squared bias)." States with large samples
+lean more on their own data: the estimates "for states with large sample sizes
+are close to the robust design-based estimates." Pooling 2 years means "the
+impact of the national model on those States has been reduced significantly
+relative to estimates based on a single year's data." The state estimates are
+then shifted so their population-weighted average equals the national survey
+estimate ("benchmarking", since 2002).
+
+SAMHSA does not publish how much of each state's estimate comes from the model
+and how much from its own sample. What we can show is sample size: in
+2023-2024 the pooled 12+ sample ran from 1,520 completed interviews (Wyoming)
+to 9,080 (California), median 2,080 (`NCOMP` in the SAE dataset). By SAMHSA's
+description, the states with the smallest samples rely most on the model.
+
+**Trap for this project.** The list of possible model predictors includes
+county "Alcohol and Drug Treatment Rate" and "Drug Treatment Rate" from
+N-SUMHSS (earlier N-SSATS), SAMHSA's treatment facility survey (2023-2024
+guide, Section B.3). If a predictor like that was chosen for the SUD model,
+the demand estimate is partly built from supply data. SAMHSA does not say
+which predictors were picked for which measure. Not confirmed either way.
+
+**Version and vintage.** Pinned to the 2026-10-28 pull. The 2021-2024 SAE
+dataset documentation is dated February 2026.
+
+**Revisions.** SAMHSA does not routinely re-release old windows, but it has
+changed them:
+- Data errors for Pennsylvania (2006-2010) and Maryland (2008-2009) led SAMHSA
+  to update the 2005-2006, 2006-2007, 2007-2008 and 2008-2009 state estimates
+  "and NSDUH tables on the Web were replaced." Because the model uses all
+  states, "the model-based estimates in all States changed." The 2009-2010
+  tables carry "Revised March 2012." (2011-2012 guide, Section A.7)
+- 2019-2020 was published and later removed.
+- 2010-2011 has a second ("updated") set that did not replace the published one.
+
+**Units and rounding.** Percents are stored at different precision depending
+on the source: 4 decimal places for 2000-2001 to 2008-2009 (SAE dataset), 2
+for 2009-2010 (HTML), 8 for 2010-2011 to 2013-2014, and full precision from
+2015-2016 on (Excel stores the unrounded proportion; we multiplied by 100 and
+did not round). Counts are in thousands, rounded by SAMHSA. SAMHSA computes a
+count as the unrounded rate times the state's population averaged over the 2
+years, then rounds; multiplying a published rate by a published population may
+not match exactly.
+
+**State-to-national check.** SAMHSA: "Estimated numbers in the 'Total U.S.' row
+are aggregates of estimated numbers across all states." The 51 state counts sum
+to the national count within 5 thousand in every window (differences: -4 to
++5), which is rounding. The national percent and its interval are a direct
+survey estimate, not a model estimate (except 2000-2001).
+
+**Uncertainty.** Every state number has a 95% Bayesian interval. SAMHSA:
+"These intervals indicate the uncertainty in the estimate due to both sampling
+variability and model fit." Also: "When it is indicated that a state has the
+highest or lowest estimate, it does not imply that the state's estimate is
+significantly higher or lower than the next highest or lowest state's
+estimate. Additionally, two significantly different state estimates ... may
+have overlapping 95 percent confidence intervals." SAMHSA publishes p-value
+tables for state-to-state and window-to-window tests; overlap of intervals is
+not the test. Do not subtract one modeled measure from another at state level:
+it "can give misleading results, perhaps even a 'negative' estimate."
+
+**Coverage.** Household population aged 12 or older. Not included:
+"individuals with no fixed household address (e.g., people experiencing
+homelessness and not in shelters), military personnel on active duty, and
+residents of institutional group quarters, such as jails and hospitals." Response rates are low and falling: overall weighted response rate
+11.79% in 2023-2024.
+
+**Known quirks.**
+- On the "older" releases page, the "2013-2014 State Estimates" link points
+  to the 2012-2013 page. The 2013-2014 page exists at
+  https://www.samhsa.gov/data/report/2013-2014-nsduh-state-estimates-substance-use-and-mental-disorders.
+- Windows overlap by a year, so neighboring windows share half their data.
+
+**License and attribution.** Public domain (U.S. government work). Credit:
+Substance Abuse and Mental Health Services Administration, National Survey on
+Drug Use and Health, state small area estimates.
 
 ## N-SSATS / N-SUMHSS (SAMHSA)
 

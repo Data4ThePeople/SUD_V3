@@ -29,7 +29,6 @@ for y in range(2001, 2025):
     st, sname = read(f'{RAW}/{pre}st.zip', 'state')
     if 'own_code' in st.columns:  # 2019+: keep cross-industry total rows only
         st = st[st['naics'].fillna('000000').isin(['000000'])]
-        namecol = 'area_title' if 'area_title' in st.columns else 'state'
     namecol = 'area_title' if 'area_title' in st.columns else 'state'
     sub = st[st['occ_code'].isin(CODES)]
     for _, r in sub.iterrows():
