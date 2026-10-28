@@ -47,5 +47,5 @@ measured, withheld, or missing.
 | Worker count leaves out the self-employed and programs inside hospitals | QCEW scope; NAICS assigns by primary activity | Supported |
 | Worker count leaves out federal facilities such as the VA | Ownership code 1 is excluded by design | Supported |
 | NSDUH leaves out people in institutions and people experiencing homelessness who are not in shelters | NSDUH target population (civilian, noninstitutionalized) | Partly supported. The institutions part is in our files; the shelters wording has not been checked against a saved SAMHSA document |
-| 988: call or text, free, confidential, 24/7 | 988lifeline.org | Could not check in this session |
-| FindTreatment.gov: search by ZIP code, free and confidential | findtreatment.gov | Could not check in this session |
+| 988: call or text, free, confidential, 24/7 | 988lifeline.org: "Call, text, or chat... available 24/7/365. Your conversations are free and confidential." | Supported |
+| FindTreatment.gov is SAMHSA's locator; enter a ZIP code | Eric's instruction; the site loads by script, so it could not be fetched. "Free and confidential" was removed because it could not be checked | Partly supported |
