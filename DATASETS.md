@@ -459,7 +459,7 @@ into `data/build/oews_mix_summary.csv`). They cover 621420 and 621330, not
   Version 1 clinicians in OEWS. The rest work in other settings.
 - In 621330, Version 1 clinicians grew from 13,310 in 2010 to 85,640 in 2024,
   and their share of jobs there went from 21% to 35%.
-Some groups are withheld in a few years (psychologists in 2009, 2010, 2021 and
+Some groups are withheld in a few years (psychologists in 2009, 2010, 2013, 2021 and
 2022 in one code or the other); those cells are left blank.
 
 **State-to-national check.** Where nothing is withheld, state sums are within
