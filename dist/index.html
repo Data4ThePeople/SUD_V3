@@ -41,6 +41,9 @@ input[type=range]{flex:1;accent-color:var(--work)}
 .modes button[aria-pressed=true]{background:var(--c);border-color:var(--c);color:#111}
 .legend{display:flex;align-items:center;gap:14px;padding:12px 48px 6px;flex-wrap:wrap}
 .ramp{width:170px;height:10px;border-radius:2px}
+.scale{display:inline-flex;flex-direction:column;gap:4px}.scale .sr{display:flex;align-items:center;gap:8px}.scale .ramp{flex:1;min-width:120px}
+.ends{display:flex;justify-content:space-between;gap:18px;font-family:var(--mono);font-size:10.5px;color:var(--ink2)}.ends span:last-child{text-align:right}
+.reads{flex-basis:100%;font-family:var(--serif);font-size:14px;color:var(--ink2)}
 .sw{display:inline-block;width:14px;height:14px;border-radius:2px;vertical-align:middle;margin-right:6px}
 .era{padding:2px 48px 12px;font-family:var(--mono);font-size:11.5px;font-style:italic;color:var(--ink2);text-align:right}
 .main{display:grid;grid-template-columns:minmax(0,1fr) 440px;border-top:1px solid var(--line)}
@@ -209,13 +212,19 @@ const RAMPS = {
 };
 const METRICS = {
   sud:   {key: "sud_pct", short: "SUD %", label: "SUD prevalence (% of people 12 and older)", c: "--sud",
-          dom: y => dsm5(y) ? [10, 32] : [4, 14], fmt: v => v.toFixed(1) + "%"},
+          dom: y => dsm5(y) ? [10, 32] : [4, 14], fmt: v => v.toFixed(1) + "%",
+          ends: ["smaller share of residents with SUD", "larger share of residents with SUD"]},
   estab: {key: "estabs_per100k", short: "ESTABS / 100K", label: "Outpatient SUD treatment facilities per 100,000 residents", c: "--estab",
-          dom: () => [0, 12], fmt: v => v.toFixed(1)},
+          dom: () => [0, 12], fmt: v => v.toFixed(1),
+          ends: ["fewer facilities per resident", "more facilities per resident"],
+          reads: "Darker states have more outpatient facilities for their population."},
   gap:   {key: "gap", short: GAP.short, label: GAP.name + " (" + GAP.unit + ")", c: "--gap",
-          dom: y => dsm5(y) ? [25, 200] : [0, 150], fmt: v => Math.round(v).toLocaleString()},
+          dom: y => dsm5(y) ? [25, 200] : [0, 150], fmt: v => Math.round(v).toLocaleString(),
+          ends: ["fewer people with SUD per worker", "more people with SUD per worker"],
+          reads: "Darker states have more people with a substance use disorder for each treatment worker."},
   death: {key: "death_rate", short: "DEATH RATE", label: "Overdose + alcohol-induced deaths per 100,000 (crude)", c: "--death",
-          dom: () => [0, 70], fmt: v => v.toFixed(1)},
+          dom: () => [0, 70], fmt: v => v.toFixed(1),
+          ends: ["fewer deaths per resident", "more deaths per resident"]},
 };
 const TRENDS = {
   sud:   {m: "sud", label: "SUD prevalence %"},
@@ -337,9 +346,11 @@ function renderLegend() {
   const m = S.metric, M = METRICS[m], [lo, hi] = M.dom(S.year);
   const grad = "linear-gradient(90deg," + RAMPS[m].join(",") + ")";
   let h = '<span class="lab">' + M.label + '</span>' +
-    '<span class="note">' + lo + '</span><span class="ramp" style="background:' + grad + '"></span><span class="note">' + hi + '+</span>' +
+    '<span class="scale"><span class="sr"><span class="note">' + lo + '</span><span class="ramp" style="background:' + grad + '"></span><span class="note">' + hi + '+</span></span>' +
+    '<span class="ends"><span>← ' + M.ends[0] + '</span><span>' + M.ends[1] + ' →</span></span></span>' +
     '<span class="note"><span class="sw" style="background:' + css("--nodata") + '"></span>no data</span>';
   if (m === "gap" && VV.hatchLegend) h += '<span class="note"><svg class="sw" width="14" height="14"><rect width="14" height="14" fill="url(#hatchL)"/></svg>' + VV.hatchLegend + '</span>';
+  if (M.reads) h += '<span class="reads">' + M.reads + '</span>';
   const L = document.getElementById("legend"); L.innerHTML = h;
   if (m === "gap" && VV.hatchLegend) L.querySelector("svg").innerHTML = '<defs><pattern id="hatchL" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="' + css("--nodata") + '"/><line x1="0" y1="0" x2="0" y2="5" stroke="#6a7280" stroke-width="2"/></pattern></defs><rect width="14" height="14" fill="url(#hatchL)"/>';
   let e = "";
