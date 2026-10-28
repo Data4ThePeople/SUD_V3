@@ -174,13 +174,13 @@ const VV = {
   hatchLegend: null,
   hatchTip: () => "",
   hatchCallout: () => "",
-  source: `BLS, Occupational Employment and Wage Statistics (OEWS), state employment of substance abuse and mental health counselors (SOC 21-1011 and 21-1014 through 2016; 21-1018, which combines them, from 2017) plus mental health and substance abuse social workers (21-1023). Counts all work settings and ownership types. Reference month is November for 2001-2002 and May from 2003.`,
+  source: `BLS, Occupational Employment and Wage Statistics (OEWS), state employment of substance abuse and mental health counselors (SOC 21-1011 and 21-1014 through 2016; 21-1018, which combines them, from 2017) plus mental health and substance abuse social workers (21-1023). Counts all work settings and ownership types. The 2001 estimates use fourth-quarter (October to December) payrolls, 2002 adds a November 2002 survey panel, and from 2003 the reference month is May.`,
   limits: [
     "<b>The worker count covers every setting.</b> OEWS counts these counselors and social workers wherever they work, including hospitals, residential programs, schools and prisons, so it is broader than outpatient care. It leaves out the self-employed. It counts clinicians only, not administrative staff.",
-    "<b>Worker counts are survey estimates.</b> Each state estimate pools six survey panels over three years and has a sampling error, shown on the workers card. Small states can move a lot from one year to the next because of sampling alone. BLS does not encourage using OEWS as a time series.",
+    "<b>Worker counts are survey estimates.</b> Each state estimate pools survey responses from three years (six survey panels from 2003 on) and has a sampling error, shown on the workers card. BLS does not encourage using OEWS as a time series.",
     "<b>Missing worker counts.</b> When BLS did not publish one of the occupations for a state and year, the worker total and the ratio are left blank.",
     "<b>Substance use and mental health counselors cannot be separated.</b> From 2017 BLS publishes the two occupations only as one combined group (21-1018). To keep one definition across all years, both are counted in every year. The three occupation codes did not change in the 2010 or 2018 revisions of the occupation system, but the 2010-2011 and 2019-2020 estimates mix data coded under the old and new systems.",
-    "<b>BLS changed its estimation method in 2021.</b> From the May 2021 estimates, OEWS uses a model-based method (MB3). The trend line marks the change. 2001 and 2002 estimates refer to November; later years refer to May.",
+    "<b>BLS changed its estimation method in 2021.</b> From the May 2021 estimates, OEWS uses a model-based method (MB3). The trend line marks the change. The 2001 estimates use fourth-quarter payrolls and 2002 adds a November panel; later years refer to May.",
   ],
 };
 const YEARS = D.years, Y0 = YEARS[0];

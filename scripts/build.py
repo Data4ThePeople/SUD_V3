@@ -97,7 +97,7 @@ def oews():
     o = o[o.state_name.isin(GEOS[:-1])].rename(columns={"state_name": "geo"})
     nat = pd.read_csv(ROOT / "data/clean/oews_counselors_sumcheck.csv")
     nat = pd.DataFrame({"geo": "United States", "year": nat.year, "soc": nat.soc,
-                        "employment": nat.national_employment, "rse": float("nan"),
+                        "employment": nat.national_employment, "rse": nat.national_rse,
                         "flag": nat.national_flag})
     o = pd.concat([o[["geo", "year", "soc", "employment", "rse", "flag"]], nat])
     rows = []

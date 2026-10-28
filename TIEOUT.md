@@ -85,9 +85,26 @@ WONDER it used Eric's raw exports, because the API refuses queries by state.
 **Words that need Eric's decision (his text):** subtitle items 3, 4, and 5 in the agent's
 table. They go to Eric as numbered proposals.
 
-**Not yet checked independently:** the OEWS worker count, which replaced QCEW after the
-independent tie-out above. A second independent tie-out of the worker series and People
-per Worker is running.
+## Independent tie-out of OEWS workers (fresh agent, 2026-10-28)
+
+A second fresh agent downloaded the 48 BLS OEWS zips itself and rebuilt the worker count and
+People per Worker. Full report: `tieout_independent/oews/REPORT.md`.
+
+**Numbers: no differences.** 1,248 geo-years blank vs not blank, 1,197 worker values, 996
+People per Worker values, 1,173 state sampling-error notes: 0 differences.
+
+**Fixed in response.**
+- The US sampling-error note was blank. The build now reads the national PRSE, and the
+  values match the agent's in all 24 years.
+- "November for 2001-2002" is now stated as BLS describes it: fourth-quarter payrolls for
+  2001, a November 2002 panel added for 2002, May from 2003.
+- "Six panels over three years" now applies from 2003 on.
+- "Small states can move a lot ... because of sampling alone" was our inference and is
+  removed.
+
+**Could not check:** BLS pages for the 2001 technical notes, the 2017 changes notice, and the
+SOC 2010 and MB3 notes returned not-found. The same claims were confirmed from the FAQ and
+the May 2017 technical note.
 
 **Not checked by either tie-out:** facility years 2005-2011 and 2014-2018, which the
 independent agent did not rebuild (the main tie-out covers every year), and SAMHSA's

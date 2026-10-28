@@ -40,7 +40,8 @@ for y in range(2001, 2025):
     if 'naics' in nt.columns:
         nt = nt[nt['naics'].fillna('000000').isin(['000000'])]
     for _, r in nt[nt['occ_code'].isin(CODES)].iterrows():
-        nat.append(dict(year=y, soc=r['occ_code'], national_employment=num(r['tot_emp']), national_flag=flag(r['tot_emp'])))
+        nat.append(dict(year=y, soc=r['occ_code'], national_employment=num(r['tot_emp']), national_flag=flag(r['tot_emp']),
+                        national_rse=num(r['emp_prse'])))
 df = pd.DataFrame(rows)
 os.makedirs(OUT, exist_ok=True)
 df.to_csv(f'{OUT}/oews_counselors.csv', index=False)

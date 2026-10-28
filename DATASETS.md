@@ -423,7 +423,10 @@ years. We use it as a cross-check only.
   distinguish between the occupations" (BLS, 2017 changes notice).
 - **21-1023 (mental health and substance abuse social workers)** runs in
   every year.
-- The reference month is November in 2001-2002 and May from 2003 on.
+- The 2001 estimates use a fourth-quarter (October to December) payroll. The
+  2002 estimates pool the 1999-2001 annual samples with a November 2002 panel.
+  From 2003 the reference month is May, and each estimate pools six panels
+  over three years.
 
 **Limits.** OEWS leaves out the self-employed. At the state level it can't
 be split by industry or ownership, so its counts include hospitals,
