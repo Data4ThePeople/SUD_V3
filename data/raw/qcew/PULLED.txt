@@ -1,0 +1,1 @@
+2026-10-28 QCEW annual averages, NAICS 621420,621330,621112, all ownerships, years 2001-2024. 2014+ from data.bls.gov/cew/data/api/<yr>/a/industry/<code>.csv; earlier from data.bls.gov/cew/data/files/<yr>/csv/<yr>_annual_by_industry.zip (rows for our codes kept unchanged).
