@@ -42,3 +42,5 @@ None.
 - 2026-10-28 Eric: new neutral title "Substance Use Treatment / State by State, 2001-2024", new subtitle and tab title (proposals 1-3 accepted).
 - 2026-10-28 Independent drug-only tie-out: 0 differences in 13,768 cells; 3 wording/display fixes.
 - 2026-10-28 Eric: add Alcohol only (items 1-13 accepted; item 10 worded to CDC's definition), separate color scales per view, switch kept on the legend row. Tie-out: 29,745 values, 0 mismatches.
+- 2026-10-28 Independent alcohol tie-out: 0 differences; alcohol trend line now drawn across 2015 (SAMHSA: the 2015 change did not affect alcohol use disorder); static notes fixed.
+- 2026-10-28 Checked SAMHSA change tests: alcohol use disorder 2008-2009 vs 2018-2019 (long-term); SUD, drug, alcohol 2022-2023 vs 2023-2024 (short-term). Change view proposed, waiting on Eric.

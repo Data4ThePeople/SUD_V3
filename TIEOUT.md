@@ -118,4 +118,12 @@ still unexplained.
 differences. Three wording and display points were fixed (per-view color scales, the CDC
 rate rule, the 2021-2022 prescription drug change). Full report:
 `tieout_independent/drug/REPORT.md`. The alcohol-only view was added afterward and has its
-own independent check.
+own independent check, below.
+
+## Independent tie-out of the alcohol-only views (fresh agent, 2026-10-28)
+
+About 14,000 cells compared with SAMHSA's SAS datasets, published Excel, PDF and HTML tables,
+and CDC WONDER: 0 differences. Three wording or logic points were fixed: the static notes now
+give the alcohol exception for 2015, the alcohol trend line is drawn across 2015 because
+SAMHSA says that change did not affect alcohol use disorder, and the sources line names DSM-5
+for alcohol. Full report: `tieout_independent/alcohol/REPORT.md`.

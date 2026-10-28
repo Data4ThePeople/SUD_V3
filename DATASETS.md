@@ -354,8 +354,11 @@ Drug Use and Health, state small area estimates.
 | Alcohol, 2021-2022 to 2023-2024 | UDYR5ALC | Alcohol use disorder (DSM-5) |
 
 - **Alcohol has 21 windows, and drug has 20.** SAMHSA published alcohol for
-  2014-2015 but not drug or any SUD, so the alcohol view has a 2015 value. The
-  trend line still breaks at the 2015 survey change.
+  2014-2015 but not drug or any SUD, so the alcohol view has a 2015 value.
+  SAMHSA's 2014-2015 guide (section A.6) says the 2015 questionnaire change "did
+  not affect estimates for alcohol use or alcohol use disorder," so the alcohol
+  trend line is drawn across 2015. It still breaks at 2002 and at the 2021
+  redesign.
 - **2010-2011:** the "(published)" estimates are used, the same as for any SUD.
 - **Check against published tables:** for both measures, the script checks
   every window that has a published Excel table, percents to 2 decimals and

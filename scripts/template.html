@@ -502,7 +502,8 @@ function renderTrend() {
   for (let i = 0; i <= 4; i++) { const v = top * i / 4, py = yy(v);
     s += `<line x1="${m.l}" x2="${W - m.r}" y1="${py}" y2="${py}" stroke="${css("--line")}"/><text x="${m.l - 8}" y="${py + 4}" text-anchor="end" font-size="11" fill="#8a919c" font-family="ui-monospace,Menlo,monospace">${f(+v.toFixed(2))}</text>`; }
   for (const yr of [2001, 2006, 2011, 2016, 2021, 2024]) s += `<text x="${x(yr)}" y="${H - 8}" text-anchor="middle" font-size="11" fill="#8a919c" font-family="ui-monospace,Menlo,monospace">${yr}</text>`;
-  const breaks = BREAKS[t] || [];
+  // SAMHSA says the 2015 change did not affect alcohol use disorder (2014-2015 SAE guide, A.6)
+  const breaks = t === "sud" && S.part === "alcohol" ? SURVEY_BREAKS.filter(b => b.after !== 2014) : BREAKS[t] || [];
   for (const b of breaks) { const bx = x(b.at);
     s += `<line x1="${bx}" x2="${bx}" y1="${m.t - 10}" y2="${H - m.b}" stroke="#6a7280" stroke-dasharray="3 3"/>${W < 600 ? "" : `<text x="${bx + 4}" y="${m.t - 12}" font-size="10" fill="#8a919c" font-family="ui-monospace,Menlo,monospace">${b.label}</text>`}`; }
   // segments: join only consecutive years with values, both complete, and no break between them
@@ -546,15 +547,15 @@ new ResizeObserver(() => renderTrend()).observe(trendSvg);
 document.getElementById("notes").innerHTML = `
 <h3>Sources</h3>
 <ul>
-<li><b>Demand:</b> SAMHSA, National Survey on Drug Use and Health (NSDUH), state model-based estimates of people 12 and older with a past-year substance use disorder, two-year windows 2000-2001 through 2023-2024. Counts and 95% intervals are SAMHSA's own figures, from its published tables and, for 2000-2001 through 2008-2009, its small area estimation dataset. The drug-only view uses SAMHSA's state estimates of illicit drug dependence or abuse (through 2013-2014), illicit drug use disorder (2015-2016 to 2018-2019) and drug use disorder (2021-2022 on). The alcohol-only view uses SAMHSA's state estimates of alcohol dependence or abuse (through 2014-2015) and alcohol use disorder (2015-2016 on).</li>
+<li><b>Demand:</b> SAMHSA, National Survey on Drug Use and Health (NSDUH), state model-based estimates of people 12 and older with a past-year substance use disorder, two-year windows 2000-2001 through 2023-2024. Counts and 95% intervals are SAMHSA's own figures, from its published tables and, for 2000-2001 through 2008-2009, its small area estimation dataset. The drug-only view uses SAMHSA's state estimates of illicit drug dependence or abuse (through 2013-2014), illicit drug use disorder (2015-2016 to 2018-2019) and drug use disorder (2021-2022 on). The alcohol-only view uses SAMHSA's state estimates of alcohol dependence or abuse (through 2014-2015) and alcohol use disorder (2015-2016 on; DSM-5 from 2021-2022).</li>
 <li><b>Treatment facilities:</b> SAMHSA, National Survey of Substance Abuse Treatment Services (N-SSATS, 2000-2020) and National Substance Use and Mental Health Services Survey (N-SUMHSS, 2021-2024). Facilities that offer outpatient substance use treatment, all ownership types.</li>
 <li><b>Treatment workers:</b> ${VV.source}</li>
 <li><b>Deaths and population:</b> CDC WONDER, Underlying Cause of Death 1999-2020 (used for 2001-2017) and 2018-2024 Single Race (2018-2024). The two agree exactly for 2018-2020.</li>
 </ul>
 <h3>Limitations</h3>
 <ul>
-<li><b>Survey changes.</b> NSDUH changed in 2002, in 2015 and again in 2020-2021 (DSM-5 criteria, web plus in-person interviews). SAMHSA says estimates are not comparable across these points. The trend line is not drawn across them, and the map uses a separate color scale from 2022.</li>
-<li><b>Missing years are left blank.</b> SAMHSA published no state estimates for windows ending in 2002, 2015, 2020 or 2021, and ran no facility survey in 2001. Nothing is filled in or interpolated.</li>
+<li><b>Survey changes.</b> NSDUH changed in 2002, in 2015 and again in 2020-2021 (DSM-5 criteria, web plus in-person interviews). SAMHSA says estimates are not comparable across these points, except that the 2015 change did not affect alcohol use disorder. The trend line is not drawn across them, and the map uses a separate color scale from 2022.</li>
+<li><b>Missing years are left blank.</b> SAMHSA published no state estimates for windows ending in 2002, 2015, 2020 or 2021 (alcohol use disorder alone has a 2015 estimate), and ran no facility survey in 2001. Nothing is filled in or interpolated.</li>
 ${VV.limits.map(x => "<li>" + x + "</li>").join("")}
 <li><b>Facility counts are a floor.</b> Facilities that did not answer SAMHSA's survey are not counted. The survey merged with the mental health facility survey in 2021, and its response rate dropped that year.</li>
 <li><b>Drug and alcohol disorders overlap.</b> Many people have both, so SAMHSA's drug and alcohol estimates cannot be added together or subtracted from the total. The drug-only and alcohol-only views show SAMHSA's own estimates, not the total minus the other.</li>
