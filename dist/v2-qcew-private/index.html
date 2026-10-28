@@ -263,7 +263,7 @@ const fmtM = v => v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : fmtInt(v);
 const val = (g, k, y) => g[k][ix(y)];
 
 // ---------- state ----------
-const S = {year: 2024, metric: "sud", trend: "sud", sel: null, hover: null, priv: false, playing: null};
+const S = {year: 2024, metric: "sud", trend: "sud", sel: null, hover: null, playing: null};
 const geoKey = () => S.hover || S.sel || "US";
 
 // ---------- map ----------
@@ -485,8 +485,11 @@ function renderTrend() {
   s += `<line x1="${cx}" x2="${cx}" y1="${m.t}" y2="${H - m.b}" stroke="#ffffff" stroke-opacity=".18"/>`;
   s += `<line id="xh" y1="${m.t}" y2="${H - m.b}" stroke="#ffffff" stroke-opacity=".35" visibility="hidden"/>`;
   trendSvg.setAttribute("viewBox", `0 0 ${W} ${H}`); trendSvg.innerHTML = s;
-  document.getElementById("trend-note").textContent = pts.some(p => p.hollow && p.v != null)
-    ? "Hollow points: BLS withheld part of the worker count that year, so the value " + (t === "work" ? "is a minimum." : "is a maximum.") : "";
+  const why = new Set(pts.filter(p => p.hollow && p.v != null).map(p => g.workers_flag[p.y - YEARS[0]]));
+  const notes = [];
+  if (why.has("floor")) notes.push("BLS withheld part of the worker count that year, so the value " + (t === "work" ? "is a minimum" : "is a maximum"));
+  if (why.has("public")) notes.push("government employees were 20% or more of outpatient workers, and this version counts private workers only, so the value is a maximum");
+  document.getElementById("trend-note").textContent = notes.length ? "Hollow points: " + notes.join("; or ") + "." : "";
   trendSvg.setAttribute("aria-label", document.getElementById("trend-title").textContent);
   trendSvg.onmousemove = e => {
     const r = trendSvg.getBoundingClientRect(), px = (e.clientX - r.left) * W / r.width;
