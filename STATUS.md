@@ -1,6 +1,6 @@
 # Status
 
-Project: SUD_V3 (Demand Without A Door: America's Substance-Use Treatment Gap)
+Project: SUD_V3 (Substance Use Treatment, State by State, 2001-2024)
 Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
@@ -39,3 +39,4 @@ None.
 - 2026-10-28 Eric: go with Version 1 (OEWS counselors and social workers). Single page at dist/index.html. Tie-out: 14,093 values, 0 mismatches. Second independent tie-out of the worker series started.
 - 2026-10-28 Independent OEWS tie-out: 0 differences; US sampling-error note and 2001-2002 reference-month wording fixed.
 - 2026-10-28 Eric approved legend end labels and direction captions; drug-only switch for deaths (ND drug rates under 20 deaths blank, CDC publishes none); drug-only switch extended to the SUD map with wording items 1-12. People per Worker stays on any SUD. Tie-out: 22,829 values, 0 mismatches.
+- 2026-10-28 Eric: new neutral title "Substance Use Treatment / State by State, 2001-2024", new subtitle and tab title (proposals 1-3 accepted).
