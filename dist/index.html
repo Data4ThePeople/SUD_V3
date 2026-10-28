@@ -58,6 +58,8 @@ input[type=range]{flex:1;accent-color:var(--work)}
 .trend h3{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--muted);font-weight:400;margin:6px 0 4px;text-transform:uppercase}
 #trend{width:100%;height:280px;display:block}
 .ttog{display:flex;gap:18px;flex-wrap:wrap;margin-top:6px}
+.seg{display:inline-flex;border:1px solid var(--line2);border-radius:3px;overflow:hidden}.seg button{font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:5px 10px;background:transparent;border:0;color:var(--muted);cursor:pointer}.seg button[aria-pressed=true]{background:var(--death);color:#111}
+#dswitch-t{margin:2px 0 6px}
 .ttog button{background:none;border:0;cursor:pointer;font-family:var(--mono);font-size:12.5px;color:var(--muted);padding:4px 0;display:flex;align-items:center;gap:7px}
 .ttog button i{display:inline-block;width:18px;height:3px;border-radius:2px;background:var(--c);opacity:.45}
 .ttog button[aria-pressed=true]{color:var(--ink)}
@@ -120,7 +122,7 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 <section class="banner" aria-label="National totals">
   <div><div class="lab">Est. people with SUD</div><div class="big" id="b-sud" style="color:var(--sud)"></div><div class="note" id="b-sud-n"></div></div>
   <div><div class="lab">Treatment workers</div><div class="big" id="b-work" style="color:var(--work)"></div><div class="note" id="b-work-n"></div></div>
-  <div><div class="lab">Overdose &amp; alcohol deaths</div><div class="big" id="b-death" style="color:var(--death)"></div><div class="note" id="b-death-n"></div></div>
+  <div><div class="lab" id="b-death-l">Overdose &amp; alcohol deaths</div><div class="big" id="b-death" style="color:var(--death)"></div><div class="note" id="b-death-n"></div></div>
 </section>
 
 <section class="controls">
@@ -139,6 +141,7 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
     <div class="callout" id="callout"></div>
     <div class="trend">
       <h3 id="trend-title"></h3>
+      <div id="dswitch-t"></div>
       <svg id="trend" role="img"></svg>
       <div class="note" id="trend-note" style="min-height:14px"></div>
       <div class="ttog" id="ttog" role="group" aria-label="Trend line metric"></div>
@@ -222,7 +225,8 @@ const METRICS = {
           dom: y => dsm5(y) ? [25, 200] : [0, 150], fmt: v => Math.round(v).toLocaleString(),
           ends: ["fewer people with SUD per worker", "more people with SUD per worker"],
           reads: "Darker states have more people with a substance use disorder for each treatment worker."},
-  death: {key: "death_rate", short: "DEATH RATE", label: "Overdose + alcohol-induced deaths per 100,000 (crude)", c: "--death",
+  death: {get key() { return S.drugOnly ? "death_rate_drug" : "death_rate"; }, short: "DEATH RATE", c: "--death",
+          get label() { return S.drugOnly ? "Drug overdose deaths per 100,000 (crude)" : "Overdose + alcohol-induced deaths per 100,000 (crude)"; },
           dom: () => [0, 70], fmt: v => v.toFixed(1),
           ends: ["fewer deaths per resident", "more deaths per resident"]},
 };
@@ -249,7 +253,7 @@ const fmtM = v => v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : fmtInt(v);
 const val = (g, k, y) => g[k][ix(y)];
 
 // ---------- state ----------
-const S = {year: 2024, metric: "sud", trend: "sud", sel: null, hover: null, playing: null};
+const S = {year: 2024, metric: "sud", trend: "sud", sel: null, hover: null, playing: null, drugOnly: false};
 const geoKey = () => S.hover || S.sel || "US";
 
 // ---------- map ----------
@@ -320,9 +324,21 @@ function renderBanner() {
   const wf = val(us, "workers_flag", y) === "floor";
   document.getElementById("b-work").textContent = w == null ? "No estimate" : (wf ? "≥ " : "") + fmtInt(w);
   document.getElementById("b-work-n").textContent = VV.bannerNote + (wf ? " · some cells withheld" : "");
-  document.getElementById("b-death").textContent = fmtInt(d);
-  document.getElementById("b-death-n").textContent = val(us, "death_rate", y).toFixed(1) + " per 100K · crude rate";
+  document.getElementById("b-death-l").textContent = S.drugOnly ? "Drug overdose deaths" : "Overdose & alcohol deaths";
+  document.getElementById("b-death").textContent = fmtInt(S.drugOnly ? val(us, "deaths_drug", y) : d);
+  document.getElementById("b-death-n").textContent = val(us, METRICS.death.key, y).toFixed(1) + " per 100K · crude rate";
 }
+
+// ---------- drug + alcohol / drug only switch (death map, card, banner, ranking, trend) ----------
+function deathSwitch() {
+  return '<span class="seg" role="group" aria-label="Deaths counted">' +
+    [[false, "Drug + alcohol"], [true, "Drug only"]].map(([v, l]) =>
+      '<button data-d="' + (v ? 1 : 0) + '" aria-pressed="' + (S.drugOnly === v) + '">' + l + '</button>').join("") + '</span>';
+}
+function wireSwitch(el) {
+  el.querySelectorAll(".seg button").forEach(b => b.onclick = () => { S.drugOnly = b.dataset.d === "1"; render(); });
+}
+const NO_RATE = "CDC publishes no rate when there are fewer than 20 deaths";
 
 // ---------- controls ----------
 const modes = document.getElementById("modes");
@@ -350,8 +366,9 @@ function renderLegend() {
     '<span class="ends"><span>← ' + M.ends[0] + '</span><span>' + M.ends[1] + ' →</span></span></span>' +
     '<span class="note"><span class="sw" style="background:' + css("--nodata") + '"></span>no data</span>';
   if (m === "gap" && VV.hatchLegend) h += '<span class="note"><svg class="sw" width="14" height="14"><rect width="14" height="14" fill="url(#hatchL)"/></svg>' + VV.hatchLegend + '</span>';
+  if (m === "death") h += deathSwitch();
   if (M.reads) h += '<span class="reads">' + M.reads + '</span>';
-  const L = document.getElementById("legend"); L.innerHTML = h;
+  const L = document.getElementById("legend"); L.innerHTML = h; wireSwitch(L);
   if (m === "gap" && VV.hatchLegend) L.querySelector("svg").innerHTML = '<defs><pattern id="hatchL" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="' + css("--nodata") + '"/><line x1="0" y1="0" x2="0" y2="5" stroke="#6a7280" stroke-width="2"/></pattern></defs><rect width="14" height="14" fill="url(#hatchL)"/>';
   let e = "";
   if (m === "sud" || m === "gap") e = dsm5(S.year)
@@ -359,7 +376,8 @@ function renderLegend() {
     : S.year === 2001 ? "⚠ 2001 comes from the NHSDA, the survey's earlier version. SAMHSA says it is not comparable to 2003 and later."
     : "⚠ 2022 and later use a redesigned survey on a different color scale. 2002, 2015, 2020 and 2021 have no state estimates.";
   if (m === "estab") e = S.year === 2001 ? "⚠ SAMHSA ran no facility survey in 2001." : S.year >= 2021 ? "⚠ In 2021 the facility survey merged with the mental health facility survey and its response rate dropped. The trend line breaks there." : "Facilities that report offering outpatient substance use treatment, all ownership types.";
-  if (m === "death") e = "Crude rates, not age adjusted. Drug overdose (X40-X44, X60-X64, X85, Y10-Y14) plus alcohol-induced causes.";
+  if (m === "death") e = S.drugOnly ? "Drug overdose deaths (X40-X44, X60-X64, X85, Y10-Y14), crude rate."
+    : "Crude rates, not age adjusted. Drug overdose (X40-X44, X60-X64, X85, Y10-Y14) plus alcohol-induced causes.";
   document.getElementById("era").textContent = e;
 }
 
@@ -377,7 +395,15 @@ function renderCallout() {
     else if (n) p.push(VV.hatchCallout(n));
   }
   if (m === "estab") p.push("<b>What counts as a facility.</b> A site that tells SAMHSA it offers outpatient substance use treatment, in any ownership. Facilities that did not respond to the survey are not counted: 3% to 11% of eligible facilities from 2000 to 2020, and 10% to 23% from 2021 to 2024.");
-  if (m === "death") p.push("<b>What is counted.</b> Deaths whose underlying cause was a drug overdose or an alcohol-induced cause, such as alcoholic liver disease. Each death is counted once." + (y === 2023 ? " North Carolina's 2023 count is short: CDC says over 900 overdose deaths were recoded after the file closed." : ""));
+  if (m === "death") {
+    const nc = y === 2023 ? " North Carolina's 2023 count is short: CDC says over 900 overdose deaths were recoded after the file closed." : "";
+    if (!S.drugOnly) p.push("<b>What is counted.</b> Deaths whose underlying cause was a drug overdose or an alcohol-induced cause, such as alcoholic liver disease. Each death is counted once." + nc);
+    else {
+      const blank = Object.entries(D.geo).filter(([k, g]) => k !== "US" && val(g, "death_rate_drug", y) == null && val(g, "deaths_drug", y) != null).map(([, g]) => g.name);
+      p.push("<b>What is counted.</b> Deaths whose underlying cause was a drug overdose, whether unintentional, suicide, homicide or undetermined intent. Alcohol-induced deaths are left out." + nc +
+        (blank.length ? " " + NO_RATE + ", so " + blank.join(", ") + " is shown with no data for " + y + "." : ""));
+    }
+  }
   document.getElementById("callout").innerHTML = p.map(x => "<p>" + x + "</p>").join("");
 }
 
@@ -401,7 +427,9 @@ function renderPanel() {
     [GAP.short, "--gap", gap == null ? na : (floor ? "≤ " : "") + Math.round(gap), gap == null ? "needs both an SUD estimate and a worker count" : GAP.unit + (floor ? " (a maximum; see hatching note)" : "")],
     ["SUD count", "--sud", cnt == null ? na : fmtM(cnt), cnt == null ? "no estimate for " + y : "95% interval " + fmtM(clo) + " to " + fmtM(chi)],
     ["Treatment workers", "--work", wk == null ? na : (wfloor ? "≥ " : "") + fmtInt(wk), wk == null ? "not published for " + y : VV.cardNote(g, y)],
-    ["OD & alcohol deaths", "--death", d == null ? na : fmtInt(d), d == null ? "" : dr.toFixed(1) + " per 100K" + (dd == null || da == null ? "" : " · " + fmtInt(dd) + " drug, " + fmtInt(da) + " alcohol")],
+    S.drugOnly
+      ? ["Drug overdose deaths", "--death", dd == null ? na : fmtInt(dd), dd == null ? "" : val(g, "death_rate_drug", y) == null ? NO_RATE : val(g, "death_rate_drug", y).toFixed(1) + " per 100K"]
+      : ["OD & alcohol deaths", "--death", d == null ? na : fmtInt(d), d == null ? "" : dr.toFixed(1) + " per 100K" + (dd == null || da == null ? "" : " · " + fmtInt(dd) + " drug, " + fmtInt(da) + " alcohol")],
   ];
   const C = document.getElementById("cards");
   C.innerHTML = cards.map(([l, c, v, s]) => '<div class="card"><div class="lab">' + l + '</div><div class="v" style="color:var(' + c + ')">' + v + '</div><div class="d">' + s + "</div></div>").join("");
@@ -442,7 +470,8 @@ function niceMax(v) { const p = Math.pow(10, Math.floor(Math.log10(v))); return 
 function renderTrend() {
   const g = D.geo[geoKey()], t = S.trend, T = TRENDS[t], color = css(T.c || METRICS[T.m].c);
   ttog.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.t === t)));
-  document.getElementById("trend-title").textContent = T.label + (t === "work" ? VV.trendSuffix : "") + " · " + g.name + " · 2001-2024";
+  document.getElementById("trend-title").textContent = T.label + (t === "work" ? VV.trendSuffix : t === "death" && S.drugOnly ? " (drug only)" : "") + " · " + g.name + " · 2001-2024";
+  const ds = document.getElementById("dswitch-t"); ds.innerHTML = t === "death" ? deathSwitch() : ""; wireSwitch(ds);
   const W = trendSvg.clientWidth || 800, H = 280, m = {l: 58, r: 20, t: 26, b: 30};
   const pts = trendSeries(g), vals = pts.filter(p => p.v != null).map(p => p.v);
   const top = vals.length ? niceMax(Math.max(...vals) * 1.08) : 1;
@@ -525,6 +554,7 @@ function render() {
   if (TRENDS[h.get("t")]) S.trend = h.get("t");
   if (+h.get("y") >= 2001 && +h.get("y") <= 2024) S.year = +h.get("y");
   if (D.geo[h.get("s")] && h.get("s") !== "US") S.sel = h.get("s");
+  if (h.get("d") === "1") S.drugOnly = true;
 }
 render();
 </script>

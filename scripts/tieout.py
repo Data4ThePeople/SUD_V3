@@ -79,9 +79,13 @@ for src, m in ((drug, "deaths_drug"), (alc, "deaths_alcohol")):
     tot = {}
     for (key, y), r in src.items():
         cmp(m, key, y, int(r["Deaths"]))
+        # CDC prints "Unreliable" instead of a rate under 20 deaths; the page leaves it blank
+        rate = r["Crude Rate"]
+        cmp(m.replace("deaths", "death_rate"), key, y, None if "Unreliable" in rate else float(rate))
         tot[y] = tot.get(y, 0) + int(r["Deaths"])
     for y, v in tot.items():
         cmp(m, "US", y, v)
+        cmp(m.replace("deaths", "death_rate"), "US", y, v / int(nat[("US", y)]["Population"]) * 1e5, tol=1e-5)  # JSON keeps 4 decimals
 
 # --- SUD (clean NSDUH) ---
 for r in csv.DictReader(open(ROOT / "data/clean/nsduh_sud.csv")):
