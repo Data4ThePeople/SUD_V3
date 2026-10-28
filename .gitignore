@@ -16,3 +16,4 @@ data/raw/oews_industry/*
 !data/raw/oews_industry/PULLED.txt
 tieout_independent/raw_oews/
 tieout_independent/raw_drug/
+tieout_independent/raw_alcohol/
