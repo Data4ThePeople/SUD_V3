@@ -443,6 +443,25 @@ Other points to note:
 - The national total of the three codes moves smoothly across each of these
   points.
 
+**Job mix inside the QCEW codes (national only).** OEWS also publishes national
+estimates by industry (`data/raw/oews_industry/`, built by
+`scripts/build_oews_industry.py` and summarized by `scripts/oews_mix_summary.py`
+into `data/build/oews_mix_summary.csv`). They cover 621420 and 621330, not
+621112. These estimates are within 2% of QCEW private employment in every year,
+2002-2024, so they describe the same private workers. In 2024:
+- Counselors and mental health and substance abuse social workers (the Version
+  1 codes) were 34% of jobs in 621420 and 35% in 621330.
+- The rest were other community and social service jobs (15%), office and
+  administrative support (14%), healthcare practitioners such as nurses and
+  psychiatrists (14%), management (7%), psychologists (7%), healthcare support
+  (3%), and all other jobs (6%), across the two codes combined.
+- The 192,300 Version 1 clinicians in these two codes were 34% of all 566,290
+  Version 1 clinicians in OEWS. The rest work in other settings.
+- In 621330, Version 1 clinicians grew from 13,310 in 2010 to 85,640 in 2024,
+  and their share of jobs there went from 21% to 35%.
+Some groups are withheld in a few years (psychologists in 2009, 2010, 2021 and
+2022 in one code or the other); those cells are left blank.
+
 **State-to-national check.** Where nothing is withheld, state sums are within
 ±40 of the national figure.
 

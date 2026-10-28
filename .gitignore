@@ -12,3 +12,5 @@ data/raw/nssats/*
 !data/raw/nssats/PULLED.txt
 tieout_independent/raw/
 tieout_independent/page_*
+data/raw/oews_industry/*
+!data/raw/oews_industry/PULLED.txt
