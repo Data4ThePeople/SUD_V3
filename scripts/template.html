@@ -109,7 +109,7 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 <body>
 <div class="wrap">
 <header>
-  <div class="kicker">Data 4 The People · NSDUH · N-SUMHSS · BLS · CDC WONDER · 2001–2024 · <span id="vtag"></span></div>
+  <div class="kicker">Data 4 The People · NSDUH · N-SUMHSS · BLS · CDC WONDER · 2001–2024</div>
   <h1>Demand Without A Door:<span class="l2">America's Substance-Use Treatment Gap</span></h1>
   <p class="sub">Millions of Americans live with a substance use disorder; far fewer can find a place to be treated. Explore two decades of prevalence, treatment capacity, how many people each treatment worker must serve, and the deadliest consequence - state by state, 2001-2024. Click any state to explore.</p>
 </header>
@@ -162,47 +162,24 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 <script>
 const D = /*DATA*/null;
 const GAP = {short: "PEOPLE / WORKER", name: "People per Worker", unit: "people with SUD per treatment worker"};
-// ---------- what "treatment workers" means in this version ----------
-const VARIANTS = {
-  v1_oews: {
-    tag: "Version 1 · OEWS clinicians",
-    bannerNote: "counselors and social workers in all settings · BLS OEWS",
-    cardNote: (g, y) => "counselors + social workers, all settings" + (val(g, "workers_note", y) != null ? " · sampling error up to " + Math.round(val(g, "workers_note", y)) + "%" : ""),
-    trendSuffix: " (OEWS counselors + social workers)",
-    workBreaks: [{after: 2020, at: 2020.5, label: "BLS method change", markOnly: true}],
-    hatchLegend: null,
-    hatchTip: () => "",
-    hatchCallout: () => "",
-    source: `BLS, Occupational Employment and Wage Statistics (OEWS), state employment of substance abuse and mental health counselors (SOC 21-1011 and 21-1014 through 2016; 21-1018, which combines them, from 2017) plus mental health and substance abuse social workers (21-1023). Counts all work settings and ownership types. Reference month is November for 2001-2002 and May from 2003.`,
-    limits: [
-      "<b>The worker count covers every setting.</b> OEWS counts these counselors and social workers wherever they work, including hospitals, residential programs, schools and prisons, so it is broader than outpatient care. It leaves out the self-employed. It counts clinicians only, not administrative staff.",
-      "<b>Worker counts are survey estimates.</b> Each state estimate pools six survey panels over three years and has a sampling error, shown on the workers card. Small states can move a lot from one year to the next because of sampling alone. BLS does not encourage using OEWS as a time series.",
-      "<b>Missing worker counts.</b> When BLS did not publish one of the occupations for a state and year, the worker total and the ratio are left blank.",
-      "<b>Substance use and mental health counselors cannot be separated.</b> From 2017 BLS publishes the two occupations only as one combined group (21-1018). To keep one definition across all years, both are counted in every year. The three occupation codes did not change in the 2010 or 2018 revisions of the occupation system, but the 2010-2011 and 2019-2020 estimates mix data coded under the old and new systems.",
-      "<b>BLS changed its estimation method in 2021.</b> From the May 2021 estimates, OEWS uses a model-based method (MB3). The trend line marks the change. 2001 and 2002 estimates refer to November; later years refer to May.",
-    ],
-  },
-  v2_qcew_private: {
-    tag: "Version 2 · QCEW private outpatient workers",
-    bannerNote: "private outpatient workers, NAICS 621420 + 621330 + 621112 · BLS QCEW",
-    cardNote: (g, y) => "private outpatient workers" + (val(g, "workers_flag", y) === "floor" ? " · some cells withheld"
-      : val(g, "workers_note", y) >= 0.005 ? " · government adds at least " + Math.round(val(g, "workers_note", y) * 100) + "% more not counted here" : ""),
-    trendSuffix: " (private, QCEW)",
-    workBreaks: [],
-    hatchLegend: "private count withheld, or 20%+ of workers are government employees",
-    hatchTip: (g, y) => val(g, "workers_flag", y) === "floor"
-      ? "Part of the private worker count was withheld by BLS, so the true value is lower."
-      : "Government employees are at least " + Math.round(val(g, "workers_note", y) * 100) + "% of this state's outpatient workers. This private-only count leaves them out, so the true value is lower.",
-    hatchCallout: n => "<b>Hatched states.</b> In " + S.year + ", " + n + " states either had part of their private worker count withheld by BLS or had government employees make up 20% or more of their outpatient workers. This version counts private workers only, so their " + GAP.name + " figure would overstate the ratio. They are shown hatched, not colored.",
-    source: `BLS, Quarterly Census of Employment and Wages (QCEW), annual average private employment in NAICS 621420 (outpatient mental health and substance abuse centers), 621330 (offices of mental health practitioners) and 621112 (offices of mental health physicians).`,
-    limits: [
-      "<b>Private workers only.</b> State and local government clinics are not counted. Where government employees are 20% or more of a state's disclosed outpatient workers, the state is hatched instead of colored. Where government cells are withheld, the government share is unknown, so some states may be understated without being hatched.",
-      "<b>Withheld worker counts.</b> BLS withholds a cell when publishing it could identify an employer. We never estimate a withheld value. Those states show ≥ for workers and are hatched on the " + GAP.name + " map.",
-      "<b>The worker count is broad on purpose.</b> It includes everyone on payroll at these businesses, including administrative staff and people who treat only mental health conditions. It leaves out the self-employed and substance use programs run inside hospitals.",
-    ],
-  },
+// ---------- what "treatment workers" means: OEWS counselors and social workers ----------
+const VV = {
+  bannerNote: "counselors and social workers in all settings · BLS OEWS",
+  cardNote: (g, y) => "counselors + social workers, all settings" + (val(g, "workers_note", y) != null ? " · sampling error up to " + Math.round(val(g, "workers_note", y)) + "%" : ""),
+  trendSuffix: " (OEWS counselors + social workers)",
+  workBreaks: [{after: 2020, at: 2020.5, label: "BLS method change", markOnly: true}],
+  hatchLegend: null,
+  hatchTip: () => "",
+  hatchCallout: () => "",
+  source: `BLS, Occupational Employment and Wage Statistics (OEWS), state employment of substance abuse and mental health counselors (SOC 21-1011 and 21-1014 through 2016; 21-1018, which combines them, from 2017) plus mental health and substance abuse social workers (21-1023). Counts all work settings and ownership types. Reference month is November for 2001-2002 and May from 2003.`,
+  limits: [
+    "<b>The worker count covers every setting.</b> OEWS counts these counselors and social workers wherever they work, including hospitals, residential programs, schools and prisons, so it is broader than outpatient care. It leaves out the self-employed. It counts clinicians only, not administrative staff.",
+    "<b>Worker counts are survey estimates.</b> Each state estimate pools six survey panels over three years and has a sampling error, shown on the workers card. Small states can move a lot from one year to the next because of sampling alone. BLS does not encourage using OEWS as a time series.",
+    "<b>Missing worker counts.</b> When BLS did not publish one of the occupations for a state and year, the worker total and the ratio are left blank.",
+    "<b>Substance use and mental health counselors cannot be separated.</b> From 2017 BLS publishes the two occupations only as one combined group (21-1018). To keep one definition across all years, both are counted in every year. The three occupation codes did not change in the 2010 or 2018 revisions of the occupation system, but the 2010-2011 and 2019-2020 estimates mix data coded under the old and new systems.",
+    "<b>BLS changed its estimation method in 2021.</b> From the May 2021 estimates, OEWS uses a model-based method (MB3). The trend line marks the change. 2001 and 2002 estimates refer to November; later years refer to May.",
+  ],
 };
-const VV = VARIANTS[D.variant];
 const YEARS = D.years, Y0 = YEARS[0];
 const ix = y => y - Y0;
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
@@ -530,7 +507,6 @@ function render() {
   modes.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.m === S.metric)));
   renderBanner(); renderLegend(); renderMap(); renderCallout(); renderPanel(); renderRank();
 }
-document.getElementById("vtag").textContent = VV.tag;
 // optional starting view from the URL, e.g. #m=gap&y=2010&s=37 (shareable links)
 {
   const h = new URLSearchParams(location.hash.slice(1));

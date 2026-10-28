@@ -1,23 +1,22 @@
 """Claude's tie-out: recompute every number the dashboard shows and compare with the data
-behind both versions (data/build/dashboard_v1_oews.json and dashboard_v2_qcew_private.json).
+behind the page (data/build/dashboard.json).
 
-Version 2 workers and deaths are recomputed from the raw BLS QCEW and CDC files by a separate
-code path from build.py. Version 1 workers are recomputed from the clean OEWS file (which
+Deaths are recomputed from the raw CDC files by a separate code path from build.py. Workers
+are recomputed from the clean OEWS file (which
 build_oews.py reads from the unchanged BLS zips and ties to the national totals). SUD values are checked against the clean NSDUH file (which
 check_nsduh_sud.py ties to SAMHSA's SAS datasets); facilities against the clean N-SSATS
 file (which check_nsumhss.py ties to SAMHSA's published tables). Derived values (per 100K,
 People per Worker) are recomputed here with the page's formulas.
 Writes data/build/tieout.csv; exits non-zero on any mismatch.
 """
-import csv, glob, io, json, sys
+import csv, io, json, sys
 from pathlib import Path
 from states import STATES
 
 ROOT = Path(__file__).resolve().parents[1]
-VARIANTS = ("v1_oews", "v2_qcew_private")
-DS = {v: json.loads((ROOT / f"data/build/dashboard_{v}.json").read_text()) for v in VARIANTS}
+VARIANTS = ("v1_oews",)
+DS = {"v1_oews": json.loads((ROOT / "data/build/dashboard.json").read_text())}
 YEARS = DS["v1_oews"]["years"]
-GOV_HATCH = 0.20
 NAME_TO_KEY = {n: f for f, _, n in STATES} | {"United States": "US"}
 POSTAL_TO_KEY = {p: f for f, p, _ in STATES}
 results = []
@@ -41,33 +40,7 @@ def one(variant, metric, key, year, expected, tol):
     results.append((variant, metric, key, year, expected, got, "ok" if ok else "MISMATCH"))
 
 
-# --- version 2 workers from raw QCEW rows: private only, hatched when withheld or 20%+ government ---
-priv, pfloor, gov = {}, {}, {}
-for f in sorted(glob.glob(str(ROOT / "data/raw/qcew/qcew_*.csv"))):
-    for r in csv.DictReader(open(f)):
-        if r["industry_code"] not in ("621420", "621330", "621112") or r["own_code"] not in ("2", "3", "5"):
-            continue
-        if r["agglvl_code"] == "58" and r["area_fips"][:2] in {s[0] for s in STATES}:
-            key = r["area_fips"][:2]
-        elif r["agglvl_code"] == "18":
-            key = "US"
-        else:
-            continue
-        k = (key, int(r["year"]))
-        withheld = r["disclosure_code"] == "N"
-        emp = 0 if withheld else int(float(r["annual_avg_emplvl"]))
-        if r["own_code"] == "5":
-            priv[k] = priv.get(k, 0) + emp
-            pfloor[k] = pfloor.get(k, False) or withheld
-        else:
-            gov[k] = gov.get(k, 0) + emp
-for k, v in priv.items():
-    share = gov.get(k, 0) / (gov.get(k, 0) + v) if gov.get(k, 0) + v else 0
-    flag = "floor" if pfloor[k] else ("public" if share >= GOV_HATCH else None)
-    cmp("workers", *k, v, only=("v2_qcew_private",))
-    cmp("workers_flag", *k, flag, only=("v2_qcew_private",))
-
-# --- version 1 workers from the clean OEWS file: 21-1011 + 21-1014 (to 2016) or 21-1018 (2017 on),
+# --- workers from the clean OEWS file: 21-1011 + 21-1014 (to 2016) or 21-1018 (2017 on),
 # plus 21-1023; complete only when every part is published ---
 NAME_KEY = NAME_TO_KEY
 parts = {}
@@ -81,8 +54,8 @@ for key in [s[0] for s in STATES] + ["US"]:
         codes = ["21-1018", "21-1023"] if y >= 2017 else ["21-1011", "21-1014", "21-1023"]
         got = [parts.get((key, y, c)) for c in codes]
         ok = all(p and p[0] and p[1] != "**" for p in got)
-        cmp("workers", key, y, sum(float(p[0]) for p in got) if ok else None, only=("v1_oews",))
-        cmp("workers_flag", key, y, None, only=("v1_oews",))
+        cmp("workers", key, y, sum(float(p[0]) for p in got) if ok else None)
+        cmp("workers_flag", key, y, None)
 
 
 # --- deaths and population from raw WONDER exports ---

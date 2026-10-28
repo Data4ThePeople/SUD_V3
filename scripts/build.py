@@ -1,5 +1,8 @@
 """Join the cleaned sources into data/build/panel.csv and data/build/dashboard.json.
 
+The page's "treatment workers" are OEWS counselors and social workers (oews below). The QCEW
+columns stay in panel.csv for reference.
+
 One row per geography (51 states + United States) and year, 2001-2024.
 Every value is either published by the source or a ratio of two published values.
 Nothing is filled, interpolated or estimated. See DATASETS.md for each source.
@@ -9,12 +12,13 @@ Metrics
   sud_count, _lo, _hi          NSDUH published count (people, age 12+)
   estabs                       N-SSATS / N-SUMHSS facilities offering outpatient SUD care
   estabs_per100k               estabs / WONDER population * 100,000
+  oews                         OEWS 21-1011 + 21-1014 (to 2016) or 21-1018 (2017 on) + 21-1023; blank
+                               unless every part is published. This is "workers" on the page.
   workers                      QCEW annual average employment, NAICS 621420 + 621330 + 621112,
-                               private + state + local; sum of disclosed cells
+                               private + state + local; sum of disclosed cells (reference only)
   workers_floor                True when any of those cells is withheld, so workers is a minimum
-  workers_private(_floor)      the same, private ownership only (shown only where workers stand alone)
-  gap                          sud_count / workers (people with SUD per worker); when workers_floor
-                               is True the value is only a maximum, and the map shows it hatched gray
+  workers_private(_floor)      the same, private ownership only (reference only)
+  gap                          sud_count / oews (people with SUD per treatment worker)
   deaths, death_rate           WONDER drug overdose + alcohol-induced, crude rate per 100,000
   deaths_drug, deaths_alcohol  the two parts, with their published crude rates
 """
@@ -153,7 +157,7 @@ def main():
         raise SystemExit("join changed the row count")
 
     panel["estabs_per100k"] = panel.estabs / panel.population * 1e5
-    panel["gap"] = panel.sud_count / panel.workers
+    panel["gap"] = panel.sud_count / panel.oews
     for c in ("workers_floor", "workers_private_floor"):
         panel[c] = panel[c].fillna(False).astype(bool)
 
@@ -164,22 +168,14 @@ def main():
     print(f"{len(panel)} rows")
 
 
-GOV_HATCH = 0.20  # V2: hatch when government is at least this share of disclosed workers
-
+# Treatment workers on the page: OEWS counselors and social workers (Eric, 2026-10-28). The QCEW
+# private version (hatched where withheld or 20%+ government) was compared and set aside; it is
+# in git history at ad2d027.
 VARIANTS = {
     "v1_oews": dict(
-        label="Version 1: OEWS clinicians",
         workers=lambda p: p.oews,
         flag=lambda p: pd.Series([None] * len(p), index=p.index),
         note=lambda p: p.oews_rse_max,
-    ),
-    "v2_qcew_private": dict(
-        label="Version 2: QCEW private outpatient workers",
-        workers=lambda p: p.workers_private,
-        flag=lambda p: pd.Series(
-            ["floor" if f else ("public" if s >= GOV_HATCH else None)
-             for f, s in zip(p.workers_private_floor, p.gov_share_min.fillna(0))], index=p.index),
-        note=lambda p: p.gov_share_min,
     ),
 }
 
@@ -206,8 +202,8 @@ def write_variant(panel, name, meta):
                      **{out: [jsonable(v) for v in g[src]] for src, out in keep.items()}}
     out = {"variant": name, "years": list(YEARS), "geo": data,
            "paths": json.loads((ROOT / "data/build/state_paths.json").read_text())}
-    (ROOT / f"data/build/dashboard_{name}.json").write_text(json.dumps(out, separators=(",", ":")))
-    print(f"dashboard_{name}.json {len(json.dumps(out)) // 1024} KB")
+    (ROOT / "data/build/dashboard.json").write_text(json.dumps(out, separators=(",", ":")))
+    print(f"dashboard.json {len(json.dumps(out)) // 1024} KB")
 
 
 if __name__ == "__main__":

@@ -465,29 +465,27 @@ Some groups are withheld in a few years (psychologists in 2009, 2010, 2013, 2021
 **State-to-national check.** Where nothing is withheld, state sums are within
 ±40 of the national figure.
 
-## Two versions of People per Worker
+## Treatment workers and People per Worker (decision 2026-10-28)
 
-People per Worker = SAMHSA's count of people with SUD ÷ treatment workers. The
-dashboard is built twice, with two worker counts, so they can be compared.
+People per Worker = SAMHSA's count of people with SUD ÷ treatment workers.
 
-**Version 1: OEWS clinicians** (`dist/v1-oews/`). Substance abuse and mental
-health counselors (21-1011 + 21-1014 through 2016; 21-1018 from 2017) plus
-mental health and substance abuse social workers (21-1023). All settings and
-ownerships. A state-year is shown only when every part is published. 1,173 of
-1,224 state-years have a value. The 2020|2021 method change is marked on the
+**Treatment workers on the page are OEWS counselors and social workers.**
+Substance abuse and mental health counselors (21-1011 + 21-1014 through 2016;
+21-1018 from 2017) plus mental health and substance abuse social workers
+(21-1023), in all settings and ownerships. A state-year has a value only when
+every part is published. 1,173 of 1,224 state-years have a value, and every
+year from 2022 on is complete. The 2020|2021 BLS method change is marked on the
 worker trend line.
 
-**Version 2: QCEW private outpatient workers** (`dist/v2-qcew-private/`).
-Private annual average employment in NAICS 621420 + 621330 + 621112. A
-state-year is hatched, not colored, when either:
-- part of the private count is withheld (100 state-years), so People per Worker
-  is only a maximum; or
-- state and local government employees are 20% or more of the disclosed
-  workers in the three codes (56 state-years). A private-only count leaves
-  them out, so People per Worker would overstate the ratio. Withheld
-  government cells count as zero here, so this share is a minimum.
+**Compared and set aside: QCEW private outpatient workers.** Private employment
+in NAICS 621420 + 621330 + 621112, hatched where part of the private count was
+withheld (100 state-years) or government workers were 20% or more of the
+disclosed total (56 state-years). The OEWS job mix above shows that about a
+third of the jobs in 621420 and 621330 are counselors and social workers. This
+version is in git history at commit ad2d027.
 
-156 of 1,224 state-years are hatched in Version 2.
+QCEW columns stay in `data/build/panel.csv` for reference. They are not shown on
+the page.
 
 ## County Business Patterns (Census)
 

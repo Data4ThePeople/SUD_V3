@@ -2,20 +2,18 @@
 
 ## Claude's tie-out (2026-10-28)
 
-`scripts/tieout.py` recomputes each value the dashboard shows and compares it with the
-data behind both versions, `data/build/dashboard_v1_oews.json` and
-`dashboard_v2_qcew_private.json`:
-- Version 2 workers and their hatch flags come straight from the raw BLS QCEW rows,
-  and deaths from the raw CDC exports, each by a code path separate from `build.py`;
-- Version 1 workers come from the clean OEWS file, which `build_oews.py` reads from the
-  unchanged BLS zips;
+`scripts/tieout.py` recomputes each value the dashboard shows and compares it with
+`data/build/dashboard.json`:
+- deaths come from the raw CDC exports, by a code path separate from `build.py`;
+- workers (OEWS counselors and social workers) come from the clean OEWS file, which
+  `build_oews.py` reads from the unchanged BLS zips;
 - SUD values come from the NSDUH clean file, which `check_nsduh_sud.py` ties to SAMHSA's
   SAS datasets;
 - facility counts come from the N-SSATS / N-SUMHSS clean file, which `check_nsumhss.py`
   ties to SAMHSA's published tables.
 
-**Result (two versions, 2026-10-28): 28,186 values checked, 0 mismatches.** Every metric
-array has 24 years, and all 52 geographies are present in both files.
+**Result (OEWS workers, 2026-10-28): 14,093 values checked, 0 mismatches.** Every metric
+array has 24 years, and all 52 geographies are present.
 
 `scripts/validate_sums.py` checks that the states add up to the national figure:
 
@@ -87,9 +85,9 @@ WONDER it used Eric's raw exports, because the API refuses queries by state.
 **Words that need Eric's decision (his text):** subtitle items 3, 4, and 5 in the agent's
 table. They go to Eric as numbered proposals.
 
-**Not yet checked independently:** the two worker versions (OEWS clinicians and QCEW
-private with hatching) were added after the independent tie-out. The independent agent
-checked QCEW all-ownership workers, not OEWS or the private-only hatch rule.
+**Not yet checked independently:** the OEWS worker count, which replaced QCEW after the
+independent tie-out above. A second independent tie-out of the worker series and People
+per Worker is running.
 
 **Not checked by either tie-out:** facility years 2005-2011 and 2014-2018, which the
 independent agent did not rebuild (the main tie-out covers every year), and SAMHSA's

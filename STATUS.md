@@ -35,3 +35,5 @@ None.
 - 2026-10-28 Revised: with 621330/621112 added, about 30 states a year (12 in 2024) have a withheld worker cell. Gap Score map colors only complete states; floor states are hatched gray and show "at most" in hover and ranking. Where workers stand alone (card, trend line) a switch shows all ownership or private only.
 - 2026-10-28 Eric: rename "Gap Score" to "People per Worker"; keep scales 0-150+ (2001-2019) and 25-200+ (2022-2024).
 - 2026-10-28 Eric: People per Worker was choppy (483 of 1,020 complete under QCEW private + state + local). Built two versions for comparison: V1 OEWS clinicians (dist/v1-oews/) and V2 QCEW private, hatched when withheld or government is 20%+ (dist/v2-qcew-private/, 156 state-years hatched). OEWS code history checked against SOC crosswalks. Tie-out: 28,186 values, 0 mismatches.
+- 2026-10-28 Pulled OEWS national industry job mix 2002-2024: counselors and MHSA social workers are about a third of jobs in 621420 and 621330.
+- 2026-10-28 Eric: go with Version 1 (OEWS counselors and social workers). Single page at dist/index.html. Tie-out: 14,093 values, 0 mismatches. Second independent tie-out of the worker series started.

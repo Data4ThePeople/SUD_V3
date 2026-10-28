@@ -1,5 +1,6 @@
 """Source coverage: for each metric and year, how many of the 51 states have a published
-value, how many are withheld (shown as a floor/maximum), and how many have none.
+value and how many have none. Workers are OEWS counselors and social workers, blank unless
+every occupation is published.
 Writes data/build/coverage.csv and prints a compact table."""
 from pathlib import Path
 import pandas as pd
@@ -13,10 +14,8 @@ for y, g in st.groupby("year"):
         year=y,
         sud_published=int(g.sud_pct.notna().sum()),
         facilities_published=int(g.estabs.notna().sum()),
-        workers_complete=int((g.workers.notna() & ~g.workers_floor).sum()),
-        workers_floor=int(g.workers_floor.sum()),
-        gap_complete=int((g.gap.notna() & ~g.workers_floor).sum()),
-        gap_max_only=int((g.gap.notna() & g.workers_floor).sum()),
+        workers_published=int(g.oews.notna().sum()),
+        people_per_worker=int(g.gap.notna().sum()),
         deaths_published=int(g.deaths.notna().sum()),
     ))
 out = pd.DataFrame(rows)
