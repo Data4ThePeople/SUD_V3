@@ -363,8 +363,10 @@ are not in git because of their size. `scripts/build_nsumhss.py` builds
 **Coverage.**
 - 2000 and 2002-2024. **No survey in 2001.**
 - The reference date is the end of March, except 2000 (October 1).
-- **Response rates:** 89% to 97% through 2020; 79% in 2021, 88% in 2022, 84% in
-  2023 and 90% in 2024. The 2021-2024 rates are for substance-use facilities.
+- **Response rates:** 89% to 97% through 2020. For substance-use facilities:
+  77.1% in 2021, 86.8% in 2022, 83.8% in 2023 and 90.1% in 2024. The overall
+  2021 rate across all facilities was 78.83%. The page uses the substance-use
+  rates.
 - **Nonrespondents are not counted and nothing is imputed for them**, so every
   count is a floor.
 - Out of scope: halfway houses that offer no treatment, solo practices the state

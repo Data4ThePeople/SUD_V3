@@ -331,7 +331,7 @@ function renderLegend() {
     ? "⚠ 2022-2024 use the redesigned NSDUH (DSM-5, web + in-person interviews). SAMHSA says these are not comparable to 2019 and earlier, so the color scale changes at 2022."
     : S.year === 2001 ? "⚠ 2001 comes from the NHSDA, the survey's earlier version. SAMHSA says it is not comparable to 2003 and later."
     : "⚠ 2022 and later use a redesigned survey on a different color scale. 2002, 2015, 2020 and 2021 have no state estimates.";
-  if (m === "estab") e = S.year === 2001 ? "⚠ SAMHSA ran no facility survey in 2001." : S.year >= 2021 ? "⚠ From 2021 the facility survey merged with the mental health facility survey; counts are not fully comparable to 2020 and earlier." : "Facilities that report offering outpatient substance use treatment, all ownership types.";
+  if (m === "estab") e = S.year === 2001 ? "⚠ SAMHSA ran no facility survey in 2001." : S.year >= 2021 ? "⚠ In 2021 the facility survey merged with the mental health facility survey and its response rate dropped. The trend line breaks there." : "Facilities that report offering outpatient substance use treatment, all ownership types.";
   if (m === "death") e = "Crude rates, not age adjusted. Drug overdose (X40-X44, X60-X64, X85, Y10-Y14) plus alcohol-induced causes.";
   document.getElementById("era").textContent = e;
 }
@@ -345,8 +345,10 @@ function renderCallout() {
     else p.push("<b>How years are assigned.</b> SAMHSA publishes state estimates for two-year windows. Each window is shown at its second year (2023-2024 is shown as 2024). Years with no window ending in them are left blank.");
   }
   if (m === "gap") {
-    const n = Object.entries(D.geo).filter(([k, g]) => k !== "US" && cellState(g, "gap", y).kind === "floor").length;
-    p.push("<b>Hatched states.</b> In " + y + ", " + n + " states had part of their worker count withheld by BLS to protect employer privacy. Their " + GAP.name + " figure can only be shown as a maximum, so they are not colored.");
+    const n = Object.entries(D.geo).filter(([k, g]) => k !== "US" && val(g, "workers_floor", y)).length;
+    p.push(val(D.geo.US, "sud_count", y) == null
+      ? "<b>No " + GAP.name + " figures for " + y + ".</b> SAMHSA published no state SUD estimates for this year, so the ratio cannot be computed."
+      : "<b>Hatched states.</b> In " + y + ", " + n + " states had part of their worker count withheld by BLS to protect employer privacy. Their " + GAP.name + " figure can only be shown as a maximum, so they are not colored.");
   }
   if (m === "estab") p.push("<b>What counts as a facility.</b> A site that tells SAMHSA it offers outpatient substance use treatment, in any ownership. Facilities that did not respond to the survey are not counted: 3% to 11% of eligible facilities from 2000 to 2020, and 10% to 23% from 2021 to 2024.");
   if (m === "death") p.push("<b>What is counted.</b> Deaths whose underlying cause was a drug overdose or an alcohol-induced cause, such as alcoholic liver disease. Each death is counted once." + (y === 2023 ? " North Carolina's 2023 count is short: CDC says over 900 overdose deaths were recoded after the file closed." : ""));
@@ -468,7 +470,7 @@ new ResizeObserver(() => renderTrend()).observe(trendSvg);
 document.getElementById("notes").innerHTML = `
 <h3>Sources</h3>
 <ul>
-<li><b>Demand:</b> SAMHSA, National Survey on Drug Use and Health (NSDUH), state model-based estimates of people 12 and older with a past-year substance use disorder, two-year windows 2000-2001 through 2023-2024. Counts and 95% intervals are SAMHSA's published figures.</li>
+<li><b>Demand:</b> SAMHSA, National Survey on Drug Use and Health (NSDUH), state model-based estimates of people 12 and older with a past-year substance use disorder, two-year windows 2000-2001 through 2023-2024. Counts and 95% intervals are SAMHSA's own figures, from its published tables and, for 2000-2001 through 2008-2009, its small area estimation dataset.</li>
 <li><b>Treatment facilities:</b> SAMHSA, National Survey of Substance Abuse Treatment Services (N-SSATS, 2000-2020) and National Substance Use and Mental Health Services Survey (N-SUMHSS, 2021-2024). Facilities that offer outpatient substance use treatment, all ownership types.</li>
 <li><b>Treatment workers:</b> BLS, Quarterly Census of Employment and Wages (QCEW), annual average employment in NAICS 621420 (outpatient mental health and substance abuse centers), 621330 (offices of mental health practitioners) and 621112 (offices of mental health physicians), private plus state and local government.</li>
 <li><b>Deaths and population:</b> CDC WONDER, Underlying Cause of Death 1999-2020 (used for 2001-2017) and 2018-2024 Single Race (2018-2024). The two agree exactly for 2018-2020.</li>
@@ -481,8 +483,8 @@ document.getElementById("notes").innerHTML = `
 <li><b>The worker count is broad on purpose.</b> It includes everyone on payroll at these businesses, including administrative staff and people who treat only mental health conditions. It leaves out the self-employed and substance use programs run inside hospitals. It does not count federal facilities such as the VA.</li>
 <li><b>Facility counts are a floor.</b> Facilities that did not answer SAMHSA's survey are not counted. The survey merged with the mental health facility survey in 2021, and its response rate dropped that year.</li>
 <li><b>NSDUH leaves out people living in institutions</b>, such as prisons, jails and hospitals, and people experiencing homelessness who are not in shelters.</li>
-<li><b>Death counts.</b> Crude rates, not age adjusted. Alcohol-induced deaths are mostly chronic causes such as alcoholic liver disease. CDC notes that North Carolina's 2023 overdose count is short by more than 900 deaths recoded after the file closed, and that unusual coding of ill-defined causes lowered some counts in California (2001), Georgia (2008-2009) and New Jersey (2009).</li>
-<li><b>${GAP.name} is a ratio, not a caseload.</b> It divides SAMHSA's estimated count of people with SUD by the number of outpatient workers. It does not show how many people seek or receive treatment.</li>
+<li><b>Death counts.</b> Crude rates, not age adjusted. Alcohol-induced deaths are mostly chronic causes such as alcoholic liver disease. CDC notes that North Carolina's 2023 overdose count is short by more than 900 deaths recoded after the file closed, CDC also flags unusually high counts of ill-defined causes in California (2001) and Georgia (2008-2009), and says this lowered New Jersey's 2009 count of unintentional poisonings.</li>
+<li><b>${GAP.name} is a ratio, not a caseload.</b> It divides SAMHSA's estimated count of people with SUD by the number of outpatient workers. It does not show how many people seek or receive treatment. The SUD count covers a two-year window; the worker count is for the window's second year (for example, 2023-2024 people with SUD over 2024 workers).</li>
 </ul>`;
 
 // ---------- render ----------

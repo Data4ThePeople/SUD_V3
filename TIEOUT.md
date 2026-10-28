@@ -49,3 +49,42 @@ measured, withheld, or missing.
 | NSDUH leaves out people in institutions and people experiencing homelessness who are not in shelters | NSDUH target population (civilian, noninstitutionalized) | Partly supported. The institutions part is in our files; the shelters wording has not been checked against a saved SAMHSA document |
 | 988: call or text, free, confidential, 24/7 | 988lifeline.org: "Call, text, or chat... available 24/7/365. Your conversations are free and confidential." | Supported |
 | FindTreatment.gov is SAMHSA's locator; enter a ZIP code | Eric's instruction; the site loads by script, so it could not be fetched. "Free and confidential" was removed because it could not be checked | Partly supported |
+
+## Independent tie-out (fresh agent, 2026-10-28)
+
+A fresh agent got the sources, `DATASETS.md`, and `dist/index.html`, but not our numbers
+or code. It pulled QCEW, NSDUH, and N-SSATS/N-SUMHSS again from the publishers and
+recomputed everything with its own scripts, which are in `tieout_independent/`. For CDC
+WONDER it used Eric's raw exports, because the API refuses queries by state.
+
+**Numbers: no differences.**
+
+| Source | Values compared | Differences |
+|---|---|---|
+| WONDER | 11,136 | 0 |
+| NSDUH | 7,488 | 0 beyond the 2-decimal rounding of the 2009-2010 window |
+| QCEW | 9,984 (all 24 years) | 0 |
+| Facilities | 561 (11 of 23 survey years) | 0 |
+| Derived ratios | 2,496 | 0 |
+
+**Words: fixed in response.**
+- The hatched-states callout printed "0 states" in years with no SUD estimate. It now
+  counts withheld worker cells directly, and it says so when no ratio can be computed.
+- The R99 note now matches CDC's wording. Only New Jersey's note says other counts were
+  lowered.
+- "Not fully comparable" on the facility survey was our own inference. The page now
+  states what happened instead.
+- The demand source wording now names SAMHSA's small area estimation dataset for
+  2000-2001 through 2008-2009.
+- A method note now explains that each ratio divides a two-year SUD count by the worker
+  count for the window's second year.
+- The 2021 response rate in DATASETS.md now gives the substance-use basis (77.1%) that
+  the page uses, and the overall rate (78.83%).
+
+**Words that need Eric's decision (his text):** subtitle items 3, 4, and 5 in the agent's
+table. They go to Eric as numbered proposals.
+
+**Not checked by either tie-out:** facility years 2005-2011 and 2014-2018, which the
+independent agent did not rebuild (the main tie-out covers every year), and SAMHSA's
+published 2024 outpatient total of 13,328, which is 19 above our count. That gap is
+still unexplained.
