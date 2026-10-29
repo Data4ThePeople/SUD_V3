@@ -141,8 +141,33 @@ question we have not checked; look for research on certifier practice.
 5. Loan repayment for behavioral health workers: moderate for retention, limited for supply.
 
 **Check before writing:**
-- Vermont's workers per 100K fell from 423 (2019) to 234 (2024) in our data. Check whether this is
-  real or the 2021 BLS method change (MB3) before using Vermont as a model.
+- Vermont (checked 2026-10-29): our count fell from 2,640 (2019) to 1,520 (2024). Both codes fell
+  (21-1018 counselors 1,810 to 1,150; 21-1023 social workers 830 to 370), starting in 2020, before
+  the 2021 BLS method change. Over the same years Vermont's "community and social service
+  specialists, all other" (21-1099) rose from 530 to 2,540, and the total of all 21-10xx/21-109x
+  codes changed much less (about 10,400 to 9,300). This looks at least partly like employers
+  reporting the same jobs under a different code. Do not use Vermont's worker trend as a finding;
+  if it matters, ask BLS or the Vermont Department of Labor. Vermont's facility count rose
+  (42 in 2019 to 54 in 2024).
+
+**The Medicaid angle going forward (Eric, 2026-10-29):**
+- H.R. 1 (2025 reconciliation law): work requirements for expansion adults ages 19-64 start no
+  later than December 31, 2026. States must exempt people "participating in a substance use
+  disorder treatment program" (KFF). Whether people with SUD who are not in treatment are exempt
+  (for example as medically frail) still needs checking in the law text.
+- CBO, as summarized by KFF: the law reduces federal health spending by over $1 trillion and adds
+  10 million uninsured; the work requirement alone cuts federal Medicaid spending $326 billion over
+  10 years and adds 5.3 million uninsured in 2034. Provider tax limits for expansion states start
+  falling October 1, 2027; state-directed payment cuts start January 1, 2028.
+- KFF's summary does not call it the largest Medicaid cut ever. Find a source before using that
+  phrase, or use CBO's dollar figure instead.
+- The tie to our data: the states that grew facilities fastest after 2014 were early expansion
+  states, and the work requirements apply to the expansion group. Research shows expansion raised
+  Medicaid-paid treatment strongly; its effect on facility and worker counts is weak or mixed. So
+  the supported framing is "Medicaid now pays for much of this treatment," not "Medicaid built
+  these facilities."
+- Sources: https://www.kff.org/medicaid/health-provisions-in-the-2025-federal-budget-reconciliation-law/ ;
+  https://www.kff.org/medicaid/the-impact-of-h-r-1-on-two-medicaid-eligibility-rules/
 - OEWS leaves out the self-employed, so states with more private-practice counselors are undercounted.
 - Most research measures Medicaid-billing providers or service use, not total capacity.
 
