@@ -397,8 +397,8 @@ change tables in `data/raw/nsduh_change/` (URLs in `PULLED.txt`), ages 12+:
   is "increased" or "decreased" only with an "a" marker; the script checks that the
   printed p value is below 0.05 whenever the marker is present. Everything else is "no
   significant change". Nothing is tested or computed by us.
-- **p values** are shown as SAMHSA prints them, to 3 decimals. SAMHSA prints 0.000 for
-  values below 0.0005; the page shows these as "p < 0.001".
+- **p values** are shown as SAMHSA prints them, to 3 decimals. SAMHSA's notes to Tables 21,
+  22 and 24 say a p value printed as 0.000 means p < 0.001; the page shows these as "p < 0.001".
 - **What SAMHSA does not publish:** no test across the 2021 redesign, no test of
   2021-2022 vs 2023-2024, and no long-term test for drug use disorder or any SUD. The
   two 2022-2024 windows share 2023.

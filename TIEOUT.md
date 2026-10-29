@@ -129,3 +129,13 @@ and CDC WONDER: 0 differences. Three wording or logic points were fixed: the sta
 give the alcohol exception for 2015, the alcohol trend line is drawn across 2015 because
 SAMHSA says that change did not affect alcohol use disorder, and the sources line names DSM-5
 for alcohol. Full report: `tieout_independent/alcohol/REPORT.md`.
+
+## Independent tie-out of the Change view (fresh agent, 2026-10-29)
+
+1,291 values compared with SAMHSA's change tables (downloaded again) and CDC WONDER: 0
+differences. The claims that SAMHSA publishes no test across the 2021 redesign, no 2021-2022 vs
+2023-2024 test and no long-term drug or any-SUD test were checked against SAMHSA's release
+pages. Fixed in response: "+0%" for small changes (the sign now follows the rounded value), the
+death legend now shows "-60%" and "+60%+", the "fewer than 20 deaths" sentence (a 1999-2020 rule)
+is replaced, and DATASETS.md now uses SAMHSA's own "< 0.001" note. Wording points go to Eric as
+proposals. Full report: `tieout_independent/change/REPORT.md`.
