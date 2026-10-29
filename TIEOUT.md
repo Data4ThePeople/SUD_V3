@@ -12,8 +12,10 @@
 - facility counts come from the N-SSATS / N-SUMHSS clean file, which `check_nsumhss.py`
   ties to SAMHSA's published tables.
 
-**Result (OEWS workers, drug and alcohol views, 2026-10-28): 29,745 values checked, 0
-mismatches.** Every metric
+**Result (OEWS workers, drug and alcohol views, Change view, 2026-10-29): 30,577 values
+checked, 0 mismatches.** The Change view checks cover each SAMHSA change-test row reaching
+the page unchanged, each result agreeing with SAMHSA's marker, p value and direction, and
+each before and after estimate matching our level estimates within 0.005 points. Every metric
 array has 24 years, and all 52 geographies are present.
 
 `scripts/validate_sums.py` checks that the states add up to the national figure:

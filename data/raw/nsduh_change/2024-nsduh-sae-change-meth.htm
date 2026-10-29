@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N898TT');</script>
+<!-- End Google Tag Manager -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="P3Pv1" href="http://www.samhsa.gov/w3c/p3p.xml">
+<title>Methodology Used to Estimate the Bayes Significance Level for the Null Hypothesis of No Change between the 2022&#8209;2023 and 2023&#8209;2024 State Population Percentages</title>
+<meta name="keywords" content="small area estimation (SAE); state-level estimates; survey-weighted hierarchical Bayes methodology; Gibbs sampling; pseudo hierarchical Bayes; illicit drug use; alcohol use; tobacco use; nicotine use; perceptions of great risk from using substances; pain reliever misuse; alcohol use disorder; drug use disorder; pain reliever use disorder; substance use disorder; substance use treatment, needing but not receiving treatment for substance use; any mental illness; serious mental illness; co-occurring substance use disorder and mental illness; received mental health treatment; major depressive episode; suicidal thoughts and behavior; opioid misuse; opioid use disorder">
+<meta name="description" content="state estimates of substance use and mental disorders">
+<meta name="AUTHOR" content="SAMHSA Center for Behavioral Health Statistics and Quality and RTI International">
+
+<link type="text/css" rel="stylesheet" href="https://www.samhsa.gov/data/themes/custom/samhsa_data/css/webready-html-content.css">
+
+
+	<style>
+		table.rti { width: 100%; padding: 5px;}
+		table.rti caption { text-align: left; font-weight: bold; }
+		table.rti th, td { padding: 1px 3px 1px 3px; white-space: nowrap; }
+		.rti thead th.left { text-align: left; }
+		.rti thead th { white-space: nowrap; text-align: center; }
+		table.rti tbody { text-align: right; }
+		table.rti tbody td { padding-right: 9px; text-align: right; }
+		table.rti tbody th { text-align: left; font-weight: normal; }
+		table.rti tbody td.hasfootref { padding-right: 3px; }
+		table.rti tbody th.bold { font-weight: bold; }
+		table.rti tr { vertical-align: bottom; }
+		table.rti tfoot th { text-align: left; font-weight: normal; font-size: 80%; white-space: normal; }
+		table.rti tfoot { border-top: black 1px solid; }
+		/*This code helps with vertical spacing when you have superscripts or subscripts*/
+		sup, sub {vertical-align: baseline; position: relative; top: -6.4px; font-size: 80%; }
+		sub {top: 6.4px; }
+		h1, h2 { text-align: center }
+		.rti_herald { margin-top: 32px; }
+		div.endnotes { margin-top: 32px; border-top: solid 2px black; }
+		div.endnotes h2 { text-align: left; margin-top: 16px; }
+		div.endnotes p { font-size: 80%; }
+		.center { text-align: center; }
+		.left { text-align: left; }
+		.right { text-align: right; }
+		.underlinedtext, a:hover, a:active { text-decoration: underline;}
+		a:link { text-decoration: underline; color: #1f419a; }
+		a:visited { text-decoration: underline; color: #cd3835; }
+		.italic { font-style: italic; }
+		.boldital { font-style: italic; font-weight: bold; }
+		.bold { font-weight: bold; }
+		.fs120 { font-size: 120%; }
+		p.tallequations { line-height: 40px; }
+		p.eq { margin-bottom: 20px; }
+		.hangingindent { padding-left: 37px; text-indent: -37px; font-size: 100%; line-height: 18px; }
+		.tabnote { font-size: 100%; margin-bottom:1px; }
+		.nowrap { white-space: nowrap; }
+		a.topbutton {
+	  		display: inline-block;
+			background-color: #000000;
+	  		border: none;
+	 		color: white;
+	 		padding: 1px 9px;
+	 		text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 15px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		a.tocbutton {
+	  		display: inline-block;
+	  		background-color: #000000;
+	  		border: none;
+	 		color: white;
+	 		padding: 1px 18.5px;
+	 		text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 15px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N898TT" title="hhsgoogletagmanager"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<noscript>
+<p>Your browser&rsquo;s Javascript is off. Hyperlinks on this page will not display an important message.</p>
+</noscript>
+
+<section id="topofpage">
+
+<h1>Methodology Used to Estimate the Bayes <br>
+Significance Level for the Null Hypothesis of No Change between<br>
+the 2022&#8209;2023 and 2023&#8209;2024 State Population Percentages</h1>
+
+<div>
+
+<p>This methodology document is a companion piece to the <em>National Surveys on Drug Use and Health: Comparison of the 2022&#8209;2023 and 2023&#8209;2024 Population Percentages (50&nbsp;States and the District of Columbia)</em> tables. These tables can be found on the <a href="https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/state-releases">NSDUH State Releases</a> web page. These tables present the 2022&#8209;2023 and 2023&#8209;2024 National Surveys on Drug Use and Health (NSDUHs) state estimates and an indication of the statistical significance of the difference or change (<em>p</em>&nbsp;value). These tables were produced for outcomes that were consistently defined across the two time periods and for which 2022&#8209;2023 and 2023&#8209;2024 state&#8208;level small area estimates were available.<sup><a href="#ftn1" id="ftnref1">1</a></sup> The moving average state estimates for the overlapping 2022&#8209;2023 and 2023&#8209;2024 time periods were obtained from independent applications of the survey&#8208;weighted hierarchical Bayes (SWHB) methodology; that is, the 2023&#8209;2024 models were fit independently of the previously fitted 2022&#8209;2023 models. This independent analysis approach was followed because there was no desire to revise the previously published 2022&#8209;2023 estimates. The methodology used to conduct statistical tests of significance for comparing 2022&#8209;2023 and 2023&#8209;2024 state population percentages is described here.</p>
+
+<p>Let <img src="images/sae-change-inline1-2024.png" alt="pi 1 sub s and a" width="37" height="22" style="position:relative;top:6pt"> and <img src="images/sae-change-inline2-2024.png" alt="pi 2 sub s and a" width="38" height="22" style="position:relative;top:6pt"> denote the 2022&#8209;2023 and 2023&#8209;2024 population percentages, respectively, for state&#8209;<em>s</em> and age group&#8209;<em>a</em>. The difference between <img src="images/sae-change-inline1-2024.png" alt="pi 1 sub s and a" width="37" height="22" style="position:relative;top:5.5pt"> and <img src="images/sae-change-inline2-2024.png" alt="pi 2 sub s and a" width="38" height="22" style="position:relative;top:5.5pt"> is defined in terms of the log&#8208;odds ratio (<img src="images/sae-change-inline3-2024.png" alt="lor sub s and a" width="28" height="17" style="position:relative;top:3.5pt">) as opposed to the simple difference because the posterior distribution of <img src="images/sae-change-inline3-2024.png" alt="lor sub s and a" width="28" height="17" style="position:relative;top:3pt"> is closer to Gaussian than the posterior distribution of the simple difference (<img src="images/sae-change-inline4-2024.png" alt="Pi 2 sub s and a minus pi 1 sub s and a represents the simple difference between the 2022-2023 and 2023-2024 prevalence rates." width="106" height="16" style="position:relative;top:5pt">). Let ln denote the natural logarithm, then <img src="images/sae-change-inline3-2024.png" alt="lor sub s and a" width="28" height="17" style="position:relative;top:3.5pt"> is defined as follows:</p>
+
+<figure id="eq1">
+<p class="center tallequations eq"><img src="images/sae-change-eq1-2024.gif" alt="Equation 1. Click link below to access long description." title="Equation 1" width="192" height="58" style="position:relative;top:17pt">.</p>
+<p class="center"><a href="#eq1desc">View Equation 1 Long Description</a></p>
+</figure>
+
+<p>The <em>p</em>&nbsp;value given in the above referenced tables is computed to test the null hypothesis of no difference (i.e., <img src="images/sae-change-inline5-2024.png" alt="Pi 2 sub s and a is equal to pi 1 sub s and a" width="106" height="16" style="position:relative;top:5pt"> or equivalently, <img src="images/sae-change-inline6-2024.png" alt="Log-odds ratio lor sub s and a is equal to zero" width="55" height="23" style="position:relative;top:5pt">). An estimate of <img src="images/sae-change-inline3-2024.png" alt="lor sub s and a" width="28" height="17" style="position:relative;top:3pt"> is
+given by</p>
+
+<figure id="eq2">
+<p class="center tallequations eq"><img src="images/sae-change-eq2-2024.gif" alt="Equation 2. Click link below to access long description." title="Equation 2" width="189" height="58" style="position:relative;top:17pt">,</p>
+<p class="center"><a href="#eq2desc">View Equation 2 Long Description</a></p>
+</figure>
+
+<p>where <img src="images/sae-change-inline7-2024.gif" alt="pi hat 1 sub s and a" width="35" height="25" style="position:relative;top:7pt"> and <img src="images/sae-change-inline8-2024.gif" alt="pi hat 2 sub s and a" width="37" height="25" style="position:relative;top:6pt"> are small area estimates of <img src="images/sae-change-inline1-2024.png" alt="pi 1 sub s and a" width="37" height="22" style="position:relative;top:5pt"> and <img src="images/sae-change-inline2-2024.png" alt="pi 2 sub s and a" width="38" height="22" style="position:relative;top:4.5pt">, respectively.</p>
+
+<p class="tallequations">Let <img src="images/sae-change-inline9-2024.gif" alt="Theta 1 hat equal the ratio of pi hat 1 sub s and a and 1 minus pi hat 1 sub s and a" width="83" height="51" style="position:relative;top:16pt"> and <img src="images/sae-change-inline10-2024.gif" alt="Theta 2 hat equal the ratio of pi hat 2 sub s and a and 1 minus pi hat 2 sub s and a" width="86" height="54" style="position:relative;top:17pt">, noting that subscript <em>sa</em> has been dropped from <img src="images/sae-change-inline11-2024.gif" alt="theta hat 1" width="17" height="25" style="position:relative;top:5pt"> and <img src="images/sae-change-inline12-2024.gif" alt="theta hat 2" width="17" height="26" style="position:relative;top:5pt"> in order to simplify the notation. An estimate of the posterior variance of <img src="images/sae-change-inline3-2024.png" alt="lor sub s and a" width="28" height="17" style="position:relative;top:3pt"> is given by the following formula:</p>
+
+<figure id="eq3">
+<p class="center eq"><img src="images/sae-change-eq3-2024.gif" alt="Equation 3. Click link below to access long description." title="Equation 3" width="351" height="30" style="position:relative;top:9pt">,</p>
+<p class="center"><a href="#eq3desc">View Equation 3 Long Description</a></p>
+</figure>
+
+<p>where <img src="images/sae-change-inline13-2024.gif" alt="the covariance between the natural logarithm of Theta 1 hat and the natural logarithm of Theta 2 hat" width="136" height="35" style="position:relative;top:10pt"> denotes the covariance between <img src="images/sae-change-inline14-2024.gif" alt="the natural logarithm of Theta 1 hat" width="43" height="28" style="position:relative;top:7pt"> and <img src="images/sae-change-inline15-2024.gif" alt="the natural logarithm of Theta 2 hat" width="43" height="28" style="position:relative;top:7pt">. This covariance is defined in terms of the associated correlation as follows:</p>
+
+<figure id="eq4">
+<p class="center eq"><img src="images/sae-change-eq4-2024.gif" alt="Equation 4. Click link below to access long description." title="Equation 4" width="474" height="37" style="position:relative;top:9pt">.</p>
+<p class="center"><a href="#eq4desc">View Equation 4 Long Description</a></p>
+</figure>
+
+<p>Note that <img src="images/sae-change-inline16-2024.gif" alt="variance v of the natural logarithm of Theta 1 hat" width="64" height="34" style="position:relative;top:8.5pt"> and <img src="images/sae-change-inline17-2024.gif" alt="variance v of the natural logarithm of Theta 2 hat" width="63" height="32" style="position:relative;top:8.5pt"> used here to calculate <img src="images/sae-change-inline18-2024.gif" alt="variance v of the estimate of the log-odds ratio, lor hat sub s and a" width="57" height="29" style="position:relative;top:6pt"> are the same posterior variances used in calculating 2022&#8209;2023 and 2023&#8209;2024 Bayesian confidence intervals, respectively.</p>
+
+<p class="tallequations">The correlation between <img src="images/sae-change-inline14-2024.gif" alt="the natural logarithm of Theta 1 hat" width="43" height="28" style="position:relative;top:7pt"> and <img src="images/sae-change-inline15-2024.gif" alt="the natural logarithm of Theta 2 hat" width="43" height="28" style="position:relative;top:7pt"> was obtained by simultaneously modeling the 2022, 2023, and 2024 NSDUH data. This simultaneous modeling approach was adopted based on the results of the validation study<sup><a href="#ftn2" id="ftnref2">2</a></sup> conducted for measuring change in the 1999&#8209;2000 and 2000&#8209;2001 state population percentages. For this simultaneous model, four age groups (12 to 17, 18 to 25, 26 to 34, and 35 or older) by 3 years (2022, 2023, and 2024), that is, 12 subpopulation&#8208;specific models, were fitted, each with its own set of fixed and random effects. These models used the same predictors (fixed effects) employed in the 2023&#8209;2024 small area estimation models for all 3 years. The general covariance matrices for the state and within&#8208;state random effects were <span class="nowrap">12 &times; 12</span> matrices corresponding to the 12 element (age <span class="nowrap">group &times; year)</span> vectors of random effects. Note that the survey&#8208;weighted, Bernoulli&#8208;type log likelihood employed in the SWHB methodology was appropriate for this simultaneous model because the 12 (age <span class="nowrap">group &times; year)</span> subpopulations were nonoverlapping. The correlation <img src="images/sae-change-inline19-2024.png" alt="between the natural logarithm of Theta 1 hat and the natural logarithm of Theta 2 hat" width="102" height="31" style="position:relative;top:8.5pt"> was approximated by the correlation calculated using the posterior distributions of <img src="images/sae-change-inline20-2024.gif" alt="the natural logarithm of pi 1 sub s and a divided by 1 minus pi 1 sub s and a" width="137" height="29" style="position:relative;top:7.5pt"> and <img src="images/sae-change-inline21-2024.gif" alt="the natural logarithm of pi 2 sub s and a divided by 1 minus pi 2 sub s and a" width="138" height="32" style="position:relative;top:9.5pt"> from the simultaneous model.</p>
+
+<p>Note that for four outcomes,<sup><a href="#ftn3" id="ftnref3">3</a></sup> the above&#8208;mentioned model did not converge. A different model based on simultaneous modeling of 2022&#8209;2023 and 2023&#8209;2024 data where 2023 data are repeated twice was used to obtain the correlations between 2022&#8209;2023 and 2023&#8209;2024 state estimates. This overlapping year model simultaneously fits eight subpopulation&#8208;specific models (i.e., four age groups &times; two overlapping time points [2022&#8209;2023 and 2023&#8209;2024]) instead of 12 subpopulation&#8208;specific models. Based on previous validation studies, this model is shown to underestimate the correlations,<sup><a href="#ftn4" id="ftnref4">4</a></sup> resulting in more conservative tests, meaning that fewer significant differences may have been able to be detected for these outcomes.</p>
+
+<p class="tallequations">To calculate the <span class="nowrap"><em>p</em> value</span> for testing the null hypothesis of no difference (<img src="images/sae-change-inline6-2024.png" alt="Log-odds ratio lor sub s and a is equal to zero" width="55" height="23" style="position:relative;top:5.5pt">), it is assumed that the posterior distribution of <img src="images/sae-change-inline3-2024.png" alt="lor sub s and a" width="28" height="17" style="position:relative;top:3pt"> is normal with estimated <img src="images/sae-change-inline22-2024.gif" alt="Mean is equal to estimate of the log-odds ratio, lor hat sub s and a." width="77" height="18" style="position:relative;top:4pt"> and <img src="images/sae-change-inline23-2024.gif" alt="Variance is equal to variance v of the estimate of the log-odds ratio, lor hat sub s and a." width="117" height="17" style="position:relative;top:4pt">. The Bayesian <span class="nowrap"><em>p</em> value</span> or significance level for the null hypothesis of no difference, <img src="images/sae-change-inline6-2024.png" alt="Log-odds ratio lor sub s and a is equal to zero" width="55" height="23" style="position:relative;top:5pt">, is <img src="images/sae-change-inline24-2024.gif" alt="The p value is equal to 2 times the probability of realizing a standard normal variate greater than or equal to the absolute value of a quantity z." width="174" height="21" style="position:relative;top:4.5pt">, where <img src="images/sae-change-inline25-2024.png" alt="capital Z" width="12" height="11" style="position:relative;top:0pt"> is a standard normal random variate, <img src="images/sae-change-inline26-2024.png" alt="Quantity z is the estimate of the log-odds ratio, lor hat sub s and a, divided by the square root of the variance v of the estimate of the log-odds ratio, lor hat sub s and a." width="89" height="50" style="position:relative;top:17pt">, and <img src="images/sae-change-inline27-2024.png" alt="absolute value of quantity z" width="41" height="14" style="position:relative;top:2pt"> denotes the absolute value of <img src="images/sae-change-inline28-2024.gif" alt="quantity z" width="8" height="7" style="position:relative;top:0pt">. This Bayesian significance level (or <em>p</em>&nbsp;value) for the null value of <img src="images/sae-change-inline3-2024.png" alt="lor sub s and a" width="28" height="17" style="position:relative;top:3pt">, say <img src="images/sae-change-inline29-2024.gif" alt="log-odds ratio lor sub zero" width="23" height="16" style="position:relative;top:4pt">, is defined following Rubin (1987)<sup><a href="#ftn5" id="ftnref5">5</a></sup> as the posterior probability for the collection of the <img src="images/sae-change-inline3-2024.png" alt="lor sub s and a" width="28" height="17" style="position:relative;top:3pt"> values that are less likely or have smaller posterior density, <img src="images/sae-change-inline30-2024.gif" alt="d of the log-odds ratio lor sub s and a" width="49" height="16" style="position:relative;top:3.5pt">, than the null (no change) value, <img src="images/sae-change-inline29-2024.gif" alt="log-odds ratio lor sub zero" width="23" height="16" style="position:relative;top:4pt">. That is,</p>
+
+<figure id="eq5">
+<p class="center tallequations eq"><img src="images/sae-change-eq5-2024.gif" alt="Equation 5. Click link below to access long description." title="Equation 5" width="289" height="24" style="position:relative;top:6pt">.<br>
+<a href="#eq5desc">View Equation 5 Long Description</a></p>
+</figure>
+
+<p>With the posterior distribution of <img src="images/sae-change-inline3-2024.png" alt="log-odds ratio lor sub s and a" width="28" height="17" style="position:relative;top:3pt"> approximately normal, <img src="images/sae-change-inline31-2024.gif" alt="the p value of log-odds ratio lor sub zero" width="94" height="22" style="position:relative;top:5pt"> is given by the above expression.</p>
+
+</div>
+
+<div class="endnotes">
+<h2>Endnotes</h2>
+
+<p><sup><a href="#ftnref1" id="ftn1">1</a></sup> For details, see Section&nbsp;B in <em>2023&#8209;2024 National Surveys on Drug Use and Health: Guide to State Tables and Summary of Small Area Estimation Methodology</em> on the <a href="https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/state-releases">NSDUH State Releases</a> web page.</p>
+
+<p><sup><a href="#ftnref2" id="ftn2">2</a></sup> See Appendix&nbsp;E, Section&nbsp;E.2, of the following report: Wright, D. (2003). <em>State estimates of substance use from the 2001 National Household Survey on Drug Abuse:  Volume&nbsp;II. Individual state tables and technical appendices</em> (HHS Publication No. SMA 03&#8209;3826, NHSDA Series H&#8209;20). Substance Abuse and Mental Health Services Administration, Office of Applied Studies.</p>
+
+<p><sup><a href="#ftnref3" id="ftn3">3</a></sup> The outcomes were cocaine use in the past year (Table&nbsp;6), heroin use in the past year (Table&nbsp;8), hallucinogen use in the past year (Table&nbsp;10), and methamphetamine use in the past year (Table&nbsp;11).</p>
+
+<p><sup><a href="#ftnref4" id="ftn4">4</a></sup> See Appendix&nbsp;E, Section&nbsp;E.1, of the following report: Wright, D. (2003). <em>State estimates of substance use from the 2001 National Household Survey on Drug Abuse:  Volume&nbsp;II. Individual state tables and technical appendices</em> (HHS Publication No. SMA 03&#8209;3826, NHSDA Series H&#8209;20). Substance Abuse and Mental Health Services Administration, Office of Applied Studies.</p>
+
+<p><sup><a href="#ftnref5" id="ftn5">5</a></sup> See the following reference: Rubin, D. B. (1987). <em>Multiple imputation for nonresponse in surveys</em> (Wiley Series in Probability and Mathematical Statistics: Applied Probability and Statistics). John Wiley &amp; Sons.</p>
+</div>
+
+<div class="endnotes">
+<h2>Long Descriptions for Equations</h2>
+
+<p id="eq1desc"><strong>Long description, Equation&nbsp;1:</strong> The log&#8208;odds ratio, lor sub s and a, is defined as the natural logarithm of the ratio of two quantities. The numerator of the ratio is pi 2 sub s and a divided by 1 minus pi 2 sub s and a. The denominator of the ratio is pi 1 sub s and a divided by 1 minus pi 1 sub s and a.</p>
+<p>Long description end. <a href="#eq1">Return to Equation&nbsp;1</a>.</p>
+
+<p id="eq2desc"><strong>Long description, Equation&nbsp;2:</strong> The estimate of the log&#8208;odds ratio, lor hat sub s and a, is defined as the natural logarithm of the ratio of two quantities. The numerator of the ratio is pi hat 2 sub s and a divided by 1 minus pi hat 2 sub s and a. The denominator of the ratio is pi hat 1 sub s and a divided by 1 minus pi hat 1 sub s and a, where pi 1 sub s and a represents the 2022&#8209;2023 state estimates and pi hat 2 sub s and a represents the 2023&#8209;2024 state estimates.</p>
+<p>Long description end. <a href="#eq2">Return to Equation&nbsp;2</a>.</p>
+
+<p id="eq3desc"><strong>Long description, Equation&nbsp;3:</strong> Variance v of the estimate of the log&#8208;odds ratio, lor hat sub s and a, is a function of three quantities: q1, q2, and q3. It is expressed as the sum of q1 and q2 minus q3. Quantity q1 is the variance v of the natural logarithm of Theta 1 hat, quantity q2 is the variance v of the natural logarithm of Theta 2 hat, and quantity q3 is 2 times the covariance between the natural logarithm of Theta 1 hat and the natural logarithm of Theta 2 hat.</p>
+<p>Long description end. <a href="#eq3">Return to Equation&nbsp;3</a>.</p>
+
+<p id="eq4desc"><strong>Long description, Equation&nbsp;4:</strong> The covariance between the natural logarithm of Theta 1 hat and the natural logarithm of Theta 2 hat is equal to the correlation between the natural logarithm of Theta 1 hat and the natural logarithm of Theta 2 hat multiplied by the square root of the product of the variance v of the natural logarithm of Theta 1 hat and variance v of the natural logarithm of Theta 2 hat.</p>
+<p>Long description end. <a href="#eq4">Return to Equation&nbsp;4</a>.</p>
+
+<p id="eq5desc"><strong>Long description, Equation&nbsp;5:</strong> The <span class="nowrap">p value</span> of log&#8208;odds ratio lor sub zero is equal to the probability of d of the log&#8208;odds ratio lor sub s and a when it is less than or equal to d of the log&#8208;odds ratio lor sub zero.</p>
+<p>Long description end. <a href="#eq5">Return to Equation&nbsp;5</a>.</p>
+</div>
+</section>
+
+<p><a href="#topofpage" class="topbutton">&#9650; TOP</a></p>
+
+</body>
+</html>

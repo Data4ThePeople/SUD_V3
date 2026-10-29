@@ -10,6 +10,7 @@
   --bg:#13161b; --panel:#191d23; --panel2:#1e232a; --line:#2a3038; --line2:#353c46;
   --ink:#eef0f3; --ink2:#b9bec6; --muted:#7f8792; --nodata:#2b3038;
   --salmon:#f0a29a;
+  --chg:#c9ced6; --up:#e0a042; --down:#2aa9a2; --ns:#6b7280;
   --sud:#a77bea; --estab:#4fbf7a; --gap:#f0954a; --death:#e8605e; --work:#5aa9ff;
   --serif: Georgia, "Times New Roman", serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -106,9 +107,15 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
   .card{padding:12px 6px}.card .lab{letter-spacing:.06em}
   .rank,.ph{padding-left:16px;padding-right:16px}.help{margin:16px}
   .rank li{grid-template-columns:22px 1fr 44px 48px;font-size:14px}
-  h1{font-size:30px}.sub{font-size:16px}
+  h1{font-size:30px}.sub{font-size:16px}#comp{font-size:10.5px;padding:6px 4px}
 }
 .wrap{overflow-x:clip}
+.controls .off{opacity:.3;pointer-events:none}
+#comp{font-family:var(--mono);font-size:12px;background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-radius:3px;padding:6px 8px;max-width:100%}
+.cards.one{grid-template-columns:1fr}.cards.one .card{border-right:0;min-height:0;text-align:left;padding:14px 24px}
+.cards.one .card .v{font-size:16px;margin:8px 0 0}.cards.one .card.cur{box-shadow:inset 3px 0 0 var(--chg)}
+.rank ol.chg li{grid-template-columns:22px 1fr auto}
+.rank li .dot{width:12px;height:12px;border-radius:2px;justify-self:end}
 </style>
 </head>
 <body>
@@ -216,13 +223,13 @@ const RAMPS = {
 // ---------- which substances: Drug + alcohol (default), Drug only, Alcohol only ----------
 // Each view has its own color scale so differences between states show; scales are fixed per view.
 const PARTS = {
-  all:     {btn: "Drug + alcohol", tag: "", sud: "sud", who: "SUD", sudLabel: "SUD prevalence",
+  all:     {btn: "Drug + alcohol", tag: "", sud: "sud", who: "SUD", dis: "Substance use disorder", sudLabel: "SUD prevalence",
             sudDom: [[4, 14], [10, 32]], rate: "death_rate", n: "deaths", deathLabel: "Overdose + alcohol-induced deaths",
             deathShort: "Overdose & alcohol deaths", deathDom: [0, 70], sudCard: ["SUD prevalence", "SUD count"]},
-  drug:    {btn: "Drug only", tag: " (drug only)", sud: "sud_drug", who: "a drug use disorder", sudLabel: "Drug use disorder prevalence",
+  drug:    {btn: "Drug only", tag: " (drug only)", sud: "sud_drug", who: "a drug use disorder", dis: "Drug use disorder", sudLabel: "Drug use disorder prevalence",
             sudDom: [[1, 5], [6, 16]], rate: "death_rate_drug", n: "deaths_drug", deathLabel: "Drug overdose deaths",
             deathShort: "Drug overdose deaths", deathDom: [0, 50], sudCard: ["Drug disorder %", "Drug disorder count"]},
-  alcohol: {btn: "Alcohol only", tag: " (alcohol only)", sud: "sud_alcohol", who: "an alcohol use disorder", sudLabel: "Alcohol use disorder prevalence",
+  alcohol: {btn: "Alcohol only", tag: " (alcohol only)", sud: "sud_alcohol", who: "an alcohol use disorder", dis: "Alcohol use disorder", sudLabel: "Alcohol use disorder prevalence",
             sudDom: [[3, 11], [7, 17]], rate: "death_rate_alcohol", n: "deaths_alcohol", deathLabel: "Alcohol-induced deaths",
             deathShort: "Alcohol-induced deaths", deathDom: [0, 25], sudCard: ["Alcohol disorder %", "Alcohol disorder count"]},
 };
@@ -253,6 +260,34 @@ const TRENDS = {
   work:  {m: null, label: "Treatment workers", c: "--work"},
 };
 
+// ---------- CHANGE view: SAMHSA's tests of change, and death-rate change 2019 to 2024 ----------
+const COMPS = {
+  alc10: {menu: "Alcohol use disorder, 2008-2009 to 2018-2019", get label() { return this.menu; }},
+  sud1:  {menu: "Substance use disorder, 2022-2023 to 2023-2024", get label() { return P().dis + ", 2022-2023 to 2023-2024"; }},
+  death: {menu: "Death rate, 2019 to 2024", get label() { return this.menu + P().tag; }},
+};
+const RES = {"increased": ["Increased", "--up"], "decreased": ["Decreased", "--down"], "no significant change": ["No significant change", "--ns"]};
+const CHG_DOM = [-60, 60], CHG_RAMP = ["#2aa9a2", "#6b7280", "#e0a042"];
+function chg(k, comp = S.comp) {
+  if (comp === "death") {
+    const g = D.geo[k], a = val(g, P().rate, 2019), b = val(g, P().rate, 2024);
+    return a == null || b == null ? null : {from: a, to: b, pct: (b - a) / a * 100};
+  }
+  const r = D.change[comp][comp === "alc10" ? "alcohol" : S.part][k];
+  return r && {from: r[0], to: r[1], p: r[2], res: r[3]};
+}
+const fmtP = p => p === 0 ? "p < 0.001" : "p = " + p.toFixed(3);
+const fmtPct = v => (v > 0 ? "+" : v < 0 ? "-" : "") + Math.abs(Math.round(v)) + "%";
+function chgLine(c, comp = S.comp) {
+  if (!c) return "no data";
+  return comp === "death" ? c.from.toFixed(1) + " → " + c.to.toFixed(1) + " per 100K · " + fmtPct(c.pct)
+    : c.from.toFixed(2) + "% → " + c.to.toFixed(2) + "% · " + RES[c.res][0] + " (" + fmtP(c.p) + ")";
+}
+function chgColor(c) {
+  if (!c) return css("--nodata");
+  return S.comp === "death" ? rampColor(CHG_RAMP, (c.pct - CHG_DOM[0]) / (CHG_DOM[1] - CHG_DOM[0])) : css(RES[c.res][1]);
+}
+
 function hex2rgb(h) { const n = parseInt(h.slice(1), 16); return [n >> 16, n >> 8 & 255, n & 255]; }
 function rampColor(stops, t) {
   t = Math.max(0, Math.min(1, t));
@@ -268,7 +303,8 @@ const fmtM = v => v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : fmtInt(v);
 const val = (g, k, y) => g[k][ix(y)];
 
 // ---------- state ----------
-const S = {year: 2024, metric: "sud", trend: "sud", sel: null, hover: null, playing: null, part: "all"};
+const S = {year: 2024, metric: "sud", trend: "sud", sel: null, hover: null, playing: null, part: "all", comp: "alc10"};
+const isChg = () => S.metric === "change";
 const geoKey = () => S.hover || S.sel || "US";
 
 // ---------- map ----------
@@ -314,6 +350,7 @@ function cellState(g, m, y) {
   return {kind: "ok", v};
 }
 function tipText(f) {
+  if (isChg()) return "<b>" + D.geo[f].name + "</b><br>" + COMPS[S.comp].label + "<br>" + chgLine(chg(f));
   const g = D.geo[f], m = S.metric, c = cellState(g, m, S.year), M = METRICS[m];
   let s = "<b>" + g.name + "</b> · " + S.year + "<br>";
   if (c.kind === "none") s += M.short + ": no data published";
@@ -324,9 +361,11 @@ function tipText(f) {
 function renderMap() {
   const m = S.metric;
   for (const [f, p] of Object.entries(shapes)) {
-    const key = f === "11b" ? "11" : f, c = cellState(D.geo[key], m, S.year);
-    p.setAttribute("fill", c.kind === "ok" ? colorFor(m, c.v, S.year) : c.kind === "floor" ? "url(#hatch)" : css("--nodata"));
+    const key = f === "11b" ? "11" : f;
     p.classList.toggle("sel", S.sel === key);
+    if (isChg()) { p.setAttribute("fill", chgColor(chg(key))); continue; }
+    const c = cellState(D.geo[key], m, S.year);
+    p.setAttribute("fill", c.kind === "ok" ? colorFor(m, c.v, S.year) : c.kind === "floor" ? "url(#hatch)" : css("--nodata"));
   }
 }
 
@@ -362,6 +401,10 @@ for (const [k, M] of Object.entries(METRICS)) {
   const b = document.createElement("button"); b.textContent = M.short; b.dataset.m = k; b.style.setProperty("--c", css(M.c));
   b.onclick = () => { S.metric = k; S.trend = k; render(); }; modes.appendChild(b);
 }
+{
+  const b = document.createElement("button"); b.textContent = "CHANGE"; b.dataset.m = "change"; b.style.setProperty("--c", css("--chg"));
+  b.onclick = () => { S.metric = "change"; stop(); render(); }; modes.appendChild(b);
+}
 const slider = document.getElementById("year");
 slider.value = S.year;
 slider.oninput = () => { S.year = +slider.value; stop(); render(); };
@@ -375,6 +418,7 @@ function stop() { clearInterval(S.playing); S.playing = null; document.getElemen
 
 // ---------- legend + era line ----------
 function renderLegend() {
+  if (isChg()) return renderChgLegend();
   const m = S.metric, M = METRICS[m], [lo, hi] = M.dom(S.year);
   const grad = "linear-gradient(90deg," + RAMPS[m].join(",") + ")";
   let h = '<span class="lab">' + M.label + '</span>' +
@@ -399,9 +443,39 @@ function renderLegend() {
   document.getElementById("era").textContent = e;
 }
 
+function renderChgLegend() {
+  const sel = '<select id="comp" aria-label="Comparison">' + Object.entries(COMPS).map(([k, c]) =>
+    '<option value="' + k + '"' + (S.comp === k ? " selected" : "") + ">" + c.menu + "</option>").join("") + "</select>";
+  let h = sel;
+  if (S.comp === "death") {
+    h += '<span class="lab">Death rate change, 2019 to 2024 (%)</span>' +
+      '<span class="scale"><span class="sr"><span class="note">' + CHG_DOM[0] + '</span><span class="ramp" style="background:linear-gradient(90deg,' + CHG_RAMP.join(",") + ')"></span><span class="note">+' + CHG_DOM[1] + '</span></span>' +
+      '<span class="ends"><span>← rate fell</span><span>rate rose →</span></span></span>' +
+      '<span class="note"><span class="sw" style="background:' + css("--nodata") + '"></span>no data</span>';
+  } else {
+    h += '<span class="lab">' + COMPS[S.comp].label + '</span>' + Object.values(RES).map(([t, c]) =>
+      '<span class="note"><span class="sw" style="background:var(' + c + ')"></span>' + t + "</span>").join("");
+  }
+  if (S.comp !== "alc10") h += drugSwitch("chg");
+  const L = document.getElementById("legend"); L.innerHTML = h; wireSwitch(L);
+  L.querySelector("#comp").onchange = e => { S.comp = e.target.value; render(); };
+  document.getElementById("era").textContent = "";
+}
+
 // ---------- callout under the map ----------
 function renderCallout() {
   const y = S.year, m = S.metric, p = [];
+  if (isChg()) {
+    if (S.comp === "death") {
+      const blank = Object.entries(D.geo).filter(([k, g]) => k !== "US" && !chg(k) && (val(g, P().n, 2019) != null || val(g, P().n, 2024) != null)).map(([, g]) => g.name);
+      p.push("<b>What is shown.</b> The percent change in CDC's crude death rate from 2019 to 2024. These are counts of deaths, not survey estimates. Rates are not adjusted for age." +
+        (blank.length ? " CDC does not print a rate based on fewer than 20 deaths, so " + blank.join(", ") + " is shown with no data." : ""));
+    } else p.push("<b>What is shown.</b> SAMHSA's own test of whether each state's estimate changed between the two periods. A state is marked increased or decreased only when SAMHSA found the change significant at the 0.05 level. \"No significant change\" means the difference was too small to tell apart from survey error. It does not mean the rate stayed exactly the same. " +
+      (S.comp === "sud1" ? "The two periods share 2023, so this compares about one year of change. SAMHSA does not publish a test across the 2021 survey redesign."
+        : "SAMHSA published this 10-year test only for alcohol use disorder. It has no matching test for drug use disorder or any substance use disorder."));
+    document.getElementById("callout").innerHTML = p.map(x => "<p>" + x + "</p>").join("");
+    return;
+  }
   if (m === "sud" || m === "gap") {
     if (dsm5(y)) { const us = D.geo.US;
       p.push("<b>Survey redesign.</b> NSDUH moved to DSM-5 criteria and to web plus in-person interviews. The national estimate was " + val(us, METRICS.sud.key, 2019).toFixed(1) + "% for 2018-2019 and " + val(us, METRICS.sud.key, 2022).toFixed(1) + "% for 2021-2022. SAMHSA says estimates from 2021 on are not comparable with 2020 and earlier, so this jump should not be read as a change in how many people have a disorder. SAMHSA withdrew the 2019-2020 state estimates and published none for 2020-2021."); }
@@ -431,7 +505,7 @@ function renderCallout() {
 function renderPanel() {
   const k = geoKey(), g = D.geo[k], y = S.year;
   document.getElementById("p-name").textContent = g.name;
-  document.getElementById("p-sub").innerHTML = y + (k === "US" ? " · national totals · hover or click a state" :
+  document.getElementById("p-sub").innerHTML = (isChg() ? "Change" : y) + (k === "US" ? " · national totals · hover or click a state" :
     (S.sel === k ? ' · pinned <a id="unpin">show United States</a>' : " · click to pin"));
   const up = document.getElementById("unpin"); if (up) up.onclick = () => { S.sel = null; render(); };
   const dp = P().sud;
@@ -453,12 +527,18 @@ function renderPanel() {
       : ["OD & alcohol deaths", "--death", d == null ? na : fmtInt(d), d == null ? "" : dr.toFixed(1) + " per 100K" + (dd == null || da == null ? "" : " · " + fmtInt(dd) + " drug, " + fmtInt(da) + " alcohol")],
   ];
   const C = document.getElementById("cards");
+  C.classList.toggle("one", isChg());
+  if (isChg()) {
+    C.innerHTML = Object.entries(COMPS).map(([c, M]) => '<div class="card' + (c === S.comp ? " cur" : "") + '"><div class="lab">' + M.label + '</div><div class="v">' + chgLine(chg(k, c), c) + "</div></div>").join("");
+    renderTrend(); return;
+  }
   C.innerHTML = cards.map(([l, c, v, s]) => '<div class="card"><div class="lab">' + l + '</div><div class="v" style="color:var(' + c + ')">' + v + '</div><div class="d">' + s + "</div></div>").join("");
   renderTrend();
 }
 
 // ---------- ranking ----------
 function renderRank() {
+  if (isChg()) return renderChgRank();
   const m = S.metric, M = METRICS[m], y = S.year;
   const rows = Object.entries(D.geo).filter(([k]) => k !== "US").map(([k, g]) => ({k, g, c: cellState(g, m, y)}));
   const ok = rows.filter(r => r.c.kind === "ok").sort((a, b) => b.c.v - a.c.v);
@@ -468,8 +548,28 @@ function renderRank() {
   document.getElementById("r-cov").textContent = ok.length + " of 51 states ranked" + (fl.length ? " · " + fl.length + " incomplete (listed after, as maximums)" : "") + (none.length ? " · " + none.length + " with no data" : "");
   const max = Math.max(...ok.map(r => r.c.v), ...fl.map(r => r.c.v), 1);
   const li = (r, i, inc) => '<li class="' + (inc ? "inc" : "") + '" data-f="' + r.k + '"><span class="n">' + (inc ? "" : i + 1) + "</span><span>" + r.g.name + '</span><span class="bar" style="--c:var(' + M.c + ');width:' + (r.c.v / max * 100) + '%"></span><span class="val">' + (inc ? "≤ " : "") + M.fmt(r.c.v) + "</span></li>";
-  const R = document.getElementById("rank");
+  const R = document.getElementById("rank"); R.className = "";
   R.innerHTML = ok.map((r, i) => li(r, i, false)).join("") + fl.map((r, i) => li(r, i, true)).join("");
+  R.querySelectorAll("li").forEach(n => n.onclick = () => selectGeo(n.dataset.f));
+}
+
+function renderChgRank() {
+  const R = document.getElementById("rank"), rows = Object.entries(D.geo).filter(([k]) => k !== "US").map(([k, g]) => ({k, g, c: chg(k)}));
+  const ok = rows.filter(r => r.c), none = rows.length - ok.length;
+  document.getElementById("r-title").textContent = COMPS[S.comp].label;
+  R.className = "";
+  if (S.comp === "death") {
+    ok.sort((a, b) => b.c.pct - a.c.pct);
+    const max = Math.max(...ok.map(r => Math.abs(r.c.pct)), 1);
+    document.getElementById("r-cov").textContent = "highest first · " + ok.filter(r => r.c.pct > 0).length + " rose · " + ok.filter(r => r.c.pct < 0).length + " fell" + (ok.some(r => r.c.pct === 0) ? " · " + ok.filter(r => r.c.pct === 0).length + " unchanged" : "") + (none ? " · " + none + " with no data" : "");
+    R.innerHTML = ok.map((r, i) => '<li data-f="' + r.k + '"><span class="n">' + (i + 1) + "</span><span>" + r.g.name + '</span><span class="bar" style="background:var(' + (r.c.pct < 0 ? "--down" : "--up") + ");width:" + (Math.abs(r.c.pct) / max * 100) + '%"></span><span class="val">' + fmtPct(r.c.pct) + "</span></li>").join("");
+  } else {
+    const order = Object.keys(RES), cnt = order.map(o => ok.filter(r => r.c.res === o).length);
+    ok.sort((a, b) => order.indexOf(a.c.res) - order.indexOf(b.c.res) || a.g.name.localeCompare(b.g.name));
+    document.getElementById("r-cov").textContent = order.map((o, i) => cnt[i] + " " + RES[o][0].toLowerCase()).join(" · ");
+    R.className = "chg";
+    R.innerHTML = ok.map(r => '<li data-f="' + r.k + '"><span class="dot" style="background:var(' + RES[r.c.res][1] + ')"></span><span>' + r.g.name + '</span><span class="val">' + r.c.from.toFixed(2) + " → " + r.c.to.toFixed(2) + "</span></li>").join("");
+  }
   R.querySelectorAll("li").forEach(n => n.onclick = () => selectGeo(n.dataset.f));
 }
 
@@ -550,6 +650,7 @@ document.getElementById("notes").innerHTML = `
 <li><b>Demand:</b> SAMHSA, National Survey on Drug Use and Health (NSDUH), state model-based estimates of people 12 and older with a past-year substance use disorder, two-year windows 2000-2001 through 2023-2024. Counts and 95% intervals are SAMHSA's own figures, from its published tables and, for 2000-2001 through 2008-2009, its small area estimation dataset. The drug-only view uses SAMHSA's state estimates of illicit drug dependence or abuse (through 2013-2014), illicit drug use disorder (2015-2016 to 2018-2019) and drug use disorder (2021-2022 on). The alcohol-only view uses SAMHSA's state estimates of alcohol dependence or abuse (through 2014-2015) and alcohol use disorder (2015-2016 on; DSM-5 from 2021-2022).</li>
 <li><b>Treatment facilities:</b> SAMHSA, National Survey of Substance Abuse Treatment Services (N-SSATS, 2000-2020) and National Substance Use and Mental Health Services Survey (N-SUMHSS, 2021-2024). Facilities that offer outpatient substance use treatment, all ownership types.</li>
 <li><b>Treatment workers:</b> ${VV.source}</li>
+<li><b>Change tests:</b> SAMHSA, Comparison of 2008-2009 and 2018-2019 Population Percentages (Table 9) and Comparison of 2022-2023 and 2023-2024 Population Percentages (Tables 21, 22, 24).</li>
 <li><b>Deaths and population:</b> CDC WONDER, Underlying Cause of Death 1999-2020 (used for 2001-2017) and 2018-2024 Single Race (2018-2024). The two agree exactly for 2018-2020.</li>
 </ul>
 <h3>Limitations</h3>
@@ -567,6 +668,8 @@ ${VV.limits.map(x => "<li>" + x + "</li>").join("")}
 // ---------- render ----------
 function render() {
   document.getElementById("yr").textContent = S.year; slider.value = S.year;
+  ["play", "yr"].forEach(id => document.getElementById(id).classList.toggle("off", isChg()));
+  slider.parentNode.classList.toggle("off", isChg()); slider.disabled = isChg();
   modes.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.m === S.metric)));
   renderBanner(); renderLegend(); renderMap(); renderCallout(); renderPanel(); renderRank();
 }
@@ -574,6 +677,8 @@ function render() {
 {
   const h = new URLSearchParams(location.hash.slice(1));
   if (METRICS[h.get("m")]) S.metric = S.trend = h.get("m");
+  if (h.get("m") === "change") S.metric = "change";
+  if (COMPS[h.get("c")]) S.comp = h.get("c");
   if (TRENDS[h.get("t")]) S.trend = h.get("t");
   if (+h.get("y") >= 2001 && +h.get("y") <= 2024) S.year = +h.get("y");
   if (D.geo[h.get("s")] && h.get("s") !== "US") S.sel = h.get("s");

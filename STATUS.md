@@ -44,3 +44,4 @@ None.
 - 2026-10-28 Eric: add Alcohol only (items 1-13 accepted; item 10 worded to CDC's definition), separate color scales per view, switch kept on the legend row. Tie-out: 29,745 values, 0 mismatches.
 - 2026-10-28 Independent alcohol tie-out: 0 differences; alcohol trend line now drawn across 2015 (SAMHSA: the 2015 change did not affect alcohol use disorder); static notes fixed.
 - 2026-10-28 Checked SAMHSA change tests: alcohol use disorder 2008-2009 vs 2018-2019 (long-term); SUD, drug, alcohol 2022-2023 vs 2023-2024 (short-term). Change view proposed, waiting on Eric.
+- 2026-10-29 Eric: Change view wording items 1-9 accepted. Built: CHANGE button with three comparisons (alcohol 10-year test, 2022-2023 vs 2023-2024 tests, death rate 2019 to 2024). Tie-out: 30,577 values, 0 mismatches. Independent check of the Change view running.

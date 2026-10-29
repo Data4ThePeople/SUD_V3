@@ -380,6 +380,35 @@ Drug Use and Health, state small area estimates.
   The earlier measures covered misuse only.
 - **People per Worker always uses any SUD.**
 
+### Tests of change ("Change" view)
+
+`scripts/build_nsduh_change.py` writes `data/clean/nsduh_change.csv` from SAMHSA's own
+change tables in `data/raw/nsduh_change/` (URLs in `PULLED.txt`), ages 12+:
+
+| Comparison | Table | Measure |
+|---|---|---|
+| 2008-2009 vs 2018-2019 | Long-term change tables, Table 9 | Alcohol use disorder |
+| 2022-2023 vs 2023-2024 | 2024 change tables, Table 21 | Substance use disorder (DSM-5) |
+| 2022-2023 vs 2023-2024 | 2024 change tables, Table 22 | Alcohol use disorder (DSM-5) |
+| 2022-2023 vs 2023-2024 | 2024 change tables, Table 24 | Drug use disorder (DSM-5) |
+
+- **Significance:** SAMHSA marks a difference significant at the 0.05 level with "a"
+  and at the 0.10 level with "b". The page uses 0.05 only (Eric, 2026-10-28). A state
+  is "increased" or "decreased" only with an "a" marker; the script checks that the
+  printed p value is below 0.05 whenever the marker is present. Everything else is "no
+  significant change". Nothing is tested or computed by us.
+- **p values** are shown as SAMHSA prints them, to 3 decimals. SAMHSA prints 0.000 for
+  values below 0.0005; the page shows these as "p < 0.001".
+- **What SAMHSA does not publish:** no test across the 2021 redesign, no test of
+  2021-2022 vs 2023-2024, and no long-term test for drug use disorder or any SUD. The
+  two 2022-2024 windows share 2023.
+- **Check:** the estimates in the change tables match our level estimates for the same
+  windows within 0.005 points in all 208 rows (`tieout.py`).
+- **Death rate change, 2019 to 2024:** the page computes (2024 rate - 2019 rate) / 2019
+  rate x 100 from CDC's published crude rates for the selected deaths (drug + alcohol,
+  drug only, alcohol only). A state with no printed rate in either year has no value.
+  The color scale runs from -60% to +60%; values beyond are drawn at the end color.
+
 ## N-SSATS (2000-2020) / N-SUMHSS (2021-2024) (SAMHSA)
 
 **What it is.** An annual survey of every known substance use treatment
