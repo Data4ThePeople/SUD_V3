@@ -79,6 +79,73 @@ question we have not checked; look for research on certifier practice.
 - Note: AUD measures who has the disorder in a year; it does not measure how much people with it
   drink, so rising deaths with falling prevalence can both be true.
 
+### 2. Why some states have more facilities and workers (raised by Eric, 2026-10-29)
+
+**Where states stand, 2024 (our data):**
+- Facilities per 100K, most: KY 11.4, AK 10.3, ME 9.8, VT 8.3, MT 8.2. Fewest: TX 1.6, SC 1.7,
+  AL 2.2, CA 2.4, FL 2.5, GA 2.7. The low end has been stable: TX, SC, AL, MS ranked 45-51 on average
+  in 2003-2019 too.
+- Workers per 1,000 people with SUD, most: MA 20.3, UT 17.9, VA 17.5, PA 16.1, NH 16.0. Fewest:
+  NV 5.6, AL 5.7, GA 6.2, SC 6.6, TX 6.8, NM 7.5, MS 7.8.
+- Facility and worker rankings differ: CA and NY are low on facilities but high on workers
+  (facility size and setting differ; OEWS counts every setting).
+
+**Medicaid expansion (KFF, data/raw/kff/), medians across states:**
+- Workers per 100K: expanded 2014-2015 (30 states) 106 in 2010, 188 in 2024; never expanded (10)
+  69 in 2010, 116 in 2024. The worker gap existed before 2014, so expansion does not explain where
+  it started.
+- Facilities per 100K, change 2013 to 2019: +17% in states that expanded 2014-2015, +1% in states
+  that never expanded.
+- Exceptions: NV and NM expanded in 2014 and are near the bottom on workers.
+
+**Party control (Ballotpedia, data/clean/trifectas.csv, 50 states, most common status 2001-2024):**
+- 2024 workers per 1,000 with SUD: mostly D (15) 11.6, mostly R (19) 9.9, mostly divided (16) 12.6.
+  Facilities barely differ (4.7-4.9 per 100K).
+- Among the 40 expansion states the medians are close (D 11.6, R 11.2, divided 12.8). The low values
+  are in the non-expansion states (median 7.3), 8 of which are mostly R. Party and expansion overlap
+  too much to separate with 50 states. Publish on the policy (expansion), not the party.
+- Mostly-R states near the top: UT 17.9, SD 13.7, OH 13.3, IN 13.0. Mostly-D states near the bottom:
+  NM 7.5, NC 8.5.
+
+**Research (agent report 2026-10-29; (a) = a study measured a change after a policy, (b) = descriptive):**
+- Medicaid expansion: (a) specialty SUD treatment episodes +28% vs non-expansion states (Maclean
+  et al., Health Affairs 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12616645/). Facility and
+  workforce effects weak or mixed: no significant change in SUD-sector hiring (Scrivner et al.,
+  PLOS One 2020, https://arxiv.org/pdf/1908.00216); modest facility gains in one study (Laurito &
+  Cantor 2024, https://pubmed.ncbi.nlm.nih.gov/39515239).
+- 1115 SUD waivers: (a) facility Medicaid acceptance rose vs non-waiver states in CA, VA, WV; no
+  change in MD, MA (RTI for CMS 2025, https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/sud-rcr-oy3-nssats-medicaid-moud.pdf).
+  Confirm current waiver list on Medicaid.gov before publishing.
+- Virginia ARTS (April 2017: higher rates, full ASAM continuum, peer support): (b) Medicaid-billing
+  outpatient SUD practitioners 1,087 to 2,965 in year one (VCU,
+  https://healthpolicy.vcu.edu/media/school-of-population-health/hbp-2023/ARTSone-yearreport_8.9.18_ACC.pdf).
+  Our data: VA facilities 193 (2017) to 341 (2024), +77%; US +19% over the same years. VA also
+  expanded Medicaid in 2019, so the two cannot be separated.
+- Kentucky: (b) 2014 new Behavioral Health Services Organization license, exempt from certificate
+  of need, let more organizations bill Medicaid (https://hallrender.com/2014/07/22/kentucky-emergency-regulations-create-two-new-licenses-for-health-facilities/).
+  Our data: KY facilities 248 (2010) to 524 (2024), the most per resident in 2024. No evaluation
+  isolates the license's effect.
+- Vermont Hub and Spoke: (b) OUD medication capacity 3.76 to 10.56 per 1,000 residents, 2012-2016
+  (Brooklyn & Sigmon 2017, https://pmc.ncbi.nlm.nih.gov/articles/5537005). About medication capacity,
+  not counselors.
+- CCBHCs: (b) clinics report the payment model let them raise salaries and hire (ASPE Report to
+  Congress 2025). Medicaid rates alone: weak (psychiatrist fees did not track supply).
+- Low-ranking states: TX has 246 of 254 counties in mental health shortage areas (Texas Tribune /
+  Hogg Foundation); GA's commission named workforce the core barrier.
+
+**Practices low-ranking states could adopt, by evidence strength:**
+1. Expand Medicaid: strong for Medicaid-paid treatment; weak or mixed for facility and worker counts.
+2. Cover the full ASAM continuum and raise SUD rates together (Virginia): moderate.
+3. A facility license that lets more organizations bill Medicaid (Kentucky): weak, descriptive.
+4. Join the CCBHC program: weak to moderate, self-reported.
+5. Loan repayment for behavioral health workers: moderate for retention, limited for supply.
+
+**Check before writing:**
+- Vermont's workers per 100K fell from 423 (2019) to 234 (2024) in our data. Check whether this is
+  real or the 2021 BLS method change (MB3) before using Vermont as a model.
+- OEWS leaves out the self-employed, so states with more private-practice counselors are undercounted.
+- Most research measures Medicaid-billing providers or service use, not total capacity.
+
 ## Log
 
 - 2026-10-28 Step 1 opened. Topic: state-by-state SUD prevalence vs outpatient treatment capacity, 2001-2024, as an interactive dashboard. Clean restart: no code, numbers or methods from earlier D4TP SUD repos.
