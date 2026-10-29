@@ -153,8 +153,23 @@ question we have not checked; look for research on certifier practice.
 **The Medicaid angle going forward (Eric, 2026-10-29):**
 - H.R. 1 (2025 reconciliation law): work requirements for expansion adults ages 19-64 start no
   later than December 31, 2026. States must exempt people "participating in a substance use
-  disorder treatment program" (KFF). Whether people with SUD who are not in treatment are exempt
-  (for example as medically frail) still needs checking in the law text.
+  disorder treatment program" (KFF).
+- Law text checked 2026-10-29 (Public Law 119-21, sec. 71119, 139 STAT. 312-313; saved in
+  data/raw/law/). Two separate exemptions cover SUD:
+  - (V) "medically frail or otherwise has special medical needs (as defined by the Secretary),
+    including an individual ... (bb) with a substance use disorder". This covers people with SUD
+    whether or not they are in treatment.
+  - (VII) "participating in a drug addiction or alcoholic treatment and rehabilitation program (as
+    defined in section 3(h) of the Food and Nutrition Act of 2008)".
+  - Both are "as determined by the State (in accordance with standards specified by the
+    Secretary)". Under (xx)(5) the State verifies exemptions using "reliable information available
+    to the State (such as payroll data or payments or encounter data ...)" without requiring, "where
+    possible", the person to submit more information. If the State cannot verify, the person gets a
+    notice and 30 days to show compliance.
+  - The open question for a story (inference, not yet checked): a State's records show SUD only for
+    people who were diagnosed or billed for it. People with an untreated SUD may have to prove the
+    exemption themselves. Check SAMHSA's share of people with SUD who received treatment, and CMS's
+    interim rule or guidance on how States define and verify the SUD exemption.
 - CBO, as summarized by KFF: the law reduces federal health spending by over $1 trillion and adds
   10 million uninsured; the work requirement alone cuts federal Medicaid spending $326 billion over
   10 years and adds 5.3 million uninsured in 2034. Provider tax limits for expansion states start
