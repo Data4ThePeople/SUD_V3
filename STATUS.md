@@ -45,3 +45,4 @@ None.
 - 2026-10-28 Independent alcohol tie-out: 0 differences; alcohol trend line now drawn across 2015 (SAMHSA: the 2015 change did not affect alcohol use disorder); static notes fixed.
 - 2026-10-28 Checked SAMHSA change tests: alcohol use disorder 2008-2009 vs 2018-2019 (long-term); SUD, drug, alcohol 2022-2023 vs 2023-2024 (short-term). Change view proposed, waiting on Eric.
 - 2026-10-29 Eric: Change view wording items 1-9 accepted. Built: CHANGE button with three comparisons (alcohol 10-year test, 2022-2023 vs 2023-2024 tests, death rate 2019 to 2024). Tie-out: 30,577 values, 0 mismatches. Independent check of the Change view running.
+- 2026-10-29 Independent Change-view tie-out: 1,291 values, 0 differences. Eric accepted items 1-13: "Learn more about the 2021 survey change" panel in the Survey redesign box, DSM-IV label on the 10-year test, Change-view wording fixes, menu follows the switch.

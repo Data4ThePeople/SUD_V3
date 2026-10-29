@@ -56,6 +56,9 @@ input[type=range]{flex:1;accent-color:var(--work)}
 .tip{position:fixed;pointer-events:none;background:#0d0f12;border:1px solid var(--line2);padding:8px 10px;font-family:var(--mono);font-size:12px;border-radius:4px;display:none;z-index:9;max-width:280px;line-height:1.45}
 .callout{margin:10px 0 18px;border-left:3px solid var(--work);background:#16212e;padding:12px 16px;font-size:14.5px;line-height:1.55;color:#cfe1f5}
 .callout p{margin:0 0 6px}.callout p:last-child{margin:0}
+.more summary{cursor:pointer;color:var(--work);font-family:var(--mono);font-size:12.5px;margin-top:4px}
+.morebody{margin-top:10px;border-top:1px solid #2a3a4e;padding-top:10px}
+.morebody h4{margin:0 0 8px;font-size:16px;color:var(--ink)}.morebody .src{font-family:var(--mono);font-size:11.5px;color:var(--ink2)}
 .trend h3{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--muted);font-weight:400;margin:6px 0 4px;text-transform:uppercase}
 #trend{width:100%;height:280px;display:block}
 .ttog{display:flex;gap:18px;flex-wrap:wrap;margin-top:6px}
@@ -262,7 +265,7 @@ const TRENDS = {
 
 // ---------- CHANGE view: SAMHSA's tests of change, and death-rate change 2019 to 2024 ----------
 const COMPS = {
-  alc10: {menu: "Alcohol use disorder, 2008-2009 to 2018-2019", get label() { return this.menu; }},
+  alc10: {menu: "Alcohol use disorder (DSM-IV), 2008-2009 to 2018-2019", get label() { return this.menu; }},
   sud1:  {menu: "Substance use disorder, 2022-2023 to 2023-2024", get label() { return P().dis + ", 2022-2023 to 2023-2024"; }},
   death: {menu: "Death rate, 2019 to 2024", get label() { return this.menu + P().tag; }},
 };
@@ -445,7 +448,7 @@ function renderLegend() {
 
 function renderChgLegend() {
   const sel = '<select id="comp" aria-label="Comparison">' + Object.entries(COMPS).map(([k, c]) =>
-    '<option value="' + k + '"' + (S.comp === k ? " selected" : "") + ">" + c.menu + "</option>").join("") + "</select>";
+    '<option value="' + k + '"' + (S.comp === k ? " selected" : "") + ">" + (k === "sud1" ? c.label : c.menu) + "</option>").join("") + "</select>";
   let h = sel;
   if (S.comp === "death") {
     h += '<span class="lab">Death rate change, 2019 to 2024 (%)</span>' +
@@ -462,23 +465,36 @@ function renderChgLegend() {
   document.getElementById("era").textContent = "";
 }
 
+// ---------- "learn more" panel on the 2021 survey change (SAMHSA 2018-2019 guide B.9; 2021-2022 guide A.7, B.11) ----------
+const DSM_MORE = '<details class="more"' + "OPEN" + '><summary>Learn more about the 2021 survey change</summary><div class="morebody">' +
+  "<h4>What changed in the 2021 survey</h4>" +
+  "<p><b>New rules for counting a disorder.</b> Through 2019, NSDUH used the DSM-IV, an older edition of the diagnostic manual used by psychiatrists. For most substances, a person counted as having a disorder if they met at least 3 of 7 signs of dependence or at least 1 of 4 signs of abuse. From 2021, NSDUH uses the DSM-5. A person counts as having a disorder if they meet at least 2 of 11 criteria.</p>" +
+  "<p><b>More people were asked about prescription drugs.</b> Before 2021, only people who misused prescription pain relievers, tranquilizers, stimulants or sedatives were asked the disorder questions about those drugs. From 2021, everyone who used them in the past year was asked, including people who took them as prescribed. For people who did not misuse them, tolerance and withdrawal were not counted, because these can be normal when taking a drug under a doctor's care.</p>" +
+  "<p><b>A new way of taking the survey.</b> Starting in October 2020, during the COVID-19 pandemic, people could take the survey online or in person. Before that, it was done in person. SAMHSA says its research found that estimates from 2021 on are not comparable with estimates from 2020 or earlier.</p>" +
+  "<p><b>What this means for the map.</b> The national estimate went from NAT19% for 2018-2019 to NAT22% for 2021-2022. The rules and the survey method changed at the same time, so this jump should not be read as a change in how many people have a disorder. The map uses a separate color scale from 2022, and the trend line is not drawn across the change.</p>" +
+  '<p class="src">Sources: SAMHSA, 2018-2019 and 2021-2022 NSDUH state estimates methodology guides (sections B.9, B.11 and A.7).</p></div></details>';
+function dsmMore() {
+  const us = D.geo.US;
+  return DSM_MORE.replace("OPEN", S.dsmOpen ? " open" : "").replace("NAT19", val(us, "sud_pct", 2019).toFixed(1)).replace("NAT22", val(us, "sud_pct", 2022).toFixed(1));
+}
+
 // ---------- callout under the map ----------
 function renderCallout() {
   const y = S.year, m = S.metric, p = [];
   if (isChg()) {
     if (S.comp === "death") {
       const blank = Object.entries(D.geo).filter(([k, g]) => k !== "US" && !chg(k) && (val(g, P().n, 2019) != null || val(g, P().n, 2024) != null)).map(([, g]) => g.name);
-      p.push("<b>What is shown.</b> The percent change in CDC's crude death rate from 2019 to 2024. These are counts of deaths, not survey estimates. Rates are not adjusted for age." +
+      p.push("<b>What is shown.</b> The percent change in CDC's crude death rate from 2019 to 2024. They come from death certificates, not a survey. Rates are not adjusted for age. CDC's 2019 rates use population estimates based on the 2010 Census, and its 2024 rates use estimates based on the 2020 Census." +
         (blank.length ? " CDC printed no rate for " + blank.join(", ") + " in 2019 or 2024, so it is shown with no data." : ""));
-    } else p.push("<b>What is shown.</b> SAMHSA's own test of whether each state's estimate changed between the two periods. A state is marked increased or decreased only when SAMHSA found the change significant at the 0.05 level. \"No significant change\" means the difference was too small to tell apart from survey error. It does not mean the rate stayed exactly the same. " +
+    } else p.push("<b>What is shown.</b> SAMHSA's own test of whether each state's estimate changed between the two periods. A state is marked increased or decreased only when SAMHSA found the change significant at the 0.05 level. \"No significant change\" means the difference was too small to tell apart from the uncertainty in SAMHSA's estimates. It does not mean the rate stayed exactly the same. " +
       (S.comp === "sud1" ? "The two periods share 2023, so this compares about one year of change. SAMHSA does not publish a test across the 2021 survey redesign."
-        : "SAMHSA published this 10-year test only for alcohol use disorder. It has no matching test for drug use disorder or any substance use disorder."));
+        : "Among substance use disorders, SAMHSA published this 10-year test only for alcohol use disorder. It has no matching test for drug use disorder or any substance use disorder."));
     document.getElementById("callout").innerHTML = p.map(x => "<p>" + x + "</p>").join("");
     return;
   }
   if (m === "sud" || m === "gap") {
     if (dsm5(y)) { const us = D.geo.US;
-      p.push("<b>Survey redesign.</b> NSDUH moved to DSM-5 criteria and to web plus in-person interviews. The national estimate was " + val(us, METRICS.sud.key, 2019).toFixed(1) + "% for 2018-2019 and " + val(us, METRICS.sud.key, 2022).toFixed(1) + "% for 2021-2022. SAMHSA says estimates from 2021 on are not comparable with 2020 and earlier, so this jump should not be read as a change in how many people have a disorder. SAMHSA withdrew the 2019-2020 state estimates and published none for 2020-2021."); }
+      p.push("<b>Survey redesign.</b> NSDUH moved to DSM-5 criteria and to web plus in-person interviews. The national estimate was " + val(us, METRICS.sud.key, 2019).toFixed(1) + "% for 2018-2019 and " + val(us, METRICS.sud.key, 2022).toFixed(1) + "% for 2021-2022. SAMHSA says estimates from 2021 on are not comparable with 2020 and earlier, so this jump should not be read as a change in how many people have a disorder. SAMHSA withdrew the 2019-2020 state estimates and published none for 2020-2021." + dsmMore()); }
     else p.push("<b>How years are assigned.</b> SAMHSA publishes state estimates for two-year windows. Each window is shown at its second year (2023-2024 is shown as 2024). Years with no window ending in them are left blank.");
   }
   if (m === "gap") {
@@ -498,7 +514,9 @@ function renderCallout() {
     else if (S.part === "drug") p.push("<b>What is counted.</b> Deaths whose underlying cause was a drug overdose, whether unintentional, suicide, homicide or undetermined intent. Alcohol-induced deaths are left out." + nc + nr);
     else p.push("<b>What is counted.</b> Deaths whose underlying cause was alcohol-induced, such as alcoholic liver disease or alcohol poisoning. CDC's definition leaves out unintentional injuries, homicides and other causes indirectly related to alcohol use. Drug overdose deaths are left out." + nr);
   }
-  document.getElementById("callout").innerHTML = p.map(x => "<p>" + x + "</p>").join("");
+  const co = document.getElementById("callout");
+  co.innerHTML = p.map(x => x.includes("<details") ? "<p>" + x.replace("<details", "</p><details") : "<p>" + x + "</p>").join("");
+  const det = co.querySelector("details.more"); if (det) det.ontoggle = () => { S.dsmOpen = det.open; };
 }
 
 // ---------- side panel ----------
