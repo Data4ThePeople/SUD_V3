@@ -1,0 +1,1 @@
+2026-10-29	https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/	medicaid_expansion.csv	KFF State Health Facts, status of Medicaid expansion decision and implementation date, as of October 2026 (41 adopted incl. DC, 10 not). Transcribed from the page table.

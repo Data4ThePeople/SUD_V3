@@ -1,0 +1,1751 @@
+state,year,governor,senate,house,trifecta
+Alabama,1992,R,D,D,divided
+Alabama,1993,D,D,D,D
+Alabama,1994,D,D,D,D
+Alabama,1995,R,D,D,divided
+Alabama,1996,R,D,D,divided
+Alabama,1997,R,D,D,divided
+Alabama,1998,R,D,D,divided
+Alabama,1999,D,D,D,D
+Alabama,2000,D,D,D,D
+Alabama,2001,D,D,D,D
+Alabama,2002,D,D,D,D
+Alabama,2003,R,D,D,divided
+Alabama,2004,R,D,D,divided
+Alabama,2005,R,D,D,divided
+Alabama,2006,R,D,D,divided
+Alabama,2007,R,D,D,divided
+Alabama,2008,R,D,D,divided
+Alabama,2009,R,D,D,divided
+Alabama,2010,R,D,D,divided
+Alabama,2011,R,R,R,R
+Alabama,2012,R,R,R,R
+Alabama,2013,R,R,R,R
+Alabama,2014,R,R,R,R
+Alabama,2015,R,R,R,R
+Alabama,2016,R,R,R,R
+Alabama,2017,R,R,R,R
+Alabama,2018,R,R,R,R
+Alabama,2019,R,R,R,R
+Alabama,2020,R,R,R,R
+Alabama,2021,R,R,R,R
+Alabama,2022,R,R,R,R
+Alabama,2023,R,R,R,R
+Alabama,2024,R,R,R,R
+Alabama,2025,R,R,R,R
+Alabama,2026,R,R,R,R
+Alaska,1992,I,S,D,divided
+Alaska,1993,I,R,D,divided
+Alaska,1994,R,R,D,divided
+Alaska,1995,D,R,R,divided
+Alaska,1996,D,R,R,divided
+Alaska,1997,D,R,R,divided
+Alaska,1998,D,R,R,divided
+Alaska,1999,D,R,R,divided
+Alaska,2000,D,R,R,divided
+Alaska,2001,D,R,R,divided
+Alaska,2002,D,R,R,divided
+Alaska,2003,R,R,R,R
+Alaska,2004,R,R,R,R
+Alaska,2005,R,R,R,R
+Alaska,2006,R,R,R,R
+Alaska,2007,R,D,R,divided
+Alaska,2008,R,D,R,divided
+Alaska,2009,R,D,R,divided
+Alaska,2010,R,D,R,divided
+Alaska,2011,R,D,R,divided
+Alaska,2012,R,D,R,divided
+Alaska,2013,R,R,R,R
+Alaska,2014,R,R,R,R
+Alaska,2015,I,R,R,divided
+Alaska,2016,I,R,R,divided
+Alaska,2017,I,R,D,divided
+Alaska,2018,I,R,D,divided
+Alaska,2019,R,R,S,divided
+Alaska,2020,R,R,S,divided
+Alaska,2021,R,R,S,divided
+Alaska,2022,R,R,S,divided
+Alaska,2023,R,S,S,divided
+Alaska,2024,R,S,S,divided
+Alaska,2025,R,S,S,divided
+Alaska,2026,R,S,S,divided
+Arizona,1992,R,R,R,R
+Arizona,1993,R,R,R,R
+Arizona,1994,R,R,R,R
+Arizona,1995,R,R,R,R
+Arizona,1996,R,R,R,R
+Arizona,1997,R,R,R,R
+Arizona,1998,R,R,R,R
+Arizona,1999,R,R,R,R
+Arizona,2000,R,R,R,R
+Arizona,2001,R,S,R,divided
+Arizona,2002,R,S,R,divided
+Arizona,2003,D,R,R,divided
+Arizona,2004,D,R,R,divided
+Arizona,2005,D,R,R,divided
+Arizona,2006,D,R,R,divided
+Arizona,2007,D,R,R,divided
+Arizona,2008,D,R,R,divided
+Arizona,2009,R,R,R,R
+Arizona,2010,R,R,R,R
+Arizona,2011,R,R,R,R
+Arizona,2012,R,R,R,R
+Arizona,2013,R,R,R,R
+Arizona,2014,R,R,R,R
+Arizona,2015,R,R,R,R
+Arizona,2016,R,R,R,R
+Arizona,2017,R,R,R,R
+Arizona,2018,R,R,R,R
+Arizona,2019,R,R,R,R
+Arizona,2020,R,R,R,R
+Arizona,2021,R,R,R,R
+Arizona,2022,R,R,R,R
+Arizona,2023,D,R,R,divided
+Arizona,2024,D,R,R,divided
+Arizona,2025,D,R,R,divided
+Arizona,2026,D,R,R,divided
+Arkansas,1992,D,D,D,D
+Arkansas,1993,D,D,D,D
+Arkansas,1994,D,D,D,D
+Arkansas,1995,D,D,D,D
+Arkansas,1996,D,D,D,D
+Arkansas,1997,R,D,D,divided
+Arkansas,1998,R,D,D,divided
+Arkansas,1999,R,D,D,divided
+Arkansas,2000,R,D,D,divided
+Arkansas,2001,R,D,D,divided
+Arkansas,2002,R,D,D,divided
+Arkansas,2003,R,D,D,divided
+Arkansas,2004,R,D,D,divided
+Arkansas,2005,R,D,D,divided
+Arkansas,2006,R,D,D,divided
+Arkansas,2007,D,D,D,D
+Arkansas,2008,D,D,D,D
+Arkansas,2009,D,D,D,D
+Arkansas,2010,D,D,D,D
+Arkansas,2011,D,D,D,D
+Arkansas,2012,D,D,D,D
+Arkansas,2013,D,R,R,divided
+Arkansas,2014,D,R,R,divided
+Arkansas,2015,R,R,R,R
+Arkansas,2016,R,R,R,R
+Arkansas,2017,R,R,R,R
+Arkansas,2018,R,R,R,R
+Arkansas,2019,R,R,R,R
+Arkansas,2020,R,R,R,R
+Arkansas,2021,R,R,R,R
+Arkansas,2022,R,R,R,R
+Arkansas,2023,R,R,R,R
+Arkansas,2024,R,R,R,R
+Arkansas,2025,R,R,R,R
+Arkansas,2026,R,R,R,R
+California,1992,R,D,D,divided
+California,1993,R,D,D,divided
+California,1994,R,D,D,divided
+California,1995,R,D,S,divided
+California,1996,R,D,R,divided
+California,1997,R,D,D,divided
+California,1998,R,D,D,divided
+California,1999,D,D,D,D
+California,2000,D,D,D,D
+California,2001,D,D,D,D
+California,2002,D,D,D,D
+California,2003,D,D,D,D
+California,2004,R,D,D,divided
+California,2005,R,D,D,divided
+California,2006,R,D,D,divided
+California,2007,R,D,D,divided
+California,2008,R,D,D,divided
+California,2009,R,D,D,divided
+California,2010,R,D,D,divided
+California,2011,D,D,D,D
+California,2012,D,D,D,D
+California,2013,D,D,D,D
+California,2014,D,D,D,D
+California,2015,D,D,D,D
+California,2016,D,D,D,D
+California,2017,D,D,D,D
+California,2018,D,D,D,D
+California,2019,D,D,D,D
+California,2020,D,D,D,D
+California,2021,D,D,D,D
+California,2022,D,D,D,D
+California,2023,D,D,D,D
+California,2024,D,D,D,D
+California,2025,D,D,D,D
+California,2026,D,D,D,D
+Colorado,1992,D,R,R,divided
+Colorado,1993,D,R,R,divided
+Colorado,1994,D,R,R,divided
+Colorado,1995,D,R,R,divided
+Colorado,1996,D,R,R,divided
+Colorado,1997,D,R,R,divided
+Colorado,1998,D,R,R,divided
+Colorado,1999,R,R,R,R
+Colorado,2000,R,R,R,R
+Colorado,2001,R,D,R,divided
+Colorado,2002,R,D,R,divided
+Colorado,2003,R,R,R,R
+Colorado,2004,R,R,R,R
+Colorado,2005,R,D,D,divided
+Colorado,2006,R,D,D,divided
+Colorado,2007,D,D,D,D
+Colorado,2008,D,D,D,D
+Colorado,2009,D,D,D,D
+Colorado,2010,D,D,D,D
+Colorado,2011,D,D,R,divided
+Colorado,2012,D,D,R,divided
+Colorado,2013,D,D,D,D
+Colorado,2014,D,D,D,D
+Colorado,2015,D,R,D,divided
+Colorado,2016,D,R,D,divided
+Colorado,2017,D,R,D,divided
+Colorado,2018,D,R,D,divided
+Colorado,2019,D,D,D,D
+Colorado,2020,D,D,D,D
+Colorado,2021,D,D,D,D
+Colorado,2022,D,D,D,D
+Colorado,2023,D,D,D,D
+Colorado,2024,D,D,D,D
+Colorado,2025,D,D,D,D
+Colorado,2026,D,D,D,D
+Connecticut,1992,I,D,D,divided
+Connecticut,1993,I,D,D,divided
+Connecticut,1994,I,D,D,divided
+Connecticut,1995,R,R,D,divided
+Connecticut,1996,R,R,D,divided
+Connecticut,1997,R,D,D,divided
+Connecticut,1998,R,D,D,divided
+Connecticut,1999,R,D,D,divided
+Connecticut,2000,R,D,D,divided
+Connecticut,2001,R,D,D,divided
+Connecticut,2002,R,D,D,divided
+Connecticut,2003,R,D,D,divided
+Connecticut,2004,R,D,D,divided
+Connecticut,2005,R,D,D,divided
+Connecticut,2006,R,D,D,divided
+Connecticut,2007,R,D,D,divided
+Connecticut,2008,R,D,D,divided
+Connecticut,2009,R,D,D,divided
+Connecticut,2010,R,D,D,divided
+Connecticut,2011,D,D,D,D
+Connecticut,2012,D,D,D,D
+Connecticut,2013,D,D,D,D
+Connecticut,2014,D,D,D,D
+Connecticut,2015,D,D,D,D
+Connecticut,2016,D,D,D,D
+Connecticut,2017,D,D,D,D
+Connecticut,2018,D,D,D,D
+Connecticut,2019,D,D,D,D
+Connecticut,2020,D,D,D,D
+Connecticut,2021,D,D,D,D
+Connecticut,2022,D,D,D,D
+Connecticut,2023,D,D,D,D
+Connecticut,2024,D,D,D,D
+Connecticut,2025,D,D,D,D
+Connecticut,2026,D,D,D,D
+Delaware,1992,R,D,R,divided
+Delaware,1993,D,D,R,divided
+Delaware,1994,D,D,R,divided
+Delaware,1995,D,D,R,divided
+Delaware,1996,D,D,R,divided
+Delaware,1997,D,D,R,divided
+Delaware,1998,D,D,R,divided
+Delaware,1999,D,D,R,divided
+Delaware,2000,D,D,R,divided
+Delaware,2001,D,D,R,divided
+Delaware,2002,D,D,R,divided
+Delaware,2003,D,D,R,divided
+Delaware,2004,D,D,R,divided
+Delaware,2005,D,D,R,divided
+Delaware,2006,D,D,R,divided
+Delaware,2007,D,D,R,divided
+Delaware,2008,D,D,R,divided
+Delaware,2009,D,D,D,D
+Delaware,2010,D,D,D,D
+Delaware,2011,D,D,D,D
+Delaware,2012,D,D,D,D
+Delaware,2013,D,D,D,D
+Delaware,2014,D,D,D,D
+Delaware,2015,D,D,D,D
+Delaware,2016,D,D,D,D
+Delaware,2017,D,D,D,D
+Delaware,2018,D,D,D,D
+Delaware,2019,D,D,D,D
+Delaware,2020,D,D,D,D
+Delaware,2021,D,D,D,D
+Delaware,2022,D,D,D,D
+Delaware,2023,D,D,D,D
+Delaware,2024,D,D,D,D
+Delaware,2025,D,D,D,D
+Delaware,2026,D,D,D,D
+Florida,1992,D,D,D,D
+Florida,1993,D,S,D,divided
+Florida,1994,D,S,D,divided
+Florida,1995,D,R,D,divided
+Florida,1996,D,R,D,divided
+Florida,1997,D,R,R,divided
+Florida,1998,D,R,R,divided
+Florida,1999,R,R,R,R
+Florida,2000,R,R,R,R
+Florida,2001,R,R,R,R
+Florida,2002,R,R,R,R
+Florida,2003,R,R,R,R
+Florida,2004,R,R,R,R
+Florida,2005,R,R,R,R
+Florida,2006,R,R,R,R
+Florida,2007,R,R,R,R
+Florida,2008,R,R,R,R
+Florida,2009,R,R,R,R
+Florida,2010,I,R,R,divided
+Florida,2011,R,R,R,R
+Florida,2012,R,R,R,R
+Florida,2013,R,R,R,R
+Florida,2014,R,R,R,R
+Florida,2015,R,R,R,R
+Florida,2016,R,R,R,R
+Florida,2017,R,R,R,R
+Florida,2018,R,R,R,R
+Florida,2019,R,R,R,R
+Florida,2020,R,R,R,R
+Florida,2021,R,R,R,R
+Florida,2022,R,R,R,R
+Florida,2023,R,R,R,R
+Florida,2024,R,R,R,R
+Florida,2025,R,R,R,R
+Florida,2026,R,R,R,R
+Georgia,1992,D,D,D,D
+Georgia,1993,D,D,D,D
+Georgia,1994,D,D,D,D
+Georgia,1995,D,D,D,D
+Georgia,1996,D,D,D,D
+Georgia,1997,D,D,D,D
+Georgia,1998,D,D,D,D
+Georgia,1999,D,D,D,D
+Georgia,2000,D,D,D,D
+Georgia,2001,D,D,D,D
+Georgia,2002,D,D,D,D
+Georgia,2003,R,R,D,divided
+Georgia,2004,R,R,D,divided
+Georgia,2005,R,R,R,R
+Georgia,2006,R,R,R,R
+Georgia,2007,R,R,R,R
+Georgia,2008,R,R,R,R
+Georgia,2009,R,R,R,R
+Georgia,2010,R,R,R,R
+Georgia,2011,R,R,R,R
+Georgia,2012,R,R,R,R
+Georgia,2013,R,R,R,R
+Georgia,2014,R,R,R,R
+Georgia,2015,R,R,R,R
+Georgia,2016,R,R,R,R
+Georgia,2017,R,R,R,R
+Georgia,2018,R,R,R,R
+Georgia,2019,R,R,R,R
+Georgia,2020,R,R,R,R
+Georgia,2021,R,R,R,R
+Georgia,2022,R,R,R,R
+Georgia,2023,R,R,R,R
+Georgia,2024,R,R,R,R
+Georgia,2025,R,R,R,R
+Georgia,2026,R,R,R,R
+Hawaii,1992,D,D,D,D
+Hawaii,1993,D,D,D,D
+Hawaii,1994,D,D,D,D
+Hawaii,1995,D,D,D,D
+Hawaii,1996,D,D,D,D
+Hawaii,1997,D,D,D,D
+Hawaii,1998,D,D,D,D
+Hawaii,1999,D,D,D,D
+Hawaii,2000,D,D,D,D
+Hawaii,2001,D,D,D,D
+Hawaii,2002,D,D,D,D
+Hawaii,2003,R,D,D,divided
+Hawaii,2004,R,D,D,divided
+Hawaii,2005,R,D,D,divided
+Hawaii,2006,R,D,D,divided
+Hawaii,2007,R,D,D,divided
+Hawaii,2008,R,D,D,divided
+Hawaii,2009,R,D,D,divided
+Hawaii,2010,R,D,D,divided
+Hawaii,2011,D,D,D,D
+Hawaii,2012,D,D,D,D
+Hawaii,2013,D,D,D,D
+Hawaii,2014,D,D,D,D
+Hawaii,2015,D,D,D,D
+Hawaii,2016,D,D,D,D
+Hawaii,2017,D,D,D,D
+Hawaii,2018,D,D,D,D
+Hawaii,2019,D,D,D,D
+Hawaii,2020,D,D,D,D
+Hawaii,2021,D,D,D,D
+Hawaii,2022,D,D,D,D
+Hawaii,2023,D,D,D,D
+Hawaii,2024,D,D,D,D
+Hawaii,2025,D,D,D,D
+Hawaii,2026,D,D,D,D
+Idaho,1992,D,R,R,divided
+Idaho,1993,D,R,R,divided
+Idaho,1994,D,R,R,divided
+Idaho,1995,R,R,R,R
+Idaho,1996,R,R,R,R
+Idaho,1997,R,R,R,R
+Idaho,1998,R,R,R,R
+Idaho,1999,R,R,R,R
+Idaho,2000,R,R,R,R
+Idaho,2001,R,R,R,R
+Idaho,2002,R,R,R,R
+Idaho,2003,R,R,R,R
+Idaho,2004,R,R,R,R
+Idaho,2005,R,R,R,R
+Idaho,2006,R,R,R,R
+Idaho,2007,R,R,R,R
+Idaho,2008,R,R,R,R
+Idaho,2009,R,R,R,R
+Idaho,2010,R,R,R,R
+Idaho,2011,R,R,R,R
+Idaho,2012,R,R,R,R
+Idaho,2013,R,R,R,R
+Idaho,2014,R,R,R,R
+Idaho,2015,R,R,R,R
+Idaho,2016,R,R,R,R
+Idaho,2017,R,R,R,R
+Idaho,2018,R,R,R,R
+Idaho,2019,R,R,R,R
+Idaho,2020,R,R,R,R
+Idaho,2021,R,R,R,R
+Idaho,2022,R,R,R,R
+Idaho,2023,R,R,R,R
+Idaho,2024,R,R,R,R
+Idaho,2025,R,R,R,R
+Idaho,2026,R,R,R,R
+Illinois,1992,R,D,D,divided
+Illinois,1993,R,R,D,divided
+Illinois,1994,R,R,D,divided
+Illinois,1995,R,R,R,R
+Illinois,1996,R,R,R,R
+Illinois,1997,R,R,D,divided
+Illinois,1998,R,R,D,divided
+Illinois,1999,R,R,D,divided
+Illinois,2000,R,R,D,divided
+Illinois,2001,R,R,D,divided
+Illinois,2002,R,R,D,divided
+Illinois,2003,D,D,D,D
+Illinois,2004,D,D,D,D
+Illinois,2005,D,D,D,D
+Illinois,2006,D,D,D,D
+Illinois,2007,D,D,D,D
+Illinois,2008,D,D,D,D
+Illinois,2009,D,D,D,D
+Illinois,2010,D,D,D,D
+Illinois,2011,D,D,D,D
+Illinois,2012,D,D,D,D
+Illinois,2013,D,D,D,D
+Illinois,2014,D,D,D,D
+Illinois,2015,R,D,D,divided
+Illinois,2016,R,D,D,divided
+Illinois,2017,R,D,D,divided
+Illinois,2018,R,D,D,divided
+Illinois,2019,D,D,D,D
+Illinois,2020,D,D,D,D
+Illinois,2021,D,D,D,D
+Illinois,2022,D,D,D,D
+Illinois,2023,D,D,D,D
+Illinois,2024,D,D,D,D
+Illinois,2025,D,D,D,D
+Illinois,2026,D,D,D,D
+Indiana,1992,D,R,D,divided
+Indiana,1993,D,R,D,divided
+Indiana,1994,D,R,D,divided
+Indiana,1995,D,R,R,divided
+Indiana,1996,D,R,R,divided
+Indiana,1997,D,R,D,divided
+Indiana,1998,D,R,D,divided
+Indiana,1999,D,R,D,divided
+Indiana,2000,D,R,D,divided
+Indiana,2001,D,R,D,divided
+Indiana,2002,D,R,D,divided
+Indiana,2003,D,R,D,divided
+Indiana,2004,D,R,D,divided
+Indiana,2005,R,R,R,R
+Indiana,2006,R,R,R,R
+Indiana,2007,R,R,D,divided
+Indiana,2008,R,R,D,divided
+Indiana,2009,R,R,D,divided
+Indiana,2010,R,R,D,divided
+Indiana,2011,R,R,R,R
+Indiana,2012,R,R,R,R
+Indiana,2013,R,R,R,R
+Indiana,2014,R,R,R,R
+Indiana,2015,R,R,R,R
+Indiana,2016,R,R,R,R
+Indiana,2017,R,R,R,R
+Indiana,2018,R,R,R,R
+Indiana,2019,R,R,R,R
+Indiana,2020,R,R,R,R
+Indiana,2021,R,R,R,R
+Indiana,2022,R,R,R,R
+Indiana,2023,R,R,R,R
+Indiana,2024,R,R,R,R
+Indiana,2025,R,R,R,R
+Indiana,2026,R,R,R,R
+Iowa,1992,R,D,D,divided
+Iowa,1993,R,D,R,divided
+Iowa,1994,R,D,R,divided
+Iowa,1995,R,D,R,divided
+Iowa,1996,R,D,R,divided
+Iowa,1997,R,R,R,R
+Iowa,1998,R,R,R,R
+Iowa,1999,D,R,R,divided
+Iowa,2000,D,R,R,divided
+Iowa,2001,D,R,R,divided
+Iowa,2002,D,R,R,divided
+Iowa,2003,D,R,R,divided
+Iowa,2004,D,R,R,divided
+Iowa,2005,D,S,R,divided
+Iowa,2006,D,S,R,divided
+Iowa,2007,D,D,D,D
+Iowa,2008,D,D,D,D
+Iowa,2009,D,D,D,D
+Iowa,2010,D,D,D,D
+Iowa,2011,R,D,R,divided
+Iowa,2012,R,D,R,divided
+Iowa,2013,R,D,R,divided
+Iowa,2014,R,D,R,divided
+Iowa,2015,R,D,R,divided
+Iowa,2016,R,D,R,divided
+Iowa,2017,R,R,R,R
+Iowa,2018,R,R,R,R
+Iowa,2019,R,R,R,R
+Iowa,2020,R,R,R,R
+Iowa,2021,R,R,R,R
+Iowa,2022,R,R,R,R
+Iowa,2023,R,R,R,R
+Iowa,2024,R,R,R,R
+Iowa,2025,R,R,R,R
+Iowa,2026,R,R,R,R
+Kansas,1992,D,R,D,divided
+Kansas,1993,D,R,R,divided
+Kansas,1994,D,R,R,divided
+Kansas,1995,R,R,R,R
+Kansas,1996,R,R,R,R
+Kansas,1997,R,R,R,R
+Kansas,1998,R,R,R,R
+Kansas,1999,R,R,R,R
+Kansas,2000,R,R,R,R
+Kansas,2001,R,R,R,R
+Kansas,2002,R,R,R,R
+Kansas,2003,D,R,R,divided
+Kansas,2004,D,R,R,divided
+Kansas,2005,D,R,R,divided
+Kansas,2006,D,R,R,divided
+Kansas,2007,D,R,R,divided
+Kansas,2008,D,R,R,divided
+Kansas,2009,D,R,R,divided
+Kansas,2010,D,R,R,divided
+Kansas,2011,R,R,R,R
+Kansas,2012,R,R,R,R
+Kansas,2013,R,R,R,R
+Kansas,2014,R,R,R,R
+Kansas,2015,R,R,R,R
+Kansas,2016,R,R,R,R
+Kansas,2017,R,R,R,R
+Kansas,2018,R,R,R,R
+Kansas,2019,D,R,R,divided
+Kansas,2020,D,R,R,divided
+Kansas,2021,D,R,R,divided
+Kansas,2022,D,R,R,divided
+Kansas,2023,D,R,R,divided
+Kansas,2024,D,R,R,divided
+Kansas,2025,D,R,R,divided
+Kansas,2026,D,R,R,divided
+Kentucky,1992,D,D,D,D
+Kentucky,1993,D,D,D,D
+Kentucky,1994,D,D,D,D
+Kentucky,1995,D,D,D,D
+Kentucky,1996,D,D,D,D
+Kentucky,1997,D,D,D,D
+Kentucky,1998,D,D,D,D
+Kentucky,1999,D,D,D,D
+Kentucky,2000,D,R,D,divided
+Kentucky,2001,D,R,D,divided
+Kentucky,2002,D,R,D,divided
+Kentucky,2003,D,R,D,divided
+Kentucky,2004,R,R,D,divided
+Kentucky,2005,R,R,D,divided
+Kentucky,2006,R,R,D,divided
+Kentucky,2007,R,R,D,divided
+Kentucky,2008,D,R,D,divided
+Kentucky,2009,D,R,D,divided
+Kentucky,2010,D,R,D,divided
+Kentucky,2011,D,R,D,divided
+Kentucky,2012,D,R,D,divided
+Kentucky,2013,D,R,D,divided
+Kentucky,2014,D,R,D,divided
+Kentucky,2015,D,R,D,divided
+Kentucky,2016,R,R,D,divided
+Kentucky,2017,R,R,R,R
+Kentucky,2018,R,R,R,R
+Kentucky,2019,R,R,R,R
+Kentucky,2020,D,R,R,divided
+Kentucky,2021,D,R,R,divided
+Kentucky,2022,D,R,R,divided
+Kentucky,2023,D,R,R,divided
+Kentucky,2024,D,R,R,divided
+Kentucky,2025,D,R,R,divided
+Kentucky,2026,D,R,R,divided
+Louisiana,1992,D,D,D,D
+Louisiana,1993,D,D,D,D
+Louisiana,1994,D,D,D,D
+Louisiana,1995,D,D,D,D
+Louisiana,1996,R,D,D,divided
+Louisiana,1997,R,D,D,divided
+Louisiana,1998,R,D,D,divided
+Louisiana,1999,R,D,D,divided
+Louisiana,2000,R,D,D,divided
+Louisiana,2001,R,D,D,divided
+Louisiana,2002,R,D,D,divided
+Louisiana,2003,R,D,D,divided
+Louisiana,2004,D,D,D,D
+Louisiana,2005,D,D,D,D
+Louisiana,2006,D,D,D,D
+Louisiana,2007,D,D,D,D
+Louisiana,2008,R,D,D,divided
+Louisiana,2009,R,D,D,divided
+Louisiana,2010,R,D,D,divided
+Louisiana,2011,R,R,R,R
+Louisiana,2012,R,R,R,R
+Louisiana,2013,R,R,R,R
+Louisiana,2014,R,R,R,R
+Louisiana,2015,R,R,R,R
+Louisiana,2016,D,R,R,divided
+Louisiana,2017,D,R,R,divided
+Louisiana,2018,D,R,R,divided
+Louisiana,2019,D,R,R,divided
+Louisiana,2020,D,R,R,divided
+Louisiana,2021,D,R,R,divided
+Louisiana,2022,D,R,R,divided
+Louisiana,2023,D,R,R,divided
+Louisiana,2024,R,R,R,R
+Louisiana,2025,R,R,R,R
+Louisiana,2026,R,R,R,R
+Maine,1992,R,D,D,divided
+Maine,1993,R,D,D,divided
+Maine,1994,R,D,D,divided
+Maine,1995,I,R,D,divided
+Maine,1996,I,R,D,divided
+Maine,1997,I,D,D,divided
+Maine,1998,I,D,D,divided
+Maine,1999,I,D,D,divided
+Maine,2000,I,D,D,divided
+Maine,2001,I,S,D,divided
+Maine,2002,I,S,D,divided
+Maine,2003,D,D,D,D
+Maine,2004,D,D,D,D
+Maine,2005,D,D,D,D
+Maine,2006,D,D,D,D
+Maine,2007,D,D,D,D
+Maine,2008,D,D,D,D
+Maine,2009,D,D,D,D
+Maine,2010,D,D,D,D
+Maine,2011,R,R,R,R
+Maine,2012,R,R,R,R
+Maine,2013,R,D,D,divided
+Maine,2014,R,D,D,divided
+Maine,2015,R,R,D,divided
+Maine,2016,R,R,D,divided
+Maine,2017,R,R,D,divided
+Maine,2018,R,R,D,divided
+Maine,2019,D,D,D,D
+Maine,2020,D,D,D,D
+Maine,2021,D,D,D,D
+Maine,2022,D,D,D,D
+Maine,2023,D,D,D,D
+Maine,2024,D,D,D,D
+Maine,2025,D,D,D,D
+Maine,2026,D,D,D,D
+Maryland,1992,D,D,D,D
+Maryland,1993,D,D,D,D
+Maryland,1994,D,D,D,D
+Maryland,1995,D,D,D,D
+Maryland,1996,D,D,D,D
+Maryland,1997,D,D,D,D
+Maryland,1998,D,D,D,D
+Maryland,1999,D,D,D,D
+Maryland,2000,D,D,D,D
+Maryland,2001,D,D,D,D
+Maryland,2002,D,D,D,D
+Maryland,2003,R,D,D,divided
+Maryland,2004,R,D,D,divided
+Maryland,2005,R,D,D,divided
+Maryland,2006,R,D,D,divided
+Maryland,2007,D,D,D,D
+Maryland,2008,D,D,D,D
+Maryland,2009,D,D,D,D
+Maryland,2010,D,D,D,D
+Maryland,2011,D,D,D,D
+Maryland,2012,D,D,D,D
+Maryland,2013,D,D,D,D
+Maryland,2014,D,D,D,D
+Maryland,2015,R,D,D,divided
+Maryland,2016,R,D,D,divided
+Maryland,2017,R,D,D,divided
+Maryland,2018,R,D,D,divided
+Maryland,2019,R,D,D,divided
+Maryland,2020,R,D,D,divided
+Maryland,2021,R,D,D,divided
+Maryland,2022,R,D,D,divided
+Maryland,2023,D,D,D,D
+Maryland,2024,D,D,D,D
+Maryland,2025,D,D,D,D
+Maryland,2026,D,D,D,D
+Massachusetts,1992,R,D,D,divided
+Massachusetts,1993,R,D,D,divided
+Massachusetts,1994,R,D,D,divided
+Massachusetts,1995,R,D,D,divided
+Massachusetts,1996,R,D,D,divided
+Massachusetts,1997,R,D,D,divided
+Massachusetts,1998,R,D,D,divided
+Massachusetts,1999,R,D,D,divided
+Massachusetts,2000,R,D,D,divided
+Massachusetts,2001,R,D,D,divided
+Massachusetts,2002,R,D,D,divided
+Massachusetts,2003,R,D,D,divided
+Massachusetts,2004,R,D,D,divided
+Massachusetts,2005,R,D,D,divided
+Massachusetts,2006,R,D,D,divided
+Massachusetts,2007,D,D,D,D
+Massachusetts,2008,D,D,D,D
+Massachusetts,2009,D,D,D,D
+Massachusetts,2010,D,D,D,D
+Massachusetts,2011,D,D,D,D
+Massachusetts,2012,D,D,D,D
+Massachusetts,2013,D,D,D,D
+Massachusetts,2014,D,D,D,D
+Massachusetts,2015,R,D,D,divided
+Massachusetts,2016,R,D,D,divided
+Massachusetts,2017,R,D,D,divided
+Massachusetts,2018,R,D,D,divided
+Massachusetts,2019,R,D,D,divided
+Massachusetts,2020,R,D,D,divided
+Massachusetts,2021,R,D,D,divided
+Massachusetts,2022,R,D,D,divided
+Massachusetts,2023,D,D,D,D
+Massachusetts,2024,D,D,D,D
+Massachusetts,2025,D,D,D,D
+Massachusetts,2026,D,D,D,D
+Michigan,1992,R,R,D,divided
+Michigan,1993,R,R,S,divided
+Michigan,1994,R,R,S,divided
+Michigan,1995,R,R,R,R
+Michigan,1996,R,R,R,R
+Michigan,1997,R,R,D,divided
+Michigan,1998,R,R,D,divided
+Michigan,1999,R,R,R,R
+Michigan,2000,R,R,R,R
+Michigan,2001,R,R,R,R
+Michigan,2002,R,R,R,R
+Michigan,2003,D,R,R,divided
+Michigan,2004,D,R,R,divided
+Michigan,2005,D,R,R,divided
+Michigan,2006,D,R,R,divided
+Michigan,2007,D,R,D,divided
+Michigan,2008,D,R,D,divided
+Michigan,2009,D,R,D,divided
+Michigan,2010,D,R,D,divided
+Michigan,2011,R,R,R,R
+Michigan,2012,R,R,R,R
+Michigan,2013,R,R,R,R
+Michigan,2014,R,R,R,R
+Michigan,2015,R,R,R,R
+Michigan,2016,R,R,R,R
+Michigan,2017,R,R,R,R
+Michigan,2018,R,R,R,R
+Michigan,2019,D,R,R,divided
+Michigan,2020,D,R,R,divided
+Michigan,2021,D,R,R,divided
+Michigan,2022,D,R,R,divided
+Michigan,2023,D,D,D,D
+Michigan,2024,D,D,D,D
+Michigan,2025,D,D,R,divided
+Michigan,2026,D,D,R,divided
+Minnesota,1992,R,D,D,divided
+Minnesota,1993,R,D,D,divided
+Minnesota,1994,R,D,D,divided
+Minnesota,1995,R,D,D,divided
+Minnesota,1996,R,D,D,divided
+Minnesota,1997,R,D,D,divided
+Minnesota,1998,R,D,D,divided
+Minnesota,1999,I,D,R,divided
+Minnesota,2000,I,D,R,divided
+Minnesota,2001,I,D,R,divided
+Minnesota,2002,I,D,R,divided
+Minnesota,2003,R,D,R,divided
+Minnesota,2004,R,D,R,divided
+Minnesota,2005,R,D,R,divided
+Minnesota,2006,R,D,R,divided
+Minnesota,2007,R,D,D,divided
+Minnesota,2008,R,D,D,divided
+Minnesota,2009,R,D,D,divided
+Minnesota,2010,R,D,D,divided
+Minnesota,2011,D,R,R,divided
+Minnesota,2012,D,R,R,divided
+Minnesota,2013,D,D,D,D
+Minnesota,2014,D,D,D,D
+Minnesota,2015,D,D,R,divided
+Minnesota,2016,D,D,R,divided
+Minnesota,2017,D,R,R,divided
+Minnesota,2018,D,R,R,divided
+Minnesota,2019,D,R,D,divided
+Minnesota,2020,D,R,D,divided
+Minnesota,2021,D,R,D,divided
+Minnesota,2022,D,R,D,divided
+Minnesota,2023,D,D,D,D
+Minnesota,2024,D,D,D,D
+Minnesota,2025,D,D,S,divided
+Minnesota,2026,D,D,S,divided
+Mississippi,1992,R,D,D,divided
+Mississippi,1993,R,D,D,divided
+Mississippi,1994,R,D,D,divided
+Mississippi,1995,R,D,D,divided
+Mississippi,1996,R,D,D,divided
+Mississippi,1997,R,D,D,divided
+Mississippi,1998,R,D,D,divided
+Mississippi,1999,R,D,D,divided
+Mississippi,2000,D,D,D,D
+Mississippi,2001,D,D,D,D
+Mississippi,2002,D,D,D,D
+Mississippi,2003,D,D,D,D
+Mississippi,2004,R,D,D,divided
+Mississippi,2005,R,D,D,divided
+Mississippi,2006,R,D,D,divided
+Mississippi,2007,R,R,D,divided
+Mississippi,2008,R,[2],D,divided
+Mississippi,2009,R,D,D,divided
+Mississippi,2010,R,D,D,divided
+Mississippi,2011,R,D,D,divided
+Mississippi,2012,R,R,R,R
+Mississippi,2013,R,R,R,R
+Mississippi,2014,R,R,R,R
+Mississippi,2015,R,R,R,R
+Mississippi,2016,R,R,R,R
+Mississippi,2017,R,R,R,R
+Mississippi,2018,R,R,R,R
+Mississippi,2019,R,R,R,R
+Mississippi,2020,R,R,R,R
+Mississippi,2021,R,R,R,R
+Mississippi,2022,R,R,R,R
+Mississippi,2023,R,R,R,R
+Mississippi,2024,R,R,R,R
+Mississippi,2025,R,R,R,R
+Mississippi,2026,R,R,R,R
+Missouri,1992,R,D,D,divided
+Missouri,1993,D,D,D,D
+Missouri,1994,D,D,D,D
+Missouri,1995,D,D,D,D
+Missouri,1996,D,D,D,D
+Missouri,1997,D,D,D,D
+Missouri,1998,D,D,D,D
+Missouri,1999,D,D,D,D
+Missouri,2000,D,D,D,D
+Missouri,2001,D,R,D,divided
+Missouri,2002,D,R,D,divided
+Missouri,2003,D,R,R,divided
+Missouri,2004,D,R,R,divided
+Missouri,2005,R,R,R,R
+Missouri,2006,R,R,R,R
+Missouri,2007,R,R,R,R
+Missouri,2008,R,R,R,R
+Missouri,2009,D,R,R,divided
+Missouri,2010,D,R,R,divided
+Missouri,2011,D,R,R,divided
+Missouri,2012,D,R,R,divided
+Missouri,2013,D,R,R,divided
+Missouri,2014,D,R,R,divided
+Missouri,2015,D,R,R,divided
+Missouri,2016,D,R,R,divided
+Missouri,2017,R,R,R,R
+Missouri,2018,R,R,R,R
+Missouri,2019,R,R,R,R
+Missouri,2020,R,R,R,R
+Missouri,2021,R,R,R,R
+Missouri,2022,R,R,R,R
+Missouri,2023,R,R,R,R
+Missouri,2024,R,R,R,R
+Missouri,2025,R,R,R,R
+Missouri,2026,R,R,R,R
+Montana,1992,R,D,D,divided
+Montana,1993,R,D,R,divided
+Montana,1994,R,D,R,divided
+Montana,1995,R,R,R,R
+Montana,1996,R,R,R,R
+Montana,1997,R,R,R,R
+Montana,1998,R,R,R,R
+Montana,1999,R,R,R,R
+Montana,2000,R,R,R,R
+Montana,2001,R,R,R,R
+Montana,2002,R,R,R,R
+Montana,2003,R,R,R,R
+Montana,2004,R,R,R,R
+Montana,2005,D,D,S,divided
+Montana,2006,D,D,S,divided
+Montana,2007,D,D,R,divided
+Montana,2008,D,D,R,divided
+Montana,2009,D,R,S,divided
+Montana,2010,D,R,S,divided
+Montana,2011,D,R,R,divided
+Montana,2012,D,R,R,divided
+Montana,2013,D,R,R,divided
+Montana,2014,D,R,R,divided
+Montana,2015,D,R,R,divided
+Montana,2016,D,R,R,divided
+Montana,2017,D,R,R,divided
+Montana,2018,D,R,R,divided
+Montana,2019,D,R,R,divided
+Montana,2020,D,R,R,divided
+Montana,2021,R,R,R,R
+Montana,2022,R,R,R,R
+Montana,2023,R,R,R,R
+Montana,2024,R,R,R,R
+Montana,2025,R,R,R,R
+Montana,2026,R,R,R,R
+Nebraska,1992,D,-,-,D
+Nebraska,1993,D,-,-,D
+Nebraska,1994,D,-,-,D
+Nebraska,1995,D,-,-,D
+Nebraska,1996,D,-,-,D
+Nebraska,1997,D,-,-,D
+Nebraska,1998,D,-,-,D
+Nebraska,1999,R,-,-,R
+Nebraska,2000,R,-,-,R
+Nebraska,2001,R,-,-,R
+Nebraska,2002,R,-,-,R
+Nebraska,2003,R,-,-,R
+Nebraska,2004,R,-,-,R
+Nebraska,2005,R,-,-,R
+Nebraska,2006,R,-,-,R
+Nebraska,2007,R,-,-,R
+Nebraska,2008,R,-,-,R
+Nebraska,2009,R,-,-,R
+Nebraska,2010,R,-,-,R
+Nebraska,2011,R,-,-,R
+Nebraska,2012,R,-,-,R
+Nebraska,2013,R,-,-,R
+Nebraska,2014,R,-,-,R
+Nebraska,2015,R,-,-,R
+Nebraska,2016,R,-,-,R
+Nebraska,2017,R,-,-,R
+Nebraska,2018,R,-,-,R
+Nebraska,2019,R,-,-,R
+Nebraska,2020,R,-,-,R
+Nebraska,2021,R,-,-,R
+Nebraska,2022,R,-,-,R
+Nebraska,2023,R,-,-,R
+Nebraska,2024,R,-,-,R
+Nebraska,2025,R,-,-,R
+Nebraska,2026,R,-,-,R
+Nevada,1992,D,D,D,D
+Nevada,1993,D,R,D,divided
+Nevada,1994,D,R,D,divided
+Nevada,1995,D,R,S,divided
+Nevada,1996,D,R,S,divided
+Nevada,1997,D,R,D,divided
+Nevada,1998,D,R,D,divided
+Nevada,1999,R,R,D,divided
+Nevada,2000,R,R,D,divided
+Nevada,2001,R,R,D,divided
+Nevada,2002,R,R,D,divided
+Nevada,2003,R,R,D,divided
+Nevada,2004,R,R,D,divided
+Nevada,2005,R,R,D,divided
+Nevada,2006,R,R,D,divided
+Nevada,2007,R,R,D,divided
+Nevada,2008,R,R,D,divided
+Nevada,2009,R,D,D,divided
+Nevada,2010,R,D,D,divided
+Nevada,2011,R,D,D,divided
+Nevada,2012,R,D,D,divided
+Nevada,2013,R,D,D,divided
+Nevada,2014,R,D,D,divided
+Nevada,2015,R,R,R,R
+Nevada,2016,R,R,R,R
+Nevada,2017,R,D,D,divided
+Nevada,2018,R,D,D,divided
+Nevada,2019,D,D,D,D
+Nevada,2020,D,D,D,D
+Nevada,2021,D,D,D,D
+Nevada,2022,D,D,D,D
+Nevada,2023,R,D,D,divided
+Nevada,2024,R,D,D,divided
+Nevada,2025,R,D,D,divided
+Nevada,2026,R,D,D,divided
+New Hampshire,1992,R,R,R,R
+New Hampshire,1993,R,R,R,R
+New Hampshire,1994,R,R,R,R
+New Hampshire,1995,R,R,R,R
+New Hampshire,1996,R,R,R,R
+New Hampshire,1997,D,R,R,divided
+New Hampshire,1998,D,R,R,divided
+New Hampshire,1999,D,D,R,divided
+New Hampshire,2000,D,S,R,divided
+New Hampshire,2001,D,R,R,divided
+New Hampshire,2002,D,R,R,divided
+New Hampshire,2003,R,R,R,R
+New Hampshire,2004,R,R,R,R
+New Hampshire,2005,D,R,R,divided
+New Hampshire,2006,D,R,R,divided
+New Hampshire,2007,D,D,D,D
+New Hampshire,2008,D,D,D,D
+New Hampshire,2009,D,D,D,D
+New Hampshire,2010,D,D,D,D
+New Hampshire,2011,D,R,R,divided
+New Hampshire,2012,D,R,R,divided
+New Hampshire,2013,D,R,D,divided
+New Hampshire,2014,D,R,D,divided
+New Hampshire,2015,D,R,R,divided
+New Hampshire,2016,D,R,R,divided
+New Hampshire,2017,R,R,R,R
+New Hampshire,2018,R,R,R,R
+New Hampshire,2019,R,D,D,divided
+New Hampshire,2020,R,D,D,divided
+New Hampshire,2021,R,R,R,R
+New Hampshire,2022,R,R,R,R
+New Hampshire,2023,R,R,R,R
+New Hampshire,2024,R,R,R,R
+New Hampshire,2025,R,R,R,R
+New Hampshire,2026,R,R,R,R
+New Jersey,1992,D,R,R,divided
+New Jersey,1993,D,R,R,divided
+New Jersey,1994,R,R,R,R
+New Jersey,1995,R,R,R,R
+New Jersey,1996,R,R,R,R
+New Jersey,1997,R,R,R,R
+New Jersey,1998,R,R,R,R
+New Jersey,1999,R,R,R,R
+New Jersey,2000,R,R,R,R
+New Jersey,2001,R,R,R,R
+New Jersey,2002,D,S,D,divided
+New Jersey,2003,D,S,D,divided
+New Jersey,2004,D,D,D,D
+New Jersey,2005,D,D,D,D
+New Jersey,2006,D,D,D,D
+New Jersey,2007,D,D,D,D
+New Jersey,2008,D,D,D,D
+New Jersey,2009,D,D,D,D
+New Jersey,2010,R,D,D,divided
+New Jersey,2011,R,D,D,divided
+New Jersey,2012,R,D,D,divided
+New Jersey,2013,R,D,D,divided
+New Jersey,2014,R,D,D,divided
+New Jersey,2015,R,D,D,divided
+New Jersey,2016,R,D,D,divided
+New Jersey,2017,R,D,D,divided
+New Jersey,2018,D,D,D,D
+New Jersey,2019,D,D,D,D
+New Jersey,2020,D,D,D,D
+New Jersey,2021,D,D,D,D
+New Jersey,2022,D,D,D,D
+New Jersey,2023,D,D,D,D
+New Jersey,2024,D,D,D,D
+New Jersey,2025,D,D,D,D
+New Jersey,2026,D,D,D,D
+New Mexico,1992,D,D,D,D
+New Mexico,1993,D,D,D,D
+New Mexico,1994,D,D,D,D
+New Mexico,1995,R,D,D,divided
+New Mexico,1996,R,D,D,divided
+New Mexico,1997,R,D,D,divided
+New Mexico,1998,R,D,D,divided
+New Mexico,1999,R,D,D,divided
+New Mexico,2000,R,D,D,divided
+New Mexico,2001,R,D,D,divided
+New Mexico,2002,R,D,D,divided
+New Mexico,2003,D,D,D,D
+New Mexico,2004,D,D,D,D
+New Mexico,2005,D,D,D,D
+New Mexico,2006,D,D,D,D
+New Mexico,2007,D,D,D,D
+New Mexico,2008,D,D,D,D
+New Mexico,2009,D,D,D,D
+New Mexico,2010,D,D,D,D
+New Mexico,2011,R,D,D,divided
+New Mexico,2012,R,D,D,divided
+New Mexico,2013,R,D,D,divided
+New Mexico,2014,R,D,D,divided
+New Mexico,2015,R,D,R,divided
+New Mexico,2016,R,D,R,divided
+New Mexico,2017,R,D,D,divided
+New Mexico,2018,R,D,D,divided
+New Mexico,2019,D,D,D,D
+New Mexico,2020,D,D,D,D
+New Mexico,2021,D,D,D,D
+New Mexico,2022,D,D,D,D
+New Mexico,2023,D,D,D,D
+New Mexico,2024,D,D,D,D
+New Mexico,2025,D,D,D,D
+New Mexico,2026,D,D,D,D
+New York,1992,D,R,D,divided
+New York,1993,D,R,D,divided
+New York,1994,D,R,D,divided
+New York,1995,R,R,D,divided
+New York,1996,R,R,D,divided
+New York,1997,R,R,D,divided
+New York,1998,R,R,D,divided
+New York,1999,R,R,D,divided
+New York,2000,R,R,D,divided
+New York,2001,R,R,D,divided
+New York,2002,R,R,D,divided
+New York,2003,R,R,D,divided
+New York,2004,R,R,D,divided
+New York,2005,R,R,D,divided
+New York,2006,R,R,D,divided
+New York,2007,D,R,D,divided
+New York,2008,D,R,D,divided
+New York,2009,D,D,D,D
+New York,2010,D,D,D,D
+New York,2011,D,R,D,divided
+New York,2012,D,R,D,divided
+New York,2013,D,R,D,divided
+New York,2014,D,R,D,divided
+New York,2015,D,R,D,divided
+New York,2016,D,R,D,divided
+New York,2017,D,R,D,divided
+New York,2018,D,R,D,divided
+New York,2019,D,D,D,D
+New York,2020,D,D,D,D
+New York,2021,D,D,D,D
+New York,2022,D,D,D,D
+New York,2023,D,D,D,D
+New York,2024,D,D,D,D
+New York,2025,D,D,D,D
+New York,2026,D,D,D,D
+North Carolina,1992,R,D,D,divided
+North Carolina,1993,D,D,D,D
+North Carolina,1994,D,D,D,D
+North Carolina,1995,D,D,R,divided
+North Carolina,1996,D,D,R,divided
+North Carolina,1997,D,D,R,divided
+North Carolina,1998,D,D,R,divided
+North Carolina,1999,D,D,D,D
+North Carolina,2000,D,D,D,D
+North Carolina,2001,D,D,D,D
+North Carolina,2002,D,D,D,D
+North Carolina,2003,D,D,D,D
+North Carolina,2004,D,D,D,D
+North Carolina,2005,D,D,D,D
+North Carolina,2006,D,D,D,D
+North Carolina,2007,D,D,D,D
+North Carolina,2008,D,D,D,D
+North Carolina,2009,D,D,D,D
+North Carolina,2010,D,D,D,D
+North Carolina,2011,D,R,R,divided
+North Carolina,2012,D,R,R,divided
+North Carolina,2013,R,R,R,R
+North Carolina,2014,R,R,R,R
+North Carolina,2015,R,R,R,R
+North Carolina,2016,R,R,R,R
+North Carolina,2017,D,R,R,divided
+North Carolina,2018,D,R,R,divided
+North Carolina,2019,D,R,R,divided
+North Carolina,2020,D,R,R,divided
+North Carolina,2021,D,R,R,divided
+North Carolina,2022,D,R,R,divided
+North Carolina,2023,D,R,R,divided
+North Carolina,2024,D,R,R,divided
+North Carolina,2025,D,R,R,divided
+North Carolina,2026,D,R,R,divided
+North Dakota,1992,D,D,R,divided
+North Dakota,1993,R,D,R,divided
+North Dakota,1994,R,D,R,divided
+North Dakota,1995,R,R,R,R
+North Dakota,1996,R,R,R,R
+North Dakota,1997,R,R,R,R
+North Dakota,1998,R,R,R,R
+North Dakota,1999,R,R,R,R
+North Dakota,2000,R,R,R,R
+North Dakota,2001,R,R,R,R
+North Dakota,2002,R,R,R,R
+North Dakota,2003,R,R,R,R
+North Dakota,2004,R,R,R,R
+North Dakota,2005,R,R,R,R
+North Dakota,2006,R,R,R,R
+North Dakota,2007,R,R,R,R
+North Dakota,2008,R,R,R,R
+North Dakota,2009,R,R,R,R
+North Dakota,2010,R,R,R,R
+North Dakota,2011,R,R,R,R
+North Dakota,2012,R,R,R,R
+North Dakota,2013,R,R,R,R
+North Dakota,2014,R,R,R,R
+North Dakota,2015,R,R,R,R
+North Dakota,2016,R,R,R,R
+North Dakota,2017,R,R,R,R
+North Dakota,2018,R,R,R,R
+North Dakota,2019,R,R,R,R
+North Dakota,2020,R,R,R,R
+North Dakota,2021,R,R,R,R
+North Dakota,2022,R,R,R,R
+North Dakota,2023,R,R,R,R
+North Dakota,2024,R,R,R,R
+North Dakota,2025,R,R,R,R
+North Dakota,2026,R,R,R,R
+Ohio,1992,R,R,D,divided
+Ohio,1993,R,R,D,divided
+Ohio,1994,R,R,D,divided
+Ohio,1995,R,R,R,R
+Ohio,1996,R,R,R,R
+Ohio,1997,R,R,R,R
+Ohio,1998,R,R,R,R
+Ohio,1999,R,R,R,R
+Ohio,2000,R,R,R,R
+Ohio,2001,R,R,R,R
+Ohio,2002,R,R,R,R
+Ohio,2003,R,R,R,R
+Ohio,2004,R,R,R,R
+Ohio,2005,R,R,R,R
+Ohio,2006,R,R,R,R
+Ohio,2007,D,R,R,divided
+Ohio,2008,D,R,R,divided
+Ohio,2009,D,R,D,divided
+Ohio,2010,D,R,D,divided
+Ohio,2011,R,R,R,R
+Ohio,2012,R,R,R,R
+Ohio,2013,R,R,R,R
+Ohio,2014,R,R,R,R
+Ohio,2015,R,R,R,R
+Ohio,2016,R,R,R,R
+Ohio,2017,R,R,R,R
+Ohio,2018,R,R,R,R
+Ohio,2019,R,R,R,R
+Ohio,2020,R,R,R,R
+Ohio,2021,R,R,R,R
+Ohio,2022,R,R,R,R
+Ohio,2023,R,R,R,R
+Ohio,2024,R,R,R,R
+Ohio,2025,R,R,R,R
+Ohio,2026,R,R,R,R
+Oklahoma,1992,D,D,D,D
+Oklahoma,1993,D,D,D,D
+Oklahoma,1994,D,D,D,D
+Oklahoma,1995,R,D,D,divided
+Oklahoma,1996,R,D,D,divided
+Oklahoma,1997,R,D,D,divided
+Oklahoma,1998,R,D,D,divided
+Oklahoma,1999,R,D,D,divided
+Oklahoma,2000,R,D,D,divided
+Oklahoma,2001,R,D,D,divided
+Oklahoma,2002,R,D,D,divided
+Oklahoma,2003,D,D,D,D
+Oklahoma,2004,D,D,D,D
+Oklahoma,2005,D,D,R,divided
+Oklahoma,2006,D,D,R,divided
+Oklahoma,2007,D,S,R,divided
+Oklahoma,2008,D,S,R,divided
+Oklahoma,2009,D,R,R,divided
+Oklahoma,2010,D,R,R,divided
+Oklahoma,2011,R,R,R,R
+Oklahoma,2012,R,R,R,R
+Oklahoma,2013,R,R,R,R
+Oklahoma,2014,R,R,R,R
+Oklahoma,2015,R,R,R,R
+Oklahoma,2016,R,R,R,R
+Oklahoma,2017,R,R,R,R
+Oklahoma,2018,R,R,R,R
+Oklahoma,2019,R,R,R,R
+Oklahoma,2020,R,R,R,R
+Oklahoma,2021,R,R,R,R
+Oklahoma,2022,R,R,R,R
+Oklahoma,2023,R,R,R,R
+Oklahoma,2024,R,R,R,R
+Oklahoma,2025,R,R,R,R
+Oklahoma,2026,R,R,R,R
+Oregon,1992,D,D,R,divided
+Oregon,1993,D,D,R,divided
+Oregon,1994,D,D,R,divided
+Oregon,1995,D,R,R,divided
+Oregon,1996,D,R,R,divided
+Oregon,1997,D,R,R,divided
+Oregon,1998,D,R,R,divided
+Oregon,1999,D,R,R,divided
+Oregon,2000,D,R,R,divided
+Oregon,2001,D,R,R,divided
+Oregon,2002,D,R,R,divided
+Oregon,2003,D,S,R,divided
+Oregon,2004,D,S,R,divided
+Oregon,2005,D,D,R,divided
+Oregon,2006,D,D,R,divided
+Oregon,2007,D,D,D,D
+Oregon,2008,D,D,D,D
+Oregon,2009,D,D,D,D
+Oregon,2010,D,D,D,D
+Oregon,2011,D,D,S,divided
+Oregon,2012,D,D,S,divided
+Oregon,2013,D,D,D,D
+Oregon,2014,D,D,D,D
+Oregon,2015,D,D,D,D
+Oregon,2016,D,D,D,D
+Oregon,2017,D,D,D,D
+Oregon,2018,D,D,D,D
+Oregon,2019,D,D,D,D
+Oregon,2020,D,D,D,D
+Oregon,2021,D,D,D,D
+Oregon,2022,D,D,D,D
+Oregon,2023,D,D,D,D
+Oregon,2024,D,D,D,D
+Oregon,2025,D,D,D,D
+Oregon,2026,D,D,D,D
+Pennsylvania,1992,D,R,D,divided
+Pennsylvania,1993,D,D,D,D
+Pennsylvania,1994,D,R,D,divided
+Pennsylvania,1995,R,R,R,R
+Pennsylvania,1996,R,R,R,R
+Pennsylvania,1997,R,R,R,R
+Pennsylvania,1998,R,R,R,R
+Pennsylvania,1999,R,R,R,R
+Pennsylvania,2000,R,R,R,R
+Pennsylvania,2001,R,R,R,R
+Pennsylvania,2002,R,R,R,R
+Pennsylvania,2003,D,R,R,divided
+Pennsylvania,2004,D,R,R,divided
+Pennsylvania,2005,D,R,R,divided
+Pennsylvania,2006,D,R,R,divided
+Pennsylvania,2007,D,R,D,divided
+Pennsylvania,2008,D,R,D,divided
+Pennsylvania,2009,D,R,D,divided
+Pennsylvania,2010,D,R,D,divided
+Pennsylvania,2011,R,R,R,R
+Pennsylvania,2012,R,R,R,R
+Pennsylvania,2013,R,R,R,R
+Pennsylvania,2014,R,R,R,R
+Pennsylvania,2015,D,R,R,divided
+Pennsylvania,2016,D,R,R,divided
+Pennsylvania,2017,D,R,R,divided
+Pennsylvania,2018,D,R,R,divided
+Pennsylvania,2019,D,R,R,divided
+Pennsylvania,2020,D,R,R,divided
+Pennsylvania,2021,D,R,R,divided
+Pennsylvania,2022,D,R,R,divided
+Pennsylvania,2023,D,R,D,divided
+Pennsylvania,2024,D,R,D,divided
+Pennsylvania,2025,D,R,D,divided
+Pennsylvania,2026,D,R,D,divided
+Rhode Island,1992,D,D,D,D
+Rhode Island,1993,D,D,D,D
+Rhode Island,1994,D,D,D,D
+Rhode Island,1995,R,D,D,divided
+Rhode Island,1996,R,D,D,divided
+Rhode Island,1997,R,D,D,divided
+Rhode Island,1998,R,D,D,divided
+Rhode Island,1999,R,D,D,divided
+Rhode Island,2000,R,D,D,divided
+Rhode Island,2001,R,D,D,divided
+Rhode Island,2002,R,D,D,divided
+Rhode Island,2003,R,D,D,divided
+Rhode Island,2004,R,D,D,divided
+Rhode Island,2005,R,D,D,divided
+Rhode Island,2006,R,D,D,divided
+Rhode Island,2007,R,D,D,divided
+Rhode Island,2008,R,D,D,divided
+Rhode Island,2009,R,D,D,divided
+Rhode Island,2010,R,D,D,divided
+Rhode Island,2011,I,D,D,divided
+Rhode Island,2012,I,D,D,divided
+Rhode Island,2013,D,D,D,D
+Rhode Island,2014,D,D,D,D
+Rhode Island,2015,D,D,D,D
+Rhode Island,2016,D,D,D,D
+Rhode Island,2017,D,D,D,D
+Rhode Island,2018,D,D,D,D
+Rhode Island,2019,D,D,D,D
+Rhode Island,2020,D,D,D,D
+Rhode Island,2021,D,D,D,D
+Rhode Island,2022,D,D,D,D
+Rhode Island,2023,D,D,D,D
+Rhode Island,2024,D,D,D,D
+Rhode Island,2025,D,D,D,D
+Rhode Island,2026,D,D,D,D
+South Carolina,1992,R,D,D,divided
+South Carolina,1993,R,D,D,divided
+South Carolina,1994,R,D,D,divided
+South Carolina,1995,R,D,R,divided
+South Carolina,1996,R,D,R,divided
+South Carolina,1997,R,D,R,divided
+South Carolina,1998,R,D,R,divided
+South Carolina,1999,D,D,R,divided
+South Carolina,2000,D,D,R,divided
+South Carolina,2001,D,R,R,divided
+South Carolina,2002,D,R,R,divided
+South Carolina,2003,R,R,R,R
+South Carolina,2004,R,R,R,R
+South Carolina,2005,R,R,R,R
+South Carolina,2006,R,R,R,R
+South Carolina,2007,R,R,R,R
+South Carolina,2008,R,R,R,R
+South Carolina,2009,R,R,R,R
+South Carolina,2010,R,R,R,R
+South Carolina,2011,R,R,R,R
+South Carolina,2012,R,R,R,R
+South Carolina,2013,R,R,R,R
+South Carolina,2014,R,R,R,R
+South Carolina,2015,R,R,R,R
+South Carolina,2016,R,R,R,R
+South Carolina,2017,R,R,R,R
+South Carolina,2018,R,R,R,R
+South Carolina,2019,R,R,R,R
+South Carolina,2020,R,R,R,R
+South Carolina,2021,R,R,R,R
+South Carolina,2022,R,R,R,R
+South Carolina,2023,R,R,R,R
+South Carolina,2024,R,R,R,R
+South Carolina,2025,R,R,R,R
+South Carolina,2026,R,R,R,R
+South Dakota,1992,R,R,R,R
+South Dakota,1993,R,D,R,divided
+South Dakota,1994,R,D,R,divided
+South Dakota,1995,R,R,R,R
+South Dakota,1996,R,R,R,R
+South Dakota,1997,R,R,R,R
+South Dakota,1998,R,R,R,R
+South Dakota,1999,R,R,R,R
+South Dakota,2000,R,R,R,R
+South Dakota,2001,R,R,R,R
+South Dakota,2002,R,R,R,R
+South Dakota,2003,R,R,R,R
+South Dakota,2004,R,R,R,R
+South Dakota,2005,R,R,R,R
+South Dakota,2006,R,R,R,R
+South Dakota,2007,R,R,R,R
+South Dakota,2008,R,R,R,R
+South Dakota,2009,R,R,R,R
+South Dakota,2010,R,R,R,R
+South Dakota,2011,R,R,R,R
+South Dakota,2012,R,R,R,R
+South Dakota,2013,R,R,R,R
+South Dakota,2014,R,R,R,R
+South Dakota,2015,R,R,R,R
+South Dakota,2016,R,R,R,R
+South Dakota,2017,R,R,R,R
+South Dakota,2018,R,R,R,R
+South Dakota,2019,R,R,R,R
+South Dakota,2020,R,R,R,R
+South Dakota,2021,R,R,R,R
+South Dakota,2022,R,R,R,R
+South Dakota,2023,R,R,R,R
+South Dakota,2024,R,R,R,R
+South Dakota,2025,R,R,R,R
+South Dakota,2026,R,R,R,R
+Tennessee,1992,D,D,D,D
+Tennessee,1993,D,D,D,D
+Tennessee,1994,D,D,D,D
+Tennessee,1995,R,D,D,divided
+Tennessee,1996,R,R,D,divided
+Tennessee,1997,R,D,D,divided
+Tennessee,1998,R,D,D,divided
+Tennessee,1999,R,D,D,divided
+Tennessee,2000,R,D,D,divided
+Tennessee,2001,R,D,D,divided
+Tennessee,2002,R,D,D,divided
+Tennessee,2003,D,D,D,D
+Tennessee,2004,D,D,D,D
+Tennessee,2005,D,R,D,divided
+Tennessee,2006,D,R,D,divided
+Tennessee,2007,D,S,D,divided
+Tennessee,2008,D,S,D,divided
+Tennessee,2009,D,R,D,divided
+Tennessee,2010,D,R,R,divided
+Tennessee,2011,R,R,R,R
+Tennessee,2012,R,R,R,R
+Tennessee,2013,R,R,R,R
+Tennessee,2014,R,R,R,R
+Tennessee,2015,R,R,R,R
+Tennessee,2016,R,R,R,R
+Tennessee,2017,R,R,R,R
+Tennessee,2018,R,R,R,R
+Tennessee,2019,R,R,R,R
+Tennessee,2020,R,R,R,R
+Tennessee,2021,R,R,R,R
+Tennessee,2022,R,R,R,R
+Tennessee,2023,R,R,R,R
+Tennessee,2024,R,R,R,R
+Tennessee,2025,R,R,R,R
+Tennessee,2026,R,R,R,R
+Texas,1992,D,D,D,D
+Texas,1993,D,D,D,D
+Texas,1994,D,D,D,D
+Texas,1995,R,D,D,divided
+Texas,1996,R,D,D,divided
+Texas,1997,R,R,D,divided
+Texas,1998,R,R,D,divided
+Texas,1999,R,R,D,divided
+Texas,2000,R,R,D,divided
+Texas,2001,R,R,D,divided
+Texas,2002,R,R,D,divided
+Texas,2003,R,R,R,R
+Texas,2004,R,R,R,R
+Texas,2005,R,R,R,R
+Texas,2006,R,R,R,R
+Texas,2007,R,R,R,R
+Texas,2008,R,R,R,R
+Texas,2009,R,R,R,R
+Texas,2010,R,R,R,R
+Texas,2011,R,R,R,R
+Texas,2012,R,R,R,R
+Texas,2013,R,R,R,R
+Texas,2014,R,R,R,R
+Texas,2015,R,R,R,R
+Texas,2016,R,R,R,R
+Texas,2017,R,R,R,R
+Texas,2018,R,R,R,R
+Texas,2019,R,R,R,R
+Texas,2020,R,R,R,R
+Texas,2021,R,R,R,R
+Texas,2022,R,R,R,R
+Texas,2023,R,R,R,R
+Texas,2024,R,R,R,R
+Texas,2025,R,R,R,R
+Texas,2026,R,R,R,R
+Utah,1992,R,R,R,R
+Utah,1993,R,R,R,R
+Utah,1994,R,R,R,R
+Utah,1995,R,R,R,R
+Utah,1996,R,R,R,R
+Utah,1997,R,R,R,R
+Utah,1998,R,R,R,R
+Utah,1999,R,R,R,R
+Utah,2000,R,R,R,R
+Utah,2001,R,R,R,R
+Utah,2002,R,R,R,R
+Utah,2003,R,R,R,R
+Utah,2004,R,R,R,R
+Utah,2005,R,R,R,R
+Utah,2006,R,R,R,R
+Utah,2007,R,R,R,R
+Utah,2008,R,R,R,R
+Utah,2009,R,R,R,R
+Utah,2010,R,R,R,R
+Utah,2011,R,R,R,R
+Utah,2012,R,R,R,R
+Utah,2013,R,R,R,R
+Utah,2014,R,R,R,R
+Utah,2015,R,R,R,R
+Utah,2016,R,R,R,R
+Utah,2017,R,R,R,R
+Utah,2018,R,R,R,R
+Utah,2019,R,R,R,R
+Utah,2020,R,R,R,R
+Utah,2021,R,R,R,R
+Utah,2022,R,R,R,R
+Utah,2023,R,R,R,R
+Utah,2024,R,R,R,R
+Utah,2025,R,R,R,R
+Utah,2026,R,R,R,R
+Vermont,1992,D,D,R,divided
+Vermont,1993,D,R,D,divided
+Vermont,1994,D,R,D,divided
+Vermont,1995,D,R,D,divided
+Vermont,1996,D,R,D,divided
+Vermont,1997,D,D,D,D
+Vermont,1998,D,D,D,D
+Vermont,1999,D,D,D,D
+Vermont,2000,D,D,D,D
+Vermont,2001,D,D,R,divided
+Vermont,2002,D,D,R,divided
+Vermont,2003,R,D,R,divided
+Vermont,2004,R,D,R,divided
+Vermont,2005,R,D,D,divided
+Vermont,2006,R,D,D,divided
+Vermont,2007,R,D,D,divided
+Vermont,2008,R,D,D,divided
+Vermont,2009,R,D,D,divided
+Vermont,2010,R,D,D,divided
+Vermont,2011,D,D,D,D
+Vermont,2012,D,D,D,D
+Vermont,2013,D,D,D,D
+Vermont,2014,D,D,D,D
+Vermont,2015,D,D,D,D
+Vermont,2016,D,D,D,D
+Vermont,2017,R,D,D,divided
+Vermont,2018,R,D,D,divided
+Vermont,2019,R,D,D,divided
+Vermont,2020,R,D,D,divided
+Vermont,2021,R,D,D,divided
+Vermont,2022,R,D,D,divided
+Vermont,2023,R,D,D,divided
+Vermont,2024,R,D,D,divided
+Vermont,2025,R,D,D,divided
+Vermont,2026,R,D,D,divided
+Virginia,1992,D,D,D,D
+Virginia,1993,D,D,D,D
+Virginia,1994,R,D,D,divided
+Virginia,1995,R,D,D,divided
+Virginia,1996,R,S,D,divided
+Virginia,1997,R,S,D,divided
+Virginia,1998,R,R,S,divided
+Virginia,1999,R,R,S,divided
+Virginia,2000,R,R,R,R
+Virginia,2001,R,R,R,R
+Virginia,2002,D,R,R,divided
+Virginia,2003,D,R,R,divided
+Virginia,2004,D,R,R,divided
+Virginia,2005,D,R,R,divided
+Virginia,2006,D,R,R,divided
+Virginia,2007,D,R,R,divided
+Virginia,2008,D,D,R,divided
+Virginia,2009,D,D,R,divided
+Virginia,2010,R,D,R,divided
+Virginia,2011,R,D,R,divided
+Virginia,2012,R,R,R,R
+Virginia,2013,R,R,R,R
+Virginia,2014,D,D,R,divided
+Virginia,2015,D,R,R,divided
+Virginia,2016,D,R,R,divided
+Virginia,2017,D,R,R,divided
+Virginia,2018,D,R,R,divided
+Virginia,2019,D,R,R,divided
+Virginia,2020,D,D,D,D
+Virginia,2021,D,D,D,D
+Virginia,2022,R,D,R,divided
+Virginia,2023,R,D,R,divided
+Virginia,2024,R,D,D,divided
+Virginia,2025,R,D,D,divided
+Virginia,2026,D,D,D,D
+Washington,1992,D,R,D,divided
+Washington,1993,D,D,D,D
+Washington,1994,D,D,D,D
+Washington,1995,D,D,R,divided
+Washington,1996,D,D,R,divided
+Washington,1997,D,R,R,divided
+Washington,1998,D,R,R,divided
+Washington,1999,D,D,S,divided
+Washington,2000,D,D,S,divided
+Washington,2001,D,D,S,divided
+Washington,2002,D,D,D,D
+Washington,2003,D,R,D,divided
+Washington,2004,D,R,D,divided
+Washington,2005,D,D,D,D
+Washington,2006,D,D,D,D
+Washington,2007,D,D,D,D
+Washington,2008,D,D,D,D
+Washington,2009,D,D,D,D
+Washington,2010,D,D,D,D
+Washington,2011,D,D,D,D
+Washington,2012,D,D,D,D
+Washington,2013,D,R,D,divided
+Washington,2014,D,R,D,divided
+Washington,2015,D,R,D,divided
+Washington,2016,D,R,D,divided
+Washington,2017,D,R,D,divided
+Washington,2018,D,[3],D,divided
+Washington,2019,D,D,D,D
+Washington,2020,D,D,D,D
+Washington,2021,D,D,D,D
+Washington,2022,D,D,D,D
+Washington,2023,D,D,D,D
+Washington,2024,D,D,D,D
+Washington,2025,D,D,D,D
+Washington,2026,D,D,D,D
+West Virginia,1992,D,D,D,D
+West Virginia,1993,D,D,D,D
+West Virginia,1994,D,D,D,D
+West Virginia,1995,D,D,D,D
+West Virginia,1996,D,D,D,D
+West Virginia,1997,R,D,D,divided
+West Virginia,1998,R,D,D,divided
+West Virginia,1999,R,D,D,divided
+West Virginia,2000,R,D,D,divided
+West Virginia,2001,D,D,D,D
+West Virginia,2002,D,D,D,D
+West Virginia,2003,D,D,D,D
+West Virginia,2004,D,D,D,D
+West Virginia,2005,D,D,D,D
+West Virginia,2006,D,D,D,D
+West Virginia,2007,D,D,D,D
+West Virginia,2008,D,D,D,D
+West Virginia,2009,D,D,D,D
+West Virginia,2010,D,D,D,D
+West Virginia,2011,D,D,D,D
+West Virginia,2012,D,D,D,D
+West Virginia,2013,D,D,D,D
+West Virginia,2014,D,D,D,D
+West Virginia,2015,D,R,R,divided
+West Virginia,2016,D,R,R,divided
+West Virginia,2017,D,R,R,divided
+West Virginia,2018,[4],R,R,divided
+West Virginia,2019,R,R,R,R
+West Virginia,2020,R,R,R,R
+West Virginia,2021,R,R,R,R
+West Virginia,2022,R,R,R,R
+West Virginia,2023,R,R,R,R
+West Virginia,2024,R,R,R,R
+West Virginia,2025,R,R,R,R
+West Virginia,2026,R,R,R,R
+Wisconsin,1992,R,D,D,divided
+Wisconsin,1993,R,R,D,divided
+Wisconsin,1994,R,R,D,divided
+Wisconsin,1995,R,R,R,R
+Wisconsin,1996,R,D,R,divided
+Wisconsin,1997,R,D,R,divided
+Wisconsin,1998,R,R,R,R
+Wisconsin,1999,R,D,R,divided
+Wisconsin,2000,R,D,R,divided
+Wisconsin,2001,R,D,R,divided
+Wisconsin,2002,R,D,R,divided
+Wisconsin,2003,D,R,R,divided
+Wisconsin,2004,D,R,R,divided
+Wisconsin,2005,D,R,R,divided
+Wisconsin,2006,D,R,R,divided
+Wisconsin,2007,D,D,R,divided
+Wisconsin,2008,D,D,R,divided
+Wisconsin,2009,D,D,D,D
+Wisconsin,2010,D,D,D,D
+Wisconsin,2011,R,R,R,R
+Wisconsin,2012,R,R,R,R
+Wisconsin,2013,R,R,R,R
+Wisconsin,2014,R,R,R,R
+Wisconsin,2015,R,R,R,R
+Wisconsin,2016,R,R,R,R
+Wisconsin,2017,R,R,R,R
+Wisconsin,2018,R,R,R,R
+Wisconsin,2019,D,R,R,divided
+Wisconsin,2020,D,R,R,divided
+Wisconsin,2021,D,R,R,divided
+Wisconsin,2022,D,R,R,divided
+Wisconsin,2023,D,R,R,divided
+Wisconsin,2024,D,R,R,divided
+Wisconsin,2025,D,R,R,divided
+Wisconsin,2026,D,R,R,divided
+Wyoming,1992,D,R,R,divided
+Wyoming,1993,D,R,R,divided
+Wyoming,1994,D,R,R,divided
+Wyoming,1995,R,R,R,R
+Wyoming,1996,R,R,R,R
+Wyoming,1997,R,R,R,R
+Wyoming,1998,R,R,R,R
+Wyoming,1999,R,R,R,R
+Wyoming,2000,R,R,R,R
+Wyoming,2001,R,R,R,R
+Wyoming,2002,R,R,R,R
+Wyoming,2003,D,R,R,divided
+Wyoming,2004,D,R,R,divided
+Wyoming,2005,D,R,R,divided
+Wyoming,2006,D,R,R,divided
+Wyoming,2007,D,R,R,divided
+Wyoming,2008,D,R,R,divided
+Wyoming,2009,D,R,R,divided
+Wyoming,2010,D,R,R,divided
+Wyoming,2011,R,R,R,R
+Wyoming,2012,R,R,R,R
+Wyoming,2013,R,R,R,R
+Wyoming,2014,R,R,R,R
+Wyoming,2015,R,R,R,R
+Wyoming,2016,R,R,R,R
+Wyoming,2017,R,R,R,R
+Wyoming,2018,R,R,R,R
+Wyoming,2019,R,R,R,R
+Wyoming,2020,R,R,R,R
+Wyoming,2021,R,R,R,R
+Wyoming,2022,R,R,R,R
+Wyoming,2023,R,R,R,R
+Wyoming,2024,R,R,R,R
+Wyoming,2025,R,R,R,R
+Wyoming,2026,R,R,R,R
