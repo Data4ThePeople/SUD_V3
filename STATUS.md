@@ -170,6 +170,13 @@ question we have not checked; look for research on certifier practice.
     people who were diagnosed or billed for it. People with an untreated SUD may have to prove the
     exemption themselves. Check SAMHSA's share of people with SUD who received treatment, and CMS's
     interim rule or guidance on how States define and verify the SUD exemption.
+- Eric's angle (2026-10-29, from his knowledge in Ohio): Ohio JFS is already overwhelmed with calls
+  and cannot keep pace. From January 1 eligibility calls and questions will rise sharply, and people
+  the law says should qualify (including the SUD exemptions) may sit in a backlog without coverage.
+  Needs public evidence before it goes in a post. Sources to check: CMS's monthly state Medicaid call
+  center data from the 2023-2024 unwinding (call volume, average wait, abandonment rate, Ohio vs
+  other states); the unwinding share of disenrollments that were procedural; Arkansas 2018 work
+  requirement results; Georgia Pathways; Ohio's own implementation plan and staffing.
 - CBO, as summarized by KFF: the law reduces federal health spending by over $1 trillion and adds
   10 million uninsured; the work requirement alone cuts federal Medicaid spending $326 billion over
   10 years and adds 5.3 million uninsured in 2034. Provider tax limits for expansion states start
