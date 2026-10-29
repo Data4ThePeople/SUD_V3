@@ -26,6 +26,46 @@ Since: 2026-10-28
 
 None.
 
+## Story leads
+
+### 1. Fewer people with an alcohol disorder, more alcohol deaths (raised by Eric, 2026-10-29)
+
+**What our data shows (same years, same states):**
+- 2008-2009 to 2018-2019, alcohol use disorder (DSM-IV, 12+): the point estimate fell in all 51
+  states; SAMHSA's test finds 37 significant decreases, 0 increases. US 7.42% to 5.34%.
+- 2009 to 2019, alcohol-induced death rate (crude): rose in 50 of 51 states. US 8.0 to 11.9 per 100K.
+- Not the same pattern for drugs: 2016 to 2019, drug disorder and overdose death rates both rose in
+  most states. In 2022-2024 both alcohol measures and overdose deaths fell in most states. The Change
+  view's 2019-2024 deaths vs 2022-2024 disorders compares different years, so it is not this lead.
+
+**Age looks like the main thread (SAMHSA SAE dataset, national, point estimates, not tested):**
+- 12-17: 4.8% to 1.6%. 18-25: 16.8% to 9.7%. 26+: 6.2% to 5.1%.
+- Of the 4.0M drop in people with AUD, 2.3M was ages 18-25 and 0.8M ages 12-17; 26+ fell 0.9M.
+- By state: AUD fell in all 51 states for 12-17 and 18-25, and in 47 for 26+.
+- Alcohol-induced deaths are mostly chronic causes (alcoholic liver disease leads) and peak at ages
+  55-64 (NCHS Data Brief 448). So the people whose disorder rates fell most are not the people who
+  die of alcohol-induced causes. Deaths may reflect drinking over many years, not current prevalence.
+  This is an explanation to test, not a finding.
+
+**Outside research so far:**
+- ASPE issue brief (2015-2018): AUD fell 36% for 12-17 and 7% for 18-25 (both significant); 6% for
+  26+, not significant. https://www.aspe.hhs.gov/reports/age-group-differences-progress-toward-reducing-substance-use-disorders-2015-2018-issue-brief
+- NCHS Data Brief 448: age-adjusted alcohol-induced rate up 26% 2019 to 2020; alcoholic liver disease
+  6.4 to 7.9 per 100K; rates peak at 55-64. https://stacks.cdc.gov/view/cdc/121795
+- Wong, Böttcher, Chou, D'Orsogna (2025), PLOS Global Public Health: crude rate 7.0 (1999) to 13.2
+  (2024); liver disease the leading cause; largest relative rise among women 25-34; pandemic spike
+  peaking 2021. https://journals.plos.org/globalpublichealth/article?id=10.1371%2Fjournal.pgph.0004623
+- Reports (not yet checked against primary data) of heavy drinking rising among adults 50-64,
+  2018-2024.
+
+**To do before writing:**
+- Pull WONDER alcohol-induced deaths by age group and state (Eric's browser) to test the age
+  explanation directly.
+- Pull SAMHSA's AUD by age for 2021-2024 (DSM-5 dataset).
+- Check the 50-64 heavy-drinking study at its primary source.
+- Note: AUD measures who has the disorder in a year; it does not measure how much people with it
+  drink, so rising deaths with falling prevalence can both be true.
+
 ## Log
 
 - 2026-10-28 Step 1 opened. Topic: state-by-state SUD prevalence vs outpatient treatment capacity, 2001-2024, as an interactive dashboard. Clean restart: no code, numbers or methods from earlier D4TP SUD repos.
