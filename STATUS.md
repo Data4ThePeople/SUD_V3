@@ -58,6 +58,19 @@ None.
 - Reports (not yet checked against primary data) of heavy drinking rising among adults 50-64,
   2018-2024.
 
+**Is it just an older population? Partly (checked 2026-10-29):**
+- CDC's age-adjusted rate (2000 US standard population) removes the effect of age mix.
+  2009: 7.4 per 100K (NVSR vol. 60 no. 3, "Deaths: Final Data for 2009", Table 16; crude 8.0, which
+  matches our data). 2019: 10.4 (NCHS Data Brief 448).
+- Crude rate +49% (8.0 to 11.9); age-adjusted +41% (7.4 to 10.4). Aging accounts for a small part;
+  most of the rise remains after adjusting for age.
+- 2009 age-specific rates peaked at 45-54 (18.8) and 55-64 (21.2) per 100K (NVSR Table 11).
+
+**Is it a labeling change? No sign of one in the code list:** CDC's 2009 report lists the same 14
+ICD-10 codes we use (E24.4, F10, G31.2, G62.1, G72.1, I42.6, K29.2, K70, K85.2, K86.0, R78.0, X45,
+X65, Y15). Whether doctors write alcohol on death certificates more often now is a separate
+question we have not checked; look for research on certifier practice.
+
 **To do before writing:**
 - Pull WONDER alcohol-induced deaths by age group and state (Eric's browser) to test the age
   explanation directly.
