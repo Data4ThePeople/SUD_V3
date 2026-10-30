@@ -265,7 +265,7 @@ Drug Use and Health, state small area estimates.
   notes say prescription drug use disorder questions were asked of everyone who
   used prescription drugs in the past year, whether or not they misused them.
   The earlier measures covered misuse only.
-- **People per Worker always uses any SUD.**
+- **People with SUD per Worker always uses any SUD.**
 
 ## N-SSATS (2000-2020) / N-SUMHSS (2021-2024) (SAMHSA)
 
@@ -377,9 +377,9 @@ Other points to note:
 **State-to-national check.** Where nothing is withheld, state sums are within
 ±40 of the national figure.
 
-## Treatment workers and People per Worker (decision 2026-10-28)
+## Treatment workers and People with SUD per Worker (decision 2026-10-28)
 
-People per Worker = SAMHSA's count of people with SUD ÷ treatment workers.
+People with SUD per Worker = SAMHSA's count of people with SUD ÷ treatment workers.
 
 **Treatment workers on the page are OEWS counselors and social workers.**
 Substance abuse and mental health counselors (21-1011 + 21-1014 through 2016;

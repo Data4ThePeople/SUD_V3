@@ -173,7 +173,7 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 
 <script>
 const D = /*DATA*/null;
-const GAP = {short: "PEOPLE / WORKER", name: "People per Worker", unit: "people with SUD per treatment worker"};
+const GAP = {short: "PEOPLE WITH SUD / WORKER", name: "People with SUD per Worker", unit: "people with SUD per treatment worker"};
 // ---------- what "treatment workers" means: OEWS counselors and social workers ----------
 const VV = {
   bannerNote: "counselors and social workers in all settings · BLS OEWS",
@@ -242,7 +242,7 @@ const METRICS = {
           dom: () => [0, 12], fmt: v => v.toFixed(1),
           ends: ["fewer facilities per resident", "more facilities per resident"],
           reads: "Darker states have more outpatient facilities for their population."},
-  gap:   {key: "gap", short: GAP.short, label: GAP.name + " (" + GAP.unit + ")", c: "--gap",
+  gap:   {key: "gap", short: GAP.short, label: GAP.name, c: "--gap",
           dom: y => dsm5(y) ? [25, 200] : [0, 150], fmt: v => Math.round(v).toLocaleString(),
           ends: ["fewer people with SUD per worker", "more people with SUD per worker"],
           reads: "Darker states have more people with a substance use disorder for each treatment worker."},

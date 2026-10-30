@@ -23,7 +23,7 @@
 | WONDER | deaths and population match exactly in all 24 years |
 
 The page computes two values in the browser: establishments per 100K
-(facilities ÷ population × 100,000) and People per Worker (SUD count ÷ workers).
+(facilities ÷ population × 100,000) and People with SUD per Worker (SUD count ÷ workers).
 `build.py` computes both with the same formulas into `panel.csv`.
 
 `scripts/coverage.py` reports, for each year, how many states have each value
@@ -89,10 +89,10 @@ table. They go to Eric as numbered proposals.
 ## Independent tie-out of OEWS workers (fresh agent, 2026-10-28)
 
 A second fresh agent downloaded the 48 BLS OEWS zips itself and rebuilt the worker count and
-People per Worker. Full report: `tieout_independent/oews/REPORT.md`.
+People with SUD per Worker. Full report: `tieout_independent/oews/REPORT.md`.
 
 **Numbers: no differences.** 1,248 geo-years blank vs not blank, 1,197 worker values, 996
-People per Worker values, 1,173 state sampling-error notes: 0 differences.
+People with SUD per Worker values, 1,173 state sampling-error notes: 0 differences.
 
 **Fixed in response.**
 - The US sampling-error note was blank. The build now reads the national PRSE, and the
