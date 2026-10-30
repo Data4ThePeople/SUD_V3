@@ -23,7 +23,7 @@ array has 24 years, and all 52 geographies are present.
 | Source | Result |
 |---|---|
 | NSDUH | 20 of 20 windows pass, within ±5 thousand |
-| QCEW | every fully disclosed year passes (employment within ±7, establishments within ±11); partial years are listed |
+| QCEW | every fully disclosed year passes (employment within ±7, establishments within ±11); partial years are listed. QCEW is not on the page; the check is kept for the source comparison |
 | WONDER | deaths and population match exactly in all 24 years |
 
 The page computes two values in the browser: establishments per 100K
@@ -48,8 +48,7 @@ measured, withheld, or missing.
 | NC 2023: over 900 overdose deaths recoded after the file closed | CDC WONDER export caveat | Supported |
 | R99 anomalies in CA 2001, GA 2008-2009, NJ 2009 | CDC WONDER export caveats | Supported. CA's note covers 2000-2001; only 2001 is in our range |
 | 2018-2020 databases agree exactly | `clean_wonder.py` check on every build | Supported |
-| Worker count leaves out the self-employed and programs inside hospitals | QCEW scope; NAICS assigns by primary activity | Supported |
-| Worker count leaves out federal facilities such as the VA | Ownership code 1 is excluded by design | Supported |
+| Worker count covers every setting and ownership, including hospitals; leaves out the self-employed; counts clinicians only | OEWS scope and SOC codes (DATASETS.md, OEWS section) | Supported |
 | NSDUH leaves out people in institutions and people experiencing homelessness who are not in shelters | NSDUH target population (civilian, noninstitutionalized) | Partly supported. The institutions part is in our files; the shelters wording has not been checked against a saved SAMHSA document |
 | DSM-IV: at least 3 of 7 dependence signs (most substances) or 1 of 4 abuse signs | 2018-2019 SAE methodology guide, B.9 | Supported |
 | DSM-5: at least 2 of 11 criteria; from 2021 all past-year prescription drug users asked; tolerance and withdrawal not counted for those who did not misuse | 2021-2022 SAE guide, B.11 | Supported |

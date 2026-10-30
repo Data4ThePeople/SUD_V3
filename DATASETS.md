@@ -8,6 +8,11 @@ filled, interpolated, or estimated by us.
 
 ## Quarterly Census of Employment and Wages, QCEW (BLS)
 
+**Not used on the page.** We pulled and checked QCEW, then set it aside for both
+measures. Facilities come from N-SSATS / N-SUMHSS (see that section) and workers
+from OEWS (see "Treatment workers and People per Worker"). This section stays as
+the record of what we compared.
+
 **What it is.** A count of establishments and jobs covered by state
 unemployment insurance (and federal UCFE), by county, state and nation, by
 industry (NAICS) and ownership. We use the annual average for each state, year,
@@ -28,9 +33,9 @@ address. Raw rows are kept unchanged in `data/raw/qcew/qcew_<year>.csv`.
 
 | NAICS | Title | Role |
 |---|---|---|
-| 621420 | Outpatient Mental Health and Substance Abuse Centers | establishments and workers |
-| 621330 | Offices of Mental Health Practitioners (except Physicians) | workers only (added for overcount) |
-| 621112 | Offices of Physicians, Mental Health Specialists | workers only (added for overcount) |
+| 621420 | Outpatient Mental Health and Substance Abuse Centers | establishments and workers (compared, not used) |
+| 621330 | Offices of Mental Health Practitioners (except Physicians) | workers only (compared, not used) |
+| 621112 | Offices of Physicians, Mental Health Specialists | workers only (compared, not used) |
 
 Ownership codes: 1 federal, 2 state, 3 local, 5 private.
 
@@ -516,7 +521,7 @@ Other points to note:
 - The national total of the three codes moves smoothly across each of these
   points.
 
-**Job mix inside the QCEW codes (national only).** OEWS also publishes national
+**Job mix inside the QCEW codes (national only; background, not on the page).** OEWS also publishes national
 estimates by industry (`data/raw/oews_industry/`, built by
 `scripts/build_oews_industry.py` and summarized by `scripts/oews_mix_summary.py`
 into `data/build/oews_mix_summary.csv`). They cover 621420 and 621330, not
@@ -561,6 +566,9 @@ QCEW columns stay in `data/build/panel.csv` for reference. They are not shown on
 the page.
 
 ## County Business Patterns (Census)
+
+**Not used on the page.** CBP was pulled only to support QCEW, which the page no
+longer uses.
 
 **What it is.** An annual count of establishments and employment by
 industry and state, for the pay period that includes March 12. It leaves out
