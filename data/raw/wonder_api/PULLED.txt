@@ -1,0 +1,7 @@
+CDC WONDER API (national data only), Underlying Cause of Death 1999-2020 (D76). Pulled 2026-10-30 with scripts/wonder_api.py.
+Endpoint: https://wonder.cdc.gov/controller/datarequest/D76 (request template: D76_Example2-req.xml, CDC's own API example).
+age.xml   : Year x Drug/Alcohol Induced (level 1) x Ten-Year Age Groups; filter Drug/Alcohol Induced = A, D1, D2, D3, D4.
+aar.xml   : Year x Drug/Alcohol Induced (level 1); same filter; crude and age-adjusted rates (2000 U.S. standard).
+liver.xml : Year x ICD-10 113 Cause List; GR113-094 Alcoholic liver disease (K70), GR113-095 Other chronic liver disease and cirrhosis (K73-K74); crude and age-adjusted rates.
+Check: aar.xml national deaths equal our WONDER export counts (e.g. 2001 drug 19,394, alcohol 20,114; 2009 drug 37,004, alcohol 24,518).
+The 2018-2024 database (D158) and the multiple cause database (D77) returned processing errors with this template.
