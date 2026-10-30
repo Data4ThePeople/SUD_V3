@@ -193,6 +193,32 @@ question we have not checked; look for research on certifier practice.
 - OEWS leaves out the self-employed, so states with more private-practice counselors are undercounted.
 - Most research measures Medicaid-billing providers or service use, not total capacity.
 
+### 3. Why overdose and alcohol death rates rose everywhere (raised by Eric, 2026-10-30)
+
+National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
+`data/raw/wonder/mcd_*`). Totals tie to our national counts, except cells CDC suppresses.
+
+- **Aging:** 2001-2019, alcohol crude +68% vs age-adjusted +49%; drug crude +216% vs
+  age-adjusted +218%. Rates rose within age groups for both (alcohol 25-34 +162%, 55-64 +78%;
+  drug 55-64 +547%, 25-34 +314%). Aging is a small part of alcohol and none of drugs.
+- **Drug type (multiple cause; one death can count under several drugs):** deaths involving
+  synthetic opioids other than methadone (T40.4, mostly fentanyl) went from 957 (2001) and
+  3,105 (2013) to 73,838 (2022) and 47,735 (2024). Overdoses without T40.4: 18,437 (2001),
+  40,877 (2013), 34,271 (2019), 34,103 (2022), 31,649 (2024). The rise after 2013 is in
+  T40.4-involved deaths. T40.4 share of overdoses: 7% (2013), 51% (2019), 68% (2022), 60% (2024).
+  2022-2024: all overdoses -28,557; T40.4-involved -26,103. Heroin and prescription opioid
+  deaths peaked in 2017. Cocaine 3,833 -> 29,449 (2023); psychostimulants 563 -> 34,855 (2023).
+  Not checked: deaths with no specific drug named (T50.9), more common in early years, so
+  early drug-type counts are likely low.
+- **2019-2024 by age:** drug rates fell for ages 15-34 but rose for 55-64 (+27%) and 65-74
+  (+71%). Alcohol rates peaked in 2021 in most age groups; 2024 still above 2019 in every
+  group 25 and older.
+- **Cirrhosis coding (1999-2020 only):** age-adjusted K70 alcoholic liver disease +49%, other
+  cirrhosis K73-K74 -4%, both together +20% (2001-2019). Fits a partial coding shift but
+  K73-K74 also moves with hepatitis C and fatty liver disease. Unresolved.
+- **Still open:** NIAAA per-capita alcohol by state; state timing of fentanyl arrival (needs
+  state multiple-cause exports); fentanyl co-involvement with stimulants.
+
 ## Log
 
 - 2026-10-28 Step 1 opened. Topic: state-by-state SUD prevalence vs outpatient treatment capacity, 2001-2024, as an interactive dashboard. Clean restart: no code, numbers or methods from earlier D4TP SUD repos.

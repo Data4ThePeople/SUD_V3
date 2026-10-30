@@ -1,0 +1,129 @@
+"Notes","Year","Year Code","Multiple Cause of death","Multiple Cause of death Code",Deaths,Population,Crude Rate,Crude Rate Lower 95% Confidence Interval,Crude Rate Upper 95% Confidence Interval
+,"2018","2018","Heroin","T40.1",14996,327167434,4.6,4.5,4.7
+,"2018","2018","Other opioids","T40.2",12552,327167434,3.8,3.8,3.9
+,"2018","2018","Methadone","T40.3",3023,327167434,0.9,0.9,1.0
+,"2018","2018","Other synthetic narcotics","T40.4",31335,327167434,9.6,9.5,9.7
+,"2018","2018","Cocaine","T40.5",14666,327167434,4.5,4.4,4.6
+,"2018","2018","Psychostimulants with abuse potential","T43.6",12676,327167434,3.9,3.8,3.9
+"Total","2018","2018",,,89248,327167434,27.3,27.1,27.5
+,"2019","2019","Heroin","T40.1",14019,328239523,4.3,4.2,4.3
+,"2019","2019","Other opioids","T40.2",11886,328239523,3.6,3.6,3.7
+,"2019","2019","Methadone","T40.3",2740,328239523,0.8,0.8,0.9
+,"2019","2019","Other synthetic narcotics","T40.4",36359,328239523,11.1,11.0,11.2
+,"2019","2019","Cocaine","T40.5",15883,328239523,4.8,4.8,4.9
+,"2019","2019","Psychostimulants with abuse potential","T43.6",16167,328239523,4.9,4.8,5.0
+"Total","2019","2019",,,97054,328239523,29.6,29.4,29.8
+,"2020","2020","Heroin","T40.1",13165,329484123,4.0,3.9,4.1
+,"2020","2020","Other opioids","T40.2",13471,329484123,4.1,4.0,4.2
+,"2020","2020","Methadone","T40.3",3543,329484123,1.1,1.0,1.1
+,"2020","2020","Other synthetic narcotics","T40.4",56516,329484123,17.2,17.0,17.3
+,"2020","2020","Cocaine","T40.5",19447,329484123,5.9,5.8,6.0
+,"2020","2020","Psychostimulants with abuse potential","T43.6",23837,329484123,7.2,7.1,7.3
+"Total","2020","2020",,,129979,329484123,39.4,39.2,39.7
+,"2021","2021","Heroin","T40.1",9173,331893745,2.8,2.7,2.8
+,"2021","2021","Other opioids","T40.2",13618,331893745,4.1,4.0,4.2
+,"2021","2021","Methadone","T40.3",3678,331893745,1.1,1.1,1.1
+,"2021","2021","Other synthetic narcotics","T40.4",70601,331893745,21.3,21.1,21.4
+,"2021","2021","Cocaine","T40.5",24486,331893745,7.4,7.3,7.5
+,"2021","2021","Psychostimulants with abuse potential","T43.6",32537,331893745,9.8,9.7,9.9
+"Total","2021","2021",,,154093,331893745,46.4,46.2,46.7
+,"2022","2022","Heroin","T40.1",5871,333287557,1.8,1.7,1.8
+,"2022","2022","Other opioids","T40.2",11871,333287557,3.6,3.5,3.6
+,"2022","2022","Methadone","T40.3",3334,333287557,1.0,1.0,1.0
+,"2022","2022","Other synthetic narcotics","T40.4",73838,333287557,22.2,22.0,22.3
+,"2022","2022","Cocaine","T40.5",27569,333287557,8.3,8.2,8.4
+,"2022","2022","Psychostimulants with abuse potential","T43.6",34022,333287557,10.2,10.1,10.3
+"Total","2022","2022",,,156505,333287557,47.0,46.7,47.2
+,"2023","2023","Heroin","T40.1",3984,334914895,1.2,1.2,1.2
+,"2023","2023","Other opioids","T40.2",10112,334914895,3.0,3.0,3.1
+,"2023","2023","Methadone","T40.3",3355,334914895,1.0,1.0,1.0
+,"2023","2023","Other synthetic narcotics","T40.4",72776,334914895,21.7,21.6,21.9
+,"2023","2023","Cocaine","T40.5",29449,334914895,8.8,8.7,8.9
+,"2023","2023","Psychostimulants with abuse potential","T43.6",34855,334914895,10.4,10.3,10.5
+"Total","2023","2023",,,154531,334914895,46.1,45.9,46.4
+,"2024 ","2024","Heroin","T40.1",2743,340110988,0.8,0.8,0.8
+,"2024 ","2024","Other opioids","T40.2",7989,340110988,2.3,2.3,2.4
+,"2024 ","2024","Methadone","T40.3",3229,340110988,0.9,0.9,1.0
+,"2024 ","2024","Other synthetic narcotics","T40.4",47735,340110988,14.0,13.9,14.2
+,"2024 ","2024","Cocaine","T40.5",21945,340110988,6.5,6.4,6.5
+,"2024 ","2024","Psychostimulants with abuse potential","T43.6",28722,340110988,8.4,8.3,8.5
+"Total","2024 ","2024",,,112363,340110988,33.0,32.8,33.2
+"Total",,,,,893773,2325098265,38.4,38.4,38.5
+"---"
+"Dataset: Multiple Cause of Death, 2018-2024, Single Race"
+"Query Parameters:"
+"MCD - ICD-10 Codes: T40.1 (Heroin); T40.2 (Other opioids); T40.3 (Methadone); T40.4 (Other synthetic narcotics); T40.5"
+"(Cocaine); T43.6 (Psychostimulants with abuse potential)"
+"UCD - Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide"
+"(X60-X64); Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"Group By: Year; Multiple Cause of death"
+"Show Totals: True"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd-expanded.html for more information."
+"---"
+"Query Date: Oct 30, 2026 9:33:36 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 2018-2024 on CDC WONDER Online Database, released in 2026. Data are from the Multiple Cause of Death Files,"
+"2018-2024, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/mcd-icd10-expanded.html on Oct 30, 2026 9:33:36 PM"
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. The method used to calculate 95% confidence intervals is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-expanded.html#Confidence-Intervals."
+"2. The population figures for year 2024 are single-race estimates of the July 1 resident population, from the Vintage 2024"
+"postcensal series released by the Census Bureau on June 27, 2024. The 2024 series is based on the Modified Blended Base produced"
+"by the US Census Bureau in lieu of the April 1, 2020 decennial population count. The Modified Blended Base consists of the blend"
+"of Vintage 2020 postcensal population estimates for April 1, 2020, 2020 Demographic Analysis Estimates, and 2020 Census data"
+"from the internal Census Edited File (CEF). The population figures for year 2023 are single-race estimates of the July 1"
+"resident population, from the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. The 2023 series is"
+"based on the Modified Blended Base produced by the US Census Bureau in lieu of the April 1, 2020 decennial population count. The"
+"Modified Blended Base consists of the blend of Vintage 2020 postcensal population estimates for April 1, 2020, 2020 Demographic"
+"Analysis Estimates, and 2020 Census data from the internal Census Edited File (CEF). The population figures for years 2022 are"
+"single-race estimates of the July 1 resident population, from the Vintage 2022 postcensal series released by the Census Bureau"
+"on June 22, 2023. The 2022 series is based on the Modified Blended Base produced by the US Census Bureau in lieu of the April 1,"
+"2020 decennial population count. The Modified Blended Base consists of the blend of Vintage 2020 postcensal population estimates"
+"for April 1, 2020, 2020 Demographic Analysis Estimates, and 2020 Census data from the internal Census Edited File (CEF). The"
+"population figures for year 2021 are single-race estimates of the July 1 resident population, based on the Blended Base produced"
+"by the US Census Bureau in lieu of the April 1, 2020 decennial population count, from the Vintage 2021 postcensal series"
+"released by the Census Bureau on June 30, 2022. The population figures for year 2020 are single-race estimates of the July 1"
+"resident population, from the Vintage 2020 postcensal series based on April 2010 Census, released by the Census Bureau on July"
+"27, 2021. The population figures for year 2019 are single-race estimates of the July 1 resident population, from the Vintage"
+"2019 postcensal series based on April 2010 Census, released by the Census Bureau on June 25, 2020. The population figures for"
+"year 2018 are single-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series based on April"
+"2010 Census, released by the Census Bureau on June 20, 2019. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-expanded.html#Population Data."
+"3. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd-expanded.html#Age"
+"Group."
+"4. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Caution should be used in interpreting these data. More"
+"information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"5. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March 4,"
+"2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"6. Connecticut population estimates for 2022 and later years are reported for 9 planning regions as county equivalent areas,"
+"instead of the former 8 legacy counties in the Vintage 2022 postcensal series released by the Census Bureau on June 22, 2023,"
+"and in the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. Populations estimates for the former"
+"counties are not available for 2022 and later years. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-expanded.html#Connecticut-2022."
+"7. After the creation of the final 2023 dataset, North Carolina updated the cause of death information for over 900 death"
+"certificates to include a cause of death code indicating drug overdose (ICD-10 underlying cause-of-death codes: X40-X44,"
+"X60-X64, X85, and Y10-Y14). Jurisdictions can continue to update death certificates after the closing of the mortality file. As"
+"a result, users should consider that the actual death count for drug overdose deaths for North Carolina in 2023 is over 4,400"
+"deaths, with a crude rate of approximately 41.0 per 100,000 population, and an age-adjusted rate of approximately 42.1 per"
+"100,000 population. These deaths will not be updated on the final mortality datasets."
+"8. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-expanded.html#ICD-10 Changes."
