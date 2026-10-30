@@ -23,7 +23,6 @@ array has 24 years, and all 52 geographies are present.
 | Source | Result |
 |---|---|
 | NSDUH | 20 of 20 windows pass, within ±5 thousand |
-| QCEW | every fully disclosed year passes (employment within ±7, establishments within ±11); partial years are listed. QCEW is not on the page; the check is kept for the source comparison |
 | WONDER | deaths and population match exactly in all 24 years |
 
 The page computes two values in the browser: establishments per 100K

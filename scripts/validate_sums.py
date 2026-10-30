@@ -27,16 +27,6 @@ def check(source, measure, year, states, national, n_suppressed, tol):
                      tolerance=tol, status=status))
 
 
-def qcew():
-    q = pd.read_csv(ROOT / "data/clean/qcew.csv", dtype={"fips": str, "naics": str, "own": str})
-    for (naics, own, year), g in q.groupby(["naics", "own", "year"]):
-        st, us = g[g.fips != "US"], g[g.fips == "US"]
-        for col, flag, tol in (("emp", "emp_suppressed", 10), ("estabs", "estabs_suppressed", 15)):
-            nat = us[col].iloc[0] if len(us) and not us[flag].iloc[0] else float("nan")
-            # tolerance: each annual average is rounded separately (see DATASETS.md)
-            check("QCEW", f"{naics} own{own} {col}", year, st[col], nat, int(st[flag].sum()), tol)
-
-
 def nsduh():
     for f, label in (("nsduh_sud.csv", "SUD count (thousands)"), ("nsduh_drug.csv", "drug use disorder count (thousands)"),
                      ("nsduh_alcohol.csv", "alcohol use disorder count (thousands)")):
@@ -58,7 +48,7 @@ def wonder():
 
 
 def main():
-    for fn in (qcew, nsduh, wonder):
+    for fn in (nsduh, wonder):
         fn()
     out = pd.DataFrame(rows)
     (ROOT / "data/build").mkdir(parents=True, exist_ok=True)

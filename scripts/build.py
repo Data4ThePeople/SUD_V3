@@ -1,7 +1,6 @@
 """Join the cleaned sources into data/build/panel.csv and data/build/dashboard.json.
 
-The page's "treatment workers" are OEWS counselors and social workers (oews below). The QCEW
-columns stay in panel.csv for reference.
+The page's "treatment workers" are OEWS counselors and social workers (oews below).
 
 One row per geography (51 states + United States) and year, 2001-2024.
 Every value is either published by the source or a ratio of two published values.
@@ -15,10 +14,6 @@ Metrics
   estabs_per100k               estabs / WONDER population * 100,000
   oews                         OEWS 21-1011 + 21-1014 (to 2016) or 21-1018 (2017 on) + 21-1023; blank
                                unless every part is published. This is "workers" on the page.
-  workers                      QCEW annual average employment, NAICS 621420 + 621330 + 621112,
-                               private + state + local; sum of disclosed cells (reference only)
-  workers_floor                True when any of those cells is withheld, so workers is a minimum
-  workers_private(_floor)      the same, private ownership only (reference only)
   gap                          sud_count / oews (people with SUD per treatment worker)
   deaths, death_rate           WONDER drug overdose + alcohol-induced, crude rate per 100,000
   deaths_drug, deaths_alcohol  the two parts, with their published crude rates
@@ -30,8 +25,6 @@ from states import STATES, BY_NAME
 
 ROOT = Path(__file__).resolve().parents[1]
 YEARS = range(2001, 2025)
-NAICS = ["621420", "621330", "621112"]
-OWN = ["5", "2", "3"]
 POSTAL_TO_NAME = {p: n for _, p, n in STATES}
 GEOS = [n for _, _, n in STATES] + ["United States"]
 
@@ -64,37 +57,6 @@ def facilities():
     # with no survey stays empty
     us = st.groupby("year").estabs.sum(min_count=51).reset_index().assign(geo="United States")
     return pd.concat([st, us])
-
-
-def workers():
-    q = pd.read_csv(ROOT / "data/clean/qcew.csv", dtype={"fips": str, "naics": str, "own": str})
-    q = q[q.naics.isin(NAICS) & q.own.isin(OWN)]
-    g = q.groupby(["state", "year"])
-    out = pd.DataFrame({
-        "workers": g.emp.sum(min_count=1),
-        "workers_floor": g.emp_suppressed.any(),
-        "workers_withheld_cells": g.emp_suppressed.sum(),
-    }).reset_index().rename(columns={"state": "geo"})
-    # private-only view, for when workers are shown on their own (not in the Gap Score)
-    pq = q[q.own == "5"].groupby(["state", "year"])
-    priv = pd.DataFrame({"workers_private": pq.emp.sum(min_count=1),
-                         "workers_private_floor": pq.emp_suppressed.any()}).reset_index()
-    out = out.merge(priv.rename(columns={"state": "geo"}), on=["geo", "year"], how="left")
-    # breakdown by code for the cards (disclosed only)
-    by = q.pivot_table(index=["state", "year"], columns="naics", values="emp", aggfunc="sum").reset_index()
-    by = by.rename(columns={"state": "geo", **{c: f"workers_{c}" for c in NAICS}})
-    return out.merge(by, on=["geo", "year"], how="left")
-
-
-def gov_share():
-    """Government (state + local) share of disclosed QCEW workers in the three codes.
-    Withheld government cells are not counted, so this is a minimum."""
-    q = pd.read_csv(ROOT / "data/clean/qcew.csv", dtype={"fips": str, "naics": str, "own": str})
-    q = q[q.naics.isin(NAICS) & q.own.isin(OWN)]
-    priv = q[q.own == "5"].groupby(["state", "year"]).emp.sum()
-    gov = q[q.own.isin(["2", "3"])].groupby(["state", "year"]).emp.sum()
-    share = (gov.reindex(priv.index).fillna(0) / (gov.reindex(priv.index).fillna(0) + priv))
-    return share.rename("gov_share_min").reset_index().rename(columns={"state": "geo"})
 
 
 OEWS_PARTS = {"old": ["21-1011", "21-1014", "21-1023"], "new": ["21-1018", "21-1023"]}
@@ -160,7 +122,7 @@ def jsonable(v):
 def main():
     base = pd.DataFrame([(g, y) for g in GEOS for y in YEARS], columns=["geo", "year"])
     panel = base
-    for part in (nsduh(), nsduh_part("drug"), nsduh_part("alcohol"), facilities(), workers(), gov_share(), oews(), deaths()):
+    for part in (nsduh(), nsduh_part("drug"), nsduh_part("alcohol"), facilities(), oews(), deaths()):
         if part.duplicated(["geo", "year"]).any():
             raise SystemExit("duplicate geo/year keys in a source")
         panel = panel.merge(part, on=["geo", "year"], how="left")
@@ -169,8 +131,6 @@ def main():
 
     panel["estabs_per100k"] = panel.estabs / panel.population * 1e5
     panel["gap"] = panel.sud_count / panel.oews
-    for c in ("workers_floor", "workers_private_floor"):
-        panel[c] = panel[c].fillna(False).astype(bool)
 
     panel.to_csv(ROOT / "data/build/panel.csv", index=False)
 
@@ -179,9 +139,7 @@ def main():
     print(f"{len(panel)} rows")
 
 
-# Treatment workers on the page: OEWS counselors and social workers (Eric, 2026-10-28). The QCEW
-# private version (hatched where withheld or 20%+ government) was compared and set aside; it is
-# in git history at ad2d027.
+# Treatment workers on the page: OEWS counselors and social workers (Eric, 2026-10-28).
 VARIANTS = {
     "v1_oews": dict(
         workers=lambda p: p.oews,

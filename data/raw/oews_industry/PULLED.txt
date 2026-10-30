@@ -1,5 +1,0 @@
-Pulled 2026-10-28 from https://www.bls.gov/oes/special-requests/
-Files: oes02in4.zip, oesm03in4.zip ... oesm24in4.zip (national industry-specific estimates, 23 files)
-Used: the nat5d (2002-2011) and nat5d_6d (2012-2024) workbook in each zip, NAICS 621420 and 621330.
-User agent: Mozilla/5.0 (Macintosh) Data4ThePeople research connect@data4thepeople.com
-Unchanged downloads; zips are gitignored (400 MB). Built by scripts/build_oews_industry.py.
