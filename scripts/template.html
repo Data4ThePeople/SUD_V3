@@ -37,7 +37,8 @@ h1 .l2{color:var(--salmon);display:block}
 .slider span{font-family:var(--mono);font-size:12px;color:var(--muted)}
 input[type=range]{flex:1;accent-color:var(--work)}
 .modes{display:flex;gap:8px;flex-wrap:wrap}
-.modes button{font-family:var(--mono);font-size:12px;letter-spacing:.08em;padding:8px 12px;border:1px solid var(--line2);background:transparent;border-radius:3px;cursor:pointer}
+.modes button{font-family:var(--mono);font-size:12px;letter-spacing:.08em;padding:8px 12px;border:1px solid var(--line2);background:transparent;color:var(--ink);border-radius:3px;cursor:pointer;transition:box-shadow .18s ease,border-color .18s ease,color .18s ease,background-color .18s ease}
+.modes button:not([aria-pressed=true]):hover,.modes button:not([aria-pressed=true]):focus-visible{border-color:var(--c);box-shadow:inset 0 0 0 1.5px var(--c);color:var(--c);outline:none}
 .modes button[aria-pressed=true]{background:var(--c);border-color:var(--c);color:#111}
 .legend{display:flex;align-items:center;gap:14px;padding:12px 48px 6px;flex-wrap:wrap}
 .ramp{width:170px;height:10px;border-radius:2px}
@@ -50,8 +51,8 @@ input[type=range]{flex:1;accent-color:var(--work)}
 .left{padding:16px 32px 24px;min-width:0}
 .right{background:var(--panel);border-left:1px solid var(--line)}
 #map{width:100%;height:auto;display:block}
-#map path.st{stroke:var(--bg);stroke-width:.8;cursor:pointer}
-#map path.st:hover,#map path.st.sel{stroke:#fff;stroke-width:1.6}
+#map .st{stroke:var(--bg);stroke-width:.8;cursor:pointer;transition:stroke .18s ease,stroke-width .18s ease}
+#map .st:hover,#map .st.sel{stroke:#fff;stroke-width:1.6}
 .tip{position:fixed;pointer-events:none;background:#0d0f12;border:1px solid var(--line2);padding:8px 10px;font-family:var(--mono);font-size:12px;border-radius:4px;display:none;z-index:9;max-width:280px;line-height:1.45}
 .callout{margin:10px 0 18px;border-left:3px solid var(--work);background:#16212e;padding:12px 16px;font-size:14.5px;line-height:1.55;color:#cfe1f5}
 .callout p{margin:0 0 6px}.callout p:last-child{margin:0}
@@ -80,6 +81,8 @@ input[type=range]{flex:1;accent-color:var(--work)}
 .rank ol{list-style:none;margin:10px 0 0;padding:0;max-height:560px;overflow:auto}
 .rank li{display:grid;grid-template-columns:26px 1fr 72px 56px;align-items:center;gap:8px;padding:4px 0;font-size:15px;cursor:pointer}
 .rank li:hover{background:var(--panel2)}
+.rank ol{position:relative}
+.rank li.sel{background:#2a313b;box-shadow:inset 3px 0 0 #fff}
 .rank li .n{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:right}
 .rank li .bar{height:6px;border-radius:0 3px 3px 0;background:var(--c)}
 .rank li .val{font-family:var(--mono);font-size:11.5px;color:var(--ink2);text-align:right}
@@ -170,7 +173,7 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 
 <script>
 const D = /*DATA*/null;
-const GAP = {short: "PEOPLE / WORKER", name: "People per Worker", unit: "people with SUD per treatment worker"};
+const GAP = {short: "PEOPLE / COUNSELOR", name: "People per Worker", unit: "people with SUD per treatment worker"};
 // ---------- what "treatment workers" means: OEWS counselors and social workers ----------
 const VV = {
   bannerNote: "counselors and social workers in all settings · BLS OEWS",
@@ -308,7 +311,7 @@ map.addEventListener("mousemove", e => {
 });
 map.addEventListener("mouseleave", () => { tip.style.display = "none"; S.hover = null; renderPanel(); });
 map.addEventListener("click", e => { const f = e.target.dataset && e.target.dataset.f; if (f) selectGeo(f); });
-function selectGeo(f) { S.sel = S.sel === f ? null : f; S.hover = null; render(); }
+function selectGeo(f) { S.sel = S.sel === f ? null : f; S.hover = null; S.centerRank = true; render(); }
 
 function cellState(g, m, y) {
   const v = val(g, METRICS[m].key, y);
@@ -490,6 +493,11 @@ function renderRank() {
   const R = document.getElementById("rank"); R.className = "";
   R.innerHTML = ok.map((r, i) => li(r, i, false)).join("") + fl.map((r, i) => li(r, i, true)).join("");
   R.querySelectorAll("li").forEach(n => n.onclick = () => selectGeo(n.dataset.f));
+  // highlight the selected state and center the list on it (smooth only right after a click)
+  const on = S.sel && R.querySelector('li[data-f="' + S.sel + '"]');
+  if (on) { on.classList.add("sel");
+    R.scrollTo({top: on.offsetTop - R.clientHeight / 2 + on.offsetHeight / 2, behavior: S.centerRank ? "smooth" : "auto"}); }
+  S.centerRank = false;
 }
 
 // ---------- trend line ----------
@@ -524,6 +532,11 @@ function renderTrend() {
   // SAMHSA says the 2015 change did not affect alcohol use disorder (2014-2015 SAE guide, A.6)
   const breaks = t === "sud" && S.part === "alcohol" ? SURVEY_BREAKS.filter(b => b.after !== 2014) : BREAKS[t] || [];
   for (const b of breaks) { const bx = x(b.at);
+    if (!b.markOnly) {  // shade from the last point before the change to the first point after it
+      const before = pts.filter(p => p.v != null && p.y <= b.after).map(p => p.y), after = pts.filter(p => p.v != null && p.y > b.after).map(p => p.y);
+      const x0 = x(before.length ? Math.max(...before) : b.after), x1 = x(after.length ? Math.min(...after) : b.after + 1);
+      s += `<rect x="${x0}" y="${m.t}" width="${Math.max(0, x1 - x0)}" height="${H - m.b - m.t}" fill="#8a919c" fill-opacity=".12"/>`;
+    }
     s += `<line x1="${bx}" x2="${bx}" y1="${m.t - 10}" y2="${H - m.b}" stroke="#6a7280" stroke-dasharray="3 3"/>${W < 600 ? "" : `<text x="${bx + 4}" y="${m.t - 12}" font-size="10" fill="#8a919c" font-family="ui-monospace,Menlo,monospace">${b.label}</text>`}`; }
   // segments: join only consecutive years with values, both complete, and no break between them
   const brokenAfter = new Set(breaks.filter(b => !b.markOnly).map(b => b.after));
@@ -538,7 +551,8 @@ function renderTrend() {
   pts.forEach(p => { if (p.v == null) return;
     const lone = !pts.some(q => q.v != null && Math.abs(q.y - p.y) === 1 && !q.hollow && !p.hollow && !brokenAfter.has(Math.min(p.y, q.y)));
     if (p.hollow) s += `<circle cx="${x(p.y)}" cy="${yy(p.v)}" r="4" fill="${css("--bg")}" stroke="${color}" stroke-width="1.6"/>`;
-    else if (lone || p.y === S.year) s += `<circle cx="${x(p.y)}" cy="${yy(p.v)}" r="4.5" fill="${color}" stroke="${css("--bg")}" stroke-width="2"/>`; });
+    else if (p.y === S.year) s += `<circle cx="${x(p.y)}" cy="${yy(p.v)}" r="7" fill="${color}" stroke="#ffffff" stroke-width="2.5"/>`;
+    else if (lone) s += `<circle cx="${x(p.y)}" cy="${yy(p.v)}" r="4.5" fill="${color}" stroke="${css("--bg")}" stroke-width="2"/>`; });
   const cx = x(S.year);
   s += `<line x1="${cx}" x2="${cx}" y1="${m.t}" y2="${H - m.b}" stroke="#ffffff" stroke-opacity=".18"/>`;
   s += `<line id="xh" y1="${m.t}" y2="${H - m.b}" stroke="#ffffff" stroke-opacity=".35" visibility="hidden"/>`;
