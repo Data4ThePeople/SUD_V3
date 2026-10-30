@@ -119,25 +119,6 @@ for y in YEARS:
     vals = [fac.get((f, y)) for f, _, _ in STATES]
     cmp("estabs", "US", y, None if None in vals else sum(vals))
 
-# --- CHANGE view: SAMHSA's change tests (clean file from the unchanged change tables) ---
-# Each row must reach the page unchanged; its result must agree with SAMHSA's marker, p value and
-# the direction of the estimates; and its two estimates must match our level estimates for the
-# same windows (data/build/dashboard.json, built from the SAS datasets) to SAMHSA's rounding.
-CHG_WIN = {"2008-2009": 2009, "2018-2019": 2019, "2022-2023": 2023, "2023-2024": 2024}
-for r in csv.DictReader(open(ROOT / "data/clean/nsduh_change.csv")):
-    comp = "alc10" if r["window_from"] == "2008-2009" else "sud1"
-    key = NAME_TO_KEY[r["state"]]
-    exp = [float(r["pct_from"]), float(r["pct_to"]), float(r["p_value"]), r["change"]]
-    got = DS["v1_oews"]["change"][comp][r["part"]][key]
-    results.append(("v1_oews", f"change_{comp}_{r['part']}", key, r["window_to"], exp, got, "ok" if got == exp else "MISMATCH"))
-    sig = r["marker"] == "a"
-    want = "no significant change" if not sig else "increased" if exp[1] > exp[0] else "decreased"
-    ok = r["change"] == want and (exp[2] < 0.05) == sig
-    results.append(("v1_oews", f"change_result_{comp}_{r['part']}", key, r["window_to"], want, r["change"], "ok" if ok else "MISMATCH"))
-    col = {"all": "sud_pct", "drug": "sud_drug_pct", "alcohol": "sud_alcohol_pct"}[r["part"]]
-    for w, v in ((r["window_from"], exp[0]), (r["window_to"], exp[1])):
-        cmp(col, key, CHG_WIN[w], v, tol=0.0051 / max(1, abs(v)))  # 0.0051 points, absolute
-
 # --- structural checks ---
 problems = []
 for v, D in DS.items():

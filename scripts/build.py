@@ -149,22 +149,6 @@ VARIANTS = {
 }
 
 
-def change_tests(fips):
-    """SAMHSA's own tests of change (data/clean/nsduh_change.csv), keyed by comparison, part and
-    geography: [from %, to %, p value, result]. Nothing is computed here."""
-    d = pd.read_csv(ROOT / "data/clean/nsduh_change.csv")
-    out = {}
-    for r in d.itertuples():
-        comp = "alc10" if r.window_from == "2008-2009" else "sud1"
-        key = "US" if r.state == "United States" else fips[r.state]
-        out.setdefault(comp, {}).setdefault(r.part, {})[key] = [r.pct_from, r.pct_to, r.p_value, r.change]
-    for comp, parts in out.items():
-        for part, geos in parts.items():
-            if len(geos) != 52:
-                raise SystemExit(f"change {comp} {part}: {len(geos)} geographies, expected 52")
-    return out
-
-
 def write_variant(panel, name, meta):
     p = panel.copy()
     p["v_workers"] = meta["workers"](p)
@@ -187,7 +171,7 @@ def write_variant(panel, name, meta):
         key = "US" if geo == "United States" else fips[geo]
         data[key] = {"name": geo, "abbr": postal.get(geo, "US"),
                      **{out: [jsonable(v) for v in g[src]] for src, out in keep.items()}}
-    out = {"variant": name, "years": list(YEARS), "geo": data, "change": change_tests(fips),
+    out = {"variant": name, "years": list(YEARS), "geo": data,
            "paths": json.loads((ROOT / "data/build/state_paths.json").read_text())}
     (ROOT / "data/build/dashboard.json").write_text(json.dumps(out, separators=(",", ":")))
     print(f"dashboard.json {len(json.dumps(out)) // 1024} KB")

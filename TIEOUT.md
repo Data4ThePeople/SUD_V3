@@ -12,11 +12,8 @@
 - facility counts come from the N-SSATS / N-SUMHSS clean file, which `check_nsumhss.py`
   ties to SAMHSA's published tables.
 
-**Result (OEWS workers, drug and alcohol views, Change view, 2026-10-29): 30,577 values
-checked, 0 mismatches.** The Change view checks cover each SAMHSA change-test row reaching
-the page unchanged, each result agreeing with SAMHSA's marker, p value and direction, and
-each before and after estimate matching our level estimates within 0.005 points. Every metric
-array has 24 years, and all 52 geographies are present.
+**Result (OEWS workers, drug and alcohol views, 2026-10-30): 29,745 values checked,
+0 mismatches.** Every metric array has 24 years, and all 52 geographies are present.
 
 `scripts/validate_sums.py` checks that the states add up to the national figure:
 
@@ -52,7 +49,6 @@ measured, withheld, or missing.
 | DSM-IV: at least 3 of 7 dependence signs (most substances) or 1 of 4 abuse signs | 2018-2019 SAE methodology guide, B.9 | Supported |
 | DSM-5: at least 2 of 11 criteria; from 2021 all past-year prescription drug users asked; tolerance and withdrawal not counted for those who did not misuse | 2021-2022 SAE guide, B.11 | Supported |
 | Web or in-person survey from October 2020; estimates from 2021 not comparable with 2020 or earlier | 2021-2022 SAE guide, A.7 and A.7.2 | Supported |
-| 2019 CDC rates on a 2010 Census base, 2024 on a 2020 base | WONDER 2018-2024 export notes (2024: Modified Blended Base in lieu of the 2020 count) | Supported |
 | 988: call or text, free, confidential, 24/7 | 988lifeline.org: "Call, text, or chat... available 24/7/365. Your conversations are free and confidential." | Supported |
 | FindTreatment.gov is SAMHSA's locator; enter a ZIP code | Eric's instruction; the site loads by script, so it could not be fetched. "Free and confidential" was removed because it could not be checked | Partly supported |
 
@@ -131,13 +127,3 @@ and CDC WONDER: 0 differences. Three wording or logic points were fixed: the sta
 give the alcohol exception for 2015, the alcohol trend line is drawn across 2015 because
 SAMHSA says that change did not affect alcohol use disorder, and the sources line names DSM-5
 for alcohol. Full report: `tieout_independent/alcohol/REPORT.md`.
-
-## Independent tie-out of the Change view (fresh agent, 2026-10-29)
-
-1,291 values compared with SAMHSA's change tables (downloaded again) and CDC WONDER: 0
-differences. The claims that SAMHSA publishes no test across the 2021 redesign, no 2021-2022 vs
-2023-2024 test and no long-term drug or any-SUD test were checked against SAMHSA's release
-pages. Fixed in response: "+0%" for small changes (the sign now follows the rounded value), the
-death legend now shows "-60%" and "+60%+", the "fewer than 20 deaths" sentence (a 1999-2020 rule)
-is replaced, and DATASETS.md now uses SAMHSA's own "< 0.001" note. Wording points go to Eric as
-proposals. Full report: `tieout_independent/change/REPORT.md`.
