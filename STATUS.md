@@ -5,15 +5,15 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: none yet
-Step: 1
-Since: 2026-10-28
+Post: substance-use-treatment-viz
+Step: 2a
+Since: 2026-11-04
 
 ## Steps
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
-| 1  | Exploration and analysis | | |
+| 1  | Exploration and analysis | 2026-11-04 | |
 | 2a | Draft with brackets resolved | | |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
@@ -241,3 +241,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-10-29 Independent Change-view tie-out: 1,291 values, 0 differences. Eric accepted items 1-13: "Learn more about the 2021 survey change" panel in the Survey redesign box, DSM-IV label on the 10-year test, Change-view wording fixes, menu follows the switch.
 - 2026-10-30 Eric: removed the Change view and its analysis from the page, build, tie-out and docs (it helped understanding but complicates the page). QCEW, CBP and NAICS index also removed from docs, code and data. Tie-out now 29,745 values, 0 mismatches.
 - 2026-11-04 Eric: first post is a visualization-only page; analysis comes in later posts. Draft at posts/substance-use-treatment-viz/POST.md (method and how-to sections summarized, linking to DATASETS.md and TIEOUT.md). Repo made public with README; GitHub Pages live at https://data4thepeople.github.io/SUD_V3/. Shareable artifact: https://claude.ai/artifact/DMCdyMH4X9xCU1MJkNjnHp
+- 2026-11-04 Eric: Step 1 done. Step 2a open for posts/substance-use-treatment-viz.
