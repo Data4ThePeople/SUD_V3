@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: substance-use-treatment-viz
-Step: 2b
+Step: 2c
 Since: 2026-11-04
 
 ## Steps
@@ -15,7 +15,7 @@ Since: 2026-11-04
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-04 | |
 | 2a | Draft with brackets resolved | 2026-11-04 | |
-| 2b | Eric's edit, Claude's look-over | | |
+| 2b | Eric's edit, Claude's look-over | 2026-11-04 | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
@@ -243,3 +243,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-04 Eric: first post is a visualization-only page; analysis comes in later posts. Draft at posts/substance-use-treatment-viz/POST.md (method and how-to sections summarized, linking to DATASETS.md and TIEOUT.md). Repo made public with README; GitHub Pages live at https://data4thepeople.github.io/SUD_V3/. Shareable artifact: https://claude.ai/artifact/DMCdyMH4X9xCU1MJkNjnHp
 - 2026-11-04 Eric: Step 1 done. Step 2a open for posts/substance-use-treatment-viz.
 - 2026-11-04 Eric: Step 2a done. Step 2b open.
+- 2026-11-04 Eric: Step 2b done (look-over items 1-13 accepted). Step 2c open.

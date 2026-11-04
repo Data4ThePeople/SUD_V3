@@ -25,7 +25,7 @@ dividers: false
 
 ## Purpose
 
-::: spacer
+::: spacer 5px
 
 Substance use is one of the most important health topics in the country. This visualization isn't meant to put substance use in a good or bad spotlight; its purpose is to provide factual information so you can see where we stand as a country on substance use disorder and treatment. For every state and DC, from 2001 to 2024, you can view how many people have a substance use disorder (SUD), how many outpatient treatment establishments there are, how many people with SUD there are for each treatment worker, and how many people die of a drug overdose or alcohol-induced cause. It is built from four sources listed below. Where a source did not publish a number for a state and year, the map leaves it blank. We do not fill in, estimate or smooth any missing value. It is free to use and needs no sign-in.
 
@@ -37,7 +37,7 @@ People with SUD per Worker is a rough measure of how many people need care for e
 
 ## Using the visualization
 
-::: spacer
+::: spacer 5px
 
 **1. Pick a year.** Drag the slider, or click Play to move through every year from 2001 to 2024.
 
@@ -85,13 +85,13 @@ The 2024 death rate for drug overdose and alcohol-induced causes was highest in 
 
 ## What this page is
 
-::: spacer
+::: spacer 5px
 
 Every chart we publish should be something you can check, question and rebuild yourself. This page gives a short summary of how we built this one. The full documentation, with every source, definition, survey change and check, is in the public repository: [DATASETS.md](https://github.com/Data4ThePeople/SUD_V3/blob/main/DATASETS.md) for the method and [TIEOUT.md](https://github.com/Data4ThePeople/SUD_V3/blob/main/TIEOUT.md) for the checks.
 
 ## The data sources
 
-::: spacer
+::: spacer 5px
 
 **National Survey on Drug Use and Health (NSDUH), state estimates, SAMHSA.** The share and number of people 12 and older with a substance use disorder, a drug use disorder or an alcohol use disorder, by state.
 
@@ -103,7 +103,7 @@ Every chart we publish should be something you can check, question and rebuild y
 
 ## How we built it, in short
 
-::: spacer
+::: spacer 5px
 
 - **We use each publisher's numbers as published.** Nothing is filled in. When a source withheld a number, or published none, the map shows it as blank.
 - **SUD.** We use SAMHSA's published state estimates and their confidence ranges. We do not compare estimates across the 2002, 2015 and 2021 survey changes. The trend line breaks at each one.
@@ -115,13 +115,13 @@ Every chart we publish should be something you can check, question and rebuild y
 
 ## Updating
 
-::: spacer
+::: spacer 5px
 
 We plan to add each new year when SAMHSA, BLS and CDC release it.
 
 ## Honest notes and limitations
 
-::: spacer
+::: spacer 5px
 
 These are the main limits. The full list is in [DATASETS.md](https://github.com/Data4ThePeople/SUD_V3/blob/main/DATASETS.md) and in the notes at the bottom of the map.
 
@@ -134,7 +134,7 @@ These are the main limits. The full list is in [DATASETS.md](https://github.com/
 
 ## Reproduce it yourself
 
-::: spacer
+::: spacer 5px
 
 The code, the data and the full method are at [github.com/Data4ThePeople/SUD_V3](https://github.com/Data4ThePeople/SUD_V3). Every step is in the scripts, in order. If you get a different number from us, tell us, and we will look.
 
@@ -142,7 +142,7 @@ The code, the data and the full method are at [github.com/Data4ThePeople/SUD_V3]
 
 ## Common questions
 
-::: spacer
+::: spacer 5px
 
 ### How many people in the U.S. have a substance use disorder?
 
