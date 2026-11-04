@@ -1,0 +1,187 @@
+---
+title: "Substance Use Treatment, State by State: An Interactive Map, 2001 to 2024"
+subtitle: A free, interactive map of substance use disorder rates, outpatient treatment facilities, treatment workers, and overdose and alcohol deaths in all 50 states and DC, 2001 to 2024.
+slug: substance-use-treatment-viz
+date: 2026-11-04
+updated: 2026-11-04
+section: Visualization
+drop_cap: false
+heading_spacer: 20px
+caption_spacer: 20px
+dividers: false
+---
+
+# Substance Use Treatment, State by State: An Interactive Map, 2001 to 2024
+
+<iframe src="https://data4thepeople.github.io/SUD_V3/" width="100%" height="1400" loading="lazy" style="border:0" title="Substance Use Treatment, State by State: interactive map, 2001 to 2024"></iframe>
+
+::: spacer 40px
+
+::: blurb
+**[Open the full visualization](https://data4thepeople.github.io/SUD_V3/)** **for a larger map.**
+:::
+
+::: spacer
+
+## Purpose
+
+::: spacer
+
+This map puts four things side by side for every state and DC, each year from 2001 to 2024: how many people have a substance use disorder, how many outpatient treatment facilities there are, how many treatment workers there are, and how many people die of a drug overdose or an alcohol-induced cause. It is free to use and needs no sign-in.
+
+It is built from four federal sources: SAMHSA's National Survey on Drug Use and Health, SAMHSA's survey of treatment facilities, the U.S. Bureau of Labor Statistics' survey of jobs and pay, and CDC death records. Where a source did not publish a number for a state and year, the map leaves it blank. We do not fill in, estimate or smooth any missing value.
+
+This is the first of several posts. Later posts will look more closely at what the data shows.
+
+::: blurb Read this first
+People with SUD per Worker is a rough measure of how many people need care for each person trained to give it. It is not a caseload. The worker count includes counselors and social workers in every setting, including hospitals, schools and prisons, and it includes mental health work. Many people with a disorder never seek treatment. Read it as a way to compare states, not as the number of patients each worker sees. Also, SAMHSA changed its survey and its definition of a disorder in 2021, so disorder rates from 2021-2022 on cannot be compared with earlier years. The map marks this change.
+:::
+
+## Using the visualization
+
+::: spacer
+
+**1. Pick a year.** Drag the slider, or click Play to move through every year from 2001 to 2024.
+
+**2. Pick a map.** The buttons above the map switch between SUD %, facilities per 100,000 residents, People with SUD per Worker, and the death rate.
+
+**3. Pick the substances.** Drug + alcohol, Drug only, or Alcohol only. This changes the disorder and death numbers everywhere on the page.
+
+**4. Point at or click a state.** The cards beside the map show that state's numbers. Clicking a state keeps it selected, highlights it in the ranking, and shows its history in the trend chart below the map.
+
+**5. Read the trend chart.** The buttons under the chart switch between the five measures. Gaps and shaded bands mark years that cannot be compared.
+
+### How to read it
+
+- **Darker states** have more of whatever the map shows.
+- **Gray states** have no published number for that year.
+- **Each SUD number covers two years.** SAMHSA's state estimates pool two survey years. The map shows each one at its second year, so "2024" is 2023-2024.
+- **Some years have no SUD estimate.** SAMHSA published no state estimates for the windows ending in 2002, 2015, 2020 and 2021.
+- **The color scale for SUD and the ratio changes in 2022,** because estimates from 2021-2022 on are much higher under the new survey.
+
+### What it shows right now
+
+In 2023-2024, SAMHSA estimates that 48.4 million people 12 and older had a substance use disorder, 16.9% of that age group. BLS counted 566,290 substance use and mental health counselors and social workers in 2024. That is 85 people with SUD per worker, down from 105 in 2022. The number of workers rose 131% from 2003 to 2024.
+
+There were 126,098 drug overdose and alcohol-induced deaths in 2024: 79,384 from drug overdoses and 46,714 from alcohol-induced causes. That is 22% below the peak of 160,957 in 2021, and 219% above 2001.
+
+### States with the most and fewest people with SUD per worker
+
+In 2024, the states with the most people with SUD for each treatment worker:
+
+1. Nevada (177)
+2. Alabama (175)
+3. Georgia (162)
+4. South Carolina (152)
+5. Texas (147)
+
+The states with the fewest:
+
+1. Massachusetts (49)
+2. Utah (56)
+3. Virginia (57)
+4. Pennsylvania (62)
+5. New Hampshire (63)
+
+The 2024 death rate for drug overdose and alcohol-induced causes was highest in Alaska and New Mexico (73.8 per 100,000) and lowest in Nebraska (23.9).
+
+## What this page is
+
+::: spacer
+
+Every chart we publish should be something you can check, question and rebuild yourself. This page gives a short summary of how we built this one. The full documentation, with every source, definition, survey change and check, is in the public repository: [DATASETS.md](https://github.com/Data4ThePeople/SUD_V3/blob/main/DATASETS.md) for the method and [TIEOUT.md](https://github.com/Data4ThePeople/SUD_V3/blob/main/TIEOUT.md) for the checks.
+
+## The data sources
+
+::: spacer
+
+**National Survey on Drug Use and Health (NSDUH), state estimates, SAMHSA.** The share and number of people 12 and older with a substance use disorder, a drug use disorder or an alcohol use disorder, by state.
+
+**National Survey of Substance Abuse Treatment Services (N-SSATS) and National Substance Use and Mental Health Services Survey (N-SUMHSS), SAMHSA.** The number of facilities in each state that offer outpatient substance use treatment.
+
+**Occupational Employment and Wage Statistics (OEWS), U.S. Bureau of Labor Statistics.** The number of substance use and mental health counselors and social workers in each state.
+
+**CDC WONDER, Underlying Cause of Death, CDC.** Drug overdose and alcohol-induced deaths and population, by state of residence.
+
+## How we built it, in short
+
+::: spacer
+
+- **We use each publisher's numbers as published.** Nothing is filled in. When a source withheld a number, or published none, the map shows it as blank.
+- **SUD.** We use SAMHSA's published state estimates and their confidence ranges. We do not compare estimates across the 2002, 2015 and 2021 survey changes. The trend line breaks at each one.
+- **Facilities.** We count every facility that said it offers outpatient substance use care. Facilities that did not answer the survey are not counted, so each count is a minimum. In 2021 the facility survey merged with SAMHSA's mental health facility survey.
+- **Workers.** We add substance use and mental health counselors to mental health and substance use social workers. BLS combined the two counselor groups into one in 2017, so we count both in every year to keep one definition. When BLS did not publish one of the groups for a state, that state's worker count and ratio are blank for that year.
+- **Deaths.** We count deaths whose underlying cause was a drug overdose or an alcohol-induced cause. Each death has one underlying cause, so no death is counted twice. Rates are per 100,000 residents.
+- **People with SUD per Worker** is SAMHSA's count of people with SUD divided by the worker count for the second year of the survey window.
+- **We check the numbers.** A script recomputes every number on the map from the source files and compares them. Separate checks, written from scratch without our code, pulled the data again and found no differences. We also check that the states add up to the national total.
+
+## Updating
+
+::: spacer
+
+We plan to add each new year when SAMHSA, BLS and CDC release it.
+
+## Honest notes and limitations
+
+::: spacer
+
+These are the main limits. The full list is in [DATASETS.md](https://github.com/Data4ThePeople/SUD_V3/blob/main/DATASETS.md) and in the notes at the bottom of the map.
+
+- **Survey changes break the SUD trend.** SAMHSA changed its survey in 2002, 2015 and 2021. From 2021, it uses a newer definition of a disorder (DSM-5) and lets people answer online, and its estimates are not comparable with earlier years.
+- **The survey leaves some people out.** NSDUH covers people living in households. It does not cover people in jails, prisons or other institutions.
+- **Survey numbers have a margin of error.** The SUD and worker numbers are estimates. Small differences between states may not be real.
+- **The worker count is broad.** It covers all work settings and includes mental health work. It leaves out the self-employed. BLS changed how it makes its estimates in 2021.
+- **Facility counts are minimums.** Facilities that did not respond are not counted, and response rates were lower from 2021 on.
+- **Death counts follow CDC's records.** CDC notes some state coding problems, such as more than 900 North Carolina overdose deaths in 2023 that were recoded after the data closed. The map's notes list them.
+
+## Reproduce it yourself
+
+::: spacer
+
+The code, the data and the full method are at [github.com/Data4ThePeople/SUD_V3](https://github.com/Data4ThePeople/SUD_V3). Every step is in the scripts, in order. If you get a different number from us, tell us, and we will look.
+
+::: divider
+
+## Common questions
+
+::: spacer
+
+### How many people in the U.S. have a substance use disorder?
+
+SAMHSA estimates 48.4 million people 12 and older in 2023-2024, or 16.9%. This uses the newer DSM-5 definition, so it cannot be compared with estimates from 2020 or earlier.
+
+### Why did the number of people with a substance use disorder more than double in 2022?
+
+SAMHSA changed its survey and its definition of a disorder starting in 2021. SAMHSA says the estimates from 2021 on are not comparable with earlier years, so the jump should not be read as a change in how many people had a disorder.
+
+### Which state has the fewest treatment workers for the people who need them?
+
+In 2024, Nevada had the most people with SUD per treatment worker, 177, followed by Alabama (175) and Georgia (162). Massachusetts had the fewest, 49.
+
+### What counts as a treatment worker?
+
+Substance use and mental health counselors, plus mental health and substance use social workers, as counted by the Bureau of Labor Statistics. It includes every work setting. It does not include doctors, nurses, peer support workers or the self-employed.
+
+### Which state has the highest overdose and alcohol death rate?
+
+In 2024, Alaska and New Mexico, at 73.8 deaths per 100,000 residents.
+
+### Why is my state gray?
+
+The source did not publish a number for that state and year. We leave it blank and do not estimate one.
+
+### Why are some years missing from the SUD map?
+
+SAMHSA published no state estimates for the survey windows ending in 2002, 2015, 2020 and 2021.
+
+### Where can I find treatment?
+
+Call or text 988 for the Suicide & Crisis Lifeline, or search [FindTreatment.gov](https://findtreatment.gov/), SAMHSA's treatment locator, by ZIP code.
+
+### Where does the data come from?
+
+SAMHSA's National Survey on Drug Use and Health and its treatment facility surveys, the Bureau of Labor Statistics' Occupational Employment and Wage Statistics, and CDC WONDER death records.
+
+### Is the map free to use?
+
+Yes. It is free to use and needs no sign-in.
