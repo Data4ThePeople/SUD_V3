@@ -1,6 +1,6 @@
 ---
 title: "Substance Use Treatment, State by State: An Interactive Map, 2001 to 2024"
-subtitle: A free, interactive map of substance use disorder rates, outpatient treatment facilities, treatment workers, and overdose and alcohol deaths in all 50 states and DC, 2001 to 2024.
+subtitle: A free, interactive map of substance use disorder rates, outpatient treatment establishments, treatment workers, and overdose and alcohol deaths in all 50 states and DC, 2001 to 2024.
 slug: substance-use-treatment-viz
 date: 2026-11-04
 updated: 2026-11-04
@@ -27,11 +27,9 @@ dividers: false
 
 ::: spacer
 
-This map puts four things side by side for every state and DC, each year from 2001 to 2024: how many people have a substance use disorder, how many outpatient treatment facilities there are, how many treatment workers there are, and how many people die of a drug overdose or an alcohol-induced cause. It is free to use and needs no sign-in.
+Substance use is one of the most important health topics in the country. This visualization isn't meant to put substance use in a good or bad spotlight; its purpose is to provide factual information so you can see where we stand as a country on substance use disorder and treatment. For every state and DC, from 2001 to 2024, you can view how many people have a substance use disorder (SUD), how many outpatient treatment establishments there are, how many people with SUD there are for each treatment worker, and how many people die of a drug overdose or alcohol-induced cause. It is built from four sources listed below. Where a source did not publish a number for a state and year, the map leaves it blank. We do not fill in, estimate or smooth any missing value. It is free to use and needs no sign-in.
 
-It is built from four federal sources: SAMHSA's National Survey on Drug Use and Health, SAMHSA's survey of treatment facilities, the U.S. Bureau of Labor Statistics' survey of jobs and pay, and CDC death records. Where a source did not publish a number for a state and year, the map leaves it blank. We do not fill in, estimate or smooth any missing value.
-
-This is the first of several posts. Later posts will look more closely at what the data shows.
+This tool has several underlying stories within it that later posts will look at more closely to describe what the data shows. The visualization gets its own post because it holds all the data without a big headline taking away from its true value: to inform and help others. This map lets you play around with the years to discover headlines and see how our country has been affected by substance use over time. In addition to making the audience aware of substance use, it offers help by linking to FindTreatment.gov, a site where you can type in your ZIP code and find the nearest treatment facility for anyone who may need it. Spreading awareness and helping others are the main purposes of this map.
 
 ::: blurb Read this first
 People with SUD per Worker is a rough measure of how many people need care for each person trained to give it. It is not a caseload. The worker count includes counselors and social workers in every setting, including hospitals, schools and prisons, and it includes mental health work. Many people with a disorder never seek treatment. Read it as a way to compare states, not as the number of patients each worker sees. Also, SAMHSA changed its survey and its definition of a disorder in 2021, so disorder rates from 2021-2022 on cannot be compared with earlier years. The map marks this change.
@@ -43,11 +41,11 @@ People with SUD per Worker is a rough measure of how many people need care for e
 
 **1. Pick a year.** Drag the slider, or click Play to move through every year from 2001 to 2024.
 
-**2. Pick a map.** The buttons above the map switch between SUD %, facilities per 100,000 residents, People with SUD per Worker, and the death rate.
+**2. Pick a map.** The buttons above the map switch between SUD %, establishments per 100,000 residents, People with SUD per Worker, and the death rate from drug overdoses and alcohol-induced causes.
 
-**3. Pick the substances.** Drug + alcohol, Drug only, or Alcohol only. This changes the disorder and death numbers everywhere on the page.
+**3. Pick the substances.** Drug + alcohol, Drug only, or Alcohol only. This changes the SUD and death numbers everywhere on the page.
 
-**4. Point at or click a state.** The cards beside the map show that state's numbers. Clicking a state keeps it selected, highlights it in the ranking, and shows its history in the trend chart below the map.
+**4. Hover or click a state.** The cards beside the map show that state's numbers. Clicking a state keeps it selected, highlights it in the ranking, and shows its history in the trend chart below the map.
 
 **5. Read the trend chart.** The buttons under the chart switch between the five measures. Gaps and shaded bands mark years that cannot be compared.
 
@@ -109,7 +107,7 @@ Every chart we publish should be something you can check, question and rebuild y
 
 - **We use each publisher's numbers as published.** Nothing is filled in. When a source withheld a number, or published none, the map shows it as blank.
 - **SUD.** We use SAMHSA's published state estimates and their confidence ranges. We do not compare estimates across the 2002, 2015 and 2021 survey changes. The trend line breaks at each one.
-- **Facilities.** We count every facility that said it offers outpatient substance use care. Facilities that did not answer the survey are not counted, so each count is a minimum. In 2021 the facility survey merged with SAMHSA's mental health facility survey.
+- **Establishments.** We count every facility that said it offers outpatient substance use care. Facilities that did not answer the survey are not counted, so each count is a minimum. In 2021 the facility survey merged with SAMHSA's mental health facility survey.
 - **Workers.** We add substance use and mental health counselors to mental health and substance use social workers. BLS combined the two counselor groups into one in 2017, so we count both in every year to keep one definition. When BLS did not publish one of the groups for a state, that state's worker count and ratio are blank for that year.
 - **Deaths.** We count deaths whose underlying cause was a drug overdose or an alcohol-induced cause. Each death has one underlying cause, so no death is counted twice. Rates are per 100,000 residents.
 - **People with SUD per Worker** is SAMHSA's count of people with SUD divided by the worker count for the second year of the survey window.
@@ -131,7 +129,7 @@ These are the main limits. The full list is in [DATASETS.md](https://github.com/
 - **The survey leaves some people out.** NSDUH covers people living in households. It does not cover people in jails, prisons or other institutions.
 - **Survey numbers have a margin of error.** The SUD and worker numbers are estimates. Small differences between states may not be real.
 - **The worker count is broad.** It covers all work settings and includes mental health work. It leaves out the self-employed. BLS changed how it makes its estimates in 2021.
-- **Facility counts are minimums.** Facilities that did not respond are not counted, and response rates were lower from 2021 on.
+- **Establishment counts are minimums.** Facilities that did not respond are not counted, and response rates were lower from 2021 on.
 - **Death counts follow CDC's records.** CDC notes some state coding problems, such as more than 900 North Carolina overdose deaths in 2023 that were recoded after the data closed. The map's notes list them.
 
 ## Reproduce it yourself
