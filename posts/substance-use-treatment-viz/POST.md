@@ -13,12 +13,12 @@ dividers: false
 
 # Substance Use Treatment, State by State: An Interactive Map, 2001 to 2024
 
-<iframe src="https://data4thepeople.github.io/SUD_V3/" width="100%" height="1400" loading="lazy" style="border:0" title="Substance Use Treatment, State by State: interactive map, 2001 to 2024"></iframe>
+<iframe src="https://data4thepeople.github.io/SUD_V3/?v=20261104#embed=1" width="100%" height="1420" loading="lazy" style="border:0" title="Substance Use Treatment, State by State: interactive map, 2001 to 2024"></iframe>
 
 ::: spacer 40px
 
 ::: blurb
-**[Open the full visualization](https://data4thepeople.github.io/SUD_V3/)** **for a larger map.**
+**[Open the full visualization](https://data4thepeople.github.io/SUD_V3/)** **for the title and the full notes.**
 :::
 
 ::: spacer

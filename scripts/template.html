@@ -115,6 +115,21 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
   h1{font-size:30px}.sub{font-size:16px}
 }
 .wrap{overflow-x:clip}
+/* embed mode (inside an iframe, or #embed=1): the post carries the title, so the header goes;
+   notes and disclaimers collapse; map and side panel stay side by side down to 860px */
+.nd>summary,.cod>summary{cursor:pointer;color:var(--work);font-family:var(--mono);font-size:12.5px}
+.nd>summary{padding:4px 0}
+.framed header{display:none}
+.framed .banner{border-top:0}
+.framed .main{grid-template-columns:minmax(0,1fr) 380px}
+.framed .rank ol{max-height:250px}
+.framed .ph{padding:14px 20px 10px}.framed .rank{padding:12px 20px 6px}
+.framed .card{min-height:0;padding:12px 8px}.framed .card .v{margin:6px 0 4px}
+.framed .help{margin:12px 20px 16px;padding:14px}.framed .help p{font-size:14px;margin:8px 0 12px}.framed .n988{margin:8px 0}
+.framed .notes{padding-top:14px;padding-bottom:14px}
+.framed footer{padding-top:8px;padding-bottom:16px}
+@container (max-width:1100px){ .framed .main{grid-template-columns:minmax(0,1fr) 380px}.framed .right{border-left:1px solid var(--line);border-top:0} }
+@container (max-width:860px){ .framed .main{grid-template-columns:1fr}.framed .right{border-left:0;border-top:1px solid var(--line)} }
 </style>
 </head>
 <body>
@@ -173,6 +188,10 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
 
 <script>
 const D = /*DATA*/null;
+// embed mode: framed by default inside an iframe; #embed=1 forces it, #embed=0 turns it off
+const FRAMED = (() => { let f; try { f = window.self !== window.top; } catch (e) { f = true; }
+  const e = new URLSearchParams(location.hash.slice(1)).get("embed"); return e === "1" ? true : e === "0" ? false : f; })();
+if (FRAMED) document.documentElement.classList.add("framed");
 const GAP = {short: "PEOPLE WITH SUD / WORKER", name: "People with SUD per Worker", unit: "people with SUD per treatment worker"};
 // ---------- what "treatment workers" means: OEWS counselors and social workers ----------
 const VV = {
@@ -445,7 +464,9 @@ function renderCallout() {
     else p.push("<b>What is counted.</b> Deaths whose underlying cause was alcohol-induced, such as alcoholic liver disease or alcohol poisoning. CDC's definition leaves out unintentional injuries, homicides and other causes indirectly related to alcohol use. Drug overdose deaths are left out." + nr);
   }
   const co = document.getElementById("callout");
-  co.innerHTML = p.map(x => x.includes("<details") ? "<p>" + x.replace("<details", "</p><details") : "<p>" + x + "</p>").join("");
+  const inner = p.map(x => x.includes("<details") ? "<p>" + x.replace("<details", "</p><details") : "<p>" + x + "</p>").join("");
+  co.innerHTML = FRAMED ? '<details class="cod"' + (S.coOpen ? " open" : "") + '><summary>About this view</summary>' + inner + "</details>" : inner;
+  const cod = co.querySelector("details.cod"); if (cod) cod.ontoggle = () => { S.coOpen = cod.open; };
   const det = co.querySelector("details.more"); if (det) det.ontoggle = () => { S.dsmOpen = det.open; };
 }
 
@@ -577,7 +598,7 @@ function renderTrend() {
 new ResizeObserver(() => renderTrend()).observe(trendSvg);
 
 // ---------- notes ----------
-document.getElementById("notes").innerHTML = `
+document.getElementById("notes").innerHTML = `<details class="nd"${FRAMED ? "" : " open"}><summary>Show notes and disclaimers</summary>
 <h3>Sources</h3>
 <ul>
 <li><b>Demand:</b> SAMHSA, National Survey on Drug Use and Health (NSDUH), state model-based estimates of people 12 and older with a past-year substance use disorder, two-year windows 2000-2001 through 2023-2024. Counts and 95% intervals are SAMHSA's own figures, from its published tables and, for 2000-2001 through 2008-2009, its small area estimation dataset. The drug-only view uses SAMHSA's state estimates of illicit drug dependence or abuse (through 2013-2014), illicit drug use disorder (2015-2016 to 2018-2019) and drug use disorder (2021-2022 on). The alcohol-only view uses SAMHSA's state estimates of alcohol dependence or abuse (through 2014-2015) and alcohol use disorder (2015-2016 on; DSM-5 from 2021-2022).</li>
@@ -595,7 +616,7 @@ ${VV.limits.map(x => "<li>" + x + "</li>").join("")}
 <li><b>NSDUH leaves out people living in institutions</b>, such as prisons, jails and hospitals, and people experiencing homelessness who are not in shelters.</li>
 <li><b>Death counts.</b> Crude rates, not age adjusted. Alcohol-induced deaths are mostly chronic causes such as alcoholic liver disease. CDC notes that North Carolina's 2023 overdose count is short by more than 900 deaths recoded after the file closed. CDC also flags unusually high counts of ill-defined causes in California (2001) and Georgia (2008-2009), and says this lowered New Jersey's 2009 count of unintentional poisonings.</li>
 <li><b>${GAP.name} is a ratio, not a caseload.</b> It divides SAMHSA's estimated count of people with SUD by the number of treatment workers. It does not show how many people seek or receive treatment. The SUD count covers a two-year window; the worker count is for the window's second year (for example, 2023-2024 people with SUD over 2024 workers).</li>
-</ul>`;
+</ul></details>`;
 
 // ---------- render ----------
 function render() {
