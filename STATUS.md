@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: substance-use-treatment-viz
-Step: 2a
+Step: 2b
 Since: 2026-11-04
 
 ## Steps
@@ -14,7 +14,7 @@ Since: 2026-11-04
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-04 | |
-| 2a | Draft with brackets resolved | | |
+| 2a | Draft with brackets resolved | 2026-11-04 | |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
@@ -242,3 +242,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-10-30 Eric: removed the Change view and its analysis from the page, build, tie-out and docs (it helped understanding but complicates the page). QCEW, CBP and NAICS index also removed from docs, code and data. Tie-out now 29,745 values, 0 mismatches.
 - 2026-11-04 Eric: first post is a visualization-only page; analysis comes in later posts. Draft at posts/substance-use-treatment-viz/POST.md (method and how-to sections summarized, linking to DATASETS.md and TIEOUT.md). Repo made public with README; GitHub Pages live at https://data4thepeople.github.io/SUD_V3/. Shareable artifact: https://claude.ai/artifact/DMCdyMH4X9xCU1MJkNjnHp
 - 2026-11-04 Eric: Step 1 done. Step 2a open for posts/substance-use-treatment-viz.
+- 2026-11-04 Eric: Step 2a done. Step 2b open.
