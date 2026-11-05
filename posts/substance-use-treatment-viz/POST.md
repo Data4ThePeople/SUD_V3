@@ -3,6 +3,7 @@ title: "Substance Use Treatment, State by State: An Interactive Map, 2001 to 202
 subtitle: A free, interactive map of substance use disorder rates, outpatient treatment establishments, treatment workers, people with SUD per worker, and overdose and alcohol-induced deaths in all 50 states and DC, each year from 2001 to 2024.
 slug: substance-use-treatment-viz
 date: 2026-11-04
+time: 19:15:00-05:00
 updated: 2026-11-04
 prismic_id: auvIrBIAAC4AbnVB
 section: Visualization
