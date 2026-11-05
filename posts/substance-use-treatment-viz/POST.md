@@ -6,6 +6,8 @@ date: 2026-11-04
 updated: 2026-11-04
 prismic_id: auvIrBIAAC4AbnVB
 section: Visualization
+author: Jameson Mehaffey
+author_url: https://www.data4thepeople.com/authors/jameson-mehaffey
 hero: images/substance-use-treatment-viz-hero-1680x1080.png
 hero_alt: Map of the United States on a dark background, titled People with SUD per treatment worker, 2024. States are shaded from pale orange (25) to dark orange (200 or more). Nevada, Alabama, Georgia, South Carolina and Texas are darkest; Massachusetts, Utah and Virginia are palest. Beside it: Substance Use Treatment, State by State. 85 people with a substance use disorder for each treatment worker in the U.S., 2024. Nevada: 177. Massachusetts: 49. Data 4 The People. Sources: SAMHSA, BLS.
 meta_title: "Substance Use Treatment by State: Map, 2001-2024"
