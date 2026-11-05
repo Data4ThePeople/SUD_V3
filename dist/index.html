@@ -76,6 +76,8 @@ input[type=range]{flex:1;accent-color:var(--work)}
 .card{padding:16px 10px;text-align:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:128px}
 .card:nth-child(3n){border-right:0}
 .card .v{font-family:var(--mono);font-size:22px;font-weight:600;margin:10px 0 6px;word-break:break-word}
+/* labels wrap to one or two lines; reserve two so every value sits on the same line */
+.card .lab{line-height:1.25;min-height:2.5em}
 .card .d{font-size:13px;color:var(--ink2);line-height:1.35}
 .rank{padding:16px 24px 8px}
 .rank ol{list-style:none;margin:10px 0 0;padding:0;max-height:560px;overflow:auto}
