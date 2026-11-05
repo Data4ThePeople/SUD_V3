@@ -2,7 +2,7 @@
 
 Post URL: https://www.data4thepeople.com/p/substance-use-treatment-viz
 
-Drafted by Claude from the post text (November 4, 2026).
+Body written by Eric (November 5, 2026), placed verbatim. Subject, preview, hero, headline and call to action carried over from Claude's draft.
 
 ```
 Subject:  Substance use treatment, state by state
@@ -24,9 +24,9 @@ Substance Use Treatment, State by State: An Interactive Map, 2001 to 2024
 ## 3. Body, part one
 
 ```
-Substance use is one of the most important health topics in the country. This visualization isn't meant to put substance use in a good or bad spotlight; its purpose is to provide factual information so you can see where we stand as a country on substance use disorder and treatment.
+Today’s post comes from Data 4 The People data storytelling fellow, Jameson Maehaffey. Jameson is a second-year data analytics student at THE Ohio State University. He joined us this summer to research a topic of his choosing, with the goal being to publish an interactive data visualization to help others understand his topic.
 
-For every state and DC, from 2001 to 2024, you can view how many people have a substance use disorder (SUD), how many outpatient treatment establishments there are, how many people with SUD there are for each treatment worker, and how many people die of a drug overdose or alcohol-induced cause. Where a source did not publish a number, the map leaves it blank. It is free to use and needs no sign-in.
+Jameson chose to study substance use disorder (SUD), a condition impacting over 48 million Americans. His visualization, which we published last night, not only shows the progression of SUD by state across America, but it also compares people suffering with SUD in each state with the treatment workers available to help in each state. Lastly, it shows the progression of the death rate from drug and alcohol-induced causes, which you will see, has climbed considerably across the country over the past two decades.
 ```
 
 ## 4. The map (picture of the live tool)
@@ -40,15 +40,20 @@ Screenshot of the interactive map Substance Use Treatment, State by State, for 2
 ## 5. Body, part two
 
 ```
-In 2023-2024, SAMHSA estimates that 48.4 million people 12 and older had a substance use disorder, 16.9% of that age group. Across the U.S., that is 85 people with SUD for each treatment worker in 2024, down from 105 in 2022.
+As is the case with any good visualization, this will bring up far more questions than answers. But a visualization isn’t supposed to answer questions. It’s supposed to uncover the data that helps us ask the right questions. The initial questions Jameson, and the rest of the D4TP team, are now exploring are:
 
-The gap is not the same everywhere. Nevada had 177 people with SUD for each treatment worker, followed by Alabama (175) and Georgia (162). Massachusetts had 49.
+1.    Why do states have such large gaps in their SUD population per treatment worker?
+2.    Why has the death rate surged, without the same corresponding rise (outside the survey change) in the SUD prevalence rate?
+3.    What happens to people living with SUD, and the treatment workers caring for them, when Medicaid cuts go into effect on Jan 1, 2027? Can we highlight states that could experience the most risk?
 
-There were 126,098 drug overdose and alcohol-induced deaths in 2024, 22% below the peak in 2021.
+We are going to be publishing a series of follow up studies, using this tool to drill down into the many facets of SUD that are plaguing this country.
 
-The map also links to FindTreatment.gov and the 988 Lifeline for anyone who needs help now.
+Jameson’s work has inspired me to start tomorrow, with fentanyl.
 
-Find your state and see how it has changed since 2001.
+In Jameson’s words:
+“Spreading awareness and helping others are the main purposes of this map.”
+
+So, take some time exploring this map. If you have questions that you would like to explore, please let us know.
 ```
 
 ## 6. Call to action
