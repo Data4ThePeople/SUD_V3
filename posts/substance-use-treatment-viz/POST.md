@@ -7,6 +7,25 @@ updated: 2026-11-04
 section: Visualization
 hero: images/substance-use-treatment-viz-hero-1680x1080.png
 hero_alt: Map of the United States on a dark background, titled People with SUD per treatment worker, 2024. States are shaded from pale orange (25) to dark orange (200 or more). Nevada, Alabama, Georgia, South Carolina and Texas are darkest; Massachusetts, Utah and Virginia are palest. Beside it: Substance Use Treatment, State by State. 85 people with a substance use disorder for each treatment worker in the U.S., 2024. Nevada: 177. Massachusetts: 49. Data 4 The People. Sources: SAMHSA, BLS.
+meta_title: "Substance Use Treatment by State: Map, 2001-2024"
+description: "Free interactive map of substance use disorder rates, treatment facilities and workers, and overdose and alcohol deaths in every state, 2001 to 2024."
+keywords: substance use disorder by state, addiction treatment by state, substance abuse treatment facilities by state, behavioral health workforce shortage by state, overdose deaths by state map, alcohol deaths by state, how many people have a substance use disorder, NSDUH state estimates
+schema_type: dataset
+dataset_name: Substance use disorder, outpatient treatment establishments, treatment workers, and drug overdose and alcohol-induced deaths, U.S. states and DC, 2001 to 2024
+dataset_description: "SAMHSA National Survey on Drug Use and Health state estimates of people 12 and older with a substance use disorder, drug use disorder or alcohol use disorder (two-year windows, 2000-2001 to 2023-2024); SAMHSA N-SSATS and N-SUMHSS counts of facilities offering outpatient substance use treatment; BLS Occupational Employment and Wage Statistics employment of substance abuse and mental health counselors and social workers; and CDC WONDER drug overdose and alcohol-induced deaths by state of residence. Values not published by the source are left blank."
+temporal: 2001/2024
+spatial: United States
+measured: Substance use disorder prevalence, ages 12 and older|percent; People with a substance use disorder|count; Outpatient substance use treatment establishments|count; Establishments per 100,000 residents|rate; Substance abuse and mental health counselors and social workers|count; People with a substance use disorder per treatment worker|ratio; Drug overdose and alcohol-induced deaths|count; Death rate|deaths per 100,000 residents
+sources: https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health|https://www.samhsa.gov/data/data-we-collect/n-sumhss-national-substance-use-and-mental-health-services-survey|https://www.bls.gov/oes/|https://wonder.cdc.gov/
+distribution: text/html|https://data4thepeople.github.io/SUD_V3/;text/csv|https://github.com/Data4ThePeople/SUD_V3/tree/main/data/build
+measurement_technique: Published state estimates and counts joined by state and year with no imputation. People with SUD per worker divides SAMHSA's two-year SUD count by the BLS worker count for the window's second year. Death rates are CDC crude rates per 100,000.
+credit: Data 4 The People, from SAMHSA, the U.S. Bureau of Labor Statistics and CDC
+license: https://www.data4thepeople.com/terms-of-use
+app_url: https://data4thepeople.github.io/SUD_V3/
+app_name: "Substance Use Treatment, State by State: interactive map, 2001 to 2024"
+app_category: EducationalApplication
+app_description: Free interactive map of substance use disorder rates, outpatient treatment establishments, treatment workers, people with SUD per worker, and overdose and alcohol-induced deaths in all 50 states and DC, each year from 2001 to 2024.
+app_features: All 50 states and DC, 2001 to 2024|Play through the years|Four map views: SUD prevalence, establishments per 100K, people with SUD per worker, death rate|Drug + alcohol, drug only or alcohol only|Cards with each state's numbers and 95% intervals|Ranking of all states for the map shown|Trend chart for each state with survey changes marked|Link to FindTreatment.gov and the 988 Lifeline
 drop_cap: false
 heading_spacer: 20px
 caption_spacer: 20px

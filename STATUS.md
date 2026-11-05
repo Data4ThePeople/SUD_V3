@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: substance-use-treatment-viz
-Step: 2d
+Step: 2e
 Since: 2026-11-04
 
 ## Steps
@@ -17,7 +17,7 @@ Since: 2026-11-04
 | 2a | Draft with brackets resolved | 2026-11-04 | |
 | 2b | Eric's edit, Claude's look-over | 2026-11-04 | |
 | 2c | Slice markup | 2026-11-04 | |
-| 2d | Hero 1680x1080 + alt text | | |
+| 2d | Hero 1680x1080 + alt text | 2026-11-04 | |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
@@ -245,3 +245,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-04 Eric: Step 2a done. Step 2b open.
 - 2026-11-04 Eric: Step 2b done (look-over items 1-13 accepted). Step 2c open.
 - 2026-11-04 Eric: Step 2c done (subtitle item 1 accepted). Step 2d open: hero from the 2024 People with SUD per Worker map (scripts/make_hero.py).
+- 2026-11-04 Eric: Step 2d done. Step 2e open: meta, keywords and dataset schema drafted from Claude's suggested searches, pending Eric's.
