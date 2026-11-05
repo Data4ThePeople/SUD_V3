@@ -46,7 +46,7 @@ As is the case with any good visualization, this will bring up far more question
 
 1.    Why do states have such large gaps in their SUD population per treatment worker?
 2.    Why has the death rate surged, without the same corresponding rise (outside the survey change) in the SUD prevalence rate?
-3.    What happens to people living with SUD, and the treatment workers caring for them, when Medicaid work requirements go into effect on Jan 1, 2027? Can we highlight states that could experience the most risk?
+3.    What happens to people living with SUD, and the treatment workers caring for them, when Medicaid work requirements and eligibility checks every six months go into effect on Jan 1, 2027? Can we highlight states that could experience the most risk?
 
 We are going to be publishing a series of follow-up studies, using this tool to drill down into the many facets of SUD that are plaguing this country.
 
