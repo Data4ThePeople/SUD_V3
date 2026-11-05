@@ -121,17 +121,23 @@ footer{padding:18px 48px 40px;font-family:var(--mono);font-size:12px;color:var(-
    notes and disclaimers collapse; map and side panel stay side by side down to 860px */
 .nd>summary,.cod>summary{cursor:pointer;color:var(--work);font-family:var(--mono);font-size:12.5px}
 .nd>summary{padding:4px 0}
-.framed header{display:none}
-.framed .banner{border-top:0}
-.framed .main{grid-template-columns:minmax(0,1fr) 380px}
-.framed .rank ol{max-height:250px}
+.framed header,.framed .banner,.framed .era,.framed .help p{display:none}
+.framed .controls{padding-top:10px;padding-bottom:10px}
+.framed .legend{padding-top:8px;padding-bottom:8px}
+.framed .left{padding-top:10px;padding-bottom:14px}
+.framed .callout{margin:6px 0 10px;padding:8px 14px}
+.framed #trend{height:200px}
+.framed .main{grid-template-columns:minmax(0,1fr) 360px}
+.framed .rank ol{max-height:210px}
 .framed .ph{padding:14px 20px 10px}.framed .rank{padding:12px 20px 6px}
 .framed .card{min-height:0;padding:12px 8px}.framed .card .v{margin:6px 0 4px}
-.framed .help{margin:12px 20px 16px;padding:14px}.framed .help p{font-size:14px;margin:8px 0 12px}.framed .n988{margin:8px 0}
+.framed .help{margin:10px 20px 14px;padding:12px 14px}.framed .n988{margin:8px 0 12px}
 .framed .notes{padding-top:14px;padding-bottom:14px}
 .framed footer{padding-top:8px;padding-bottom:16px}
-@container (max-width:1100px){ .framed .main{grid-template-columns:minmax(0,1fr) 380px}.framed .right{border-left:1px solid var(--line);border-top:0} }
-@container (max-width:860px){ .framed .main{grid-template-columns:1fr}.framed .right{border-left:0;border-top:1px solid var(--line)} }
+@container (max-width:1100px){ .framed .main{grid-template-columns:minmax(0,1fr) 360px}.framed .right{border-left:1px solid var(--line);border-top:0} }
+@container (max-width:900px){ .framed .main{grid-template-columns:minmax(0,1fr) 300px}.framed .card .v{font-size:17px}.framed .ph h2{font-size:22px}
+  .framed .rank li{grid-template-columns:20px 1fr 40px 46px;gap:6px;font-size:13.5px}.framed .ttog{gap:4px 14px} }
+@container (max-width:680px){ .framed .main{grid-template-columns:1fr}.framed .right{border-left:0;border-top:1px solid var(--line)} }
 </style>
 </head>
 <body>
@@ -467,7 +473,8 @@ function renderCallout() {
   }
   const co = document.getElementById("callout");
   const inner = p.map(x => x.includes("<details") ? "<p>" + x.replace("<details", "</p><details") : "<p>" + x + "</p>").join("");
-  co.innerHTML = FRAMED ? '<details class="cod"' + (S.coOpen ? " open" : "") + '><summary>About this view</summary>' + inner + "</details>" : inner;
+  const era = document.getElementById("era").textContent;
+  co.innerHTML = FRAMED ? '<details class="cod"' + (S.coOpen ? " open" : "") + '><summary>About this view</summary>' + (era ? "<p>" + era + "</p>" : "") + inner + "</details>" : inner;
   const cod = co.querySelector("details.cod"); if (cod) cod.ontoggle = () => { S.coOpen = cod.open; };
   const det = co.querySelector("details.more"); if (det) det.ontoggle = () => { S.dsmOpen = det.open; };
 }
@@ -543,7 +550,7 @@ function renderTrend() {
   ttog.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.t === t)));
   document.getElementById("trend-title").textContent = T.label + (t === "work" ? VV.trendSuffix : (t === "death" || t === "sud") ? P().tag : "") + " · " + g.name + " · 2001-2024";
   const ds = document.getElementById("dswitch-t"); ds.innerHTML = t === "death" || t === "sud" ? drugSwitch(t) : ""; wireSwitch(ds);
-  const W = trendSvg.clientWidth || 800, H = 280, m = {l: 58, r: 20, t: 26, b: 30};
+  const W = trendSvg.clientWidth || 800, H = FRAMED ? 200 : 280, m = {l: 58, r: 20, t: 26, b: 30};
   const pts = trendSeries(g), vals = pts.filter(p => p.v != null).map(p => p.v);
   const top = vals.length ? niceMax(Math.max(...vals) * 1.08) : 1;
   const x = y => m.l + (y - 2001) / 23 * (W - m.l - m.r), yy = v => H - m.b - v / top * (H - m.t - m.b);
