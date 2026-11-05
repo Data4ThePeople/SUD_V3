@@ -249,3 +249,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-04 Eric: Step 2e done (items 1-3 accepted). Step 2f open.
 - 2026-11-04 Pushed to Prismic as a draft in the Migration Release: document auvIrBIAAC4AbnVB, 69 slices, hero uploaded. Tags and author empty.
 - 2026-11-04 Eric: Step 2f done (schema author Jameson Mehaffey, time 7:15 pm Eastern). Step 2g open.
+- 2026-11-04 Created cloud routine 'SUD map: new source data monitor' (trig_01VgF9wi3mBK1MrE5hHQ2vtY): Mondays 9am ET, checks NSDUH SAE, N-SUMHSS, OEWS, WONDER for vintages newer than the map's, emails eric@asaltollc.com once per new release. Report only, no rebuilds. https://claude.ai/code/routines/trig_01VgF9wi3mBK1MrE5hHQ2vtY
