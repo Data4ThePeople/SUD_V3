@@ -40,15 +40,15 @@ Screenshot of the interactive map Substance Use Treatment, State by State, for 2
 ## 5. Body, part two
 
 ```
-As is the case with any good visualization, this will bring up far more questions than answers. But a visualization isn’t supposed to answer questions. It’s supposed to uncover the data that helps us ask the right questions to help us focus our research and investigation. The initial questions Jameson, and the rest of the D4TP team, are now exploring are:
+As is the case with any good visualization, this will bring up far more questions than answers. But a visualization isn’t supposed to answer questions. It’s supposed to uncover the data that helps us ask the right questions, so we can focus our research and investigation. The initial questions Jameson, and the rest of the D4TP team, are now exploring are:
 
 1.    Why do states have such large gaps in their SUD population per treatment worker?
 2.    Why has the death rate surged, without the same corresponding rise (outside the survey change) in the SUD prevalence rate?
 3.    What happens to people living with SUD, and the treatment workers caring for them, when Medicaid work requirements go into effect on Jan 1, 2027? Can we highlight states that could experience the most risk?
 
-We are going to be publishing a series of follow up studies, using this tool to drill down into the many facets of SUD that are plaguing this country.
+We are going to be publishing a series of follow-up studies, using this tool to drill down into the many facets of SUD that are plaguing this country.
 
-Jameson’s work has inspired me to start tomorrow, with fentanyl.
+Jameson’s work inspired the first of these studies, on fentanyl, which we hope to publish tomorrow.
 
 In Jameson’s words:
 “Spreading awareness and helping others are the main purposes of this map.”
