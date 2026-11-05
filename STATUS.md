@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: substance-use-treatment-viz
-Step: 2f
+Step: 2g
 Since: 2026-11-04
 
 ## Steps
@@ -19,7 +19,7 @@ Since: 2026-11-04
 | 2c | Slice markup | 2026-11-04 | |
 | 2d | Hero 1680x1080 + alt text | 2026-11-04 | |
 | 2e | SEO | 2026-11-04 | |
-| 2f | Pushed to Prismic (draft) | | |
+| 2f | Pushed to Prismic (draft) | 2026-11-04 | |
 | 2g | Mailchimp teaser | | |
 
 ## Stale
@@ -248,3 +248,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-04 Eric: Step 2d done. Step 2e open: meta, keywords and dataset schema drafted from Claude's suggested searches, pending Eric's.
 - 2026-11-04 Eric: Step 2e done (items 1-3 accepted). Step 2f open.
 - 2026-11-04 Pushed to Prismic as a draft in the Migration Release: document auvIrBIAAC4AbnVB, 69 slices, hero uploaded. Tags and author empty.
+- 2026-11-04 Eric: Step 2f done (schema author Jameson Mehaffey, time 7:15 pm Eastern). Step 2g open.
