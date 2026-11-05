@@ -50,7 +50,7 @@ dividers: false
 
 Substance use is one of the most important health topics in the country. This visualization isn't meant to put substance use in a good or bad spotlight; its purpose is to provide factual information so you can see where we stand as a country on substance use disorder and treatment. For every state and DC, from 2001 to 2024, you can view how many people have a substance use disorder (SUD), how many outpatient treatment establishments there are, how many people with SUD there are for each treatment worker, and how many people die of a drug overdose or alcohol-induced cause. It is built from four sources listed below. Where a source did not publish a number for a state and year, the map leaves it blank. We do not fill in, estimate or smooth any missing value. It is free to use and needs no sign-in.
 
-This tool has several underlying stories within it that later posts will look at more closely to describe what the data shows. The visualization gets its own post because it holds all the data without a big headline taking away from its true value: to inform and help others. This map lets you play around with the years to discover headlines and see how our country has been affected by substance use over time. In addition to making the audience aware of substance use, it offers help by linking to FindTreatment.gov, a site where you can type in your ZIP code and find the nearest treatment facility for anyone who may need it. Spreading awareness and helping others are the main purposes of this map.
+This tool has several underlying stories within it that later posts will look at more closely to describe what the data shows. The visualization gets its own post because it holds all the data without a big headline taking away from its true value: to inform and help others. This map lets you play around with the years to discover headlines and see how our country has been affected by substance use over time. In addition to making the audience aware of substance use, it offers help by linking to FindTreatment.gov, a site where you can type in your ZIP code and find the nearest treatment facility for anyone who may need it. Spreading awareness and helping others are the main purposes of this map. The underlying data and code are free to download on [GitHub](https://github.com/Data4ThePeople/SUD_V3).
 
 ::: blurb Read this first
 People with SUD per Worker is a rough measure of how many people need care for each person trained to give it. It is not a caseload. The worker count includes counselors and social workers in every setting, including hospitals, schools and prisons, and it includes mental health work. Many people with a disorder never seek treatment. Read it as a way to compare states, not as the number of patients each worker sees. Also, SAMHSA changed its survey and its definition of a disorder in 2021, so disorder rates from 2021-2022 on cannot be compared with earlier years. The map marks this change.
@@ -169,6 +169,10 @@ The code, the data and the full method are at [github.com/Data4ThePeople/SUD_V3]
 
 SAMHSA estimates 48.4 million people 12 and older in 2023-2024, or 16.9%. This uses the newer DSM-5 definition, so it cannot be compared with estimates from 2020 or earlier.
 
+### Which state has the highest rate of substance use disorder?
+
+In 2023-2024, the District of Columbia had the highest rate, 23.8% of people 12 and older, followed by Maine and Colorado (22.4%). Utah had the lowest, 12.6%.
+
 ### Why did the number of people with a substance use disorder more than double in 2022?
 
 SAMHSA changed its survey and its definition of a disorder starting in 2021. SAMHSA says the estimates from 2021 on are not comparable with earlier years, so the jump should not be read as a change in how many people had a disorder.
@@ -180,6 +184,10 @@ In 2024, Nevada had the most people with SUD per treatment worker, 177, followed
 ### What counts as a treatment worker?
 
 Substance use and mental health counselors, plus mental health and substance use social workers, as counted by the Bureau of Labor Statistics. It includes every work setting. It does not include doctors, nurses, peer support workers or the self-employed.
+
+### Which state has the fewest treatment facilities per person?
+
+In 2024, Texas had the fewest outpatient substance use treatment establishments for its population, 1.6 per 100,000 residents, followed by South Carolina (1.7) and Alabama (2.2). Kentucky had the most, 11.4.
 
 ### Which state has the highest overdose and alcohol death rate?
 
