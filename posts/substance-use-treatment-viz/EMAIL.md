@@ -24,9 +24,9 @@ Substance Use Treatment, State by State: An Interactive Map, 2001 to 2024
 ## 3. Body, part one
 
 ```
-Today’s post comes from Data 4 The People data storytelling fellow, Jameson Maehaffey. Jameson is a second-year data analytics student at THE Ohio State University. He joined us this summer to research a topic of his choosing, with the goal being to publish an interactive data visualization to help others understand his topic.
+Today’s post comes from Data 4 The People data storytelling fellow, Jameson Mehaffey. Jameson is a second-year data analytics student at THE Ohio State University. He joined us this summer to research a topic of his choosing, with the goal being to publish an interactive data visualization to help others understand his topic.
 
-Jameson chose to study substance use disorder (SUD), a condition impacting over 48 million Americans. His visualization, which we published last night, not only shows the progression of SUD by state across America, but it also compares people suffering with SUD in each state with the treatment workers available to help in each state. Lastly, it shows the progression of the death rate from drug and alcohol-induced causes, which you will see, has climbed considerably across the country over the past two decades.
+Jameson chose to study substance use disorder (SUD), a condition impacting over 48 million Americans age 12 and older. His visualization, which we published last night, not only shows the progression of SUD by state across America, but it also compares people suffering with SUD in each state with the treatment workers available to help in each state. Lastly, it shows the progression of the death rate from drug and alcohol-induced causes, which you will see, has climbed considerably across the country over the past two decades.
 ```
 
 ## 4. The map (picture of the live tool)
