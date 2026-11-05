@@ -6,8 +6,8 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: substance-use-treatment-viz
-Step: 2g
-Since: 2026-11-04
+Step: complete
+Since: 2026-11-05
 
 ## Steps
 
@@ -20,7 +20,7 @@ Since: 2026-11-04
 | 2d | Hero 1680x1080 + alt text | 2026-11-04 | |
 | 2e | SEO | 2026-11-04 | |
 | 2f | Pushed to Prismic (draft) | 2026-11-04 | |
-| 2g | Mailchimp teaser | | |
+| 2g | Mailchimp teaser | 2026-11-05 | Body written by Eric |
 
 ## Stale
 
@@ -251,3 +251,5 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-04 Eric: Step 2f done (schema author Jameson Mehaffey, time 7:15 pm Eastern). Step 2g open.
 - 2026-11-04 Created cloud routine 'SUD map: new source data monitor' (trig_01VgF9wi3mBK1MrE5hHQ2vtY): Mondays 9am ET, checks NSDUH SAE, N-SUMHSS, OEWS, WONDER for vintages newer than the map's, emails eric@asaltollc.com once per new release. Report only, no rebuilds. https://claude.ai/code/routines/trig_01VgF9wi3mBK1MrE5hHQ2vtY
 - 2026-11-04 Eric: rejecting the 2g email draft; he will write his own on 2026-11-05. Claude puts it into EMAIL.md verbatim in the same structure, no edits unless asked.
+- 2026-11-05 Eric's email body placed in EMAIL.md; name spelling, age group, Medicaid work requirements wording and look-over items 1-3 accepted.
+- 2026-11-05 Eric: Step 2g done. Post substance-use-treatment-viz complete.

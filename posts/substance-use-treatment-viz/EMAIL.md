@@ -19,7 +19,9 @@ Map of the United States on a dark background, titled People with SUD per treatm
 
 ## 2. Headline
 
+```
 Substance Use Treatment, State by State: An Interactive Map, 2001 to 2024
+```
 
 ## 3. Body, part one
 
