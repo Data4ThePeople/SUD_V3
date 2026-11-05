@@ -253,3 +253,5 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-04 Eric: rejecting the 2g email draft; he will write his own on 2026-11-05. Claude puts it into EMAIL.md verbatim in the same structure, no edits unless asked.
 - 2026-11-05 Eric's email body placed in EMAIL.md; name spelling, age group, Medicaid work requirements wording and look-over items 1-3 accepted.
 - 2026-11-05 Eric: Step 2g done. Post substance-use-treatment-viz complete.
+- 2026-11-05 Embed: Find Treatment button hidden in the embed (the site's HTML embed slice frames it with sandbox="allow-scripts", which blocks links); kept on the full page. Cache-buster 20261105a; Prismic draft re-pushed.
+- 2026-11-05 Social posts drafted from Eric's email (SOCIAL.md: X, Bluesky, LinkedIn) with a GIF cycling the four 2024 map views (scripts/make_social_gif.py).
