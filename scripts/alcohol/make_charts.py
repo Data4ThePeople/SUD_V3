@@ -58,7 +58,7 @@ def pct(a, b): return (b / a - 1) * 100
 sv = s.set_index(["outcome", "end_year"]).pct
 n = pd.read_csv(os.path.join(ROOT, "data/build/alcohol/niaaa_national.csv"))
 assert not n.duplicated(["year", "bev"]).any()
-nv = n[n.bev == "all"].set_index("year").pc14_report124  # NIAAA report #124 Table 1, ages 14+
+nv = n[n.bev == "all"].set_index("year").pc14  # NIAAA report #124 data file, ages 14+, fixed ABV
 rows = [
     ("Share of people 12+ who drank\nalcohol in the past month", pct(sv["ALCMON", 2003], sv["ALCMON", 2019]), SURVEY),
     ("Pure alcohol sold per\nperson 14+", pct(nv.loc[[2002, 2003]].mean(), nv.loc[[2018, 2019]].mean()), SURVEY),
