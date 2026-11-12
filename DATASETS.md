@@ -509,3 +509,33 @@ codes as the map (see the CDC WONDER section).
 **Chart 2 percent changes** compare the 2002-2003 window with 2018-2019, the
 longest span the survey allows. The death rate is averaged over the same two
 calendar years (2002 and 2003; 2018 and 2019) to match.
+
+**Alcohol sold per person: NIAAA apparent per capita ethanol consumption.**
+Built by `scripts/alcohol/build_niaaa.py` into
+`data/build/alcohol/niaaa_national.csv` (national, all beverages and spirits).
+- Sources, saved unchanged in `data/raw/niaaa/` (pulled 2026-11-12):
+  - Surveillance Report #124, "Apparent Per Capita Alcohol Consumption:
+    National, State, and Regional Trends, 1977-2024" (Slater and Alpert,
+    April 2026), `surveillance-report124-capita-consumption.pdf`, from
+    https://www.niaaa.nih.gov/sites/default/files/surveillance-report124-capita-consumption.pdf
+    (the "PerCapitaConsumption" link on the report page returns 404). Table 1
+    national values for 2000-2024 are typed into the script.
+  - The data file for the previous report (#122), `pcyr1970-2023.txt`
+    (updated 03/31/2025), from
+    https://www.niaaa.nih.gov/sites/default/files/pcyr1970-2023.txt. The #124
+    data file is not posted. National rows have geographic code 99.
+- What it measures: gallons of pure alcohol (ethanol) sold or shipped, divided
+  by the population aged 14 and older. "Apparent" because it is sales, not
+  drinking: it includes alcohol bought by tourists and across state lines, and
+  leaves out home production and illegal sales. Sales data from 33 States in
+  2024; industry shipment data fill the rest. No confidence intervals.
+- Ethanol content: the report uses fixed alcohol-by-volume values for every
+  year (beer 4.5%, wine 12.9%, spirits 41.1%). The data file also gives
+  ethanol from time-varying ABVs (Alcohol Research Group). Spirits ABV fell
+  from 0.384 (2018) to 0.356 (2023), and the report gives 0.324 for 2024, so
+  the fixed-ABV series overstates recent spirits growth.
+- Check: #124 Table 1 equals the #122 data file to 2 decimals in every year
+  2000-2021 except spirits 2005 (0.70 vs 0.695, rounding). 2022 and 2023
+  differ by 0.01 because #124 revised the 2020-2023 population estimates.
+- 2002-2003 to 2018-2019 (two-year averages, all beverages): ages 14+ fixed
+  ABV +7.2%; ages 21+ +5.2%; ages 14+ time-varying ABV +8.7%.
