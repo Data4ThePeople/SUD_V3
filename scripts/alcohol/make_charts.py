@@ -89,3 +89,42 @@ foot(fig, "Sources: SAMHSA, NSDUH state small-area estimates, national rows (2-y
 fig.savefig(os.path.join(OUT, "02-alcohol-change.png"), facecolor=BG)
 plt.close(fig)
 for lab, v, _ in rows: print(lab.replace("\n", " "), round(v, 1))
+
+# ---------- Chart 3: beer to spirits, and stronger drinks overall ----------
+nt = n.set_index(["bev", "year"])
+yrs = list(range(2002, 2025))
+fig = plt.figure(figsize=(12, 7.6), dpi=150); fig.patch.set_facecolor(BG)
+axL = fig.add_axes([0.07, 0.24, 0.50, 0.50]); axR = fig.add_axes([0.70, 0.24, 0.26, 0.50])
+TYPES = [("spirits", "Spirits", "#7fa7d6"), ("beer", "Beer", "#e3b85a"), ("wine", "Wine", "#c48fc0")]
+for b, lab, c in TYPES:
+    v = [nt.pc14_timevarying_abv[b, y] for y in yrs]
+    axL.plot(yrs, v, color=c, lw=2.4)
+    for y, val in ((yrs[0], v[0]), (yrs[-1], v[-1])):
+        axL.plot(y, val, "o", ms=6, color=c, mec=BG, mew=1.5)
+        axL.annotate(f"{val:.2f}", (y, val), xytext=(-8 if y == yrs[0] else 8, 0), textcoords="offset points",
+                     ha="right" if y == yrs[0] else "left", va="center", fontsize=11, color=TXT)
+    axL.text(2013, v[yrs.index(2013)] + 0.06, lab, color=TXT, fontsize=12, ha="center", fontweight="bold")
+axL.set_ylim(0, 1.5); axL.set_xlim(1999.5, 2026.5); axL.set_xticks(range(2004, 2025, 5))
+axL.set_title("Pure alcohol sold per person 14+, by type (gallons)", loc="left", fontsize=12.5, color=TXT, pad=10)
+strength = [100 * nt.pc14_timevarying_abv["all", y] / nt.beverage_gal_pc14["all", y] for y in yrs]
+axR.plot(yrs, strength, color="#d6d9de", lw=2.4)
+for y, val in ((yrs[0], strength[0]), (yrs[-1], strength[-1])):
+    axR.plot(y, val, "o", ms=6, color="#d6d9de", mec=BG, mew=1.5)
+    axR.annotate(f"{val:.1f}%", (y, val), xytext=(0, 10), textcoords="offset points", ha="center", fontsize=11, color=TXT)
+axR.set_ylim(0, 10); axR.set_xlim(2000, 2026); axR.set_xticks([2004, 2014, 2024])
+axR.set_yticks(range(0, 11, 2)); axR.set_yticklabels([f"{t}%" for t in range(0, 11, 2)])
+axR.set_title("Average alcohol content of\nall drinks sold", loc="left", fontsize=12.5, color=TXT, pad=10)
+for ax in (axL, axR):
+    ax.set_facecolor(BG); ax.grid(axis="y", color=GRID, lw=0.8); ax.set_axisbelow(True)
+    for sp in ("top", "right", "left"): ax.spines[sp].set_visible(False)
+    ax.tick_params(length=0, labelsize=11)
+gal0, gal1 = nt.beverage_gal_pc14["all", 2002], nt.beverage_gal_pc14["all", 2024]
+fig.text(0.04, 0.925, "Less beer, more spirits, and stronger drinks overall", fontsize=19, fontweight="bold", color="#e6e7e9")
+fig.text(0.04, 0.87, f"U.S., 2002-2024. Gallons of drinks sold per person 14+ fell from {gal0:.1f} to {gal1:.1f}, but each gallon held more alcohol.",
+         fontsize=13, color=TXT)
+foot(fig, "Source: NIAAA Surveillance Report #124 data file. Sales and shipments, not measured drinking. Alcohol content uses NIAAA's year-by-year\n"
+          "estimates for each drink type (Alcohol Research Group). Average content = pure alcohol divided by gallons of beer, wine and\n"
+          "spirits sold. NIAAA's headline series assumes fixed content; it shows a larger rise in spirits after 2019.")
+fig.savefig(os.path.join(OUT, "03-beer-to-spirits.png"), facecolor=BG)
+plt.close(fig)
+print("chart 3 strength", round(strength[0], 2), round(strength[yrs.index(2019)], 2), round(strength[-1], 2), "gal", round(gal0, 2), round(gal1, 2))

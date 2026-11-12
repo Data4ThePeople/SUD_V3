@@ -1,4 +1,4 @@
-"""NIAAA apparent per capita ethanol consumption, national, all beverages and spirits.
+"""NIAAA apparent per capita alcohol consumption, national, by beverage type and all beverages.
 Source: data/raw/niaaa/pcyr1970-2024_final.txt (report #124 data file, updated 04/09/2026).
 Table 1 of the report #124 PDF is typed below only as a check: the file must match it to 2 decimals. Usage: python3 scripts/alcohol/build_niaaa.py"""
 import os
@@ -13,7 +13,9 @@ for line in open(R("data/raw/niaaa/pcyr1970-2024_final.txt")):
     y, b = int(f[0]), BEV[f[2]]
     pop14 = float(f[5]); pc14 = int(f[6]) / 1e4; pc21 = int(f[9]) / 1e4
     abv = f[12] if f[12] != "." else ""; eth_tv = f[13] if f[13] != "." else ""
-    rows[(y, b)] = dict(year=y, bev=b, pc14=pc14, pc21=pc21,
+    rows[(y, b)] = dict(year=y, bev=b, pc14=pc14, pc21=pc21, pop14=pop14,
+                        bev_gal=float(f[3]) if f[3] != "." else None,
+                        eth_tv=float(eth_tv) if eth_tv else None,
                         pc14_tv=round(float(eth_tv) / pop14, 4) if eth_tv else None,
                         abv_tv=int(abv) / 1000 if abv else None)
 # Check values: report #124 Table 1, all beverages and spirits, 2000-2024 (ages 14+, fixed ABV)
@@ -30,11 +32,15 @@ assert not diffs
 import csv
 os.makedirs(R("data/build/alcohol"), exist_ok=True)
 with open(R("data/build/alcohol/niaaa_national.csv"), "w", newline="") as f:
-    w = csv.writer(f); w.writerow(["year", "bev", "pc14", "pc21", "pc14_timevarying_abv", "abv_timevarying"])
+    w = csv.writer(f); w.writerow(["year", "bev", "pc14", "pc21", "pc14_timevarying_abv", "abv_timevarying", "beverage_gal_pc14"])
     for y in range(2000, 2025):
-        for b, T in (("all", T1_ALL), ("spirits", T1_SPI)):
-            r = rows.get((y, b), {})
-            w.writerow([y, b, r["pc14"], r["pc21"], r["pc14_tv"], r["abv_tv"]])
+        types = [rows[(y, t)] for t in ("beer", "wine", "spirits")]
+        # "all" has no beverage volume or time-varying ethanol in the file: sum the three types
+        rows[(y, "all")]["bev_gal"] = sum(t["bev_gal"] for t in types)
+        rows[(y, "all")]["pc14_tv"] = round(sum(t["eth_tv"] for t in types) / rows[(y, "all")]["pop14"], 4)
+        for b in ("all", "beer", "wine", "spirits"):
+            r = rows[(y, b)]
+            w.writerow([y, b, r["pc14"], r["pc21"], r["pc14_tv"], r["abv_tv"], round(r["bev_gal"] / r["pop14"], 4)])
 for y in (2002, 2003, 2018, 2019, 2021, 2023):
     print(y, {b: (rows[(y, b)]["pc14"], rows[(y, b)]["pc21"], rows[(y, b)]["pc14_tv"], rows[(y, b)]["abv_tv"]) for b in ("all", "spirits", "beer", "wine")})
 avg = lambda k, b, ys: sum(rows[(y, b)][k] for y in ys) / len(ys)
