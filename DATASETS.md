@@ -509,6 +509,8 @@ codes as the map (see the CDC WONDER section).
 **Chart 2 percent changes** compare the 2002-2003 window with 2018-2019, the
 longest span the survey allows. The death rate is averaged over the same two
 calendar years (2002 and 2003; 2018 and 2019) to match.
+Pure alcohol sold per person 14+ uses NIAAA report #124 Table 1 (all
+beverages, fixed ABV), averaged the same way.
 
 **Alcohol sold per person: NIAAA apparent per capita ethanol consumption.**
 Built by `scripts/alcohol/build_niaaa.py` into
