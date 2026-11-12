@@ -119,7 +119,7 @@ for ax in (axL, axR):
     for sp in ("top", "right", "left"): ax.spines[sp].set_visible(False)
     ax.tick_params(length=0, labelsize=11)
 gal0, gal1 = nt.beverage_gal_pc14["all", 2002], nt.beverage_gal_pc14["all", 2024]
-fig.text(0.04, 0.925, "Less beer, more spirits, and stronger drinks overall", fontsize=19, fontweight="bold", color="#e6e7e9")
+fig.text(0.04, 0.925, "Less beer, more spirits, and more alcohol in each gallon sold", fontsize=19, fontweight="bold", color="#e6e7e9")
 fig.text(0.04, 0.87, f"U.S., 2002-2024. Gallons of drinks sold per person 14+ fell from {gal0:.1f} to {gal1:.1f}, but each gallon held more alcohol.",
          fontsize=13, color=TXT)
 foot(fig, "Source: NIAAA Surveillance Report #124 data file. Sales and shipments, not measured drinking. Alcohol content uses NIAAA's year-by-year\n"

@@ -545,15 +545,19 @@ Built by `scripts/alcohol/build_niaaa.py` into
 NIAAA #124 data file, national, 2002-2024:
 - Left panel: pure alcohol per person 14+ for beer, wine and spirits, using the
   file's ethanol from time-varying ABVs (column "gallons of ethanol derived
-  from time-varying ABV") divided by the population 14+. The file gives
-  time-varying ethanol only by type; the all-beverage total is the sum of the
-  three (2024: 2.23 gallons, the figure the report gives).
-- Right panel: average alcohol content of all drinks sold = time-varying
+  from time-varying ABV") divided by the population 14+. The all-beverage row
+  equals the sum of the three types in every year (the script checks); 2024 is
+  2.23 gallons, the figure the report gives. The file header's column positions
+  for the population fields are off by one, so the script splits on spaces.
+- Right panel: average alcohol content of all drinks sold. The rise comes from
+  the mix moving toward spirits and wine, not from stronger drinks of each type
+  (spirits got weaker; beer and wine barely changed).
+- Right panel formula: average alcohol content of all drinks sold = time-varying
   ethanol (sum of three types) / gallons of beer, wine and spirits sold.
 - Time-varying ABVs are used here because the chart is about how strong the
   drinks are; with fixed ABVs the average can change only through the mix.
   The fixed-ABV series shows spirits rising more after 2019 (1.07 gallons in
   2024 vs 0.85 time-varying) because estimated spirits ABV fell from 0.384
-  (2018) to 0.324 (2024), likely lower-strength products such as canned
-  cocktails counted as spirits (not checked). The 2022 dip in spirits comes
+  (2018) to 0.324 (2024). The report gives no reason; it says the drop "will
+  continue to be monitored closely in future reports." The 2022 dip in spirits comes
   from that year's lower ABV estimate (0.345), not lower sales volume.

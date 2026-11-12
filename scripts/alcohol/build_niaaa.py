@@ -35,9 +35,9 @@ with open(R("data/build/alcohol/niaaa_national.csv"), "w", newline="") as f:
     w = csv.writer(f); w.writerow(["year", "bev", "pc14", "pc21", "pc14_timevarying_abv", "abv_timevarying", "beverage_gal_pc14"])
     for y in range(2000, 2025):
         types = [rows[(y, t)] for t in ("beer", "wine", "spirits")]
-        # "all" has no beverage volume or time-varying ethanol in the file: sum the three types
+        # "all" has no beverage volume in the file: sum the three types. Its time-varying ethanol must equal the sum.
         rows[(y, "all")]["bev_gal"] = sum(t["bev_gal"] for t in types)
-        rows[(y, "all")]["pc14_tv"] = round(sum(t["eth_tv"] for t in types) / rows[(y, "all")]["pop14"], 4)
+        assert abs(rows[(y, "all")]["eth_tv"] - sum(t["eth_tv"] for t in types)) < 2, y
         for b in ("all", "beer", "wine", "spirits"):
             r = rows[(y, b)]
             w.writerow([y, b, r["pc14"], r["pc21"], r["pc14_tv"], r["abv_tv"], round(r["bev_gal"] / r["pop14"], 4)])
