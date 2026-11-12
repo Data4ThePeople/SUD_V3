@@ -467,3 +467,43 @@ for deaths and population in all 24 years.
 **License.** Public domain. Citation: Centers for Disease Control and
 Prevention, National Center for Health Statistics, National Vital Statistics
 System, Mortality 1999-2020 and 2018-2024 on CDC WONDER Online Database.
+
+## Alcohol data for thought: national trend (added 2026-11-12)
+
+Two charts for a short post on whether drinking is getting more deadly. Built by
+`scripts/alcohol/build_series.py` (writes `data/build/alcohol/deaths_national.csv`
+and `nsduh_national.csv`) and `scripts/alcohol/make_charts.py` (writes
+`dist/alcohol/01-alcohol-death-rate.png` and `02-alcohol-change.png`).
+
+**Deaths: alcohol-induced, underlying cause, U.S., 1999-2024.** Same 14 ICD-10
+codes as the map (see the CDC WONDER section).
+- 1999-2020: crude and age-adjusted rates as CDC publishes them, from the D76
+  API pull `data/raw/wonder_api/aar.xml` (Year x Drug/Alcohol Induced).
+- 2021-2024: D158 (2018-2024, single race) has no API access, so the
+  age-adjusted rate is computed by us from Eric's export
+  `data/raw/wonder/mcd_2018_2024_year_age_alcohol.csv` (UCD alcohol-induced,
+  by year and ten-year age group). Method: direct age adjustment with the 2000
+  U.S. standard population in CDC's 11 age groups (under 1, 1-4, 5-14, 15-24,
+  ..., 85+). Deaths with age not stated are left out, as CDC does.
+  Crude rate = deaths / population x 100,000.
+- Suppressed cells (1-9 deaths, ages under 15 only) are counted as 0. If each
+  were 9, the age-adjusted rate would rise by at most 0.003 per 100,000.
+- Check: the same method applied to D76 age groups reproduces CDC's published
+  age-adjusted rate within 0.06 per 100,000 in every year 1999-2020. D158
+  2018-2020 computed rates match D76 within 0.05.
+- Alcohol-induced deaths do not include drunk-driving crashes, falls or other
+  injuries where alcohol played a part.
+
+**Drinking and disorder: NSDUH state SAE datasets, national rows, ages 12+.**
+- Past-month alcohol use: `ALCMON`, both SAE datasets.
+- Alcohol use disorder: `ABODALC` (DSM-IV) through 2018-2019; `UDYR5ALC`
+  (DSM-5) from 2021-2022.
+- Two-year windows only, 2002-2003 on; 2010-2011 uses the "(published)" set.
+  The same breaks as the map apply: 2002 baseline, and 2021-2022 on does not
+  compare with 2020 and earlier.
+- Binge drinking is not charted: the definition for women changed in 2015
+  (and the outcome code changed), so the series breaks there.
+
+**Chart 2 percent changes** compare the 2002-2003 window with 2018-2019, the
+longest span the survey allows. The death rate is averaged over the same two
+calendar years (2002 and 2003; 2018 and 2019) to match.

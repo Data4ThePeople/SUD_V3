@@ -5,9 +5,11 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: substance-use-treatment-viz
-Step: complete
-Since: 2026-11-05
+Post: alcohol data for thought (slug set at 2a)
+Step: 1 (exploration and analysis)
+Since: 2026-11-12
+
+Previous post: substance-use-treatment-viz, complete 2026-11-05.
 
 ## Steps
 
@@ -255,3 +257,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-05 Eric: Step 2g done. Post substance-use-treatment-viz complete.
 - 2026-11-05 Embed: Find Treatment button hidden in the embed (the site's HTML embed slice frames it with sandbox="allow-scripts", which blocks links); kept on the full page. Cache-buster 20261105a; Prismic draft re-pushed.
 - 2026-11-05 Social posts drafted from Eric's email (SOCIAL.md: X, Bluesky, LinkedIn) with a GIF cycling the four 2024 map views (scripts/make_social_gif.py).
+- 2026-11-12 Step 1 opened for a short data-for-thought post (Eric): is drinking getting more deadly while fewer people drink? Two charts in dist/alcohol/ (scripts/alcohol/). Age-adjusted alcohol-induced death rate 1999-2024 (2021-2024 age-adjusted by us from CDC age groups; method reproduces CDC's 1999-2020 rates within 0.06). Percent change 2002-2003 to 2018-2019: past-month drinking +1%, alcohol use disorder -30%, age-adjusted death rate +46%. Independent tie-out started.
