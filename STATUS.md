@@ -5,13 +5,29 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: alcohol data for thought (slug set at 2a)
-Step: 1 (exploration and analysis)
+Post: alcohol-deaths-data-for-thought
+Step: 2a (Eric's draft)
 Since: 2026-11-12
 
 Previous post: substance-use-treatment-viz, complete 2026-11-05.
 
 ## Steps
+
+| Step | What | Confirmed | Notes |
+|---|---|---|---|
+| 1  | Exploration and analysis | 2026-11-12 | |
+| 2a | Draft with brackets resolved | | |
+| 2b | Eric's edit, Claude's look-over | | |
+| 2c | Slice markup | | |
+| 2d | Hero 1680x1080 + alt text | | |
+| 2e | SEO | | |
+| 2f | Pushed to Prismic (draft) | | |
+| 2g | Mailchimp teaser | | |
+| 3  | Social posts | | |
+| 4a | Outreach list | | |
+| 4b | Outreach drafts in Gmail | | |
+
+## Steps: substance-use-treatment-viz (complete)
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
@@ -262,3 +278,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-12 Pulled NIAAA per capita consumption (report #124, 1977-2024; #122 data file for 21+ and time-varying ABV). Alcohol sold per person 14+, 2002-2003 to 2018-2019: +7% (21+: +5%; time-varying ABV: +9%). Not yet in a chart.
 - 2026-11-12 Eric: NIAAA bar added to Chart 2 (+7%). Chart 2 title now "The share who drink held steady. Alcohol sold and deaths rose." Second independent tie-out started on Chart 2.
 - 2026-11-12 Independent tie-out of Chart 2: all four bars match (0 differences), wording supported. NIAAA has posted the #124 data file; build now reads pcyr1970-2024_final.txt and the 1970-2023 file is removed. Values unchanged.
+- 2026-11-12 Eric: Step 1 done. Slug alcohol-deaths-data-for-thought. Step 2a open: posts/alcohol-deaths-data-for-thought/ created with charts 01 and 02 in images/.
