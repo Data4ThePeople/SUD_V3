@@ -71,7 +71,7 @@ for y in range(1999, 2025):
     else:
         o = out[y]["D158"]
         rows.append(dict(year=y, deaths=int(o["deaths"]), crude=round(o["crude"], 1), age_adjusted=round(o["aar"], 1),
-                         source="CDC WONDER D158, age-adjusted by us (2000 US standard)"))
+                         source="CDC WONDER Multiple Cause 2018-2024 (underlying cause filter), age-adjusted by us (2000 US standard)"))
 deaths = pd.DataFrame(rows)
 
 # 3) NSDUH national: past-month use, binge, AUD (12+), from the SAE files

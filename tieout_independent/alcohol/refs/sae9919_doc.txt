@@ -1,0 +1,429 @@
+
+
+
+1999 to 2019 National Surveys on Drug Use and Health (NSDUHs) Small Area Estimation Dataset: State Small Area Estimates, by Survey Year, Outcome, State, and Age Group 
+NSDUH Methodological Report
+Substance Abuse and Mental Health Services AdministrationCenter for Behavioral Health Statistics and Quality 
+Rockville, Maryland 20857
+January 2021 
+1999 to 2019 National Surveys on Drug Use and Health (NSDUHs) Small Area Estimation Dataset: State Small Area Estimates, by Survey Year, Outcome, State, and Age Group
+Acknowledgments
+This report was prepared for the Substance Abuse and Mental Health Services Administration (SAMHSA), U.S. Department of Health and Human Services (HHS), under Contract Nos. HHSS283201000003C and HHSS283201300001C with RTI International. Rong Cai served as the government project officer and as the contracting officer representative.
+Public Domain Notice 
+All material appearing in this report is in the public domain and may be reproduced or copied without permission from SAMHSA. Citation of the source is appreciated. However, this publication may not be reproduced or distributed for a fee without the specific, written authorization of the Office of Communications, SAMHSA, HHS.
+Electronic Access 
+This publication may be downloaded at https://www.datafiles.samhsa.gov/.
+Recommended Citation 
+Center for Behavioral Health Statistics and Quality. (2021). 1999 to 2019 National Surveys on Drug Use and Health (NSDUHs) small area estimation dataset: State small area estimates, by survey year, outcome, state, and age group, NSDUH methodological report. Rockville, MD: Substance Abuse and Mental Health Services Administration. 
+Data File Name: States_saes_final.sas7bdat.
+Originating Office
+Center for Behavioral Health Statistics and Quality, Substance Abuse and Mental Health Services Administration, 5600 Fishers Lane, Room 15-E09D, Rockville, MD 20857. For questions about this report, please e-mail CBHSQrequest@samhsa.hhs.gov.
+Nondiscrimination Notice
+SAMHSA complies with applicable federal civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, or sex. SAMHSA cumple con las leyes federales de derechos civiles aplicables y no discrimina por motivos de raza, color, nacionalidad, edad, discapacidad o sexo.
+U.S. Department of Health and Human Services Substance Abuse and Mental Health Services Administration Center for Behavioral Health Statistics and Quality Populations Survey Branch
+January 2021
+
+Table of Contents
+ChapterPage
+ TOC \h \z \t "Heading 2,1,Heading 3,2,Heading 4,3" 1.Introduction PAGEREF _Toc30499230 \h 1
+2.Variables on the Dataset PAGEREF _Toc30499231 \h 3
+2.1OUTCOME PAGEREF _Toc30499232 \h 3
+2.2OUTNAME PAGEREF _Toc30499233 \h 7
+2.3STNAME PAGEREF _Toc30499234 \h 7
+2.4STATE PAGEREF _Toc30499235 \h 7
+2.5AREA PAGEREF _Toc30499236 \h 8
+2.6AGEGRP PAGEREF _Toc30499237 \h 8
+2.7PYEAR PAGEREF _Toc30499238 \h 9
+2.8PYEARNM PAGEREF _Toc30499239 \h 9
+2.9POP PAGEREF _Toc30499240 \h 10
+2.10NSEL PAGEREF _Toc30499241 \h 10
+2.11NCOMP PAGEREF _Toc30499242 \h 10
+2.12WTINTRR PAGEREF _Toc30499243 \h 10
+2.13BSAE PAGEREF _Toc30499244 \h 10
+2.14LOW_SAE PAGEREF _Toc30499245 \h 11
+2.15UP_SAE PAGEREF _Toc30499246 \h 11
+2.16STE_SAE PAGEREF _Toc30499247 \h 11
+2.17GROUP PAGEREF _Toc30499248 \h 11
+2.18EST_TOTAL PAGEREF _Toc30499249 \h 12
+2.19LOW_TOTAL PAGEREF _Toc30499250 \h 12
+2.20UP_TOTAL PAGEREF _Toc30499251 \h 12
+2.21STE_TOTAL PAGEREF _Toc30499252 \h 13
+2.22GEN_CORR PAGEREF _Toc30499253 \h 13
+List of Contributors PAGEREF _Toc30499254 \h 15
+Appendix
+ TOC \h \z \t "AppHead1" \c AComparison of Small Area EstimatesA- PAGEREF _Toc30499308 \h 1
+
+
+
+
+1.Introduction
+This dataset contains state-level small area estimates, associated confidence intervals, and other key statistics related to state-level, model-based estimates of certain key substance use and mental health outcomes from the 1999 to 2019 National Surveys on Drug Use and Health (NSDUHs). State-level NSDUH small area estimates have been published annually by pooling 2 years of NSDUH data since 1999. Hence, this dataset contains small area estimates from the following pooled years of NSDUHs: 
+
+1999-2000, 
+2000-2001, 
+2002-2003, 
+2003-2004, 
+2004-2005, 
+2005-2006, 
+2006-2007,
+2007-2008, 
+2008-2009, 
+2009-2010, 
+2010-2011, 
+2011-2012, 
+2012-2013, 
+2013-2014, 
+2014-2015, 
+2015-2016, 
+2016-2017, 
+2017-2018, and
+2018-2019.
+
+Note that pooled NSDUH small area estimates were not produced using 2001 and 2002 combined data because the 2002 data differed from the data from the 1999 through 2001 surveys. In 2002, several changes were introduced to the survey. Incentives of $30 were given to respondents for the first time in order to address concerns about the response rates. Other changes included a change in the survey name (i.e., from NHSDA to NSDUH), new data collection quality control procedures, and a shift from the 1990 decennial census to the 2000 census as a basis for population count totals and to calculate any census-related predictor variables used in small area estimation. An unanticipated result of these changes was that the prevalence rates for 2002 were in general substantially higher than those for 2001—higher than could be attributable to the usual year-to-year trends—and thus are not comparable with estimates for 2001 and prior years. Therefore, the 2002 NSDUH was established as a new baseline for both the national and the state estimates. For more details, refer to Section A.2 of the "2011-2012 NSDUH: Guide to State Tables and Summary of Small Area Estimation Methodology" at https://www.samhsa.gov/data/. 
+The purpose of producing this dataset is to have available, in one location, all of the state-level small area estimates, from the earliest (1999-2000) to the latest (2018-2019). This dataset does not provide any new information, but it does offer all of the available information in a more user-friendly format (i.e., as a SAS dataset instead of as HTML and PDF-Web tables). This will allow users to analyze the data for a specific state, year, or outcome by subsetting the file. Also, if a user is interested in testing differences between two state estimates or testing differences between a state's estimates across time, all of the information needed is on this dataset. Appendix A provides details on how to use the data to conduct these tests. 
+This dataset contains 131,584 observations. The records are included at the year × outcome × age group × state level. There are 22 variables on this dataset, and the variable descriptions for each of these 22 variables are provided in Chapter 2. 
+
+2.Variables on the Dataset
+This chapter describes the 22 variables included on this 1999 to 2019 National Survey on Drug Use and Health (NSDUH) state small area estimation (SAE) dataset, which is sorted by PYEAR, STATE, OUTCOME, and AGEGRP. Note that when an estimate is not available, it will either show up as "." in the SAS dataset or that observation will not be included. For example, GROUP is not defined for national and regional estimates (i.e., when STNAME = National, Northeast, Midwest, South, and West). Thus, for those observations, the value for GROUP is SAS missing (i.e., GROUP = .). Alternatively, for 1999-2000, regional estimates are not defined and hence are not included in this dataset (i.e., there is no observation for PYEARNM = 1999-2000 and STNAME = Northeast or Midwest or South or West).
+2.1OUTCOME 
+"OUTCOME" is the name for the key substance use or mental health measures. Unless otherwise noted, the outcome name matches the variable name on the NSDUH analytic file. Note that not all outcomes are available for all years. For more information about which outcomes are available in which years, see Table C.15 of the "2018-2019 NSDUH: Guide to State Tables and Summary of Small Area Estimation Methodology" at https://www.samhsa.gov/data/. The values of "OUTCOME" are as follows:
+ABODALC: alcohol use disorder in the past year (available for 2000-2001 and beyond, but small area estimates were not produced for this outcome in 1999-2000); 
+ABODILAL: dependence or abuse of illicit drugs or alcohol in the past year (available for 2000-2001 through 2013-2014);
+ABODILL: illicit drug dependence or abuse in the past year (available for 2000-2001 through 2013-2014);
+ALCMON: alcohol use in the past month (available for all years);
+AMIYR: any mental illness in the past year (available for 2008-2009 and beyond, but data are not available in previous years);
+ANLYR: nonmedical use of pain relievers in the past year (available for 2002-2003 through 2013-2014);
+BNGALC: binge alcohol use in the past month (available for 1999-2000 through 2013-2014);
+BNGDRK: binge alcohol use in the past month (available starting in 2015-2016);
+CIGMON: cigarette use in the past month (available for all years);
+COCYR: cocaine use in the past year (available for all years);
+DEPNDALC: alcohol dependence in the past year (available for 2000-2001 through 2014-2015);
+DEPNDILL: illicit drug dependence in the past year (available for 2000-2001 through 2013-2014);
+GRSKBNG: perceptions of great risk from having five or more drinks of an alcoholic beverage once or twice a week (available starting in 2015-2016);
+GRSKCIG: perceptions of great risk from smoking one or more packs of cigarettes per day (available starting in 2015-2016);
+GRSKCOC: perceptions of great risk from using cocaine once a month (available starting in 2015-2016);
+GRSKHER: perceptions of great risk from trying heroin once or twice (available starting in 2015-2016);
+GRSKHTRY: perceptions of great risk from trying heroin once or twice (available for 2013-2014 only);
+GRSKMRJ: perceptions of great risk from smoking marijuana once a month (available starting in 2015-2016);
+HERYR: heroin use in the past year (available for 2013-2014 and beyond);
+IEMMON: illicit drug use other than marijuana in the past month (available for 19992000 through 2013-2014); 
+ILLEMMON: illicit drug use other than marijuana in the past month (available starting in 2015-2016);
+ILLMON: illicit drug use in the past month (available starting in 2015-2016);
+INCIDENCE: average annual rate of first use of marijuana (available for all years);
+MDE: had at least one major depressive episode in the past year (i.e., depression) (available for 2005-2006 and beyond); 
+METHAMYR: methamphetamine use in the past year (available starting in 20152016);
+MHSUIPLN: made any suicide plans in the past year (available starting in 20172018);
+MHSUITRY: attempted suicide in the past year (available starting in 2017-2018); 
+MRJMON: marijuana use in the past month (available for all years);
+MRJYR: marijuana use in the past year (available for 2002-2003 and beyond, but small area estimates were not produced for this outcome in prior years);
+PNRNMYR: pain reliever misuse in the past year (available starting in 2015-2016);
+RISKALC: perceptions of great risk from having five or more drinks of an alcoholic beverage once or twice a week (available for 1999-2000 through 2013-2014);
+RISKCIG: perceptions of great risk from smoking one or more packs of cigarettes per day (available for 1999-2000 through 2013-2014);
+RISKMJ: perceptions of great risk from smoking marijuana once a month (available for 1999-2000 through 2013-2014);
+SMIYR: serious mental illness in the past year (available for 2008-2009 and beyond, with the question first added to NSDUH in 2008);
+SPD_L: serious psychological distress in the past year based on the long-form questionnaire (available for 2002-2003 and 2003-2004); 
+SPD_S: serious psychological distress in the past year based on the short-form questionnaire (available for 2004-2005);
+SUITHKYR: had serious thoughts of suicide in the past year (available for 2008-2009 and beyond, with the question first added to NSDUH in 2008);
+SUMMON: illicit drug use in the past month (available for 1999-2000 through 20132014);
+TOBMON: tobacco product use in the past month (available for all years);
+TXGAPALC: needing but not receiving treatment at a specialty facility for alcohol use in the past year (available for 2002-2003 through 2013-2014);
+TXGPILAL: needing but not receiving treatment at a specialty facility for substance use in the past year (available for 2010-2011 through 2013-2014);
+TXNOSPEC: needing but not receiving treatment at a specialty facility for illicit drug use in the past year (available for 2000-2001 through 2013-2014);
+TXNOSPAL: needing but not receiving treatment for alcohol use at a specialty facility in the past year (available starting in 2015-2016); 
+TXNOSPIL: needing but not receiving treatment for illicit drug use at a specialty facility in the past year (available starting in 2015-2016); 
+TXNPILAL: needing but not receiving treatment for substance use at a specialty facility in the past year (available starting in 2015-2016);
+TXREC3: received mental health services in the past year (available for 2010-2011 and beyond);
+U_ALCMON: underage (among persons aged 12 to 20) alcohol use in the past month (available for 2002-2003 and beyond); 
+U_BNGALC: underage (among persons aged 12 to 20) binge alcohol use in the past month (available for 2002-2003 through 2013-2014); 
+U_BNGDRK: underage (among persons aged 12 to 20) binge alcohol use in the past month (available starting in 2015-2016); 
+UDPYILAL: substance use disorder in the past year (available starting in 20152016);
+UDPYILL: illicit drug use disorder in the past year (available starting in 2015-2016); and
+UDPYPNR: pain reliever use disorder in the past year (available starting in 20152016).
+2.2OUTNAME
+"OUTNAME" is the label for each OUTCOME variable. These labels are included in the OUTCOME descriptions in Section 2.1. 
+2.3STNAME
+"STNAME" is the name of the census region or state. Its values are as follows:
+National: United States; 
+Northeast: Connecticut, Maine, Massachusetts, New Hampshire, New Jersey, New York, Pennsylvania, Rhode Island, and Vermont;
+Midwest: Illinois, Indiana, Iowa, Kansas, Michigan, Minnesota, Missouri, Nebraska, North Dakota, Ohio, South Dakota, and Wisconsin;
+South: Alabama, Arkansas, Delaware, District of Columbia, Florida, Georgia, Kentucky, Louisiana, Maryland, Mississippi, North Carolina, Oklahoma, South Carolina, Tennessee, Texas, Virginia, and West Virginia;
+West: Alaska, Arizona, California, Colorado, Hawaii, Idaho, Montana, Nevada, New Mexico, Oregon, Utah, Washington, and Wyoming; and
+the 51 names of the states (Alabama, Alaska, …Wisconsin, and Wyoming) and the District of Columbia.
+2.4STATE
+A federal information processing standards (FIPS) code has been assigned for each "STATE," including the District of Columbia. The FIPS code takes on values from -5 to -1 to denote the national estimates and estimates for the four census regions: 
+
+-5: National,
+-4: Northeast,
+-3: Midwest,
+-2: South,
+-1: West,
+1: Alabama,
+2: Alaska,
+4: Arizona,
+5: Arkansas,
+6: California,
+8: Colorado,
+9: Connecticut,
+10: Delaware,
+11: District of Columbia,
+12: Florida,
+13: Georgia,
+15: Hawaii,
+16: Idaho,
+17: Illinois,
+18: Indiana,
+19: Iowa,
+20: Kansas,
+21: Kentucky,
+22: Louisiana,
+23: Maine,
+24: Maryland,
+25: Massachusetts,
+26: Michigan,
+27: Minnesota,
+28: Mississippi,
+29: Missouri,
+30: Montana,
+31: Nebraska,
+32: Nevada,
+33: New Hampshire,
+34: New Jersey,
+35: New Mexico,
+36: New York,
+37: North Carolina,
+38: North Dakota,
+39: Ohio,
+40: Oklahoma,
+41: Oregon,
+42: Pennsylvania,
+44: Rhode Island,
+45: South Carolina,
+46: South Dakota,
+47: Tennessee,
+48: Texas,
+49: Utah,
+50: Vermont,
+51: Virginia,
+53: Washington,
+54: West Virginia,
+55: Wisconsin, and
+56: Wyoming.
+
+Sorting (in increasing order) this 1999 to 2019 dataset by state will ensure that the national estimates come first, then the census region estimates, then the estimates for all of the states. Note that regional estimates (i.e., census regions) are not available for 1999-2000. 
+2.5AREA
+"AREA" is a numeric variable for a recode of STATE to differentiate between the national, regional, and state estimates. Its values are as follows:
+0: national (STATE = -5),
+1: the four census regions (STATE = 4, 3, 2, or -1), and
+2: the 50 states and the District of Columbia (STATE ≥ 1).
+2.6AGEGRP
+"AGEGRP" is a numeric age group variable. Its values are as follows:
+0: persons aged 12 or older,
+1: persons aged 12 to 17,
+2: persons aged 18 to 25,
+3: persons aged 26 or older,
+4: persons aged 18 or older, and
+5: persons aged 12 to 20 (available only for U_ALCMON and U_BNGALC). 
+Note that estimates for persons aged 12 to 20 (for alcohol use and binge alcohol use) are not available for 1999-2000 and 2000-2001. 
+2.7PYEAR
+"PYEAR" is a numeric variable for a pooled pair of survey years. Its values are as follows:
+
+1: 1999-2000,
+2: 2000-2001,
+3: 2002-2003,
+4: 2003-2004,
+5: 2004-2005,
+6: 2005-2006,
+7: 2006-2007,
+8: 2007-2008,
+9: 2008-2009, 
+10: 2009-2010,
+11: 2010-2011 published estimates,
+12: 2010-2011 updated estimates, 
+13: 2011-2012, 
+14: 2012-2013, 
+15: 2013-2014, 
+16: 2014-2015, 
+17: 2015-2016, 
+18: 2016-2017, 
+19: 2017-2018, and 
+20: 2018-2019.
+
+2.8PYEARNM
+"PYEARNM" is a variable describing the PYEAR variable (i.e., a pooled pair of survey years). Its values are as follows:
+
+1999-2000,
+2000-2001,
+2002-2003,
+2003-2004,
+2004-2005,
+2005-2006,
+2006-2007,
+2007-2008,
+2008-2009,
+2009-2010,
+2010-2011 published estimates,
+2010-2011 updated estimates, 
+2011-2012, 
+2012-2013, 
+2013-2014, 
+2014-2015, 
+2015-2016, 
+2016-2017, 
+2017-2018, and 
+2018-2019.
+
+Note that for 2010-2011, two sets of state-level small area estimates were produced. The 2010-2011 published estimates are available at https://www.samhsa.gov/data/ and were based on predictors and weights that used the 2000 census as their base. The 2010-2011 updated estimates were developed using new predictors and new weights obtained from the 2010 census. Note that the updated 2010-2011 estimates were produced only to be compared with the published estimates and not to replace them.
+The 1999-2000 and 2000-2001 small area estimates used the 1990 census as a base source for obtaining population controls for survey weights and also used the 1990 census as the source of predictors. The 2002-2003 to 2010-2011 published small area estimates used the 2000 census as their source, and the 2010-2011 updated estimates through the 2018-2019 small area estimates were based on the 2010 census.
+2.9POP
+The next four variables (i.e., POP, NSEL, NCOMP, and WTINTRR) represent population and sample characteristics and are not dependent on the outcome measure. They are provided for each PYEAR by AGEGRP by STATE combination and are the same for each outcome. NSEL, NCOMP, and WTINTRR are based on the respondent's age at screening. Note that this age can differ from the respondent's age at the time of the interview. Thus, the values here for the individual age groups may differ slightly from the numbers reported elsewhere based on the respondent's age at the time of the interview (note that the numbers for those aged 12 or older will be same). 
+"POP" is a variable for the estimated number of persons in the population averaged across the 2 survey years. 
+2.10NSEL
+"NSEL" is a variable for the number of persons selected for the survey summed over the 2 survey years. Additional information is provided in the POP variable description. 
+2.11NCOMP
+"NCOMP" is a variable for the number of respondents who completed the survey summed over the 2 survey years (i.e., the pooled sample size over 2 survey years). Additional information is provided in the POP variable description. 
+2.12WTINTRR
+"WTINTRR" is a variable for the weighted interview response rate averaged across the 2 survey years (expressed as a proportion). Additional information is provided in the POP variable description. 
+2.13BSAE
+The next three variables (i.e., BSAE, LOW_SAE, and UP_SAE) represent the small area estimates (i.e., prevalence rates of substance use and mental health outcomes and corresponding confidence intervals [CIs]) that are published each year. These estimates are expressed as proportions and can be multiplied by 100 to be expressed as percentages. For some years, the national CIs were not published, but they have been included in this dataset (exceptions are noted below). For more information about point estimates, SAE methodology, exact benchmarking, and CIs, see the "2010-2011 National Survey on Drug Use and Health: Guide to State Tables and Summary of Small Area Estimation Methodology" at https://www.samhsa.gov/data/. 
+"BSAE" is a variable for the benchmarked (i.e., adjusted) small area estimate where the national small area estimate is benchmarked to be equal to the national design-based estimate. For more details on exact benchmarking, refer to Section B.6 of the "2011-2012 National Surveys on Drug Use and Health: Guide to State Tables and Summary of Small Area Estimation Methodology" at https://www.samhsa.gov/data/. 
+The state and census region benchmarked small area estimates are based on the hierarchical Bayes estimation approach. The national estimates (prevalence rates and corresponding CIs), however, are design-based estimates. Note that exact benchmarking was introduced in 2002; hence, for estimates prior to then (i.e., 1999-2000 and 2000-2001), the national design-based estimate and the national small area estimate will not be the same. The estimate is still called BSAE, but for 1999-2000 and 2000-2001, the national estimate included in this dataset is a Bayes model-based estimate, not the national design-based estimate. For all other years, the national design-based estimate is provided for STNAME = "National."
+2.14LOW_SAE
+"LOW_SAE" is a variable for the 95 percent lower Bayesian CI associated with BSAE. For the national estimates, design-based CIs are provided. Note that the national CIs provided for 1999-2000 and 2000-2001 are the model-based Bayesian CIs (because these estimates are not benchmarked, the national estimate is a Bayes model-based estimate). Additional information is provided in the BSAE variable description. 
+2.15UP_SAE
+"UP_SAE" is a variable for the 95 percent upper Bayesian CI associated with BSAE. For the national estimates, design-based CIs are provided. Note that the national CIs provided for 1999-2000 and 2000-2001 are the model-based Bayesian CIs (because these estimates are not benchmarked, the national estimate is a Bayes model-based estimate). Additional information is provided in the BSAE variable description.
+2.16STE_SAE
+"STE_SAE" is a variable for the standard error (SE) associated with BSAE. For the national estimates, design-based SEs are included. Note that STE_SAE values are not provided for 1999-2000 and 2000-2001.
+Note also that the CIs mentioned above (LOW_SAE and UP_SAE) are not calculated as a symmetric interval directly from this STE_SAE. For details on this, see Section A.4 of the "2011-2012 National Surveys on Drug Use and Health: Guide to State Tables and Summary of Small Area Estimation Methodology" at https://www.samhsa.gov/data/. 
+2.17GROUP
+"GROUP" is a variable for a map group with a range from 1 to 5. The BSAEs are sorted and grouped into five quintiles to produce maps. Group 1 represents estimates that are the lowest estimates, and group 5 represents the largest estimates. Because national and regional estimates are not included in these groupings, the variable GROUP has missing values for these records. Only the 50 states and the District of Columbia are grouped, and maps are produced based on these five groupings. 
+State estimates (which are based on a survey-weighted hierarchical Bayes [SWHB] estimation approach) fall into one of five quintiles according to their ranking. Because 51 states were ranked for each measure, the middle quintile was assigned to 11 states, and the remaining quintiles were assigned 10 states each. In some cases, a "quintile" could have more or fewer states than desired because two (or more) states had the same estimate (to two decimal places). When such ties occurred at the "boundary" between two quintiles, all of the states with the same estimate were conservatively assigned to the lower quintile. The map groups were created separately for each pair year (PYEAR), measure (OUTCOME), and age group (AGEGRP). For more details, refer to the "2011-2012 National Survey on Drug Use and Health National Maps of Prevalence Estimates, by State" at https://www.samhsa.gov/data/. Note that for most outcomes, maps were not published for persons aged 18 or older, but map groups have been included in this file.
+2.18EST_TOTAL
+The next three variables (i.e., EST_TOTAL, LOW_TOTAL, and UP_TOTAL) represent the small area estimate counts rounded to the nearest thousand and corresponding CIs that are published each year. For some years, the national CIs were not published, but they have been included in this dataset unless otherwise noted. 
+"EST_TOTAL" is a variable for the average number (in thousands) of persons having the outcome of interest across the 2 survey years, as follows:
+EST_TOTAL = (BSAE × POP / 1,000), rounded.
+The totals for persons aged 18 or older are calculated as sums of the 18 to 25 totals and the 26 or older totals. Similarly, the 12 or older totals are produced as the sum of the 12 to 17, the 18 to 25, and the 26 or older totals. The totals for the national and census regions are the sum of the totals for all states that make up the given area.
+2.19LOW_TOTAL
+"LOW_TOTAL" is a variable for the 95 percent lower Bayesian CI associated with EST_TOTAL, as follows:
+LOW_TOTAL = (LOW_SAE × POP / 1,000), rounded.
+Additional information is provided in the EST_TOTAL variable description.
+2.20UP_TOTAL
+"UP_TOTAL" is a variable for the 95 percent upper Bayesian CI associated with EST_TOTAL, as follows:
+UP_TOTAL = (UP_SAE × POP / 1,000), rounded.
+Additional information is provided in the EST_TOTAL variable description.
+2.21STE_TOTAL
+"STE_TOTAL" is a variable for the SE associated with EST_TOTAL, as follows:
+STE_TOTAL = (STE_SAE × POP / 1,000), rounded.
+Note that STE_TOTAL values are not provided for 1999-2000 and 2000-2001; however, they can be calculated using the above formula. 
+2.22GEN_CORR
+"GEN_CORR" is a generalized correlation that can be used for statistical testing of percentages between nonoverlapping years. No generalized correlations are available for 16 outcomes that were new in 2015-2016 in addition to the following seven outcomes: OUTCOME = GRSKHTRY, HERYR, METHAMYR, MHSUIPLN, MHSUITRY, TXGPILAL, or TXREC3. Specifically, for a given state, outcome, and age group, it is the correlation between the log odds of the estimate at time period 1 and the log odds of the estimate at time period 2 where the two time periods do not overlap. See below for additional information. 
+For each nonmental health-related outcome measure (OUTCOME) by state (STNAME) by age group (AGEGRP) combination, the generalized correlation is an average of seven correlations:
+
+2002-2003 versus 2007-2008, 
+2002-2003 versus 2008-2009, 
+two sets of 2002-2003 versus 2009-2010, 
+2002-2003 versus 2010-2011, 
+2002-2003 versus 2012-2013, and
+2002-2003 versus 2013-2014. 
+
+For the mental health outcome measures, the correlations used to calculate the generalized correlations were different. For the OUTCOME = MDE by state (STNAME) by age group (AGEGRP) combination, the generalized correlation is an average of eight correlations:
+
+2005-2006 versus 2007-2008,
+2005-2006 versus 2008-2009,
+2005-2006 versus 2009-2010,
+2005-2006 versus 2010-2011,
+2005-2006 versus 2011-2012,
+2005-2006 versus 2012-2013,
+2006-2007 versus 2009-2010, and
+2008-2009 versus 2010-2011.
+
+For the other mental health outcomes (OUTCOME = AMIYR, SMIYR, SUITHKYR) by state (STNAME) by age group (AGEGRP) combinations, the generalized correlation is an average of six correlations:
+
+2008-2009 versus 2010-2011,
+2008-2009 versus 2011-2012,
+2008-2009 versus 2012-2013,
+2009-2010 versus 2011-2012,
+2009-2010 versus 2012-2013, and
+2010-2011 versus 2012-2013.
+
+Each of these sets of correlations was produced by simultaneously fitting 4 years of NSDUH data separately for each outcome measure. For example, to produce correlations between the 2002-2003 and 2007-2008 state estimates for past month marijuana use, four age groups (12 to 17, 18 to 25, 26 to 34, and 35 or older) by two time periods (2002-2003 and 20072008), or eight subpopulation-specific models, were fitted, each with its own set of fixed and random effects. In this case, the general covariance matrices for the state and within-state random effects were 8 × 8 matrices corresponding to the eight element (age group × time period) vectors of random effects. Note that the survey-weighted, Bernoulli-type log likelihood employed in the SWHB methodology was appropriate for this simultaneous model because the eight age group × year subpopulations were nonoverlapping. The correlation  was approximated by the correlation calculated using the posterior distributions of  and  from the simultaneous model. 
+Note that these generalized correlations are the same for each year (2002-2003 through 2013-2014) and are not defined for 1999-2000 and 2000-2001. The mental health generalized correlations are defined for all years where the mental health outcome is defined. These generalized correlations are meant to be used to calculate between-year differences for a given state and only for nonoverlapping years, such as 2004-2005 versus 2008-2009. The correlations between overlapping years are in general higher than these nonoverlapping generalized correlations. However, if an analyst wants to test any differences in state estimates between any 2 nonoverlapping years, such as 2011-2012 versus 2009-2010, or 2008-2009 versus 2004-2005, or any earlier years going back to 2002-2003, these correlations can be used. The national estimates are direct estimates, so the nonoverlapping year correlations for these are zero.
+The methodology for conducting these tests is described in Section A.2 of Appendix A. Tests of differences in state estimates for overlapping years (e.g., 2010-2011 vs. 2011-2012, or 2008-2009 vs. 2009-2010) can be found on the SAMHSA website. Note that generalized correlations are not available for OUTCOME = SPD. Because SPD is defined for only 3 years, generalized correlations were not produced. 
+
+
+List of Contributors
+This methodological report was prepared by the Substance Abuse and Mental Health Services Administration, Center for Behavioral Health Statistics and Quality, and by RTI International (a registered trademark and a trade name of Research Triangle Institute). Work by RTI was performed under Contract Nos. HHSS283201000003C and HHSS283201300001C. Rong Cai served as government project officer and as the contracting officer representative, and David Hunter served as the RTI project director.
+Contributors to this report at RTI included Brenda Porter, Kathryn E. Spagnola, Neeraja S. Sathe, and Akhil Vaish. Also at RTI, Richard S. Straw and Margaret Johnson edited this report.
+
+
+
+Appendix A: Comparison of Small Area Estimates
+A.1Comparison of Two Small Area Estimates (within a Given Year)
+This section describes a method for determining whether differences between two state estimates within a given time period are statistically significant. This procedure can be used for any two state estimates representing the same age group (e.g., young adults aged 18 to 25, AGEGRP = 2) and time period (e.g., 2009-2010, PYEAR = 10). Note that, starting with the production of the 2014-2015 state-level small area estimates, the exact p values for all comparisons (national vs. state, national vs. census region, census region vs. state, and state vs. state) were calculated and published in Excel and comma-separated values tables for all outcome measures and age groups. These tables are titled "Comparison of Population Percentages from the United States, Census Regions, States, and the District of Columbia" and can be found at https://www.samhsa.gov/data/. Thus, the methodology discussed in this appendix should be used only for 2013-2014 and prior years. 
+Let  and  denote the 2009-2010 age group-a specific prevalence rates for two different states,  and , respectively. The difference between  and  is defined in terms of the log-odds ratio () as opposed to the simple difference because the posterior distribution of  is closer to Gaussian than the posterior distribution of the simple difference . The  is defined as , where ln denotes the natural logarithm. The p value is computed to the test the null hypothesis of no difference (i.e.,  or equivalently, ). An estimate of  is given by ,  where  and  are the 2009-2010 state estimates (BSAE). To compute an estimate of the posterior variance of  that is,  let  and , then  where  denotes the covariance between  and  This covariance is defined in terms of the associated correlation as follows: 
+.
+The quantities  and  can be obtained by using the 95 percent Bayesian confidence intervals (CIs), namely (UP_SAE, LOW_SAE). For this purpose, let  and  denote the 95 percent Bayesian CIs for the two states,  and , respectively. Then 
+
+where 
+For all practical purposes, the correlation between  and  is assumed to be negligible; hence,  can be approximated by  The correlation is assumed to be negligible because each state was a stratum in the first level of stratification; therefore, each state sample is selected independently. However, the correlation between the two state estimates is theoretically nonzero because state estimates share common fixed-effect parameters in the small area estimation (SAE) models. Hence, the test statistic  (defined below) might result in a different conclusion in a few cases when the correlation between the state estimates is incorporated in calculating  To calculate the p value for testing the null hypothesis of no difference (), it is assumed that the posterior distribution of  is normal with estimated  and  The Bayesian p value or significance level for the null hypothesis of no difference () is , where  is a standard normal random variate, , and  denotes the absolute value of  This Bayesian significance level (or p value) for the null value of , say , is defined following Rubin as the posterior probability for the collection of the  values that are less likely or have smaller posterior density  than the null (no change) value . That is, . With the posterior distribution of  approximately normal,  is given by the above expression.
+Example. The 2009-2010 prevalence rates for past month alcohol use among 12- to 17year-olds in Minnesota and North Dakota are shown in the following exhibit. Looking at the two 95 percent Bayesian CIs, it would appear that the Minnesota and North Dakota prevalence rates for past month alcohol use are not statistically different at the 5 percent level of significance because the two Bayesian CIs overlap.
+
+STNAME
+Point Estimate (%) = BSAE
+95% Bayesian Confidence Interval (LOW_SAE, UP_SAE)
+Minnesota
+0.1316
+(0.1110, 0.1555)
+North Dakota
+0.1658
+(0.1425, 0.1920)
+BSAE = benchmarked (i.e., adjusted) small area estimate; CI = confidence interval; LOW_SAE = 95 percent lower Bayesian CI associated with the BSAE; STNAME = name of the census region or state; UP_SAE = 95 percent upper Bayesian CI associated with the BSAE.
+However, in the following discussion, the test based on the  statistic described earlier concludes that they are significantly different at the 5 percent level of significance.
+Let , , , , , , then,
+
+
+
+
+Because the computed absolute value of  is greater than or equal to 1.96 (the critical value of the  statistic), then at the 5 percent level of significance, the hypothesis of no difference (Minnesota prevalence rate = North Dakota prevalence rate) is rejected. Thus, the two state prevalence rates are statistically different. The Bayes p value for the null hypothesis of no difference is  Hence, this difference would be considered significant at the 5 percent level of significance. 
+A.2Comparison of Nonoverlapping Year Small Area Estimates
+This section describes a method for determining whether differences between two nonoverlapping time periods (i.e., 2002-2003 and 2011-2012) for a given state are statistically significant. To determine whether the differences between two nonoverlapping state prevalence rates at time period 1 and time period 2 are statistically significant, let  and  denote the prevalence rates at time period 1 and time period 2, respectively, for state-s and age group-a. The difference between  and  is defined in terms of the logodds ratio  as opposed to the simple difference because the posterior distribution of  is closer to Gaussian than the posterior distribution of the simple difference  The  is defined as 
+,
+where ln denotes the natural logarithm. The p value is computed to test the null hypothesis of no change (i.e.,  or equivalently, ). An estimate of  is given by 
+
+where  and  are the state estimates (BSAEs) for the 2 years being compared. 
+Let  and , noting that subscript sa has been dropped from  and  in order to simplify the notation. An estimate of the posterior variance of  is given by the following formula:
+ 
+where  denotes the covariance between  and  This covariance is defined in terms of the associated correlation as follows: 
+,
+where    and the lower and upper are the 95 percent Bayesian CIs, LOW_SAE and UP_SAE.
+For the correlation between  and  for an outcome measure by state by age group, the generalized correlation (GEN_CORR) will be used.
+To calculate the p value for testing the null hypothesis of no difference , it is assumed that the posterior distribution of  is normal with estimated  and  The Bayesian p value or significance level for the null hypothesis of no difference  is , where  is a standard normal random variate, , and  denotes the absolute value of  This Bayesian significance level (or p value) for the null value of , say , is defined following Rubin as the posterior probability for the collection of the  values that are less likely or have smaller posterior density  than the null (no change) value . That is, . With the posterior distribution of  approximately normal,  is given by the above expression.
+For overlapping time periods, p values are given in published state reports and web documents, and the method described here should not be used. Also, because of changes to the survey in 2002, these generalized correlations should not be used to test differences between 1999-2000 small area estimates or 2000-2001 small area estimates and the other small area estimates beyond 2002. 
+Example. The 2007-2008 and 2016-2017 prevalence rates for past month alcohol use among 12- to 17-year-olds in Alaska are shown in the following exhibit. The generalized correlation for this state by age group by outcome is 0.11998. 
+PYEARNM
+Estimate = BSAE
+95% Bayesian Confidence Interval (LOW_SAE, UP_SAE)
+2007-2008
+0.1429
+(0.1226, 0.1659)
+2016-2017
+0.1010
+(0.0830, 0.1224)
+BSAE = benchmarked (i.e., adjusted) small area estimate; CI = confidence interval; LOW_SAE = 95 percent lower Bayesian CI associated with the BSAE; PYEARNM = the PYEAR variable (i.e., a pooled pair of survey years); UP_SAE = 95 percent upper Bayesian CI associated with the BSAE.
+Let , , , , , . Then, the following calculations can be performed:
+
+
+
+
+
+
+Because the computed absolute value of  is greater than or equal to 1.96 (the critical value of the  statistic), then at the 5 percent level of significance, the hypothesis of no difference (2007-2008 prevalence rate = 2016-2017 prevalence rate) is rejected. The Bayes p value or significance level for the null hypothesis of no difference is . 
+
+
+This page intentionally left blank
+
+
+
+
+
+SAMHSA’s mission is to reduce the impact of substance abuse and mental illness on America’s communities.
+1-877-SAMHSA-7 (1-877-726-4727) | 1-800-487-4889 (TDD) | www.samhsa.gov

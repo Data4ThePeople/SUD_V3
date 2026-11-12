@@ -45,9 +45,9 @@ ax.tick_params(length=0, labelsize=11)
 fig.text(0.04, 0.93, "Alcohol-induced deaths per 100,000 people, U.S., 1999-2024", fontsize=19, fontweight="bold", color="#e6e7e9")
 fig.text(0.04, 0.875, "The age-adjusted rate removes the effect of an older population. It rose too.",
          fontsize=13, color=TXT)
-foot(fig, "Source: CDC WONDER, Underlying Cause of Death. Age-adjusted to the 2000 U.S. standard population; 1999-2020 as published by CDC,\n"
+foot(fig, "Source: CDC WONDER, alcohol-induced as the underlying cause of death. Age-adjusted to the 2000 U.S. standard population; 1999-2020 as published by CDC,\n"
           "2021-2024 computed by Data 4 The People from CDC's age-group counts. Alcohol-induced causes include alcoholic liver disease\n"
-          "and alcohol poisoning. They do not include drunk-driving crashes or other injuries.")
+          "and alcohol poisoning. They do not include drunk-driving crashes or other injuries where alcohol played a part.")
 fig.savefig(os.path.join(OUT, "01-alcohol-death-rate.png"), facecolor=BG)
 plt.close(fig)
 
@@ -78,7 +78,7 @@ for sp in ("top", "right", "left", "bottom"): ax.spines[sp].set_visible(False)
 ax.tick_params(length=0, labelsize=11)
 fig.text(0.04, 0.92, "Drinking held steady, disorder fell, deaths rose", fontsize=19, fontweight="bold", color="#e6e7e9")
 fig.text(0.04, 0.865, "Percent change from 2002-2003 to 2018-2019, U.S.", fontsize=13, color=TXT)
-foot(fig, "Sources: SAMHSA, NSDUH state small-area estimates, national rows (2-year averages; alcohol use disorder is DSM-IV).\n"
+foot(fig, "Sources: SAMHSA, NSDUH state small-area estimates, national rows (2-year pooled estimates; alcohol use disorder is DSM-IV).\n"
           "CDC WONDER, alcohol-induced deaths, age-adjusted rate, averaged over the same two-year spans. The survey changed\n"
           "methods in 2020-2021, so later years cannot be compared with these.")
 fig.savefig(os.path.join(OUT, "02-alcohol-change.png"), facecolor=BG)

@@ -479,18 +479,20 @@ and `nsduh_national.csv`) and `scripts/alcohol/make_charts.py` (writes
 codes as the map (see the CDC WONDER section).
 - 1999-2020: crude and age-adjusted rates as CDC publishes them, from the D76
   API pull `data/raw/wonder_api/aar.xml` (Year x Drug/Alcohol Induced).
-- 2021-2024: D158 (2018-2024, single race) has no API access, so the
+- 2021-2024: the 2018-2024 single-race databases have no API access, so the
   age-adjusted rate is computed by us from Eric's export
-  `data/raw/wonder/mcd_2018_2024_year_age_alcohol.csv` (UCD alcohol-induced,
-  by year and ten-year age group). Method: direct age adjustment with the 2000
+  `data/raw/wonder/mcd_2018_2024_year_age_alcohol.csv`. The file comes from the
+  Multiple Cause of Death 2018-2024 database, filtered on underlying cause =
+  alcohol-induced, by year and ten-year age group, so its counts are
+  underlying-cause counts (2021 and 2022 equal NCHS's published counts). Method: direct age adjustment with the 2000
   U.S. standard population in CDC's 11 age groups (under 1, 1-4, 5-14, 15-24,
   ..., 85+). Deaths with age not stated are left out, as CDC does.
   Crude rate = deaths / population x 100,000.
 - Suppressed cells (1-9 deaths, ages under 15 only) are counted as 0. If each
   were 9, the age-adjusted rate would rise by at most 0.003 per 100,000.
 - Check: the same method applied to D76 age groups reproduces CDC's published
-  age-adjusted rate within 0.06 per 100,000 in every year 1999-2020. D158
-  2018-2020 computed rates match D76 within 0.05.
+  age-adjusted rate within 0.06 per 100,000 in every year 1999-2020. The
+  2018-2020 rates computed from the export match D76 within 0.05.
 - Alcohol-induced deaths do not include drunk-driving crashes, falls or other
   injuries where alcohol played a part.
 
