@@ -48,7 +48,7 @@ fig.text(0.04, 0.875, "The age-adjusted rate removes the effect of an older popu
 foot(fig, "Source: CDC WONDER, alcohol-induced as the underlying cause of death. Age-adjusted to the 2000 U.S. standard population; 1999-2020 as published by CDC,\n"
           "2021-2024 computed by Data 4 The People from CDC's age-group counts. Alcohol-induced causes include alcoholic liver disease\n"
           "and alcohol poisoning. They do not include drunk-driving crashes or other injuries where alcohol played a part.")
-fig.savefig(os.path.join(OUT, "01-alcohol-death-rate.png"), facecolor=BG)
+fig.savefig(os.path.join(OUT, "02-alcohol-death-rate.png"), facecolor=BG)
 plt.close(fig)
 
 # ---------- Chart 2: percent change, 2002-2003 to 2018-2019 ----------
@@ -61,13 +61,12 @@ assert not n.duplicated(["year", "bev"]).any()
 nv = n[n.bev == "all"].set_index("year").pc14  # NIAAA report #124 data file, ages 14+, fixed ABV
 rows = [
     ("Share of people 12+ who drank\nalcohol in the past month", pct(sv["ALCMON", 2003], sv["ALCMON", 2019]), SURVEY),
-    ("Pure alcohol sold per\nperson 14+", pct(nv.loc[[2002, 2003]].mean(), nv.loc[[2018, 2019]].mean()), SURVEY),
     ("Share of people 12+ with an\nalcohol use disorder", pct(sv["ABODALC", 2003], sv["ABODALC", 2019]), SURVEY),
     ("Alcohol-induced death rate,\nage-adjusted", pct(avg("age_adjusted", 2002, 2003), avg("age_adjusted", 2018, 2019)), DEATH),
 ]
-fig, ax = plt.subplots(figsize=(12, 7.6), dpi=150)
+fig, ax = plt.subplots(figsize=(12, 6.6), dpi=150)
 fig.patch.set_facecolor(BG); ax.set_facecolor(BG)
-fig.subplots_adjust(left=0.30, right=0.93, top=0.79, bottom=0.21)
+fig.subplots_adjust(left=0.30, right=0.93, top=0.76, bottom=0.20)
 for i, (lab, v, c) in enumerate(rows):
     yy = len(rows) - 1 - i
     ax.barh(yy, v, height=0.52, color=c)
@@ -80,13 +79,12 @@ ax.set_xticks(range(-40, 61, 20)); ax.set_xticklabels([f"{t:+d}%" if t else "0" 
 ax.grid(axis="x", color=GRID, lw=0.8); ax.set_axisbelow(True)
 for sp in ("top", "right", "left", "bottom"): ax.spines[sp].set_visible(False)
 ax.tick_params(length=0, labelsize=11)
-fig.text(0.04, 0.92, "The share who drink held steady. Alcohol sold and deaths rose.", fontsize=19, fontweight="bold", color="#e6e7e9")
+fig.text(0.04, 0.92, "Drinking held steady, disorder fell, deaths rose", fontsize=19, fontweight="bold", color="#e6e7e9")
 fig.text(0.04, 0.865, "Percent change from 2002-2003 to 2018-2019, U.S.", fontsize=13, color=TXT)
 foot(fig, "Sources: SAMHSA, NSDUH state small-area estimates, national rows (2-year pooled estimates; alcohol use disorder is DSM-IV).\n"
           "CDC WONDER, alcohol-induced deaths, age-adjusted rate, averaged over the same two-year spans. The survey changed\n"
-          "methods in 2020-2021, so later years cannot be compared with these. NIAAA Surveillance Report #124: pure alcohol\n"
-          "in beer, wine and spirits sold or shipped, per person 14+, averaged over the same years. Sales, not measured drinking.")
-fig.savefig(os.path.join(OUT, "02-alcohol-change.png"), facecolor=BG)
+          "methods in 2020-2021, so later years cannot be compared with these.")
+fig.savefig(os.path.join(OUT, "01-alcohol-change.png"), facecolor=BG)
 plt.close(fig)
 for lab, v, _ in rows: print(lab.replace("\n", " "), round(v, 1))
 
