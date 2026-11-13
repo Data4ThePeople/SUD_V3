@@ -25,7 +25,7 @@ Previous post: substance-use-treatment-viz, complete 2026-11-05.
 | 2g | Mailchimp teaser | 2026-11-13 | Claude draft approved; chart 1; mix teased, not named |
 | 3  | Social posts | 2026-11-13 | X, Bluesky, LinkedIn; GIF of chart 2 |
 | 4a | Outreach list | 2026-11-13 | 13 confirmed (all with public email); #5, #6 dropped |
-| 4b | Outreach drafts in Gmail | 2026-11-13 | 13 drafts; Eric added links and sent |
+| 4b | Outreach drafts in Gmail | 2026-11-13 | 13 drafts; Eric added the links |
 
 ## Steps: substance-use-treatment-viz (complete)
 
