@@ -284,3 +284,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric accepted 2a edits 1-8 and questions 1-3: chart 1 death bar now crude rate (+65%); new chart 4 (gallons -8%, alcohol content +18%, pure alcohol +9%); About the data section added. Census median age and AUD 26+ share added to DATASETS. Independent tie-out of the post's numbers and charts 1 and 4 started.
 - 2026-11-13 Eric: title "Alcohol: Less Alcoholism, More People Dying" and subtitle set; "headlines" links to Gallup, August 13, 2025 (U.S. Drinking Rate at New Low as Alcohol Concerns Surge).
 - 2026-11-13 Eric: Step 2a done. Step 2b open.
+- 2026-11-13 Independent tie-out of the post: every number matches (0 differences). Fixed Claude's own text: chart 2 alt text (crude higher from 2001 on) and About the data (survey mode change 2020, disorder measure 2021). Wording items for Eric pending.

@@ -1,0 +1,27 @@
+years 1970 2024
+2002 {'bev_pc': 31.4278, 'tv_pc': 2.1534, 'fx_pc': 2.1998, 'fx_pc_pub': 2.1998, 'abv': 0.0685, 'fx_pc21': 2.5141, 'beer': 1.2851, 'wine': 0.2893, 'spir': 0.579, 'spir_fx': 0.6449, 'spir_abv': 0.369}
+2003 {'bev_pc': 31.2329, 'tv_pc': 2.1447, 'fx_pc': 2.22, 'fx_pc_pub': 2.22, 'abv': 0.0687, 'fx_pc21': 2.5367, 'beer': 1.2415, 'wine': 0.3039, 'spir': 0.5993, 'spir_fx': 0.6675, 'spir_abv': 0.369}
+2018 {'bev_pc': 28.9354, 'tv_pc': 2.3322, 'fx_pc': 2.3594, 'fx_pc_pub': 2.3594, 'abv': 0.0806, 'fx_pc21': 2.6487, 'beer': 1.1257, 'wine': 0.3939, 'spir': 0.8126, 'spir_fx': 0.8697, 'spir_abv': 0.384}
+2019 {'bev_pc': 28.9026, 'tv_pc': 2.338, 'fx_pc': 2.3765, 'fx_pc_pub': 2.3765, 'abv': 0.0809, 'fx_pc21': 2.6658, 'beer': 1.1225, 'wine': 0.3881, 'spir': 0.8274, 'spir_fx': 0.8926, 'spir_abv': 0.381}
+2022 {'bev_pc': 28.5934, 'tv_pc': 2.3409, 'fx_pc': 2.5047, 'fx_pc_pub': 2.5047, 'abv': 0.0819, 'fx_pc21': 2.8151, 'beer': 1.0685, 'wine': 0.3843, 'spir': 0.8881, 'spir_fx': 1.0579, 'spir_abv': 0.345}
+2023 {'bev_pc': 27.7086, 'tv_pc': 2.3523, 'fx_pc': 2.468, 'fx_pc_pub': 2.468, 'abv': 0.0849, 'fx_pc21': 2.7731, 'beer': 1.0531, 'wine': 0.3694, 'spir': 0.9298, 'spir_fx': 1.0735, 'spir_abv': 0.356}
+2024 {'bev_pc': 26.8211, 'tv_pc': 2.2349, 'fx_pc': 2.4166, 'fx_pc_pub': 2.4166, 'abv': 0.0833, 'fx_pc21': 2.7133, 'beer': 1.0381, 'wine': 0.3508, 'spir': 0.846, 'spir_fx': 1.0731, 'spir_abv': 0.324}
+bev_pc 31.3304 28.919 -7.70%
+abv 0.0686 0.0807 +17.72%
+tv_pc 2.149 2.3351 +8.66%
+fx_pc 2.2099 2.3679 +7.15%
+fx_pc_pub 2.2099 2.3679 +7.15%
+fx_pc21 2.5254 2.6572 +5.22%
+pooled bev -7.7 pooled tv 8.66 pooled fx 7.15
+abv ratio-of-avgs +17.72%
+2002 bev 31.43 2024 bev 26.82 abv 2002 6.85 2024 8.33
+2002-2024 tv 2.153 2.235 +3.8%
+2016 spirits abv 0.383 spir tv 0.777 fx 0.834 beer 1.134 wine 0.413
+2017 spirits abv 0.383 spir tv 0.79 fx 0.847 beer 1.136 wine 0.397
+2018 spirits abv 0.384 spir tv 0.813 fx 0.87 beer 1.126 wine 0.394
+2019 spirits abv 0.381 spir tv 0.827 fx 0.893 beer 1.122 wine 0.388
+2020 spirits abv 0.377 spir tv 0.873 fx 0.952 beer 1.118 wine 0.397
+2021 spirits abv 0.372 spir tv 0.931 fx 1.028 beer 1.137 wine 0.403
+2022 spirits abv 0.345 spir tv 0.888 fx 1.058 beer 1.069 wine 0.384
+2023 spirits abv 0.356 spir tv 0.93 fx 1.073 beer 1.053 wine 0.369
+2024 spirits abv 0.324 spir tv 0.846 fx 1.073 beer 1.038 wine 0.351

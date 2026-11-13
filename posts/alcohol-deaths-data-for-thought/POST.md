@@ -35,7 +35,7 @@ I was shocked when I saw this data, because none of the headlines ever mentioned
 
 I immediately assumed it must be age. Twenty years ago, America was far younger, with a median age of just 36.1. Now America’s median age is 39.1. The same is true of Americans with an alcohol use disorder: the share who are 26 or older rose from 61% in 2002-2003 to 75% in 2018-2019, as rates among teens and young adults fell fastest. So, it’s the cumulative impact of alcohol consumption that is leading to more deaths? Wrong. As the chart below shows, when you age adjust the data, most of the rise is still there: deaths per capita rose 46% after adjusting for age, compared with 65% before.
 
-![Line chart of alcohol-induced deaths per 100,000 people, 1999-2024. The age-adjusted rate rose from 7.1 in 1999 to 10.4 in 2019, peaked at 14.4 in 2021, and was 12.1 in 2024. The crude rate runs slightly higher.](images/02-alcohol-death-rate.png)
+![Line chart of alcohol-induced deaths per 100,000 people, 1999-2024. The age-adjusted rate rose from 7.1 in 1999 to 10.4 in 2019, peaked at 14.4 in 2021, and was 12.1 in 2024. The crude rate, not adjusted for age, is higher from 2001 on.](images/02-alcohol-death-rate.png)
 *Source: CDC WONDER, alcohol-induced deaths. Age-adjusted to the 2000 U.S. standard population.*
 
 In fact, when I studied the data, I found one pattern that stands out.
@@ -52,11 +52,11 @@ Over the same years as the first chart, here is how fewer gallons added up to mo
 ![Bar chart of percent change per person 14 and older from 2002-2003 to 2018-2019: gallons of beer, wine and spirits sold -8%, average alcohol content of those drinks +18%, pure alcohol sold +9%.](images/04-fewer-gallons-more-alcohol.png)
 *Source: NIAAA Surveillance Report #124 data file. Sales and shipments, not measured drinking.*
 
-Ultimately, we can’t wrap an answer bow around this topic, which is why it’s a perfect Data 4 Thought topic. But what we can say is this: if the ultimate arbiter of success in fighting alcoholism is life and death, America is doing far worse in this area than many think.
+Ultimately, we can’t wrap a neat and tidy answer bow around this topic, which is why it’s a perfect Data 4 Thought topic. But what we can say is this: if the ultimate arbiter of success in fighting alcoholism is life and death, America is doing far worse in this area than many think.
 
 ## About the data
 
-- **Alcohol use disorder and drinking.** SAMHSA's National Survey on Drug Use and Health, state small-area estimates, national rows, people 12 and older. Each estimate pools two survey years. We compare 2002-2003 with 2018-2019 because the survey changed how it is given and how it measures alcohol use disorder in 2021, so later years cannot be compared with earlier ones. SAMHSA does not publish a median age for people with an alcohol use disorder, so we use the share who are 26 or older.
+- **Alcohol use disorder and drinking.** SAMHSA's National Survey on Drug Use and Health, state small-area estimates, national rows, people 12 and older. Each estimate pools two survey years. We compare 2002-2003 with 2018-2019 because the survey changed how it is given in 2020 and how it measures alcohol use disorder in 2021, so later years cannot be compared with earlier ones. SAMHSA does not publish a median age for people with an alcohol use disorder, so we use the share who are 26 or older.
 - **Deaths.** CDC WONDER, deaths whose underlying cause is alcohol-induced, such as alcoholic liver disease or alcohol poisoning. These do not include drunk-driving crashes or other injuries where alcohol played a part. Age-adjusted rates use the 2000 U.S. standard population. For 2021-2024 we age-adjusted CDC's counts ourselves; the same method matches CDC's published rates within 0.06 per 100,000 in every year from 1999 to 2020.
 - **Alcohol sold.** NIAAA Surveillance Report #124. These are sales and shipments, not measured drinking. They include alcohol bought by tourists and across state lines, and leave out homemade and illegal alcohol. Alcohol content uses NIAAA's year-by-year estimates for each drink type. NIAAA's headline series assumes fixed alcohol content and shows a 7% rise in pure alcohol per person instead of 9%.
 - **Median age.** U.S. Census Bureau population estimates for 2004 and 2024.
