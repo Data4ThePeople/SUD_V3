@@ -299,3 +299,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Chart 2 source note rewrapped to 4 lines (it was cut off at the right edge); chart, GIF and final frame re-rendered; Prismic draft avb3ExEAAC4AZeGk updated with the new chart 2 image.
 - 2026-11-13 Eric: Step 3 done. Next: Step 4a (outreach list) when Eric asks.
 - 2026-11-13 Eric: Step 4a open.
+- 2026-11-13 4a: OUTREACH.md list of 15 proposed; every email checked on its source page. Waiting for Eric to confirm by number.
