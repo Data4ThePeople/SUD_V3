@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: alcohol-deaths-data-for-thought
-Step: 3 (Social posts)
+Step: 4a (Outreach list), not started
 Since: 2026-11-13
 
 Previous post: substance-use-treatment-viz, complete 2026-11-05.
@@ -23,7 +23,7 @@ Previous post: substance-use-treatment-viz, complete 2026-11-05.
 | 2e | SEO | 2026-11-13 | Common questions (FAQ) added; meta title with "But" |
 | 2f | Pushed to Prismic (draft) | 2026-11-13 | avb3ExEAAC4AZeGk |
 | 2g | Mailchimp teaser | 2026-11-13 | Claude draft approved; chart 1; mix teased, not named |
-| 3  | Social posts | | |
+| 3  | Social posts | 2026-11-13 | X, Bluesky, LinkedIn; GIF of chart 2 |
 | 4a | Outreach list | | |
 | 4b | Outreach drafts in Gmail | | |
 
@@ -296,3 +296,5 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: Step 2f done. Step 2g open: Claude drafts EMAIL.md from Eric's post text, chart 1 (bar chart), mix teased before the call to action, not named.
 - 2026-11-13 Eric: approved Claude's 2g email draft. Step 2g done. Next: Step 3 (social posts) when Eric asks.
 - 2026-11-13 Eric: Step 3 open. SOCIAL.md drafted (X, Bluesky, LinkedIn); GIF of chart 2 from scripts/alcohol/animate_deaths.py.
+- 2026-11-13 Chart 2 source note rewrapped to 4 lines (it was cut off at the right edge); chart, GIF and final frame re-rendered; Prismic draft avb3ExEAAC4AZeGk updated with the new chart 2 image.
+- 2026-11-13 Eric: Step 3 done. Next: Step 4a (outreach list) when Eric asks.

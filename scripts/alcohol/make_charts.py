@@ -26,7 +26,7 @@ def foot(fig, text):
 # ---------- Chart 1: crude vs age-adjusted death rate ----------
 fig, ax = plt.subplots(figsize=(12, 7.2), dpi=150)
 fig.patch.set_facecolor(BG); ax.set_facecolor(BG)
-fig.subplots_adjust(left=0.07, right=0.82, top=0.80, bottom=0.17)
+fig.subplots_adjust(left=0.07, right=0.82, top=0.80, bottom=0.20)
 ax.plot(d.year, d.crude, color=MUTED, lw=1.6)
 ax.plot(d.year, d.age_adjusted, color=DEATH, lw=2.6)
 for y in (1999, 2019, 2021, 2024):
@@ -45,9 +45,10 @@ ax.tick_params(length=0, labelsize=11)
 fig.text(0.04, 0.93, "Alcohol-induced deaths per 100,000 people, U.S., 1999-2024", fontsize=19, fontweight="bold", color="#e6e7e9")
 fig.text(0.04, 0.875, "The age-adjusted rate removes the effect of an older population. It rose too.",
          fontsize=13, color=TXT)
-foot(fig, "Source: CDC WONDER, alcohol-induced as the underlying cause of death. Age-adjusted to the 2000 U.S. standard population; 1999-2020 as published by CDC,\n"
-          "2021-2024 computed by Data 4 The People from CDC's age-group counts. Alcohol-induced causes include alcoholic liver disease\n"
-          "and alcohol poisoning. They do not include drunk-driving crashes or other injuries where alcohol played a part.")
+foot(fig, "Source: CDC WONDER, alcohol-induced as the underlying cause of death. Age-adjusted to the 2000 U.S. standard population;\n"
+          "1999-2020 as published by CDC, 2021-2024 computed by Data 4 The People from CDC's age-group counts.\n"
+          "Alcohol-induced causes include alcoholic liver disease and alcohol poisoning. They do not include\n"
+          "drunk-driving crashes or other injuries where alcohol played a part.")
 fig.savefig(os.path.join(OUT, "02-alcohol-death-rate.png"), facecolor=BG)
 plt.close(fig)
 

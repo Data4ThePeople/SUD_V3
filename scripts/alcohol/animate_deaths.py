@@ -32,7 +32,7 @@ OFFS = {1999: (0, -20), 2019: (-16, 8)}
 
 fig, ax = plt.subplots(figsize=(12, 7.2), dpi=WIDTH_PX / 12)
 fig.patch.set_facecolor(BG); ax.set_facecolor(BG)
-fig.subplots_adjust(left=0.07, right=0.82, top=0.80, bottom=0.17)
+fig.subplots_adjust(left=0.07, right=0.82, top=0.80, bottom=0.20)
 ax.set_ylim(0, 18); ax.set_xlim(1998.5, 2024.5)
 ax.set_xticks(range(2000, 2025, 4))
 ax.grid(axis="y", color=GRID, lw=0.8); ax.set_axisbelow(True)
@@ -40,9 +40,10 @@ for sp in ("top", "right", "left"): ax.spines[sp].set_visible(False)
 ax.tick_params(length=0, labelsize=11)
 fig.text(0.04, 0.93, "Alcohol-induced deaths per 100,000 people, U.S., 1999-2024", fontsize=19, fontweight="bold", color="#e6e7e9")
 fig.text(0.04, 0.875, "The age-adjusted rate removes the effect of an older population. It rose too.", fontsize=13, color=TXT)
-fig.text(0.04, 0.035, "Source: CDC WONDER, alcohol-induced as the underlying cause of death. Age-adjusted to the 2000 U.S. standard population; 1999-2020 as published by CDC,\n"
-         "2021-2024 computed by Data 4 The People from CDC's age-group counts. Alcohol-induced causes include alcoholic liver disease\n"
-         "and alcohol poisoning. They do not include drunk-driving crashes or other injuries where alcohol played a part.",
+fig.text(0.04, 0.035, "Source: CDC WONDER, alcohol-induced as the underlying cause of death. Age-adjusted to the 2000 U.S. standard population;\n"
+         "1999-2020 as published by CDC, 2021-2024 computed by Data 4 The People from CDC's age-group counts.\n"
+         "Alcohol-induced causes include alcoholic liver disease and alcohol poisoning. They do not include\n"
+         "drunk-driving crashes or other injuries where alcohol played a part.",
          fontsize=10.5, color=MUTED, ha="left", va="bottom", linespacing=1.5)
 fig.text(0.96, 0.035, "Built by Data 4 The People", fontsize=10.5, color=MUTED, ha="right", va="bottom")
 
