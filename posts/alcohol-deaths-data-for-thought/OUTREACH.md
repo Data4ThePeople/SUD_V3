@@ -38,7 +38,7 @@ Every email below is printed on the source page named. Claude checked each one o
 
 Eric confirmed every person with a public email: #1-4 and #7-15. #5 and #6 are left out because neither has a public email. In each email, the post title is linked text pointing straight to https://www.data4thepeople.com/p/alcohol-deaths-data-for-thought, with no tracking or redirect. Each email ends "Thanks for taking a look." and is signed "Eric Pachman / Data 4 The People". Every number is in the post.
 
-Gmail status: none saved yet. On November 13, 2026, every attempt failed because the Gmail connector was down.
+Gmail status, November 13, 2026: the first try failed because the Gmail connector was down. One timed-out call still saved the draft to Deppen (#4). The raw message shows the connector stores every web address, linked or plain text, wrapped in a google.com/url?q= redirect, so recipients would get the redirect. A test draft confirmed this for every link form tried, and was then deleted. No more drafts are saved until Eric chooses a fix.
 
 | # | To | Subject | Body (between greeting and sign-off) | Gmail draft |
 |---|---|---|---|---|

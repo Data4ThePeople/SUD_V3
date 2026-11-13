@@ -301,3 +301,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: Step 4a open.
 - 2026-11-13 4a: OUTREACH.md list of 15 proposed; every email checked on its source page. Waiting for Eric to confirm by number.
 - 2026-11-13 Eric: 4a confirmed, draft only those with email (#1-4, #7-15); links must go straight to the post. Step 4b open. 13 drafts written into OUTREACH.md; Gmail connector down, none saved yet.
+- 2026-11-13 4b: Gmail connector rewrites every URL to a google.com/url redirect on save (confirmed in raw MIME). One draft (#4 Deppen) exists with the wrapped link. Paused for Eric.
