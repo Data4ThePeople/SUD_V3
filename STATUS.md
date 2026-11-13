@@ -286,3 +286,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: Step 2a done. Step 2b open.
 - 2026-11-13 Independent tie-out of the post: every number matches (0 differences). Fixed Claude's own text: chart 2 alt text (crude higher from 2001 on) and About the data (survey mode change 2020, disorder measure 2021). Wording items for Eric pending.
 - 2026-11-13 Eric accepted 2b look-over items 1-4. Publish time 8:00 am Eastern; date to confirm (Eric said Friday Nov 16; Nov 16, 2026 is a Monday).
+- 2026-11-13 Eric: publish Friday, November 13, 2026, 8:00 am Eastern (corrected from Nov 16). POST.md date set.

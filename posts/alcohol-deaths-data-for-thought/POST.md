@@ -2,7 +2,7 @@
 title: "Alcohol: Less Alcoholism, More People Dying"
 subtitle: "Alcohol use disorder fell 30% in the 16 years before the pandemic, while deaths from alcohol rose 65% per capita."
 slug: alcohol-deaths-data-for-thought
-date: November 12, 2026
+date: November 13, 2026
 section: Data 4 Thought
 hero: images/alcohol-deaths-data-for-thought-hero-1680x1080.png
 hero_alt:
