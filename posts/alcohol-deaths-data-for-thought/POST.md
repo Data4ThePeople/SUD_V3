@@ -1,5 +1,5 @@
 ---
-title:
+title: "Alcohol: Less Alcoholism, More People Dying"
 subtitle:
 slug: alcohol-deaths-data-for-thought
 date: November 12, 2026
@@ -16,7 +16,7 @@ caption_spacer: 20px
 dividers: false
 ---
 
-# Title
+# Alcohol: Less Alcoholism, More People Dying
 
 Alcohol use in America is going down.
 
