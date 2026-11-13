@@ -37,6 +37,21 @@ knuckles; the beer bottle sits slightly in shadow. Minimal, serious,
 high-contrast. Leave empty dark space across the top third. No faces, no
 text, no watermark.
 
+## Prompt 3b (dark, spirits made obvious) — use this one
+
+Photorealistic still life, landscape format, 3:2 aspect ratio, near-black
+background (#181A1B) with a single soft key light from the left. A narrow dark
+wooden shelf holds two bottles a hand's width apart, both in the center of the
+frame. On the left, a standard brown long-neck beer bottle with a metal crown
+cap. On the right, a taller, heavier liquor bottle: broad square shoulders, a
+short neck, a thick glass base and a cork stopper, two-thirds full of amber
+whiskey that glows in the light. Both labels are blank, with no text, logos or
+brand names. An adult hand reaches in from the right edge, fingers about to
+close around the neck of the whiskey bottle; the whole hand and wrist stay
+inside the frame. The beer bottle sits slightly in shadow. Minimal, serious,
+high-contrast. Leave empty dark space across the top third. No faces, no
+text, no watermark.
+
 ## Chosen
 
 File: images/alcohol-deaths-data-for-thought-hero-source.<ext>
