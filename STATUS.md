@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: alcohol-deaths-data-for-thought
-Step: 2d (hero)
+Step: 2e (SEO)
 Since: 2026-11-13
 
 Previous post: substance-use-treatment-viz, complete 2026-11-05.
@@ -19,7 +19,7 @@ Previous post: substance-use-treatment-viz, complete 2026-11-05.
 | 2a | Draft with brackets resolved | 2026-11-13 | Independent tie-out of post numbers still running at confirmation |
 | 2b | Eric's edit, Claude's look-over | 2026-11-13 | Look-over items 1-4 accepted |
 | 2c | Slice markup | 2026-11-13 | |
-| 2d | Hero 1680x1080 + alt text | | |
+| 2d | Hero 1680x1080 + alt text | 2026-11-13 | AI image, prompt 3b |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
@@ -290,3 +290,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: Step 2b done. Step 2c open.
 - 2026-11-13 Eric: Step 2c done (moved to 2d). Step 2d open: AI hero, beer bottle and spirits bottle on a shelf, hand reaching for the spirits. Prompts in hero-prompt.md.
 - 2026-11-13 Hero: Eric's Gemini image from prompt 3b, cropped center to 1680x1080; source kept as alcohol-deaths-data-for-thought-hero-source.jpg; hero_alt 271 characters.
+- 2026-11-13 Eric: Step 2d done. Step 2e open. Target searches: impact of alcoholism; has alcoholism declined in America.
