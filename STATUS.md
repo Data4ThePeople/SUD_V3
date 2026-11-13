@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: alcohol-deaths-data-for-thought
-Step: 4a (Outreach list), not started
+Step: 4a (Outreach list)
 Since: 2026-11-13
 
 Previous post: substance-use-treatment-viz, complete 2026-11-05.
@@ -298,3 +298,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: Step 3 open. SOCIAL.md drafted (X, Bluesky, LinkedIn); GIF of chart 2 from scripts/alcohol/animate_deaths.py.
 - 2026-11-13 Chart 2 source note rewrapped to 4 lines (it was cut off at the right edge); chart, GIF and final frame re-rendered; Prismic draft avb3ExEAAC4AZeGk updated with the new chart 2 image.
 - 2026-11-13 Eric: Step 3 done. Next: Step 4a (outreach list) when Eric asks.
+- 2026-11-13 Eric: Step 4a open.
