@@ -292,3 +292,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Hero: Eric's Gemini image from prompt 3b, cropped center to 1680x1080; source kept as alcohol-deaths-data-for-thought-hero-source.jpg; hero_alt 271 characters.
 - 2026-11-13 Eric: Step 2d done. Step 2e open. Target searches: impact of alcoholism; has alcoholism declined in America.
 - 2026-11-13 Eric: 2e item 1 (Common questions) accepted; meta title "Has Alcoholism Declined in America? Yes. But Deaths Rose" ("65%" dropped to stay under 60). Step 2e done. Step 2f open.
+- 2026-11-13 Pushed to Prismic as a draft in the Migration Release: document avb3ExEAAC4AZeGk, 28 slices, 4 charts and hero uploaded, FAQPage schema (4 questions), datePublished 2026-11-13T08:00:00-05:00. Tags and author empty. Re-pushed once to the same document.

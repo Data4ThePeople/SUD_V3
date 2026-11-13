@@ -1,0 +1,37 @@
+{
+  "images/01-alcohol-change.png": {
+    "id": "zmnPGE1oepMN6G7s",
+    "width": 1800,
+    "height": 990,
+    "url": "https://images.prismic.io/data4thepeople/zmnPGE1oepMN6G7s_01-alcohol-change.png?auto=format,compress",
+    "stamp": "120947:1794568582"
+  },
+  "images/02-alcohol-death-rate.png": {
+    "id": "QQQZCP4nhHdetuJt",
+    "width": 1800,
+    "height": 1080,
+    "url": "https://images.prismic.io/data4thepeople/QQQZCP4nhHdetuJt_02-alcohol-death-rate.png?auto=format,compress",
+    "stamp": "130738:1794568582"
+  },
+  "images/03-beer-to-spirits.png": {
+    "id": "ElA2_HuPgrwmUOLK",
+    "width": 1800,
+    "height": 1140,
+    "url": "https://images.prismic.io/data4thepeople/ElA2_HuPgrwmUOLK_03-beer-to-spirits.png?auto=format,compress",
+    "stamp": "162484:1794568582"
+  },
+  "images/04-fewer-gallons-more-alcohol.png": {
+    "id": "I9EYHddfIZPaSKw2",
+    "width": 1800,
+    "height": 990,
+    "url": "https://images.prismic.io/data4thepeople/I9EYHddfIZPaSKw2_04-fewer-gallons-more-alcohol.png?auto=format,compress",
+    "stamp": "107441:1794568582"
+  },
+  "images/alcohol-deaths-data-for-thought-hero-1680x1080.png": {
+    "id": "6JZHA6EnXlQymswg",
+    "width": 1680,
+    "height": 1080,
+    "url": "https://images.prismic.io/data4thepeople/6JZHA6EnXlQymswg_alcohol-deaths-data-for-thought-hero-1680x1080.png?auto=format,compress",
+    "stamp": "2157558:1794569751"
+  }
+}

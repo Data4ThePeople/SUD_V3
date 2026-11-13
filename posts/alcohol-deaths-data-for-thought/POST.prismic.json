@@ -3,7 +3,7 @@
   "page_subtitle": "Alcohol use disorder fell 30% in the 16 years before the pandemic, while deaths from alcohol rose 65% per capita.",
   "published_date": "2026-11-13",
   "updated_date": "2026-11-13",
-  "meta_title": "Has Alcoholism Declined in America? Yes. Deaths Rose 65%",
+  "meta_title": "Has Alcoholism Declined in America? Yes. But Deaths Rose",
   "meta_description": "Alcohol use disorder in America fell 30% from 2002-2003 to 2018-2019, but alcohol deaths per capita rose 65%. Age explains only part of the rise.",
   "meta_keywords": "has alcoholism declined in America, are alcohol deaths increasing, alcohol-induced death rate, alcohol use disorder trend, age-adjusted alcohol death rate, why are alcohol deaths rising, beer vs spirits consumption, pure alcohol per person",
   "make_this_main_post": false,
@@ -90,8 +90,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "zmnPGE1oepMN6G7s",
           "alt": "Bar chart of percent change from 2002-2003 to 2018-2019: share of people 12 and older who drank alcohol in the past month +1%, share with an alcohol use disorder -30%, alcohol-induced deaths per 100,000 people +65%.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1800,
+            "height": 990
+          }
         },
         "source_text": [
           {
@@ -150,8 +155,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "QQQZCP4nhHdetuJt",
           "alt": "Line chart of alcohol-induced deaths per 100,000 people, 1999-2024. The age-adjusted rate rose from 7.1 in 1999 to 10.4 in 2019, peaked at 14.4 in 2021, and was 12.1 in 2024. The crude rate, not adjusted for age, is higher from 2001 on.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1800,
+            "height": 1080
+          }
         },
         "source_text": [
           {
@@ -237,8 +247,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "ElA2_HuPgrwmUOLK",
           "alt": "Two-panel line chart, 2002-2024. Left: pure alcohol sold per person 14 and older, beer 1.29 to 1.04 gallons, spirits 0.58 to 0.85, wine 0.29 to 0.35. Right: average alcohol content of all drinks sold, 6.9% to 8.3%.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1800,
+            "height": 1140
+          }
         },
         "source_text": [
           {
@@ -291,8 +306,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "I9EYHddfIZPaSKw2",
           "alt": "Bar chart of percent change per person 14 and older from 2002-2003 to 2018-2019: gallons of beer, wine and spirits sold -8%, average alcohol content of those drinks +18%, pure alcohol sold +9%.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1800,
+            "height": 990
+          }
         },
         "source_text": [
           {
@@ -344,6 +364,165 @@
       "version": "initial",
       "items": [],
       "primary": {}
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading2",
+            "text": "Common questions",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "5px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Has alcoholism declined in America?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Yes, by the survey measure. The share of Americans 12 and older with an alcohol use disorder fell 30% from 2002-2003 to 2018-2019, according to SAMHSA's National Survey on Drug Use and Health. The share who drank in the past month barely changed.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Are alcohol deaths increasing in America?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Yes. Alcohol-induced deaths per 100,000 people rose 65% from 2002-2003 to 2018-2019, according to CDC data. The age-adjusted rate peaked at 14.4 per 100,000 in 2021 and was 12.1 in 2024, compared with 7.1 in 1999.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Are alcohol deaths rising because Americans are older?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Only partly. After adjusting for age, the death rate rose 46% over the same years, compared with 65% before adjusting.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Are Americans drinking more spirits than beer?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "By pure alcohol sold, beer still leads, but the gap has narrowed. From 2002 to 2024, pure alcohol sold per person 14 and older fell from 1.29 to 1.04 gallons for beer and rose from 0.58 to 0.85 gallons for spirits, according to NIAAA.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
     },
     {
       "slice_type": "paragarph_text",
@@ -466,5 +645,23 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Alcohol: Less Alcoholism, More People Dying\",\n  \"description\": \"Alcohol use disorder in America fell 30% from 2002-2003 to 2018-2019, but alcohol deaths per capita rose 65%. Age explains only part of the rise.\",\n  \"datePublished\": \"2026-11-13T08:00:00-05:00\",\n  \"dateModified\": \"2026-11-13T08:00:00-05:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"keywords\": [\n    \"has alcoholism declined in America\",\n    \"are alcohol deaths increasing\",\n    \"alcohol-induced death rate\",\n    \"alcohol use disorder trend\",\n    \"age-adjusted alcohol death rate\",\n    \"why are alcohol deaths rising\",\n    \"beer vs spirits consumption\",\n    \"pure alcohol per person\"\n  ],\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/alcohol-deaths-data-for-thought\"\n  }\n}"
+  "featured_image": {
+    "id": "6JZHA6EnXlQymswg",
+    "alt": "A brown beer bottle and a heavier bottle of amber whiskey with a cork stopper stand side by side on a dark wooden shelf against a black background. Both have blank labels. A hand reaches in from the right and grips the neck of the whiskey bottle, leaving the beer behind.",
+    "copyright": null,
+    "dimensions": {
+      "width": 1680,
+      "height": 1080
+    }
+  },
+  "meta_image": {
+    "id": "6JZHA6EnXlQymswg",
+    "alt": "A brown beer bottle and a heavier bottle of amber whiskey with a cork stopper stand side by side on a dark wooden shelf against a black background. Both have blank labels. A hand reaches in from the right and grips the neck of the whiskey bottle, leaving the beer behind.",
+    "copyright": null,
+    "dimensions": {
+      "width": 1680,
+      "height": 1080
+    }
+  },
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"Alcohol: Less Alcoholism, More People Dying\",\n      \"description\": \"Alcohol use disorder in America fell 30% from 2002-2003 to 2018-2019, but alcohol deaths per capita rose 65%. Age explains only part of the rise.\",\n      \"image\": \"https://images.prismic.io/data4thepeople/6JZHA6EnXlQymswg_alcohol-deaths-data-for-thought-hero-1680x1080.png?auto=format,compress\",\n      \"datePublished\": \"2026-11-13T08:00:00-05:00\",\n      \"dateModified\": \"2026-11-13T08:00:00-05:00\",\n      \"articleSection\": \"Data 4 Thought\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"keywords\": [\n        \"has alcoholism declined in America\",\n        \"are alcohol deaths increasing\",\n        \"alcohol-induced death rate\",\n        \"alcohol use disorder trend\",\n        \"age-adjusted alcohol death rate\",\n        \"why are alcohol deaths rising\",\n        \"beer vs spirits consumption\",\n        \"pure alcohol per person\"\n      ],\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/alcohol-deaths-data-for-thought\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/alcohol-deaths-data-for-thought#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/alcohol-deaths-data-for-thought#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Has alcoholism declined in America?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes, by the survey measure. The share of Americans 12 and older with an alcohol use disorder fell 30% from 2002-2003 to 2018-2019, according to SAMHSA's National Survey on Drug Use and Health. The share who drank in the past month barely changed.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Are alcohol deaths increasing in America?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes. Alcohol-induced deaths per 100,000 people rose 65% from 2002-2003 to 2018-2019, according to CDC data. The age-adjusted rate peaked at 14.4 per 100,000 in 2021 and was 12.1 in 2024, compared with 7.1 in 1999.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Are alcohol deaths rising because Americans are older?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Only partly. After adjusting for age, the death rate rose 46% over the same years, compared with 65% before adjusting.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Are Americans drinking more spirits than beer?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"By pure alcohol sold, beer still leads, but the gap has narrowed. From 2002 to 2024, pure alcohol sold per person 14 and older fell from 1.29 to 1.04 gallons for beer and rose from 0.58 to 0.85 gallons for spirits, according to NIAAA.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
 }
