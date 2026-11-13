@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: alcohol-deaths-data-for-thought
-Step: 4b (Outreach drafts in Gmail)
+Step: complete
 Since: 2026-11-13
 
 Previous post: substance-use-treatment-viz, complete 2026-11-05.
@@ -25,7 +25,7 @@ Previous post: substance-use-treatment-viz, complete 2026-11-05.
 | 2g | Mailchimp teaser | 2026-11-13 | Claude draft approved; chart 1; mix teased, not named |
 | 3  | Social posts | 2026-11-13 | X, Bluesky, LinkedIn; GIF of chart 2 |
 | 4a | Outreach list | 2026-11-13 | 13 confirmed (all with public email); #5, #6 dropped |
-| 4b | Outreach drafts in Gmail | | |
+| 4b | Outreach drafts in Gmail | 2026-11-13 | 13 drafts; Eric added links and sent |
 
 ## Steps: substance-use-treatment-viz (complete)
 
@@ -303,3 +303,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: 4a confirmed, draft only those with email (#1-4, #7-15); links must go straight to the post. Step 4b open. 13 drafts written into OUTREACH.md; Gmail connector down, none saved yet.
 - 2026-11-13 4b: Gmail connector rewrites every URL to a google.com/url redirect on save (confirmed in raw MIME). One draft (#4 Deppen) exists with the wrapped link. Paused for Eric.
 - 2026-11-13 4b: 13 Gmail drafts saved (no URLs); Eric adds the link to the title in each with Cmd+K. Redirected #4 draft deleted.
+- 2026-11-13 Eric: Step 4b done. Post alcohol-deaths-data-for-thought complete.
