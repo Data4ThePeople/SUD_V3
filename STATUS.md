@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: alcohol-deaths-data-for-thought
-Step: 2c (slice markup)
+Step: 2d (hero)
 Since: 2026-11-13
 
 Previous post: substance-use-treatment-viz, complete 2026-11-05.
@@ -18,7 +18,7 @@ Previous post: substance-use-treatment-viz, complete 2026-11-05.
 | 1  | Exploration and analysis | 2026-11-12 | |
 | 2a | Draft with brackets resolved | 2026-11-13 | Independent tie-out of post numbers still running at confirmation |
 | 2b | Eric's edit, Claude's look-over | 2026-11-13 | Look-over items 1-4 accepted |
-| 2c | Slice markup | | |
+| 2c | Slice markup | 2026-11-13 | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
@@ -288,3 +288,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric accepted 2b look-over items 1-4. Publish time 8:00 am Eastern; date to confirm (Eric said Friday Nov 16; Nov 16, 2026 is a Monday).
 - 2026-11-13 Eric: publish Friday, November 13, 2026, 8:00 am Eastern (corrected from Nov 16). POST.md date set.
 - 2026-11-13 Eric: Step 2b done. Step 2c open.
+- 2026-11-13 Eric: Step 2c done (moved to 2d). Step 2d open: AI hero, beer bottle and spirits bottle on a shelf, hand reaching for the spirits. Prompts in hero-prompt.md.
