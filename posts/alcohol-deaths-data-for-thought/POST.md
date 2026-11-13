@@ -5,7 +5,7 @@ slug: alcohol-deaths-data-for-thought
 date: November 13, 2026
 section: Data 4 Thought
 hero: images/alcohol-deaths-data-for-thought-hero-1680x1080.png
-hero_alt:
+hero_alt: "A brown beer bottle and a heavier bottle of amber whiskey with a cork stopper stand side by side on a dark wooden shelf against a black background. Both have blank labels. A hand reaches in from the right and grips the neck of the whiskey bottle, leaving the beer behind."
 meta_title:
 description:
 keywords:

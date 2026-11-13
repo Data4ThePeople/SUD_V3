@@ -289,3 +289,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: publish Friday, November 13, 2026, 8:00 am Eastern (corrected from Nov 16). POST.md date set.
 - 2026-11-13 Eric: Step 2b done. Step 2c open.
 - 2026-11-13 Eric: Step 2c done (moved to 2d). Step 2d open: AI hero, beer bottle and spirits bottle on a shelf, hand reaching for the spirits. Prompts in hero-prompt.md.
+- 2026-11-13 Hero: Eric's Gemini image from prompt 3b, cropped center to 1680x1080; source kept as alcohol-deaths-data-for-thought-hero-source.jpg; hero_alt 271 characters.
