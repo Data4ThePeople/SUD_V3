@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: alcohol-deaths-data-for-thought
-Step: 4a (Outreach list)
+Step: 4b (Outreach drafts in Gmail)
 Since: 2026-11-13
 
 Previous post: substance-use-treatment-viz, complete 2026-11-05.
@@ -24,7 +24,7 @@ Previous post: substance-use-treatment-viz, complete 2026-11-05.
 | 2f | Pushed to Prismic (draft) | 2026-11-13 | avb3ExEAAC4AZeGk |
 | 2g | Mailchimp teaser | 2026-11-13 | Claude draft approved; chart 1; mix teased, not named |
 | 3  | Social posts | 2026-11-13 | X, Bluesky, LinkedIn; GIF of chart 2 |
-| 4a | Outreach list | | |
+| 4a | Outreach list | 2026-11-13 | 13 confirmed (all with public email); #5, #6 dropped |
 | 4b | Outreach drafts in Gmail | | |
 
 ## Steps: substance-use-treatment-viz (complete)
@@ -300,3 +300,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: Step 3 done. Next: Step 4a (outreach list) when Eric asks.
 - 2026-11-13 Eric: Step 4a open.
 - 2026-11-13 4a: OUTREACH.md list of 15 proposed; every email checked on its source page. Waiting for Eric to confirm by number.
+- 2026-11-13 Eric: 4a confirmed, draft only those with email (#1-4, #7-15); links must go straight to the post. Step 4b open. 13 drafts written into OUTREACH.md; Gmail connector down, none saved yet.
