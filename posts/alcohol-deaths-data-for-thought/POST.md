@@ -26,14 +26,14 @@ I’ve been a passive consumer of media on this topic, seeing random [headlines]
 
 But then I spent some time studying Jameson’s [Substance Use Disorder (SUD) map](https://www.data4thepeople.com/p/substance-use-treatment-viz) and realized my reckless passive consumption of media on this topic created a flawed story in my mind.
 
-So here is what you need to know. The headlines are right. Alcoholism is down, as measured by Americans we track with SUD. In fact, it fell 30% in the 16 years before the pandemic. And over the same years, alcohol became far more deadly – killing 65% more people per capita.
+So here is what you need to know. The headlines are right. Alcoholism is down, as measured by the share of Americans with an alcohol use disorder. In fact, it fell 30% in the 16 years before the pandemic. And over the same years, alcohol became far more deadly – killing 65% more people per capita.
 
 ![Bar chart of percent change from 2002-2003 to 2018-2019: share of people 12 and older who drank alcohol in the past month +1%, share with an alcohol use disorder -30%, alcohol-induced deaths per 100,000 people +65%.](images/01-alcohol-change.png)
 *Sources: SAMHSA, National Survey on Drug Use and Health state estimates; CDC WONDER.*
 
-I was shocked when I saw this data, because none of the headlines ever mentioned it. How can the death rate from alcoholism be up so much at the same time alcoholism is in decline?
+I was shocked when I saw this data, because none of the headlines ever mentioned it. How can the death rate from alcohol be up so much at the same time alcoholism is in decline?
 
-I immediately assumed it must be age. Twenty years ago, America was far younger, with a median age of just 36.1. Now America’s median age is 39.1. The same is true of Americans with an alcohol use disorder: the share who are 26 or older rose from 61% in 2002-2003 to 75% in 2018-2019, as rates among teens and young adults fell fastest. So, it’s the cumulative impact of alcohol consumption that is leading to more deaths? Wrong. As the chart below shows, when you age adjust the data, most of the rise is still there: deaths per capita rose 46% after adjusting for age, compared with 65% before.
+I immediately assumed it must be age. Twenty years ago, America was far younger, with a median age of just 36.1. Now America’s median age is 39.1. The same is true of Americans with an alcohol use disorder: the share who are 26 or older rose from 61% in 2002-2003 to 75% in 2018-2019, as rates among teens and young adults fell fastest. So, it’s the cumulative impact of alcohol consumption that is leading to more deaths? Only partly. As the chart below shows, when you age adjust the data, most of the rise is still there: deaths per capita rose 46% after adjusting for age, compared with 65% before.
 
 ![Line chart of alcohol-induced deaths per 100,000 people, 1999-2024. The age-adjusted rate rose from 7.1 in 1999 to 10.4 in 2019, peaked at 14.4 in 2021, and was 12.1 in 2024. The crude rate, not adjusted for age, is higher from 2001 on.](images/02-alcohol-death-rate.png)
 *Source: CDC WONDER, alcohol-induced deaths. Age-adjusted to the 2000 U.S. standard population.*
@@ -42,12 +42,12 @@ In fact, when I studied the data, I found one pattern that stands out.
 
 Mix.
 
-Remember, our old friend, mix? I’ve written about it in the context of America’s [demographics](https://www.data4thepeople.com/p/america-has-a-mix-problem) and [education](https://www.data4thepeople.com/p/educational-attainment). Well, mix is showing up here too. America’s taste for alcohol is moving from beer to spirits. Spirits have a far higher alcohol content than beer, so even though Americans are buying fewer gallons of beer, wine and spirits per person, they are buying about 9% more pure alcohol per person.
+Remember, our old friend, mix? I’ve written about it in the context of America’s [demographics](https://www.data4thepeople.com/p/america-has-a-mix-problem) and [education](https://www.data4thepeople.com/p/educational-attainment). Well, mix is showing up here too. America’s taste for alcohol is moving from beer to spirits. Spirits have a far higher alcohol content than beer, so even though Americans bought fewer gallons of beer, wine and spirits per person, they bought about 9% more pure alcohol per person over the same years as the first chart.
 
 ![Two-panel line chart, 2002-2024. Left: pure alcohol sold per person 14 and older, beer 1.29 to 1.04 gallons, spirits 0.58 to 0.85, wine 0.29 to 0.35. Right: average alcohol content of all drinks sold, 6.9% to 8.3%.](images/03-beer-to-spirits.png)
 *Source: NIAAA Surveillance Report #124 data file. Sales and shipments, not measured drinking.*
 
-Over the same years as the first chart, here is how fewer gallons added up to more pure alcohol.
+Here is how fewer gallons added up to more pure alcohol.
 
 ![Bar chart of percent change per person 14 and older from 2002-2003 to 2018-2019: gallons of beer, wine and spirits sold -8%, average alcohol content of those drinks +18%, pure alcohol sold +9%.](images/04-fewer-gallons-more-alcohol.png)
 *Source: NIAAA Surveillance Report #124 data file. Sales and shipments, not measured drinking.*

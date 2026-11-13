@@ -285,3 +285,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: title "Alcohol: Less Alcoholism, More People Dying" and subtitle set; "headlines" links to Gallup, August 13, 2025 (U.S. Drinking Rate at New Low as Alcohol Concerns Surge).
 - 2026-11-13 Eric: Step 2a done. Step 2b open.
 - 2026-11-13 Independent tie-out of the post: every number matches (0 differences). Fixed Claude's own text: chart 2 alt text (crude higher from 2001 on) and About the data (survey mode change 2020, disorder measure 2021). Wording items for Eric pending.
+- 2026-11-13 Eric accepted 2b look-over items 1-4. Publish time 8:00 am Eastern; date to confirm (Eric said Friday Nov 16; Nov 16, 2026 is a Monday).
