@@ -1,6 +1,6 @@
 ---
 title: "Alcohol: Less Alcoholism, More People Dying"
-subtitle:
+subtitle: "Alcohol use disorder fell 30% in the 16 years before the pandemic, while deaths from alcohol rose 65% per capita."
 slug: alcohol-deaths-data-for-thought
 date: November 12, 2026
 section: Data 4 Thought
@@ -22,7 +22,7 @@ Alcohol use in America is going down.
 
 Right?
 
-I’ve been a passive consumer of media on this topic, seeing random headlines in passing. Over time, these headlines created that story in my mind that alcohol use in America is in structural decline.
+I’ve been a passive consumer of media on this topic, seeing random [headlines](https://news.gallup.com/poll/693362/drinking-rate-new-low-alcohol-concerns-surge.aspx) in passing. Over time, these headlines created that story in my mind that alcohol use in America is in structural decline.
 
 But then I spent some time studying Jameson’s [Substance Use Disorder (SUD) map](https://www.data4thepeople.com/p/substance-use-treatment-viz) and realized my reckless passive consumption of media on this topic created a flawed story in my mind.
 
