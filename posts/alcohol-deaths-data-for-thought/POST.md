@@ -42,7 +42,7 @@ In fact, when I studied the data, I found one pattern that stands out.
 
 Mix.
 
-Remember, our old friend, mix? I’ve written about it in the context of America’s demographics and education. Well, mix is showing up here too. America’s taste for alcohol is moving from beer to spirits. Spirits have a far higher alcohol content than beer, so even though Americans are buying fewer gallons of beer, wine and spirits per person, they are buying about 9% more pure alcohol per person.
+Remember, our old friend, mix? I’ve written about it in the context of America’s [demographics](https://www.data4thepeople.com/p/america-has-a-mix-problem) and [education](https://www.data4thepeople.com/p/educational-attainment). Well, mix is showing up here too. America’s taste for alcohol is moving from beer to spirits. Spirits have a far higher alcohol content than beer, so even though Americans are buying fewer gallons of beer, wine and spirits per person, they are buying about 9% more pure alcohol per person.
 
 ![Two-panel line chart, 2002-2024. Left: pure alcohol sold per person 14 and older, beer 1.29 to 1.04 gallons, spirits 0.58 to 0.85, wine 0.29 to 0.35. Right: average alcohol content of all drinks sold, 6.9% to 8.3%.](images/03-beer-to-spirits.png)
 *Source: NIAAA Surveillance Report #124 data file. Sales and shipments, not measured drinking.*
