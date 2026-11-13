@@ -54,7 +54,10 @@ Here is how fewer gallons added up to more pure alcohol.
 
 Ultimately, we can’t wrap a neat and tidy answer bow around this topic, which is why it’s a perfect Data 4 Thought topic. But what we can say is this: if the ultimate arbiter of success in fighting alcoholism is life and death, America is doing far worse in this area than many think.
 
+::: divider
+
 ## About the data
+::: spacer 5px
 
 - **Alcohol use disorder and drinking.** SAMHSA's National Survey on Drug Use and Health, state small-area estimates, national rows, people 12 and older. Each estimate pools two survey years. We compare 2002-2003 with 2018-2019 because the survey changed how it is given in 2020 and how it measures alcohol use disorder in 2021, so later years cannot be compared with earlier ones. SAMHSA does not publish a median age for people with an alcohol use disorder, so we use the share who are 26 or older.
 - **Deaths.** CDC WONDER, deaths whose underlying cause is alcohol-induced, such as alcoholic liver disease or alcohol poisoning. These do not include drunk-driving crashes or other injuries where alcohol played a part. Age-adjusted rates use the 2000 U.S. standard population. For 2021-2024 we age-adjusted CDC's counts ourselves; the same method matches CDC's published rates within 0.06 per 100,000 in every year from 1999 to 2020.
