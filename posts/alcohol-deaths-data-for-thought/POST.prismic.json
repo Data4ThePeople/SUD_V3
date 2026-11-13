@@ -1,8 +1,11 @@
 {
   "page_title": "Alcohol: Less Alcoholism, More People Dying",
   "page_subtitle": "Alcohol use disorder fell 30% in the 16 years before the pandemic, while deaths from alcohol rose 65% per capita.",
-  "published_date": "November 13, 2026",
-  "updated_date": "November 13, 2026",
+  "published_date": "2026-11-13",
+  "updated_date": "2026-11-13",
+  "meta_title": "Has Alcoholism Declined in America? Yes. Deaths Rose 65%",
+  "meta_description": "Alcohol use disorder in America fell 30% from 2002-2003 to 2018-2019, but alcohol deaths per capita rose 65%. Age explains only part of the rise.",
+  "meta_keywords": "has alcoholism declined in America, are alcohol deaths increasing, alcohol-induced death rate, alcohol use disorder trend, age-adjusted alcohol death rate, why are alcohol deaths rising, beer vs spirits consumption, pure alcohol per person",
   "make_this_main_post": false,
   "slices": [
     {
@@ -463,5 +466,5 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Alcohol: Less Alcoholism, More People Dying\",\n  \"description\": \"\",\n  \"datePublished\": \"November 13, 2026T07:00:00-04:00\",\n  \"dateModified\": \"November 13, 2026T07:00:00-04:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/alcohol-deaths-data-for-thought\"\n  }\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Alcohol: Less Alcoholism, More People Dying\",\n  \"description\": \"Alcohol use disorder in America fell 30% from 2002-2003 to 2018-2019, but alcohol deaths per capita rose 65%. Age explains only part of the rise.\",\n  \"datePublished\": \"2026-11-13T08:00:00-05:00\",\n  \"dateModified\": \"2026-11-13T08:00:00-05:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"keywords\": [\n    \"has alcoholism declined in America\",\n    \"are alcohol deaths increasing\",\n    \"alcohol-induced death rate\",\n    \"alcohol use disorder trend\",\n    \"age-adjusted alcohol death rate\",\n    \"why are alcohol deaths rising\",\n    \"beer vs spirits consumption\",\n    \"pure alcohol per person\"\n  ],\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/alcohol-deaths-data-for-thought\"\n  }\n}"
 }

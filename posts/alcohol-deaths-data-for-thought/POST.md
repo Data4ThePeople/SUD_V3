@@ -2,13 +2,14 @@
 title: "Alcohol: Less Alcoholism, More People Dying"
 subtitle: "Alcohol use disorder fell 30% in the 16 years before the pandemic, while deaths from alcohol rose 65% per capita."
 slug: alcohol-deaths-data-for-thought
-date: November 13, 2026
+date: 2026-11-13
+time: 08:00:00-05:00
 section: Data 4 Thought
 hero: images/alcohol-deaths-data-for-thought-hero-1680x1080.png
 hero_alt: "A brown beer bottle and a heavier bottle of amber whiskey with a cork stopper stand side by side on a dark wooden shelf against a black background. Both have blank labels. A hand reaches in from the right and grips the neck of the whiskey bottle, leaving the beer behind."
-meta_title:
-description:
-keywords:
+meta_title: "Has Alcoholism Declined in America? Yes. But Deaths Rose"
+description: "Alcohol use disorder in America fell 30% from 2002-2003 to 2018-2019, but alcohol deaths per capita rose 65%. Age explains only part of the rise."
+keywords: has alcoholism declined in America, are alcohol deaths increasing, alcohol-induced death rate, alcohol use disorder trend, age-adjusted alcohol death rate, why are alcohol deaths rising, beer vs spirits consumption, pure alcohol per person
 schema_type: article
 drop_cap: true
 heading_spacer: 20px
@@ -55,6 +56,25 @@ Here is how fewer gallons added up to more pure alcohol.
 Ultimately, we can’t wrap a neat and tidy answer bow around this topic, which is why it’s a perfect Data 4 Thought topic. But what we can say is this: if the ultimate arbiter of success in fighting alcoholism is life and death, America is doing far worse in this area than many think.
 
 ::: divider
+
+## Common questions
+::: spacer 5px
+
+### Has alcoholism declined in America?
+
+Yes, by the survey measure. The share of Americans 12 and older with an alcohol use disorder fell 30% from 2002-2003 to 2018-2019, according to SAMHSA's National Survey on Drug Use and Health. The share who drank in the past month barely changed.
+
+### Are alcohol deaths increasing in America?
+
+Yes. Alcohol-induced deaths per 100,000 people rose 65% from 2002-2003 to 2018-2019, according to CDC data. The age-adjusted rate peaked at 14.4 per 100,000 in 2021 and was 12.1 in 2024, compared with 7.1 in 1999.
+
+### Are alcohol deaths rising because Americans are older?
+
+Only partly. After adjusting for age, the death rate rose 46% over the same years, compared with 65% before adjusting.
+
+### Are Americans drinking more spirits than beer?
+
+By pure alcohol sold, beer still leads, but the gap has narrowed. From 2002 to 2024, pure alcohol sold per person 14 and older fell from 1.29 to 1.04 gallons for beer and rose from 0.58 to 0.85 gallons for spirits, according to NIAAA.
 
 ## About the data
 ::: spacer 5px
