@@ -6,8 +6,8 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: alcohol-deaths-data-for-thought
-Step: 2a (Eric's draft)
-Since: 2026-11-12
+Step: 2b (Eric's edit, Claude's look-over)
+Since: 2026-11-13
 
 Previous post: substance-use-treatment-viz, complete 2026-11-05.
 
@@ -16,7 +16,7 @@ Previous post: substance-use-treatment-viz, complete 2026-11-05.
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-12 | |
-| 2a | Draft with brackets resolved | | |
+| 2a | Draft with brackets resolved | 2026-11-13 | Independent tie-out of post numbers still running at confirmation |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
@@ -283,3 +283,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-12 Independent tie-out of Chart 3: all values match (0 differences). Title changed to "Less beer, more spirits, and more alcohol in each gallon sold" (the rise is from the mix, not stronger drinks of each type). DATASETS: canned-cocktail guess removed (report gives no reason for the spirits ABV drop); all-beverage time-varying ethanol now read from the file and checked against the sum.
 - 2026-11-13 Eric accepted 2a edits 1-8 and questions 1-3: chart 1 death bar now crude rate (+65%); new chart 4 (gallons -8%, alcohol content +18%, pure alcohol +9%); About the data section added. Census median age and AUD 26+ share added to DATASETS. Independent tie-out of the post's numbers and charts 1 and 4 started.
 - 2026-11-13 Eric: title "Alcohol: Less Alcoholism, More People Dying" and subtitle set; "headlines" links to Gallup, August 13, 2025 (U.S. Drinking Rate at New Low as Alcohol Concerns Surge).
+- 2026-11-13 Eric: Step 2a done. Step 2b open.
