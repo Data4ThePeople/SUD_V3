@@ -62,7 +62,7 @@ nv = n[n.bev == "all"].set_index("year").pc14  # NIAAA report #124 data file, ag
 rows = [
     ("Share of people 12+ who drank\nalcohol in the past month", pct(sv["ALCMON", 2003], sv["ALCMON", 2019]), SURVEY),
     ("Share of people 12+ with an\nalcohol use disorder", pct(sv["ABODALC", 2003], sv["ABODALC", 2019]), SURVEY),
-    ("Alcohol-induced death rate,\nage-adjusted", pct(avg("age_adjusted", 2002, 2003), avg("age_adjusted", 2018, 2019)), DEATH),
+    ("Alcohol-induced deaths per\n100,000 people", pct(avg("crude", 2002, 2003), avg("crude", 2018, 2019)), DEATH),
 ]
 fig, ax = plt.subplots(figsize=(12, 6.6), dpi=150)
 fig.patch.set_facecolor(BG); ax.set_facecolor(BG)
@@ -74,15 +74,16 @@ for i, (lab, v, c) in enumerate(rows):
             fontsize=15, fontweight="bold", color=TXT)
     ax.text(-0.02, yy, lab, transform=ax.get_yaxis_transform(), ha="right", va="center", fontsize=13, color=TXT)
 ax.axvline(0, color=MUTED, lw=1.2)
-ax.set_xlim(-45, 62); ax.set_yticks([]); ax.set_ylim(-0.6, len(rows) - 0.4)
-ax.set_xticks(range(-40, 61, 20)); ax.set_xticklabels([f"{t:+d}%" if t else "0" for t in range(-40, 61, 20)])
+ax.set_xlim(-45, 85); ax.set_yticks([]); ax.set_ylim(-0.6, len(rows) - 0.4)
+ax.set_xticks(range(-40, 81, 20)); ax.set_xticklabels([f"{t:+d}%" if t else "0" for t in range(-40, 81, 20)])
+assert max(v for _, v, _ in rows) < 75, "bar label would clip"
 ax.grid(axis="x", color=GRID, lw=0.8); ax.set_axisbelow(True)
 for sp in ("top", "right", "left", "bottom"): ax.spines[sp].set_visible(False)
 ax.tick_params(length=0, labelsize=11)
 fig.text(0.04, 0.92, "Drinking held steady, disorder fell, deaths rose", fontsize=19, fontweight="bold", color="#e6e7e9")
 fig.text(0.04, 0.865, "Percent change from 2002-2003 to 2018-2019, U.S.", fontsize=13, color=TXT)
 foot(fig, "Sources: SAMHSA, NSDUH state small-area estimates, national rows (2-year pooled estimates; alcohol use disorder is DSM-IV).\n"
-          "CDC WONDER, alcohol-induced deaths, age-adjusted rate, averaged over the same two-year spans. The survey changed\n"
+          "CDC WONDER, alcohol-induced deaths per 100,000 people (not age-adjusted), averaged over the same two-year spans. The survey changed\n"
           "methods in 2020-2021, so later years cannot be compared with these.")
 fig.savefig(os.path.join(OUT, "01-alcohol-change.png"), facecolor=BG)
 plt.close(fig)
@@ -126,3 +127,36 @@ foot(fig, "Source: NIAAA Surveillance Report #124 data file. Sales and shipments
 fig.savefig(os.path.join(OUT, "03-beer-to-spirits.png"), facecolor=BG)
 plt.close(fig)
 print("chart 3 strength", round(strength[0], 2), round(strength[yrs.index(2019)], 2), round(strength[-1], 2), "gal", round(gal0, 2), round(gal1, 2))
+
+# ---------- Chart 4: fewer gallons of drinks, more alcohol in each, more pure alcohol ----------
+def navg(col, ys): return n[n.bev == "all"].set_index("year")[col].loc[ys].mean()
+Y0, Y1 = [2002, 2003], [2018, 2019]
+g0, g1 = navg("beverage_gal_pc14", Y0), navg("beverage_gal_pc14", Y1)
+e0, e1 = navg("pc14_timevarying_abv", Y0), navg("pc14_timevarying_abv", Y1)
+rows4 = [("Gallons of beer, wine and\nspirits sold per person 14+", pct(g0, g1)),
+         ("Average alcohol content\nof those drinks", pct(e0 / g0, e1 / g1)),
+         ("Pure alcohol sold\nper person 14+", pct(e0, e1))]
+fig, ax = plt.subplots(figsize=(12, 6.6), dpi=150)
+fig.patch.set_facecolor(BG); ax.set_facecolor(BG)
+fig.subplots_adjust(left=0.30, right=0.93, top=0.76, bottom=0.20)
+for i, (lab, v) in enumerate(rows4):
+    yy = len(rows4) - 1 - i
+    ax.barh(yy, v, height=0.52, color=SURVEY)
+    ax.text(v + (0.6 if v >= 0 else -0.6), yy, f"{v:+.0f}%", va="center", ha="left" if v >= 0 else "right",
+            fontsize=15, fontweight="bold", color=TXT)
+    ax.text(-0.02, yy, lab, transform=ax.get_yaxis_transform(), ha="right", va="center", fontsize=13, color=TXT)
+ax.axvline(0, color=MUTED, lw=1.2)
+ax.set_xlim(-15, 25); ax.set_yticks([]); ax.set_ylim(-0.6, len(rows4) - 0.4)
+ax.set_xticks(range(-10, 21, 10)); ax.set_xticklabels([f"{t:+d}%" if t else "0" for t in range(-10, 21, 10)])
+ax.grid(axis="x", color=GRID, lw=0.8); ax.set_axisbelow(True)
+for sp in ("top", "right", "left", "bottom"): ax.spines[sp].set_visible(False)
+ax.tick_params(length=0, labelsize=11)
+fig.text(0.04, 0.92, "Fewer gallons of drinks, but more pure alcohol", fontsize=19, fontweight="bold", color="#e6e7e9")
+fig.text(0.04, 0.865, "Percent change from 2002-2003 to 2018-2019, U.S.", fontsize=13, color=TXT)
+foot(fig, "Source: NIAAA Surveillance Report #124 data file, two-year averages. Sales and shipments, not measured drinking.\n"
+          "Alcohol content uses NIAAA's year-by-year estimates for each drink type. With NIAAA's fixed content, pure alcohol\n"
+          "per person rose 7%.")
+fig.savefig(os.path.join(OUT, "04-fewer-gallons-more-alcohol.png"), facecolor=BG)
+plt.close(fig)
+for lab, v in rows4: print(lab.replace("\n", " "), round(v, 2))
+print("chart 4 values", round(g0, 2), round(g1, 2), round(100 * e0 / g0, 2), round(100 * e1 / g1, 2), round(e0, 3), round(e1, 3))

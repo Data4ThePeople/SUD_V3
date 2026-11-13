@@ -470,10 +470,11 @@ System, Mortality 1999-2020 and 2018-2024 on CDC WONDER Online Database.
 
 ## Alcohol data for thought: national trend (added 2026-11-12)
 
-Two charts for a short post on whether drinking is getting more deadly. Built by
+Four charts for the post `alcohol-deaths-data-for-thought`. Built by
 `scripts/alcohol/build_series.py` (writes `data/build/alcohol/deaths_national.csv`
 and `nsduh_national.csv`) and `scripts/alcohol/make_charts.py` (writes
-`dist/alcohol/01-alcohol-death-rate.png` and `02-alcohol-change.png`).
+`dist/alcohol/01-alcohol-change.png`, `02-alcohol-death-rate.png`,
+`03-beer-to-spirits.png` and `04-fewer-gallons-more-alcohol.png`).
 
 **Deaths: alcohol-induced, underlying cause, U.S., 1999-2024.** Same 14 ICD-10
 codes as the map (see the CDC WONDER section).
@@ -506,11 +507,24 @@ codes as the map (see the CDC WONDER section).
 - Binge drinking is not charted: the definition for women changed in 2015
   (and the outcome code changed), so the series breaks there.
 
-**Chart 2 percent changes** compare the 2002-2003 window with 2018-2019, the
-longest span the survey allows. The death rate is averaged over the same two
-calendar years (2002 and 2003; 2018 and 2019) to match.
-Pure alcohol sold per person 14+ uses the NIAAA report #124 data file (all
-beverages, fixed ABV), averaged the same way.
+**Chart 1 percent changes** compare the 2002-2003 window with 2018-2019, the
+longest span the survey allows. The death bar is the crude rate (deaths per
+100,000 people, not age-adjusted), averaged over the same two calendar years
+(2002 and 2003; 2018 and 2019): +65%. The age-adjusted rate over the same span,
+quoted in the post text, is +46%.
+
+**Age of people with alcohol use disorder** (post text): SAMHSA publishes no
+median age, so the post uses the share of people 12+ with ABODALC who are 26+,
+from the 1999-2019 SAE dataset national counts (`est_total`, agegrp 3 over
+agegrp 0): 11,020 of 17,952 thousand (61%) in 2002-2003, 10,976 of 14,661
+thousand (75%) in 2018-2019. Rates by age, same windows: 12-17 5.9% to 1.6%;
+18-25 17.4% to 9.7%; 26+ 6.1% to 5.1%.
+
+**U.S. median age** (post text): 36.1 in 2004, from the Census Bureau's
+2000-2010 intercensal estimates, Table 1 (`data/raw/census/us-est00int-01.csv`,
+https://www2.census.gov/programs-surveys/popest/tables/2000-2010/intercensal/national/us-est00int-01.csv).
+39.1 in 2024, from the Vintage 2024 estimates
+(https://census.gov/library/stories/2025/06/metro-areas-median-age.html).
 
 **Alcohol sold per person: NIAAA apparent per capita ethanol consumption.**
 Built by `scripts/alcohol/build_niaaa.py` into
@@ -561,3 +575,10 @@ NIAAA #124 data file, national, 2002-2024:
   (2018) to 0.324 (2024). The report gives no reason; it says the drop "will
   continue to be monitored closely in future reports." The 2022 dip in spirits comes
   from that year's lower ABV estimate (0.345), not lower sales volume.
+
+**Chart 4, fewer gallons of drinks, more pure alcohol**
+(`04-fewer-gallons-more-alcohol.png`), NIAAA #124 data file, national, ages
+14+, two-year averages 2002-2003 vs 2018-2019, time-varying ABV:
+gallons of beer, wine and spirits per person -7.7%; average alcohol content
+(pure alcohol / gallons of drinks) +17.7%; pure alcohol per person +8.7%. With
+fixed ABV, pure alcohol per person is +7.2%, stated in the chart's note.
