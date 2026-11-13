@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: alcohol-deaths-data-for-thought
-Step: 2g (Mailchimp teaser)
+Step: 3 (Social posts), not started
 Since: 2026-11-13
 
 Previous post: substance-use-treatment-viz, complete 2026-11-05.
@@ -22,7 +22,7 @@ Previous post: substance-use-treatment-viz, complete 2026-11-05.
 | 2d | Hero 1680x1080 + alt text | 2026-11-13 | AI image, prompt 3b |
 | 2e | SEO | 2026-11-13 | Common questions (FAQ) added; meta title with "But" |
 | 2f | Pushed to Prismic (draft) | 2026-11-13 | avb3ExEAAC4AZeGk |
-| 2g | Mailchimp teaser | | |
+| 2g | Mailchimp teaser | 2026-11-13 | Claude draft approved; chart 1; mix teased, not named |
 | 3  | Social posts | | |
 | 4a | Outreach list | | |
 | 4b | Outreach drafts in Gmail | | |
@@ -294,3 +294,4 @@ National tests (CDC WONDER API, `data/raw/wonder_api/`; Eric's exports
 - 2026-11-13 Eric: 2e item 1 (Common questions) accepted; meta title "Has Alcoholism Declined in America? Yes. But Deaths Rose" ("65%" dropped to stay under 60). Step 2e done. Step 2f open.
 - 2026-11-13 Pushed to Prismic as a draft in the Migration Release: document avb3ExEAAC4AZeGk, 28 slices, 4 charts and hero uploaded, FAQPage schema (4 questions), datePublished 2026-11-13T08:00:00-05:00. Tags and author empty. Re-pushed once to the same document.
 - 2026-11-13 Eric: Step 2f done. Step 2g open: Claude drafts EMAIL.md from Eric's post text, chart 1 (bar chart), mix teased before the call to action, not named.
+- 2026-11-13 Eric: approved Claude's 2g email draft. Step 2g done. Next: Step 3 (social posts) when Eric asks.
